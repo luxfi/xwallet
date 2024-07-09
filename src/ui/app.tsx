@@ -49,7 +49,6 @@ function initAppMeta() {
   head?.appendChild(description);
 }
 
-
 initAppMeta();
 
 const { PortMessage } = Message;
