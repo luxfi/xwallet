@@ -247,7 +247,7 @@ const Receive = () => {
       </div>
       <div className="page-receive-footer">
         <img
-          src="/images/logo-white.svg"
+          src="/images/logo-white.png"
           className="h-[28px] opacity-50"
           alt=""
         />

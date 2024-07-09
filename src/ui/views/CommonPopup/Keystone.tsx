@@ -37,7 +37,7 @@ export const Keystone: React.FC = () => {
         <li>{t('page.dashboard.hd.keystone.doc3')}</li>
       </ul>
       <img
-        src="/images/keystone-plug.svg"
+        src="/images/keystone-plug.png"
         className="w-[240px] bg-r-neutral-card2 rounded-[4px] mt-[20px] mx-auto py-20 px-40"
       />
       <div className="mt-[25px] text-13 text-r-neutral-body">
