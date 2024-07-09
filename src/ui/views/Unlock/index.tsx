@@ -50,7 +50,7 @@ const Unlock = () => {
   return (
     <div className="unlock page-has-ant-input">
       <div className="header">
-        <img src="./images/welcome-image.svg" className="image" />
+        <img src="./images/welcome-image.png" className="image" />
       </div>
       <Form
         autoComplete="off"

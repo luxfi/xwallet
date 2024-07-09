@@ -60,7 +60,7 @@ export const ImKeyConnect = () => {
           <li>{t('page.dashboard.hd.imkey.doc1')}</li>
           <li>{t('page.dashboard.hd.imkey.doc2')}</li>
         </ul>
-        <img src="/images/imkey-plug.svg" className="ledger-plug" />
+        <img src="/images/imkey-plug.png" className="ledger-plug" />
       </div>
     </StrayPageWithButton>
   );

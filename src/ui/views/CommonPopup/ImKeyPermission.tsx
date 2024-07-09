@@ -36,7 +36,7 @@ export const ImKeyPermission: React.FC = () => {
         <li>{t('page.dashboard.hd.imkey.doc2')}</li>
       </ul>
       <img
-        src="/images/imkey-plug.svg"
+        src="/images/imkey-plug.png"
         className="w-[240px] bg-r-neutral-card2 rounded-[4px] mt-[20px] mx-auto py-20 px-40"
       />
       <div className="mt-[46px] text-13 text-r-neutral-body">

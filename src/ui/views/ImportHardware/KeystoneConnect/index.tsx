@@ -246,7 +246,7 @@ export const KeystoneConnect = () => {
               <li>{t('page.dashboard.hd.keystone.doc2')}</li>
               <li>{t('page.dashboard.hd.keystone.doc3')}</li>
             </ul>
-            <img src="/images/keystone-plug.svg" className="keystone-plug" />
+            <img src="/images/keystone-plug.png" className="keystone-plug" />
             <Button
               type="primary"
               size="large"
