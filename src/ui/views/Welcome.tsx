@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import WelcomeHeaderImg from 'ui/assets/welcome-header.svg';
+import WelcomeHeaderImg from 'ui/assets/welcome-header.png';
 
 const Container = styled.div`
   .step {
@@ -35,7 +35,7 @@ const Welcome = () => {
   return (
     <Container className="h-full">
       <div className="header">
-        <img src={WelcomeHeaderImg} alt="" />
+        <img src={WelcomeHeaderImg} alt="logo" width="100%" height="105px" />
       </div>
       {step === 1 ? (
         <section className="step">

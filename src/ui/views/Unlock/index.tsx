@@ -49,7 +49,7 @@ const Unlock = () => {
 
   return (
     <div className="unlock page-has-ant-input">
-      <div className="header bg-r-neutral-black">
+      <div className="header">
         <img src="./images/welcome-image.png" className="image" />
       </div>
       <Form
