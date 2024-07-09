@@ -51,6 +51,7 @@ function initAppMeta() {
 
 initAppMeta();
 
+
 const { PortMessage } = Message;
 
 const portMessageChannel = new PortMessage();
