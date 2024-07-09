@@ -260,7 +260,7 @@ class ProviderController extends BaseController {
       const chain = findChain({ enum: connectSite.chain });
       if (chain) {
         // rabby:chainChanged event must be sent before chainChanged event
-        sessionService.broadcastEvent('rabby:chainChanged', chain, origin);
+        sessionService.broadcastEvent('lux:chainChanged', chain, origin);
         sessionService.broadcastEvent(
           'chainChanged',
           {
