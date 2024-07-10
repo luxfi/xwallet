@@ -49,6 +49,7 @@ const Welcome = () => {
             <Button
               type="primary"
               size="large"
+              style={{ backgroundColor: 'black' }}
               block
               onClick={() => {
                 setStep(2);
@@ -68,7 +69,12 @@ const Welcome = () => {
           />
           <footer className="mt-[64px]">
             <Link to="/no-address" replace>
-              <Button type="primary" size="large" block>
+              <Button
+                type="primary"
+                size="large"
+                style={{ backgroundColor: 'black' }}
+                block
+              >
                 {t('page.welcome.step2.btnText')}
               </Button>
             </Link>
