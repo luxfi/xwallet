@@ -12,6 +12,7 @@ const AddAddress = () => {
         fixed
         className="mx-[-20px] h-[48px]"
         fillClassName="mb-[20px] h-[48px]"
+        style={{ backgroundColor: 'black' }}
       >
         {t('page.newAddress.title')}
       </BlueHeader>
