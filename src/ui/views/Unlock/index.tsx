@@ -83,6 +83,7 @@ const Unlock = () => {
             htmlType="submit"
             type="primary"
             size="large"
+            style={{ backgroundColor: 'black' }}
           >
             {t('page.unlock.btn.unlock')}
           </Button>
