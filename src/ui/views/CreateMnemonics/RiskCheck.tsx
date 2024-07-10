@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import { Field, Checkbox } from 'ui/component';
 import { connectStore, useRabbyDispatch } from 'ui/store';
 import { Button } from 'antd';
-import LogoSVG from '@/ui/assets/logo.svg';
+import LogoSVG from '@/ui/assets/logo.png';
 
 const QuestionsWrapper = styled.div`
   .field-slot {

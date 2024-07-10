@@ -2,7 +2,7 @@ import React, { ReactNode, FunctionComponent, useEffect, useMemo } from 'react';
 import cx from 'clsx';
 import { Form, FormInstance, FormProps } from 'antd';
 import { useTranslation } from 'react-i18next';
-import { ReactComponent as SvgIconSlogon } from 'ui/assets/logo.svg';
+import { ReactComponent as SvgIconSlogon } from 'ui/assets/logo.png';
 import { AppColorsVariants } from '@/constant/theme';
 
 import StrayHeader, { StrayHeaderProps } from '../StrayHeader';

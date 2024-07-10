@@ -13,7 +13,7 @@ import { Button, message } from 'antd';
 import { copyTextToClipboard } from '@/ui/utils/clipboard';
 import { generateAliasName } from '@/utils/account';
 import { BRAND_ALIAN_TYPE_TEXT, KEYRING_CLASS, KEYRING_TYPE } from '@/constant';
-import LogoSVG from '@/ui/assets/logo.svg';
+import LogoSVG from '@/ui/assets/logo.png';
 import { ReactComponent as RcIconBack } from 'ui/assets/back-cc.svg';
 import { useTranslation } from 'react-i18next';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
