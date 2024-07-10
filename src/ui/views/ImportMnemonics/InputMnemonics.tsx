@@ -8,7 +8,7 @@ import { clearClipboard } from '@/ui/utils/clipboard';
 import { connectStore, useRabbyDispatch } from '../../store';
 import WordsMatrix from '@/ui/component/WordsMatrix';
 import { ReactComponent as RcIconMnemonicInkCC } from '@/ui/assets/walletlogo/mnemonic-ink-cc.svg';
-import LogoSVG from '@/ui/assets/logo.png';
+import LogoSVG from '@/ui/assets/logo.svg';
 import { KEYRING_CLASS } from '@/constant';
 import { useTranslation } from 'react-i18next';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
