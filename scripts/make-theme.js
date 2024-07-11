@@ -5,6 +5,7 @@ const path = require('node:path');
 const lessVarsToJs = require('less-vars-to-js');
 const tinycolor2 = require('tinycolor2');
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { themeColors, rabbyCssPrefix } = require('../src/constant/theme-colors');
 
 const ROOT = path.resolve(__dirname, '..');
