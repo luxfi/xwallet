@@ -79,7 +79,7 @@ const SearchWrapper = styled.div`
     min-width: 120px;
     border-radius: 0px 8px 8px 0px !important;
 
-    color: var(--r-neutral-title2, #fff);
+    color: var(--l-neutral-title2, #fff);
     font-size: 17px;
     font-weight: 500;
     line-height: 20px;

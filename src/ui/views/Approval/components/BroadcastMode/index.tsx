@@ -92,7 +92,7 @@ const Wrapper = styled(Card)`
         &-option {
           padding: 2px 4px;
           border-radius: 2px;
-          background: var(--r-neutral-card-2, #f2f4f7);
+          background: var(--l-neutral-card-2, #f2f4f7);
           min-width: 40px;
 
           color: var(--l-neutral-title-1, #192945);

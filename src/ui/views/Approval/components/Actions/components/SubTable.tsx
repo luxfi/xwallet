@@ -7,7 +7,7 @@ import { ReactComponent as IconTableArrow } from 'ui/assets/sign/table-arrow.svg
 
 const SubTableWrapper = styled.div`
   border-radius: 6px;
-  background: var(--r-neutral-card3, #f7fafc);
+  background: var(--l-neutral-card3, #f7fafc);
   padding: 12px;
   row-gap: 12px;
   display: flex;

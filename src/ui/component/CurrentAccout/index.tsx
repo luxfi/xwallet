@@ -38,7 +38,7 @@ const CurrentAccountWrapper = styled.div`
     color: #fff;
   }
   &.success {
-    background: var(--r-neutral-card2, rgba(255, 255, 255, 0.06));
+    background: var(--l-neutral-card2, rgba(255, 255, 255, 0.06));
     .name {
       color: var(--l-neutral-title1, #f7fafc);
     }

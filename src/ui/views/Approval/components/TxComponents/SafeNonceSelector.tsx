@@ -48,17 +48,17 @@ const Wrapper = styled(Card)`
       border: 1px solid var(--l-neutral-line, #d3d8e0);
       /* border: 0.5px solid var(--l-neutral-line, #d3d8e0); */
 
-      background: var(--r-neutral-bg-3, #f7fafc);
+      background: var(--l-neutral-bg-3, #f7fafc);
 
       .ant-input {
-        background: var(--r-neutral-bg-3, #f7fafc);
+        background: var(--l-neutral-bg-3, #f7fafc);
         color: var(--l-neutral-title-1);
       }
     }
 
     &-option-list {
       border-radius: 6px;
-      background: var(--r-neutral-bg-3, #f7fafc);
+      background: var(--l-neutral-bg-3, #f7fafc);
       margin-top: 8px;
     }
 
@@ -138,7 +138,7 @@ const Wrapper = styled(Card)`
     align-items: center;
     gap: 12px;
     border-radius: 6px;
-    background: var(--r-neutral-bg-3, #f7fafc);
+    background: var(--l-neutral-bg-3, #f7fafc);
     margin-top: 8px;
 
     &-message {

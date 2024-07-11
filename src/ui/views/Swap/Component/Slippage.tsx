@@ -31,11 +31,11 @@ export const SlippageItem = styled.div<{
   height: 28px;
   font-weight: 500;
   font-size: 12px;
-  background: var(--r-neutral-card-2, #f2f4f7);
+  background: var(--l-neutral-card-2, #f2f4f7);
   border-radius: 4px;
   &:hover {
     /* background: rgba(134, 151, 255, 0.2); */
-    background: var(--r-neutral-card-3, #f7fafc);
+    background: var(--l-neutral-card-3, #f7fafc);
   }
 `;
 

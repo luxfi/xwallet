@@ -57,7 +57,7 @@ const MatrixWrapper = styled.div.withConfig<{
     return !['rowCount'].includes(prop) && defaultValidatorFn(prop);
   },
 })`
-  background-color: var(--r-neutral-card-3, #f7fafc);
+  background-color: var(--l-neutral-card-3, #f7fafc);
   display: flex;
   flex-wrap: wrap;
 
@@ -138,7 +138,7 @@ const MatrixWrapper = styled.div.withConfig<{
     &:focus,
     &.ant-input-focused {
       border-color: var(--l-blue-default, #7084ff);
-      background-color: var(--r-neutral-bg-1, #fff);
+      background-color: var(--l-neutral-bg-1, #fff);
       box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.24);
     }
   }

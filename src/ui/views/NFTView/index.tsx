@@ -29,7 +29,7 @@ const TabsStyled = styled(Tabs)`
     text-align: center;
 
     &.ant-tabs-tab-active {
-      background: var(--r-neutral-card-1, #fff);
+      background: var(--l-neutral-card-1, #fff);
       color: var(--l-blue-default, #7084ff);
     }
 

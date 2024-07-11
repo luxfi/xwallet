@@ -11,7 +11,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   box-shadow: 0px -8px 24px 0px rgba(0, 0, 0, 0.1);
-  background: var(--r-neutral-card-1, #fff);
+  background: var(--l-neutral-card-1, #fff);
   padding: 11px 20px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -35,7 +35,7 @@ const SelectPopup = styled(Popup)`
     display: flex;
     flex-direction: column;
     border-radius: 6px;
-    background-color: var(--r-neutral-card2);
+    background-color: var(--l-neutral-card2);
 
     .option {
       display: flex;

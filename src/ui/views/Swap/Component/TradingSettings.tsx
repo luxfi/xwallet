@@ -118,7 +118,7 @@ export const TradingSettings = ({
       </div>
       <Modal
         bodyStyle={{
-          background: 'var(--r-neutral-bg-1, #3D4251)',
+          background: 'var(--l-neutral-bg-1, #3D4251)',
           height: 280,
         }}
         // center

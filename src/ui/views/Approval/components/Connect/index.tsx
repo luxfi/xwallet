@@ -45,7 +45,7 @@ const ConnectWrapper = styled.div`
     .chain-selector {
       height: 32px;
       border-radius: 8px;
-      background: var(--r-neutral-bg-1, #fff);
+      background: var(--l-neutral-bg-1, #fff);
       color: var(--l-neutral-title-1, #192945);
       font-size: 13px;
       border: 0.5px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
@@ -64,7 +64,7 @@ const ConnectWrapper = styled.div`
       }
     }
     .connect-card {
-      background: var(--r-neutral-card-2, rgba(255, 255, 255, 0.06));
+      background: var(--l-neutral-card-2, rgba(255, 255, 255, 0.06));
       border-radius: 8px;
       padding: 20px;
       display: flex;
@@ -93,9 +93,9 @@ const Footer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border-top: 1px solid var(--r-neutral-card-2, rgba(255, 255, 255, 0.06));
+  border-top: 1px solid var(--l-neutral-card-2, rgba(255, 255, 255, 0.06));
   width: 100%;
-  background: var(--r-neutral-card-1, #fff);
+  background: var(--l-neutral-card-1, #fff);
   .ant-btn {
     width: 100%;
     height: 52px;

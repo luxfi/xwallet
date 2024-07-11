@@ -27,13 +27,13 @@ const Wraper = styled.div`
 const GlobalStyle = createGlobalStyle`
   .dapp-search-card-tooltip {
     .ant-tooltip-inner {
-      background-color: var(--r-neutral-black, #000) !important;
+      background-color: var(--l-neutral-black, #000) !important;
       border-radius: 6px;
       padding: 12px !important;
     }
 
     .ant-tooltip-arrow-content {
-      background-color: var(--r-neutral-black, #000) !important;
+      background-color: var(--l-neutral-black, #000) !important;
     }
   }
 `;

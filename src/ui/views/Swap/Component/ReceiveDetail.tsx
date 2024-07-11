@@ -143,7 +143,7 @@ const ReceiveWrapper = styled.div`
     border-radius: 4px;
     border: 1px solid transparent;
     &:hover {
-      /* background: var(--r-neutral-bg-1, #fff); */
+      /* background: var(--l-neutral-bg-1, #fff); */
       border: 1px solid var(--l-neutral-line, #d3d8e0);
     }
   }

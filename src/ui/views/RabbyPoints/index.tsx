@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   background-position: top;
   background-size: 400px 243px;
   .header {
-    color: var(--r-neutral-title2, #fff);
+    color: var(--l-neutral-title2, #fff);
   }
   svg.icon.icon-back path {
     fill: white !important;

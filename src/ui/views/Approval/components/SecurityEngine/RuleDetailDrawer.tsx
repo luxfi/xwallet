@@ -129,7 +129,7 @@ const RuleDetailDrawerWrapper = styled.div`
   height: 100%;
   left: 0;
   top: 0;
-  background: var(--r-neutral-bg-1, #3d4251);
+  background: var(--l-neutral-bg-1, #3d4251);
   transform: translateX(100%);
   transition: transform 0.3s;
   padding: 20px;

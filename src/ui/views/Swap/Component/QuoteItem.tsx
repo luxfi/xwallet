@@ -43,7 +43,7 @@ const ItemWrapper = styled.div`
   display: flex;
   align-items: center;
   /* color: var(--l-neutral-title-1, #192945); */
-  background: var(--r-neutral-card-1, #fff);
+  background: var(--l-neutral-card-1, #fff);
 
   border-radius: 6px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);

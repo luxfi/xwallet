@@ -76,7 +76,7 @@ const Wraper = styled.div`
     }
   }
   .ant-input[disabled] {
-    background: var(--r-neutral-card2, #f2f4f7);
+    background: var(--l-neutral-card2, #f2f4f7);
     border-color: transparent;
     &:hover {
       border-color: transparent;
@@ -98,7 +98,7 @@ const Wraper = styled.div`
 const Footer = styled.div`
   height: 84px;
   border-top: 0.5px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
-  background: var(--r-neutral-card-1, rgba(255, 255, 255, 0.06));
+  background: var(--l-neutral-card-1, rgba(255, 255, 255, 0.06));
   padding: 16px 20px;
   display: flex;
   justify-content: space-between;

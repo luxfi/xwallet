@@ -145,7 +145,7 @@ const RuleDrawerWrapper = styled.div`
   }
   &.proceed {
     .main {
-      background: var(--r-neutral-card-2, #f5f6fa);
+      background: var(--l-neutral-card-2, #f5f6fa);
       .level-text {
         color: var(--l-neutral-foot, #babec5);
       }

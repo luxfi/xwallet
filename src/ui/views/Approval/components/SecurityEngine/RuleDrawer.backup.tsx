@@ -211,12 +211,12 @@ const RuleDrawerWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--r-neutral-card-2, #f5f6fa);
+    background: var(--l-neutral-card-2, #f5f6fa);
   }
   &.proceed {
-    background: var(--r-neutral-card-2, #f5f6fa);
+    background: var(--l-neutral-card-2, #f5f6fa);
     .rule-threshold {
-      background: var(--r-neutral-card-3, #f7fafc);
+      background: var(--l-neutral-card-3, #f7fafc);
       .level-text {
         color: var(--l-neutral-foot, #babec5);
       }
@@ -243,7 +243,7 @@ const RuleDrawerWrapper = styled.div`
 `;
 
 const RuleFooter = styled.div`
-  background: var(--r-neutral-card-2, rgba(255, 255, 255, 0.06));
+  background: var(--l-neutral-card-2, rgba(255, 255, 255, 0.06));
   border-radius: 6px;
   .item {
     display: flex;

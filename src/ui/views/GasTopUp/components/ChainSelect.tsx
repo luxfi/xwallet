@@ -13,7 +13,7 @@ import { SelectChainItemProps } from '@/ui/component/ChainSelector/components/Se
 const allMainnetChainEnums = getChainList('mainnet').map((item) => item.enum);
 
 export const ChainWrapper = styled.div`
-  background: var(--r-neutral-card-2);
+  background: var(--l-neutral-card-2);
   border-radius: 4px;
   padding: 16px 12px;
   display: flex;

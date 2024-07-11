@@ -386,7 +386,7 @@ const ClaimSuccessWrapper = styled.div`
   }
   .title,
   .desc {
-    color: var(--r-neutral-title2, #fff);
+    color: var(--l-neutral-title2, #fff);
     text-align: center;
     font-size: 24px;
     font-style: normal;
@@ -406,7 +406,7 @@ const ClaimSuccessWrapper = styled.div`
 
   .account {
     margin-bottom: 54px;
-    background: var(--r-neutral-card2, rgba(255, 255, 255, 0.06));
+    background: var(--l-neutral-card2, rgba(255, 255, 255, 0.06));
   }
   .btn {
     width: 252px;

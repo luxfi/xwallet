@@ -35,10 +35,10 @@ export const DIV = styled.div`
         }
       }
       .ant-tooltip-arrow-content {
-        background-color: var(--r-neutral-bg-1, #fff);
+        background-color: var(--l-neutral-bg-1, #fff);
       }
       .ant-tooltip-inner {
-        background-color: var(--r-neutral-bg-1, #fff);
+        background-color: var(--l-neutral-bg-1, #fff);
         padding: 0;
         font-size: 13px;
         font-weight: 500;

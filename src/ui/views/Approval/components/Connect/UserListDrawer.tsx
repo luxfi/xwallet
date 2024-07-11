@@ -20,7 +20,7 @@ const UserListDrawerWrapper = styled.div`
 `;
 
 const Footer = styled.div`
-  background: var(--r-neutral-card-2, #f2f4f7);
+  background: var(--l-neutral-card-2, #f2f4f7);
   border-radius: 6px;
   .item {
     display: flex;

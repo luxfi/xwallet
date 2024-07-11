@@ -48,7 +48,7 @@ const FieldList = styled.div`
   margin-bottom: 20px;
 
   .field {
-    background: var(--r-neutral-card-2, rgba(255, 255, 255, 0.06));
+    background: var(--l-neutral-card-2, rgba(255, 255, 255, 0.06));
     border-radius: 6px;
     padding: 16px 12px;
 

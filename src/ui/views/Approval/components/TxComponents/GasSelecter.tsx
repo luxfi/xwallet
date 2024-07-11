@@ -145,7 +145,7 @@ const CardBody = styled.div<{
   .card {
     width: 76px;
     height: 52px;
-    background: var(--r-neutral-card-3, #f7fafc);
+    background: var(--l-neutral-card-3, #f7fafc);
     border-radius: 4px;
     display: flex;
     flex-direction: column;

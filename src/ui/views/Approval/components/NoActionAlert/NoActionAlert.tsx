@@ -10,7 +10,7 @@ import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
 const NoActionAlertStyled = styled.div`
   display: flex;
   flex-direction: column;
-  background: var(--r-neutral-card-1);
+  background: var(--l-neutral-card-1);
   border-radius: 6px;
   padding: 15px;
   font-weight: 500;

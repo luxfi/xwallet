@@ -27,7 +27,7 @@ const Wrapper = styled.div<{
 }>`
   min-height: 100vh;
   height: 100vh;
-  background: var(--r-neutral-bg2, #1c1f2b);
+  background: var(--l-neutral-bg2, #1c1f2b);
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -59,7 +59,7 @@ const Wrapper = styled.div<{
     padding: 0 20px;
   }
   .title {
-    color: var(--r-neutral-title2, #fff);
+    color: var(--l-neutral-title2, #fff);
     text-align: center;
     font-size: 17px;
     font-weight: 500;

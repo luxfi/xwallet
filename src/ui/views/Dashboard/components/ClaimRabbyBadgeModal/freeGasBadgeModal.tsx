@@ -171,7 +171,7 @@ const Wrapper = styled.div<{
       margin-top: 12px;
       position: absolute;
       border-radius: 4px;
-      background: var(--r-neutral-card2, #f2f4f7);
+      background: var(--l-neutral-card2, #f2f4f7);
       height: 72px;
       padding: 8px 12px;
       padding-left: 8px;
@@ -200,7 +200,7 @@ const Wrapper = styled.div<{
     font-weight: 500;
     border-radius: 6px;
     background: #109d63;
-    color: var(--r-neutral-title2, #fff);
+    color: var(--l-neutral-title2, #fff);
     border-color: transparent;
     transition: none !important;
     &.ant-btn[disabled],
@@ -212,7 +212,7 @@ const Wrapper = styled.div<{
     &.ant-btn:hover,
     &.ant-btn:focus,
     &.ant-btn:active {
-      color: var(--r-neutral-title2, #fff);
+      color: var(--l-neutral-title2, #fff);
       background: #109d63;
       border-color: transparent;
       border-color: transparent;
@@ -448,7 +448,7 @@ const ClaimSuccessWrapper = styled.div`
 
   .account {
     margin-bottom: 54px;
-    background: var(--r-neutral-card2, rgba(255, 255, 255, 0.06));
+    background: var(--l-neutral-card2, rgba(255, 255, 255, 0.06));
   }
   .btn {
     width: 252px;

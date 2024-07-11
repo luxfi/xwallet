@@ -57,7 +57,7 @@ const AddAssetWrapper = styled.div`
     padding: 20px;
     text-align: center;
     background-color: var(--l-blue-default, #7084ff);
-    color: var(--r-neutral-title2, #fff);
+    color: var(--l-neutral-title2, #fff);
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 32px;
@@ -85,7 +85,7 @@ const AddAssetWrapper = styled.div`
       }
       .token-address {
         padding: 5px 8px;
-        background-color: var(--r-neutral-card2);
+        background-color: var(--l-neutral-card2);
         color: var(--l-neutral-foot);
         font-size: 12px;
         gap: 6px;
@@ -165,7 +165,7 @@ const NoTokenWrapper = styled.div`
   .footer {
     display: flex;
     justify-content: center;
-    background-color: var(--r-neutral-bg-1, #fff);
+    background-color: var(--l-neutral-bg-1, #fff);
     border-top: 0.5px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
   }
 `;

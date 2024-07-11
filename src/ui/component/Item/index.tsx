@@ -18,7 +18,7 @@ const ItemWrapper = styled.div<{
   hoverBorder: boolean;
   px: number | string;
   py: number | string;
-  // default var(--r-neutral-card-1, #fff);
+  // default var(--l-neutral-card-1, #fff);
   bgColor: string;
   // default var(--l-blue-light-1, #eef1ff);
   hoverBgColor: string;
@@ -80,7 +80,7 @@ export const Item = (props: PropsWithChildren<ItemProps>) => {
     hoverBorder = true,
     px = 16,
     py = 15,
-    bgColor = 'var(--r-neutral-card-1, #fff)',
+    bgColor = 'var(--l-neutral-card-1, #fff)',
     hoverBgColor = 'var(--l-blue-light-2, rgba(222, 227, 252, 1))',
     className = '',
     leftIconClassName = '',

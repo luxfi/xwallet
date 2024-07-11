@@ -49,7 +49,7 @@ const PoolItem = ({ item }: { item: AbstractPortfolio }) => {
 };
 
 const ProtocolItemWrapper = styled.div`
-  background: var(--r-neutral-card-2, #f2f4f7);
+  background: var(--l-neutral-card-2, #f2f4f7);
   margin-bottom: 12px;
   border-radius: 6px;
 

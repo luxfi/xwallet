@@ -33,7 +33,7 @@ const Wraper = styled.div`
     }
   }
   .ant-input[disabled] {
-    background: var(--r-neutral-card2, #f2f4f7);
+    background: var(--l-neutral-card2, #f2f4f7);
     border-color: transparent;
     /* color: var(--l-neutral-foot, #6a7587); */
     &:hover {

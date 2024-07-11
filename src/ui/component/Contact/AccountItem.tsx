@@ -18,7 +18,7 @@ import { pickKeyringThemeIcon } from '@/utils/account';
 
 const AccountItemWrapper = styled.div`
   padding: 10px 16px;
-  background: var(--r-neutral-card-2, rgba(255, 255, 255, 0.06));
+  background: var(--l-neutral-card-2, rgba(255, 255, 255, 0.06));
   border-radius: 6px;
   margin-bottom: 8px;
   display: flex;
@@ -57,7 +57,7 @@ const AccountItemWrapper = styled.div`
   }
   &.disabled {
     cursor: not-allowed;
-    background: var(--r-neutral-card-2, rgba(255, 255, 255, 0.06));
+    background: var(--l-neutral-card-2, rgba(255, 255, 255, 0.06));
     &:hover {
       border-color: transparent;
     }
