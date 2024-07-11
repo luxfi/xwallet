@@ -10,7 +10,7 @@ import { formatAmount } from 'ui/utils/number';
 import { Chain } from 'background/service/openapi';
 import SecurityLevelTagNoText from '../SecurityEngine/SecurityLevelTagNoText';
 import ViewMore from './components/ViewMore';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { SecurityListItem } from './components/SecurityListItem';
 import { isSameAddress } from '@/ui/utils';
 import { ProtocolListItem } from './components/ProtocolListItem';
@@ -48,13 +48,11 @@ const UnWrapToken = ({
 }) => {
   const { payToken, receiveToken, receiver } = data!;
 
-  const { rules, processedRules, contractWhitelist } = useRabbySelector(
-    (s) => ({
-      contractWhitelist: s.securityEngine.userData.contractWhitelist,
-      rules: s.securityEngine.rules,
-      processedRules: s.securityEngine.currentTx.processedRules,
-    })
-  );
+  const { rules, processedRules, contractWhitelist } = useLuxSelector((s) => ({
+    contractWhitelist: s.securityEngine.userData.contractWhitelist,
+    rules: s.securityEngine.rules,
+    processedRules: s.securityEngine.currentTx.processedRules,
+  }));
 
   const dispatch = useLuxDispatch();
   const { t } = useTranslation();

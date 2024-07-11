@@ -1,6 +1,6 @@
 import React from 'react';
 import { TokenButton } from './components/TokenButton';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import useSortToken from '@/ui/hooks/useSortTokens';
 import { useTranslation } from 'react-i18next';
 
@@ -13,7 +13,7 @@ export const CustomizedButton: React.FC<Props> = ({
   onClickButton,
   isTestnet,
 }) => {
-  const { customize } = useRabbySelector((store) =>
+  const { customize } = useLuxSelector((store) =>
     isTestnet ? store.account.testnetTokens : store.account.tokens
   );
   const list = useSortToken(customize);

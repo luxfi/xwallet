@@ -13,7 +13,7 @@ import SortHat from './SortHat';
 import eventBus from '@/eventBus';
 import { EVENTS } from '@/constant';
 import { useIdleTimer } from 'react-idle-timer';
-import { useLuxDispatch, useRabbySelector } from '../store';
+import { useLuxDispatch, useLuxSelector } from '../store';
 import { useMount } from 'react-use';
 import { useMemoizedFn } from 'ahooks';
 import { useThemeModeOnMain } from '../hooks/usePreference';
@@ -23,9 +23,7 @@ const useAutoLock = () => {
   const history = useHistory();
   const location = useLocation();
   const wallet = useWallet();
-  const autoLockTime = useRabbySelector(
-    (state) => state.preference.autoLockTime
-  );
+  const autoLockTime = useLuxSelector((state) => state.preference.autoLockTime);
 
   const dispatch = useLuxDispatch();
 

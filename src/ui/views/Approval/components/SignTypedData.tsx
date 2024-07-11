@@ -22,7 +22,7 @@ import { WaitingSignMessageComponent } from './map';
 import { Account } from '@/background/service/preference';
 import { adjustV } from '@/ui/utils/gnosis';
 import { FooterBar } from './FooterBar/FooterBar';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { parseSignTypedDataMessage } from './SignTypedDataExplain/parseSignTypedDataMessage';
 import { useSecurityEngine } from 'ui/utils/securityEngine';
 import RuleDrawer from './SecurityEngine/RuleDrawer';
@@ -77,7 +77,7 @@ const SignTypedData = ({ params }: { params: SignTypedDataProps }) => {
   const [engineResults, setEngineResults] = useState<Result[]>([]);
   const hasConnectedLedgerHID = useLedgerDeviceConnected();
   const dispatch = useLuxDispatch();
-  const { userData, rules, currentTx, tokenDetail } = useRabbySelector((s) => ({
+  const { userData, rules, currentTx, tokenDetail } = useLuxSelector((s) => ({
     userData: s.securityEngine.userData,
     rules: s.securityEngine.rules,
     currentTx: s.securityEngine.currentTx,

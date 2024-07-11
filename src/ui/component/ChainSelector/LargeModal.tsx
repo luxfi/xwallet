@@ -7,7 +7,7 @@ import React, {
   useState,
 } from 'react';
 
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { Chain } from 'background/service/openapi';
 import clsx from 'clsx';
 import { CHAINS_ENUM } from 'consts';
@@ -53,7 +53,7 @@ const useChainSeletorList = ({
   netTabKey?: NetSwitchTabsKey;
 }) => {
   const [search, setSearch] = useState('');
-  const { pinned, chainBalances } = useRabbySelector((state) => {
+  const { pinned, chainBalances } = useLuxSelector((state) => {
     return {
       pinned: (state.preference.pinnedChain?.filter((item) =>
         findChainByEnum(item)

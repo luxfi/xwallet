@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { TokenSearchInput } from './TokenSearchInput';
 import AddTokenEntry, { AddTokenEntryInst } from './AddTokenEntry';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { HomeTokenList } from './TokenList';
 import useSortTokens from 'ui/hooks/useSortTokens';
 import useSearchToken from '@/ui/hooks/useSearchToken';
@@ -34,7 +34,7 @@ export const AssetListContainer: React.FC<Props> = ({
     setSearch(value);
   }, []);
   const [isFocus, setIsFocus] = React.useState<boolean>(false);
-  const { currentAccount } = useRabbySelector((s) => ({
+  const { currentAccount } = useLuxSelector((s) => ({
     currentAccount: s.account.currentAccount,
   }));
   const {

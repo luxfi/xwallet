@@ -63,7 +63,7 @@ import {
 } from '../components/Actions/utils';
 import Actions from './Actions';
 import { useSecurityEngine } from 'ui/utils/securityEngine';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import RuleDrawer from './SecurityEngine/RuleDrawer';
 import {
   Level,
@@ -733,7 +733,7 @@ const SignTx = ({ params, origin }: SignTxProps) => {
   const [support1559, setSupport1559] = useState(chain.eip['1559']);
   const [isLedger, setIsLedger] = useState(false);
   const hasConnectedLedgerHID = useLedgerDeviceConnected();
-  const { userData, rules, currentTx, tokenDetail } = useRabbySelector((s) => ({
+  const { userData, rules, currentTx, tokenDetail } = useLuxSelector((s) => ({
     userData: s.securityEngine.userData,
     rules: s.securityEngine.rules,
     currentTx: s.securityEngine.currentTx,

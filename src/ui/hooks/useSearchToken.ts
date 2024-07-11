@@ -6,7 +6,7 @@ import {
   encodeProjectTokenId,
 } from '../utils/portfolio/project';
 import { AbstractPortfolioToken } from '../utils/portfolio/types';
-import { useLuxDispatch, useRabbySelector } from 'ui/store';
+import { useLuxDispatch, useLuxSelector } from 'ui/store';
 import { isSameAddress } from '../utils';
 import { requestOpenApiWithChainId } from '../utils/openapi';
 import { findChainByServerID } from '@/utils/chain';
@@ -20,7 +20,7 @@ function isSearchInputWeb3Address(q: string) {
 }
 
 export function useIsTokenAddedLocally(token?: TokenItem | null) {
-  const { customize, blocked } = useRabbySelector(
+  const { customize, blocked } = useLuxSelector(
     (state) => state.account.tokens
   );
 
@@ -83,7 +83,7 @@ export function varyTokensByLocal<
 export function useVaryTokensByLocal<
   T extends TokenItem[] | AbstractPortfolioToken[]
 >(tokenList: T) {
-  const { customize, blocked } = useRabbySelector(
+  const { customize, blocked } = useLuxSelector(
     (state) => state.account.tokens
   );
 
@@ -160,7 +160,7 @@ export function useFindCustomToken(input?: {
     stateRef: skRef,
   } = useRefState('');
   const debouncedSearchKeyword = useDebounceValue(searchKeyword, 150);
-  const { customize, blocked } = useRabbySelector(
+  const { customize, blocked } = useLuxSelector(
     (state) => state.account.tokens
   );
 
@@ -284,7 +284,7 @@ const useSearchToken = (
   const [isLoading, setIsLoading] = useState(false);
   const addressRef = useRef(address);
   const kwRef = useRef('');
-  const { customize, blocked } = useRabbySelector(
+  const { customize, blocked } = useLuxSelector(
     (state) => state.account.tokens
   );
 

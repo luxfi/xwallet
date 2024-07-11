@@ -21,7 +21,7 @@ import ArrowNextSVG from '@/ui/assets/dashboard/arrow-next.svg';
 import { ReactComponent as UpdateSVG } from '@/ui/assets/dashboard/update.svg';
 import { ReactComponent as WarningSVG } from '@/ui/assets/dashboard/warning-1.svg';
 import { useDebounce } from 'react-use';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { BalanceLabel } from './BalanceLabel';
 import { useTranslation } from 'react-i18next';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
@@ -300,7 +300,7 @@ const BalanceView = ({
   const currentIsLoss =
     currentHover && curvePoint ? curvePoint.isLoss : curveChartData?.isLoss;
   const currentChangeValue = currentHover ? curvePoint?.change : null;
-  const { hiddenBalance } = useRabbySelector((state) => state.preference);
+  const { hiddenBalance } = useLuxSelector((state) => state.preference);
 
   const shouldShowRefreshButton =
     isManualRefreshing || balanceLoading || curveLoading;

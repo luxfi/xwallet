@@ -19,7 +19,7 @@ export type { RabbyRootState };
 export { connect as connectStore };
 
 export const useLuxDispatch = () => useDispatch<RabbyDispatch>();
-export const useRabbySelector: TypedUseSelectorHook<RabbyRootState> = useSelector;
+export const useLuxSelector: TypedUseSelectorHook<RabbyRootState> = useSelector;
 
 export function useRabbyGetter<Selected = unknown>(
   selector: (

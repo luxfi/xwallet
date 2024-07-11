@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import BigNumber from 'bignumber.js';
 import { Chain } from 'background/service/openapi';
 import { Result } from '@rabby-wallet/rabby-security-engine';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { isSameAddress } from '@/ui/utils';
 import { ProtocolListItem } from './Actions/components/ProtocolListItem';
 import { SecurityListItem } from './Actions/components/SecurityListItem';
@@ -38,7 +38,7 @@ export const CommonAction = ({
   const { t } = useTranslation();
   const actionData = data!;
   const dispatch = useLuxDispatch();
-  const { contractWhitelist } = useRabbySelector((state) => {
+  const { contractWhitelist } = useLuxSelector((state) => {
     return state.securityEngine.userData;
   });
 

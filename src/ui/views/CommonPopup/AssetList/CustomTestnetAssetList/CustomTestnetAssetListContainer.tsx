@@ -1,4 +1,4 @@
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { isSameAddress, useWallet } from '@/ui/utils';
 import { useRequest } from 'ahooks';
 import { Input } from 'antd';
@@ -38,7 +38,7 @@ export const CustomTestnetAssetListContainer: React.FC<Props> = ({
   const handleOnSearch = React.useCallback((value: string) => {
     setSearch(value);
   }, []);
-  const { currentAccount } = useRabbySelector((s) => ({
+  const { currentAccount } = useLuxSelector((s) => ({
     currentAccount: s.account.currentAccount,
   }));
   const [isShowAddModal, setIsShowAddModal] = React.useState<boolean>(false);

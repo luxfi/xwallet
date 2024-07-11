@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Button, message } from 'antd';
 import styled from 'styled-components';
-import { useLuxDispatch, useRabbySelector, connectStore } from 'ui/store';
+import { useLuxDispatch, useLuxSelector, connectStore } from 'ui/store';
 import { IDisplayedAccountWithBalance } from 'ui/models/accountToDisplay';
 import { Popup } from 'ui/component';
 import AuthenticationModalPromise from 'ui/component/AuthenticationModal';
@@ -43,14 +43,12 @@ const ListModal = ({ visible, onOk, onCancel }: ListModalProps) => {
   const wallet = useWallet();
   const { t } = useTranslation();
 
-  const { accountsList, whitelist, whitelistEnabled } = useRabbySelector(
-    (s) => ({
-      currentAccount: s.account.currentAccount,
-      accountsList: s.accountToDisplay.accountsList,
-      whitelist: s.whitelist.whitelist,
-      whitelistEnabled: s.whitelist.enabled,
-    })
-  );
+  const { accountsList, whitelist, whitelistEnabled } = useLuxSelector((s) => ({
+    currentAccount: s.account.currentAccount,
+    accountsList: s.accountToDisplay.accountsList,
+    whitelist: s.whitelist.whitelist,
+    whitelistEnabled: s.whitelist.enabled,
+  }));
 
   const sortedAccountsList = useMemo(() => {
     if (!whitelistEnabled) {

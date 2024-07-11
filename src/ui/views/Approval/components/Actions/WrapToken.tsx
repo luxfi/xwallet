@@ -8,7 +8,7 @@ import * as Values from './components/Values';
 import { ParsedActionData, WrapTokenRequireData } from './utils';
 import { formatAmount } from 'ui/utils/number';
 import { Chain } from 'background/service/openapi';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import ViewMore from './components/ViewMore';
 import SecurityLevelTagNoText from '../SecurityEngine/SecurityLevelTagNoText';
 import { SecurityListItem } from './components/SecurityListItem';
@@ -48,13 +48,11 @@ const WrapToken = ({
 }) => {
   const { payToken, receiveToken, receiver } = data!;
 
-  const { rules, processedRules, contractWhitelist } = useRabbySelector(
-    (s) => ({
-      contractWhitelist: s.securityEngine.userData.contractWhitelist,
-      rules: s.securityEngine.rules,
-      processedRules: s.securityEngine.currentTx.processedRules,
-    })
-  );
+  const { rules, processedRules, contractWhitelist } = useLuxSelector((s) => ({
+    contractWhitelist: s.securityEngine.userData.contractWhitelist,
+    rules: s.securityEngine.rules,
+    processedRules: s.securityEngine.currentTx.processedRules,
+  }));
   const dispatch = useLuxDispatch();
   const { t } = useTranslation();
 

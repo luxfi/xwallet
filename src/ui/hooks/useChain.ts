@@ -2,7 +2,7 @@ import { useState, useRef, useMemo, useCallback, useEffect } from 'react';
 
 import { findChainByEnum, varyAndSortChainItems } from '@/utils/chain';
 import { CHAINS_ENUM, Chain } from '@debank/common';
-import { useLuxDispatch, useRabbySelector } from '../store';
+import { useLuxDispatch, useLuxSelector } from '../store';
 
 export type ChainSelectorPurpose =
   | 'dashboard'
@@ -23,7 +23,7 @@ export function useAsyncInitializeChainList({
   supportChains?: Chain['enum'][];
   onChainInitializedAsync?: (firstEnum: CHAINS_ENUM) => void;
 }) {
-  const { pinned, matteredChainBalances } = useRabbySelector((state) => {
+  const { pinned, matteredChainBalances } = useLuxSelector((state) => {
     return {
       pinned: (state.preference.pinnedChain?.filter((item) =>
         findChainByEnum(item)

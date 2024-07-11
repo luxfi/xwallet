@@ -1,14 +1,14 @@
 import { useInViewport, useInfiniteScroll } from 'ahooks';
 import React, { useEffect, useRef, useState } from 'react';
 import { useQuoteMethods } from './quote';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { useAsync } from 'react-use';
 import { uniqBy } from 'lodash';
 import { SwapItem } from '@rabby-wallet/rabby-api/dist/types';
 
 export const useSwapHistory = () => {
   const { getSwapList } = useQuoteMethods();
-  const addr = useRabbySelector(
+  const addr = useLuxSelector(
     (state) => state.account.currentAccount?.address || ''
   );
 

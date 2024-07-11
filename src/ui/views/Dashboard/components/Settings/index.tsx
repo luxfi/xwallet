@@ -20,7 +20,7 @@ import { ReactComponent as RcIconArrowCCRight } from 'ui/assets/dashboard/settin
 
 import IconSettingsDeBank from 'ui/assets/dashboard/settings/debank.svg';
 
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { ReactComponent as RcIconAddresses } from 'ui/assets/dashboard/addresses.svg';
 import { ReactComponent as RcIconCustomRPC } from 'ui/assets/dashboard/custom-rpc.svg';
 import { ReactComponent as RcIconCustomTestnet } from 'ui/assets/dashboard/icon-custom-testnet.svg';
@@ -331,7 +331,7 @@ const AutoLockModal = ({
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const AUTO_LOCK_OPTIONS = useAutoLockOptions();
-  const autoLockTime = useRabbySelector(
+  const autoLockTime = useLuxSelector(
     (state) => state.preference.autoLockTime || 0
   );
   const dispatch = useLuxDispatch();
@@ -406,7 +406,7 @@ const SwitchLangModal = ({
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
-  const locale = useRabbySelector((state) => state.preference.locale);
+  const locale = useLuxSelector((state) => state.preference.locale);
   const dispatch = useLuxDispatch();
 
   const handleCancel = () => {
@@ -546,18 +546,18 @@ const SettingsInner = ({
   const [connectedDappsVisible, setConnectedDappsVisible] = useState(false);
   const [feedbackVisible, setFeedbackVisible] = useState(false);
 
-  const autoLockTime = useRabbySelector(
+  const autoLockTime = useLuxSelector(
     (state) => state.preference.autoLockTime || 0
   );
-  const locale = useRabbySelector((state) => state.preference.locale);
+  const locale = useLuxSelector((state) => state.preference.locale);
 
   const AUTO_LOCK_OPTIONS = useAutoLockOptions();
-  const isShowTestnet = useRabbySelector(
+  const isShowTestnet = useLuxSelector(
     (state) => state.preference.isShowTestnet
   );
-  const themeMode = useRabbySelector((state) => state.preference.themeMode);
+  const themeMode = useLuxSelector((state) => state.preference.themeMode);
 
-  const openapiStore = useRabbySelector((state) => state.openapi);
+  const openapiStore = useLuxSelector((state) => state.openapi);
 
   const dispatch = useLuxDispatch();
 

@@ -1,11 +1,11 @@
 import { useCallback } from 'react';
-import { useLuxDispatch, useRabbySelector } from '../store';
+import { useLuxDispatch, useLuxSelector } from '../store';
 import { KEYRING_CLASS } from '@/constant';
 import { isSameAddress } from '../utils';
 
 export function useContactAccounts() {
   const dispatch = useLuxDispatch();
-  const { accountsList, contactsByAddr } = useRabbySelector((state) => {
+  const { accountsList, contactsByAddr } = useLuxSelector((state) => {
     return {
       accountsList: state.accountToDisplay.accountsList,
       contactsByAddr: state.contactBook.contactsByAddr,

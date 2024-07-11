@@ -17,7 +17,7 @@ import {
   WALLET_BRAND_CONTENT,
 } from '@/constant';
 import { AddressViewer } from '@/ui/component';
-import { connectStore, useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { connectStore, useLuxDispatch, useLuxSelector } from '@/ui/store';
 import useIsMountedRef from '@/ui/hooks/useMountedRef';
 import { useTranslation } from 'react-i18next';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
@@ -38,7 +38,7 @@ function AddressRow({
   onCopy?: (account: Account) => void;
 }) {
   const wallet = useWallet();
-  const { highlightedAddresses } = useRabbySelector((s) => ({
+  const { highlightedAddresses } = useLuxSelector((s) => ({
     highlightedAddresses: s.addressManagement.highlightedAddresses,
   }));
   const dispatch = useLuxDispatch();

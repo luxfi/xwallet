@@ -13,7 +13,7 @@ import { ReactComponent as IconTrophy } from 'ui/assets/rabby-points/trophy.svg'
 import { ReactComponent as IconInfoCC } from 'ui/assets/info-cc.svg';
 
 import { formatTokenAmount } from '@/ui/utils';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import dayjs from 'dayjs';
 import { ellipsisAddress } from '@/ui/utils/address';
 import { ClaimUserAvatar } from './ClaimUserAvatar';
@@ -173,7 +173,7 @@ const ClaimPoints = ({
   const { t } = useTranslation();
   const [invitedCode, setInvitedCode] = useState('');
   const [loadingNum, setLoadingNum] = useState(0);
-  const account = useRabbySelector((state) => state.account.currentAccount);
+  const account = useLuxSelector((state) => state.account.currentAccount);
 
   const avatar = logo || '';
   const name = web3Id || ellipsisAddress(account?.address || '');

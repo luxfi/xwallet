@@ -10,10 +10,10 @@
  * to the store by `connectStore` API in ./store.ts
  */
 import { useEffect, useState } from 'react';
-import { useLuxDispatch, useRabbyGetter, useRabbySelector } from './store';
+import { useLuxDispatch, useRabbyGetter, useLuxSelector } from './store';
 
 export function useAccount() {
-  const account = useRabbySelector((state) => state.account.currentAccount);
+  const account = useLuxSelector((state) => state.account.currentAccount);
   const dispatch = useLuxDispatch();
   const setAccount = dispatch.account.setCurrentAccount;
   return [account, setAccount] as const;

@@ -3,7 +3,7 @@ import React, { useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 import { Switch } from 'antd';
-import { useLuxDispatch, useRabbySelector, connectStore } from 'ui/store';
+import { useLuxDispatch, useLuxSelector, connectStore } from 'ui/store';
 import AuthenticationModalPromise from 'ui/component/AuthenticationModal';
 import { PageHeader } from 'ui/component';
 import { isSameAddress, useAddressSource, useWallet } from 'ui/utils';
@@ -16,7 +16,7 @@ const AddressDetail = () => {
   const { t } = useTranslation();
   const { search } = useLocation();
   const dispatch = useLuxDispatch();
-  const { whitelist } = useRabbySelector((s) => ({
+  const { whitelist } = useLuxSelector((s) => ({
     whitelist: s.whitelist.whitelist,
   }));
   const wallet = useWallet();

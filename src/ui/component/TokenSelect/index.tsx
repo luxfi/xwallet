@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import LessPalette, { ellipsis } from '@/ui/style/var-defs';
 import { ReactComponent as SvgIconArrowDownTriangle } from '@/ui/assets/swap/arrow-caret-down2.svg';
 import { useTokens } from '@/ui/utils/portfolio/token';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { uniqBy } from 'lodash';
 import { SWAP_SUPPORT_CHAINS } from '@/constant';
 import useSearchToken from '@/ui/hooks/useSearchToken';
@@ -97,7 +97,7 @@ const TokenSelect = ({
   });
   const [tokenSelectorVisible, setTokenSelectorVisible] = useState(false);
   const [updateNonce, setUpdateNonce] = useState(0);
-  const currentAccount = useRabbySelector(
+  const currentAccount = useLuxSelector(
     (state) => state.account.currentAccount
   );
   const wallet = useWallet();

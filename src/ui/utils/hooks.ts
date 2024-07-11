@@ -7,7 +7,7 @@ import { getUiType } from './index';
 import { KEYRING_TYPE_TEXT, WALLET_BRAND_CONTENT } from '@/constant';
 import { LedgerHDPathType, LedgerHDPathTypeLabel } from '@/ui/utils/ledger';
 import { useApprovalPopup } from './approval-popup';
-import { useLuxDispatch, useRabbySelector } from '../store';
+import { useLuxDispatch, useLuxSelector } from '../store';
 import { useTranslation } from 'react-i18next';
 
 export const useApproval = () => {
@@ -332,7 +332,7 @@ export const useAccountInfo = (
     type === KEYRING_CLASS.HARDWARE.ONEKEY;
   const isMnemonics = type === KEYRING_CLASS.MNEMONIC;
   const isKeystone = brand === 'Keystone';
-  const mnemonicAccounts = useRabbySelector((state) => state.account);
+  const mnemonicAccounts = useLuxSelector((state) => state.account);
   const fetAccountInfo = useCallback(() => {
     wallet.requestKeyring(type, 'getAccountInfo', null, address).then((res) => {
       setAccount({

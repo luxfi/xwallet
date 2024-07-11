@@ -1,5 +1,5 @@
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { findChain, findChainByEnum } from '@/utils/chain';
 import { matomoRequestEvent } from '@/utils/matomo-request';
 import { CHAINS_ENUM } from '@debank/common';
@@ -192,7 +192,7 @@ const RPCItemComp = ({
 
 const CustomRPC = () => {
   const { t } = useTranslation();
-  const { customRPC } = useRabbySelector((s) => ({
+  const { customRPC } = useLuxSelector((s) => ({
     ...s.customRPC,
   }));
   const dispatch = useLuxDispatch();

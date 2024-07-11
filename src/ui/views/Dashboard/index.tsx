@@ -30,7 +30,7 @@ import {
   connectStore,
   useLuxDispatch,
   useRabbyGetter,
-  useRabbySelector,
+  useLuxSelector,
 } from 'ui/store';
 import { useWallet } from 'ui/utils';
 import {
@@ -59,17 +59,17 @@ const Dashboard = () => {
   const history = useHistory();
   const wallet = useWallet();
   const dispatch = useLuxDispatch();
-  const { alianName, currentAccount, accountsList } = useRabbySelector((s) => ({
+  const { alianName, currentAccount, accountsList } = useLuxSelector((s) => ({
     alianName: s.account.alianName,
     currentAccount: s.account.currentAccount,
     accountsList: s.accountToDisplay.accountsList,
   }));
 
-  const { pendingTransactionCount: pendingTxCount } = useRabbySelector((s) => ({
+  const { pendingTransactionCount: pendingTxCount } = useLuxSelector((s) => ({
     ...s.transactions,
   }));
 
-  const { firstNotice, updateContent, version } = useRabbySelector((s) => ({
+  const { firstNotice, updateContent, version } = useLuxSelector((s) => ({
     ...s.appVersion,
   }));
 
@@ -87,9 +87,7 @@ const Dashboard = () => {
   const [pendingApprovalCount, setPendingApprovalCount] = useState(0);
 
   const isGnosis = useRabbyGetter((s) => s.chains.isCurrentAccountGnosis);
-  const gnosisPendingCount = useRabbySelector(
-    (s) => s.chains.gnosisPendingCount
-  );
+  const gnosisPendingCount = useLuxSelector((s) => s.chains.gnosisPendingCount);
 
   const [dashboardReload, setDashboardReload] = useState(false);
   const getCurrentAccount = async () => {

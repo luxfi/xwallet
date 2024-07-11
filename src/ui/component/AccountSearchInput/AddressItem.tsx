@@ -11,7 +11,7 @@ import React, {
 
 import { AddressViewer } from 'ui/component';
 import { isSameAddress, splitNumberByStep, useAlias } from 'ui/utils';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 
 import { ReactComponent as RcIconWhitelist } from 'ui/assets/address/whitelist.svg';
 import { CopyChecked } from '@/ui/component/CopyChecked';
@@ -46,7 +46,7 @@ const AddressItem = memo(
     onClick,
     onConfirm,
   }: AddressItemProps) => {
-    const { whitelistEnable, whiteList } = useRabbySelector((s) => ({
+    const { whitelistEnable, whiteList } = useLuxSelector((s) => ({
       whitelistEnable: s.whitelist.enabled,
       whiteList: s.whitelist.whitelist,
     }));

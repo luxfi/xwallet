@@ -10,7 +10,7 @@ import { useAsyncFn } from 'react-use';
 import { VariableSizeGrid } from 'react-window';
 import PQueue from 'p-queue';
 
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { useWallet } from '@/ui/utils';
 import { CHAINS_ENUM } from '@debank/common';
 import {
@@ -96,7 +96,7 @@ export function useApprovalsPage(options?: { isTestnet?: boolean }) {
 
   const dispatch = useLuxDispatch();
 
-  const account = useRabbySelector((state) => state.account.currentAccount);
+  const account = useLuxSelector((state) => state.account.currentAccount);
 
   useEffect(() => {
     dispatch.account.fetchCurrentAccountAliasNameAsync();

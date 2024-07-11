@@ -5,7 +5,7 @@ import {
   BROADCAST_TO_UI_EVENTS_PAYLOAD,
   runBroadcastDispose,
 } from '@/utils/broadcastToUI';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { onBroadcastToUI } from '@/ui/utils/broadcastToUI';
 
 export function useCurrentAccount(options?: {
@@ -16,7 +16,7 @@ export function useCurrentAccount(options?: {
 }) {
   const dispatch = useLuxDispatch();
 
-  const currentAccount = useRabbySelector((s) => s.account.currentAccount);
+  const currentAccount = useLuxSelector((s) => s.account.currentAccount);
 
   const { onChanged } = options || {};
 

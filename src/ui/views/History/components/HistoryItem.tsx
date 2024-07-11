@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next';
 import { useAsync } from 'react-use';
 
 import IconInputData from '../icons/input-data.svg';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { Skeleton, Tooltip } from 'antd';
 import { AddressType } from '@/ui/utils/address';
 import { Chain } from '@debank/common';
@@ -243,7 +243,7 @@ export const HistoryItem = ({
   const { addressType } = useCheckAddressType(data.tx?.to_addr, chainItem);
 
   const { t } = useTranslation();
-  const account = useRabbySelector((state) => state.account.currentAccount);
+  const account = useLuxSelector((state) => state.account.currentAccount);
 
   if (!chainItem) {
     return <div></div>;

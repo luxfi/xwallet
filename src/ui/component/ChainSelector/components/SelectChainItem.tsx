@@ -2,7 +2,7 @@ import React, { useMemo, forwardRef, HTMLAttributes, useEffect } from 'react';
 import { CHAINS_ENUM, Chain } from '@debank/common';
 import { Tooltip } from 'antd';
 import clsx from 'clsx';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import ChainIcon from '../../ChainIcon';
 import IconCheck from 'ui/assets/check-2.svg';
 import IconPinned, {
@@ -45,7 +45,7 @@ export const SelectChainItem = forwardRef(
     }: SelectChainItemProps,
     ref: React.ForwardedRef<HTMLDivElement>
   ) => {
-    const { customRPC, cachedChainBalances } = useRabbySelector((s) => ({
+    const { customRPC, cachedChainBalances } = useLuxSelector((s) => ({
       customRPC: s.customRPC.customRPC,
       cachedChainBalances: {
         mainnet: s.account.matteredChainBalances,

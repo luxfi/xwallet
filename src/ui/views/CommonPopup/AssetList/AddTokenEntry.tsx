@@ -7,7 +7,7 @@ import { AddCustomTokenPopup } from './CustomAssetList/AddCustomTokenPopup';
 import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
 import { useTranslation } from 'react-i18next';
 import { SpecialTokenListPopup } from './components/TokenButton';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import useSortToken from '@/ui/hooks/useSortTokens';
 
 type Props = {
@@ -31,7 +31,7 @@ const AddTokenEntry = React.forwardRef<AddTokenEntryInst, Props>(
     //   null
     // );
 
-    const { customize } = useRabbySelector((store) => store.account.tokens);
+    const { customize } = useLuxSelector((store) => store.account.tokens);
     const tokens = useSortToken(customize);
 
     const [showCustomizedTokens, setShowCustomizedTokens] = React.useState(

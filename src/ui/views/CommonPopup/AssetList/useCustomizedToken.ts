@@ -1,5 +1,5 @@
 import { Token as CustomizedToken } from '@/background/service/preference';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { useWallet } from '@/ui/utils';
 import {
   walletProject,
@@ -14,7 +14,7 @@ import React from 'react';
 export const useCustomizedToken = () => {
   const wallet = useWallet();
   const [tokens, setTokens] = React.useState<AbstractPortfolioToken[]>();
-  const { currentAccount } = useRabbySelector((s) => ({
+  const { currentAccount } = useLuxSelector((s) => ({
     currentAccount: s.account.currentAccount,
   }));
   const add = React.useCallback(async (token: CustomizedToken) => {

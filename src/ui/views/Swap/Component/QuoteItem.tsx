@@ -27,7 +27,7 @@ import {
   useSwapSettings,
   useVerifySdk,
 } from '../hooks';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { getTokenSymbol } from '@/ui/utils/token';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { useTranslation } from 'react-i18next';
@@ -212,7 +212,7 @@ export const DexQuoteItem = (
 
   const { sortIncludeGasFee } = useSwapSettings();
 
-  const tradeList = useRabbySelector((s) => s.swap.tradeList);
+  const tradeList = useLuxSelector((s) => s.swap.tradeList);
   const disabledTrade = useMemo(
     () =>
       !tradeList?.[dexId] &&

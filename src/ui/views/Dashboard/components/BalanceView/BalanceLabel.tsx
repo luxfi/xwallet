@@ -1,4 +1,4 @@
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { splitNumberByStep } from '@/ui/utils';
 import clsx from 'clsx';
 import React from 'react';
@@ -9,7 +9,7 @@ interface Props {
 }
 export const BalanceLabel: React.FC<Props> = ({ balance }) => {
   const splitBalance = splitNumberByStep((balance || 0).toFixed(2));
-  const { hiddenBalance } = useRabbySelector((state) => state.preference);
+  const { hiddenBalance } = useLuxSelector((state) => state.preference);
   const dispatch = useLuxDispatch();
 
   const handleClick = () => {

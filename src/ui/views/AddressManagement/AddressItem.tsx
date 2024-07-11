@@ -25,7 +25,7 @@ import { ReactComponent as RcIconDeleteAddress } from 'ui/assets/address/delete.
 import { AddressViewer } from 'ui/component';
 import { isSameAddress, splitNumberByStep, useAlias } from 'ui/utils';
 import IconSuccess from 'ui/assets/success.svg';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import IconCheck from 'ui/assets/check.svg';
 
 import { ReactComponent as RcIconWhitelist } from 'ui/assets/address/whitelist.svg';
@@ -73,7 +73,7 @@ const AddressItem = memo(
     onDelete,
   }: AddressItemProps) => {
     const { t } = useTranslation();
-    const { whitelistEnable, whiteList } = useRabbySelector((s) => ({
+    const { whitelistEnable, whiteList } = useLuxSelector((s) => ({
       whitelistEnable: s.whitelist.enabled,
       whiteList: s.whitelist.whitelist,
     }));

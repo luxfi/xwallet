@@ -25,7 +25,7 @@ import { formatTokenAmount } from '@/ui/utils/number';
 import { calcMaxPriorityFee } from '@/utils/transaction';
 import styled, { css } from 'styled-components';
 import { Result } from '@rabby-wallet/rabby-security-engine';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import SecurityLevelTagNoText from '../SecurityEngine/SecurityLevelTagNoText';
 import IconQuestionMark from 'ui/assets/sign/tx/question-mark.svg';
 import { getGasLevelI18nKey } from '@/ui/utils/trans';
@@ -310,7 +310,7 @@ const GasSelectorHeader = ({
   })!;
   const [customGasEstimated, setCustomGasEstimated] = useState<number>(0);
 
-  const { rules, processedRules } = useRabbySelector((s) => ({
+  const { rules, processedRules } = useLuxSelector((s) => ({
     rules: s.securityEngine.rules,
     processedRules: s.securityEngine.currentTx.processedRules,
   }));

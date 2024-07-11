@@ -1,5 +1,5 @@
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { splitNumberByStep, useWallet } from '@/ui/utils';
 import { findChain, findChainByEnum } from '@/utils/chain';
 import { CHAINS, CHAINS_ENUM } from '@debank/common';
@@ -16,7 +16,7 @@ interface Props {
 
 export const GasPriceBar: React.FC<Props> = ({ currentConnectedSiteChain }) => {
   const wallet = useWallet();
-  const account = useRabbySelector((state) => state.account.currentAccount);
+  const account = useLuxSelector((state) => state.account.currentAccount);
 
   const currentConnectedSiteChainNativeToken = useMemo(
     () =>

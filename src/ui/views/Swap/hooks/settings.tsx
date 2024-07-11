@@ -1,11 +1,11 @@
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { useMemo } from 'react';
 
 export const useSwapSettings = () => {
-  const swapViewList = useRabbySelector((s) => s.swap.viewList);
-  const swapTradeList = useRabbySelector((s) => s.swap.tradeList);
-  const prevChain = useRabbySelector((s) => s.swap.selectedChain);
-  const sortIncludeGasFee = useRabbySelector((s) => s.swap.sortIncludeGasFee);
+  const swapViewList = useLuxSelector((s) => s.swap.viewList);
+  const swapTradeList = useLuxSelector((s) => s.swap.tradeList);
+  const prevChain = useLuxSelector((s) => s.swap.selectedChain);
+  const sortIncludeGasFee = useLuxSelector((s) => s.swap.sortIncludeGasFee);
   const dispatch = useLuxDispatch();
 
   const methods = useMemo(() => {

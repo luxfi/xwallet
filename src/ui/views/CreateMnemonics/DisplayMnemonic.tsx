@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { InfoCircleOutlined } from '@ant-design/icons';
 import WordsMatrix from '@/ui/component/WordsMatrix';
 import clsx from 'clsx';
-import { connectStore, useLuxDispatch, useRabbySelector } from 'ui/store';
+import { connectStore, useLuxDispatch, useLuxSelector } from 'ui/store';
 import { styid } from '@/ui/utils/styled';
 import { openInternalPageInTab, useWallet } from 'ui/utils';
 import { Account } from '@/background/service/preference';
@@ -64,7 +64,7 @@ const DisplayMnemonic = () => {
     dispatch.createMnemonics.prepareMnemonicsAsync();
   }, []);
   const { t } = useTranslation();
-  const { mnemonics } = useRabbySelector((s) => ({
+  const { mnemonics } = useLuxSelector((s) => ({
     mnemonics: s.createMnemonics.mnemonics,
   }));
 

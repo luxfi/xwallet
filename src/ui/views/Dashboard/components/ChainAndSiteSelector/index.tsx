@@ -50,7 +50,7 @@ import { Settings } from '../index';
 import './style.less';
 import { CHAINS_ENUM, ThemeIconType } from '@/constant';
 import { useAsync } from 'react-use';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { GasPriceBar } from '../GasPriceBar';
 import { ClaimRabbyFreeGasBadgeModal } from '../ClaimRabbyBadgeModal/freeGasBadgeModal';
 import { useTranslation } from 'react-i18next';
@@ -100,7 +100,7 @@ export default ({
   );
   const wallet = useWallet();
 
-  const account = useRabbySelector((state) => state.account.currentAccount);
+  const account = useLuxSelector((state) => state.account.currentAccount);
 
   const [approvalRiskAlert, setApprovalRiskAlert] = useState(0);
 

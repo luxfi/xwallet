@@ -5,7 +5,7 @@ import Modal from './Modal';
 
 import './style.less';
 import { SelectChainListProps } from './components/SelectChainList';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { DEX_SUPPORT_CHAINS } from '@/constant/dex-swap';
 import { ReactComponent as SvgIconSwapArrowDownTriangle } from '@/ui/assets/swap/arrow-caret-down2.svg';
 import { findChainByEnum } from '@/utils/chain';
@@ -97,7 +97,7 @@ ChainSelectorProps) => {
     setShowSelectorModal(false);
   };
 
-  const dexId = useRabbySelector((s) => s.swap.selectedDex);
+  const dexId = useLuxSelector((s) => s.swap.selectedDex);
 
   if (!dexId) {
     return null;

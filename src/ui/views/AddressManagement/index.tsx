@@ -9,7 +9,7 @@ import { ReactComponent as RcIconPinnedFill } from 'ui/assets/icon-pinned-fill.s
 
 import './style.less';
 import { obj2query } from '@/ui/utils/url';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { sortAccountsByBalance } from '@/ui/utils/account';
 import clsx from 'clsx';
 import { ReactComponent as RcIconAddAddress } from '@/ui/assets/address/new-address.svg';
@@ -73,16 +73,14 @@ const AddressManagement = () => {
   const location = useLocation();
   const enableSwitch = location.pathname === '/switch-address';
 
-  const addressSortStore = useRabbySelector(
-    (s) => s.preference.addressSortStore
-  );
+  const addressSortStore = useLuxSelector((s) => s.preference.addressSortStore);
 
   // todo: store redesign
   const {
     accountsList,
     highlightedAddresses = [],
     loadingAccounts,
-  } = useRabbySelector((s) => ({
+  } = useLuxSelector((s) => ({
     ...s.accountToDisplay,
     highlightedAddresses: s.addressManagement.highlightedAddresses,
   }));
@@ -271,7 +269,7 @@ const AddressManagement = () => {
     // },
   });
 
-  const currentAccount = useRabbySelector((s) => s.account.currentAccount);
+  const currentAccount = useLuxSelector((s) => s.account.currentAccount);
 
   const currentAccountIndex = useMemo(() => {
     if (!currentAccount || !enableSwitch) {

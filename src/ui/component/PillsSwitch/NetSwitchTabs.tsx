@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import PillsSwitch, { PillsSwitchProps } from '@/ui/component/PillsSwitch';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
@@ -17,7 +17,7 @@ type OptionType = {
 type SwitchTabProps = Omit<PillsSwitchProps<OptionType[]>, 'options'>;
 
 export function useSwitchNetTab(options?: { hideTestnetTab?: boolean }) {
-  const isShowTestnet = useRabbySelector((s) => s.preference.isShowTestnet);
+  const isShowTestnet = useLuxSelector((s) => s.preference.isShowTestnet);
   const { hideTestnetTab = false } = options || {};
 
   const [selectedTab, setSelectedTab] = useState<OptionType['key']>('mainnet');

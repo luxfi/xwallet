@@ -1,5 +1,5 @@
 import { NFTApprovalContract } from '@/background/service/openapi';
-import { connectStore, useRabbySelector } from '@/ui/store';
+import { connectStore, useLuxSelector } from '@/ui/store';
 import { ellipsis } from '@/ui/utils/address';
 import { getKRCategoryByType } from '@/utils/transaction';
 import { Button } from 'antd';
@@ -14,7 +14,7 @@ interface NFTContractListItemProps {
 }
 
 const NFTContractListItem = ({ item, onDecline }: NFTContractListItemProps) => {
-  const currentAccount = useRabbySelector((s) => s.account.currentAccount);
+  const currentAccount = useLuxSelector((s) => s.account.currentAccount);
 
   return (
     <div className="list-item">

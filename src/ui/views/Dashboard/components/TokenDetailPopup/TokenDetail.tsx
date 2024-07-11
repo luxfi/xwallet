@@ -26,7 +26,7 @@ import { getTokenSymbol } from '@/ui/utils/token';
 import { SWAP_SUPPORT_CHAINS } from '@/constant';
 import { CustomizedSwitch } from './CustomizedButton';
 import { BlockedButton } from './BlockedButton';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
 import { findChain } from '@/utils/chain';
@@ -59,7 +59,7 @@ const TokenDetail = ({
 }: TokenDetailProps) => {
   const wallet = useWallet();
   const { t } = useTranslation();
-  const { currentAccount } = useRabbySelector((s) => s.account);
+  const { currentAccount } = useLuxSelector((s) => s.account);
   const [tokenWithAmount, setTokenWithAmount] = React.useState<TokenItem>(
     token
   );

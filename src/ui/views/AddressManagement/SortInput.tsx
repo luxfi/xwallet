@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { Input } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { ReactComponent as RcIconSearch } from 'ui/assets/search-currentcolor.svg';
@@ -30,7 +30,7 @@ export const SortInput = ({
   onChange: React.ChangeEventHandler<HTMLInputElement>;
 }) => {
   const { t } = useTranslation();
-  const sortType = useRabbySelector(
+  const sortType = useLuxSelector(
     (s) => s.preference.addressSortStore.sortType
   );
   const { on, turnOff, turnOn } = useSwitch(false);

@@ -1,11 +1,11 @@
 import React from 'react';
-import { connectStore, useLuxDispatch, useRabbySelector } from 'ui/store';
+import { connectStore, useLuxDispatch, useLuxSelector } from 'ui/store';
 import RiskCheck from './RiskCheck';
 import DisplayMnemonic from './DisplayMnemonic';
 import { useTranslation } from 'react-i18next';
 
 const CreateMnemonic = () => {
-  const step = useRabbySelector((s) => s.createMnemonics.step);
+  const step = useLuxSelector((s) => s.createMnemonics.step);
   const { t } = useTranslation();
   const dispatch = useLuxDispatch();
   React.useEffect(() => {

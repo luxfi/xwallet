@@ -11,7 +11,7 @@ import { formatAmount, formatUsdValue } from 'ui/utils/number';
 import { Chain } from 'background/service/openapi';
 import SecurityLevelTagNoText from '../SecurityEngine/SecurityLevelTagNoText';
 import { isSameAddress } from '@/ui/utils';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { SecurityListItem } from './components/SecurityListItem';
 import { ProtocolListItem } from './components/ProtocolListItem';
 import { SubCol, SubRow, SubTable } from './components/SubTable';
@@ -58,13 +58,11 @@ const Swap = ({
 
   const { t } = useTranslation();
 
-  const { rules, processedRules, contractWhitelist } = useRabbySelector(
-    (s) => ({
-      rules: s.securityEngine.rules,
-      processedRules: s.securityEngine.currentTx.processedRules,
-      contractWhitelist: s.securityEngine.userData.contractWhitelist,
-    })
-  );
+  const { rules, processedRules, contractWhitelist } = useLuxSelector((s) => ({
+    rules: s.securityEngine.rules,
+    processedRules: s.securityEngine.currentTx.processedRules,
+    contractWhitelist: s.securityEngine.userData.contractWhitelist,
+  }));
   const dispatch = useLuxDispatch();
 
   const isInWhitelist = useMemo(() => {

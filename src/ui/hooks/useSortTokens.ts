@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
 import { AbstractPortfolioToken } from '../utils/portfolio/types';
 import { useWallet } from 'ui/utils';
-import { useRabbySelector } from 'ui/store';
+import { useLuxSelector } from 'ui/store';
 
 const useSortToken = <T extends TokenItem | AbstractPortfolioToken>(
   list?: T[]
 ) => {
   const [result, setResult] = useState<T[]>([]);
   const wallet = useWallet();
-  const currentAccount = useRabbySelector(
+  const currentAccount = useLuxSelector(
     (state) => state.account.currentAccount
   );
 

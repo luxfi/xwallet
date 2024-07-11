@@ -1,6 +1,6 @@
 import React from 'react';
 import SecurityLevelTagNoText from '../../SecurityEngine/SecurityLevelTagNoText';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { Result } from '@rabby-wallet/rabby-security-engine';
 import styled from 'styled-components';
 
@@ -18,7 +18,7 @@ export const SecurityListItemTag: React.FC<Props> = ({
   inSubTable,
 }) => {
   const dispatch = useLuxDispatch();
-  const { rules, processedRules } = useRabbySelector((s) => ({
+  const { rules, processedRules } = useLuxSelector((s) => ({
     userData: s.securityEngine.userData,
     rules: s.securityEngine.rules,
     processedRules: s.securityEngine.currentTx.processedRules,

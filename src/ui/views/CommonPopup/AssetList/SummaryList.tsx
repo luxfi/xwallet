@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { TBody, THeadCell, THeader, Table } from './components/Table';
 import { SummaryItem } from './SummaryItem';
 import { useSummary } from '@/ui/utils/portfolio/useSummary';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { ReactComponent as InfoSVG } from '@/ui/assets/dashboard/info.svg';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { TokenListSkeleton } from './TokenListViewSkeleton';
@@ -28,7 +28,7 @@ export const SummaryList: React.FC<Props> = () => {
 };
 
 export const SummaryListTemp: React.FC<Props> = ({ chainId }) => {
-  const { currentAccount } = useRabbySelector((s) => ({
+  const { currentAccount } = useLuxSelector((s) => ({
     currentAccount: s.account.currentAccount,
   }));
   const { list, loading } = useSummary(currentAccount!.address, chainId);

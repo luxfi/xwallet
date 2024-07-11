@@ -10,7 +10,7 @@ import {
   splitNumberByStep,
   useWallet,
 } from 'ui/utils';
-import { connectStore, useRabbySelector } from '@/ui/store';
+import { connectStore, useLuxSelector } from '@/ui/store';
 import { getKRCategoryByType } from '@/utils/transaction';
 import { getChain } from '@/utils';
 
@@ -24,7 +24,7 @@ const ellipsis = (text: string) => {
 const ApprovalCard = ({ data }: ApprovalCardProps) => {
   const { t } = useTranslation();
   const wallet = useWallet();
-  const currentAccount = useRabbySelector((s) => s.account.currentAccount);
+  const currentAccount = useLuxSelector((s) => s.account.currentAccount);
 
   const tokenApprove = async (item: TokenApproval['spenders'][0]) => {
     try {

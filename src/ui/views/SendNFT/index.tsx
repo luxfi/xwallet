@@ -12,7 +12,7 @@ import {
   KEYRING_CLASS,
   CHAINS_ENUM,
 } from 'consts';
-import { useLuxDispatch, useRabbySelector, connectStore } from 'ui/store';
+import { useLuxDispatch, useLuxSelector, connectStore } from 'ui/store';
 import { Account } from 'background/service/preference';
 import { NFTItem } from '@/background/service/openapi';
 import { UIContactBookItem } from 'background/service/contactBook';
@@ -92,7 +92,7 @@ const SendNFT = () => {
   const [showWhitelistAlert, setShowWhitelistAlert] = useState(false);
   const [temporaryGrant, setTemporaryGrant] = useState(false);
 
-  const { whitelist, whitelistEnabled } = useRabbySelector((s) => ({
+  const { whitelist, whitelistEnabled } = useLuxSelector((s) => ({
     whitelist: s.whitelist.whitelist,
     whitelistEnabled: s.whitelist.enabled,
   }));

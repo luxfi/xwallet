@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { isSameAddress, useWallet } from '@/ui/utils';
 import AddressItem from '@/ui/component/AccountSearchInput/AddressItem';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import './confirmPopup.less';
 
 type NullFunction = () => void;
@@ -16,7 +16,7 @@ export const useRepeatImportConfirm = () => {
   const [modal, contextHolder] = Modal.useModal();
   const history = useHistory();
 
-  const { accountsList } = useRabbySelector((s) => ({
+  const { accountsList } = useLuxSelector((s) => ({
     ...s.accountToDisplay,
   }));
   const dispatch = useLuxDispatch();

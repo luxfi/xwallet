@@ -1,5 +1,5 @@
 import React, { useCallback, useLayoutEffect, useMemo, useRef } from 'react';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { CHAINS, CHAINS_ENUM } from '@debank/common';
 import TokenSelect from '@/ui/component/TokenSelect';
 import { ReactComponent as IconSwapArrow } from '@/ui/assets/swap/swap-arrow.svg';
@@ -99,7 +99,7 @@ const getDisabledTips: SelectChainItemProps['disabledTips'] = (ctx) => {
 };
 
 export const Main = () => {
-  const { userAddress, unlimitedAllowance } = useRabbySelector((state) => ({
+  const { userAddress, unlimitedAllowance } = useLuxSelector((state) => ({
     userAddress: state.account.currentAccount?.address || '',
     unlimitedAllowance: state.swap.unlimitedAllowance || false,
   }));
@@ -139,7 +139,7 @@ export const Main = () => {
     expired,
   } = useTokenPair(userAddress);
 
-  const originPreferMEVGuarded = useRabbySelector(
+  const originPreferMEVGuarded = useLuxSelector(
     (s) => !!s.swap.preferMEVGuarded
   );
 

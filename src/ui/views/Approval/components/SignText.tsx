@@ -1,5 +1,5 @@
 import { useEnterPassphraseModal } from '@/ui/hooks/useEnterPassphraseModal';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { findChain } from '@/utils/chain';
 import { useLedgerDeviceConnected } from '@/ui/utils/ledger';
 import { matomoRequestEvent } from '@/utils/matomo-request';
@@ -78,7 +78,7 @@ const SignText = ({ params }: { params: SignTextProps }) => {
   ] = useState<TextActionData | null>(null);
   const { executeEngine } = useSecurityEngine();
   const dispatch = useLuxDispatch();
-  const { userData, rules, currentTx } = useRabbySelector((s) => ({
+  const { userData, rules, currentTx } = useLuxSelector((s) => ({
     userData: s.securityEngine.userData,
     rules: s.securityEngine.rules,
     currentTx: s.securityEngine.currentTx,

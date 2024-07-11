@@ -1,5 +1,5 @@
 import { useSearchTestnetToken } from '@/ui/hooks/useSearchTestnetToken';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { useTokens } from '@/ui/utils/portfolio/token';
 import { findChain } from '@/utils/chain';
 import { Input } from 'antd';
@@ -53,7 +53,7 @@ const TokenAmountInput = ({
   const tokenInputRef = useRef<Input>(null);
   const [updateNonce, setUpdateNonce] = useState(0);
   const [tokenSelectorVisible, setTokenSelectorVisible] = useState(false);
-  const currentAccount = useRabbySelector(
+  const currentAccount = useLuxSelector(
     (state) => state.account.currentAccount
   );
   const [keyword, setKeyword] = useState('');

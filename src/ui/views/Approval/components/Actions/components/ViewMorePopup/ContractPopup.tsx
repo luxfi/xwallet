@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Table, Col, Row } from '../Table';
 import * as Values from '../Values';
 import { Chain } from 'background/service/openapi';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { isSameAddress } from '@/ui/utils';
 
 interface ContractData {
@@ -29,7 +29,7 @@ export interface ContractPopupProps extends Props {
 
 export const ContractPopup: React.FC<Props> = ({ data }) => {
   const { t } = useTranslation();
-  const { contractBlacklist, contractWhitelist } = useRabbySelector((state) => {
+  const { contractBlacklist, contractWhitelist } = useLuxSelector((state) => {
     return state.securityEngine.userData;
   });
 

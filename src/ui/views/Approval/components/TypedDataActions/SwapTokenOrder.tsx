@@ -6,7 +6,7 @@ import { Chain } from 'background/service/openapi';
 import { Result } from '@rabby-wallet/rabby-security-engine';
 import { SwapTokenOrderRequireData, TypedDataActionData } from './utils';
 import { formatAmount, formatUsdValue } from '@/ui/utils/number';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { Table, Col, Row } from '../Actions/components/Table';
 import LogoWithText from '../Actions/components/LogoWithText';
 import * as Values from '../Actions/components/Values';
@@ -56,13 +56,11 @@ const Permit = ({
     expireAt,
   } = data!;
   const { t } = useTranslation();
-  const { rules, processedRules, contractWhitelist } = useRabbySelector(
-    (s) => ({
-      rules: s.securityEngine.rules,
-      processedRules: s.securityEngine.currentTx.processedRules,
-      contractWhitelist: s.securityEngine.userData.contractWhitelist,
-    })
-  );
+  const { rules, processedRules, contractWhitelist } = useLuxSelector((s) => ({
+    rules: s.securityEngine.rules,
+    processedRules: s.securityEngine.currentTx.processedRules,
+    contractWhitelist: s.securityEngine.userData.contractWhitelist,
+  }));
 
   const isInWhitelist = useMemo(() => {
     return contractWhitelist.some(

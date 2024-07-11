@@ -12,7 +12,7 @@ import { CustomTestnetAssetList } from './CustomTestnetAssetList';
 import { AddCustomTokenPopup } from './CustomAssetList/AddCustomTokenPopup';
 import { Button } from 'antd';
 import { SpecialTokenListPopup } from './components/TokenButton';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import useSortToken from '@/ui/hooks/useSortTokens';
 
 export const AssetList = ({
@@ -50,7 +50,7 @@ export const AssetList = ({
 
   const [isShowAddModal, setIsShowAddModal] = useState<boolean>(false);
 
-  const { customize } = useRabbySelector((store) => store.account.tokens);
+  const { customize } = useLuxSelector((store) => store.account.tokens);
   const tokens = useSortToken(customize);
   const [showCustomizedTokens, setShowCustomizedTokens] = React.useState(false);
 

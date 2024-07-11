@@ -2,7 +2,7 @@ import { CustomTestnetToken } from '@/background/service/customTestnet';
 import IconUnknown from '@/ui/assets/token-default.svg';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { findChain } from '@/utils/chain';
 import { Button, Tooltip } from 'antd';
 import clsx from 'clsx';
@@ -51,7 +51,7 @@ export const CustomTestnetTokenDetail = ({
 }: TokenDetailProps) => {
   const wallet = useWallet();
   const { t } = useTranslation();
-  const { currentAccount } = useRabbySelector((s) => s.account);
+  const { currentAccount } = useLuxSelector((s) => s.account);
 
   const ref = useRef<HTMLDivElement | null>(null);
   const chain = findChain({

@@ -7,7 +7,7 @@ import { matomoRequestEvent } from '@/utils/matomo-request';
 import { openInTab, useWallet } from 'ui/utils';
 import ConnectionList from './ConnectionList';
 import './style.less';
-import { useLuxDispatch, useRabbySelector } from 'ui/store';
+import { useLuxDispatch, useLuxSelector } from 'ui/store';
 import clsx from 'clsx';
 import { SvgIconCross } from '@/ui/assets';
 
@@ -22,7 +22,7 @@ const RecentConnections = ({
 }: RecentConnectionsProps) => {
   const { t } = useTranslation();
   const dispatch = useLuxDispatch();
-  const connections = useRabbySelector((state) => state.permission.websites);
+  const connections = useLuxSelector((state) => state.permission.websites);
 
   const list = useMemo(() => {
     return connections.sort((a, b) => (a.order || 0) - (b.order || 0));

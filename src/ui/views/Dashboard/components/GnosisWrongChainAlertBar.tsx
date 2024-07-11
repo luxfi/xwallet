@@ -1,4 +1,4 @@
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { CHAINS, CHAINS_ENUM } from '@debank/common';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -6,7 +6,7 @@ import IconAlert from 'ui/assets/alert.svg';
 
 const GnosisWrongChainAlert = () => {
   const { t } = useTranslation();
-  const currentConnection = useRabbySelector(
+  const currentConnection = useLuxSelector(
     (state) => state.chains.currentConnection
   );
   const chain = CHAINS[currentConnection?.chain || CHAINS_ENUM.ETH];

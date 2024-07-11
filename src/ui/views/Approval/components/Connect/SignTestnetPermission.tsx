@@ -1,4 +1,4 @@
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import React from 'react';
 import styled from 'styled-components';
 import IconArrowdown from '@/ui/assets/arrow-down.svg';
@@ -70,7 +70,7 @@ export const SignTestnetPermission = ({
   value: _value,
   onChange,
 }: SignTestnetPermissionProps) => {
-  const isShowTestnet = useRabbySelector(
+  const isShowTestnet = useLuxSelector(
     (state) => state.preference.isShowTestnet
   );
 

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
 import { Result } from '@rabby-wallet/rabby-security-engine';
 import { ContractRequireData, TypedDataActionData } from './utils';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { Table, Col, Row } from '../Actions/components/Table';
 import * as Values from '../Actions/components/Values';
 import ViewMore from '../Actions/components/ViewMore';
@@ -72,7 +72,7 @@ const ContractCall = ({
     return null;
   }, [raw]);
 
-  const { contractWhitelist } = useRabbySelector((s) => ({
+  const { contractWhitelist } = useLuxSelector((s) => ({
     contractWhitelist: s.securityEngine.userData.contractWhitelist,
   }));
 

@@ -8,7 +8,7 @@ import IconTokenApproval from 'ui/assets/icon-token-approval.svg';
 import IconNFTApproval from 'ui/assets/nft-approval.svg';
 import { Field, Popup } from 'ui/component';
 import './style.less';
-import { connectStore, useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { connectStore, useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { getKRCategoryByType } from '@/utils/transaction';
 
 interface SecurityProps {
@@ -19,7 +19,7 @@ interface SecurityProps {
 const Security = ({ visible, onClose }: SecurityProps) => {
   const history = useHistory();
   const { t } = useTranslation();
-  const currentAccount = useRabbySelector((s) => s.account.currentAccount);
+  const currentAccount = useLuxSelector((s) => s.account.currentAccount);
   const dispatch = useLuxDispatch();
   React.useEffect(() => {
     if (visible) {

@@ -22,7 +22,7 @@ import {
 } from 'consts';
 import {
   useLuxDispatch,
-  useRabbySelector,
+  useLuxSelector,
   connectStore,
   useRabbyGetter,
 } from 'ui/store';
@@ -396,7 +396,7 @@ const SendToken = () => {
   >({});
   const [isGnosisSafe, setIsGnosisSafe] = useState(false);
 
-  const { whitelist, whitelistEnabled } = useRabbySelector((s) => ({
+  const { whitelist, whitelistEnabled } = useLuxSelector((s) => ({
     whitelist: s.whitelist.whitelist,
     whitelistEnabled: s.whitelist.enabled,
   }));

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { isSameAddress, useWallet } from 'ui/utils';
 import './style.less';
 import { CHAINS } from '@/constant';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { sortAccountsByBalance } from '@/ui/utils/account';
 import { useAsync } from 'react-use';
 import { BasicSafeInfo } from '@rabby-wallet/gnosis-sdk';
@@ -55,7 +55,7 @@ export const GnonisSafeInfo = ({
       }
     | undefined
   >(undefined);
-  const { accountsList, highlightedAddresses } = useRabbySelector((s) => ({
+  const { accountsList, highlightedAddresses } = useLuxSelector((s) => ({
     accountsList: s.accountToDisplay.accountsList,
     highlightedAddresses: s.addressManagement.highlightedAddresses,
   }));

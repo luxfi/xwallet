@@ -4,7 +4,7 @@ import { TextAreaProps } from 'antd/lib/input/TextArea';
 import { groupBy } from 'lodash';
 import { useClickAway } from 'react-use';
 
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { KEYRING_CLASS } from '@/constant';
 import { sortAccountsByBalance } from '@/ui/utils/account';
 import useDebounceValue from '@/ui/hooks/useDebounceValue';
@@ -24,7 +24,7 @@ function useSearchAccount(searchKeyword?: string) {
     accountsList,
     highlightedAddresses = [],
     loadingAccounts,
-  } = useRabbySelector((s) => ({
+  } = useLuxSelector((s) => ({
     ...s.accountToDisplay,
     highlightedAddresses: s.addressManagement.highlightedAddresses,
   }));

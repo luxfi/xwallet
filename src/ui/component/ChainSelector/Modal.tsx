@@ -1,7 +1,7 @@
 import { Button, Drawer, Input } from 'antd';
 import React, { ReactNode, useEffect, useMemo, useState } from 'react';
 
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { Chain } from 'background/service/openapi';
 import clsx from 'clsx';
 import { CHAINS_ENUM } from 'consts';
@@ -50,7 +50,7 @@ const useChainSeletorList = ({
   netTabKey?: NetSwitchTabsKey;
 }) => {
   const [search, setSearch] = useState('');
-  const { pinned, chainBalances } = useRabbySelector((state) => {
+  const { pinned, chainBalances } = useLuxSelector((state) => {
     return {
       pinned: (state.preference.pinnedChain?.filter((item) =>
         findChain({ enum: item })
@@ -73,7 +73,7 @@ const useChainSeletorList = ({
   const handleSort = (chains: Chain[]) => {
     dispatch.preference.updatePinnedChainList(chains.map((item) => item.enum));
   };
-  const { mainnetList, testnetList } = useRabbySelector((state) => {
+  const { mainnetList, testnetList } = useLuxSelector((state) => {
     return {
       mainnetList: state.chains.mainnetList,
       testnetList: state.chains.testnetList,

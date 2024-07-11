@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useState } from 'react';
-import { useLuxDispatch, useRabbySelector } from '../store';
+import { useLuxDispatch, useLuxSelector } from '../store';
 import { DARK_MODE_TYPE } from '@/constant';
 import { getUiType } from '../utils';
 
@@ -73,7 +73,7 @@ function isFinalDarkMode(themeMode: DARK_MODE_TYPE, isDarkOnSystem: boolean) {
 export function useThemeModeOnMain() {
   const dispatch = useLuxDispatch();
 
-  const themeMode = useRabbySelector((state) => state.preference.themeMode);
+  const themeMode = useLuxSelector((state) => state.preference.themeMode);
 
   const isDarkOnSystem = useIsDarkMode();
 
@@ -96,7 +96,7 @@ export function useThemeModeOnMain() {
 }
 
 export function useThemeMode() {
-  const themeMode = useRabbySelector((state) => state.preference.themeMode);
+  const themeMode = useLuxSelector((state) => state.preference.themeMode);
 
   const isDarkOnSystem = useIsDarkMode();
 

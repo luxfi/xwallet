@@ -1,4 +1,4 @@
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { useWallet } from '@/ui/utils';
 import { useState } from 'react';
 import { useAsync } from 'react-use';
@@ -10,7 +10,7 @@ const useRefresh = () => {
 
 export const useRabbyPoints = () => {
   const wallet = useWallet();
-  const account = useRabbySelector((state) => state.account.currentAccount);
+  const account = useLuxSelector((state) => state.account.currentAccount);
   const [userPointsCount, refreshUserPoints] = useRefresh();
   const [activitiesCount, refreshActivities] = useRefresh();
   const [topUsersCount, refreshTopUsers] = useRefresh();
@@ -101,7 +101,7 @@ export const useRabbyPoints = () => {
 
 export const useRabbyPointsInvitedCodeCheck = (invitedCode?: string) => {
   const wallet = useWallet();
-  const account = useRabbySelector((state) => state.account.currentAccount);
+  const account = useLuxSelector((state) => state.account.currentAccount);
 
   const { value: codeStatus, loading: codeLoading } = useAsync(async () => {
     if (invitedCode && account?.address) {

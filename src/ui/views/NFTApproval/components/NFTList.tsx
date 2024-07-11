@@ -1,6 +1,6 @@
 import { NFTApproval } from '@/background/service/openapi';
 import { Empty } from '@/ui/component';
-import { connectStore, useRabbySelector } from '@/ui/store';
+import { connectStore, useLuxSelector } from '@/ui/store';
 import { getKRCategoryByType } from '@/utils/transaction';
 import React from 'react';
 import { matomoRequestEvent } from '@/utils/matomo-request';
@@ -19,7 +19,7 @@ interface ApprovalCardProps {
 
 const NFTList = ({ data, loading, onSearch, onDecline }: ApprovalCardProps) => {
   const { t } = useTranslation();
-  const currentAccount = useRabbySelector((s) => s.account.currentAccount);
+  const currentAccount = useLuxSelector((s) => s.account.currentAccount);
 
   return (
     <div className="list">

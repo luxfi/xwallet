@@ -17,7 +17,7 @@ import { QuoteResult, getQuote } from '@rabby-wallet/rabby-swap/dist/quote';
 import BigNumber from 'bignumber.js';
 import React from 'react';
 import pRetry from 'p-retry';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import stats from '@/stats';
 import { ChainGas } from '@/background/service/preference';
 
@@ -481,7 +481,7 @@ export const useQuoteMethods = () => {
     [walletOpenapi]
   );
 
-  const swapViewList = useRabbySelector((s) => s.swap.viewList);
+  const swapViewList = useLuxSelector((s) => s.swap.viewList);
 
   const getAllQuotes = React.useCallback(
     async (

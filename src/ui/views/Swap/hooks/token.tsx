@@ -1,4 +1,4 @@
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { isSameAddress, useWallet } from '@/ui/utils';
 import { CHAINS, CHAINS_ENUM } from '@debank/common';
 import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
@@ -95,7 +95,7 @@ export const useTokenPair = (userAddress: string) => {
     oChain,
     defaultSelectedFromToken,
     defaultSelectedToToken,
-  } = useRabbySelector((state) => {
+  } = useLuxSelector((state) => {
     return {
       initialSelectedChain: state.swap.$$initialSelectedChain,
       oChain: state.swap.selectedChain || CHAINS_ENUM.ETH,

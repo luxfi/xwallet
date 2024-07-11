@@ -9,7 +9,7 @@ import { ConnectedSite } from '@/background/service/permission';
 import { useWallet } from '@/ui/utils';
 import styled from 'styled-components';
 import { Result } from '@rabby-wallet/rabby-security-engine';
-import { useLuxDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 
 interface Props {
   chain?: Chain;
@@ -63,7 +63,7 @@ export const OriginInfo: React.FC<Props> = ({
     setConnectedSite,
   ] = React.useState<ConnectedSite | null>(null);
   const dispatch = useLuxDispatch();
-  const { rules, processedRules } = useRabbySelector((s) => ({
+  const { rules, processedRules } = useLuxSelector((s) => ({
     rules: s.securityEngine.rules,
     processedRules: s.securityEngine.currentTx.processedRules,
   }));

@@ -1,7 +1,7 @@
 import { useWallet } from '@/ui/utils';
 import React from 'react';
 import { CollectionList } from '@rabby-wallet/rabby-api/dist/types';
-import { useRabbySelector } from '@/ui/store';
+import { useLuxSelector } from '@/ui/store';
 import { Token } from '@/background/service/preference';
 
 export const useCollection = () => {
@@ -10,7 +10,7 @@ export const useCollection = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [list, setList] = React.useState<CollectionList[]>([]);
   const [starredList, setStarredList] = React.useState<CollectionList[]>([]);
-  const { currentAccount } = useRabbySelector((s) => s.account);
+  const { currentAccount } = useLuxSelector((s) => s.account);
 
   const checkStarred = React.useCallback(
     (collection: CollectionList) => {
