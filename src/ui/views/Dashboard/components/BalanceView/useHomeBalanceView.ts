@@ -58,9 +58,7 @@ export function useHomeBalanceViewOuterPrefetch(
 }
 
 export function useHomeBalanceView(currentAddress?: string | undefined) {
-  const cacheAboutData = useLuxGetter(
-    (s) => s.account.currentBalanceAboutMap
-  );
+  const cacheAboutData = useLuxGetter((s) => s.account.currentBalanceAboutMap);
 
   const currentHomeBalanceCache = useMemo(() => {
     const { balanceMap, curvePointsMap } = cacheAboutData;

@@ -61,5 +61,5 @@ export const models: RootModel = {
   sign,
 };
 
-export type RabbyDispatch = RematchDispatch<RootModel>;
-export type RabbyRootState = RematchRootState<RootModel>;
+export type LuxDispatch = RematchDispatch<RootModel>;
+export type LuxRootState = RematchRootState<RootModel>;

@@ -1,11 +1,11 @@
-import { RabbyRootState, RabbyDispatch } from '@/ui/models';
+import { LuxRootState, LuxDispatch } from '@/ui/models';
 import { onBackgroundStoreChanged } from '../utils/broadcastToUI';
 
 export default (store: typeof import('@/ui/store').default) => {
-  const dispatch = store.dispatch as RabbyDispatch;
+  const dispatch = store.dispatch as LuxDispatch;
 
   onBackgroundStoreChanged('contactBook', (payload) => {
-    const state = store.getState() as RabbyRootState;
+    const state = store.getState() as LuxRootState;
     const currentAccount = state.account.currentAccount;
     const currentAddr = currentAccount?.address;
 
@@ -20,7 +20,7 @@ export default (store: typeof import('@/ui/store').default) => {
   });
 
   onBackgroundStoreChanged('preference', (payload) => {
-    // const state = store.getState() as RabbyRootState;
+    // const state = store.getState() as LuxRootState;
     // const preference = state.preference;
 
     switch (payload.changedKey) {

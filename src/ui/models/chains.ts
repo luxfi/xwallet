@@ -4,7 +4,7 @@ import { ConnectedSite } from '@/background/service/permission';
 
 import { RootModel } from '.';
 import { CHAINS_ENUM, KEYRING_CLASS } from '@/constant';
-import { RabbyRootState } from '../store';
+import { LuxRootState } from '../store';
 import {
   findChainByEnum,
   getChainList,
@@ -50,7 +50,7 @@ export const chains = createModel<RootModel>()({
   selectors(slice) {
     return {
       isCurrentAccountGnosis() {
-        return (rootState: RabbyRootState) => {
+        return (rootState: LuxRootState) => {
           return (
             rootState.account.currentAccount?.type === KEYRING_CLASS.GNOSIS
           );

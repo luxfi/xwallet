@@ -2,7 +2,7 @@ import { createModel } from '@rematch/core';
 
 import { KEYRING_CLASS } from '@/constant';
 import { RootModel } from '.';
-import { RabbyRootState } from '../store';
+import { LuxRootState } from '../store';
 
 interface IState {
   mnemonics: string;
@@ -44,7 +44,7 @@ export const createMnemonics = createModel<RootModel>()({
       },
 
       allHDKeyrings() {
-        return (rootState: RabbyRootState) => {
+        return (rootState: LuxRootState) => {
           return rootState.account.keyrings.filter(
             (x) => x.type === KEYRING_CLASS.MNEMONIC
           );

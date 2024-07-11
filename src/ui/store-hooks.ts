@@ -24,9 +24,7 @@ export function useAccount() {
  */
 export function useIsShowMnemonic() {
   const dispatch = useLuxDispatch();
-  const isShowMnemonic = useLuxGetter<boolean>(
-    (s) => s.account.isShowMnemonic
-  );
+  const isShowMnemonic = useLuxGetter<boolean>((s) => s.account.isShowMnemonic);
 
   useEffect(() => {
     dispatch.account.getTypedMnemonicAccountsAsync();

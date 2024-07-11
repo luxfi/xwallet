@@ -1,5 +1,5 @@
 import { init } from '@rematch/core';
-import { models, RootModel, RabbyDispatch, RabbyRootState } from './models';
+import { models, RootModel, LuxDispatch, LuxRootState } from './models';
 import {
   connect,
   useDispatch,
@@ -14,17 +14,17 @@ const store = init<RootModel>({ models, plugins: [selectPlugin()] });
 
 onStoreInitialized(store);
 
-export type { RabbyRootState };
+export type { LuxRootState };
 
 export { connect as connectStore };
 
-export const useLuxDispatch = () => useDispatch<RabbyDispatch>();
-export const useLuxSelector: TypedUseSelectorHook<RabbyRootState> = useSelector;
+export const useLuxDispatch = () => useDispatch<LuxDispatch>();
+export const useLuxSelector: TypedUseSelectorHook<LuxRootState> = useSelector;
 
 export function useLuxGetter<Selected = unknown>(
   selector: (
     select: typeof store['select']
-  ) => (state: RabbyRootState) => Selected
+  ) => (state: LuxRootState) => Selected
 ) {
   return useSelector(selector(store.select));
 }
