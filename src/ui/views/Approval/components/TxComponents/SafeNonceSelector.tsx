@@ -91,7 +91,7 @@ const Wrapper = styled(Card)`
       &:hover,
       &.is-checked {
         border: 1px solid var(--l-blue-default, #7084ff);
-        background: var(--r-blue-light-1, #eef1ff);
+        background: var(--l-blue-light-1, #eef1ff);
       }
 
       img {

@@ -292,7 +292,7 @@ export function GasLessActivityToSign({
 export const GasLessAnimatedWrapper = styled.div`
   &.gasLess,
   .gasLess {
-    background-color: var(--r-blue-disable);
+    background-color: var(--l-blue-disable);
     background-image: url(${LogoImage}),
       linear-gradient(
         var(--l-blue-default, #7084ff),

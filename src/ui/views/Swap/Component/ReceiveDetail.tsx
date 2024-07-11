@@ -81,7 +81,7 @@ const ReceiveWrapper = styled.div`
       color: var(--r-red-default, #e34935);
     }
     &.positive {
-      color: var(--r-green-default, #2abb7f);
+      color: var(--l-green-default, #2abb7f);
     }
   }
   .column {
@@ -139,7 +139,7 @@ const ReceiveWrapper = styled.div`
     cursor: pointer;
 
     color: var(--r-neutral-body, #d3d8e0);
-    background: var(--r-blue-light-2);
+    background: var(--l-blue-light-2);
     border-radius: 4px;
     border: 1px solid transparent;
     &:hover {

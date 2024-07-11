@@ -23,8 +23,8 @@ const Warper = styled.div`
     align-items: start;
     padding: 8px 12px 8px 8px;
     border-radius: 6px;
-    border: 0.5px solid var(--r-orange-default, #ffb020);
-    border: 1px solid var(--r-orange-default, #ffb020);
+    border: 0.5px solid var(--l-orange-default, #ffb020);
+    border: 1px solid var(--l-orange-default, #ffb020);
     background: var(--r-orange-light, rgba(255, 176, 32, 0.15));
     gap: 6px;
 

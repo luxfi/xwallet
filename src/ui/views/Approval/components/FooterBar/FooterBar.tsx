@@ -126,7 +126,7 @@ const SecurityLevelTipColor = {
   },
   [Level.WARNING]: {
     bg: 'var(--r-orange-light, #FFEDCB)',
-    text: 'var(--r-orange-default, #FFB020)',
+    text: 'var(--l-orange-default, #FFB020)',
     icon: SecurityEngineLevel[Level.WARNING].icon,
   },
 };

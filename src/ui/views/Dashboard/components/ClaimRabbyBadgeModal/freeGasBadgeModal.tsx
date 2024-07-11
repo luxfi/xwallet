@@ -440,7 +440,7 @@ const ClaimSuccessWrapper = styled.div`
     font-size: 17px;
     margin-top: 24px;
     margin-bottom: 32px;
-    color: var(--r-green-default, #2abb7f);
+    color: var(--l-green-default, #2abb7f);
   }
   .title {
     margin-bottom: 16px;

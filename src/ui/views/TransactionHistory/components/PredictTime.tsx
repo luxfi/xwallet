@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   height: 28px;
   padding: 7px 12px;
   border-radius: 0px 0px 6px 6px;
-  background: var(--r-blue-light-1, #eef1ff);
+  background: var(--l-blue-light-1, #eef1ff);
   cursor: pointer;
 
   color: var(--l-blue-default, #7084ff);

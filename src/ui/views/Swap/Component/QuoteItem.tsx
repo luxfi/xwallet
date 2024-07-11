@@ -79,7 +79,7 @@ const ItemWrapper = styled.div`
   }
 
   &:hover:not(.disabled, .inSufficient) {
-    background: var(--r-blue-light-1, #eef1ff);
+    background: var(--l-blue-light-1, #eef1ff);
     border: 0.5px solid var(--l-blue-default, #7084ff);
   }
   &.active {

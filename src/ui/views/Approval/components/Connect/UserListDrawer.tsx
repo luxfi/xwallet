@@ -56,7 +56,7 @@ const Footer = styled.div`
       background-color: var(--r-neutral-line, #e5e9ef);
     }
     &:hover {
-      background: var(--r-blue-light-1, #eef1ff);
+      background: var(--l-blue-light-1, #eef1ff);
       border: 1px solid var(--l-blue-default, #7084ff);
       border-radius: 6px;
     }
