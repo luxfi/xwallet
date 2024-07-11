@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors');
 const tinycolor2 = require('tinycolor2');
 
-const { themeColors, rabbyCssPrefix } = require('./src/constant/theme-colors');
+const { themeColors, luxCssPrefix } = require('./src/constant/theme-colors');
 
 const rabbyColors = ['light', 'dark'].reduce((accu, theme) => {
   Object.entries(themeColors[theme]).forEach(([cssvarKey, colorValue]) => {
@@ -14,7 +14,7 @@ const rabbyColors = ['light', 'dark'].reduce((accu, theme) => {
     const hexValue = alpha === 1 ? tinyColor.toHexString() : tinyColor.toHex8String();
     
     if (!accu.auto[cssvarKey]) {
-      accu.auto[cssvarKey] = `var(--${rabbyCssPrefix}${cssvarKey}, ${hexValue})`;
+      accu.auto[cssvarKey] = `var(--${luxCssPrefix}${cssvarKey}, ${hexValue})`;
     }
 
     accu[theme][cssvarKey] = hexValue;
@@ -135,12 +135,12 @@ module.exports = {
     /** @notice configuration here would override the default config above */
     extend: {
       colors: {
-        [`${rabbyCssPrefix.replace(/\-$/, '')}`]: rabbyColors.auto,
+        [`${luxCssPrefix.replace(/\-$/, '')}`]: rabbyColors.auto,
         [`${'rabby-'.replace(/\-$/, '')}`]: rabbyColors.auto,
         [`${'-r-'.replace(/\-$/, '')}`]: rabbyColors.auto,
         
-        [`light-${rabbyCssPrefix.replace(/\-$/, '')}`]: rabbyColors.light,
-        [`dark-${rabbyCssPrefix.replace(/\-$/, '')}`]: rabbyColors.dark,
+        [`light-${luxCssPrefix.replace(/\-$/, '')}`]: rabbyColors.light,
+        [`dark-${luxCssPrefix.replace(/\-$/, '')}`]: rabbyColors.dark,
       }
     },
   },

@@ -4,9 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const lessVarsToJs = require('less-vars-to-js');
 const tinycolor2 = require('tinycolor2');
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { themeColors, rabbyCssPrefix } = require('../src/constant/theme-colors');
+const { themeColors, luxCssPrefix } = require('../src/constant/theme-colors');
 
 const ROOT = path.resolve(__dirname, '..');
 
@@ -24,7 +22,7 @@ makeCssVar: {
   const cssvarSrcContent = `
 /* this file is genetared automatically, never modify it manually! */
 :root {
-  --rabby-color-opacity: 1;
+  --lux-color-opacity: 1;
   --tw-bg-opacity: 1;
 
   /* -------------------- base define -------------------- */
@@ -32,7 +30,7 @@ ${['light', 'dark'].map(theme => {
   return Object.entries(themeColors[theme]).map(([cssvarKey, colorValue]) => {
     const varcore = cssvarKey.replace(/^\-\-/, '');
 
-    return `${SPACES}--rabby-${theme}-${varcore}: ${colorValue};`;
+    return `${SPACES}--lux-${theme}-${varcore}: ${colorValue};`;
   }).join(LINE_BREAK)
 }).join(LINE_BREAK.repeat(2))}
 }
@@ -62,20 +60,20 @@ ${Object.entries(themeColors[theme]).map(([cssvarKey, colorValue]) => {
   }
 
   return [
-    `${SPACES}--${rabbyCssPrefix}${cssvarKey}-rgb: ${rgbs.r}, ${rgbs.g}, ${rgbs.b};`,
-    // `${SPACES}--${rabbyCssPrefix}${cssvarKey}-opacity: ${alpha};`,
-    // `${SPACES}--${rabbyCssPrefix}${cssvarKey}: rgba(${rgbs.r}, ${rgbs.g}, ${rgbs.b}, var(--${rabbyCssPrefix}${cssvarKey}-opacity, 1));`,
-    `${SPACES}--${rabbyCssPrefix}${cssvarKey}: var(--rabby-${theme}-${varcore});`,
+    `${SPACES}--${luxCssPrefix}${cssvarKey}-rgb: ${rgbs.r}, ${rgbs.g}, ${rgbs.b};`,
+    // `${SPACES}--${luxCssPrefix}${cssvarKey}-opacity: ${alpha};`,
+    // `${SPACES}--${luxCssPrefix}${cssvarKey}: rgba(${rgbs.r}, ${rgbs.g}, ${rgbs.b}, var(--${luxCssPrefix}${cssvarKey}-opacity, 1));`,
+    `${SPACES}--${luxCssPrefix}${cssvarKey}: var(--lux-${theme}-${varcore});`,
   ].filter(Boolean).join(LINE_BREAK);
 }).join(LINE_BREAK)}
 }
 ${!SPECIAL_DEFAULT_ALPHA[theme].length ? '' : SPECIAL_DEFAULT_ALPHA[theme].map(({ cssvarKey, alpha }) => {
   return [
 //     `${isDarkTheme ? `.dark ` : ''} {
-// ${SPACES}--${rabbyCssPrefix}${cssvarKey}-opacity: ${alpha};
+// ${SPACES}--${luxCssPrefix}${cssvarKey}-opacity: ${alpha};
 // }`,
-//     `${isDarkTheme ? `.dark ` : ''}.bg-${rabbyCssPrefix}${cssvarKey} {
-// ${SPACES}--bg-${rabbyCssPrefix}${cssvarKey}-opacity: ${alpha};
+//     `${isDarkTheme ? `.dark ` : ''}.bg-${luxCssPrefix}${cssvarKey} {
+// ${SPACES}--bg-${luxCssPrefix}${cssvarKey}-opacity: ${alpha};
 // }`,
   ].filter(Boolean).join(LINE_BREAK);
 }).filter(Boolean).join(LINE_BREAK)}`
@@ -83,7 +81,7 @@ ${!SPECIAL_DEFAULT_ALPHA[theme].length ? '' : SPECIAL_DEFAULT_ALPHA[theme].map((
 `;
   fs.writeFileSync(cssvarSrcfile, cssvarSrcContent, 'utf8');
 
-console.log('[rabby] make-theme css vars version success!');
+console.log('[lux] make-theme css vars version success!');
 }
 
 makeVarsInJs: {
@@ -118,5 +116,5 @@ export function ellipsis(){
 export default LessPalette;
 `);
 
-console.log('[rabby] make-theme js version success!');
+console.log('[lux] make-theme js version success!');
 }

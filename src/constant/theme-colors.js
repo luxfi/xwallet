@@ -84,5 +84,5 @@ const themeColors = {
 
 module.exports = {
   themeColors,
-  rabbyCssPrefix: 'r-',
+  luxCssPrefix: 'l-',
 };
