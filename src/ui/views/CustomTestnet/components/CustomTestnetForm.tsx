@@ -29,7 +29,7 @@ const Wraper = styled.div`
     font-weight: 500;
 
     &:focus {
-      border-color: var(--r-blue-default, #7084ff);
+      border-color: var(--l-blue-default, #7084ff);
     }
   }
   .ant-input[disabled] {

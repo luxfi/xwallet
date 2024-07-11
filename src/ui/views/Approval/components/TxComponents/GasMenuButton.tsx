@@ -31,8 +31,8 @@ const MenuButtonStyled = styled.div`
   cursor: pointer;
 
   &:hover {
-    border-color: var(--r-blue-default, #7084ff);
-    background: var(--r-blue-light1, #eef1ff);
+    border-color: var(--l-blue-default, #7084ff);
+    background: var(--l-blue-light1, #eef1ff);
   }
 `;
 
@@ -47,7 +47,7 @@ const MenuItemStyled = styled(Menu.Item)`
   border-color: transparent;
 
   &:hover {
-    background: var(--r-blue-light1, #eef1ff);
+    background: var(--l-blue-light1, #eef1ff);
   }
 `;
 

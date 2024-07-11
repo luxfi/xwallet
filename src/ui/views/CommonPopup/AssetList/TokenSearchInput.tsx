@@ -17,10 +17,10 @@ export interface Props {
 const InputStyled = styled(Input)`
   background-color: var(--l-neutral-card1, #fff) !important;
   &.ant-input-affix-wrapper-focused {
-    border-color: var(--r-blue-default, #7084ff) !important;
+    border-color: var(--l-blue-default, #7084ff) !important;
   }
   &:hover {
-    border-color: var(--r-blue-default, #7084ff) !important;
+    border-color: var(--l-blue-default, #7084ff) !important;
   }
 `;
 

@@ -122,7 +122,7 @@ const Wrapper = styled.div<{
     }
     &:hover,
     &:focus {
-      border-color: var(--r-blue-default, #7084ff);
+      border-color: var(--l-blue-default, #7084ff);
     }
 
     &.red,

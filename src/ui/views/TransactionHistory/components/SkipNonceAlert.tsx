@@ -39,7 +39,7 @@ const Warper = styled.div`
       line-height: 18px; /* 138.462% */
 
       .link {
-        color: var(--r-blue-default, #7084ff);
+        color: var(--l-blue-default, #7084ff);
         text-decoration-line: underline;
         cursor: pointer;
       }

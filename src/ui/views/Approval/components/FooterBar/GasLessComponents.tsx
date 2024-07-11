@@ -164,7 +164,7 @@ function FreeGasReady({
       <span
         className="flex-1"
         style={{
-          color: color || 'var(--r-blue-default, #7084FF)',
+          color: color || 'var(--l-blue-default, #7084FF)',
           fontSize: '13px',
           fontWeight: '500',
         }}
@@ -295,8 +295,8 @@ export const GasLessAnimatedWrapper = styled.div`
     background-color: var(--r-blue-disable);
     background-image: url(${LogoImage}),
       linear-gradient(
-        var(--r-blue-default, #7084ff),
-        var(--r-blue-default, #7084ff)
+        var(--l-blue-default, #7084ff),
+        var(--l-blue-default, #7084ff)
       );
     background-repeat: no-repeat;
     background-size: 10%, 200%;

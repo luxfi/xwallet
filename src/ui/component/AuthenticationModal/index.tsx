@@ -20,7 +20,7 @@ const AuthFormItemWrapper = styled.div`
   }
   .ant-input {
     &:focus {
-      border-color: var(--r-blue-default, #7084ff) !important;
+      border-color: var(--l-blue-default, #7084ff) !important;
     }
   }
 `;
@@ -61,7 +61,7 @@ const FieldList = styled.div`
 
     &:hover {
       background-color: rgba(134, 151, 255, 0.2);
-      border: 1px solid var(--r-blue-default, #7084ff);
+      border: 1px solid var(--l-blue-default, #7084ff);
     }
 
     &:nth-last-child(1) {

@@ -328,7 +328,7 @@ export const QuoteList = (props: QuotesProps) => {
                   viewBox="0 0 14 14"
                 >
                   <path
-                    fill={'var(--r-blue-default)'}
+                    fill={'var(--l-blue-default)'}
                     d="M12.103.875H1.898a1.02 1.02 0 0 0-1.02 1.02V12.1c0 .564.456 1.02 1.02 1.02h10.205a1.02 1.02 0 0 0 1.02-1.02V1.895a1.02 1.02 0 0 0-1.02-1.02Z"
                   />
                   <path
