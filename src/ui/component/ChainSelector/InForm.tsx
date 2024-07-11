@@ -36,7 +36,7 @@ const ChainWrapper = styled.div`
       height: 20px;
     }
     .name {
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
     }
   }
 `;

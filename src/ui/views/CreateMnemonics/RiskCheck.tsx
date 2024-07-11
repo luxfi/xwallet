@@ -12,7 +12,7 @@ const QuestionsWrapper = styled.div`
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    color: var(--r-neutral-title-1);
+    color: var(--l-neutral-title-1);
   }
 `;
 
@@ -21,7 +21,7 @@ const RiskTipText = styled.p`
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  color: var(--r-neutral-title-1);
+  color: var(--l-neutral-title-1);
 `;
 
 function useQuestionsCheck() {

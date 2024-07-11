@@ -42,7 +42,7 @@ const ItemWrapper = styled.div`
   padding: 0 16px;
   display: flex;
   align-items: center;
-  /* color: var(--r-neutral-title-1, #192945); */
+  /* color: var(--l-neutral-title-1, #192945); */
   background: var(--r-neutral-card-1, #fff);
 
   border-radius: 6px;
@@ -95,7 +95,7 @@ const ItemWrapper = styled.div`
 
   &:not(.cex).inSufficient,
   &:not(.cex).disabled {
-    border: 0.5px solid var(--r-neutral-line, #d3d8e0);
+    border: 0.5px solid var(--l-neutral-line, #d3d8e0);
     border-radius: 6px;
     box-shadow: none;
   }
@@ -110,7 +110,7 @@ const ItemWrapper = styled.div`
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
-    color: var(--r-neutral-title-1, #192945);
+    color: var(--l-neutral-title-1, #192945);
     height: 44px;
     background-color: transparent;
     border: none;
@@ -122,7 +122,7 @@ const ItemWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 6px;
-    color: var(--r-neutral-foot, #6a7587);
+    color: var(--l-neutral-foot, #6a7587);
   }
 
   .receiveNum {
@@ -133,11 +133,11 @@ const ItemWrapper = styled.div`
     text-overflow: ellipsis;
     white-space: nowrap;
     font-weight: 500;
-    color: var(--r-neutral-title-1, #192945);
+    color: var(--l-neutral-title-1, #192945);
   }
 
   .no-price {
-    color: var(--r-neutral-title-1, #192945);
+    color: var(--l-neutral-title-1, #192945);
   }
 
   .percent {

@@ -86,7 +86,7 @@ const AddAssetWrapper = styled.div`
       .token-address {
         padding: 5px 8px;
         background-color: var(--r-neutral-card2);
-        color: var(--r-neutral-foot);
+        color: var(--l-neutral-foot);
         font-size: 12px;
         gap: 6px;
         display: flex;
@@ -107,7 +107,7 @@ const AddAssetWrapper = styled.div`
         .amount {
           font-size: 24px;
           font-weight: 700;
-          color: var(--r-neutral-title1);
+          color: var(--l-neutral-title1);
           margin-right: 4px;
         }
         &:nth-child(1) {
@@ -138,7 +138,7 @@ const AddAssetWrapper = styled.div`
   }
   .footer {
     background-color: var(--l-neutral-card1);
-    border-top: 0.5px solid var(--r-neutral-line);
+    border-top: 0.5px solid var(--l-neutral-line);
     .ant-btn-primary[disabled] {
       width: 100%;
       height: 100%;
@@ -157,7 +157,7 @@ const NoTokenWrapper = styled.div`
     font-weight: 500;
     line-height: 24px;
     text-align: center;
-    color: var(--r-neutral-body, #d3d8e0);
+    color: var(--l-neutral-body, #d3d8e0);
     .icon-warning {
       margin: 0 auto 40px;
     }
@@ -166,7 +166,7 @@ const NoTokenWrapper = styled.div`
     display: flex;
     justify-content: center;
     background-color: var(--r-neutral-bg-1, #fff);
-    border-top: 0.5px solid var(--r-neutral-line, rgba(255, 255, 255, 0.1));
+    border-top: 0.5px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
   }
 `;
 

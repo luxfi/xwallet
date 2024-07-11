@@ -19,7 +19,7 @@ const Footer = styled.div`
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: var(--r-neutral-title1, #192945);
+    color: var(--l-neutral-title1, #192945);
     position: relative;
     border: 1px solid transparent;
     border-radius: 8px;

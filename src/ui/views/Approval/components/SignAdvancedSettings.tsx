@@ -13,7 +13,7 @@ const ManuallySetGasLimitAlert = styled.li`
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  color: var(--r-neutral-body);
+  color: var(--l-neutral-body);
 `;
 
 const Div = styled.div``;

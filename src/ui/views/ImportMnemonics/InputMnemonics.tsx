@@ -29,7 +29,7 @@ const TipTextList = styled.div`
     font-weight: 700;
     font-size: 13px;
     line-height: 15px;
-    color: var(--r-neutral-title-1);
+    color: var(--l-neutral-title-1);
     margin-top: 0;
     margin-bottom: 8px;
   }
@@ -37,7 +37,7 @@ const TipTextList = styled.div`
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
-    color: var(--r-neutral-body);
+    color: var(--l-neutral-body);
     margin: 0;
   }
   section + section {

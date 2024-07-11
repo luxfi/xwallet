@@ -42,8 +42,8 @@ const Wrapper = styled.div<{
   height: 480px;
   border-radius: 16px;
   border-radius: 16px;
-  background: var(--r-neutral-bg1, #1c1f2b);
-  color: var(--r-neutral-foot, #babec5);
+  background: var(--l-neutral-bg1, #1c1f2b);
+  color: var(--l-neutral-foot, #babec5);
   box-shadow: 0px 24px 40px 0px rgba(19, 20, 26, 0.16);
   ${(props) => {
     if (props.isDarkMode) {
@@ -106,7 +106,7 @@ const Wrapper = styled.div<{
   .codeInput {
     width: 320px;
     padding: 12px;
-    color: var(--r-neutral-title1, #f7fafc);
+    color: var(--l-neutral-title1, #f7fafc);
     font-size: 17px;
     font-style: normal;
     font-weight: 500;

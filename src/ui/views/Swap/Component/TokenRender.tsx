@@ -28,7 +28,7 @@ const TokenRenderWrapper = styled.div`
     align-items: center;
 
     .text {
-      color: var(--r-neutral-title-1, #f7fafc);
+      color: var(--l-neutral-title-1, #f7fafc);
       max-width: 68px;
       display: inline-block;
       white-space: nowrap;
@@ -37,7 +37,7 @@ const TokenRenderWrapper = styled.div`
     }
   }
   .select {
-    color: var(--r-neutral-title-1, #f7fafc);
+    color: var(--l-neutral-title-1, #f7fafc);
     flex: 1;
     display: flex;
     justify-content: space-between;

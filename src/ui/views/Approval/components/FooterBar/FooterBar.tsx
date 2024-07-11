@@ -115,17 +115,17 @@ const ChainLogo = styled.img`
 
 const SecurityLevelTipColor = {
   [Level.FORBIDDEN]: {
-    bg: 'var(--r-red-light-2, #EFD4D1)',
-    text: 'var(--r-red-dark, #AE2A19)',
+    bg: 'var(--l-red-light-2, #EFD4D1)',
+    text: 'var(--l-red-dark, #AE2A19)',
     icon: SecurityEngineLevel[Level.FORBIDDEN].icon,
   },
   [Level.DANGER]: {
-    bg: 'var(--r-red-light, #FFDFDB)',
-    text: 'var(--r-red-default, #E34935)',
+    bg: 'var(--l-red-light, #FFDFDB)',
+    text: 'var(--l-red-default, #E34935)',
     icon: SecurityEngineLevel[Level.DANGER].icon,
   },
   [Level.WARNING]: {
-    bg: 'var(--r-orange-light, #FFEDCB)',
+    bg: 'var(--l-orange-light, #FFEDCB)',
     text: 'var(--l-orange-default, #FFB020)',
     icon: SecurityEngineLevel[Level.WARNING].icon,
   },

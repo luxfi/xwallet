@@ -20,15 +20,15 @@ import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
 
 const AlertBlock = styled.div`
   padding: 10px 12px;
-  color: var(--r-red-default);
-  background: var(--r-red-light);
+  color: var(--l-red-default);
+  background: var(--l-red-light);
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 `;
 
 const CopySection = styled.div`
-  color: var(--r-neutral-body);
+  color: var(--l-neutral-body);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@ const TipTextList = styled.ol`
 
   > li {
     font-weight: 400;
-    color: var(--r-neutral-body);
+    color: var(--l-neutral-body);
     line-height: 20px;
   }
 

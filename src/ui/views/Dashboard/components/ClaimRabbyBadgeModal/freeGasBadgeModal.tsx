@@ -47,8 +47,8 @@ const Wrapper = styled.div<{
   height: 480px;
   border-radius: 16px;
   border-radius: 16px;
-  background: var(--r-neutral-bg1, #1c1f2b);
-  color: var(--r-neutral-foot, #babec5);
+  background: var(--l-neutral-bg1, #1c1f2b);
+  color: var(--l-neutral-foot, #babec5);
   box-shadow: 0px 24px 40px 0px rgba(19, 20, 26, 0.16);
   ${(props) => {
     if (props.isDarkMode) {
@@ -98,7 +98,7 @@ const Wrapper = styled.div<{
   .learn-more-tips {
     padding-left: 24px;
     padding-right: 20px;
-    color: var(--r-neutral-foot, #6a7587);
+    color: var(--l-neutral-foot, #6a7587);
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -120,7 +120,7 @@ const Wrapper = styled.div<{
   .codeInput {
     width: 320px;
     padding: 12px;
-    color: var(--r-neutral-title1, #f7fafc);
+    color: var(--l-neutral-title1, #f7fafc);
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
@@ -128,7 +128,7 @@ const Wrapper = styled.div<{
     /* background: #f5f6fa; */
     border: 1px solid #dcdfe4;
     &::placeholder {
-      color: var(--r-neutral-foot, #6a7587);
+      color: var(--l-neutral-foot, #6a7587);
       font-size: 15px;
       font-style: normal;
       font-weight: 400;
@@ -142,7 +142,7 @@ const Wrapper = styled.div<{
     &.red,
     &.red:hover,
     &.red:focus {
-      border-color: var(--r-red-default, #e34935);
+      border-color: var(--l-red-default, #e34935);
     }
   }
 
@@ -156,7 +156,7 @@ const Wrapper = styled.div<{
       bottom: -30px;
       left: 0;
       margin-top: 12px;
-      color: var(--r-red-default, #e34935);
+      color: var(--l-red-default, #e34935);
       font-size: 13px;
       font-style: normal;
       font-weight: 400;
@@ -232,7 +232,7 @@ const Wrapper = styled.div<{
 
   .tips {
     margin-top: 16px;
-    color: var(--r-neutral-foot, #6a7587);
+    color: var(--l-neutral-foot, #6a7587);
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -433,7 +433,7 @@ const ClaimSuccessWrapper = styled.div`
   }
 
   .title {
-    color: var(--r-neutral-title1, #192945);
+    color: var(--l-neutral-title1, #192945);
   }
 
   .desc {

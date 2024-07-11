@@ -296,16 +296,16 @@ const AddressWrapper = styled.div`
   display: flex;
   .address-box {
     padding: 3px 6px;
-    border: 0.5px solid var(--r-neutral-line, #d3d8e0);
+    border: 0.5px solid var(--l-neutral-line, #d3d8e0);
     cursor: pointer;
-    color: var(--r-neutral-title1, #192945);
+    color: var(--l-neutral-title1, #192945);
     font-size: 14px;
     font-weight: 500;
     border-radius: 900px;
     display: flex;
     .icon-arrow-right {
       margin-left: 2px;
-      color: var(--r-neutral-foot, #6a7587);
+      color: var(--l-neutral-foot, #6a7587);
     }
     &:hover {
       border-color: var(--l-blue-default, #7084ff);

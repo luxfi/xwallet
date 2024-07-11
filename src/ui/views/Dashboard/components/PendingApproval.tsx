@@ -36,7 +36,7 @@ const TextContent = styled.p`
   line-height: 22px;
   margin: 0 0 36px 0;
   text-align: center;
-  color: var(--r-neutral-title-1);
+  color: var(--l-neutral-title-1);
 `;
 
 const RejectAllButton = styled.a`

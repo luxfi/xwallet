@@ -40,16 +40,16 @@ const ConnectWrapper = styled.div`
       font-weight: 500;
       font-size: 17px;
       line-height: 20px;
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
     }
     .chain-selector {
       height: 32px;
       border-radius: 8px;
       background: var(--r-neutral-bg-1, #fff);
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       font-size: 13px;
-      border: 0.5px solid var(--r-neutral-line, rgba(255, 255, 255, 0.1));
-      border: 1px solid var(--r-neutral-line, rgba(255, 255, 255, 0.1));
+      border: 0.5px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
+      border: 1px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
       box-shadow: none;
       .chain-icon-comp {
         width: 16px;
@@ -78,7 +78,7 @@ const ConnectWrapper = styled.div`
         font-size: 22px;
         line-height: 26px;
         text-align: center;
-        color: var(--r-neutral-title-1, #192945);
+        color: var(--l-neutral-title-1, #192945);
       }
     }
   }

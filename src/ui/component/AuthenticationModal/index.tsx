@@ -41,7 +41,7 @@ const Description = styled.div`
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  color: var(--r-neutral-body, #d3d8e0);
+  color: var(--l-neutral-body, #d3d8e0);
 `;
 
 const FieldList = styled.div`
@@ -55,7 +55,7 @@ const FieldList = styled.div`
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: var(--r-neutral-title-1, #f7fafc);
+    color: var(--l-neutral-title-1, #f7fafc);
     border: 1px solid transparent;
     margin-bottom: 8px;
 
@@ -198,7 +198,7 @@ const AuthenticationModal = ({
                     width={'20px'}
                     height={'20px'}
                     background="var(--l-green-default, #2ABB7F)"
-                    unCheckBackground="var(--r-neutral-line, rgba(255, 255, 255, 0.1))"
+                    unCheckBackground="var(--l-neutral-line, rgba(255, 255, 255, 0.1))"
                     onChange={handleClickItem}
                   />
                 }

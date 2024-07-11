@@ -48,7 +48,7 @@ export const MessageWrapper = styled.div`
         content: '';
         width: 400px;
         height: 1px;
-        border-top: 1px dashed var(--r-neutral-line, rgba(255, 255, 255, 0.1));
+        border-top: 1px dashed var(--l-neutral-line, rgba(255, 255, 255, 0.1));
         position: absolute;
         top: 50%;
       }
@@ -70,7 +70,7 @@ export const MessageWrapper = styled.div`
     font-size: 13px;
     line-height: 16px;
     font-weight: 400;
-    color: var(--r-neutral-body, #3e495e);
+    color: var(--l-neutral-body, #3e495e);
     height: 320px;
     overflow-y: auto;
     padding: 0 16px 16px;

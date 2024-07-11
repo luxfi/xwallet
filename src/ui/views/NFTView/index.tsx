@@ -18,7 +18,7 @@ import { useTranslation } from 'react-i18next';
 const TabsStyled = styled(Tabs)`
   .ant-tabs-tab {
     border-radius: 4px;
-    color: var(--r-neutral-body, #3e495e);
+    color: var(--l-neutral-body, #3e495e);
     font-size: 12px;
     transition: all 0.3s ease-in-out;
     margin: 0 !important;
@@ -48,7 +48,7 @@ const TabsStyled = styled(Tabs)`
 
   .ant-tabs-nav-list {
     margin: auto;
-    background: var(--r-neutral-line, #d3d8e0);
+    background: var(--l-neutral-line, #d3d8e0);
     border-radius: 6px;
     padding: 2px;
   }

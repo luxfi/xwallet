@@ -34,7 +34,7 @@ export const ConfirmModifyRpcModal = ({
       onCancel={onCancel}
       bodyStyle={{
         padding: 0,
-        background: 'var(--r-neutral-bg1, #FFF)',
+        background: 'var(--l-neutral-bg1, #FFF)',
       }}
       zIndex={zIndex || 1002}
       style={{

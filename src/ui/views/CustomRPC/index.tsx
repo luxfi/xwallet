@@ -45,13 +45,13 @@ const RPCItemWrapper = styled.div`
         font-size: 13px;
         font-weight: 500;
         line-height: 18px;
-        color: var(--r-neutral-title-1, #f7fafc);
+        color: var(--l-neutral-title-1, #f7fafc);
       }
       &:nth-child(2) {
         font-weight: 400;
         font-size: 13px;
         line-height: 15px;
-        color: var(--r-neutral-body, #d3d8e0);
+        color: var(--l-neutral-body, #d3d8e0);
       }
     }
   }
@@ -95,8 +95,8 @@ const RPCListContainer = styled.div`
 
 const Footer = styled.div`
   height: 84px;
-  border-top: 0.5px solid var(--r-neutral-line, rgba(255, 255, 255, 0.1));
-  background: var(--r-neutral-bg1, rgba(255, 255, 255, 0.06));
+  border-top: 0.5px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
+  background: var(--l-neutral-bg1, rgba(255, 255, 255, 0.06));
   padding: 20px;
   display: flex;
   justify-content: center;

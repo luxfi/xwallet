@@ -28,7 +28,7 @@ const Wraper = styled.div`
     margin-bottom: 16px;
   }
   .ant-form-item-label > label {
-    color: var(--r-neutral-body, #3e495e);
+    color: var(--l-neutral-body, #3e495e);
     font-size: 13px;
     line-height: 16px;
   }
@@ -39,10 +39,10 @@ const Wraper = styled.div`
     margin-left: auto;
     margin-right: auto;
     background: transparent;
-    border: 1px solid var(--r-neutral-line, #d3d8e0);
+    border: 1px solid var(--l-neutral-line, #d3d8e0);
     border-radius: 6px;
 
-    color: var(--r-neutral-title1, #192945);
+    color: var(--l-neutral-title1, #192945);
     font-size: 15px;
     font-weight: 500;
 
@@ -64,11 +64,11 @@ const Wraper = styled.div`
   }
   .ant-form-item-has-error .ant-input,
   .ant-form-item-has-error .ant-input:hover {
-    border: 1px solid var(--r-red-default, #e34935);
+    border: 1px solid var(--l-red-default, #e34935);
   }
 
   .ant-form-item-explain.ant-form-item-explain-error {
-    color: var(--r-red-default, #e34935);
+    color: var(--l-red-default, #e34935);
     font-size: 13px;
     line-height: 16px;
     min-height: 16px;
@@ -77,7 +77,7 @@ const Wraper = styled.div`
 
 const Footer = styled.div`
   height: 84px;
-  border-top: 0.5px solid var(--r-neutral-line, rgba(255, 255, 255, 0.1));
+  border-top: 0.5px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
   background: var(--r-neutral-card-1, rgba(255, 255, 255, 0.06));
   padding: 16px 20px;
   display: flex;

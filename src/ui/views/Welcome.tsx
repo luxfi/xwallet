@@ -8,14 +8,14 @@ import WelcomeHeaderImg from 'ui/assets/welcome-header.png';
 const Container = styled.div`
   .step {
     padding: 42px 20px 32px 20px;
-    background: var(--r-neutral-bg1);
+    background: var(--l-neutral-bg1);
   }
   .step-title {
     font-weight: 700;
     font-size: 22px;
     line-height: 24px;
     text-align: center;
-    color: var(--r-neutral-title1);
+    color: var(--l-neutral-title1);
     margin-bottom: 13px;
   }
   .step-content {
@@ -23,7 +23,7 @@ const Container = styled.div`
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: var(--r-neutral-title1);
+    color: var(--l-neutral-title1);
     margin-bottom: 48px;
   }
 `;

@@ -48,14 +48,14 @@ const Wrapper = styled.div`
     .ant-tabs-nav {
       position: sticky;
       top: -16px;
-      background: var(--r-neutral-bg1, #fff);
+      background: var(--l-neutral-bg1, #fff);
       z-index: 10;
     }
     .ant-tabs-tab + .ant-tabs-tab {
       margin: 0;
     }
     .ant-tabs-tab-btn {
-      color: var(--r-neutral-body, #3e495e);
+      color: var(--l-neutral-body, #3e495e);
       &:hover {
         color: var(--l-blue-default, #7084ff);
       }
@@ -74,7 +74,7 @@ const Wrapper = styled.div`
     }
 
     .ant-tabs-nav::before {
-      border-bottom: 0.5px solid var(--r-neutral-line, #d3d8e0) !important;
+      border-bottom: 0.5px solid var(--l-neutral-line, #d3d8e0) !important;
     }
   }
 `;

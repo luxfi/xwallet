@@ -32,15 +32,15 @@ const RuleDrawerWrapper = styled.div`
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: var(--r-neutral-title-1, #f7fafc);
+    color: var(--l-neutral-title-1, #f7fafc);
     padding-bottom: 16px;
-    border-bottom: 1px solid var(--r-neutral-line, rgba(255, 255, 255, 0.1));
+    border-bottom: 1px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
     margin-bottom: 14px;
     display: flex;
     .desc-title {
       font-size: 13px;
       line-height: 15px;
-      color: var(--r-neutral-body, #d3d8e0);
+      color: var(--l-neutral-body, #d3d8e0);
       margin-right: 6px;
       font-weight: normal;
       margin-top: 1px;
@@ -49,11 +49,11 @@ const RuleDrawerWrapper = styled.div`
   .threshold {
     font-size: 13px;
     line-height: 18px;
-    color: var(--r-neutral-body, #d3d8e0);
+    color: var(--l-neutral-body, #d3d8e0);
     p {
       font-size: 13px;
       line-height: 15px;
-      color: var(--r-neutral-body, #d3d8e0);
+      color: var(--l-neutral-body, #d3d8e0);
       margin-bottom: 8px;
     }
     .value {
@@ -80,12 +80,12 @@ const RuleDrawerWrapper = styled.div`
         font-weight: 500;
         font-size: 15px;
         line-height: 18px;
-        color: var(--r-neutral-title-1, #f7fafc);
+        color: var(--l-neutral-title-1, #f7fafc);
       }
       .current-value {
         font-size: 12px;
         line-height: 14px;
-        color: var(--r-neutral-foot, #babec5);
+        color: var(--l-neutral-foot, #babec5);
       }
     }
   }
@@ -104,8 +104,8 @@ const RuleDrawerWrapper = styled.div`
       margin-bottom: 12px;
       .rabby-checkbox__wrapper {
         .rabby-checkbox {
-          border: 1px solid var(--r-neutral-line);
-          background-color: var(--r-neutral-foot) !important;
+          border: 1px solid var(--l-neutral-line);
+          background-color: var(--l-neutral-foot) !important;
         }
         &.checked {
           .rabby-checkbox {
@@ -218,12 +218,12 @@ const RuleDrawerWrapper = styled.div`
     .rule-threshold {
       background: var(--r-neutral-card-3, #f7fafc);
       .level-text {
-        color: var(--r-neutral-foot, #babec5);
+        color: var(--l-neutral-foot, #babec5);
       }
     }
     .rule-threshold-footer {
       .rabby-checkbox__label {
-        color: var(--r-neutral-foot, #babec5);
+        color: var(--l-neutral-foot, #babec5);
       }
 
       .button-ignore {
@@ -253,13 +253,13 @@ const RuleFooter = styled.div`
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
-    color: var(--r-neutral-title-1, #f7fafc);
+    color: var(--l-neutral-title-1, #f7fafc);
     .right {
       display: flex;
       font-size: 12px;
       line-height: 14px;
       text-align: right;
-      color: var(--r-neutral-body, #d3d8e0);
+      color: var(--l-neutral-body, #d3d8e0);
       font-weight: normal;
       align-items: center;
     }
@@ -272,7 +272,7 @@ const RuleFooter = styled.div`
         left: 18px;
         width: 328px;
         height: 1px;
-        background-color: var(--r-neutral-line, rgba(255, 255, 255, 0.1));
+        background-color: var(--l-neutral-line, rgba(255, 255, 255, 0.1));
       }
     }
     &:nth-child(2) {

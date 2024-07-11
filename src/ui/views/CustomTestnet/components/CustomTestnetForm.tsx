@@ -10,7 +10,7 @@ const Wraper = styled.div`
     margin-bottom: 16px;
   }
   .ant-form-item-label > label {
-    color: var(--r-neutral-body, #3e495e);
+    color: var(--l-neutral-body, #3e495e);
     font-size: 13px;
     line-height: 16px;
   }
@@ -21,10 +21,10 @@ const Wraper = styled.div`
     margin-left: auto;
     margin-right: auto;
     background: transparent;
-    border: 1px solid var(--r-neutral-line, #d3d8e0);
+    border: 1px solid var(--l-neutral-line, #d3d8e0);
     border-radius: 6px;
 
-    color: var(--r-neutral-title1, #192945);
+    color: var(--l-neutral-title1, #192945);
     font-size: 15px;
     font-weight: 500;
 
@@ -35,19 +35,19 @@ const Wraper = styled.div`
   .ant-input[disabled] {
     background: var(--r-neutral-card2, #f2f4f7);
     border-color: transparent;
-    /* color: var(--r-neutral-foot, #6a7587); */
+    /* color: var(--l-neutral-foot, #6a7587); */
     &:hover {
       border-color: transparent;
     }
   }
   .ant-form-item-has-error .ant-input,
   .ant-form-item-has-error .ant-input:hover {
-    border: 1px solid var(--r-red-default, #e34935);
+    border: 1px solid var(--l-red-default, #e34935);
     background-color: transparent;
   }
 
   .ant-form-item-explain.ant-form-item-explain-error {
-    color: var(--r-red-default, #e34935);
+    color: var(--l-red-default, #e34935);
     font-size: 13px;
     line-height: 16px;
     min-height: 16px;

@@ -27,7 +27,7 @@ const Description = styled.p`
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: var(--r-neutral-foot, #babec5);
+  color: var(--l-neutral-foot, #babec5);
   margin: 0 0 30px;
 `;
 

@@ -25,7 +25,7 @@ const ThresholdWrapper = styled.div`
     font-weight: 700;
     font-size: 13px;
     line-height: 18px;
-    color: var(--r-neutral-title-1, #f7fafc);
+    color: var(--l-neutral-title-1, #f7fafc);
     margin-left: 8px;
   }
   &.safe {

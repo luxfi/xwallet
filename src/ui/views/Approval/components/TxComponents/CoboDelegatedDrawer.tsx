@@ -21,7 +21,7 @@ const ListStyled = styled.div`
   }
 
   .alian-name {
-    color: var(--r-neutral-title-1);
+    color: var(--l-neutral-title-1);
     font-size: 13px;
     margin: 0;
     font-weight: 500;

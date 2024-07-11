@@ -12,7 +12,7 @@ const ITEM_H = 208 / 4;
 const ROW_COUNT = 3;
 
 const NumberFlag = styled.div`
-  color: var(--r-neutral-foot);
+  color: var(--l-neutral-foot);
   font-weight: 400;
   font-size: 12px;
   height: 14px;
@@ -32,7 +32,7 @@ const FocusingBox = styled.div`
 `;
 
 const ErrorBox = styled(FocusingBox)`
-  border-color: var(--r-red-default);
+  border-color: var(--l-red-default);
 `;
 
 const MatrixWrapper = styled.div.withConfig<{
@@ -54,13 +54,13 @@ const MatrixWrapper = styled.div.withConfig<{
 
     font-size: 15px;
     font-weight: 500;
-    color: var(--r-neutral-title-1);
+    color: var(--l-neutral-title-1);
     position: relative;
 
-    border-right: 1px solid var(--r-neutral-line);
-    border-bottom: 1px solid var(--r-neutral-line);
-    border-right: 0.5px solid var(--r-neutral-line);
-    border-bottom: 0.5px solid var(--r-neutral-line);
+    border-right: 1px solid var(--l-neutral-line);
+    border-bottom: 1px solid var(--l-neutral-line);
+    border-right: 0.5px solid var(--l-neutral-line);
+    border-bottom: 0.5px solid var(--l-neutral-line);
 
     ${(props) => {
       const rowCount = props.rowCount || ROW_COUNT;

@@ -8,7 +8,7 @@ export const DIV = styled.div`
     justify-content: space-between;
     padding: 12px 16px;
     align-items: center;
-    color: var(--r-neutral-title1, #192945);
+    color: var(--l-neutral-title1, #192945);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 
@@ -42,13 +42,13 @@ export const DIV = styled.div`
         padding: 0;
         font-size: 13px;
         font-weight: 500;
-        color: var(--r-neutral-body, #3e495e);
+        color: var(--l-neutral-body, #3e495e);
         border-radius: 6px;
       }
     }
     &.is-unknown {
       .left {
-        color: var(--r-neutral-foot, #6a7587);
+        color: var(--l-neutral-foot, #6a7587);
       }
     }
   }

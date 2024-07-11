@@ -66,7 +66,7 @@ const Wrapper = styled.div<{
   }
 
   .container {
-    background: var(--r-neutral-bg1, #1c1f2b);
+    background: var(--l-neutral-bg1, #1c1f2b);
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
     background-image: url(${imgBg});
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ const Wrapper = styled.div<{
         pointer-events: none;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
-        background: var(--r-neutral-bg1, #1c1f2b);
+        background: var(--l-neutral-bg1, #1c1f2b);
         z-index: -1;
       }
     }
@@ -106,7 +106,7 @@ const Wrapper = styled.div<{
       display: flex;
       align-items: center;
       gap: 4px;
-      color: var(--r-neutral-body, #d3d8e0);
+      color: var(--l-neutral-body, #d3d8e0);
       font-size: 15px;
       font-weight: 400;
     }
@@ -116,7 +116,7 @@ const Wrapper = styled.div<{
       display: flex;
       align-items: center;
       gap: 4px;
-      color: var(--r-neutral-title1, #f7fafc);
+      color: var(--l-neutral-title1, #f7fafc);
       font-size: 13px;
       font-weight: 400;
     }
@@ -137,7 +137,7 @@ const Wrapper = styled.div<{
       flex-direction: column;
       align-items: center;
       margin-top: 28px;
-      border-top: 0.5px solid var(--r-neutral-line);
+      border-top: 0.5px solid var(--l-neutral-line);
       padding-top: 24px;
       margin: 0 auto;
 
@@ -161,7 +161,7 @@ const Wrapper = styled.div<{
       }
       .time {
         margin-top: 8px;
-        color: var(--r-neutral-foot);
+        color: var(--l-neutral-foot);
         text-align: center;
         font-size: 13px;
         font-style: normal;
@@ -170,7 +170,7 @@ const Wrapper = styled.div<{
       }
       .requestedTip {
         margin-top: 48px;
-        color: var(--r-neutral-body);
+        color: var(--l-neutral-body);
         text-align: center;
         font-size: 15px;
         font-style: normal;

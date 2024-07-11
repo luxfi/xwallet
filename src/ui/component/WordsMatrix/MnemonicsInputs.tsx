@@ -27,7 +27,7 @@ const ROW_COUNT = 3;
 const DEFAULT_MEMONICS_COUNT = 12;
 
 const NumberFlag = styled.div`
-  color: var(--r-neutral-title-1, #192945);
+  color: var(--l-neutral-title-1, #192945);
   font-weight: 500;
   font-size: 15px;
   height: 18px;
@@ -69,11 +69,11 @@ const MatrixWrapper = styled.div.withConfig<{
 
     font-size: 15px;
     font-weight: 500;
-    color: var(--r-neutral-title-1);
+    color: var(--l-neutral-title-1);
     position: relative;
 
-    border-right: 1px solid var(--r-neutral-line);
-    border-bottom: 1px solid var(--r-neutral-line);
+    border-right: 1px solid var(--l-neutral-line);
+    border-bottom: 1px solid var(--l-neutral-line);
 
     ${(props) => {
       const rowCount = props.rowCount || ROW_COUNT;
@@ -103,10 +103,10 @@ const MatrixWrapper = styled.div.withConfig<{
         //   border-bottom-right-radius: 6px;
         // }
         // &:not(.invalid):nth-child(-n + ${rowCount}) .mnemonics-input:not(:focus) {
-        //   border-top: 1px solid var(--r-neutral-line);
+        //   border-top: 1px solid var(--l-neutral-line);
         // }
         // &:not(.invalid):nth-child(${rowCount}n+1) .mnemonics-input:not(:focus) {
-        //   border-left: 1px solid var(--r-neutral-line);
+        //   border-left: 1px solid var(--l-neutral-line);
         // }
       `;
     }}
@@ -128,7 +128,7 @@ const MatrixWrapper = styled.div.withConfig<{
   /* for MnemonicsInputs :start */
   .mnemonics-input {
     background-color: transparent;
-    color: var(--r-neutral-title-1, #192945);
+    color: var(--l-neutral-title-1, #192945);
     height: 100%;
     display: inline-block;
     line-height: ${ITEM_H}px;
@@ -145,10 +145,10 @@ const MatrixWrapper = styled.div.withConfig<{
   .matrix-word-item.invalid {
     .mnemonics-input {
       opacity: 1;
-      border-color: var(--r-red-default, #e34935);
+      border-color: var(--l-red-default, #e34935);
     }
     ${styid(NumberFlag)} {
-      color: var(--r-red-default, #e34935);
+      color: var(--l-red-default, #e34935);
     }
   }
   .visible-switch-icon-wrapper {
@@ -197,7 +197,7 @@ const HeadToolbar = styled.div`
   font-size: 13px;
   line-height: 14px;
 
-  color: var(--r-neutral-body);
+  color: var(--l-neutral-body);
 `;
 
 const DFLT_FOCUSING = { index: -1, visible: false };
@@ -416,7 +416,7 @@ function MnemonicsInputs({
                   <Menu.Item
                     className="h-[38px] py-0 px-[8px] hover:bg-transparent"
                     key={`countSelector-need-passphrase-${count}`}
-                    style={{ color: 'var(--r-neutral-body)' }}
+                    style={{ color: 'var(--l-neutral-body)' }}
                     onClick={() => {
                       setMnemonicsCount(count);
                       setNeedPassphrase(true);
@@ -445,7 +445,7 @@ function MnemonicsInputs({
                   <Menu.Item
                     className="h-[38px] py-0 px-[8px] hover:bg-transparent"
                     key={`countSelector-need-passphrase-${passphrase}`}
-                    style={{ color: 'var(--r-neutral-body)' }}
+                    style={{ color: 'var(--l-neutral-body)' }}
                     onClick={() => {
                       onSlip39Change(true);
                       setNeedPassphrase(passphrase);

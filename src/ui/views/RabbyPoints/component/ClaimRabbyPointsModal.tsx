@@ -38,21 +38,21 @@ const StyledModal = styled(Modal)`
 `;
 
 const StyledInput = styled(Input)`
-  background: var(--r-neutral-bg1, #fff);
+  background: var(--l-neutral-bg1, #fff);
   &.ant-input-affix-wrapper {
     border-radius: 8px;
-    border: 1px solid var(--r-neutral-line, #d3d8e0);
+    border: 1px solid var(--l-neutral-line, #d3d8e0);
     & > input.ant-input {
       height: 44px;
       font-size: 15px;
       font-weight: 500;
       text-align: center;
-      background: var(--r-neutral-bg1, #fff);
-      color: var(--r-neutral-title1, #192945);
+      background: var(--l-neutral-bg1, #fff);
+      color: var(--l-neutral-title1, #192945);
       transition: none;
 
       &:placeholder-shown {
-        color: var(--r-neutral-foot, #6a7587);
+        color: var(--l-neutral-foot, #6a7587);
         font-size: 13px;
         font-weight: normal;
       }

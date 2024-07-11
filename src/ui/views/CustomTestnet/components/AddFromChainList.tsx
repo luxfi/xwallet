@@ -25,7 +25,7 @@ const Wraper = styled.div`
   height: 100%;
   left: 0;
   top: 0;
-  background-color: var(--r-neutral-bg1, #fff);
+  background-color: var(--l-neutral-bg1, #fff);
   transform: translateX(100%);
   transition: transform 0.3s;
   border-radius: 16px 16px 0px 0px;
@@ -35,7 +35,7 @@ const Wraper = styled.div`
   flex-direction: column;
 
   .ant-input-affix-wrapper {
-    color: var(--r-neutral-foot, #6a7587);
+    color: var(--l-neutral-foot, #6a7587);
     font-size: 13px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -43,15 +43,15 @@ const Wraper = styled.div`
 
     border-radius: 6px;
     background: var(--l-neutral-card1, #fff);
-    border: 1px solid var(--r-neutral-line, #d3d8e0);
+    border: 1px solid var(--l-neutral-line, #d3d8e0);
 
     .ant-input {
       background-color: transparent;
-      color: var(--r-neutral-title1, #192945);
+      color: var(--l-neutral-title1, #192945);
     }
 
     .anticon {
-      color: var(--r-neutral-foot, #6a7587);
+      color: var(--l-neutral-foot, #6a7587);
     }
   }
   .ant-input-affix-wrapper:focus,
@@ -65,7 +65,7 @@ const Wraper = styled.div`
     left: 16px;
     right: 16px;
     bottom: 0;
-    border-bottom: 0.5px solid var(--r-neutral-line, #d3d8e0);
+    border-bottom: 0.5px solid var(--l-neutral-line, #d3d8e0);
   }
 `;
 

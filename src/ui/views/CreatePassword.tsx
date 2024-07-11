@@ -74,7 +74,7 @@ const CreatePassword = () => {
       'h1,h2': {
         fontSize: '15px',
         fontWeight: '700',
-        color: 'var(--r-neutral-title1)',
+        color: 'var(--l-neutral-title1)',
         margin: '20px 0',
       },
       p: {
@@ -85,7 +85,7 @@ const CreatePassword = () => {
       },
       'p,li': {
         fontSize: '14px',
-        color: 'var(--r-neutral-body)',
+        color: 'var(--l-neutral-body)',
       },
       'ol, ul': {
         listStyle: 'disc outside none',

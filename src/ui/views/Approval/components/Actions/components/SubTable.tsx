@@ -83,7 +83,7 @@ const SubColWrapper = styled.div`
     margin-top: -6px;
 
     .row {
-      color: var(--r-neutral-foot, #6a7587) !important;
+      color: var(--l-neutral-foot, #6a7587) !important;
       font-weight: 400 !important;
     }
   }
@@ -112,7 +112,7 @@ export const SubCol = ({
 const SubRowWrapper = styled.div`
   font-size: 14px;
   line-height: normal;
-  color: var(--r-neutral-body, #3e495e);
+  color: var(--l-neutral-body, #3e495e);
   font-weight: 500;
 
   &.title {

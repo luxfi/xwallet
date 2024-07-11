@@ -38,7 +38,7 @@ const OptionsList = styled.div`
     }
 
     &-title {
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       font-size: 15px;
       font-weight: 500;
       line-height: 18px;
@@ -46,7 +46,7 @@ const OptionsList = styled.div`
     }
 
     &-desc {
-      color: var(--r-neutral-body, #3e495e);
+      color: var(--l-neutral-body, #3e495e);
       font-size: 13px;
       font-weight: 400;
       line-height: 16px;

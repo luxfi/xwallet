@@ -156,11 +156,11 @@ const CardBody = styled.div<{
       text-align: center;
       font-size: 12px;
       line-height: 14px;
-      color: var(--r-neutral-body, #3e495e);
+      color: var(--l-neutral-body, #3e495e);
       margin: 8px auto 0;
     }
     .cardTitle {
-      color: var(--r-neutral-title-1, #192945) !important;
+      color: var(--l-neutral-title-1, #192945) !important;
       font-weight: 500;
       font-size: 13px !important;
       margin: 4px auto 0;
@@ -175,7 +175,7 @@ const CardBody = styled.div<{
       text-align: center !important;
       font-size: 13px !important;
       font-weight: 500;
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       padding-top: 0;
       transition: none;
       &.active {
@@ -184,7 +184,7 @@ const CardBody = styled.div<{
     }
     .ant-input:focus,
     .ant-input-focused {
-      color: var(--r-neutral-title-1);
+      color: var(--l-neutral-title-1);
     }
   }
 `;
@@ -194,11 +194,11 @@ const ManuallySetGasLimitAlert = styled.div`
   font-size: 13px;
   line-height: 15px;
   margin-top: 10px;
-  color: var(--r-neutral-body);
+  color: var(--l-neutral-body);
 `;
 
 const ErrorsWrapper = styled.div`
-  border-top: 0.5px solid var(--r-neutral-line, rgba(255, 255, 255, 0.1));
+  border-top: 0.5px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
   padding-top: 14px;
   margin-top: 14px;
   .item {
@@ -206,7 +206,7 @@ const ErrorsWrapper = styled.div`
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: var(--r-neutral-body, #3e495e);
+    color: var(--l-neutral-body, #3e495e);
     margin-bottom: 10px;
     align-items: flex-start;
     .icon-alert {
@@ -999,7 +999,7 @@ const GasPriceDesc = styled.ul`
   margin-top: 12px;
   margin-bottom: 0;
   font-size: 13px;
-  color: var(--r-neutral-body, #3e495e);
+  color: var(--l-neutral-body, #3e495e);
   li {
     position: relative;
     margin-bottom: 8px;
@@ -1013,7 +1013,7 @@ const GasPriceDesc = styled.ul`
       width: 4px;
       height: 4px;
       border-radius: 100%;
-      background-color: var(--r-neutral-body, #3e495e);
+      background-color: var(--l-neutral-body, #3e495e);
       left: 0;
       top: 8px;
     }

@@ -31,7 +31,7 @@ const Wrapper = styled(Card)`
     padding: 0 16px 12px;
     margin-top: -4px;
     &-label {
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       font-size: 15px;
       font-weight: 500;
       line-height: 18px;
@@ -45,14 +45,14 @@ const Wrapper = styled(Card)`
     .nonce-input {
       height: 40px;
       border-radius: 6px;
-      border: 1px solid var(--r-neutral-line, #d3d8e0);
-      /* border: 0.5px solid var(--r-neutral-line, #d3d8e0); */
+      border: 1px solid var(--l-neutral-line, #d3d8e0);
+      /* border: 0.5px solid var(--l-neutral-line, #d3d8e0); */
 
       background: var(--r-neutral-bg-3, #f7fafc);
 
       .ant-input {
         background: var(--r-neutral-bg-3, #f7fafc);
-        color: var(--r-neutral-title-1);
+        color: var(--l-neutral-title-1);
       }
     }
 
@@ -65,7 +65,7 @@ const Wrapper = styled(Card)`
     &-option-group {
       &-title {
         padding: 4px 12px 8px 12px;
-        color: var(--r-neutral-body, #3e495e);
+        color: var(--l-neutral-body, #3e495e);
         font-size: 12px;
         font-weight: 400;
         line-height: 14px;
@@ -76,7 +76,7 @@ const Wrapper = styled(Card)`
       display: flex;
       align-items: center;
 
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       font-size: 13px;
       font-weight: 500;
 
@@ -107,13 +107,13 @@ const Wrapper = styled(Card)`
         right: 12px;
         height: 1px;
         height: 0.5px;
-        background: var(--r-neutral-line, #d3d8e0);
+        background: var(--l-neutral-line, #d3d8e0);
       }
     }
   }
 
   .ant-form-item-has-error .nonce-input {
-    border-color: var(--r-red-default, #e34935) !important;
+    border-color: var(--l-red-default, #e34935) !important;
   }
 
   .ant-form-item-explain,
@@ -124,7 +124,7 @@ const Wrapper = styled(Card)`
     margin-bottom: 0;
   }
   .ant-form-item-explain.ant-form-item-explain-error {
-    color: var(--r-red-default, #e34935);
+    color: var(--l-red-default, #e34935);
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
@@ -142,7 +142,7 @@ const Wrapper = styled(Card)`
     margin-top: 8px;
 
     &-message {
-      color: var(--r-neutral-body, #3e495e);
+      color: var(--l-neutral-body, #3e495e);
       text-align: center;
       font-size: 12px;
       font-style: normal;

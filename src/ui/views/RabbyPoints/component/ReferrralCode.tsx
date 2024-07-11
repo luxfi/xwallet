@@ -11,15 +11,15 @@ import useDebounceValue from '@/ui/hooks/useDebounceValue';
 
 const StyledInput = styled(Input)`
   border-radius: 8px;
-  border: 1px solid var(--r-neutral-line, #d3d8e0);
+  border: 1px solid var(--l-neutral-line, #d3d8e0);
   height: 52px;
   font-size: 14px;
   font-weight: 510;
   text-align: left;
-  background: var(--r-neutral-bg1, #fff);
+  background: var(--l-neutral-bg1, #fff);
   & > input.ant-input {
-    background: var(--r-neutral-bg1, #fff);
-    color: var(--r-neutral-title1, #192945);
+    background: var(--l-neutral-bg1, #fff);
+    color: var(--l-neutral-title1, #192945);
   }
   &:hover,
   &.ant-input-affix-wrapper-focused {

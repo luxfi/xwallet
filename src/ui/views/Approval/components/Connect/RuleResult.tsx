@@ -23,7 +23,7 @@ const RuleResultWrapper = styled.div`
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
-    color: var(--r-neutral-body, #3e495e);
+    color: var(--l-neutral-body, #3e495e);
     width: 49%;
   }
   .rule-value {
@@ -33,7 +33,7 @@ const RuleResultWrapper = styled.div`
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: var(--r-neutral-title-1, #192945);
+    color: var(--l-neutral-title-1, #192945);
   }
   .collect-list {
     display: flex;

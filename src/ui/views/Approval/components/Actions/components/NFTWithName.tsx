@@ -33,7 +33,7 @@ const Wrapper = styled.div`
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: var(--r-neutral-title-1, #192945);
+    color: var(--l-neutral-title-1, #192945);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

@@ -78,7 +78,7 @@ export const TradingSettings = ({
                   <span
                     className={clsx(
                       'text-12 text-r-neutral-foot rounded-[2px] px-[4px] py-[1px]',
-                      'border-[0.5px] border-solid border--r-neutral-line'
+                      'border-[0.5px] border-solid border--l-neutral-line'
                     )}
                   >
                     {item?.chains ? t('page.swap.dex') : t('page.swap.cex')}

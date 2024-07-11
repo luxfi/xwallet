@@ -25,14 +25,14 @@ const Wrapper = styled.div`
     }
   }
   .ant-timeline-item-tail {
-    border-left: 1px solid var(--r-neutral-line, #d3d8e0);
-    border-left: 0.5px solid var(--r-neutral-line, #d3d8e0);
+    border-left: 1px solid var(--l-neutral-line, #d3d8e0);
+    border-left: 0.5px solid var(--l-neutral-line, #d3d8e0);
   }
   .ant-timeline.ant-timeline-pending
     .ant-timeline-item-last
     .ant-timeline-item-tail {
-    border-left: 1px dashed var(--r-neutral-line, #d3d8e0);
-    border-left: 0.5px dashed var(--r-neutral-line, #d3d8e0);
+    border-left: 1px dashed var(--l-neutral-line, #d3d8e0);
+    border-left: 0.5px dashed var(--l-neutral-line, #d3d8e0);
   }
 `;
 

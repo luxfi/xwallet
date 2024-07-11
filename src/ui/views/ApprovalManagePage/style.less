@@ -111,7 +111,7 @@
     height: 100%;
     max-height: @page-header__title-h;
     text-align: center;
-    color: var(--r-neutral-title1);
+    color: var(--l-neutral-title1);
     vertical-align: baseline;
     display: inline-block;
   }
@@ -130,14 +130,14 @@
     background-color: var(--l-neutral-card1);
     border-radius: @radius-value;
     overflow: hidden;
-    border: 0.5px solid var(--r-neutral-line);
+    border: 0.5px solid var(--l-neutral-line);
     transition: ease-in 0.2s border-color;
 
     .ant-input-affix-wrapper.search-input, .ant-input {
       background-color: transparent;
-      color: var(--r-neutral-title1);
+      color: var(--l-neutral-title1);
       &::placeholder-shown {
-        color: var(--r-neutral-foot);
+        color: var(--l-neutral-foot);
       }
     }
 
@@ -207,7 +207,7 @@
     border-bottom: transparent;
     background-color: var(--l-neutral-card1);
     background: var(--l-neutral-card1);
-    color: var(--r-neutral-title1);
+    color: var(--l-neutral-title1);
 
     // override default head cell style
     // &.ant-table-column-has-sorters:hover {
@@ -363,7 +363,7 @@
     box-sizing: border-box;
     padding: 16px 0;
     background: var(--l-neutral-card1);
-    color: var(--r-neutral-title1);
+    color: var(--l-neutral-title1);
     height: 100%;
     display: flex;
     align-items: center;
@@ -375,11 +375,11 @@
 
   .am-virtual-table-cell-inner .name-and-address {
     &, .address {
-      color: var(--r-neutral-title1);
+      color: var(--l-neutral-title1);
     }
 
     .contract-name {
-      color: var(--r-neutral-body);
+      color: var(--l-neutral-body);
       max-width: 10em;
       .ellipsis();
     }
@@ -429,7 +429,7 @@
     margin-top: 0;
     border-bottom-left-radius: @mt-offset;
     border-bottom-right-radius: @mt-offset;
-    color: var(--r-neutral-body);
+    color: var(--l-neutral-body);
     text-align: center;
     font-size: 14px;
     font-weight: 400;
@@ -558,11 +558,11 @@
 
 .contract-approval-item .token-approval-item-desc {
   &, .address {
-    color: var(--r-neutral-title1);
+    color: var(--l-neutral-title1);
   }
 
   .contract-name {
-    color: var(--r-neutral-body);
+    color: var(--l-neutral-body);
     max-width: 10em;
     .ellipsis();
   }

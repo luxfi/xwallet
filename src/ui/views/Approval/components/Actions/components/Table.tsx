@@ -40,7 +40,7 @@ const RowWrapper = styled.div`
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: var(--r-neutral-body, #3e495e);
+  color: var(--l-neutral-body, #3e495e);
   white-space: nowrap;
   display: flex;
   align-items: flex-start;
@@ -68,7 +68,7 @@ const RowWrapper = styled.div`
   &.title {
     flex-shrink: 0;
     flex: 1;
-    color: var(--r-neutral-title-1, #192945);
+    color: var(--l-neutral-title-1, #192945);
     font-weight: 400;
 
     .icon-tip {
@@ -80,7 +80,7 @@ const RowWrapper = styled.div`
   .desc-list {
     font-size: 13px;
     line-height: 16px;
-    color: var(--r-neutral-foot, #6a7587);
+    color: var(--l-neutral-foot, #6a7587);
     margin: 0;
     font-weight: 400;
     li {
@@ -93,7 +93,7 @@ const RowWrapper = styled.div`
         position: absolute;
         width: 3px;
         height: 3px;
-        background-color: var(--r-neutral-foot, #6a7587);
+        background-color: var(--l-neutral-foot, #6a7587);
         border-radius: 100%;
         top: 6px;
         margin-left: -6px;

@@ -10,7 +10,7 @@ const UserListDrawerWrapper = styled.div`
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
-    color: var(--r-neutral-title-1, #192945);
+    color: var(--l-neutral-title-1, #192945);
     .logo {
       width: 24px;
       height: 24px;
@@ -31,13 +31,13 @@ const Footer = styled.div`
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
-    color: var(--r-neutral-title-1, #192945);
+    color: var(--l-neutral-title-1, #192945);
     position: relative;
     border: 1px solid transparent;
     .rabby-checkbox__wrapper {
       .rabby-checkbox {
-        border: 1px solid var(--r-neutral-line);
-        background-color: var(--r-neutral-foot) !important;
+        border: 1px solid var(--l-neutral-line);
+        background-color: var(--l-neutral-foot) !important;
       }
       &.checked {
         .rabby-checkbox {
@@ -53,7 +53,7 @@ const Footer = styled.div`
       left: 18px;
       width: 328px;
       height: 1px;
-      background-color: var(--r-neutral-line, #e5e9ef);
+      background-color: var(--l-neutral-line, #e5e9ef);
     }
     &:hover {
       background: var(--l-blue-light-1, #eef1ff);

@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   padding: 16px;
 
   .title {
-    color: var(--r-neutral-title-1, #192945);
+    color: var(--l-neutral-title-1, #192945);
     font-size: 13px;
     font-weight: 500;
   }

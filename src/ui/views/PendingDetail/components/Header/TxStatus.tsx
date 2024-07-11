@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     }
     .ant-popover-inner {
       border-radius: 8px;
-      border: 0.5px solid var(--r-neutral-line, rgba(255, 255, 255, 0.10));
+      border: 0.5px solid var(--l-neutral-line, rgba(255, 255, 255, 0.10));
       background: var(--r-neutral-bg-1, #3d4251);
       box-shadow: 0px 16px 40px 0px rgba(0, 0, 0, 0.20);      
     }

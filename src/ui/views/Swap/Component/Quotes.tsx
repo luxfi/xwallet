@@ -19,7 +19,7 @@ import { useTranslation } from 'react-i18next';
 import { getTokenSymbol } from '@/ui/utils/token';
 
 const CexListWrapper = styled.div`
-  border: 0.5px solid var(--r-neutral-line, #d3d8e0);
+  border: 0.5px solid var(--l-neutral-line, #d3d8e0);
   border-radius: 6px;
   &:empty {
     display: none;
@@ -32,7 +32,7 @@ const CexListWrapper = styled.div`
       position: absolute;
       width: 328px;
       height: 0;
-      border-bottom: 0.5px solid var(--r-neutral-line, #d3d8e0);
+      border-bottom: 0.5px solid var(--l-neutral-line, #d3d8e0);
       left: 16px;
       bottom: 0;
     }
@@ -346,7 +346,7 @@ export const QuoteList = (props: QuotesProps) => {
                   viewBox="0 0 14 14"
                 >
                   <path
-                    stroke="var(--r-neutral-foot)"
+                    stroke="var(--l-neutral-foot)"
                     strokeLinejoin="round"
                     strokeWidth={0.75}
                     d="M12.103.875H1.898a1.02 1.02 0 0 0-1.02 1.02V12.1c0 .564.456 1.02 1.02 1.02h10.205a1.02 1.02 0 0 0 1.02-1.02V1.895a1.02 1.02 0 0 0-1.02-1.02Z"

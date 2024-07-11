@@ -7,7 +7,7 @@ import IconArrowRight from 'ui/assets/dashboard/settings/icon-right-arrow.svg';
 const GlobalStyle = createGlobalStyle`
   .safe-replace-popup {
     .ant-drawer-title {
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       font-size: 17px;
       line-height: 20px;
       font-weight: 500;
@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Wrapper = styled.div`
   .desc {
-    color: var(--r-neutral-body, #3e495e);
+    color: var(--l-neutral-body, #3e495e);
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -48,7 +48,7 @@ const Wrapper = styled.div`
       }
 
       &-content {
-        color: var(--r-neutral-title-1, #192945);
+        color: var(--l-neutral-title-1, #192945);
         font-size: 15px;
         font-weight: 500;
         line-height: 18px;

@@ -25,7 +25,7 @@ const Warper = styled.div`
     border-radius: 6px;
     border: 0.5px solid var(--l-orange-default, #ffb020);
     border: 1px solid var(--l-orange-default, #ffb020);
-    background: var(--r-orange-light, rgba(255, 176, 32, 0.15));
+    background: var(--l-orange-light, rgba(255, 176, 32, 0.15));
     gap: 6px;
 
     &:not(:last-child) {
@@ -33,7 +33,7 @@ const Warper = styled.div`
     }
 
     &-content {
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       font-size: 13px;
       font-weight: 400;
       line-height: 18px; /* 138.462% */

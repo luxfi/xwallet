@@ -135,7 +135,7 @@ const Send = ({
                     logoSize={14}
                     textStyle={{
                       fontSize: '13px',
-                      color: 'var(--r-neutral-body, #3E495E)',
+                      color: 'var(--l-neutral-body, #3E495E)',
                     }}
                   />
                 ) : (

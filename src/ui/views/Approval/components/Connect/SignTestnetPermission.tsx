@@ -39,7 +39,7 @@ const SelectPopup = styled(Popup)`
 
     .option {
       display: flex;
-      color: var(--r-neutral-title1);
+      color: var(--l-neutral-title1);
       font-size: 15px;
       line-height: 18px;
       font-weight: 500;
@@ -56,7 +56,7 @@ const SelectPopup = styled(Popup)`
         bottom: 0;
         height: 1px;
         height: 0.5px;
-        background-color: var(--r-neutral-line);
+        background-color: var(--l-neutral-line);
       }
     }
   }

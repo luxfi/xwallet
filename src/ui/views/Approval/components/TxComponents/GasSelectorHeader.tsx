@@ -165,12 +165,12 @@ const CardBody = styled.div<{
       text-align: center;
       font-size: 12px;
       line-height: 14px;
-      color: var(--r-neutral-body, #3e495e);
+      color: var(--l-neutral-body, #3e495e);
       margin: 14px auto 0;
       font-weight: 500;
     }
     .cardTitle {
-      color: var(--r-neutral-title-1, #192945) !important;
+      color: var(--l-neutral-title-1, #192945) !important;
       font-weight: 500;
       font-size: 15px !important;
       line-height: 18px;
@@ -182,7 +182,7 @@ const CardBody = styled.div<{
     .cardTime {
       font-size: 12px;
       line-height: 14px;
-      color: var(--r-neutral-foot, #6a7587);
+      color: var(--l-neutral-foot, #6a7587);
       margin: 2px auto 0;
     }
 
@@ -197,7 +197,7 @@ const CardBody = styled.div<{
       text-align: center !important;
       font-size: 15px !important;
       font-weight: 500;
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       padding-top: 0;
       transition: none;
       &.active {
@@ -206,7 +206,7 @@ const CardBody = styled.div<{
     }
     .ant-input:focus,
     .ant-input-focused {
-      color: var(--r-neutral-title-1);
+      color: var(--l-neutral-title-1);
     }
   }
 `;
@@ -230,7 +230,7 @@ const GasStyled = styled.div`
 const GasPriceDesc = styled.div`
   margin-top: 20px;
   font-size: 13px;
-  color: var(--r-neutral-body, #3e495e);
+  color: var(--l-neutral-body, #3e495e);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -239,7 +239,7 @@ const GasPriceDesc = styled.div`
 
 const GasPriceBold = styled.span`
   font-weight: 500;
-  color: var(--r-neutral-title1, #192945);
+  color: var(--l-neutral-title1, #192945);
   font-size: 13px;
 `;
 

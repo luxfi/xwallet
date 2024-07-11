@@ -35,10 +35,10 @@ const PopupContainer = styled.div`
     line-height: 18px;
     display: flex;
     margin-bottom: 17px;
-    color: var(--r-neutral-body, #3e495e);
+    color: var(--l-neutral-body, #3e495e);
 
     .value-address {
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       font-weight: 500;
       margin-left: 7px;
       display: flex;
@@ -62,7 +62,7 @@ const PopupContainer = styled.div`
 
     .row {
       &:nth-child(1) {
-        color: var(--r-neutral-body, #3e495e);
+        color: var(--l-neutral-body, #3e495e);
         font-weight: 400;
         justify-content: flex-start;
         align-items: center;

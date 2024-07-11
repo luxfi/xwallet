@@ -36,7 +36,7 @@ export const ChainWrapper = styled.div`
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-    color: var(--r-neutral-title-1);
+    color: var(--l-neutral-title-1);
   }
 `;
 

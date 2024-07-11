@@ -63,13 +63,13 @@ export const WarningOrChecked = ({
 const ReceiveWrapper = styled.div`
   position: relative;
   margin-top: 18px;
-  border: 0.5px solid var(--r-neutral-line, #d3d8e0);
+  border: 0.5px solid var(--l-neutral-line, #d3d8e0);
   border-radius: 4px;
   padding: 12px;
   padding-top: 16px;
   padding-bottom: 8px;
 
-  color: var(--r-neutral-title-1, #192945);
+  color: var(--l-neutral-title-1, #192945);
   font-size: 13px;
   .receive-token {
     font-size: 15px;
@@ -78,7 +78,7 @@ const ReceiveWrapper = styled.div`
 
   .diffPercent {
     &.negative {
-      color: var(--r-red-default, #e34935);
+      color: var(--l-red-default, #e34935);
     }
     &.positive {
       color: var(--l-green-default, #2abb7f);
@@ -119,11 +119,11 @@ const ReceiveWrapper = styled.div`
 
   .footer {
     position: relative;
-    border-top: 0.5px solid var(--r-neutral-line, #d3d8e0);
+    border-top: 0.5px solid var(--l-neutral-line, #d3d8e0);
     padding-top: 8px;
 
     .rate {
-      color: var(--r-neutral-body, #d3d8e0) !important;
+      color: var(--l-neutral-body, #d3d8e0) !important;
     }
   }
   .quote-provider {
@@ -138,13 +138,13 @@ const ReceiveWrapper = styled.div`
     font-size: 13px;
     cursor: pointer;
 
-    color: var(--r-neutral-body, #d3d8e0);
+    color: var(--l-neutral-body, #d3d8e0);
     background: var(--l-blue-light-2);
     border-radius: 4px;
     border: 1px solid transparent;
     &:hover {
       /* background: var(--r-neutral-bg-1, #fff); */
-      border: 1px solid var(--r-neutral-line, #d3d8e0);
+      border: 1px solid var(--l-neutral-line, #d3d8e0);
     }
   }
 `;

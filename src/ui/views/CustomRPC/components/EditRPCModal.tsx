@@ -21,7 +21,7 @@ const ErrorMsg = styled.div`
 
 const Footer = styled.div`
   height: 84px;
-  border-top: 0.5px solid var(--r-neutral-line, rgba(255, 255, 255, 0.1));
+  border-top: 0.5px solid var(--l-neutral-line, rgba(255, 255, 255, 0.1));
   background: var(--r-neutral-card-1, rgba(255, 255, 255, 0.06));
   padding: 16px 20px;
   display: flex;
@@ -43,10 +43,10 @@ const EditRPCWrapped = styled.div`
     margin-left: auto;
     margin-right: auto;
     background: transparent !important;
-    border: 1px solid var(--r-neutral-line, #d3d8e0) !important;
+    border: 1px solid var(--l-neutral-line, #d3d8e0) !important;
     border-radius: 6px;
 
-    color: var(--r-neutral-title1, #192945) !important;
+    color: var(--l-neutral-title1, #192945) !important;
     font-size: 15px;
     /* font-weight: 500; */
     &:focus {

@@ -104,7 +104,7 @@ export const ImportMyMetaMaskAccount = () => {
             fill="none"
           >
             <path
-              stroke="var(--r-neutral-line, #D3D8E0)"
+              stroke="var(--l-neutral-line, #D3D8E0)"
               strokeWidth={0.2}
               d="M0 1h360"
             />

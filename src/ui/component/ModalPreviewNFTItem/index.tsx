@@ -21,17 +21,17 @@ const PreviewCard = styled.div`
   .nft-avatar {
     width: 100%;
     height: 306px;
-    border-color: var(--r-neutral-line);
+    border-color: var(--l-neutral-line);
     border-radius: 6px;
-    background-color: var(--r-neutral-bg1);
+    background-color: var(--l-neutral-bg1);
   }
 
   .nft-txpreview-title {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: var(--r-neutral-title1);
-    border-bottom: 0.5px solid var(--r-neutral-line);
+    color: var(--l-neutral-title1);
+    border-bottom: 0.5px solid var(--l-neutral-line);
     padding-top: 16px;
     padding-bottom: 12px;
     white-space: nowrap;
@@ -55,7 +55,7 @@ const PreviewCard = styled.div`
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: var(--r-neutral-title1);
+    color: var(--l-neutral-title1);
   }
   .nft-txpreview-property-value {
     white-space: nowrap;
@@ -63,7 +63,7 @@ const PreviewCard = styled.div`
     text-overflow: ellipsis;
     font-size: 12px;
     line-height: 14px;
-    color: var(--r-neutral-foot);
+    color: var(--l-neutral-foot);
   }
 `;
 

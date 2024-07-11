@@ -29,13 +29,13 @@ const Wrapper = styled(Card)`
       align-items: center;
     }
     &-title {
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       font-size: 14px;
       font-weight: 500;
       line-height: 16px;
     }
     &-extra {
-      color: var(--r-neutral-body, #3e495e);
+      color: var(--l-neutral-body, #3e495e);
       font-size: 14px;
       font-weight: 400;
       line-height: 16px;
@@ -50,7 +50,7 @@ const Wrapper = styled(Card)`
 
       svg {
         path {
-          stroke: var(--r-neutral-foot, #6a7587);
+          stroke: var(--l-neutral-foot, #6a7587);
         }
       }
     }
@@ -61,7 +61,7 @@ const Wrapper = styled(Card)`
         margin-top: 0px;
         margin-bottom: 0;
         font-size: 13px;
-        color: var(--r-neutral-body, #3e495e);
+        color: var(--l-neutral-body, #3e495e);
 
         li {
           position: relative;
@@ -76,7 +76,7 @@ const Wrapper = styled(Card)`
             width: 4px;
             height: 4px;
             border-radius: 100%;
-            background-color: var(--r-neutral-body, #3e495e);
+            background-color: var(--l-neutral-body, #3e495e);
             left: 0;
             top: 8px;
           }
@@ -95,7 +95,7 @@ const Wrapper = styled(Card)`
           background: var(--r-neutral-card-2, #f2f4f7);
           min-width: 40px;
 
-          color: var(--r-neutral-title-1, #192945);
+          color: var(--l-neutral-title-1, #192945);
           text-align: center;
           font-size: 13px;
           line-height: 16px;
@@ -145,7 +145,7 @@ const OptionList = styled.div`
     }
 
     &-title {
-      color: var(--r-neutral-title-1, #192945);
+      color: var(--l-neutral-title-1, #192945);
       font-size: 15px;
       font-weight: 500;
       line-height: 18px;
@@ -153,7 +153,7 @@ const OptionList = styled.div`
     }
 
     &-desc {
-      color: var(--r-neutral-body, #3e495e);
+      color: var(--l-neutral-body, #3e495e);
       font-size: 13px;
       font-weight: 400;
       line-height: 16px;
