@@ -10,7 +10,7 @@ import { useAsyncFn } from 'react-use';
 import { VariableSizeGrid } from 'react-window';
 import PQueue from 'p-queue';
 
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { useWallet } from '@/ui/utils';
 import { CHAINS_ENUM } from '@debank/common';
 import {
@@ -94,7 +94,7 @@ const resetTableRenderer = (
 export function useApprovalsPage(options?: { isTestnet?: boolean }) {
   const wallet = useWallet();
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const account = useRabbySelector((state) => state.account.currentAccount);
 

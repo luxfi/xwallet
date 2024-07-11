@@ -5,7 +5,7 @@ import { ReactComponent as RcImgSortByType } from '@/ui/assets/address/sort-by-t
 import { ReactComponent as RcImgSortByAlphabet } from '@/ui/assets/address/sort-by-alphabet-2.svg';
 import ImgChecked from '@/ui/assets/address/checked.svg';
 
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { AddressSortStore } from '@/background/service/preference';
 import { useTranslation } from 'react-i18next';
 import { ThemeIconType } from '@/constant';
@@ -30,7 +30,7 @@ export const AddressSortPopup = ({
   const sortType = useRabbySelector(
     (s) => s.preference.addressSortStore.sortType
   );
-  const dispath = useRabbyDispatch();
+  const dispath = useLuxDispatch();
   const handleChange = (value: AddressSortStore['sortType']) => () => {
     dispath.preference.setAddressSortStoreValue({ key: 'sortType', value });
     onCancel?.();

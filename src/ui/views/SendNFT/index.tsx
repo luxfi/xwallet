@@ -12,7 +12,7 @@ import {
   KEYRING_CLASS,
   CHAINS_ENUM,
 } from 'consts';
-import { useRabbyDispatch, useRabbySelector, connectStore } from 'ui/store';
+import { useLuxDispatch, useRabbySelector, connectStore } from 'ui/store';
 import { Account } from 'background/service/preference';
 import { NFTItem } from '@/background/service/openapi';
 import { UIContactBookItem } from 'background/service/contactBook';
@@ -60,7 +60,7 @@ const SendNFT = () => {
   }>();
   const { t } = useTranslation();
   const rbisource = useRbiSource();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const [currentAccount, setCurrentAccount] = useState<Account | null>(null);
   const [nftItem, setNftItem] = useState<NFTItem | null>(

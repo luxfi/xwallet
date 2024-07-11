@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { DisplayChainWithWhiteLogo } from '@/utils/chain';
 import { sleep } from '@/ui/utils';
 import { CurvePointCollection } from '@/background/service/preference';
-import { useRabbyDispatch, useRabbyGetter } from '@/ui/store';
+import { useLuxDispatch, useRabbyGetter } from '@/ui/store';
 import { formChartData } from './useCurve';
 import { normalizeAndVaryChainList, normalizeChainList } from '@/utils/account';
 import { useRefState } from '@/ui/hooks/useRefState';
@@ -19,7 +19,7 @@ if (localStorage.getItem(HomeBalanceViewCacheKey)) {
 export function useHomeBalanceViewOuterPrefetch(
   currentAddress?: string | null
 ) {
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const {
     state: dashboardBalanceCacheInited,

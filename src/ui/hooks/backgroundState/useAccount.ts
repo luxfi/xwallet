@@ -5,7 +5,7 @@ import {
   BROADCAST_TO_UI_EVENTS_PAYLOAD,
   runBroadcastDispose,
 } from '@/utils/broadcastToUI';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { onBroadcastToUI } from '@/ui/utils/broadcastToUI';
 
 export function useCurrentAccount(options?: {
@@ -14,7 +14,7 @@ export function useCurrentAccount(options?: {
     address: string;
   }) => void;
 }) {
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const currentAccount = useRabbySelector((s) => s.account.currentAccount);
 

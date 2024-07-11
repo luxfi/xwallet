@@ -9,7 +9,7 @@ import { ReactComponent as RcIconPinnedFill } from 'ui/assets/icon-pinned-fill.s
 
 import './style.less';
 import { obj2query } from '@/ui/utils/url';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { sortAccountsByBalance } from '@/ui/utils/account';
 import clsx from 'clsx';
 import { ReactComponent as RcIconAddAddress } from '@/ui/assets/address/new-address.svg';
@@ -253,7 +253,7 @@ const AddressManagement = () => {
     addressSortStore.sortType,
   ]);
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   useEffect(() => {
     dispatch.addressManagement.getHilightedAddressesAsync().then(() => {

@@ -63,7 +63,7 @@ import {
 } from '../components/Actions/utils';
 import Actions from './Actions';
 import { useSecurityEngine } from 'ui/utils/securityEngine';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import RuleDrawer from './SecurityEngine/RuleDrawer';
 import {
   Level,
@@ -727,7 +727,7 @@ const SignTx = ({ params, origin }: SignTxProps) => {
   const scrollRefSize = useSize(scrollRef);
   const scrollInfo = useScroll(scrollRef);
   const [getApproval, resolveApproval, rejectApproval] = useApproval();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const wallet = useWallet();
   if (!chain) throw new Error('No support chain found');
   const [support1559, setSupport1559] = useState(chain.eip['1559']);

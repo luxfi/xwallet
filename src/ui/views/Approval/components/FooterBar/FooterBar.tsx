@@ -1,6 +1,6 @@
 import { Account } from '@/background/service/preference';
 import { FallbackSiteLogo } from '@/ui/component';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { useWallet } from '@/ui/utils';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { Chain } from '@debank/common';
@@ -156,7 +156,7 @@ export const FooterBar: React.FC<Props> = ({
     setConnectedSite,
   ] = React.useState<ConnectedSite | null>(null);
   const wallet = useWallet();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { t } = useTranslation();
 
   const { rules, processedRules } = useRabbySelector((s) => ({

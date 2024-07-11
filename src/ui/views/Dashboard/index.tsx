@@ -28,7 +28,7 @@ import IconSuccess from 'ui/assets/success.svg';
 import { AddressViewer, Modal } from 'ui/component';
 import {
   connectStore,
-  useRabbyDispatch,
+  useLuxDispatch,
   useRabbyGetter,
   useRabbySelector,
 } from 'ui/store';
@@ -58,7 +58,7 @@ import { useHomeBalanceViewOuterPrefetch } from './components/BalanceView/useHom
 const Dashboard = () => {
   const history = useHistory();
   const wallet = useWallet();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { alianName, currentAccount, accountsList } = useRabbySelector((s) => ({
     alianName: s.account.alianName,
     currentAccount: s.account.currentAccount,

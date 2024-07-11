@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { PageHeader } from 'ui/component';
 import { useWallet } from 'ui/utils';
 
@@ -23,7 +23,7 @@ export default function SwitchThemeModal({
   const [isVisible, setIsVisible] = useState(false);
 
   const themeMode = useRabbySelector((state) => state.preference.themeMode);
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const handleCancel = () => {
     setIsVisible(false);

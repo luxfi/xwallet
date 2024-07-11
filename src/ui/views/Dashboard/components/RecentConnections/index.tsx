@@ -7,7 +7,7 @@ import { matomoRequestEvent } from '@/utils/matomo-request';
 import { openInTab, useWallet } from 'ui/utils';
 import ConnectionList from './ConnectionList';
 import './style.less';
-import { useRabbyDispatch, useRabbySelector } from 'ui/store';
+import { useLuxDispatch, useRabbySelector } from 'ui/store';
 import clsx from 'clsx';
 import { SvgIconCross } from '@/ui/assets';
 
@@ -21,7 +21,7 @@ const RecentConnections = ({
   onClose,
 }: RecentConnectionsProps) => {
   const { t } = useTranslation();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const connections = useRabbySelector((state) => state.permission.websites);
 
   const list = useMemo(() => {

@@ -14,7 +14,7 @@ import { fetchAccountsInfo, HDManagerStateContext } from './utils';
 import { AliasName } from './AliasName';
 import { ChainList } from './ChainList';
 import { KEYRING_CLASS } from '@/constant';
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 import { useTranslation } from 'react-i18next';
 import { detectClientOS } from '@/ui/utils/os';
 
@@ -58,7 +58,7 @@ export const AccountList: React.FC<Props> = ({
     keyring,
   } = React.useContext(HDManagerStateContext);
   const [loadNum, setLoadNum] = React.useState(0);
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   useEffect(() => {
     currentAccountsRef.current = currentAccounts;

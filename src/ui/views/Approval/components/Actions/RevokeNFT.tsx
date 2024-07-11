@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
 import { Result } from '@rabby-wallet/rabby-security-engine';
 import { ParsedActionData, RevokeNFTRequireData } from './utils';
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 import { Table, Col, Row } from './components/Table';
 import NFTWithName from './components/NFTWithName';
 import * as Values from './components/Values';
@@ -56,7 +56,7 @@ const RevokeNFT = ({
   engineResults: Result[];
 }) => {
   const actionData = data!;
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { t } = useTranslation();
 
   return (

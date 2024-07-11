@@ -6,7 +6,7 @@ import { Chain } from 'background/service/openapi';
 import { Result } from '@rabby-wallet/rabby-security-engine';
 import { ApproveTokenRequireData, TypedDataActionData } from './utils';
 import { ellipsisTokenSymbol, getTokenSymbol } from 'ui/utils/token';
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 import { Table, Col, Row } from '../Actions/components/Table';
 import * as Values from '../Actions/components/Values';
 import ViewMore from '../Actions/components/ViewMore';
@@ -46,7 +46,7 @@ const Permit = ({
   engineResults: Result[];
 }) => {
   const actionData = data!;
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { t } = useTranslation();
 
   const engineResultMap = useMemo(() => {

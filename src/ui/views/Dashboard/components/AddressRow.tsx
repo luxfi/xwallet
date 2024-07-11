@@ -17,7 +17,7 @@ import {
   WALLET_BRAND_CONTENT,
 } from '@/constant';
 import { AddressViewer } from '@/ui/component';
-import { connectStore, useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { connectStore, useLuxDispatch, useRabbySelector } from '@/ui/store';
 import useIsMountedRef from '@/ui/hooks/useMountedRef';
 import { useTranslation } from 'react-i18next';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
@@ -41,7 +41,7 @@ function AddressRow({
   const { highlightedAddresses } = useRabbySelector((s) => ({
     highlightedAddresses: s.addressManagement.highlightedAddresses,
   }));
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const account = data[index];
   const favorited = highlightedAddresses.some(

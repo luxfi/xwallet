@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import clsx from 'clsx';
 import { Field, Checkbox } from 'ui/component';
-import { connectStore, useRabbyDispatch } from 'ui/store';
+import { connectStore, useLuxDispatch } from 'ui/store';
 import { Button } from 'antd';
 import LogoSVG from '@/ui/assets/logo.svg';
 
@@ -76,7 +76,7 @@ function useQuestionsCheck() {
 }
 
 const RiskCheck = () => {
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { t } = useTranslation();
   const {
     questionChecks,

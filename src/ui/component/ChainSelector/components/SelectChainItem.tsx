@@ -2,7 +2,7 @@ import React, { useMemo, forwardRef, HTMLAttributes, useEffect } from 'react';
 import { CHAINS_ENUM, Chain } from '@debank/common';
 import { Tooltip } from 'antd';
 import clsx from 'clsx';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import ChainIcon from '../../ChainIcon';
 import IconCheck from 'ui/assets/check-2.svg';
 import IconPinned, {
@@ -52,7 +52,7 @@ export const SelectChainItem = forwardRef(
         testnet: s.account.testnetMatteredChainBalances,
       },
     }));
-    const dispatch = useRabbyDispatch();
+    const dispatch = useLuxDispatch();
 
     useEffect(() => {
       dispatch.customRPC.getAllRPC();

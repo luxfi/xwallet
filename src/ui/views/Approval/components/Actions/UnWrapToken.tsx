@@ -10,7 +10,7 @@ import { formatAmount } from 'ui/utils/number';
 import { Chain } from 'background/service/openapi';
 import SecurityLevelTagNoText from '../SecurityEngine/SecurityLevelTagNoText';
 import ViewMore from './components/ViewMore';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { SecurityListItem } from './components/SecurityListItem';
 import { isSameAddress } from '@/ui/utils';
 import { ProtocolListItem } from './components/ProtocolListItem';
@@ -56,7 +56,7 @@ const UnWrapToken = ({
     })
   );
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { t } = useTranslation();
 
   const isInWhitelist = useMemo(() => {

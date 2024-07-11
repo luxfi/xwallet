@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { isSameAddress, useWallet } from '@/ui/utils';
 import AddressItem from '@/ui/component/AccountSearchInput/AddressItem';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import './confirmPopup.less';
 
 type NullFunction = () => void;
@@ -19,7 +19,7 @@ export const useRepeatImportConfirm = () => {
   const { accountsList } = useRabbySelector((s) => ({
     ...s.accountToDisplay,
   }));
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   useEffect(() => {
     dispatch.addressManagement.getHilightedAddressesAsync().then(() => {

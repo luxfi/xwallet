@@ -7,7 +7,7 @@ import React, {
   useState,
 } from 'react';
 
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { Chain } from 'background/service/openapi';
 import clsx from 'clsx';
 import { CHAINS_ENUM } from 'consts';
@@ -66,7 +66,7 @@ const useChainSeletorList = ({
     };
   });
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const handleStarChange = (chain: CHAINS_ENUM, value) => {
     if (value) {
@@ -159,7 +159,7 @@ export const ChainSelectorLargeModal = ({
     onTabChange(chainItem?.isTestnet ? 'testnet' : 'mainnet');
   }, [value, visible, onTabChange]);
 
-  const rDispatch = useRabbyDispatch();
+  const rDispatch = useLuxDispatch();
 
   useEffect(() => {
     if (!visible) {

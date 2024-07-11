@@ -1,4 +1,4 @@
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
 import clsx from 'clsx';
 import React, { ReactNode } from 'react';
@@ -42,7 +42,7 @@ const LogoWithText = ({
   hoverToken?: TokenItem;
   id?: string;
 }) => {
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   return (
     <Wrapper className={className} id={id}>

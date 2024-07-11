@@ -6,7 +6,7 @@ import { Chain } from 'background/service/openapi';
 import { Result } from '@rabby-wallet/rabby-security-engine';
 import { ContractCallRequireData, ParsedActionData } from './utils';
 import { formatTokenAmount } from 'ui/utils/number';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { Table, Col, Row } from './components/Table';
 import * as Values from './components/Values';
 import ViewMore from './components/ViewMore';
@@ -65,7 +65,7 @@ const ContractCall = ({
   engineResults: Result[];
   onChange(tx: Record<string, any>): void;
 }) => {
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { t } = useTranslation();
   const { contractWhitelist } = useRabbySelector((state) => {
     return state.securityEngine.userData;

@@ -1,4 +1,4 @@
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { isSameAddress, useWallet } from '@/ui/utils';
 import { CHAINS, CHAINS_ENUM } from '@debank/common';
 import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
@@ -87,7 +87,7 @@ export interface FeeProps {
 }
 
 export const useTokenPair = (userAddress: string) => {
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const refreshId = useRefreshId();
 
   const {

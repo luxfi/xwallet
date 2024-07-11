@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import clsx from 'clsx';
 import { getUiType, useWallet, useWalletRequest } from '@/ui/utils';
 import { clearClipboard } from '@/ui/utils/clipboard';
-import { connectStore, useRabbyDispatch } from '../../store';
+import { connectStore, useLuxDispatch } from '../../store';
 import WordsMatrix from '@/ui/component/WordsMatrix';
 import { ReactComponent as RcIconMnemonicInkCC } from '@/ui/assets/walletlogo/mnemonic-ink-cc.svg';
 import LogoSVG from '@/ui/assets/logo.svg';
@@ -54,7 +54,7 @@ const ImportMnemonics = () => {
   const wallet = useWallet();
   const [form] = Form.useForm<IFormStates>();
   const { t } = useTranslation();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const [needPassphrase, setNeedPassphrase] = React.useState(false);
   const [slip39ErrorIndex, setSlip39ErrorIndex] = React.useState<number>(-1);
   const [isSlip39, setIsSlip39] = React.useState(false);

@@ -3,7 +3,7 @@ import produce from 'immer';
 import { Dayjs } from 'dayjs';
 import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
 import { CHAINS } from '@debank/common';
-import { useRabbyDispatch, useRabbySelector } from 'ui/store';
+import { useLuxDispatch, useRabbySelector } from 'ui/store';
 import {
   findChainByEnum,
   isTestnet as checkIsTestnet,
@@ -69,7 +69,7 @@ export const useTokens = (
   const historyTime = useRef<number>();
   const historyLoad = useRef<boolean>(false);
   const wallet = useWallet();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { mainnetTokens, testnetTokens } = useRabbySelector((store) => ({
     mainnetTokens: store.account.tokens,
     testnetTokens: store.account.testnetTokens,

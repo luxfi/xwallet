@@ -1,4 +1,4 @@
-import { useRabbyDispatch, useRabbyGetter } from '@/ui/store';
+import { useLuxDispatch, useRabbyGetter } from '@/ui/store';
 import { Switch } from 'antd';
 import React from 'react';
 
@@ -18,7 +18,7 @@ export default function SwitchReserveGas({
     (s) => s.preference.isReserveGasOnSendToken
   );
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   return (
     <div className="flex items-center gap-[6px] font-[12px] cursor-default">

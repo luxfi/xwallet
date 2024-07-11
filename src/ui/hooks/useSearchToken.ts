@@ -6,7 +6,7 @@ import {
   encodeProjectTokenId,
 } from '../utils/portfolio/project';
 import { AbstractPortfolioToken } from '../utils/portfolio/types';
-import { useRabbyDispatch, useRabbySelector } from 'ui/store';
+import { useLuxDispatch, useRabbySelector } from 'ui/store';
 import { isSameAddress } from '../utils';
 import { requestOpenApiWithChainId } from '../utils/openapi';
 import { findChainByServerID } from '@/utils/chain';
@@ -95,7 +95,7 @@ export function useVaryTokensByLocal<
 }
 
 export function useOperateCustomToken() {
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const addToken = useCallback(async (tokenWithAmount: TokenItem) => {
     if (!tokenWithAmount) return;

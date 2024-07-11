@@ -1,4 +1,4 @@
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { useMemo } from 'react';
 
 export const useSwapSettings = () => {
@@ -6,7 +6,7 @@ export const useSwapSettings = () => {
   const swapTradeList = useRabbySelector((s) => s.swap.tradeList);
   const prevChain = useRabbySelector((s) => s.swap.selectedChain);
   const sortIncludeGasFee = useRabbySelector((s) => s.swap.sortIncludeGasFee);
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const methods = useMemo(() => {
     const {

@@ -25,7 +25,7 @@ import { ReactComponent as RcIconDeleteAddress } from 'ui/assets/address/delete.
 import { AddressViewer } from 'ui/component';
 import { isSameAddress, splitNumberByStep, useAlias } from 'ui/utils';
 import IconSuccess from 'ui/assets/success.svg';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import IconCheck from 'ui/assets/check.svg';
 
 import { ReactComponent as RcIconWhitelist } from 'ui/assets/address/whitelist.svg';
@@ -102,7 +102,7 @@ const AddressItem = memo(
     const [_alias] = useAlias(address);
     const alias = _alias || aliasName;
     const titleRef = useRef<HTMLDivElement>(null);
-    const dispatch = useRabbyDispatch();
+    const dispatch = useLuxDispatch();
 
     const canFastDeleteAccount = useMemo(
       // not privacy secret

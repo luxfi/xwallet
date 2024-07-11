@@ -3,7 +3,7 @@ import {
   NFTApprovalContract,
   NFTApprovalResponse,
 } from '@/background/service/openapi';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { message, Tabs, Tooltip } from 'antd';
 import { CHAINS_ENUM } from 'consts';
 import React, { useEffect, useState } from 'react';
@@ -34,7 +34,7 @@ const NFTApproval = () => {
   const { showChainsModal = false } = state ?? {};
 
   const account = useRabbySelector((state) => state.account.currentAccount);
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const chain = useRabbySelector(
     (state) =>

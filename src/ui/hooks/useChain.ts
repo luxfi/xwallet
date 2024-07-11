@@ -2,7 +2,7 @@ import { useState, useRef, useMemo, useCallback, useEffect } from 'react';
 
 import { findChainByEnum, varyAndSortChainItems } from '@/utils/chain';
 import { CHAINS_ENUM, Chain } from '@debank/common';
-import { useRabbyDispatch, useRabbySelector } from '../store';
+import { useLuxDispatch, useRabbySelector } from '../store';
 
 export type ChainSelectorPurpose =
   | 'dashboard'
@@ -40,7 +40,7 @@ export function useAsyncInitializeChainList({
     });
   }, [pinned, supportChains, matteredChainBalances]);
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const fetchChainDataStageRef = useRef<FetchDataStage>(false);
   const chainRef = useRef<CHAINS_ENUM>(CHAINS_ENUM.ETH);

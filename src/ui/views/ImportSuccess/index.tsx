@@ -19,7 +19,7 @@ import { IconImportSuccess } from 'ui/assets';
 import SuccessLogo from 'ui/assets/success-logo.svg';
 import './index.less';
 import { useMedia } from 'react-use';
-import { connectStore, useRabbyDispatch } from '@/ui/store';
+import { connectStore, useLuxDispatch } from '@/ui/store';
 import { Chain } from '@debank/common';
 
 const ImportSuccess = ({ isPopup = false }: { isPopup?: boolean }) => {
@@ -37,7 +37,7 @@ const ImportSuccess = ({ isPopup = false }: { isPopup?: boolean }) => {
     supportChainList?: Chain[];
   }>();
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const addressItems = useRef(new Array(state.accounts.length));
   const { t } = useTranslation();
   const isWide = useMedia('(min-width: 401px)') && isPopup;

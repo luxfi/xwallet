@@ -10,11 +10,11 @@
  * to the store by `connectStore` API in ./store.ts
  */
 import { useEffect, useState } from 'react';
-import { useRabbyDispatch, useRabbyGetter, useRabbySelector } from './store';
+import { useLuxDispatch, useRabbyGetter, useRabbySelector } from './store';
 
 export function useAccount() {
   const account = useRabbySelector((state) => state.account.currentAccount);
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const setAccount = dispatch.account.setCurrentAccount;
   return [account, setAccount] as const;
 }
@@ -23,7 +23,7 @@ export function useAccount() {
  * @description check if current wallet should display about tip mnemonic
  */
 export function useIsShowMnemonic() {
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const isShowMnemonic = useRabbyGetter<boolean>(
     (s) => s.account.isShowMnemonic
   );

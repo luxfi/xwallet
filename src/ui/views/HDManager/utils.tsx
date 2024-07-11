@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 import { Account } from './AccountList';
 import * as Sentry from '@sentry/browser';
 import { KEYRING_CLASS } from '@/constant';
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 import { useTranslation } from 'react-i18next';
 import { isFunction } from 'lodash';
 
@@ -88,7 +88,7 @@ const useGetCurrentAccounts = ({ keyringId, keyring }: StateProviderProps) => {
   const wallet = useWallet();
   const [loading, setLoading] = React.useState(false);
   const [accounts, setAccounts] = React.useState<Account[]>([]);
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const getCurrentAccounts = React.useCallback(async () => {
     setLoading(true);

@@ -7,7 +7,7 @@ import { IDisplayedAccountWithBalance } from 'ui/models/accountToDisplay';
 import AddressItem from '../AddressManagement/AddressItem';
 import clsx from 'clsx';
 import { useHistory } from 'react-router-dom';
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 import { obj2query } from '@/ui/utils/url';
 
 import { ReactComponent as RcIconPinned } from 'ui/assets/icon-pinned.svg';
@@ -34,7 +34,7 @@ export const AccountList = ({
   const history = useHistory();
   const { t } = useTranslation();
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const Row = (props) => {
     const { data, index, style } = props;

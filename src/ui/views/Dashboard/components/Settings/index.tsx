@@ -20,7 +20,7 @@ import { ReactComponent as RcIconArrowCCRight } from 'ui/assets/dashboard/settin
 
 import IconSettingsDeBank from 'ui/assets/dashboard/settings/debank.svg';
 
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { ReactComponent as RcIconAddresses } from 'ui/assets/dashboard/addresses.svg';
 import { ReactComponent as RcIconCustomRPC } from 'ui/assets/dashboard/custom-rpc.svg';
 import { ReactComponent as RcIconCustomTestnet } from 'ui/assets/dashboard/icon-custom-testnet.svg';
@@ -123,7 +123,7 @@ const OpenApiModal = ({
   const [isVisible, setIsVisible] = useState(false);
   const [form] = useForm<{ host: string }>();
   const { t } = useTranslation();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   title = title || t('page.dashboard.settings.backendServiceUrl');
 
@@ -334,7 +334,7 @@ const AutoLockModal = ({
   const autoLockTime = useRabbySelector(
     (state) => state.preference.autoLockTime || 0
   );
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const handleCancel = () => {
     setIsVisible(false);
@@ -407,7 +407,7 @@ const SwitchLangModal = ({
   const [isVisible, setIsVisible] = useState(false);
 
   const locale = useRabbySelector((state) => state.preference.locale);
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const handleCancel = () => {
     setIsVisible(false);
@@ -559,7 +559,7 @@ const SettingsInner = ({
 
   const openapiStore = useRabbySelector((state) => state.openapi);
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const autoLockTimeLabel = useMemo(() => {
     return (

@@ -5,7 +5,7 @@ import TokenDetail from './TokenDetail';
 import './style.less';
 import { isSameAddress, useWallet } from '@/ui/utils';
 import { Token } from '@/background/service/preference';
-import { useRabbyDispatch } from 'ui/store';
+import { useLuxDispatch } from 'ui/store';
 import { DisplayedToken } from 'ui/utils/portfolio/project';
 import { AbstractPortfolioToken } from 'ui/utils/portfolio/types';
 
@@ -26,7 +26,7 @@ export const TokenDetailPopup = ({
   hideOperationButtons = false,
 }: TokenDetailProps) => {
   const wallet = useWallet();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const [isAdded, setIsAdded] = React.useState(false);
   const handleAddToken = React.useCallback((tokenWithAmount) => {
     if (!tokenWithAmount) return;

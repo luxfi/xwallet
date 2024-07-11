@@ -5,7 +5,7 @@ import { Account, AccountList, Props as AccountListProps } from './AccountList';
 import { MAX_ACCOUNT_COUNT, SettingData } from './AdvancedSettings';
 import { HDPathType } from './HDPathTypeButton';
 import { HDManagerStateContext } from './utils';
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 import { KEYRING_CLASS } from '@/constant';
 
 interface Props extends AccountListProps, SettingData {}
@@ -22,7 +22,7 @@ export const AddressesInHD: React.FC<Props> = ({ type, startNo, ...props }) => {
   const { createTask, keyringId, keyring } = React.useContext(
     HDManagerStateContext
   );
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const maxCountRef = React.useRef(MAX_ACCOUNT_COUNT);
 
   const runGetAccounts = React.useCallback(async () => {

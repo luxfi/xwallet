@@ -1,5 +1,5 @@
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { findChain, findChainByEnum } from '@/utils/chain';
 import { matomoRequestEvent } from '@/utils/matomo-request';
 import { CHAINS_ENUM } from '@debank/common';
@@ -109,7 +109,7 @@ const RPCItemComp = ({
   item: { id: CHAINS_ENUM; rpc: RPCItem; nonce: number };
   onEdit(item: { id: CHAINS_ENUM; rpc: RPCItem }): void;
 }) => {
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { t } = useTranslation();
 
   const chainItem = useMemo(() => {
@@ -195,7 +195,7 @@ const CustomRPC = () => {
   const { customRPC } = useRabbySelector((s) => ({
     ...s.customRPC,
   }));
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const [chainSelectorVisible, setChainSelectorVisible] = useState(false);
   const [rpcModalVisible, setRPCModalVisible] = useState(false);
   const [selectedChain, setSelectedChain] = useState<CHAINS_ENUM>(

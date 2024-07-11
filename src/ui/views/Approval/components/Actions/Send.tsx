@@ -7,7 +7,7 @@ import { Result } from '@rabby-wallet/rabby-security-engine';
 import { ParsedActionData, SendRequireData } from './utils';
 import { formatTokenAmount, formatUsdValue } from 'ui/utils/number';
 import { ellipsisTokenSymbol, getTokenSymbol } from 'ui/utils/token';
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 import { Table, Col, Row } from './components/Table';
 import * as Values from './components/Values';
 import LogoWithText from './components/LogoWithText';

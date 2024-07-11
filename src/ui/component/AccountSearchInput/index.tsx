@@ -4,7 +4,7 @@ import { TextAreaProps } from 'antd/lib/input/TextArea';
 import { groupBy } from 'lodash';
 import { useClickAway } from 'react-use';
 
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { KEYRING_CLASS } from '@/constant';
 import { sortAccountsByBalance } from '@/ui/utils/account';
 import useDebounceValue from '@/ui/hooks/useDebounceValue';
@@ -107,7 +107,7 @@ function useSearchAccount(searchKeyword?: string) {
     return result;
   }, [sortedAccountsList, watchSortedAccountsList, debouncedSearchKeyword]);
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   useEffect(() => {
     dispatch.addressManagement.getHilightedAddressesAsync().then(() => {

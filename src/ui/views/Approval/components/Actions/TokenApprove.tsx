@@ -11,7 +11,7 @@ import { ellipsisTokenSymbol, getTokenSymbol } from 'ui/utils/token';
 import { ellipsisOverflowedText, useHover } from '@/ui/utils';
 import { getCustomTxParamsData } from 'ui/utils/transaction';
 import { formatAmount, formatUsdValue } from '@/ui/utils/number';
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 import { Popup } from 'ui/component';
 import { Table, Col, Row } from './components/Table';
 import * as Values from './components/Values';
@@ -192,7 +192,7 @@ const TokenApprove = ({
 }) => {
   const actionData = data!;
   const [editApproveModalVisible, setEditApproveModalVisible] = useState(false);
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { t } = useTranslation();
 
   const engineResultMap = useMemo(() => {

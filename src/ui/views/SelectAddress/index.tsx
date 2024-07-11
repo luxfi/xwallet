@@ -4,7 +4,7 @@ import { getUiType } from 'ui/utils';
 import { KEYRING_CLASS } from 'consts';
 import './style.less';
 import { HDManager } from '../HDManager/HDManager';
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 
 type State = {
   keyring: string;
@@ -49,7 +49,7 @@ const SelectAddress = () => {
   }
 
   const [isMounted, setIsMounted] = React.useState(false);
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const initMnemonics = async () => {
     if (isMnemonic) {
       dispatch.importMnemonics.switchKeyring({

@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Button, message } from 'antd';
 import styled from 'styled-components';
-import { useRabbyDispatch, useRabbySelector, connectStore } from 'ui/store';
+import { useLuxDispatch, useRabbySelector, connectStore } from 'ui/store';
 import { IDisplayedAccountWithBalance } from 'ui/models/accountToDisplay';
 import { Popup } from 'ui/component';
 import AuthenticationModalPromise from 'ui/component/AuthenticationModal';
@@ -39,7 +39,7 @@ const ListFooterWrapper = styled.div`
 
 const ListModal = ({ visible, onOk, onCancel }: ListModalProps) => {
   const [editWhitelistVisible, setEditWhitelistVisible] = useState(false);
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const wallet = useWallet();
   const { t } = useTranslation();
 

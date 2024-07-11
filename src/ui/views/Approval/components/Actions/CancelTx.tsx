@@ -9,7 +9,7 @@ import {
   CancelTxRequireData,
   getActionTypeText,
 } from './utils';
-import { useRabbyDispatch } from '@/ui/store';
+import { useLuxDispatch } from '@/ui/store';
 import IconAlert from 'ui/assets/sign/tx/alert.svg';
 
 const Wrapper = styled.div`
@@ -89,7 +89,7 @@ const CancelTx = ({
   engineResults: Result[];
   onChange(tx: Record<string, any>): void;
 }) => {
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const { t } = useTranslation();
 
   const pendingTx = useMemo(() => {

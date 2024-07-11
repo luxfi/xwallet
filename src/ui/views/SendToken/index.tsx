@@ -21,7 +21,7 @@ import {
   CAN_NOT_SPECIFY_INTRINSIC_GAS_CHAINS,
 } from 'consts';
 import {
-  useRabbyDispatch,
+  useLuxDispatch,
   useRabbySelector,
   connectStore,
   useRabbyGetter,
@@ -300,7 +300,7 @@ const SendToken = () => {
   const [tokenAmountForGas, setTokenAmountForGas] = useState('0');
   const { useForm } = Form;
   const history = useHistory();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const rbisource = useRbiSource();
 

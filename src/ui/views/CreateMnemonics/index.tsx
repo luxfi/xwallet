@@ -1,5 +1,5 @@
 import React from 'react';
-import { connectStore, useRabbyDispatch, useRabbySelector } from 'ui/store';
+import { connectStore, useLuxDispatch, useRabbySelector } from 'ui/store';
 import RiskCheck from './RiskCheck';
 import DisplayMnemonic from './DisplayMnemonic';
 import { useTranslation } from 'react-i18next';
@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 const CreateMnemonic = () => {
   const step = useRabbySelector((s) => s.createMnemonics.step);
   const { t } = useTranslation();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   React.useEffect(() => {
     dispatch.createMnemonics.getAllHDKeyrings();
   }, []);

@@ -7,7 +7,7 @@ import { getUiType } from './index';
 import { KEYRING_TYPE_TEXT, WALLET_BRAND_CONTENT } from '@/constant';
 import { LedgerHDPathType, LedgerHDPathTypeLabel } from '@/ui/utils/ledger';
 import { useApprovalPopup } from './approval-popup';
-import { useRabbyDispatch, useRabbySelector } from '../store';
+import { useLuxDispatch, useRabbySelector } from '../store';
 import { useTranslation } from 'react-i18next';
 
 export const useApproval = () => {
@@ -324,7 +324,7 @@ export const useAccountInfo = (
     hdPathTypeLabel: string;
     index: number;
   }>();
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
   const isLedger = type === KEYRING_CLASS.HARDWARE.LEDGER;
   const isGridPlus = type === KEYRING_CLASS.HARDWARE.GRIDPLUS;
   const isTrezorLike =

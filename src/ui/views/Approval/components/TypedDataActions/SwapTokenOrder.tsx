@@ -6,7 +6,7 @@ import { Chain } from 'background/service/openapi';
 import { Result } from '@rabby-wallet/rabby-security-engine';
 import { SwapTokenOrderRequireData, TypedDataActionData } from './utils';
 import { formatAmount, formatUsdValue } from '@/ui/utils/number';
-import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
+import { useLuxDispatch, useRabbySelector } from '@/ui/store';
 import { Table, Col, Row } from '../Actions/components/Table';
 import LogoWithText from '../Actions/components/LogoWithText';
 import * as Values from '../Actions/components/Values';
@@ -76,7 +76,7 @@ const Permit = ({
     return !isSameAddress(receiver, requireData.sender);
   }, [requireData, receiver]);
 
-  const dispatch = useRabbyDispatch();
+  const dispatch = useLuxDispatch();
 
   const engineResultMap = useMemo(() => {
     const map: Record<string, Result> = {};
