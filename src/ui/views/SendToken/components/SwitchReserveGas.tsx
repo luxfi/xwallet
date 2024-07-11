@@ -1,4 +1,4 @@
-import { useLuxDispatch, useRabbyGetter } from '@/ui/store';
+import { useLuxDispatch, useLuxGetter } from '@/ui/store';
 import { Switch } from 'antd';
 import React from 'react';
 
@@ -14,7 +14,7 @@ export default function SwitchReserveGas({
 >) {
   const { t } = useTranslation();
 
-  const isReserveGasOnSendToken = useRabbyGetter(
+  const isReserveGasOnSendToken = useLuxGetter(
     (s) => s.preference.isReserveGasOnSendToken
   );
 

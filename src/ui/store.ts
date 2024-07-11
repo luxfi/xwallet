@@ -21,7 +21,7 @@ export { connect as connectStore };
 export const useLuxDispatch = () => useDispatch<RabbyDispatch>();
 export const useLuxSelector: TypedUseSelectorHook<RabbyRootState> = useSelector;
 
-export function useRabbyGetter<Selected = unknown>(
+export function useLuxGetter<Selected = unknown>(
   selector: (
     select: typeof store['select']
   ) => (state: RabbyRootState) => Selected

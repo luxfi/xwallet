@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { DisplayChainWithWhiteLogo } from '@/utils/chain';
 import { sleep } from '@/ui/utils';
 import { CurvePointCollection } from '@/background/service/preference';
-import { useLuxDispatch, useRabbyGetter } from '@/ui/store';
+import { useLuxDispatch, useLuxGetter } from '@/ui/store';
 import { formChartData } from './useCurve';
 import { normalizeAndVaryChainList, normalizeChainList } from '@/utils/account';
 import { useRefState } from '@/ui/hooks/useRefState';
@@ -58,7 +58,7 @@ export function useHomeBalanceViewOuterPrefetch(
 }
 
 export function useHomeBalanceView(currentAddress?: string | undefined) {
-  const cacheAboutData = useRabbyGetter(
+  const cacheAboutData = useLuxGetter(
     (s) => s.account.currentBalanceAboutMap
   );
 

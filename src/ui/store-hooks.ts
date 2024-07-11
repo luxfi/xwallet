@@ -10,7 +10,7 @@
  * to the store by `connectStore` API in ./store.ts
  */
 import { useEffect, useState } from 'react';
-import { useLuxDispatch, useRabbyGetter, useLuxSelector } from './store';
+import { useLuxDispatch, useLuxGetter, useLuxSelector } from './store';
 
 export function useAccount() {
   const account = useLuxSelector((state) => state.account.currentAccount);
@@ -24,7 +24,7 @@ export function useAccount() {
  */
 export function useIsShowMnemonic() {
   const dispatch = useLuxDispatch();
-  const isShowMnemonic = useRabbyGetter<boolean>(
+  const isShowMnemonic = useLuxGetter<boolean>(
     (s) => s.account.isShowMnemonic
   );
 

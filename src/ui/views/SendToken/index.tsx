@@ -24,7 +24,7 @@ import {
   useLuxDispatch,
   useLuxSelector,
   connectStore,
-  useRabbyGetter,
+  useLuxGetter,
 } from 'ui/store';
 import { Account, ChainGas } from 'background/service/preference';
 import { isSameAddress, useWallet } from 'ui/utils';
@@ -911,7 +911,7 @@ const SendToken = () => {
     ]
   );
 
-  const isReserveGasOnSendToken = useRabbyGetter(
+  const isReserveGasOnSendToken = useLuxGetter(
     (s) => s.preference.isReserveGasOnSendToken
   );
 

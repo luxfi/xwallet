@@ -29,7 +29,7 @@ import { AddressViewer, Modal } from 'ui/component';
 import {
   connectStore,
   useLuxDispatch,
-  useRabbyGetter,
+  useLuxGetter,
   useLuxSelector,
 } from 'ui/store';
 import { useWallet } from 'ui/utils';
@@ -86,7 +86,7 @@ const Dashboard = () => {
   const [connectionAnimation, setConnectionAnimation] = useState('');
   const [pendingApprovalCount, setPendingApprovalCount] = useState(0);
 
-  const isGnosis = useRabbyGetter((s) => s.chains.isCurrentAccountGnosis);
+  const isGnosis = useLuxGetter((s) => s.chains.isCurrentAccountGnosis);
   const gnosisPendingCount = useLuxSelector((s) => s.chains.gnosisPendingCount);
 
   const [dashboardReload, setDashboardReload] = useState(false);
@@ -291,7 +291,7 @@ const Dashboard = () => {
     setTopAnimate('fadeInTop');
   };
 
-  const showGnosisWrongChainAlert = useRabbyGetter(
+  const showGnosisWrongChainAlert = useLuxGetter(
     (s) => s.chains.isShowGnosisWrongChainAlert
   );
   const opacity60 =
