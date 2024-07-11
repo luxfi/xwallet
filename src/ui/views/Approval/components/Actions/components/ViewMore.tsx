@@ -47,7 +47,7 @@ const PopupContainer = styled.div`
   }
   .view-more-table {
     border-radius: 8px;
-    background: var(--r-neutral-card1, #fff);
+    background: var(--l-neutral-card1, #fff);
     padding: 0px 16px;
     display: flex;
     flex-direction: column;

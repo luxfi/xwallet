@@ -41,7 +41,7 @@ const SearchWrapper = styled.div`
     border: 1px solid var(--r-neutral-line, #d3d8e0);
     padding: 13px 15px;
     line-height: 24px !important;
-    background: var(--r-neutral-card1, #fff);
+    background: var(--l-neutral-card1, #fff);
 
     input::placeholder {
       color: var(--r-neutral-foot, #6a7587);

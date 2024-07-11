@@ -23,7 +23,7 @@ const Footer = styled.div`
     position: relative;
     border: 1px solid transparent;
     border-radius: 8px;
-    background: var(--r-neutral-card1, #fff);
+    background: var(--l-neutral-card1, #fff);
     .rabby-checkbox__wrapper {
       .rabby-checkbox {
       }

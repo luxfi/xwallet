@@ -8,7 +8,7 @@ const CardDiv = styled.div<{
   hasHover: boolean;
 }>`
   border-radius: 8px;
-  background: var(--r-neutral-card1, #fff);
+  background: var(--l-neutral-card1, #fff);
   border: 1px solid transparent;
   ${({ hasHover }) =>
     hasHover &&

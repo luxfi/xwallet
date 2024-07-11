@@ -42,7 +42,7 @@ const Wraper = styled.div`
     height: 44px;
 
     border-radius: 6px;
-    background: var(--r-neutral-card1, #fff);
+    background: var(--l-neutral-card1, #fff);
     border: 1px solid var(--r-neutral-line, #d3d8e0);
 
     .ant-input {

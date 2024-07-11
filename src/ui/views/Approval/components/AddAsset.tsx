@@ -137,7 +137,7 @@ const AddAssetWrapper = styled.div`
     }
   }
   .footer {
-    background-color: var(--r-neutral-card1);
+    background-color: var(--l-neutral-card1);
     border-top: 0.5px solid var(--r-neutral-line);
     .ant-btn-primary[disabled] {
       width: 100%;
