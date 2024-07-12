@@ -223,7 +223,7 @@ const ImportWatchAddress = () => {
     >
       {contextHolder}
       <header className="create-new-header create-password-header h-[264px] res dark:bg-r-blue-disable">
-        <div className="rabby-container">
+        <div className="lux-container">
           <img
             className="icon-back z-10 relative"
             src={IconBack}
@@ -239,7 +239,7 @@ const ImportWatchAddress = () => {
           </p>
         </div>
       </header>
-      <div className="rabby-container widget-has-ant-input">
+      <div className="lux-container widget-has-ant-input">
         <div className="relative">
           <Form.Item
             className="pt-32 px-20"

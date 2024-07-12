@@ -349,7 +349,7 @@ const AddAddressOptions = () => {
   if (preventMount) return null;
 
   return (
-    <div className="rabby-container pb-[12px]" ref={rootRef}>
+    <div className="lux-container pb-[12px]" ref={rootRef}>
       {[createImportAddrList, centerList].map((items, index) => (
         <div
           className="bg-r-neutral-card-1 rounded-[6px] mb-[12px]"

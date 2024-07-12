@@ -127,7 +127,7 @@ const ImportSuccess = ({ isPopup = false }: { isPopup?: boolean }) => {
           </header>
         ) : (
           <div className="create-new-header create-password-header h-[200px] dark:bg-r-blue-disable">
-            <div className="rabby-container">
+            <div className="lux-container">
               <img
                 className="w-[80px] h-[80px] mx-auto mb-[16px] mt-[-4px]"
                 src={SuccessLogo}
@@ -138,7 +138,7 @@ const ImportSuccess = ({ isPopup = false }: { isPopup?: boolean }) => {
             </div>
           </div>
         ))}
-      <div className={clsx(isPopup && 'rabby-container', 'overflow-auto')}>
+      <div className={clsx(isPopup && 'lux-container', 'overflow-auto')}>
         <div
           onClick={(e) => {
             e.stopPropagation();

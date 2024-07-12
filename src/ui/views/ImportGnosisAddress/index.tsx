@@ -85,7 +85,7 @@ const ImportGnosisAddress = () => {
     <div className="import-gnosis h-full relative">
       {contextHolder}
       <header className="header h-[180px] relative dark:bg-r-blue-disable">
-        <div className="rabby-container pt-[40px]">
+        <div className="lux-container pt-[40px]">
           <img
             src={IconBack}
             className="mb-0 absolute z-10 top-[20px] left-[20px] cursor-pointer"
@@ -106,7 +106,7 @@ const ImportGnosisAddress = () => {
           </p>
         </div>
       </header>
-      <div className="rabby-container">
+      <div className="lux-container">
         <div className="relative p-20">
           <Form form={form}>
             <Form.Item

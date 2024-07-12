@@ -43,7 +43,7 @@ export const ImportMyMetaMaskAccount = () => {
       <BlueHeader className="mx-[-20px]">
         {t('page.newAddress.importMyMetamaskAccount')}
       </BlueHeader>
-      <div className="rabby-container text-r-neutral-title-1">
+      <div className="lux-container text-r-neutral-title-1">
         <div
           style={{
             background:
