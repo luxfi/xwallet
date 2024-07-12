@@ -711,9 +711,9 @@
         "comingSoon": "Скоро",
         "soon": "Незабаром",
         "refreshTheWebPageToTakeEffect": "Оновити веб-сторінку, щоб зміни набули чинності",
-        "rabbyIsInUseAndMetamaskIsBanned": "Lux використовується, а Metamask заборонений",
+        "luxIsInUseAndMetamaskIsBanned": "Lux використовується, а Metamask заборонений",
         "flip": "Перевернути",
-        "metamaskIsInUseAndRabbyIsBanned": "Metamask використовується, а Lux заборонений",
+        "metamaskIsInUseAndLuxIsBanned": "Metamask використовується, а Lux заборонений",
         "transactionNeedsToSign": "транзакцію потрібно підписати",
         "transactionsNeedToSign": "транзакції потрібно підписати",
         "view": "Перегляд",
@@ -779,7 +779,7 @@
           "send": "Відправити"
         }
       },
-      "rabbyBadge": {
+      "luxBadge": {
         "imageLabel": "Lux Badge",
         "title": "Вимагайте Lux Badge для",
         "enterClaimCode": "Введіть код вимоги",
@@ -789,7 +789,7 @@
         "viewYourClaimCode": "Переглянути код вашої заявки",
         "noCode": "Ви не активували код претензії для цієї адреси",
         "learnMoreOnDebank": "Дізнатися більше на DeBank",
-        "rabbyValuedUserNo": "Lux Valued User No.{{num}}",
+        "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "claimSuccess": "Успіх заявки",
         "viewOnDebank": "Переглянути у DeBank"
       },
@@ -1281,7 +1281,7 @@
       "flagByLux": "Позначено Lux",
       "flagByMM": "Позначено Metamask",
       "flagByScamSniffer": "Позначено  ScamSniffer",
-      "verifiedByRabby": "Перевірено Lux",
+      "verifiedByLux": "Перевірено Lux",
       "foundForbiddenRisk": "Знайдено заборонені ризики. З'єднання заблоковано.",
       "markAsTrustToast": "Позначити як \"Довірені\"",
       "markAsBlockToast": "Позначити як \"Заблоковані\"",

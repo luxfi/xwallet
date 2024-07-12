@@ -52,7 +52,7 @@ const DefaultWalletSetting = () => {
             alt=""
             className="w-[20px] h-[20px] mr-[8px]"
           />
-          {t('page.dashboard.home.rabbyIsInUseAndMetamaskIsBanned')}
+          {t('page.dashboard.home.luxIsInUseAndMetamaskIsBanned')}
           <a href="#" onClick={handleFlip}>
             {t('page.dashboard.home.flip')}
           </a>
@@ -68,7 +68,7 @@ const DefaultWalletSetting = () => {
           alt=""
           className="w-[20px] h-[20px] mr-[8px]"
         />
-        {t('page.dashboard.home.metamaskIsInUseAndRabbyIsBanned')}
+        {t('page.dashboard.home.metamaskIsInUseAndLuxIsBanned')}
         <a href="#" onClick={handleFlip}>
           {t('page.dashboard.home.flip')}
         </a>

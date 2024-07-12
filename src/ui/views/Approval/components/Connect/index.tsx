@@ -166,7 +166,7 @@ const RuleDesc = [
   },
   {
     id: '1070',
-    desc: i18n.t('page.connect.verifiedByRabby'),
+    desc: i18n.t('page.connect.verifiedByLux'),
     fixed: false,
   },
 ];

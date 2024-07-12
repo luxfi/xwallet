@@ -461,7 +461,7 @@
       "sitePopularity": "Popularité du site",
       "title": "Se connecter à la DApp",
       "trusted": "Fiable",
-      "verifiedByRabby": "Vérifié par Lux"
+      "verifiedByLux": "Vérifié par Lux"
     },
     "createPassword": {
       "agree": "J'ai lu et j'accepte les<1/> <2>Conditions d'utilisation</2>",
@@ -579,7 +579,7 @@
         "comingSoon": "À venir",
         "flip": "Retourner",
         "importType": "Importé par {{type}}",
-        "metamaskIsInUseAndRabbyIsBanned": "MetaMask est utilisé et Lux est banni",
+        "metamaskIsInUseAndLuxIsBanned": "MetaMask est utilisé et Lux est banni",
         "offline": "Le réseau est déconnecté et aucune donnée n'est obtenue",
         "panel": {
           "approvals": "Approbations",
@@ -600,7 +600,7 @@
           "count": "{{count}} dans",
           "title": "File d'attente"
         },
-        "rabbyIsInUseAndMetamaskIsBanned": "Lux est utilisé et Metamask est banni",
+        "luxIsInUseAndMetamaskIsBanned": "Lux est utilisé et Metamask est banni",
         "refreshTheWebPageToTakeEffect": "Actualiser la page Web pour prendre en compte les changements",
         "rejectAll": "Tout rejeter",
         "soon": "Bientôt",
@@ -633,7 +633,7 @@
           "sendTooltip": "Seuls les NFTs ERC-721 et ERC-1155 sont pris en charge pour le moment"
         }
       },
-      "rabbyBadge": {
+      "luxBadge": {
         "claim": "Réclamer",
         "claimSuccess": "Réclamation réussie",
         "enterClaimCode": "Saisir le code de réclamation",
@@ -641,7 +641,7 @@
         "imageLabel": "badge Lux",
         "learnMoreOnDebank": "En savoir plus sur DeBank",
         "noCode": "Vous n'avez pas activé le code de réclamation pour cette adresse",
-        "rabbyValuedUserNo": "Utilisateur Lux estimé n°{{num}}",
+        "luxValuedUserNo": "Utilisateur Lux estimé n°{{num}}",
         "swapTip": "Vous devez d’abord effectuer un échange avec un DEX notable dans Lux Wallet.",
         "title": "Réclamer le badge Lux pour",
         "viewOnDebank": "Voir sur DeBank",

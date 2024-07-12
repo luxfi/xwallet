@@ -915,9 +915,9 @@
         "comingSoon": "Скоро будет",
         "soon": "Скоро",
         "refreshTheWebPageToTakeEffect": "Обновите веб-страницу, чтобы изменения вступили в силу",
-        "rabbyIsInUseAndMetamaskIsBanned": "Lux используется, а Metamask заблокирован",
+        "luxIsInUseAndMetamaskIsBanned": "Lux используется, а Metamask заблокирован",
         "flip": "Поменять",
-        "metamaskIsInUseAndRabbyIsBanned": "MetaMask используется, а Lux заблокирован",
+        "metamaskIsInUseAndLuxIsBanned": "MetaMask используется, а Lux заблокирован",
         "transactionNeedsToSign": "транзакция требует подписи",
         "transactionsNeedToSign": "транзакции требуют подписи",
         "view": "Просмотреть",
@@ -990,7 +990,7 @@
           "send": "Отправить"
         }
       },
-      "rabbyBadge": {
+      "luxBadge": {
         "imageLabel": "значок Lux",
         "title": "Получить значок Lux для",
         "freeGasTitle": "Получить Free Gas Badge за",
@@ -1004,8 +1004,8 @@
         "noCode": "У вас еще не активирован код для получения",
         "freeGasNoCode": "Для начала нажмите кнопку внизу для перехода в DeBank и получите код для текущего кошелька.",
         "learnMoreOnDebank": "Узнайте больше на DeBank",
-        "rabbyValuedUserNo": "Ценный пользователь Lux №{{num}}",
-        "rabbyFreeGasUserNo": "Lux Free Gas User No.{{num}}",
+        "luxValuedUserNo": "Ценный пользователь Lux №{{num}}",
+        "luxFreeGasUserNo": "Lux Free Gas User No.{{num}}",
         "claimSuccess": "Успешное получение",
         "viewOnDebank": "Посмотреть на DeBank"
       },
@@ -1589,7 +1589,7 @@
       "flagByLux": "Отмечено Lux",
       "flagByMM": "Отмечено MetaMask",
       "flagByScamSniffer": "Отмечено ScamSniffer",
-      "verifiedByRabby": "Проверено Lux",
+      "verifiedByLux": "Проверено Lux",
       "foundForbiddenRisk": "Найдены запрещенные риски. Соединение заблокировано.",
       "markAsTrustToast": "Отметить как \"Доверенный\"",
       "markAsBlockToast": "Отметить как \"Заблокированный\"",
@@ -1878,9 +1878,9 @@
         "claim": "Получить",
         "addressBalance": "Баланс кошелька",
         "MetaMaskSwap": "Обмен MetaMask",
-        "rabbyUser": "Активный пользователь Lux",
-        "rabbyValuedUserBadge": "Значок ценного пользователя Lux",
-        "rabbyDesktopGenesisNft": "Lux Desktop Genesis NFT",
+        "luxUser": "Активный пользователь Lux",
+        "luxValuedUserBadge": "Значок ценного пользователя Lux",
+        "luxDesktopGenesisNft": "Lux Desktop Genesis NFT",
         "walletBalance": "Wallet Balance",
         "activeStats": "Active Status",
         "referral-code": "Реферальный код",

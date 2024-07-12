@@ -344,16 +344,16 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
       <img
         src={ImgRabbyBadgeM}
         className="badge"
-        alt={t('page.dashboard.rabbyBadge.imageLabel')}
+        alt={t('page.dashboard.luxBadge.imageLabel')}
       />
-      <div className="title">{t('page.dashboard.rabbyBadge.freeGasTitle')}</div>
+      <div className="title">{t('page.dashboard.luxBadge.freeGasTitle')}</div>
       <CurrentAccount noInvert={false} className="account" />
       {!noCode && (
         <>
           <div className={clsx('box widget-has-ant-input', txTips && 'swap')}>
             <Input
               className={clsx('codeInput', error && 'red')}
-              placeholder={t('page.dashboard.rabbyBadge.enterClaimCode')}
+              placeholder={t('page.dashboard.luxBadge.enterClaimCode')}
               value={code}
               onChange={onInputChange}
               autoFocus
@@ -366,9 +366,9 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
                 </div>
 
                 <span>
-                  {t('page.dashboard.rabbyBadge.freeGasTip')}{' '}
+                  {t('page.dashboard.luxBadge.freeGasTip')}{' '}
                   <span onClick={gotoLearnMore} className="toSwap">
-                    {t('page.dashboard.rabbyBadge.learnMore')}
+                    {t('page.dashboard.luxBadge.learnMore')}
                   </span>
                 </span>
               </div>
@@ -381,10 +381,10 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
             onClick={handleClaim}
             loading={mintLoading}
           >
-            {t('page.dashboard.rabbyBadge.claim')}
+            {t('page.dashboard.luxBadge.claim')}
           </Button>
           <div className="tips" onClick={gotoDeBankRabbyBadge}>
-            {t('page.dashboard.rabbyBadge.viewYourClaimCode')}
+            {t('page.dashboard.luxBadge.viewYourClaimCode')}
           </div>
         </>
       )}
@@ -397,10 +397,10 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
         ) : (
           <>
             <div className="learn-more-tips">
-              {t('page.dashboard.rabbyBadge.freeGasNoCode')}{' '}
+              {t('page.dashboard.luxBadge.freeGasNoCode')}{' '}
             </div>
             <Button className="btn more" onClick={gotoDeBankRabbyBadge}>
-              <span>{t('page.dashboard.rabbyBadge.learnMoreOnDebank')}</span>
+              <span>{t('page.dashboard.luxBadge.learnMoreOnDebank')}</span>
               <img src={ImgLink} className="ml-4 w-20 h-20" />
             </Button>
           </>
@@ -482,17 +482,17 @@ const ClaimSuccess = ({ num }: { num: number }) => {
       <img
         src={ImgRabbyBadgeL}
         className="badge"
-        alt={t('page.dashboard.rabbyBadge.imageLabel')}
+        alt={t('page.dashboard.luxBadge.imageLabel')}
       />
       <div className="desc">
-        {t('page.dashboard.rabbyBadge.rabbyFreeGasUserNo', {
+        {t('page.dashboard.luxBadge.luxFreeGasUserNo', {
           num,
         })}
       </div>
-      <div className="title">{t('page.dashboard.rabbyBadge.claimSuccess')}</div>
+      <div className="title">{t('page.dashboard.luxBadge.claimSuccess')}</div>
       <CurrentAccount className="account" />
       <Button className="btn" onClick={gotoDeBankRabbyBadge}>
-        <span>{t('page.dashboard.rabbyBadge.viewOnDebank')}</span>
+        <span>{t('page.dashboard.luxBadge.viewOnDebank')}</span>
         <img src={ImgLink} className="ml-4 w-20 h-20" />
       </Button>
       <div className="confetti">

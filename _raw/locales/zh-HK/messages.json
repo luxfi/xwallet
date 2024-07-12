@@ -112,8 +112,8 @@
         "comingSoon": "即將推出",
         "soon": "很快",
         "flip": "切換",
-        "metamaskIsInUseAndRabbyIsBanned": "正在使用 MetaMask，禁用 Lux",
-        "rabbyIsInUseAndMetamaskIsBanned": "正在使用 Lux，禁用 Metamask",
+        "metamaskIsInUseAndLuxIsBanned": "正在使用 MetaMask，禁用 Lux",
+        "luxIsInUseAndMetamaskIsBanned": "正在使用 Lux，禁用 Metamask",
         "refreshTheWebPageToTakeEffect": "刷新網頁即可生效",
         "transactionNeedsToSign": "筆交易需要簽名",
         "transactionsNeedToSign": "筆交易需要簽名",
@@ -162,7 +162,7 @@
         "oldContactList": "舊聯系人列表",
         "oldContactListDescription": "由於聯系人功能和觀察地址合並，舊的聯系人數據備份於此。後續我們會刪除該列表。如果你需要繼續使用，請及時添加為聯系人"
       },
-      "rabbyBadge": {
+      "luxBadge": {
         "claim": "領取",
         "claimSuccess": "領取成功",
         "enterClaimCode": "輸入邀請碼",
@@ -170,7 +170,7 @@
         "imageLabel": "Lux Badge",
         "learnMoreOnDebank": "跳轉至 DeBank 領取",
         "noCode": "你尚未激活該地址的邀請碼",
-        "rabbyValuedUserNo": "Lux Valued User No.{{num}}",
+        "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "swapTip": "你需要先在 Lux Wallet 中完成一筆與知名dex的兌換",
         "title": "領取 Lux Badge",
         "viewOnDebank": "在 DeBank 上查看",
@@ -179,7 +179,7 @@
         "freeGasTip": "請使用免費 Gas 簽署一筆交易。當您的 Gas 不足時，'免費 Gas' 按鈕會自動出現。",
         "learnMore": "了解更多",
         "freeGasNoCode": "請先點擊下面的按鈕訪問 DeBank 並使用您的當前地址獲取申請代碼。",
-        "rabbyFreeGasUserNo": "Lux Free Gas User No.{{num}}"
+        "luxFreeGasUserNo": "Lux Free Gas User No.{{num}}"
       },
       "security": {
         "comingSoon": "更多功能即將推出",
@@ -903,7 +903,7 @@
       "sitePopularity": "網站熱度",
       "title": "連接 Dapp",
       "trusted": "白名單",
-      "verifiedByRabby": "經 Lux 驗證",
+      "verifiedByLux": "經 Lux 驗證",
       "SignTestnetPermission": {
         "title": "簽名權限"
       },
@@ -1920,9 +1920,9 @@
         "claim": "領取",
         "addressBalance": "錢包餘額",
         "MetaMaskSwap": "MetaMask 交換",
-        "rabbyUser": "Lux 活躍用戶",
-        "rabbyValuedUserBadge": "Lux 重要用戶徽章",
-        "rabbyDesktopGenesisNft": "Lux 桌面起源 NFT",
+        "luxUser": "Lux 活躍用戶",
+        "luxValuedUserBadge": "Lux 重要用戶徽章",
+        "luxDesktopGenesisNft": "Lux 桌面起源 NFT",
         "walletBalance": "錢包餘額",
         "activeStats": "活動狀態",
         "referral-code": "推薦碼",

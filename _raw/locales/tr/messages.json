@@ -683,9 +683,9 @@
         "comingSoon": "Çok Yakında",
         "soon": "Yakında",
         "refreshTheWebPageToTakeEffect": "Etkili olması için web sayfasını yenileyin",
-        "rabbyIsInUseAndMetamaskIsBanned": "Lux kullanımda ve Metamask yasaklandı",
+        "luxIsInUseAndMetamaskIsBanned": "Lux kullanımda ve Metamask yasaklandı",
         "flip": "Çevir",
-        "metamaskIsInUseAndRabbyIsBanned": "MetaMask kullanımda ve Lux yasaklandı",
+        "metamaskIsInUseAndLuxIsBanned": "MetaMask kullanımda ve Lux yasaklandı",
         "transactionNeedsToSign": "işlem imzalanmalı",
         "transactionsNeedToSign": "işlemler imzalanmalı",
         "view": "Görüntüle",
@@ -751,7 +751,7 @@
           "send": "Gönder"
         }
       },
-      "rabbyBadge": {
+      "luxBadge": {
         "imageLabel": "Lux rozeti",
         "title": "İçin Lux Rozeti Talep Et",
         "enterClaimCode": "Talep kodunu girin",
@@ -761,7 +761,7 @@
         "viewYourClaimCode": "Talep kodunuzu görüntüleyin",
         "noCode": "Bu adres için talep kodunu aktive etmediniz",
         "learnMoreOnDebank": "DeBank'ta daha fazla bilgi edinin",
-        "rabbyValuedUserNo": "Lux Valued User No.{{num}}",
+        "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "claimSuccess": "Talep Başarılı",
         "viewOnDebank": "DeBank'ta Görüntüle"
       },
@@ -1251,7 +1251,7 @@
       "flagByLux": "Lux Tarafından İşaretlendi",
       "flagByMM": "MetaMask Tarafından İşaretlendi",
       "flagByScamSniffer": "ScamSniffer Tarafından İşaretlendi",
-      "verifiedByRabby": "Lux Tarafından Doğrulandı",
+      "verifiedByLux": "Lux Tarafından Doğrulandı",
       "foundForbiddenRisk": "Yasaklı riskler bulundu. Bağlantı engellendi.",
       "markAsTrustToast": "\"Güvenilir\" olarak işaretle",
       "markAsBlockToast": "\"Engellenmiş\" olarak işaretle",

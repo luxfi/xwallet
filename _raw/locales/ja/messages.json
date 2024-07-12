@@ -711,9 +711,9 @@
         "comingSoon": "近日公開",
         "soon": "まもなく",
         "refreshTheWebPageToTakeEffect": "効果を発揮するにはウェブページを更新してください",
-        "rabbyIsInUseAndMetamaskIsBanned": "Luxが使用中でMetaMaskは禁止されています",
+        "luxIsInUseAndMetamaskIsBanned": "Luxが使用中でMetaMaskは禁止されています",
         "flip": "反転",
-        "metamaskIsInUseAndRabbyIsBanned": "MetaMaskが使用中でLuxは禁止されています",
+        "metamaskIsInUseAndLuxIsBanned": "MetaMaskが使用中でLuxは禁止されています",
         "transactionNeedsToSign": "トランザクションをサインする必要があります",
         "transactionsNeedToSign": "トランザクションをサインする必要があります",
         "view": "表示",
@@ -779,7 +779,7 @@
           "send": "送信"
         }
       },
-      "rabbyBadge": {
+      "luxBadge": {
         "imageLabel": "Lux バッジ",
         "title": "Lux バッジをクレームする",
         "enterClaimCode": "クレームコードを入力",
@@ -789,7 +789,7 @@
         "viewYourClaimCode": "クレームコードを表示",
         "noCode": "このアドレスでクレームコードを有効にしていません",
         "learnMoreOnDebank": "DeBankで詳細を確認",
-        "rabbyValuedUserNo": "Lux 評価ユーザー番号{{num}}",
+        "luxValuedUserNo": "Lux 評価ユーザー番号{{num}}",
         "claimSuccess": "クレーム成功",
         "viewOnDebank": "DeBankで表示"
       },
@@ -1281,7 +1281,7 @@
       "flagByLux": "Luxによってフラグ付け",
       "flagByMM": "MetaMaskによってフラグ付け",
       "flagByScamSniffer": "ScamSnifferによってフラグ付け",
-      "verifiedByRabby": "Luxによって確認",
+      "verifiedByLux": "Luxによって確認",
       "foundForbiddenRisk": "禁止されたリスクが見つかりました。接続はブロックされました。",
       "markAsTrustToast": "\"信頼されている\" としてマーク",
       "markAsBlockToast": "\"ブロックされている\" としてマーク",

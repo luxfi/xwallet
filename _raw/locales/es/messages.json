@@ -686,9 +686,9 @@
         "comingSoon": "Próximamente",
         "soon": "Pronto",
         "refreshTheWebPageToTakeEffect": "Actualiza la página web para que surtan efecto los cambios",
-        "rabbyIsInUseAndMetamaskIsBanned": "Lux está en uso y MetaMask está prohibido",
+        "luxIsInUseAndMetamaskIsBanned": "Lux está en uso y MetaMask está prohibido",
         "flip": "Cambiar",
-        "metamaskIsInUseAndRabbyIsBanned": "MetaMask está en uso y Lux está prohibido",
+        "metamaskIsInUseAndLuxIsBanned": "MetaMask está en uso y Lux está prohibido",
         "transactionNeedsToSign": "se necesita firmar la transacción",
         "transactionsNeedToSign": "se necesitan firmar las transacciones",
         "view": "Ver",
@@ -754,7 +754,7 @@
           "send": "Enviar"
         }
       },
-      "rabbyBadge": {
+      "luxBadge": {
         "imageLabel": "distintivo de Lux",
         "title": "Reclama el distintivo de Lux para",
         "enterClaimCode": "Ingresa el código de reclamo",
@@ -764,7 +764,7 @@
         "viewYourClaimCode": "Ver tu código de reclamo",
         "noCode": "Aún no has activado el código de reclamo para esta dirección",
         "learnMoreOnDebank": "Más información en DeBank",
-        "rabbyValuedUserNo": "Usuario Valioso de Lux No.{{num}}",
+        "luxValuedUserNo": "Usuario Valioso de Lux No.{{num}}",
         "claimSuccess": "Reclamo Exitoso",
         "viewOnDebank": "Ver en DeBank"
       },
@@ -1246,7 +1246,7 @@
       "flagByLux": "Marcado por Lux",
       "flagByMM": "Marcado por MetaMask",
       "flagByScamSniffer": "Marcado por ScamSniffer",
-      "verifiedByRabby": "Verificado por Lux",
+      "verifiedByLux": "Verificado por Lux",
       "foundForbiddenRisk": "Se encontraron riesgos prohibidos. La conexión está bloqueada.",
       "markAsTrustToast": "Marcar como \"Confiable\"",
       "markAsBlockToast": "Marcar como \"Bloqueado\"",
