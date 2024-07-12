@@ -683,7 +683,7 @@
         "autoLockTime": "Temps de verrouillage automatique",
         "backendServiceUrl": "URL du service backend",
         "cancel": "Annuler",
-        "claimRabbyBadge": "Réclamer le badge Lux!",
+        "ClaimLuxBadge": "Réclamer le badge Lux!",
         "clearPending": "Effacer transaction(s) en attente",
         "clearPendingTip1": "Ceci effacera toutes vos transactions en attente. Cela peut vous aider à résoudre un éventuel problème de \"cache\" lorsque l'état de la transaction dans Lux ne correspond pas à l'état sur la chaîne.",
         "clearPendingTip2": "Cela ne modifiera pas les soldes de vos comptes et ne vous obligera pas à ressaisir votre seed phrase. Toutes vos informations sur vos actifs et vos comptes resteront sécurisées.",

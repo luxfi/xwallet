@@ -31,7 +31,7 @@ import { useThemeMode } from '@/ui/hooks/usePreference';
 
 const RABBY_BADGE_URL = 'https://debank.com/official-badge/134';
 
-const LearnMore = 'https://x.com/Rabby_io/status/1785529719070368044';
+const LearnMore = 'https://x.com/lux_link/status/1785529719070368044';
 
 const gotoDeBankRabbyBadge = () => {
   openInTab(RABBY_BADGE_URL);
@@ -244,7 +244,7 @@ const Wrapper = styled.div<{
 
 const badgeName = 'rabby_free_gas';
 
-const ClaimRabbyBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
+const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
   const { t } = useTranslation();
   const [code, setCode] = useState('');
   const [error, setError] = useState('');
@@ -540,7 +540,7 @@ export const ClaimRabbyFreeGasBadgeModal = ({
       destroyOnClose
       closeIcon={<RcIconClose />}
     >
-      <ClaimRabbyBadge onClaimed={onClaimed} />
+      <ClaimLuxBadge onClaimed={onClaimed} />
     </StyledModal>
   );
 };

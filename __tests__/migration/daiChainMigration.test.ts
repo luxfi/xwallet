@@ -10,14 +10,14 @@ const data: { permission: PermissionStore } = {
     dumpCache: [
       {
         e: 0,
-        k: 'https://rabby.io',
+        k: 'https://lux.link',
         v: {
           chain: 'DAI' as CHAINS_ENUM,
           icon: '',
           isSigned: false,
           isTop: false,
           name: 'Rabby',
-          origin: 'https://rabby.io',
+          origin: 'https://lux.link',
         } as ConnectedSite,
       },
       {
@@ -29,7 +29,7 @@ const data: { permission: PermissionStore } = {
           isSigned: false,
           isTop: false,
           name: 'Rabby',
-          origin: 'https://rabby.io',
+          origin: 'https://lux.link',
         } as ConnectedSite,
       },
       {
@@ -41,7 +41,7 @@ const data: { permission: PermissionStore } = {
           isSigned: false,
           isTop: false,
           name: 'Rabby',
-          origin: 'https://rabby.io',
+          origin: 'https://lux.link',
         } as ConnectedSite,
       },
     ],
@@ -53,14 +53,14 @@ test('should migrate data', () => {
     expect(result!.permission!.dumpCache).toEqual([
       {
         e: 0,
-        k: 'https://rabby.io',
+        k: 'https://lux.link',
         v: {
           chain: 'GNOSIS' as CHAINS_ENUM,
           icon: '',
           isSigned: false,
           isTop: false,
           name: 'Rabby',
-          origin: 'https://rabby.io',
+          origin: 'https://lux.link',
         },
       },
       {
@@ -72,7 +72,7 @@ test('should migrate data', () => {
           isSigned: false,
           isTop: false,
           name: 'Rabby',
-          origin: 'https://rabby.io',
+          origin: 'https://lux.link',
         },
       },
       {
@@ -84,7 +84,7 @@ test('should migrate data', () => {
           isSigned: false,
           isTop: false,
           name: 'Rabby',
-          origin: 'https://rabby.io',
+          origin: 'https://lux.link',
         },
       },
     ]);

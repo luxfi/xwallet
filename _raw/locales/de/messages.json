@@ -853,7 +853,7 @@
         "clearPendingTip1": "Dies wird alle Ihre ausstehenden Transaktionen löschen. Dies kann Ihnen helfen, das Problem zu lösen, dass in einigen Fällen der Zustand der Transaktion in Lux nicht mit dem Zustand auf der Blockchain übereinstimmt.",
         "clearPendingTip2": "Dies wird die Salden in Ihren Konten nicht ändern oder erfordern, dass Sie Ihre Seed Phrase erneut eingeben. Alle Ihre Vermögenswerte und Kontoinformationen bleiben sicher.",
         "autoLockTime": "Automatische Sperrzeit",
-        "claimRabbyBadge": "Lux Abzeichen beanspruchen!",
+        "ClaimLuxBadge": "Lux Abzeichen beanspruchen!",
         "cancel": "Abbrechen",
         "enableWhitelist": "Whitelist aktivieren",
         "disableWhitelist": "Whitelist deaktivieren",

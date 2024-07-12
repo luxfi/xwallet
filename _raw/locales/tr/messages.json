@@ -797,7 +797,7 @@
         "clearPendingTip1": "Bu, tüm bekleyen işlemlerinizi temizleyecektir. Lux'deki işlemin durumunun zincir üzerindeki durumuyla eşleşmediği bazı durumlarda bu sorunu çözmenize yardımcı olabilir.",
         "clearPendingTip2": "Bu, hesaplarınızdaki bakiyeleri değiştirmeyecek veya seed phrase dizinizi yeniden girmenizi gerektirmeyecektir. Tüm varlıklarınız ve hesap bilgileriniz güvende kalacaktır.",
         "autoLockTime": "Otomatik kilitlenme süresi",
-        "claimRabbyBadge": "Lux Rozetini Talep Edin!",
+        "ClaimLuxBadge": "Lux Rozetini Talep Edin!",
         "cancel": "İptal",
         "enableWhitelist": "Beyaz Listeyi Etkinleştir",
         "disableWhitelist": "Beyaz Listeyi Devre Dışı Bırak",

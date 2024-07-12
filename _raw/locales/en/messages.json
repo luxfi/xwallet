@@ -1043,7 +1043,7 @@
         "clearPendingTip1": "This will clear all your pending transactions. This can help you solve the problem that in some cases the state of the transaction in Rabby does not match the state on-chain.",
         "clearPendingTip2": "This will not change the balances in your accounts or require you to re-enter your seed phrase. All your assets and accounts information will remain secure.",
         "autoLockTime": "Auto lock time",
-        "claimRabbyBadge": "Claim Lux Badge!",
+        "ClaimLuxBadge": "Claim Lux Badge!",
         "claimFreeGasBadge": "Claim Lux Free Gas Badge!",
         "cancel": "Cancel",
         "enableWhitelist": "Enable Whitelist",

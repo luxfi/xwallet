@@ -800,7 +800,7 @@
         "clearPendingTip1": "Esto eliminará todas tus transacciones pendientes. Esto puede ayudarte a resolver el problema de que, en algunos casos, el estado de la transacción en Rabby no coincide con el estado en la cadena.",
         "clearPendingTip2": "Esto no cambiará los saldos en tus cuentas ni requerirá que vuelvas a ingresar tu frase de recuperación. Toda tu información de activos y cuentas permanecerá segura.",
         "autoLockTime": "Tiempo de Bloqueo Automático",
-        "claimRabbyBadge": "¡Reclama la Distinción Lux!",
+        "ClaimLuxBadge": "¡Reclama la Distinción Lux!",
         "cancel": "Cancelar",
         "enableWhitelist": "Habilitar Lista Blanca",
         "disableWhitelist": "Deshabilitar Lista Blanca",

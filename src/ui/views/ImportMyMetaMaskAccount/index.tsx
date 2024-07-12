@@ -23,7 +23,7 @@ export const ImportMyMetaMaskAccount = () => {
         target="_blank"
         onClick={(e) => {
           e.preventDefault();
-          openInTab('https://rabby.io/metamask-export');
+          openInTab('https://lux.link/metamask-export');
         }}
         className="hidden p-6 bg-r-blue-light-1 text-r-blue-default text-12 font-medium relative top-8 rounded-[2px]"
       >
@@ -89,7 +89,7 @@ export const ImportMyMetaMaskAccount = () => {
                 'rounded-[6px] bg-r-neutral-card-2'
               )}
               onClick={() => {
-                openInTab('https://rabby.io/metamask-export');
+                openInTab('https://lux.link/metamask-export');
               }}
             >
               View export tutorial

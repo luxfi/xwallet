@@ -228,7 +228,7 @@ const config = {
     new webpack.DefinePlugin({
       'process.env.version': JSON.stringify(`version: ${process.env.VERSION}`),
       'process.env.release': JSON.stringify(process.env.VERSION),
-      'process.env.RABBY_BUILD_GIT_HASH': JSON.stringify(BUILD_GIT_HASH),
+      'process.env.LUX_BUILD_GIT_HASH': JSON.stringify(BUILD_GIT_HASH),
     }),
     new CopyPlugin({
       patterns: [

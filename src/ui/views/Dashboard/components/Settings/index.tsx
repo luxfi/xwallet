@@ -35,7 +35,7 @@ import IconTwitterHover from 'ui/assets/twitter-hover.svg';
 import { ReactComponent as RcIconTwitter } from 'ui/assets/twitter.svg';
 import { ReactComponent as RcIconClear } from 'ui/assets/icon-clear.svg';
 import { ReactComponent as RcIconClearCC } from 'ui/assets/icon-clear-cc.svg';
-import LogoRabby from 'ui/assets/logo-rabby-large.svg';
+import LogoLux from 'ui/assets/logo-lux-large.png';
 // import { ReactComponent as RcIconServer } from 'ui/assets/server.svg';
 import { ReactComponent as RcIconServerCC } from 'ui/assets/server-cc.svg';
 import IconSuccess from 'ui/assets/success.svg';
@@ -52,7 +52,7 @@ import { ReactComponent as RcIconSettingsAboutSupporetedChains } from 'ui/assets
 import { ReactComponent as RcIconSettingsAboutVersion } from 'ui/assets/dashboard/settings/version.svg';
 import { ReactComponent as RcIconSettingsGitForkCC } from 'ui/assets/dashboard/settings/git-fork-cc.svg';
 import { ReactComponent as RcIconSettingsSearchDapps } from 'ui/assets/dashboard/settings/search.svg';
-import IconSettingsRabbyBadge from 'ui/assets/badge/free-gas-badge-s.svg';
+import IconSettingsLuxBadge from 'ui/assets/badge/free-gas-badge-s.svg';
 import { ReactComponent as RcIconI18n } from 'ui/assets/dashboard/settings/i18n.svg';
 import { ReactComponent as RcIconFeedback } from 'ui/assets/dashboard/settings/feedback.svg';
 
@@ -466,14 +466,14 @@ const SwitchLangModal = ({
   );
 };
 
-const ClaimRabbyBadge = ({ onClick }: { onClick: () => void }) => {
+const ClaimLuxBadge = ({ onClick }: { onClick: () => void }) => {
   const { t } = useTranslation();
   return (
     <div className="setting-block">
       <div className="setting-items">
         <Field
           leftIcon={
-            <ThemeIcon src={IconSettingsRabbyBadge} className="w-28 h-28" />
+            <ThemeIcon src={IconSettingsLuxBadge} className="w-28 h-28" />
           }
           rightIcon={
             <ThemeIcon
@@ -660,7 +660,7 @@ const SettingsInner = ({
         ),
         okText: t('page.dashboard.settings.updateVersion.okText'),
         onOk() {
-          openInTab('https://rabby.io/update-extension');
+          openInTab('https://lux.link/update-extension');
         },
       });
     } else {
@@ -945,7 +945,7 @@ const SettingsInner = ({
           rightIcon: (
             <>
               <span className="text-14 mr-[8px]">
-                {process.env.RABBY_BUILD_GIT_HASH}
+                {process.env.LUX_BUILD_GIT_HASH}
               </span>
             </>
           ),
@@ -1055,7 +1055,7 @@ const SettingsInner = ({
           rightIcon: (
             <>
               <a
-                href="https://twitter.com/rabby_io"
+                href="https://twitter.com/lux_link"
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => {
@@ -1153,7 +1153,7 @@ const SettingsInner = ({
               <img src={IconLock} className="icon icon-lock" />{' '}
               {'Lock Wallet'}
             </Button> */}
-        <ClaimRabbyBadge onClick={onOpenBadgeModal} />
+        <ClaimLuxBadge onClick={onOpenBadgeModal} />
         <RequestDeBankTestnetGasToken />
         {Object.values(renderData).map((group, idxl1) => {
           return (
@@ -1192,10 +1192,10 @@ const SettingsInner = ({
         <div className="px-8 py-2 rounded hover:bg-r-blue-light-1 inline-block">
           <img
             className="inline-block cursor-pointer"
-            src={LogoRabby}
-            alt="https://rabby.io"
+            src={LogoLux}
+            alt="https://lux.link"
             onClick={() => {
-              openInTab('https://rabby.io', false);
+              openInTab('https://lux.link', false);
             }}
           />
         </div>

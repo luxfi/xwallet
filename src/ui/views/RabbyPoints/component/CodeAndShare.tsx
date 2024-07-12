@@ -20,13 +20,13 @@ export const shareRabbyPointsTwitter = ({
 
   const text = encodeURIComponent(`Even if you haven't used Rabby before, you can get points now!
 
-Rabby Points Season 2 is here with bigger rewards – 1 Billion points in total! 🎉 @Rabby_io
+Rabby Points Season 2 is here with bigger rewards – 1 Billion points in total! 🎉 @lux_link
 
 Check your points before you claim!
 
 Use my referral code ${invitedCode} for an extra bonus!
 
-https://rabby.io/points?code=${invitedCode}
+https://lux.link/points?code=${invitedCode}
 `);
 
   openInTab(`https://twitter.com/intent/tweet?text=${text}`);

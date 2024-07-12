@@ -213,7 +213,7 @@ const Wrapper = styled.div<{
   }
 `;
 
-const ClaimRabbyBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
+const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
   const { t } = useTranslation();
   const [code, setCode] = useState('');
   const [error, setError] = useState('');
@@ -495,7 +495,7 @@ export const ClaimRabbyBadgeModal = ({
       destroyOnClose
       closeIcon={<RcIconClose />}
     >
-      <ClaimRabbyBadge onClaimed={onClaimed} />
+      <ClaimLuxBadge onClaimed={onClaimed} />
     </StyledModal>
   );
 };

@@ -26,7 +26,7 @@
     "default_title": "Rabby",
     "default_popup": "popup.html"
   },
-  "author": "https://rabby.io/",
+  "author": "https://lux.link/",
   "background": {
     "page": "background.html",
     "persistent": true

@@ -197,7 +197,7 @@
         "autoLockTime": "自动锁定时间",
         "backendServiceUrl": "后端服务网址",
         "cancel": "取消",
-        "claimRabbyBadge": "领取 Lux Badge",
+        "ClaimLuxBadge": "领取 Lux Badge",
         "clearPending": "清除待完成交易",
         "clearPendingTip1": "这将清除你所有待完成的交易。这可以帮助你解决在某些情况下 Lux 中的交易状态与链上状态不匹配的问题。",
         "clearPendingTip2": "这不会改变你帐户中的余额，也不会要求你重新输入助记词。你的所有资产和帐户信息都将保持安全。",

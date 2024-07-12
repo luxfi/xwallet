@@ -8,9 +8,9 @@ export const GET_WALLETCONNECT_CONFIG = () => {
     maxDuration: 3600000,
     clientMeta: {
       description: t('global.appDescription'),
-      url: 'https://rabby.io',
+      url: 'https://lux.link',
       icons: [
-        'https://static-assets.rabby.io/files/122da969-da58-42e9-ab39-0a8dd38d94b8.png',
+        'https://static-assets.lux.link/files/122da969-da58-42e9-ab39-0a8dd38d94b8.png',
       ],
       name: 'Rabby',
     },
