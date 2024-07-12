@@ -127,7 +127,7 @@
         "trustValueLessThan": "Доверительное значение ≤ {{value}}",
         "deployTimeLessThan": "Время развертывания < {{value}} дней",
         "amountPopupTitle": "Сумма",
-        "flagByRabby": "Отмечено Lux",
+        "flagByLux": "Отмечено Lux",
         "contractTrustValueTip": "Доверенная стоимость относится к общему количеству токенов, подтвержденных и относящихся к этому контракту. Низкая доверенная стоимость указывает на риск или бездействие в течение 180 дней."
       },
       "revokeTokenApprove": {
@@ -333,7 +333,7 @@
         "unavailable": "Недостаточно газа и нет права на бесплатный газ",
         "notEnough": "Недостаточный баланс газа",
         "GetFreeGasToSign": "Получить бесплатный газ для подписи",
-        "rabbyPayGas": "Lux оплатит необходимый газ – просто подпишите",
+        "luxPayGas": "Lux оплатит необходимый газ – просто подпишите",
         "customRpcUnavailableTip": "Пользовательские RPC не поддерживаются для бесплатного газа",
         "walletConnectUnavailableTip": "Мобильный кошелек, подключенный через WalletConnect, не поддерживается для бесплатного газа",
         "watchUnavailableTip": "Адрес только для просмотра не поддерживается для бесплатного газа"
@@ -907,7 +907,7 @@
           "transactions": "Транзакции",
           "approvals": "Аппрувы",
           "feedback": "Обратная связь",
-          "rabbyPoints": "Lux Points",
+          "luxPoints": "Lux Points",
           "more": "Еще",
           "manageAddress": "Управление адресами",
           "nft": "NFT"
@@ -1586,7 +1586,7 @@
       "listedBy": "Перечислено",
       "sitePopularity": "Популярность сайта",
       "myMark": "Моя отметка",
-      "flagByRabby": "Отмечено Lux",
+      "flagByLux": "Отмечено Lux",
       "flagByMM": "Отмечено MetaMask",
       "flagByScamSniffer": "Отмечено ScamSniffer",
       "verifiedByRabby": "Проверено Lux",
@@ -1857,7 +1857,7 @@
       "emptySearch": "Dapp не найден",
       "listBy": "Dapp перечислены"
     },
-    "rabbyPoints": {
+    "luxPoints": {
       "title": "Очки Lux",
       "out-of-x-current-total-points": "Из {{total}} всего распределённых очков",
       "share-on": "Поделиться на",

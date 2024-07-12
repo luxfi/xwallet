@@ -107,7 +107,7 @@
           "more": "更多",
           "manageAddress": "管理地址",
           "nft": "NFT",
-          "rabbyPoints": "Lux Points"
+          "luxPoints": "Lux Points"
         },
         "comingSoon": "即将推出",
         "soon": "很快",
@@ -879,7 +879,7 @@
       "blocked": "黑名单",
       "connectBtn": "连接",
       "flagByMM": "被 MetaMask 标记为风险网址",
-      "flagByRabby": "被 Lux 标记为风险网址",
+      "flagByLux": "被 Lux 标记为风险网址",
       "flagByScamSniffer": "被 ScamSniffer 标记为风险网址",
       "foundForbiddenRisk": "检测到高危风险，\n无法连接",
       "listedBy": "收录于",
@@ -1214,7 +1214,7 @@
         "unavailable": "Gas不足且不符合免费Gas条件",
         "notEnough": "Gas余额不足",
         "GetFreeGasToSign": "获取免费Gas进行签名",
-        "rabbyPayGas": "Lux将支付所需Gas费用 - 只需签名即可",
+        "luxPayGas": "Lux将支付所需Gas费用 - 只需签名即可",
         "customRpcUnavailableTip": "不支持免费Gas的自定义RPC",
         "walletConnectUnavailableTip": "通过WalletConnect连接的移动钱包不支持免费Gas",
         "watchUnavailableTip": "观察钱包地址不支持免费Gas"
@@ -1402,7 +1402,7 @@
         "contractTrustValueTip": "信任值是指授权并暴露给该合约的资产总价值，\n信任值低表示该合约存在风险或 180 天内不活跃",
         "deployTimeLessThan": "< {{value}} 天",
         "eoaAddress": "EOA",
-        "flagByRabby": "被 Lux 标记为风险",
+        "flagByLux": "被 Lux 标记为风险",
         "myBalance": "我的余额",
         "title": "代币授权",
         "trustValueLessThan": "≤ {{value}}"
@@ -1899,7 +1899,7 @@
       "emptySearch": "未找到Dapp",
       "listBy": "Dapp已由以下列表"
     },
-    "rabbyPoints": {
+    "luxPoints": {
       "title": "Lux 积分",
       "out-of-x-current-total-points": "在{{total}}总分发积分中",
       "share-on": "分享到",

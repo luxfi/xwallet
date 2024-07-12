@@ -112,7 +112,7 @@
         "trustValueLessThan": "Vertrauenswert ≤ {{value}}",
         "deployTimeLessThan": "Bereitstellungszeit < {{value}} Tage",
         "amountPopupTitle": "Betrag",
-        "flagByRabby": "Markiert von Lux",
+        "flagByLux": "Markiert von Lux",
         "contractTrustValueTip": "Der Vertrauenswert bezieht sich auf den gesamten genehmigten und diesem Smart Contract ausgesetzten Vermögenswert. Ein niedriger Vertrauenswert deutet auf ein Risiko oder aber eine Inaktivität von 180 Tagen oder mehr hin."
       },
       "revokeTokenApprove": {
@@ -1315,7 +1315,7 @@
       "listedBy": "Gelistet von",
       "sitePopularity": "Website-Popularität",
       "myMark": "Meine Markierung",
-      "flagByRabby": "Von Lux markiert",
+      "flagByLux": "Von Lux markiert",
       "flagByMM": "Von MetaMask markiert",
       "flagByScamSniffer": "Von ScamSniffer markiert",
       "verifiedByRabby": "Von Lux verifiziert",

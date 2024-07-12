@@ -1,20 +1,20 @@
 import { createPersistStore } from 'background/utils';
 import { CEX, DEX } from '@/constant';
 
-export type RabbyPointsStore = {
+export type LuxPointsStore = {
   signatures: Record<string, string>;
   redirect2Points: boolean;
 };
 
-class RabbyPoints {
-  store: RabbyPointsStore = {
+class LuxPoints {
+  store: LuxPointsStore = {
     signatures: {},
     redirect2Points: false,
   };
 
   init = async () => {
-    const storage = await createPersistStore<RabbyPointsStore>({
-      name: 'RabbyPoints',
+    const storage = await createPersistStore<LuxPointsStore>({
+      name: 'LuxPoints',
       template: {
         signatures: {},
         redirect2Points: false,
@@ -48,4 +48,4 @@ class RabbyPoints {
   };
 }
 
-export default new RabbyPoints();
+export default new LuxPoints();

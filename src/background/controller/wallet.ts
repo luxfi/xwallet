@@ -3829,7 +3829,7 @@ export class WalletController extends BaseController {
       }
     } else {
       this.setPageStateCache({
-        path: '/rabby-points',
+        path: '/lux-points',
         params: {},
         states: {},
       });

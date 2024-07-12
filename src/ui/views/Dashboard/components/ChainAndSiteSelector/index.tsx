@@ -255,9 +255,9 @@ export default ({
         ? RcIconClaimableRabbyPoints
         : RcIconUnclaimableRabbyPoints,
       eventKey: 'Rabby Points',
-      content: t('page.dashboard.home.panel.rabbyPoints'),
+      content: t('page.dashboard.home.panel.luxPoints'),
       onClick: () => {
-        history.push('/rabby-points');
+        history.push('/lux-points');
       },
     } as IPanelItem,
     more: {

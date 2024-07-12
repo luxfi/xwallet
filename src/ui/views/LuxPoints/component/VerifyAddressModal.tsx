@@ -19,7 +19,7 @@ const StyledModal = styled(Modal)`
 
 const NoIcon = () => null;
 
-export const ClaimRabbyVerifyModal = ({
+export const ClaimLuxVerifyModal = ({
   visible,
   onCancel,
   onConfirm,
@@ -53,11 +53,11 @@ const Inner = ({
   return (
     <div className="w-[360px] bg-r-neutral-bg-1 p-[20px] pb-[24px] rounded-[8px] leading-[normal]">
       <div className="text-r-neutral-title1 text-[20px] font-medium text-center">
-        {t('page.rabbyPoints.referralCode.verifyAddressModal.verify-address')}
+        {t('page.luxPoints.referralCode.verifyAddressModal.verify-address')}
       </div>
       <div className="mt-[12px] text-[15px]  text-r-neutral-body">
         {t(
-          'page.rabbyPoints.referralCode.verifyAddressModal.please-sign-this-text-message-to-verify-that-you-are-the-owner-of-this-address'
+          'page.luxPoints.referralCode.verifyAddressModal.please-sign-this-text-message-to-verify-that-you-are-the-owner-of-this-address'
         )}
       </div>
       <div className="mt-[48px]  flex justify-center items-center gap-16">
@@ -70,14 +70,14 @@ const Inner = ({
             'before:content-none'
           )}
         >
-          {t('page.rabbyPoints.referralCode.verifyAddressModal.cancel')}
+          {t('page.luxPoints.referralCode.verifyAddressModal.cancel')}
         </Button>
         <Button
           type="primary"
           className="flex-1 h-[44px] text-[15px] font-medium text-r-neutral-title2"
           onClick={onConfirm}
         >
-          {t('page.rabbyPoints.referralCode.verifyAddressModal.sign')}
+          {t('page.luxPoints.referralCode.verifyAddressModal.sign')}
         </Button>
       </div>
     </div>

@@ -436,7 +436,7 @@
       "blocked": "Bloqué",
       "connectBtn": "Connecter",
       "flagByMM": "Signalé par MetaMask",
-      "flagByRabby": "Signalé par Lux",
+      "flagByLux": "Signalé par Lux",
       "flagByScamSniffer": "Signalé par ScamSniffer",
       "foundForbiddenRisk": "Risques détectés. La connexion est bloquée.",
       "ignoreAll": "Ignorer tout",
@@ -1608,7 +1608,7 @@
         "contractTrustValueTip": "La valeur de confiance fait référence au total de tokens approuvés et exposés à ce contrat. Une valeur de confiance faible indique soit un risque, soit une inactivité pendant 180 jours.",
         "deployTimeLessThan": "Date de déploiement < {{value}} jours",
         "eoaAddress": "Adresse EOA",
-        "flagByRabby": "Signalé par Lux",
+        "flagByLux": "Signalé par Lux",
         "myBalance": "Mon solde",
         "title": "Approbation de token",
         "trustValueLessThan": "Valeur de confiance ≤ {{value}}"

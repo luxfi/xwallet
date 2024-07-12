@@ -1,10 +1,10 @@
 import { formatNumber, openInTab } from '@/ui/utils';
 import { ellipsisAddress } from '@/ui/utils/address';
 import React from 'react';
-import { ReactComponent as IconLink } from 'ui/assets/rabby-points/link.svg';
-import { ReactComponent as Icon1st } from 'ui/assets/rabby-points/1st.svg';
-import { ReactComponent as Icon2nd } from 'ui/assets/rabby-points/2nd.svg';
-import { ReactComponent as Icon3rd } from 'ui/assets/rabby-points/3rd.svg';
+import { ReactComponent as IconLink } from 'ui/assets/lux-points/link.svg';
+import { ReactComponent as Icon1st } from 'ui/assets/lux-points/1st.svg';
+import { ReactComponent as Icon2nd } from 'ui/assets/lux-points/2nd.svg';
+import { ReactComponent as Icon3rd } from 'ui/assets/lux-points/3rd.svg';
 import clsx from 'clsx';
 import { ClaimUserAvatar } from './ClaimUserAvatar';
 

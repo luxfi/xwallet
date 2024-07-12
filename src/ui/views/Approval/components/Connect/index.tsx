@@ -151,7 +151,7 @@ const RuleDesc = [
   },
   {
     id: '1001',
-    desc: i18n.t('page.connect.flagByRabby'),
+    desc: i18n.t('page.connect.flagByLux'),
     fixed: false,
   },
   {

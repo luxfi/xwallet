@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-import defaultAvatar from 'ui/assets/rabby-points/default-avatar.png';
+import defaultAvatar from 'ui/assets/lux-points/default-avatar.png';
 
 export const ClaimUserAvatar = (
   props: React.DetailedHTMLProps<

@@ -145,7 +145,7 @@ const ApproveNFT = ({
           <SecurityListItem
             id="1052"
             engineResult={engineResultMap['1052']}
-            title={t('page.signTx.tokenApprove.flagByRabby')}
+            title={t('page.signTx.tokenApprove.flagByLux')}
             dangerText={t('page.signTx.yes')}
           />
 

@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import { ReactComponent as IconInputLoading } from 'ui/assets/rabby-points/loading.svg';
+import { ReactComponent as IconInputLoading } from 'ui/assets/lux-points/loading.svg';
 
 const Wrapper = styled.div`
   position: relative;
@@ -67,7 +67,7 @@ export const ClaimItem = (props: ClaimItemProps) => {
             targetOffset: [0, -8],
           }}
           overlayClassName="rectangle w-[max-content]"
-          title={t('page.rabbyPoints.claimItem.disabledTip')}
+          title={t('page.luxPoints.claimItem.disabledTip')}
           visible={showDisabledTip ? undefined : false}
         >
           <div>
@@ -94,7 +94,7 @@ export const ClaimItem = (props: ClaimItemProps) => {
             >
               <div className="relative flex items-start justify-center gap-4 loading-button-wrapper">
                 <span>
-                  {t('page.rabbyPoints.claimItem.claim')}{' '}
+                  {t('page.luxPoints.claimItem.claim')}{' '}
                   {props.claimable_points <= 0 || !props.claimable
                     ? ''
                     : props.claimable_points}

@@ -342,7 +342,7 @@ const TokenApprove = ({
           <SecurityListItem
             id="1029"
             engineResult={engineResultMap['1029']}
-            title={t('page.signTx.tokenApprove.flagByRabby')}
+            title={t('page.signTx.tokenApprove.flagByLux')}
             dangerText={t('page.signTx.yes')}
           />
 

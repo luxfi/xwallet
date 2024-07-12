@@ -4,16 +4,16 @@ import { ellipsisAddress } from '@/ui/utils/address';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import imgBg from 'ui/assets/rabby-points/rabby-points-bg.png';
+import imgBg from 'ui/assets/lux-points/lux-points-bg.png';
 import { Tabs, message } from 'antd';
 import { SetReferralCode } from './component/ReferrralCode';
 import { ClaimItem, ClaimLoading } from './component/ClaimItem';
 import { TopUserItem } from './component/TopBoard';
-import { ClaimRabbyPointsModal } from './component/ClaimRabbyPointsModal';
-import { ClaimRabbyVerifyModal } from './component/VerifyAddressModal';
+import { ClaimLuxPointsModal } from './component/ClaimLuxPointsModal';
+import { ClaimLuxVerifyModal } from './component/VerifyAddressModal';
 import { useHistory } from 'react-router-dom';
 import { formatTokenAmount, isSameAddress, useWallet } from '@/ui/utils';
-import { useRabbyPoints } from './hooks';
+import { useLuxPoints } from './hooks';
 import { ClaimUserAvatar } from './component/ClaimUserAvatar';
 import CountUp from 'react-countup';
 import clsx from 'clsx';
@@ -35,7 +35,7 @@ const Wrapper = styled.div`
   svg.icon.icon-back path {
     fill: white !important;
   }
-  .rabby-points-tabs {
+  .lux-points-tabs {
     &.ant-tabs {
       overflow: initial;
     }
@@ -79,7 +79,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const RabbyPoints = () => {
+const LuxPoints = () => {
   const { t } = useTranslation();
   const history = useHistory();
   const wallet = useWallet();
@@ -105,7 +105,7 @@ const RabbyPoints = () => {
     topUsersLoading,
     activities,
     activitiesLoading,
-  } = useRabbyPoints();
+  } = useLuxPoints();
 
   const avatar =
     userPointsDetail?.logo_thumbnail_url || userPointsDetail?.logo_url;
@@ -223,7 +223,7 @@ const RabbyPoints = () => {
           invite_code: code,
         });
         setCurrentUserCode(code);
-        message.success(t('page.rabbyPoints.code-set-successfully'), 2);
+        message.success(t('page.luxPoints.code-set-successfully'), 2);
       }
     },
     [wallet.openapi, account?.address, signature]
@@ -277,7 +277,7 @@ const RabbyPoints = () => {
         }}
       >
         <span className="text-[20px] font-medium text-r-neutral-title2">
-          {t('page.rabbyPoints.title')}
+          {t('page.luxPoints.title')}
         </span>
       </PageHeader>
       <div className="text-r-neutral-title2 flex flex-col items-center relative top-[10px]">
@@ -296,7 +296,7 @@ const RabbyPoints = () => {
             )}
           >
             {ended && !snapshot?.claimed ? (
-              t('page.rabbyPoints.initialPointsClaimEnded')
+              t('page.luxPoints.initialPointsClaimEnded')
             ) : (
               <CountUp
                 start={previousPoints}
@@ -328,7 +328,7 @@ const RabbyPoints = () => {
         </div>
 
         <div className="opacity-70 pb-[34px]">
-          {t('page.rabbyPoints.out-of-x-current-total-points', { total })}
+          {t('page.luxPoints.out-of-x-current-total-points', { total })}
         </div>
       </div>
 
@@ -353,18 +353,18 @@ const RabbyPoints = () => {
           )}
         </div>
 
-        <Tabs centered defaultActiveKey="1" className="rabby-points-tabs">
+        <Tabs centered defaultActiveKey="1" className="lux-points-tabs">
           <Tabs.TabPane
             tab={
               <div className="w-[192px] pl-[20px]  text-[16px] leading-normal font-medium text-center">
-                {t('page.rabbyPoints.earn-points')}
+                {t('page.luxPoints.earn-points')}
               </div>
             }
             key={'1'}
           >
             {ended && (
               <div className="mx-20 mt-20 mb-4 flex justify-center rounded-[6px] bg-r-neutral-card-2 py-12 text-13 text-r-neutral-title-1 font-medium">
-                {t('page.rabbyPoints.secondRoundEnded')}
+                {t('page.luxPoints.secondRoundEnded')}
               </div>
             )}
             <div className="flex flex-col gap-[12px] py-[16px] px-[20px] ">
@@ -388,7 +388,7 @@ const RabbyPoints = () => {
           <Tabs.TabPane
             tab={
               <div className="pr-[10px]  text-[16px] leading-normal font-medium text-center">
-                {t('page.rabbyPoints.top-100')}
+                {t('page.luxPoints.top-100')}
               </div>
             }
             key={'2'}
@@ -412,7 +412,7 @@ const RabbyPoints = () => {
         </Tabs>
       </div>
 
-      <ClaimRabbyPointsModal
+      <ClaimLuxPointsModal
         web3Id={userPointsDetail?.web3_id}
         logo={
           userPointsDetail?.logo_thumbnail_url || userPointsDetail?.logo_url
@@ -427,7 +427,7 @@ const RabbyPoints = () => {
         snapshotLoading={snapshotLoading}
         userInvitedCode={userPointsDetail?.invite_code}
       />
-      <ClaimRabbyVerifyModal
+      <ClaimLuxVerifyModal
         visible={verifyVisible}
         onCancel={() => {
           setVerifyVisible(false);
@@ -439,4 +439,4 @@ const RabbyPoints = () => {
   );
 };
 
-export default RabbyPoints;
+export default LuxPoints;

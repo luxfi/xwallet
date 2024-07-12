@@ -169,7 +169,7 @@ function FreeGasReady({
           fontWeight: '500',
         }}
       >
-        {freeGasText || t('page.signFooterBar.gasless.rabbyPayGas')}
+        {freeGasText || t('page.signFooterBar.gasless.luxPayGas')}
       </span>
     </span>
   );

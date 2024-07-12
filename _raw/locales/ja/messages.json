@@ -112,7 +112,7 @@
         "trustValueLessThan": "信頼値 ≤ {{value}}",
         "deployTimeLessThan": "展開時間 < {{value}} 日",
         "amountPopupTitle": "金額",
-        "flagByRabby": "Luxによってフラグが付けられた",
+        "flagByLux": "Luxによってフラグが付けられた",
         "contractTrustValueTip": "信頼値は、この契約に対して承認され、露出しているトータルトークンを指します。低い信頼値は、180日の非活動またはリスクを示しています。"
       },
       "revokeTokenApprove": {
@@ -1278,7 +1278,7 @@
       "listedBy": "リストされた提供元",
       "sitePopularity": "サイトの人気",
       "myMark": "私のマーク",
-      "flagByRabby": "Luxによってフラグ付け",
+      "flagByLux": "Luxによってフラグ付け",
       "flagByMM": "MetaMaskによってフラグ付け",
       "flagByScamSniffer": "ScamSnifferによってフラグ付け",
       "verifiedByRabby": "Luxによって確認",

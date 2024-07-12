@@ -105,7 +105,7 @@
         "trustValueLessThan": "Güven değeri ≤ {{value}}",
         "deployTimeLessThan": "Yayınlama süresi < {{value}} gün",
         "amountPopupTitle": "Miktar",
-        "flagByRabby": "Lux tarafından işaretlendi",
+        "flagByLux": "Lux tarafından işaretlendi",
         "contractTrustValueTip": "Güven değeri, bu kontrat için onaylanan ve kontrata maruz kalan toplam tokeni ifade eder. Düşük bir güven değeri, ya riski ya da 180 gün boyunca hareketsizliği gösterir."
       },
       "revokeTokenApprove": {
@@ -1248,7 +1248,7 @@
       "listedBy": "Listeleyen",
       "sitePopularity": "Site Popülerliği",
       "myMark": "Benim İşaretim",
-      "flagByRabby": "Lux Tarafından İşaretlendi",
+      "flagByLux": "Lux Tarafından İşaretlendi",
       "flagByMM": "MetaMask Tarafından İşaretlendi",
       "flagByScamSniffer": "ScamSniffer Tarafından İşaretlendi",
       "verifiedByRabby": "Lux Tarafından Doğrulandı",

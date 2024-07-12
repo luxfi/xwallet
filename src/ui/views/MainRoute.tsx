@@ -53,7 +53,7 @@ import { ImportCoboArgus } from './ImportCoboArgus/ImportCoboArgus';
 import { PendingDetail } from './PendingDetail';
 import { ImportCoinbase } from './ImportCoinbase/ImportCoinbase';
 import { DappSearchPage } from './DappSearch';
-import RabbyPoints from './RabbyPoints';
+import LuxPoints from './LuxPoints';
 import { ImKeyConnect } from './ImportHardware/ImKeyConnect';
 import InputMnemonics from './ImportMnemonics/InputMnemonics';
 import CreateMnemonics from './CreateMnemonics';
@@ -278,8 +278,8 @@ const Main = () => {
         <PrivateRoute exact path="/request-debank-testnet-gas-token">
           <RequestDeBankTestnetGasToken />
         </PrivateRoute>
-        <PrivateRoute exact path="/rabby-points">
-          <RabbyPoints />
+        <PrivateRoute exact path="/lux-points">
+          <LuxPoints />
         </PrivateRoute>
       </Switch>
 

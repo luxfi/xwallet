@@ -134,7 +134,7 @@ export const NFTSpenderPopup: React.FC<Props> = ({ data }) => {
         </Col>
         {data.isDanger && (
           <Col>
-            <Row>{t('page.signTx.tokenApprove.flagByRabby')}</Row>
+            <Row>{t('page.signTx.tokenApprove.flagByLux')}</Row>
             <Row>
               <Values.Boolean value={!!data.isDanger} />
             </Row>

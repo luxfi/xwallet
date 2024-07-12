@@ -112,7 +112,7 @@
         "trustValueLessThan": "Цінність контракту ≤ {{value}}",
         "deployTimeLessThan": "Час розгортання < {{value}} днів",
         "amountPopupTitle": "Сума",
-        "flagByRabby": "Позначено Lux",
+        "flagByLux": "Позначено Lux",
         "contractTrustValueTip": "Значення рівня безпеки відноситься до загальної суми токенів, схвалених і підданих ризику в цьому контракті. Низький рівень довіри вказує або на ризик, або на бездіяльність протягом 180 днів."
       },
       "revokeTokenApprove": {
@@ -1278,7 +1278,7 @@
       "listedBy": "Перераховано по",
       "sitePopularity": "Популярність сайту",
       "myMark": "Моя позначка",
-      "flagByRabby": "Позначено Lux",
+      "flagByLux": "Позначено Lux",
       "flagByMM": "Позначено Metamask",
       "flagByScamSniffer": "Позначено  ScamSniffer",
       "verifiedByRabby": "Перевірено Lux",

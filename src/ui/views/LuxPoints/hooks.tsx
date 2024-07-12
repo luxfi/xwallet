@@ -8,7 +8,7 @@ const useRefresh = () => {
   return [v, () => setV((e) => e + 1)] as const;
 };
 
-export const useRabbyPoints = () => {
+export const useLuxPoints = () => {
   const wallet = useWallet();
   const account = useLuxSelector((state) => state.account.currentAccount);
   const [userPointsCount, refreshUserPoints] = useRefresh();
@@ -99,7 +99,7 @@ export const useRabbyPoints = () => {
   };
 };
 
-export const useRabbyPointsInvitedCodeCheck = (invitedCode?: string) => {
+export const useLuxPointsInvitedCodeCheck = (invitedCode?: string) => {
   const wallet = useWallet();
   const account = useLuxSelector((state) => state.account.currentAccount);
 

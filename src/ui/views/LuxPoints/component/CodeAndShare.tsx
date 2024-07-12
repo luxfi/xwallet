@@ -3,16 +3,16 @@ import { copyTextToClipboard } from '@/ui/utils/clipboard';
 import { Skeleton, message } from 'antd';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ReactComponent as IconCopy } from 'ui/assets/rabby-points/copy.svg';
+import { ReactComponent as IconCopy } from 'ui/assets/lux-points/copy.svg';
 import IconSuccess from 'ui/assets/success.svg';
-import { useRabbyPoints } from '../hooks';
-import { ReactComponent as IconTwitter } from 'ui/assets/rabby-points/twitter-x.svg';
+import { useLuxPoints } from '../hooks';
+import { ReactComponent as IconTwitter } from 'ui/assets/lux-points/twitter-x.svg';
 
 export const shareRabbyPointsTwitter = ({
   snapshot,
   invitedCode,
 }: {
-  snapshot?: ReturnType<typeof useRabbyPoints>['snapshot'];
+  snapshot?: ReturnType<typeof useLuxPoints>['snapshot'];
   usedOtherInvitedCode?: boolean;
   invitedCode?: string;
 }) => {
@@ -40,7 +40,7 @@ export const CodeAndShare = ({
 }: {
   loading?: boolean;
   invitedCode?: string;
-  snapshot?: ReturnType<typeof useRabbyPoints>['snapshot'];
+  snapshot?: ReturnType<typeof useLuxPoints>['snapshot'];
   usedOtherInvitedCode?: boolean;
 }) => {
   const { t } = useTranslation();
@@ -48,7 +48,7 @@ export const CodeAndShare = ({
     copyTextToClipboard(invitedCode || '');
     message.success({
       icon: <img src={IconSuccess} className="icon icon-success" />,
-      content: t('page.rabbyPoints.referral-code-copied'),
+      content: t('page.luxPoints.referral-code-copied'),
     });
   }, [invitedCode]);
 
@@ -73,7 +73,7 @@ export const CodeAndShare = ({
         onClick={share}
         className="border border-transparent hover:bg-rabby-blue-light1 hover:border hover:border-rabby-blue-default cursor-pointer rounded-[6px] w-[172px] h-[40px] flex items-center justify-center gap-[4px] bg-r-neutral-card2"
       >
-        <span>{t('page.rabbyPoints.share-on')}</span>
+        <span>{t('page.luxPoints.share-on')}</span>
         <IconTwitter className="w-[16px]" />
       </div>
     </div>

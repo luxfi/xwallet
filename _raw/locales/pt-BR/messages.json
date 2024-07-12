@@ -105,7 +105,7 @@
         "trustValueLessThan": "Confiar valores ≤ {{value}}",
         "deployTimeLessThan": "Tempo de aprovação < {{value}} dias",
         "amountPopupTitle": "Amount",
-        "flagByRabby": "Marcado por Lux",
+        "flagByLux": "Marcado por Lux",
         "contractTrustValueTip": "Valor Confiado refere-se ao total de tokens aprovados e expostos a esse contrato. Um valor baixo de confiança indica risco ou inatividade por 180 dias."
       },
       "revokeTokenApprove": {
@@ -1248,7 +1248,7 @@
       "listedBy": "Listado por",
       "sitePopularity": "Popularidade do site",
       "myMark": "Minha Marcação",
-      "flagByRabby": "Sinalizado pelo Lux",
+      "flagByLux": "Sinalizado pelo Lux",
       "flagByMM": "Sinalizado pelo MetaMask",
       "flagByScamSniffer": "Sinalizado pelo ScamSniffer",
       "verifiedByRabby": "Verificado pelo Lux",

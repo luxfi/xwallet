@@ -162,7 +162,7 @@ const ApproveNFTCollection = ({
           <SecurityListItem
             id="1060"
             engineResult={engineResultMap['1060']}
-            title={t('page.signTx.tokenApprove.flagByRabby')}
+            title={t('page.signTx.tokenApprove.flagByLux')}
             dangerText={t('page.signTx.yes')}
           />
 

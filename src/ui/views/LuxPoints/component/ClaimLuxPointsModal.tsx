@@ -6,10 +6,10 @@ import { useTranslation } from 'react-i18next';
 import SkeletonInput from 'antd/lib/skeleton/Input';
 import clsx from 'clsx';
 import { useInterval } from 'react-use';
-import { ReactComponent as IconInputLoading } from 'ui/assets/rabby-points/loading.svg';
-import { ReactComponent as IconInputError } from 'ui/assets/rabby-points/error.svg';
-import { ReactComponent as IconInputChecked } from 'ui/assets/rabby-points/checked.svg';
-import { ReactComponent as IconTrophy } from 'ui/assets/rabby-points/trophy.svg';
+import { ReactComponent as IconInputLoading } from 'ui/assets/lux-points/loading.svg';
+import { ReactComponent as IconInputError } from 'ui/assets/lux-points/error.svg';
+import { ReactComponent as IconInputChecked } from 'ui/assets/lux-points/checked.svg';
+import { ReactComponent as IconTrophy } from 'ui/assets/lux-points/trophy.svg';
 import { ReactComponent as IconInfoCC } from 'ui/assets/info-cc.svg';
 
 import { formatTokenAmount } from '@/ui/utils';
@@ -17,13 +17,13 @@ import { useLuxSelector } from '@/ui/store';
 import dayjs from 'dayjs';
 import { ellipsisAddress } from '@/ui/utils/address';
 import { ClaimUserAvatar } from './ClaimUserAvatar';
-import { useRabbyPointsInvitedCodeCheck } from '../hooks';
+import { useLuxPointsInvitedCodeCheck } from '../hooks';
 import useDebounceValue from '@/ui/hooks/useDebounceValue';
 import utc from 'dayjs/plugin/utc';
 dayjs.extend(utc);
 
 // import Lottie from 'lottie-react';
-// import * as animationData from '../../Dashboard/components/ClaimRabbyBadgeModal/success.json';
+// import * as animationData from '../../Dashboard/components/ClaimLuxBadgeModal/success.json';
 
 const StyledModal = styled(Modal)`
   padding-bottom: 0;
@@ -66,7 +66,7 @@ const StyledInput = styled(Input)`
 
 const NoIcon = () => null;
 
-export const ClaimRabbyPointsModal = (
+export const ClaimLuxPointsModal = (
   props: {
     visible: boolean;
     onCancel: () => void;
@@ -185,7 +185,7 @@ const ClaimPoints = ({
     : '';
 
   const debounceInvitedCode = useDebounceValue(invitedCode, 200);
-  const { codeStatus, codeLoading } = useRabbyPointsInvitedCodeCheck(
+  const { codeStatus, codeLoading } = useLuxPointsInvitedCodeCheck(
     debounceInvitedCode
   );
 
@@ -213,11 +213,11 @@ const ClaimPoints = ({
     () => [
       {
         key: 'wallet_balance_reward',
-        label: t('page.rabbyPoints.claimModal.walletBalance'),
+        label: t('page.luxPoints.claimModal.walletBalance'),
       },
       {
         key: 'active_stats_reward',
-        label: t('page.rabbyPoints.claimModal.activeStats'),
+        label: t('page.luxPoints.claimModal.activeStats'),
       },
     ],
     [t]
@@ -230,7 +230,7 @@ const ClaimPoints = ({
             ...fixedList,
             {
               key: 'extra_bouns',
-              label: t('page.rabbyPoints.claimModal.referral-code'),
+              label: t('page.luxPoints.claimModal.referral-code'),
             },
           ]
         : fixedList,
@@ -280,7 +280,7 @@ const ClaimPoints = ({
         }}
       >
         <div className="text-r-neutral-title1 text-[18px] font-medium">
-          {t('page.rabbyPoints.claimModal.title')}
+          {t('page.luxPoints.claimModal.title')}
         </div>
 
         <div className="flex items-center justify-center gap-2">
@@ -297,7 +297,7 @@ const ClaimPoints = ({
               WebkitTextFillColor: 'transparent',
             }}
           >
-            {t('page.rabbyPoints.claimModal.season2')}
+            {t('page.luxPoints.claimModal.season2')}
           </span>
         </div>
       </div>
@@ -334,7 +334,7 @@ const ClaimPoints = ({
 
       <div className="rounded-[8px] bg-r-neutral-card-3 px-[12px] py-[16px]">
         <div className="text-center text-[10px] text-[#7c86c8] mb-[12px]">
-          {t('page.rabbyPoints.claimModal.snapshotTime', {
+          {t('page.luxPoints.claimModal.snapshotTime', {
             time: snapshotTime,
           })}
         </div>
@@ -351,7 +351,7 @@ const ClaimPoints = ({
       </div>
 
       <StyledInput
-        placeholder={t('page.rabbyPoints.claimModal.placeholder')}
+        placeholder={t('page.luxPoints.claimModal.placeholder')}
         value={invitedCode}
         onChange={(e) => setInvitedCode(e.target.value?.toUpperCase())}
         className={clsx(
@@ -370,14 +370,14 @@ const ClaimPoints = ({
         !codeStatus?.invite_code_exist &&
         !codeLoading && (
           <div className="text-13 text-rabby-red-default mt-8 text-center">
-            {t('page.rabbyPoints.claimModal.invalid-code')}
+            {t('page.luxPoints.claimModal.invalid-code')}
           </div>
         )}
 
       {userInvitedCode && !codeLoading && invitedCode === userInvitedCode && (
         <div className="text-13 text-r-neutral-body mt-16 text-center flex items-center justify-center gap-[3px]">
           <IconInfoCC className="w-[14px] h-[14px] text-r-neutral-body" />
-          <span>{t('page.rabbyPoints.claimModal.cantUseOwnCode')}</span>
+          <span>{t('page.luxPoints.claimModal.cantUseOwnCode')}</span>
         </div>
       )}
 
@@ -393,7 +393,7 @@ const ClaimPoints = ({
         }}
         onClick={onSubmit}
       >
-        {t('page.rabbyPoints.claimModal.claim')}
+        {t('page.luxPoints.claimModal.claim')}
       </Button>
       {/* <div className="absolute top-20 left-0 pointer-events-none">
         {!titleLoading && (

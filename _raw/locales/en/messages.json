@@ -127,7 +127,7 @@
         "trustValueLessThan": "≤ {{value}}",
         "deployTimeLessThan": "< {{value}} days",
         "amountPopupTitle": "Approve amount",
-        "flagByRabby": "Flagged by Lux",
+        "flagByLux": "Flagged by Lux",
         "contractTrustValueTip": "Trust value refers to the total token approved and exposed to this contract. A low trust value indicates either risk or inactivity for 180 days."
       },
       "revokeTokenApprove": {
@@ -333,7 +333,7 @@
         "unavailable": "Gas is not enough and not qualify for Free Gas",
         "notEnough": "Gas balance is not enough",
         "GetFreeGasToSign": "Get Free Gas to sign",
-        "rabbyPayGas": "Lux'll pay for the gas needed – just sign on",
+        "luxPayGas": "Lux'll pay for the gas needed – just sign on",
         "customRpcUnavailableTip": "Custom RPCs are not supported for Free Gas",
         "walletConnectUnavailableTip": "Mobile wallet connected via WalletConnect is not supported for Free Gas",
         "watchUnavailableTip": "Watch-only address is not supported for Free Gas"
@@ -909,7 +909,7 @@
           "transactions": "Transactions",
           "approvals": "Approvals",
           "feedback": "Feedback",
-          "rabbyPoints": "Lux Points",
+          "luxPoints": "Lux Points",
           "more": "More",
           "manageAddress": "Manage Address",
           "nft": "NFT"
@@ -1591,7 +1591,7 @@
       "listedBy": "Listed by",
       "sitePopularity": "Site popularity",
       "myMark": "My Mark",
-      "flagByRabby": "Flagged by Lux",
+      "flagByLux": "Flagged by Lux",
       "flagByMM": "Flagged by MetaMask",
       "flagByScamSniffer": "Flagged by ScamSniffer",
       "verifiedByRabby": "Verified by Lux",
@@ -1862,7 +1862,7 @@
       "emptySearch": "No Dapp Found",
       "listBy": "Dapp has been list by"
     },
-    "rabbyPoints": {
+    "luxPoints": {
       "title": "Lux Points",
       "out-of-x-current-total-points": "Out of {{total}} Total Distributed Points",
       "share-on": "Share on",

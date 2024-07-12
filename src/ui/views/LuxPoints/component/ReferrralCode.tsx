@@ -3,8 +3,8 @@ import { Button, Input, message } from 'antd';
 import clsx from 'clsx';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { ReactComponent as IconDice } from 'ui/assets/rabby-points/dice-cc.svg';
-import { useRabbyPointsInvitedCodeCheck } from '../hooks';
+import { ReactComponent as IconDice } from 'ui/assets/lux-points/dice-cc.svg';
+import { useLuxPointsInvitedCodeCheck } from '../hooks';
 import { customAlphabet } from 'nanoid';
 import { useTranslation } from 'react-i18next';
 import useDebounceValue from '@/ui/hooks/useDebounceValue';
@@ -45,7 +45,7 @@ export const SetReferralCode = ({
 
   const debounceInput = useDebounceValue(input, 200);
 
-  const { codeStatus, codeLoading } = useRabbyPointsInvitedCodeCheck(
+  const { codeStatus, codeLoading } = useLuxPointsInvitedCodeCheck(
     debounceInput
   );
 
@@ -56,28 +56,28 @@ export const SetReferralCode = ({
         return [' ', false];
       }
       return [
-        t('page.rabbyPoints.referralCode.referral-code-cannot-be-empty'),
+        t('page.luxPoints.referralCode.referral-code-cannot-be-empty'),
         true,
       ];
     }
     if (input.length > 15) {
       return [
         t(
-          'page.rabbyPoints.referralCode.referral-code-cannot-exceed-15-characters'
+          'page.luxPoints.referralCode.referral-code-cannot-exceed-15-characters'
         ),
         true,
       ];
     }
     if (codeStatus?.invite_code_exist) {
       return [
-        t('page.rabbyPoints.referralCode.referral-code-already-exists'),
+        t('page.luxPoints.referralCode.referral-code-already-exists'),
         true,
       ];
     }
     if (codeLoading) {
       return [' ', false];
     }
-    return [t('page.rabbyPoints.referralCode.referral-code-available'), false];
+    return [t('page.luxPoints.referralCode.referral-code-available'), false];
   }, [input, codeStatus, codeLoading]);
 
   const disabled = useMemo(() => {
@@ -132,10 +132,10 @@ export const SetReferralCode = ({
     <div className="bg-r-blue-light1 rounded-[8px] px-[16px] py-[12px] flex items-center justify-between ">
       <div className="flex flex-col gap-[2px] text-r-blue-default">
         <span className="text-[15px] font-medium">
-          {t('page.rabbyPoints.referralCode.my-referral-code')}
+          {t('page.luxPoints.referralCode.my-referral-code')}
         </span>
         <span className="text-[12px]">
-          {t('page.rabbyPoints.referralCode.refer-a-new-user-to-get-50-points')}
+          {t('page.luxPoints.referralCode.refer-a-new-user-to-get-50-points')}
         </span>
       </div>
       <Button
@@ -143,12 +143,12 @@ export const SetReferralCode = ({
         className="w-[120px] h-[34px] text-r-neutral-title2 text-[15] font-medium"
         onClick={openPopup}
       >
-        {t('page.rabbyPoints.referralCode.set-my-code')}
+        {t('page.luxPoints.referralCode.set-my-code')}
       </Button>
       <Popup
         visible={visible}
         onCancel={closePopup}
-        title={t('page.rabbyPoints.referralCode.set-my-referral-code')}
+        title={t('page.luxPoints.referralCode.set-my-referral-code')}
         height={336}
         isSupportDarkMode
         bodyStyle={{
@@ -193,12 +193,12 @@ export const SetReferralCode = ({
           <ol className="mb-[22px] list-outside list-decimal bg-r-neutral-card-3 rounded-[8px] h-[87px] p-[12px] pl-[26px] text-[13px] leading-[20px] text-r-neutral-body">
             <li>
               {t(
-                'page.rabbyPoints.referralCode.once-set-this-referral-code-is-permanent-and-cannot-change'
+                'page.luxPoints.referralCode.once-set-this-referral-code-is-permanent-and-cannot-change'
               )}
             </li>
             <li>
               {t(
-                'page.rabbyPoints.referralCode.max-15-characters-use-numbers-and-letters-only'
+                'page.luxPoints.referralCode.max-15-characters-use-numbers-and-letters-only'
               )}
             </li>
           </ol>
@@ -209,7 +209,7 @@ export const SetReferralCode = ({
             className="mt-auto w-full h-[52px] text-[15] font-medium text-r-neutral-title2"
             onClick={submitReferralCode}
           >
-            {t('page.rabbyPoints.referralCode.confirm')}
+            {t('page.luxPoints.referralCode.confirm')}
           </Button>
         </div>
       </Popup>
