@@ -3,7 +3,7 @@ const tinycolor2 = require('tinycolor2');
 
 const { themeColors, luxCssPrefix } = require('./src/constant/theme-colors');
 
-const rabbyColors = ['light', 'dark'].reduce((accu, theme) => {
+const luxColors = ['light', 'dark'].reduce((accu, theme) => {
   Object.entries(themeColors[theme]).forEach(([cssvarKey, colorValue]) => {
     // const splitorIdx = cssvarKey.indexOf('-');
     // const group = cssvarKey.slice(0, splitorIdx);
@@ -65,7 +65,7 @@ module.exports = {
       blue: {
         from: '#8A78FD',
         to: '#796BFD',
-        light: rabbyColors.light['blue-default'],
+        light: luxColors.light['blue-default'],
         DEFAULT: '#796BFD',
         purple: '#5F75FF',
       },
@@ -135,12 +135,12 @@ module.exports = {
     /** @notice configuration here would override the default config above */
     extend: {
       colors: {
-        [`${luxCssPrefix.replace(/\-$/, '')}`]: rabbyColors.auto,
-        [`${'rabby-'.replace(/\-$/, '')}`]: rabbyColors.auto,
-        [`${'-r-'.replace(/\-$/, '')}`]: rabbyColors.auto,
+        [`${luxCssPrefix.replace(/\-$/, '')}`]: luxColors.auto,
+        [`${'lux-'.replace(/\-$/, '')}`]: luxColors.auto,
+        [`${'-l-'.replace(/\-$/, '')}`]: luxColors.auto,
         
-        [`light-${luxCssPrefix.replace(/\-$/, '')}`]: rabbyColors.light,
-        [`dark-${luxCssPrefix.replace(/\-$/, '')}`]: rabbyColors.dark,
+        [`light-${luxCssPrefix.replace(/\-$/, '')}`]: luxColors.light,
+        [`dark-${luxCssPrefix.replace(/\-$/, '')}`]: luxColors.dark,
       }
     },
   },
