@@ -199,7 +199,7 @@ import LogoCoinbase from 'ui/assets/swap/coinbase.png';
 import LogoOkx from 'ui/assets/swap/okx.png';
 import LogoTokenDefault from 'ui/assets/token-default.svg';
 import LogoKyberSwap from 'ui/assets/swap/kyberswap.png';
-import RabbyChainLogo from '@/ui/assets/rabby-chain-logo.png';
+import LuxChainLogo from '@/ui/assets/lux-chain-logo.png';
 
 export { default as LANGS } from '../../_raw/locales/index.json';
 
@@ -450,14 +450,14 @@ export const WALLETCONNECT_STATUS_MAP = {
 export const INTERNAL_REQUEST_ORIGIN = location.origin;
 
 export const INTERNAL_REQUEST_SESSION = {
-  name: 'Rabby',
+  name: 'Lux',
   origin: INTERNAL_REQUEST_ORIGIN,
-  icon: RabbyChainLogo,
+  icon: LuxChainLogo,
 };
 
-export const INITIAL_OPENAPI_URL = 'https://api.rabby.io';
+export const INITIAL_OPENAPI_URL = 'https://api.lux.network';
 
-export const INITIAL_TESTNET_OPENAPI_URL = 'https://api.testnet.rabby.io';
+export const INITIAL_TESTNET_OPENAPI_URL = 'https://api.testnet.lux.network';
 
 export const EVENTS = {
   broadcastToUI: 'broadcastToUI',
@@ -1213,8 +1213,8 @@ export const GAS_TOP_UP_SUPPORT_TOKENS: Record<string, string[]> = {
 export const EXTERNAL_RESOURCE_DOMAIN_BLACK_LIST = ['5degrees.io'];
 
 export const ALIAS_ADDRESS = {
-  [GAS_TOP_UP_ADDRESS]: 'Rabby Gas Top Up',
-  [GAS_TOP_UP_PAY_ADDRESS]: 'Rabby Gas Top Up',
+  [GAS_TOP_UP_ADDRESS]: 'Lux Gas Top Up',
+  [GAS_TOP_UP_PAY_ADDRESS]: 'Lux Gas Top Up',
   [FREE_GAS_ADDRESS]: 'Free Gas',
 };
 

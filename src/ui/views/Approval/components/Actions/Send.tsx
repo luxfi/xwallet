@@ -15,7 +15,7 @@ import ViewMore from './components/ViewMore';
 import { SecurityListItem } from './components/SecurityListItem';
 import { SubCol, SubRow, SubTable } from './components/SubTable';
 import { ALIAS_ADDRESS } from '@/constant';
-import RabbyChainLogo from '@/ui/assets/rabby-chain-logo.png';
+import LuxChainLogo from '@/ui/assets/lux-chain-logo.png';
 
 const Wrapper = styled.div`
   .header {
@@ -130,7 +130,7 @@ const Send = ({
                 {isLabelAddress ? (
                   <LogoWithText
                     text={requireData.name}
-                    logo={RabbyChainLogo}
+                    logo={LuxChainLogo}
                     logoRadius="100%"
                     logoSize={14}
                     textStyle={{
