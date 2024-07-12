@@ -867,10 +867,10 @@
       "connectMobileWalletApps": "Connecter des applications de wallet mobile",
       "createNewSeedPhrase": "Créer une nouvelle seed phrase",
       "hd": {
-        "addToRabby": "Ajouter à Lux",
+        "addToLux": "Ajouter à Lux",
         "addresses": "Adresses",
         "addressesIn": "Adresses dans {{0}}",
-        "addressesInRabby": "Adresses dans Lux {{0}}",
+        "addressesInLux": "Adresses dans Lux {{0}}",
         "advancedSettings": "Paramètres avancés",
         "balance": "Solde",
         "basicInformation": "Informations de base",
@@ -1007,7 +1007,7 @@
       },
       "ledger": {
         "allow": "Permettre",
-        "allowRabbyPermissionsTitle": "Autorisez Lux à :",
+        "allowLuxPermissionsTitle": "Autorisez Lux à :",
         "cameraPermission1": "Autoriser Lux à accéder à la caméra dans la fenêtre contextuelle du navigateur",
         "cameraPermissionTitle": "Autoriser Lux à accéder à la caméra",
         "ledgerPermission1": "Se connecter à un appareil HID",
@@ -1032,7 +1032,7 @@
           "answer": "Oui, vous pouvez <1> importer KeyStore </1> ici.",
           "question": "Est-il possible d’importer KeyStore ?"
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "answer": "Oui, elle sera stockée localement sur votre navigateur et uniquement accessible par vous.",
           "question": "Est-il sécurisé de l’importer dans Lux?"
         },
@@ -1057,7 +1057,7 @@
         "importQuestion3": "La seed phrase n'est stockée que sur mon ordinateur et Lux n'y a pas accès.",
         "importQuestion4": "Si je désinstalle Lux sans sauvegarder la seed phrase, Lux ne pourra pas la récupérer pour moi.",
         "importTips": "Vous pouvez coller l'intégralité de votre seed phrase dans le 1er champ",
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "answer": "Oui, elle sera stockée localement sur votre navigateur et uniquement accessible par vous.",
           "question": "Est-il sécurisé de l’importer dans Lux?"
         },
@@ -1126,7 +1126,7 @@
         "viaWalletConnect": "via Wallet Connect"
       },
       "keystone": {
-        "allowRabbyPermissionsTitle": "Autoriser Lux à :",
+        "allowLuxPermissionsTitle": "Autoriser Lux à :",
         "deviceIsBusy": "Le périphérique est occupé",
         "deviceIsLockedError": "Saisir le mot de passe pour déverrouiller",
         "deviceRejectedExportAddress": "Approuver la connexion à Lux",
@@ -1769,7 +1769,7 @@
       "not-supported": "Non supporté",
       "pendingTip": "Tx soumise. Si la transmission est en attente pendant de longues heures, vous pouvez essayer d'effacer les transactions en attente dans les paramètres.",
       "price-expired-refresh-quote": "Prix ​​expiré. Actualiser la cotation.",
-      "rabby-fee": "Frais de Lux",
+      "lux-fee": "Frais de Lux",
       "rate": "Taux",
       "rates-from-cex": "Taux depuis les CEX",
       "recommend-slippage": "Pour éviter le front-running, nous recommandons un slippage de <2>{{ slippage }}</2>%",
@@ -1809,7 +1809,7 @@
       "title": "Passer sur {{chain}}",
       "chainId": "ID chaîne :",
       "chainNotSupportYet": "La chaîne demandée n'est pas encore prise en charge par Lux",
-      "requestRabbyToSupport": "Demander de l'aide à Lux",
+      "requestLuxToSupport": "Demander de l'aide à Lux",
       "requestsReceivedPlural": "{{count}} demandes reçues",
       "unknownChain": "Chaîne inconnue",
       "requestsReceived": "1 demande reçue"

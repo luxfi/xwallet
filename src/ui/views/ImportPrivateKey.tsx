@@ -187,12 +187,12 @@ const ImportPrivateKey = () => {
               <section>
                 <h3>
                   {t(
-                    'page.newAddress.privateKey.isItSafeToImportItInRabby.question'
+                    'page.newAddress.privateKey.isItSafeToImportItInLux.question'
                   )}
                 </h3>
                 <p>
                   {t(
-                    'page.newAddress.privateKey.isItSafeToImportItInRabby.answer'
+                    'page.newAddress.privateKey.isItSafeToImportItInLux.answer'
                   )}
                 </p>
               </section>

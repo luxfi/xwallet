@@ -51,7 +51,7 @@ export const NoActionBody: React.FC<Props> = ({
               <IconEmail className="w-16" />
             )}
             <span className="text-r-blue-default">
-              {t('page.switchChain.requestRabbyToSupport')}
+              {t('page.switchChain.requestLuxToSupport')}
             </span>
           </div>
         )}

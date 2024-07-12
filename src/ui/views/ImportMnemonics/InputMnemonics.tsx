@@ -268,12 +268,12 @@ const ImportMnemonics = () => {
               <section>
                 <h3>
                   {t(
-                    'page.newAddress.seedPhrase.isItSafeToImportItInRabby.question'
+                    'page.newAddress.seedPhrase.isItSafeToImportItInLux.question'
                   )}
                 </h3>
                 <p className="whitespace-nowrap">
                   {t(
-                    'page.newAddress.seedPhrase.isItSafeToImportItInRabby.answer'
+                    'page.newAddress.seedPhrase.isItSafeToImportItInLux.answer'
                   )}
                 </p>
               </section>

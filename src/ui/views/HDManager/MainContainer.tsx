@@ -2,7 +2,7 @@ import { Tabs } from 'antd';
 import { isBoolean } from 'lodash';
 import React from 'react';
 import { AddressesInHD } from './AddressesInHD';
-import { AddressesInRabby } from './AddressesInRabby';
+import { AddressesInLux } from './AddressesInLux';
 import { SettingData, MAX_ACCOUNT_COUNT } from './AdvancedSettings';
 import { HDManagerStateContext } from './utils';
 import { useTranslation } from 'react-i18next';
@@ -73,13 +73,13 @@ export const MainContainer: React.FC<Props> = ({
         />
       </Tabs.TabPane>
       <Tabs.TabPane
-        tab={t('page.newAddress.hd.addressesInRabby', [
+        tab={t('page.newAddress.hd.addressesInLux', [
           loading ? '' : ` (${filterCurrentAccounts.length})`,
         ])}
         key="rabby"
         disabled={loading}
       >
-        <AddressesInRabby
+        <AddressesInLux
           type={setting.type}
           startNo={setting.startNo}
           loading={loading}

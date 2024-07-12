@@ -583,7 +583,7 @@
       "amount-in": "Girdi miktarı {{symbol}}",
       "unlimited-allowance": "Sınırsız izin",
       "insufficient-balance": "Yetersiz bakiye",
-      "rabby-fee": "Lux ücreti",
+      "lux-fee": "Lux ücreti",
       "minimum-received": "Minimum alınacak",
       "there-is-no-fee-and-slippage-for-this-trade": "Bu alım-satım için ücret ve kayma yoktur",
       "approve-tips": "1.Onayla → 2.Takas",
@@ -957,7 +957,7 @@
           "question": "Seed Phrase Nedir?",
           "answer": "Varlıklarınızı kontrol etmek için kullanılan 12, 18 veya 24 kelimelik bir dizidir."
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "Lux'e aktarmak güvenli mi?",
           "answer": "Evet, yalnızca tarayıcınızda yerel olarak saklanır ve sadece sizin tarafınızdan erişilebilir."
         },
@@ -996,7 +996,7 @@
           "question": "Özel Anahtar nedir?",
           "answer": "Varlıklarınızı kontrol etmek için kullanılan harf ve sayılardan oluşan bir dizedir."
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "Onu Lux'e aktarmak güvenli mi?",
           "answer": "Evet, yalnızca tarayıcınızda yerel olarak saklanır ve sadece sizin tarafınızdan erişilebilir."
         },
@@ -1011,7 +1011,7 @@
         "title": "Ledger'a Bağlan",
         "cameraPermissionTitle": "Lux'nin kameraya erişimine izin ver",
         "cameraPermission1": "Tarayıcı açılır penceresinde Lux'nin kameraya erişimine izin ver",
-        "allowRabbyPermissionsTitle": "Lux'nin aşağıdaki yetkilere sahip olmasını izin ver:",
+        "allowLuxPermissionsTitle": "Lux'nin aşağıdaki yetkilere sahip olmasını izin ver:",
         "ledgerPermission1": "Bir HID cihazına bağlan",
         "ledgerPermissionTip": "Lütfen aşağıda \"İzin Ver\"i tıklayın ve sonraki açılır pencerede Ledger'a erişimi onaylayın.",
         "permissionsAuthorized": "İzinler Onaylandı",
@@ -1067,7 +1067,7 @@
         },
         "waiting": "Bekleniyor",
         "clickToGetInfo": "Zincirden bilgi almak için tıklayın",
-        "addToRabby": "Lux'ye Ekle",
+        "addToLux": "Lux'ye Ekle",
         "basicInformation": "Temel bilgiler",
         "addresses": "Adresler",
         "loadingAddress": "{{0}}/{{1}} adres yükleniyor",
@@ -1166,7 +1166,7 @@
         "manageBitbox02": "BitBox02'yi Yönet",
         "done": "Tamam",
         "addressesIn": "{{0}} içindeki Adresler",
-        "addressesInRabby": "Lux'deki Adresler{{0}}",
+        "addressesInLux": "Lux'deki Adresler{{0}}",
         "qrCode": {
           "switch": {
             "title": "Yeni bir {{0}} cihazına geçin",

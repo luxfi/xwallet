@@ -804,7 +804,7 @@
       "amount-in": "Сумма {{symbol}}",
       "unlimited-allowance": "Неограниченный лимит",
       "insufficient-balance": "Недостаточный баланс",
-      "rabby-fee": "Комиссия Lux",
+      "lux-fee": "Комиссия Lux",
       "preferMEV": "Выбрать защиту от MEV",
       "preferMEVTip": "Включить \"MEV Guarded\" функцию для Ethereum обмена чтобы снизить риск сендвич-атак. Примечание: функция работает только со встроенным RPC и кошельком",
       "minimum-received": "Минимум к получению",
@@ -1246,7 +1246,7 @@
           "question": "Что такое секретная фраза?",
           "answer": "Фраза из 12, 18 или 24 слов, используемая для управления вашими активами."
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "Безопасно ли импортировать его в Lux?",
           "answer": "Да, он будет храниться локально в вашем браузере и доступен только вам."
         },
@@ -1300,7 +1300,7 @@
           "answer": "Это последовательность букв и цифр, используемая для управления вашими активами."
         },
         "repeatImportTips": "Адрес уже импортирован, хотите переключиться?",
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "Безопасно ли импортировать его в Lux?",
           "answer": "Да, он будет храниться локально в вашем браузере и доступен только вам."
         },
@@ -1315,7 +1315,7 @@
         "title": "Подключить Ledger",
         "cameraPermissionTitle": "Разрешить Lux доступ к камере",
         "cameraPermission1": "Разрешите Lux доступ к камере во всплывающем окне браузера",
-        "allowRabbyPermissionsTitle": "Разрешить Lux следующие разрешения:",
+        "allowLuxPermissionsTitle": "Разрешить Lux следующие разрешения:",
         "ledgerPermission1": "Подключиться к устройству HID",
         "ledgerPermissionTip": "Пожалуйста, нажмите \\\"Разрешить\\\" ниже и авторизуйте доступ к вашему Ledger в следующем всплывающем окне.",
         "permissionsAuthorized": "Разрешения авторизованы",
@@ -1324,7 +1324,7 @@
       },
       "keystone": {
         "title": "Подключить Keystone",
-        "allowRabbyPermissionsTitle": "Дать Lux разрешение на:",
+        "allowLuxPermissionsTitle": "Дать Lux разрешение на:",
         "keystonePermission1": "Подключение к USB устройству",
         "keystonePermissionTip": "Нажмите \"Разрешить\" ниже чтобы дать разрешение на Keystone в поп-ап окне.",
         "noDeviceFoundError": "Подключите один Keystone",
@@ -1383,7 +1383,7 @@
         },
         "waiting": "Ожидание",
         "clickToGetInfo": "Нажмите, чтобы получить информацию из сети",
-        "addToRabby": "Добавить в Lux",
+        "addToLux": "Добавить в Lux",
         "basicInformation": "Основная информация",
         "addresses": "Адреса",
         "loadingAddress": "Загрузка {{0}}/{{1}} адресов",
@@ -1490,7 +1490,7 @@
         "manageBitbox02": "Управление BitBox02",
         "done": "Готово",
         "addressesIn": "Адреса в {{0}}",
-        "addressesInRabby": "Адреса в Lux{{0}}",
+        "addressesInLux": "Адреса в Lux{{0}}",
         "qrCode": {
           "switch": {
             "title": "Переключиться на новое устройство {{0}}",
@@ -1551,7 +1551,7 @@
       "unknownChain": "Unknown chain",
       "requestsReceived": "1 запрос получен",
       "requestsReceivedPlural": "{{count}} запросов получено",
-      "requestRabbyToSupport": "Запросить поддержку в Lux",
+      "requestLuxToSupport": "Запросить поддержку в Lux",
       "chainNotSupportAddChain": "Запрошенная сеть не поддерживается Lux, но вы можете добавить её вручную",
       "addChain": "Добавить тестнет",
       "desc": "Запрошенная сеть не поддерживается Lux, но вы можете добавить её вручную"

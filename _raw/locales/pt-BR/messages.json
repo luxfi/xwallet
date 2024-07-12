@@ -583,7 +583,7 @@
       "amount-in": "Quantidade em {{symbol}}",
       "unlimited-allowance": "Permissão ilimitada",
       "insufficient-balance": "Saldo insuficiente",
-      "rabby-fee": "Taxa Lux",
+      "lux-fee": "Taxa Lux",
       "minimum-received": "Mínimo Recebido",
       "there-is-no-fee-and-slippage-for-this-trade": "Não há taxa e escorregamento para esta troca",
       "approve-tips": "1. Aprovar → 2. Trocar",
@@ -957,7 +957,7 @@
           "question": "O que é uma Frase de Recuperação?",
           "answer": "Uma frase de 12, 18 ou 24 palavras usada para controlar seus ativos."
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "É seguro importá-la no Lux?",
           "answer": "Sim, ela será armazenada localmente em seu navegador e só será acessível por você."
         },
@@ -996,7 +996,7 @@
           "question": "O que é uma Chave Privada?",
           "answer": "Uma sequência de letras e números usada para controlar seus ativos."
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "É seguro importá-la no Lux?",
           "answer": "Sim, ela será armazenada localmente em seu navegador e só será acessível por você."
         },
@@ -1011,7 +1011,7 @@
         "title": "Conectar Ledger",
         "cameraPermissionTitle": "Permitir que o Lux acesse a câmera",
         "cameraPermission1": "Permita que o Lux acesse a câmera na janela pop-up do navegador",
-        "allowRabbyPermissionsTitle": "Permitir permissões para o Lux:",
+        "allowLuxPermissionsTitle": "Permitir permissões para o Lux:",
         "ledgerPermission1": "Conectar-se a um dispositivo HID",
         "ledgerPermissionTip": "Por favor, clique em \"Permitir\" abaixo e autorize o acesso ao seu Ledger na janela pop-up seguinte.",
         "permissionsAuthorized": "Permissões Autorizadas",
@@ -1067,7 +1067,7 @@
         },
         "waiting": "Aguardando",
         "clickToGetInfo": "Clique para obter informações na cadeia",
-        "addToRabby": "Adicionar ao Lux",
+        "addToLux": "Adicionar ao Lux",
         "basicInformation": "Informações básicas",
         "addresses": "Endereços",
         "loadingAddress": "Carregando {{0}}/{{1}} endereços",
@@ -1166,7 +1166,7 @@
         "manageBitbox02": "Gerenciar BitBox02",
         "done": "Concluído",
         "addressesIn": "Endereços em {{0}}",
-        "addressesInRabby": "Endereços em Lux{{0}}",
+        "addressesInLux": "Endereços em Lux{{0}}",
         "qrCode": {
           "switch": {
             "title": "Alternar para um novo dispositivo {{0}}",

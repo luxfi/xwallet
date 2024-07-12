@@ -611,7 +611,7 @@
       "amount-in": "{{symbol}} での金額",
       "unlimited-allowance": "無制限の許可",
       "insufficient-balance": "残高が不足しています",
-      "rabby-fee": "Lux 手数料",
+      "lux-fee": "Lux 手数料",
       "minimum-received": "最低受取額",
       "there-is-no-fee-and-slippage-for-this-trade": "この取引には手数料とスリッページはありません",
       "approve-tips": "1. 承認 → 2. スワップ",
@@ -985,7 +985,7 @@
           "question": "シードフレーズとは何ですか？",
           "answer": "資産を制御するために使用される12、18、または24の単語フレーズです。"
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "Luxでインポートするのは安全ですか?",
           "answer": "はい、それはブラウザー上でローカルに保存され、あなた以外はアクセスできません。"
         },
@@ -1026,7 +1026,7 @@
           "question": "プライベートキーとは何ですか？",
           "answer": "資産を制御するために使用される文字列の組み合わせです。"
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "Luxでそれをインポートするのは安全ですか？",
           "answer": "はい、それはブラウザー上でローカルに保存され、あなた以外はアクセスできません。"
         },
@@ -1041,7 +1041,7 @@
         "title": "Ledgerを接続",
         "cameraPermissionTitle": "Luxがカメラにアクセスする許可",
         "cameraPermission1": "ブラウザーポップアップでLuxがカメラにアクセスできるように許可します",
-        "allowRabbyPermissionsTitle": "Luxに以下の権限を許可:",
+        "allowLuxPermissionsTitle": "Luxに以下の権限を許可:",
         "ledgerPermission1": "HIDデバイスに接続",
         "ledgerPermissionTip": "以下のポップアップウィンドウでLedgerへのアクセスを許可するために、\\\"許可\\\"をクリックしてください。",
         "permissionsAuthorized": "権限が許可されました",
@@ -1097,7 +1097,7 @@
         },
         "waiting": "待機中",
         "clickToGetInfo": "チェーン上の情報を取得するにはクリック",
-        "addToRabby": "Luxに追加",
+        "addToLux": "Luxに追加",
         "basicInformation": "基本情報",
         "addresses": "アドレス",
         "loadingAddress": "{{0}}/{{1}} アドレスを読み込んでいます",
@@ -1196,7 +1196,7 @@
         "manageBitbox02": "BitBox02を管理",
         "done": "完了",
         "addressesIn": "{{0}}のアドレス",
-        "addressesInRabby": "Luxのアドレス{{0}}",
+        "addressesInLux": "Luxのアドレス{{0}}",
         "qrCode": {
           "switch": {
             "title": "新しい{{0}}デバイスに切り替え",

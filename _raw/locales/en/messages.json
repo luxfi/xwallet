@@ -805,7 +805,7 @@
       "amount-in": "Amount in {{symbol}}",
       "unlimited-allowance": "Unlimited allowance",
       "insufficient-balance": "Insufficient balance",
-      "rabby-fee": "Lux fee",
+      "lux-fee": "Lux fee",
       "preferMEV": "Prefer MEV Guarded",
       "preferMEVTip": "Enable \"MEV Guarded\" feature for Ethereum swaps to reduce sandwich attack risks. Note: this feature is not supported if you use a custom RPC or wallet connect address",
       "minimum-received": "Minimum received",
@@ -1248,7 +1248,7 @@
           "question": "What is a Seed Phrase?",
           "answer": "A 12, 18, or 24-word phrase used to control your assets."
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "Is it safe to import it in Lux?",
           "answer": "Yes, it will be stored locally on your browser and only accessible to you."
         },
@@ -1305,7 +1305,7 @@
           "desc": "This address has been imported.",
           "question": "Do you want to switch to this address?"
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "Is it safe to import it in Lux?",
           "answer": "Yes, it will be stored locally on your browser and only accessible to you."
         },
@@ -1320,7 +1320,7 @@
         "title": "Connect Ledger",
         "cameraPermissionTitle": "Allow Lux to access the camera",
         "cameraPermission1": "Allow Lux to access the camera in the browser pop-up",
-        "allowRabbyPermissionsTitle": "Allow Lux permissions to:",
+        "allowLuxPermissionsTitle": "Allow Lux permissions to:",
         "ledgerPermission1": "Connect to an HID device",
         "ledgerPermissionTip": "Please click \"Allow\" below and authorize access to your Ledger in the following pop-up window.",
         "permissionsAuthorized": "Permissions Authorized",
@@ -1329,7 +1329,7 @@
       },
       "keystone": {
         "title": "Connect Keystone",
-        "allowRabbyPermissionsTitle": "Allow Lux permissions to:",
+        "allowLuxPermissionsTitle": "Allow Lux permissions to:",
         "keystonePermission1": "Connect to an USB device",
         "keystonePermissionTip": "Please click \"Allow\" below and authorize access to your Keystone in the following pop-up window.",
         "noDeviceFoundError": "Plug in a single Keystone",
@@ -1388,7 +1388,7 @@
         },
         "waiting": "Waiting",
         "clickToGetInfo": "Click to get the information on-chain",
-        "addToRabby": "Add to Lux",
+        "addToLux": "Add to Lux",
         "basicInformation": "Basic information",
         "addresses": "Addresses",
         "loadingAddress": "Loading {{0}}/{{1}} addresses",
@@ -1495,7 +1495,7 @@
         "manageBitbox02": "Manage BitBox02",
         "done": "Done",
         "addressesIn": "Addresses in {{0}}",
-        "addressesInRabby": "Addresses in Lux{{0}}",
+        "addressesInLux": "Addresses in Lux{{0}}",
         "qrCode": {
           "switch": {
             "title": "Switch to a new {{0}} device",
@@ -1556,7 +1556,7 @@
       "unknownChain": "Unknown chain",
       "requestsReceived": "1 request received",
       "requestsReceivedPlural": "{{count}} requests received",
-      "requestRabbyToSupport": "Request Lux to Support",
+      "requestLuxToSupport": "Request Lux to Support",
       "chainNotSupportAddChain": "The requested chain is not Integrated by Lux yet You can add it as a Custom Testnet",
       "addChain": "Add Testnet",
       "desc": "The requested network is not Integrated by Lux yet You can add it as a custom network manually"

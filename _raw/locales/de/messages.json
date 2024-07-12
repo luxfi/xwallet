@@ -635,7 +635,7 @@
       "amount-in": "Betrag in {{symbol}}",
       "unlimited-allowance": "Unbegrenzte Erlaubnis",
       "insufficient-balance": "Unzureichendes Guthaben",
-      "rabby-fee": "Lux Gebühr",
+      "lux-fee": "Lux Gebühr",
       "minimum-received": "Minimum erhalten",
       "there-is-no-fee-and-slippage-for-this-trade": "Für diesen Handel gibt es keine Gebühr und keine Kursabweichung",
       "approve-tips": "1.Genehmigen → 2.Tauschen",
@@ -1016,7 +1016,7 @@
           "question": "Was ist eine Seed Phrase?",
           "answer": "Eine 12, 18 oder 24-Wort-Phrase, die zur Steuerung Ihrer Vermögenswerte verwendet wird."
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "Ist es sicher, sie in Lux zu importieren?",
           "answer": "Ja, sie wird lokal in Ihrem Browser gespeichert und ist nur für Sie zugänglich."
         },
@@ -1057,7 +1057,7 @@
           "question": "Was ist ein Private Key?",
           "answer": "Eine Zeichenfolge aus Buchstaben und Zahlen, die zur Steuerung Ihrer Vermögenswerte verwendet wird."
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "Ist es sicher, ihn in Lux zu importieren?",
           "answer": "Ja, er wird lokal in Ihrem Browser gespeichert und ist nur für Sie zugänglich."
         },
@@ -1072,7 +1072,7 @@
         "title": "Ledger verbinden",
         "cameraPermissionTitle": "Erlauben Sie Lux den Zugriff auf die Kamera",
         "cameraPermission1": "Erlauben Sie Lux den Zugriff auf die Kamera im Browser-Popup",
-        "allowRabbyPermissionsTitle": "Berechtigungen erteilen für:",
+        "allowLuxPermissionsTitle": "Berechtigungen erteilen für:",
         "ledgerPermission1": "Verbindung zu einem HID-Gerät",
         "ledgerPermissionTip": "Bitte klicken Sie auf \"Erlauben\" unten und genehmigen Sie den Zugriff auf Ihren Ledger im folgenden Popup-Fenster.",
         "permissionsAuthorized": "Berechtigungen autorisiert",
@@ -1128,7 +1128,7 @@
         },
         "waiting": "Warten",
         "clickToGetInfo": "Klicken Sie, um die Informationen auf der Chain abzurufen",
-        "addToRabby": "Zu Lux hinzufügen",
+        "addToLux": "Zu Lux hinzufügen",
         "basicInformation": "Grundinformation",
         "addresses": "Adressen",
         "loadingAddress": "Lade {{0}}/{{1}} Adressen",
@@ -1227,7 +1227,7 @@
         "manageBitbox02": "BitBox02 verwalten",
         "done": "Fertig",
         "addressesIn": "Adressen in {{0}}",
-        "addressesInRabby": "Adressen in Lux{{0}}",
+        "addressesInLux": "Adressen in Lux{{0}}",
         "qrCode": {
           "switch": {
             "title": "Wechseln Sie zu einem neuen {{0}}-Gerät",
@@ -1283,7 +1283,7 @@
       "unknownChain": "Unbekannte Chain",
       "requestsReceived": "1 Anfrage erhalten",
       "requestsReceivedPlural": "{{count}} Anfragen erhalten",
-      "requestRabbyToSupport": "Lux um Unterstützung bitten"
+      "requestLuxToSupport": "Lux um Unterstützung bitten"
     },
     "signText": {
       "title": "Text signieren",

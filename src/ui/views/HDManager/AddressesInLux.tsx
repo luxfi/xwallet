@@ -4,6 +4,6 @@ import { SettingData } from './AdvancedSettings';
 
 interface Props extends AccountListProps, SettingData {}
 
-export const AddressesInRabby: React.FC<Props> = ({ ...props }) => {
+export const AddressesInLux: React.FC<Props> = ({ ...props }) => {
   return <AccountList {...props}></AccountList>;
 };

@@ -2,7 +2,7 @@ import { message, Table } from 'antd';
 import React, { useEffect } from 'react';
 import { ReactComponent as RcCopySVG } from 'ui/assets/icon-copy-cc.svg';
 import ClipboardJS from 'clipboard';
-import { AddToRabby } from './AddToRabby';
+import { AddToLux } from './AddToLux';
 import { MAX_ACCOUNT_COUNT } from './AdvancedSettings';
 import { AccountListSkeleton } from './AccountListSkeleton';
 import { UsedChain } from '@rabby-wallet/rabby-api/dist/types';
@@ -234,11 +234,11 @@ export const AccountList: React.FC<Props> = ({
       }
     >
       <Table.Column<Account>
-        title={t('page.newAddress.hd.addToRabby')}
+        title={t('page.newAddress.hd.addToLux')}
         key="add"
         render={(val, record) =>
           record.address ? (
-            <AddToRabby
+            <AddToLux
               checked={currentAccounts?.some((item) =>
                 isSameAddress(item.address, record.address)
               )}

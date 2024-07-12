@@ -8,7 +8,7 @@ interface Props {
   onChange?: (value: boolean) => Promise<void>;
   checked?: boolean;
 }
-export const AddToRabby: React.FC<Props> = ({ checked, onChange }) => {
+export const AddToLux: React.FC<Props> = ({ checked, onChange }) => {
   const [locked, setLocked] = React.useState(false);
 
   const handleOnChange = React.useCallback(async (value: boolean) => {
@@ -21,7 +21,7 @@ export const AddToRabby: React.FC<Props> = ({ checked, onChange }) => {
       disabled={locked}
       onChange={handleOnChange}
       prefixCls="ant-switch"
-      className="AddToRabby"
+      className="addToLux"
       checked={checked}
       loadingIcon={
         <div className="ant-switch-handle">

@@ -312,7 +312,7 @@ export const Main = () => {
     () => (
       <>
         <div className="flex justify-between">
-          <span>{t('page.swap.rabby-fee')}</span>
+          <span>{t('page.swap.lux-fee')}</span>
           <span className="font-medium text-r-neutral-title-1">{feeRate}%</span>
         </div>
         {showMEVGuardedSwitch && (

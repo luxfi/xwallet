@@ -418,7 +418,7 @@
           "question": "什么是助记词？",
           "answer": "用于控制你的资产的 12、18 或 24 个单词的短语。"
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "在 Lux 中导入它安全吗？",
           "answer": "是的，它将存储在你本地的浏览器上，并且只有你可以访问。"
         },
@@ -472,7 +472,7 @@
           "question": "什么是私钥？",
           "answer": "用于控制你的资产的一串字符。"
         },
-        "isItSafeToImportItInRabby": {
+        "isItSafeToImportItInLux": {
           "question": "在 Lux 中导入它安全吗？",
           "answer": "是的，它将存储在你本地的浏览器上，并且只有你可以访问。"
         },
@@ -491,7 +491,7 @@
         "title": "连接Ledger",
         "cameraPermissionTitle": "允许Lux访问相机",
         "cameraPermission1": "在浏览器弹出窗口中允许Lux访问摄像头",
-        "allowRabbyPermissionsTitle": "允许 Lux 获取以下权限：",
+        "allowLuxPermissionsTitle": "允许 Lux 获取以下权限：",
         "ledgerPermission1": "连接到 HID 设备",
         "ledgerPermissionTip": "请点击下面的“允许”，并在弹出窗口中授权访问你的 Ledger",
         "permissionsAuthorized": "权限已授权",
@@ -500,7 +500,7 @@
       },
       "keystone": {
         "title": "连接Keystone",
-        "allowRabbyPermissionsTitle": "允许Lux访问以下权限：",
+        "allowLuxPermissionsTitle": "允许Lux访问以下权限：",
         "keystonePermission1": "连接至USB设备",
         "keystonePermissionTip": "请点击下方的“允许”，并在弹出窗口中授权访问您的 Keystone",
         "noDeviceFoundError": "请插入一个Keystone",
@@ -559,7 +559,7 @@
         },
         "waiting": "加载中",
         "clickToGetInfo": "点击获取链上信息",
-        "addToRabby": "添加到 Lux",
+        "addToLux": "添加到 Lux",
         "basicInformation": "基本信息",
         "addresses": "地址",
         "loadingAddress": "正在加载 {{0}}/{{1}} 地址",
@@ -666,7 +666,7 @@
         "manageBitbox02": "管理 BitBox02",
         "done": "完成",
         "addressesIn": "{{0}} 中的地址",
-        "addressesInRabby": "Lux 中的地址{{0}}",
+        "addressesInLux": "Lux 中的地址{{0}}",
         "qrCode": {
           "switch": {
             "title": "切换到新的 {{0}} 设备",
@@ -1598,7 +1598,7 @@
       "not-supported": "不支持",
       "pendingTip": "交易已提交。\n如果交易长时间处于待完成状态，你可以尝试点击“更多”>“清除待完成”",
       "price-expired-refresh-quote": "价格已过期，\n刷新报价",
-      "rabby-fee": "Lux手续费",
+      "lux-fee": "Lux手续费",
       "preferMEV": "优先 MEV 模式",
       "preferMEVTip": "开启后你在 Ethereum 链上的 Swap 交易将优先使用 Mev Guard 模式，这有助于减少你的交易被夹的风险。当你使用自定义 RPC 或者手机钱包地址时，则不支持该模式。",
       "rate": "汇率",
@@ -1645,7 +1645,7 @@
       "unknownChain": "未知链",
       "requestsReceived": "收到1个请求",
       "requestsReceivedPlural": "收到{{count}}个请求",
-      "requestRabbyToSupport": "请求Lux提供支持",
+      "requestLuxToSupport": "请求Lux提供支持",
       "chainNotSupportAddChain": "Lux尚未集成请求的链。您可以将其添加为自定义测试网络",
       "addChain": "添加测试网络",
       "desc": "请求的网络尚未被Lux集成。您可以手动将其添加为自定义网络"

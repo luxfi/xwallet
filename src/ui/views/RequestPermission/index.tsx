@@ -34,17 +34,17 @@ const RequestPermission = () => {
       desc: [t('page.newAddress.ledger.cameraPermission1')],
     },
     ledger: {
-      title: t('page.newAddress.ledger.allowRabbyPermissionsTitle'),
+      title: t('page.newAddress.ledger.allowLuxPermissionsTitle'),
       desc: [t('page.newAddress.ledger.ledgerPermission1')],
       tip: t('page.newAddress.ledger.ledgerPermissionTip'),
     },
     imkey: {
-      title: t('page.newAddress.ledger.allowRabbyPermissionsTitle'),
+      title: t('page.newAddress.ledger.allowLuxPermissionsTitle'),
       desc: [t('page.newAddress.ledger.ledgerPermission1')],
       tip: t('page.newAddress.ledger.ledgerPermissionTip'),
     },
     keystone: {
-      title: t('page.newAddress.keystone.allowRabbyPermissionsTitle'),
+      title: t('page.newAddress.keystone.allowLuxPermissionsTitle'),
       desc: [t('page.newAddress.keystone.keystonePermission1')],
       tip: t('page.newAddress.keystone.keystonePermissionTip'),
     },
