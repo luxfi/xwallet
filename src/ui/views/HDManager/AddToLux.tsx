@@ -1,7 +1,7 @@
 import React from 'react';
 import RcSwitch from 'rc-switch';
-import { ReactComponent as RabbySVG } from 'ui/assets/ledger/rabby.svg';
-import { ReactComponent as RabbyGraySVG } from 'ui/assets/ledger/rabby-gray.svg';
+import { ReactComponent as LuxSVG } from 'ui/assets/ledger/lux.svg';
+import { ReactComponent as LuxGraySVG } from 'ui/assets/ledger/lux-gray.svg';
 import { ReactComponent as LoadingSVG } from '@/ui/assets/swap/loading.svg';
 
 interface Props {
@@ -28,9 +28,23 @@ export const AddToLux: React.FC<Props> = ({ checked, onChange }) => {
           {locked ? (
             <LoadingSVG className="icon-loading animate-spin" />
           ) : checked ? (
-            <RabbySVG className="icon" />
+            <LuxSVG
+              className="icon"
+              style={{
+                borderRadius: '14px',
+                marginTop: '-2px',
+                marginLeft: '-2px',
+              }}
+            />
           ) : (
-            <RabbyGraySVG className="icon" />
+            <LuxGraySVG
+              className="icon"
+              style={{
+                borderRadius: '14px',
+                marginTop: '-2px',
+                marginLeft: '-2px',
+              }}
+            />
           )}
         </div>
       }

@@ -21,7 +21,7 @@ import {
   contextMenuService,
   securityEngineService,
   transactionBroadcastWatchService,
-  RabbyPointsService,
+  LuxPointsService,
   HDKeyRingLastAddAddrTimeService,
 } from 'background/service';
 import buildinProvider, {
@@ -1235,10 +1235,10 @@ export class WalletController extends BaseController {
   getSwapPreferMEVGuarded = swapService.getSwapPreferMEVGuarded;
   setSwapPreferMEVGuarded = swapService.setSwapPreferMEVGuarded;
 
-  setRedirect2Points = RabbyPointsService.setRedirect2Points;
-  setRabbyPointsSignature = RabbyPointsService.setSignature;
-  getRabbyPointsSignature = RabbyPointsService.getSignature;
-  clearRabbyPointsSignature = RabbyPointsService.clearSignature;
+  setRedirect2Points = LuxPointsService.setRedirect2Points;
+  setLuxPointsSignature = LuxPointsService.setSignature;
+  getLuxPointsSignature = LuxPointsService.getSignature;
+  clearLuxPointsSignature = LuxPointsService.clearSignature;
 
   addHDKeyRingLastAddAddrTime = HDKeyRingLastAddAddrTimeService.addUnixRecord;
   getHDKeyRingLastAddAddrTimeStore = HDKeyRingLastAddAddrTimeService.getStore;
@@ -1315,7 +1315,7 @@ export class WalletController extends BaseController {
 
     permissionService.setSite(data);
     if (data.isConnected) {
-      // rabby:chainChanged event must be sent before chainChanged event
+      // lux:chainChanged event must be sent before chainChanged event
       sessionService.broadcastEvent(
         'rabby:chainChanged',
         {
@@ -3779,7 +3779,7 @@ export class WalletController extends BaseController {
     { timeout: 10000, maxSize: 0 }
   ).fn;
 
-  rabbyPointVerifyAddress = async (params?: {
+  luxPointVerifyAddress = async (params?: {
     code?: string;
     claimSnapshot?: boolean;
     claimNumber?: number;
@@ -3816,7 +3816,7 @@ export class WalletController extends BaseController {
       params: [msg, account.address],
     });
 
-    this.setRabbyPointsSignature(account.address, signature);
+    this.setLuxPointsSignature(account.address, signature);
     if (claimSnapshot) {
       try {
         await wallet.openapi.claimRabbyPointsSnapshotV2({

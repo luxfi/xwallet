@@ -28,7 +28,7 @@ export const useLuxPoints = () => {
 
   const { value: signature, loading: signatureLoading } = useAsync(async () => {
     if (account?.address) {
-      const data = await wallet.getRabbyPointsSignature(account?.address);
+      const data = await wallet.getLuxPointsSignature(account?.address);
       return data;
     }
     return;

@@ -26,7 +26,7 @@ import {
   signTextHistoryService,
   whitelistService,
   swapService,
-  RabbyPointsService,
+  LuxPointsService,
   RPCService,
   securityEngineService,
   transactionBroadcastWatchService,
@@ -95,7 +95,7 @@ async function restoreAppState() {
   await swapService.init();
   await RPCService.init();
   await securityEngineService.init();
-  await RabbyPointsService.init();
+  await LuxPointsService.init();
   await HDKeyRingLastAddAddrTimeService.init();
 
   setPopupIcon(

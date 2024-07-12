@@ -154,7 +154,7 @@ const LuxPoints = () => {
       if (lockRef.current) return;
       lockRef.current = true;
       try {
-        wallet.rabbyPointVerifyAddress({
+        wallet.luxPointVerifyAddress({
           code: invite_code,
           claimSnapshot: true,
         });
@@ -170,12 +170,12 @@ const LuxPoints = () => {
 
   const verifyAddr = React.useCallback(() => {
     try {
-      wallet.rabbyPointVerifyAddress();
+      wallet.luxPointVerifyAddress();
       window.close();
     } catch (error) {
       console.error(error);
     }
-  }, [wallet.rabbyPointVerifyAddress]);
+  }, [wallet.luxPointVerifyAddress]);
 
   const claimItem = React.useCallback(
     async (campaign_id: number, points: number) => {
