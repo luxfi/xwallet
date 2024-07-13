@@ -106,7 +106,7 @@ const ImportSuccess = ({ isPopup = false }: { isPopup?: boolean }) => {
   return (
     <StrayPageWithButton
       custom={isWide}
-      className={clsx(isWide && 'rabby-stray-page')}
+      className={clsx(isWide && 'lux-stray-page')}
       hasDivider={hasDivider}
       NextButtonContent={t('global.Done')}
       onNextClick={handleNextClick}

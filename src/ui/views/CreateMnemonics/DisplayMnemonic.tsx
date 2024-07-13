@@ -96,7 +96,7 @@ const DisplayMnemonic = () => {
 
   return (
     <div className={clsx('mx-auto pt-[58px]', 'w-[600px]')}>
-      <img src={LogoSVG} alt="Rabby" className="mb-[12px]" />
+      <img src={LogoSVG} alt="Lux" className="mb-[12px]" />
       <div
         className={clsx(
           'px-[100px] pt-[32px] pb-[40px]',

@@ -151,7 +151,7 @@ const useGetCurrentAccounts = ({ keyringId, keyring }: StateProviderProps) => {
 };
 
 const useManagerTab = () => {
-  const [tab, setTab] = React.useState<'hd' | 'rabby'>('hd');
+  const [tab, setTab] = React.useState<'hd' | 'lux'>('hd');
 
   return {
     tab,

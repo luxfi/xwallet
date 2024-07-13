@@ -115,7 +115,7 @@ const ImportPrivateKey = () => {
         hasBack={false}
         hasDivider
         noPadding
-        className={clsx(isWide && 'rabby-stray-page')}
+        className={clsx(isWide && 'lux-stray-page')}
         NextButtonContent={t('global.confirm')}
         formProps={{
           onValuesChange: (states) => {

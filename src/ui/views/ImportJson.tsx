@@ -40,7 +40,7 @@ const ImportJson = () => {
   return (
     <StrayPageWithButton
       custom={isWide}
-      className={clsx(isWide && 'rabby-stray-page')}
+      className={clsx(isWide && 'lux-stray-page')}
       onSubmit={({ keyStore, password }) => run(keyStore, password)}
       form={form}
       spinning={loading}

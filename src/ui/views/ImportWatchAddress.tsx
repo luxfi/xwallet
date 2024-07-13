@@ -212,7 +212,7 @@ const ImportWatchAddress = () => {
       form={form}
       hasDivider
       noPadding
-      className={clsx('import-watchmode', isWide && 'rabby-stray-page')}
+      className={clsx('import-watchmode', isWide && 'lux-stray-page')}
       formProps={{
         onValuesChange: handleValuesChange,
       }}
