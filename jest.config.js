@@ -1,6 +1,6 @@
 const IGNORE_MODULES = [
   '@debank',
-  '@rabby-wallet',
+  '@lux-wallet',
   'p-',
   '@keystonehq',
   '@walletconnect',

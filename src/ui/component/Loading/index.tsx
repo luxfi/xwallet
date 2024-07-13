@@ -12,12 +12,12 @@ interface CopyProps {
 
 const Loading = ({ className, style, children, loading }: CopyProps) => {
   return loading ? (
-    <div className={clsx('rabby-loading', className)} style={style}>
+    <div className={clsx('lux-loading', className)} style={style}>
       <SvgIconLoading
-        className="rabby-loading-image"
+        className="lux-loading-image"
         fill="#707280"
       ></SvgIconLoading>
-      <div className="rabby-loading-text">{children}</div>
+      <div className="lux-loading-text">{children}</div>
     </div>
   ) : null;
 };

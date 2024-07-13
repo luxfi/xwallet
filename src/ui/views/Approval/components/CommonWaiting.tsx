@@ -120,7 +120,7 @@ export const CommonWaiting = ({ params }: { params: ApprovalParams }) => {
           preExecSuccess: explain
             ? explain?.calcSuccess && explain?.pre_exec.success
             : true,
-          createdBy: params?.$ctx?.ga ? 'rabby' : 'dapp',
+          createdBy: params?.$ctx?.ga ? 'lux' : 'dapp',
           source: params?.$ctx?.ga?.source || '',
           trigger: params?.$ctx?.ga?.trigger || '',
           networkType: chain?.isTestnet

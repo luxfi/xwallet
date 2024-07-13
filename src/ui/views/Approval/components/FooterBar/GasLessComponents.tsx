@@ -1,11 +1,11 @@
 import React from 'react';
 import { ReactComponent as RcIconGas } from '@/ui/assets/sign/tx/gas-cc.svg';
 import GasLessBg from '@/ui/assets/sign/tx/bg.svg';
-import { ReactComponent as RcIconLogo } from '@/ui/assets/dashboard/rabby.svg';
+import { ReactComponent as RcIconLogo } from '@/ui/assets/dashboard/lux.svg';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import clsx from 'clsx';
-import LogoImage from 'ui/assets/sign/tx/rabby.svg';
+import LogoImage from 'ui/assets/sign/tx/lux.png';
 import { ReactComponent as RcIconCCFreeGasBg } from '@/ui/assets/free-gas/bg.svg';
 
 import { ReactComponent as RcIconReason } from '@/ui/assets/sign/tx/question-cc.svg';

@@ -131,7 +131,7 @@ const GetEncryptionPublicKey = ({ params }: ConnectProps) => {
             <Tooltip
               overlayClassName={clsx('rectangle watcSign__tooltip')}
               title={
-                'Only addresses with private keys stored in rabby can perform this type of signing.'
+                'Only addresses with private keys stored in lux can perform this type of signing.'
               }
               placement="topRight"
             >
