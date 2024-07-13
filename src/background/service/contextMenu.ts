@@ -136,7 +136,7 @@ export class ContextMenu {
     ) {
       sessionService.broadcastEvent(
         'defaultWalletChanged',
-        currentIsDefaultWallet ? 'rabby' : 'metamask',
+        currentIsDefaultWallet ? 'lux' : 'metamask',
         site.origin
       );
     }

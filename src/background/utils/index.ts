@@ -92,10 +92,10 @@ export const isSameAddress = (a: string, b: string) => {
 };
 
 export const setPopupIcon = (
-  type: 'default' | 'rabby' | 'metamask' | 'locked'
+  type: 'default' | 'lux' | 'metamask' | 'locked'
 ) => {
   const icons = [16, 19, 32, 48, 128].reduce((res, size) => {
-    if (type === 'rabby' || type === 'metamask') {
+    if (type === 'lux' || type === 'metamask') {
       res[size] = `images/icon-default-${type}-${size}.png`;
     } else if (type === 'locked') {
       res[size] = `images/icon-lock-${size}.png`;

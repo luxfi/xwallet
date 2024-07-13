@@ -121,7 +121,7 @@ export class WalletController extends BaseController {
     if (!hasOtherProvider) {
       setPopupIcon('default');
     } else {
-      setPopupIcon(isDefaultWallet ? 'rabby' : 'metamask');
+      setPopupIcon(isDefaultWallet ? 'lux' : 'metamask');
     }
   };
   isBooted = () => keyringService.isBooted();
@@ -987,7 +987,7 @@ export class WalletController extends BaseController {
     if (!hasOtherProvider) {
       setPopupIcon('default');
     } else {
-      setPopupIcon(isDefaultWallet ? 'rabby' : 'metamask');
+      setPopupIcon(isDefaultWallet ? 'lux' : 'metamask');
     }
   };
   isUnlocked = () => keyringService.memStore.getState().isUnlocked;
@@ -1317,7 +1317,7 @@ export class WalletController extends BaseController {
     if (data.isConnected) {
       // lux:chainChanged event must be sent before chainChanged event
       sessionService.broadcastEvent(
-        'rabby:chainChanged',
+        'lux:chainChanged',
         {
           ...chainItem,
         },
@@ -1384,7 +1384,7 @@ export class WalletController extends BaseController {
     if (prevIsDefaultWallet !== currentIsDefaultWallet && hasOtherProvider) {
       sessionService.broadcastEvent(
         'defaultWalletChanged',
-        currentIsDefaultWallet ? 'rabby' : 'metamask',
+        currentIsDefaultWallet ? 'lux' : 'metamask',
         site.origin
       );
     }
@@ -1399,9 +1399,9 @@ export class WalletController extends BaseController {
     }
 
     permissionService.updateConnectSite(origin, data);
-    // rabby:chainChanged event must be sent before chainChanged event
+    // lux:chainChanged event must be sent before chainChanged event
     sessionService.broadcastEvent(
-      'rabby:chainChanged',
+      'lux:chainChanged',
       {
         ...chainItem,
       },
@@ -3021,7 +3021,7 @@ export class WalletController extends BaseController {
       sites.forEach((site) => {
         sessionService.broadcastEvent(
           'defaultWalletChanged',
-          val ? 'rabby' : 'metamask',
+          val ? 'lux' : 'metamask',
           site.origin
         );
       });
@@ -3029,7 +3029,7 @@ export class WalletController extends BaseController {
     const isUnlocked = this.isUnlocked();
     if (isUnlocked) {
       if (hasOtherProvider) {
-        setPopupIcon(val ? 'rabby' : 'metamask');
+        setPopupIcon(val ? 'lux' : 'metamask');
       } else {
         setPopupIcon('default');
       }
@@ -3745,7 +3745,7 @@ export class WalletController extends BaseController {
   };
 
   /**
-   * disable some functions when Rabby server is busy
+   * disable some functions when Lux server is busy
    * disable approval management and transaction history when level is 1
    * disable total balance refresh and level 1 content when level is 2
    */
@@ -3797,7 +3797,7 @@ export class WalletController extends BaseController {
           id: account?.address,
           invite_code: code,
         })
-      )?.text; //`${account?.address} Claims Rabby Points`;
+      )?.text; //`${account?.address} Claims Lux Points`;
     } else {
       verifyText = (
         await wallet.openapi.getRabbySignatureTextV2({

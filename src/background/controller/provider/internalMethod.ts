@@ -77,12 +77,12 @@ const providerOverwrite = ({
 const hasOtherProvider = () => {
   const prev = preferenceService.getHasOtherProvider();
   preferenceService.setHasOtherProvider(true);
-  const isRabby = preferenceService.getIsDefaultWallet();
+  const isLux = preferenceService.getIsDefaultWallet();
   if (!prev) {
     contextMenuService.init();
   }
   if (wallet.isUnlocked()) {
-    setPopupIcon(isRabby ? 'rabby' : 'metamask');
+    setPopupIcon(isLux ? 'lux' : 'metamask');
   }
   return true;
 };

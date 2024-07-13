@@ -271,7 +271,7 @@ class NotificationService extends Events {
           success: explain
             ? explain.calcSuccess && explain.pre_exec.success
             : true,
-          createdBy: data?.params.$ctx?.ga ? 'rabby' : 'dapp',
+          createdBy: data?.params.$ctx?.ga ? 'lux' : 'dapp',
           source: data?.params.$ctx?.ga?.source || '',
           trigger: data?.params.$ctx?.ga.trigger || '',
           networkType: chain?.isTestnet

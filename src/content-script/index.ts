@@ -6,10 +6,10 @@ import { v4 as uuid } from 'uuid';
 const channelName = nanoid();
 const isOpera = /Opera|OPR\//i.test(navigator.userAgent);
 
-localStorage.setItem('rabby:channelName', channelName);
-localStorage.setItem('rabby:isDefaultWallet', 'true');
-localStorage.setItem('rabby:uuid', uuid());
-localStorage.setItem('rabby:isOpera', isOpera.toString());
+localStorage.setItem('lux:channelName', channelName);
+localStorage.setItem('lux:isDefaultWallet', 'true');
+localStorage.setItem('lux:uuid', uuid());
+localStorage.setItem('lux:isOpera', isOpera.toString());
 
 const injectProviderScript = (isDefaultWallet: boolean) => {
   // the script element with src won't execute immediately

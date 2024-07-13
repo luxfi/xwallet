@@ -259,8 +259,8 @@ class ProviderController extends BaseController {
     if (connectSite) {
       const chain = findChain({ enum: connectSite.chain });
       if (chain) {
-        // rabby:chainChanged event must be sent before chainChanged event
-        sessionService.broadcastEvent('rabby:chainChanged', chain, origin);
+        // lux:chainChanged event must be sent before chainChanged event
+        sessionService.broadcastEvent('lux:chainChanged', chain, origin);
         sessionService.broadcastEvent(
           'chainChanged',
           {
@@ -456,7 +456,7 @@ class ProviderController extends BaseController {
       preExecSuccess: cacheExplain
         ? cacheExplain.pre_exec.success && cacheExplain.calcSuccess
         : true,
-      createdBy: options?.data?.$ctx?.ga ? 'rabby' : 'dapp',
+      createdBy: options?.data?.$ctx?.ga ? 'lux' : 'dapp',
       source: options?.data?.$ctx?.ga?.source || '',
       trigger: options?.data?.$ctx?.ga?.trigger || '',
       networkType: chainItem?.isTestnet
@@ -576,7 +576,7 @@ class ProviderController extends BaseController {
           preExecSuccess: cacheExplain
             ? cacheExplain.pre_exec.success && cacheExplain.calcSuccess
             : true,
-          createdBy: options?.data?.$ctx?.ga ? 'rabby' : 'dapp',
+          createdBy: options?.data?.$ctx?.ga ? 'lux' : 'dapp',
           source: options?.data?.$ctx?.ga?.source || '',
           trigger: options?.data?.$ctx?.ga?.trigger || '',
           networkType: chainItem?.isTestnet
@@ -760,13 +760,13 @@ class ProviderController extends BaseController {
 
   @Reflect.metadata('SAFE', true)
   web3ClientVersion = () => {
-    return `Rabby/${process.env.release}`;
+    return `Lux/${process.env.release}`;
   };
 
   @Reflect.metadata('APPROVAL', ['ETHSign', () => null, { height: 390 }])
   ethSign = () => {
     throw new Error(
-      "Signing with 'eth_sign' can lead to asset loss. For your safety, Rabby does not support this method."
+      "Signing with 'eth_sign' can lead to asset loss. For your safety, Lux does not support this method."
     );
   };
 
@@ -1007,7 +1007,7 @@ class ProviderController extends BaseController {
       const connected = permissionService.getConnectedSite(session.origin);
 
       if (connected) {
-        // if rabby supported this chain, do not show popup
+        // if lux supported this chain, do not show popup
         if (findChain({ id: chainParams.chainId })) {
           return true;
         }
@@ -1045,7 +1045,7 @@ class ProviderController extends BaseController {
     });
 
     if (!chain) {
-      throw new Error('This chain is not supported by Rabby yet.');
+      throw new Error('This chain is not supported by Lux yet.');
     }
 
     if (approvalRes) {
@@ -1060,9 +1060,9 @@ class ProviderController extends BaseController {
       true
     );
 
-    // rabby:chainChanged event must be sent before chainChanged event
+    // lux:chainChanged event must be sent before chainChanged event
     sessionService.broadcastEvent(
-      'rabby:chainChanged',
+      'lux:chainChanged',
       {
         ...chain,
       },
@@ -1091,7 +1091,7 @@ class ProviderController extends BaseController {
       const connected = permissionService.getConnectedSite(session.origin);
       if (connected) {
         const { chainId } = data.params[0];
-        // if rabby supported this chain, do not show popup
+        // if lux supported this chain, do not show popup
         if (
           findChain({
             id: chainId,
@@ -1137,9 +1137,9 @@ class ProviderController extends BaseController {
       true
     );
 
-    // rabby:chainChanged event must be sent before chainChanged event
+    // lux:chainChanged event must be sent before chainChanged event
     sessionService.broadcastEvent(
-      'rabby:chainChanged',
+      'lux:chainChanged',
       {
         ...chain,
       },

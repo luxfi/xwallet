@@ -100,7 +100,7 @@ const config = {
                     ssr: true, // always enable it to make all styled generated component has id.
                     displayName: isEnvDevelopment,
                     minify: false, // it's still an experimental feature
-                    componentIdPrefix: 'rabby-',
+                    componentIdPrefix: 'lux-',
                   }),
                 ],
               }),
