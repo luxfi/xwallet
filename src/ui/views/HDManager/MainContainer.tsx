@@ -76,7 +76,7 @@ export const MainContainer: React.FC<Props> = ({
         tab={t('page.newAddress.hd.addressesInLux', [
           loading ? '' : ` (${filterCurrentAccounts.length})`,
         ])}
-        key="rabby"
+        key="lux"
         disabled={loading}
       >
         <AddressesInLux

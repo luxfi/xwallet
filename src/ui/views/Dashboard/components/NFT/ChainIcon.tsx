@@ -20,7 +20,7 @@ const ChainIcon = ({ chain, className, style }: ChainIconProps) => {
     <img
       src={data?.logo || IconUnknown}
       alt=""
-      className={clsx('rabby-chain-icon', className)}
+      className={clsx('lux-chain-icon', className)}
       style={style}
     />
   );

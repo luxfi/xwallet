@@ -2,7 +2,7 @@ import { useWallet } from '@/ui/utils';
 import { message } from 'antd';
 import React, { useEffect, useState } from 'react';
 import IconDefaultMetamask from 'ui/assets/icon-default-metamask.png';
-import IconDefaultRabby from 'ui/assets/icon-default-rabby.png';
+import IconDefaultLux from 'ui/assets/icon-default-lux.png';
 import './style.less';
 import { useTranslation } from 'react-i18next';
 
@@ -46,9 +46,9 @@ const DefaultWalletSetting = () => {
   if (isDefault) {
     return (
       <>
-        <div className="rabby-default-wallet-setting">
+        <div className="lux-default-wallet-setting">
           <img
-            src={IconDefaultRabby}
+            src={IconDefaultLux}
             alt=""
             className="w-[20px] h-[20px] mr-[8px]"
           />
@@ -62,7 +62,7 @@ const DefaultWalletSetting = () => {
   }
   return (
     <>
-      <div className="rabby-default-wallet-setting is-metamask">
+      <div className="lux-default-wallet-setting is-metamask">
         <img
           src={IconDefaultMetamask}
           alt=""
