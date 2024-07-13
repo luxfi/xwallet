@@ -151,7 +151,7 @@ const RuleDrawerWrapper = styled.div`
       }
     }
     .rule-threshold-footer {
-      .rabby-checkbox__label {
+      .lux-checkbox__label {
         color: var(--l-neutral-foot, #babec5);
       }
 

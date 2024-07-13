@@ -338,7 +338,7 @@ export const AddCustomTestnetTokenPopup = ({
             <Button
               type="primary"
               size="large"
-              className="rabby-btn-ghost w-[172px]"
+              className="lux-btn-ghost w-[172px]"
               ghost
               onClick={onClose}
             >

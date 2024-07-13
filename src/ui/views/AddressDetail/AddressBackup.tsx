@@ -69,19 +69,19 @@ export const AddressBackup = ({ address, type }: Props) => {
   };
 
   return (
-    <div className="rabby-list">
+    <div className="lux-list">
       {type === KEYRING_TYPE.HdKeyring ? (
         <div
-          className="rabby-list-item cursor-pointer"
+          className="lux-list-item cursor-pointer"
           onClick={() => {
             handleBackup('mneonics');
           }}
         >
-          <div className="rabby-list-item-content">
-            <div className="rabby-list-item-label">
+          <div className="lux-list-item-content">
+            <div className="lux-list-item-label">
               {t('page.addressDetail.backup-seed-phrase')}
             </div>
-            <div className="rabby-list-item-arrow">
+            <div className="lux-list-item-arrow">
               <IconArrowRight
                 width={16}
                 height={16}
@@ -92,16 +92,16 @@ export const AddressBackup = ({ address, type }: Props) => {
         </div>
       ) : null}
       <div
-        className="rabby-list-item cursor-pointer"
+        className="lux-list-item cursor-pointer"
         onClick={() => {
           handleBackup('private-key');
         }}
       >
-        <div className="rabby-list-item-content">
-          <div className="rabby-list-item-label">
+        <div className="lux-list-item-content">
+          <div className="lux-list-item-label">
             {t('page.addressDetail.backup-private-key')}
           </div>
-          <div className="rabby-list-item-arrow">
+          <div className="lux-list-item-arrow">
             <IconArrowRight
               width={16}
               height={16}

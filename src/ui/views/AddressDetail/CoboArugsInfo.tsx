@@ -60,8 +60,8 @@ export const CoboArgusInfo = ({ address }: { address: string }) => {
 
   if (isLoading) {
     return (
-      <div className="rabby-list-item">
-        <div className="rabby-list-item-content ">
+      <div className="lux-list-item">
+        <div className="lux-list-item-content ">
           <SvgIconLoading
             className="animate-spin w-[20px] h-[20px]"
             fill="#707280"
@@ -74,11 +74,11 @@ export const CoboArgusInfo = ({ address }: { address: string }) => {
 
   return (
     <>
-      <div className="rabby-list-item">
-        <div className="rabby-list-item-content">
-          <div className="rabby-list-item-label">
+      <div className="lux-list-item">
+        <div className="lux-list-item-content">
+          <div className="lux-list-item-label">
             {t('page.addressDetail.safeModuleAddress')}
-            <div className="rabby-list-item-desc flex gap-4 text-[12px]">
+            <div className="lux-list-item-desc flex gap-4 text-[12px]">
               {accountDetail?.safeModuleAddress}
               <img
                 src={IconCopy}
@@ -100,16 +100,16 @@ export const CoboArgusInfo = ({ address }: { address: string }) => {
         </div>
       </div>
 
-      <div className="rabby-list-item no-hover">
-        <div className="rabby-list-item-content border-0 p-0 pt-14 min-h-0">
-          <div className="rabby-list-item-label">
+      <div className="lux-list-item no-hover">
+        <div className="lux-list-item-content border-0 p-0 pt-14 min-h-0">
+          <div className="lux-list-item-label">
             {t('page.addressDetail.importedDelegatedAddress')}
           </div>
         </div>
       </div>
       {delegates.map((item) => (
-        <div className="rabby-list-item">
-          <div className="rabby-list-item-content py-0 min-h-[40px]">
+        <div className="lux-list-item">
+          <div className="lux-list-item-content py-0 min-h-[40px]">
             <NameAndAddress address={item} nameClass="max-143" />
           </div>
         </div>

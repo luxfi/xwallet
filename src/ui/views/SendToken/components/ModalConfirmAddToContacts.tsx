@@ -203,7 +203,7 @@ function ModalConfirmAddToContacts({
             <Button
               size="large"
               type="primary"
-              className="w-[172px] rabby-btn-ghost"
+              className="w-[172px] lux-btn-ghost"
               ghost
               onClick={handleCancel}
             >

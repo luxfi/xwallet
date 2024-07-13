@@ -47,13 +47,13 @@ const Checkbox = ({
 
   return (
     <div
-      className={cx('rabby-checkbox__wrapper', className, {
+      className={cx('lux-checkbox__wrapper', className, {
         checked: checkState,
       })}
       onClick={(e) => handleValueChange(e, !checkState)}
     >
       <div
-        className={clsx('rabby-checkbox', type, checkBoxClassName)}
+        className={clsx('lux-checkbox', type, checkBoxClassName)}
         style={{
           width,
           height,
@@ -62,7 +62,7 @@ const Checkbox = ({
       >
         {checkIcon ?? <ThemeIcon src={IconCheck} className="icon icon-check" />}
       </div>
-      {children && <div className="rabby-checkbox__label">{children}</div>}
+      {children && <div className="lux-checkbox__label">{children}</div>}
     </div>
   );
 };

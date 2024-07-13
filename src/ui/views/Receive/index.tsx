@@ -158,7 +158,7 @@ const Receive = () => {
             </Button>
             <Button
               type="primary"
-              className="rabby-btn-ghost"
+              className="lux-btn-ghost"
               ghost
               block
               onClick={() => {

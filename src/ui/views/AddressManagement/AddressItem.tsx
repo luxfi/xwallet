@@ -176,7 +176,7 @@ const AddressItem = memo(
     );
 
     return (
-      <div className={clsx(className, 'rabby-address-item-container relative')}>
+      <div className={clsx(className, 'lux-address-item-container relative')}>
         {canFastDeleteAccount && (
           <div className="absolute icon-delete-container w-[20px] left-[-20px] h-full top-0  justify-center items-center">
             <RcIconDeleteAddress
@@ -192,7 +192,7 @@ const AddressItem = memo(
         >
           <div
             className={clsx(
-              'rabby-address-item relative',
+              'lux-address-item relative',
               isCurrentAccount
                 ? 'bg-blue-light hover:bg-blue-light pr-0'
                 : 'group',
@@ -215,7 +215,7 @@ const AddressItem = memo(
             )} */}
             <div
               className={clsx(
-                'rabby-address-item-left',
+                'lux-address-item-left',
                 !isCurrentAccount &&
                   enableSwitch &&
                   'hover:bg-blue-light hover:bg-opacity-[0.1]',
@@ -248,14 +248,14 @@ const AddressItem = memo(
                 </div>
               </Tooltip>
 
-              <div className={clsx('rabby-address-item-content')}>
+              <div className={clsx('lux-address-item-content')}>
                 {
-                  <div className="rabby-address-item-title" ref={titleRef}>
+                  <div className="lux-address-item-title" ref={titleRef}>
                     {
                       <>
                         <div
                           className={clsx(
-                            'rabby-address-item-alias',
+                            'lux-address-item-alias',
                             isCurrentAccount && 'text-white'
                           )}
                           title={alias}
@@ -331,14 +331,14 @@ const AddressItem = memo(
               </div>
 
               {enableSwitch && !isCurrentAccount && (
-                <div className="rabby-address-item-extra flex justify-center items-center pr-[12px]">
+                <div className="lux-address-item-extra flex justify-center items-center pr-[12px]">
                   <div className="opacity-0 group-hover:opacity-100 w-[20px] h-[20px] rounded-full bg-blue-light flex items-center justify-center">
                     <img src={IconCheck} className="w-[54%] icon icon-check" />
                   </div>
                 </div>
               )}
               {isCurrentAccount && (
-                <div className="rabby-address-item-extra flex items-center justify-center">
+                <div className="lux-address-item-extra flex items-center justify-center">
                   {isUpdatingBalance ? (
                     <>
                       <SkeletonInput
@@ -359,7 +359,7 @@ const AddressItem = memo(
             </div>
             <div
               className={clsx(
-                'rabby-address-item-arrow absolute h-full top-0 right-0 bottom-0 items-center justify-center',
+                'lux-address-item-arrow absolute h-full top-0 right-0 bottom-0 items-center justify-center',
                 isCurrentAccount ? 'w-[20px] mr-12' : 'w-[44px]'
               )}
               onClick={

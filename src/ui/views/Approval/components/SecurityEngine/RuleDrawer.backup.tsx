@@ -102,13 +102,13 @@ const RuleDrawerWrapper = styled.div`
       line-height: 14px;
       color: #707280;
       margin-bottom: 12px;
-      .rabby-checkbox__wrapper {
-        .rabby-checkbox {
+      .lux-checkbox__wrapper {
+        .lux-checkbox {
           border: 1px solid var(--l-neutral-line);
           background-color: var(--l-neutral-foot) !important;
         }
         &.checked {
-          .rabby-checkbox {
+          .lux-checkbox {
             background-color: var(--l-blue-default, #7084ff) !important;
             border: none;
           }
@@ -222,7 +222,7 @@ const RuleDrawerWrapper = styled.div`
       }
     }
     .rule-threshold-footer {
-      .rabby-checkbox__label {
+      .lux-checkbox__label {
         color: var(--l-neutral-foot, #babec5);
       }
 

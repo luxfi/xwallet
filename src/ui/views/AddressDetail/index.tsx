@@ -79,10 +79,10 @@ const AddressDetail = () => {
         source={source}
       ></AddressInfo>
 
-      <div className="rabby-list">
-        <div className="rabby-list-item">
-          <div className="rabby-list-item-content">
-            <div className="rabby-list-item-label">
+      <div className="lux-list">
+        <div className="lux-list-item">
+          <div className="lux-list-item-content">
+            <div className="lux-list-item-label">
               {t('page.addressDetail.add-to-whitelist')}
             </div>
             <Switch

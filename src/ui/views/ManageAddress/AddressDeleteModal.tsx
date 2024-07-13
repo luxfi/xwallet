@@ -78,7 +78,7 @@ export const AddressDeleteModal = ({
           type="primary"
           ghost
           size="large"
-          className={'rabby-btn-ghost'}
+          className={'lux-btn-ghost'}
           block
         >
           {t('page.manageAddress.confirm-delete')}

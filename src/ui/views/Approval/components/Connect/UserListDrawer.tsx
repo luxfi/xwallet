@@ -34,13 +34,13 @@ const Footer = styled.div`
     color: var(--l-neutral-title-1, #192945);
     position: relative;
     border: 1px solid transparent;
-    .rabby-checkbox__wrapper {
-      .rabby-checkbox {
+    .lux-checkbox__wrapper {
+      .lux-checkbox {
         border: 1px solid var(--l-neutral-line);
         background-color: var(--l-neutral-foot) !important;
       }
       &.checked {
-        .rabby-checkbox {
+        .lux-checkbox {
           background-color: var(--l-blue-default, #7084ff) !important;
           border: none;
         }

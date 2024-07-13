@@ -46,7 +46,7 @@ const AccountItemSelector = styled.div`
   &:nth-last-child(1) {
     margin-bottom: 0;
   }
-  .rabby-checkbox__label {
+  .lux-checkbox__label {
     flex: 1;
     margin-left: 12px;
   }
@@ -95,7 +95,7 @@ const EditWhitelist = ({
               </Button>
               <Button
                 type="primary"
-                className="rabby-btn-ghost"
+                className="lux-btn-ghost"
                 ghost
                 block
                 onClick={() => {

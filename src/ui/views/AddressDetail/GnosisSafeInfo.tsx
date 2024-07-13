@@ -24,8 +24,8 @@ const GnosisAdminItem = ({
 }) => {
   const addressInWallet = accounts.find((addr) => isSameAddress(addr, address));
   return (
-    <div className="rabby-list-item">
-      <div className="rabby-list-item-content py-0 min-h-[40px]">
+    <div className="lux-list-item">
+      <div className="lux-list-item-content py-0 min-h-[40px]">
         <NameAndAddress address={address} nameClass="max-143" />
         {addressInWallet ? (
           <img src={IconTagYou} className="icon icon-tag ml-[12px]" />
@@ -113,8 +113,8 @@ export const GnonisSafeInfo = ({
 
   if (loading) {
     return (
-      <div className="rabby-list-item">
-        <div className="rabby-list-item-content ">
+      <div className="lux-list-item">
+        <div className="lux-list-item-content ">
           <SvgIconLoading
             className="animate-spin w-[20px] h-[20px]"
             fill="#707280"
@@ -128,9 +128,9 @@ export const GnonisSafeInfo = ({
   if (safeInfo) {
     return (
       <>
-        <div className="rabby-list-item no-hover">
-          <div className="rabby-list-item-content border-0">
-            <div className="rabby-list-item-label">
+        <div className="lux-list-item no-hover">
+          <div className="lux-list-item-content border-0">
+            <div className="lux-list-item-label">
               {t('page.addressDetail.admins')}
               <div className="tabs-container">
                 <div className="tabs">
@@ -155,7 +155,7 @@ export const GnonisSafeInfo = ({
                   })}
                 </div>
               </div>
-              <div className="rabby-list-item-desc text-r-neutral-body">
+              <div className="lux-list-item-desc text-r-neutral-body">
                 <Trans t={t} i18nKey="page.addressDetail.tx-requires">
                   Any transaction requires{' '}
                   <span className="text-r-neutral-foot text-14">
@@ -167,7 +167,7 @@ export const GnonisSafeInfo = ({
                 </Trans>
               </div>
             </div>
-            <div className="rabby-list-item-extra flex gap-[4px]"></div>
+            <div className="lux-list-item-extra flex gap-[4px]"></div>
           </div>
         </div>
         {activeData?.data?.owners.map((owner, index) => (

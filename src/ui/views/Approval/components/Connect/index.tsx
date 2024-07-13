@@ -721,7 +721,7 @@ const Connect = ({ params: { icon, origin } }: ConnectProps) => {
                 type="primary"
                 ghost
                 className={clsx(
-                  'rabby-btn-ghost',
+                  'lux-btn-ghost',
                   'flex items-center justify-center gap-2'
                 )}
                 size="large"

@@ -156,7 +156,7 @@ const SwitchChain = ({ params }: { params: SwitchChainProps }) => {
           type="primary"
           size="large"
           ghost
-          className="rabby-btn-ghost w-[172px]"
+          className="lux-btn-ghost w-[172px]"
           onClick={() => rejectApproval()}
         >
           {t('global.cancelButton')}

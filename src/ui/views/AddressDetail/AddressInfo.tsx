@@ -115,12 +115,12 @@ const AddressInfo1 = ({ address, type, brandName, source }: Props) => {
   const { isDarkTheme } = useThemeMode();
 
   return (
-    <div className="rabby-list">
-      <div className="rabby-list-item">
-        <div className="rabby-list-item-content pr-11">
-          <div className="rabby-list-item-label">
+    <div className="lux-list">
+      <div className="lux-list-item">
+        <div className="lux-list-item-content pr-11">
+          <div className="lux-list-item-label">
             {t('page.addressDetail.address')}
-            <div className="rabby-list-item-desc flex gap-4 text-[12px]">
+            <div className="lux-list-item-desc flex gap-4 text-[12px]">
               {address}
               <img
                 src={IconCopy}
@@ -131,17 +131,17 @@ const AddressInfo1 = ({ address, type, brandName, source }: Props) => {
               />
             </div>
           </div>
-          <div className="rabby-list-item-extra"></div>
-          <div className="rabby-list-item-arrow"></div>
+          <div className="lux-list-item-extra"></div>
+          <div className="lux-list-item-arrow"></div>
         </div>
       </div>
-      <div className="rabby-list-item">
-        <div className="rabby-list-item-content">
-          <div className="rabby-list-item-label">
+      <div className="lux-list-item">
+        <div className="lux-list-item-content">
+          <div className="lux-list-item-label">
             {t('page.addressDetail.address-note')}
           </div>
           <div
-            className="rabby-list-item-extra flex gap-[10px]"
+            className="lux-list-item-extra flex gap-[10px]"
             onClick={handleEditMemo}
           >
             <div className="ellipsis" title={alias}>
@@ -151,25 +151,25 @@ const AddressInfo1 = ({ address, type, brandName, source }: Props) => {
           </div>
         </div>
       </div>
-      <div className="rabby-list-item">
-        <div className="rabby-list-item-content">
-          <div className="rabby-list-item-label">
+      <div className="lux-list-item">
+        <div className="lux-list-item-content">
+          <div className="lux-list-item-label">
             {t('page.addressDetail.assets')}
           </div>
           <div
-            className="rabby-list-item-extra truncate"
+            className="lux-list-item-extra truncate"
             title={splitNumberByStep((balance || 0).toFixed(0))}
           >
             ${splitNumberByStep((balance || 0).toFixed(0))}
           </div>
         </div>
       </div>
-      <div className="rabby-list-item">
-        <div className="rabby-list-item-content">
-          <div className="rabby-list-item-label">
+      <div className="lux-list-item">
+        <div className="lux-list-item-content">
+          <div className="lux-list-item-label">
             {t('page.addressDetail.qr-code')}
           </div>
-          <div className="rabby-list-item-extra">
+          <div className="lux-list-item-extra">
             <Popover
               placement="bottomLeft"
               // trigger="click"
@@ -188,12 +188,12 @@ const AddressInfo1 = ({ address, type, brandName, source }: Props) => {
           </div>
         </div>
       </div>
-      <div className="rabby-list-item">
-        <div className="rabby-list-item-content">
-          <div className="rabby-list-item-label">
+      <div className="lux-list-item">
+        <div className="lux-list-item-content">
+          <div className="lux-list-item-label">
             {t('page.addressDetail.source')}
           </div>
-          <div className="rabby-list-item-extra flex gap-[4px] max-w-full">
+          <div className="lux-list-item-extra flex gap-[4px] max-w-full">
             <ThemeIcon
               className="w-[16px] h-[16px]"
               src={
@@ -248,12 +248,12 @@ const AddressInfo1 = ({ address, type, brandName, source }: Props) => {
         )}
       </div>
       {accountInfo && (
-        <div className="rabby-list-item">
-          <div className="rabby-list-item-content">
-            <div className="rabby-list-item-label">
+        <div className="lux-list-item">
+          <div className="lux-list-item-content">
+            <div className="lux-list-item-label">
               {t('page.addressDetail.hd-path')}
             </div>
-            <div className="rabby-list-item-extra flex gap-[4px]">{`${accountInfo.hdPathTypeLabel} #${accountInfo.index}`}</div>
+            <div className="lux-list-item-extra flex gap-[4px]">{`${accountInfo.hdPathTypeLabel} #${accountInfo.index}`}</div>
           </div>
         </div>
       )}

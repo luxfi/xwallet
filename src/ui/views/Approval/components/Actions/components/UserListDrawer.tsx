@@ -24,11 +24,11 @@ const Footer = styled.div`
     border: 1px solid transparent;
     border-radius: 8px;
     background: var(--l-neutral-card1, #fff);
-    .rabby-checkbox__wrapper {
-      .rabby-checkbox {
+    .lux-checkbox__wrapper {
+      .lux-checkbox {
       }
       &.checked {
-        .rabby-checkbox {
+        .lux-checkbox {
         }
       }
     }

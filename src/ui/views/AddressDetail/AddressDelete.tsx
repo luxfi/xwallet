@@ -83,16 +83,16 @@ export const AddressDelete = ({
 
   return (
     <>
-      <div className="rabby-list">
+      <div className="lux-list">
         <div
-          className="rabby-list-item cursor-pointer"
+          className="lux-list-item cursor-pointer"
           onClick={handleClickDelete}
         >
-          <div className="rabby-list-item-content">
-            <div className="rabby-list-item-label" style={{ color: '#EC5151' }}>
+          <div className="lux-list-item-content">
+            <div className="lux-list-item-label" style={{ color: '#EC5151' }}>
               {t('page.addressDetail.delete-address')}
             </div>
-            <div className="rabby-list-item-arrow">
+            <div className="lux-list-item-arrow">
               <IconArrowRight
                 width={16}
                 height={16}
@@ -166,7 +166,7 @@ const AddressDeleteModal = ({
           type="primary"
           ghost
           size="large"
-          className={'rabby-btn-ghost'}
+          className={'lux-btn-ghost'}
           block
         >
           {t('page.manageAddress.confirm-delete')}
