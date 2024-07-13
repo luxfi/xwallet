@@ -314,7 +314,7 @@ export const QuoteList = (props: QuotesProps) => {
           <Checkbox
             checked={!!sortIncludeGasFee}
             onChange={setSwapSortIncludeGasFee}
-            className="text-12 text-rabby-neutral-body"
+            className="text-12 text-lux-neutral-body"
             width="14px"
             height="14px"
             type="square"

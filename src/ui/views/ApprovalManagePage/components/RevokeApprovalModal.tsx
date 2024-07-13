@@ -261,7 +261,7 @@ export const RevokeApprovalModal = (props: {
               className={clsx(
                 'flex justify-between items-center h-[100%]',
                 !isLastOne &&
-                  'border-b-rabby-neutral-line border-b-[0.5px] border-b-solid'
+                  'border-b-lux-neutral-line border-b-[0.5px] border-b-solid'
               )}
             >
               {'logo_url' in e ? (
@@ -387,7 +387,7 @@ export const RevokeApprovalModal = (props: {
             className={clsx(
               'flex justify-between items-center h-[100%]',
               !isLastOne &&
-                'border-b-rabby-neutral-line border-b-[0.5px] border-b-solid'
+                'border-b-lux-neutral-line border-b-[0.5px] border-b-solid'
             )}
           >
             <div className="flex w-full justify-between items-center">

@@ -369,7 +369,7 @@ const ClaimPoints = ({
       {!!debounceInvitedCode &&
         !codeStatus?.invite_code_exist &&
         !codeLoading && (
-          <div className="text-13 text-rabby-red-default mt-8 text-center">
+          <div className="text-13 text-lux-red-default mt-8 text-center">
             {t('page.luxPoints.claimModal.invalid-code')}
           </div>
         )}

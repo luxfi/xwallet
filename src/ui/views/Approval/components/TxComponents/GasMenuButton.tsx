@@ -194,7 +194,7 @@ export const GasMenuButton: React.FC<Props> = ({
                     }
                   }}
                   className={clsx({
-                    'bg-l-blue-light-1 border-r-blue-default': isSelected,
+                    'bg-l-blue-light-1 border-l-blue-default': isSelected,
                   })}
                 >
                   <GasLevelIcon isActive={isSelected} level={gas.level} />

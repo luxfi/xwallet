@@ -147,7 +147,7 @@ export const ImportCoboArgus = () => {
         className={clsx(
           'flex p-[20px]',
           'absolute bottom-0 left-0 right-0',
-          'border-t border-t-r-neutral-line',
+          'border-t border-t-l-neutral-line',
           'bg-l-neutral-bg-1'
         )}
       >

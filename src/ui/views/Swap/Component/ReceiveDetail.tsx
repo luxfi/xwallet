@@ -341,7 +341,7 @@ export const ReceiveDetails = (
                 </div>
               }
             >
-              <RcIconInfo className="text-rabby-neutral-foot w-14 h-14" />
+              <RcIconInfo className="text-lux-neutral-foot w-14 h-14" />
             </Tooltip>
           </div>
         </div>

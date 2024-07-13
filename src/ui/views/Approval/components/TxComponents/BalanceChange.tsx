@@ -251,7 +251,7 @@ const BalanceChange = ({
           {!hasChange && isSuccess && (
             <Col className="py-10">
               <Row isTitle className="gap-6 flex">
-                <NoBalanceSVG className="text-rabby-neutral-body" />
+                <NoBalanceSVG className="text-lux-neutral-body" />
                 <span className="text-[14px] font-medium text-l-neutral-title-1">
                   {t('page.signTx.balanceChange.noBalanceChange')}
                 </span>

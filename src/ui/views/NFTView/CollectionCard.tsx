@@ -34,7 +34,7 @@ export const CollectionCard: React.FC<Props> = ({
     >
       <section
         className={clsx(
-          'border-b-[0.5px] border-b-r-neutral-line',
+          'border-b-[0.5px] border-b-l-neutral-line',
           'mb-10 pb-10'
         )}
       >

@@ -133,7 +133,7 @@ const ProtocolItem = ({
             isShowChainTooltip={true}
           />
           <div
-            className="ml-[8px] flex items-center border-b-[1px] border-b-solid border-transparent hover:border-b-rabby-neutral-foot"
+            className="ml-[8px] flex items-center border-b-[1px] border-b-solid border-transparent hover:border-b-lux-neutral-foot"
             onClick={(evt) => {
               evt.stopPropagation();
               openInTab(protocol.site_url, false);
