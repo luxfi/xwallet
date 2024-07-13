@@ -32,7 +32,7 @@ export const NFTBalanceChangeItem = ({
         content={token?.content}
         type={token?.content_type}
       ></NFTAvatar>
-      <div className="text-r-neutral-title-1 font-medium">
+      <div className="text-l-neutral-title-1 font-medium">
         {prefix} {formatAmount(item.amount, 0)} {name}
       </div>
     </div>

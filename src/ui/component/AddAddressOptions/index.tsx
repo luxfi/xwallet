@@ -352,7 +352,7 @@ const AddAddressOptions = () => {
     <div className="lux-container pb-[12px]" ref={rootRef}>
       {[createImportAddrList, centerList].map((items, index) => (
         <div
-          className="bg-r-neutral-card-1 rounded-[6px] mb-[12px]"
+          className="bg-l-neutral-card-1 rounded-[6px] mb-[12px]"
           key={index}
         >
           {items.map((e) => {
@@ -363,7 +363,7 @@ const AddAddressOptions = () => {
                 leftIcon={e.leftIcon}
                 onClick={e.onClick}
               >
-                <div className="pl-[12px] text-13 leading-[15px] text-r-neutral-title-1 font-medium">
+                <div className="pl-[12px] text-13 leading-[15px] text-l-neutral-title-1 font-medium">
                   {e.content}
                 </div>
               </Item>
@@ -372,7 +372,7 @@ const AddAddressOptions = () => {
         </div>
       ))}
 
-      <div className="bg-r-neutral-card-1 rounded-[6px] mb-[12px]">
+      <div className="bg-l-neutral-card-1 rounded-[6px] mb-[12px]">
         {renderList.map((item) => {
           const isSelected = selectedWalletType === item.key;
           return (
@@ -392,7 +392,7 @@ const AddAddressOptions = () => {
                   );
                 }}
               >
-                <div className="pl-[12px] text-13 leading-[15px] text-r-neutral-title-1 font-medium">
+                <div className="pl-[12px] text-13 leading-[15px] text-l-neutral-title-1 font-medium">
                   {item.title}
                 </div>
                 <div className="ml-auto relative w-[52px] h-[20px]">
@@ -411,7 +411,7 @@ const AddAddressOptions = () => {
               </Item>
               <div
                 className={clsx(
-                  'mx-[16px] bg-r-neutral-card-2 rounded-[6px] transition-all overflow-hidden',
+                  'mx-[16px] bg-l-neutral-card-2 rounded-[6px] transition-all overflow-hidden',
                   !isSelected ? 'max-h-0' : 'max-h-[500px]'
                 )}
               >
@@ -439,7 +439,7 @@ const AddAddressOptions = () => {
                         rightIcon={null}
                         onClick={v.onClick}
                       >
-                        <span className="text-12 font-medium text-r-neutral-title-1 mt-[8px]">
+                        <span className="text-12 font-medium text-l-neutral-title-1 mt-[8px]">
                           {v.content}
                         </span>
                       </Item>
@@ -452,7 +452,7 @@ const AddAddressOptions = () => {
         })}
       </div>
 
-      <div className="bg-r-neutral-card-1 rounded-[6px]">
+      <div className="bg-l-neutral-card-1 rounded-[6px]">
         {bottomList.map((e) => {
           return (
             <Item
@@ -462,10 +462,10 @@ const AddAddressOptions = () => {
               onClick={e.onClick}
             >
               <div className="flex flex-col pl-[12px]">
-                <div className="text-13 leading-[15px] text-r-neutral-title-1 font-medium">
+                <div className="text-13 leading-[15px] text-l-neutral-title-1 font-medium">
                   {e.content}
                 </div>
-                <div className="text-12 text-r-neutral-body">{e.subText}</div>
+                <div className="text-12 text-l-neutral-body">{e.subText}</div>
               </div>
             </Item>
           );

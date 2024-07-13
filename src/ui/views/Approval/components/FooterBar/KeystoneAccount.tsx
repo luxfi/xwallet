@@ -31,7 +31,7 @@ export const KeystoneAccount: React.FC = () => {
               onClick={onClickConnect}
               className={clsx(
                 'underline cursor-pointer',
-                'text-14 text-r-neutral-body'
+                'text-14 text-l-neutral-body'
               )}
             >
               {t('page.signFooterBar.connectButton')}
@@ -41,7 +41,7 @@ export const KeystoneAccount: React.FC = () => {
 
       default:
         return (
-          <div className="text-r-neutral-body">
+          <div className="text-l-neutral-body">
             {t('page.signFooterBar.keystoneConnected')}
           </div>
         );

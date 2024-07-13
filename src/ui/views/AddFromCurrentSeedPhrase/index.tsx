@@ -18,7 +18,7 @@ export const AddFromCurrentSeedPhrase = () => {
   const { handleAddSeedPhraseAddress, seedPhraseList } = UseSeedPhrase();
 
   return (
-    <div className="flex flex-col min-h-full bg-r-neutral-bg-2 px-20 ">
+    <div className="flex flex-col min-h-full bg-l-neutral-bg-2 px-20 ">
       <PageHeader className="pt-[20px]" fixed>
         {t('page.newAddress.addFromCurrentSeedPhrase')}
       </PageHeader>
@@ -42,11 +42,11 @@ const Group = ({
 }) => {
   const { t } = useTranslation();
   return (
-    <div className="relative w-full p-[16px] bg-r-neutral-card-1 overflow-hidden rounded-[6px] pt-0">
-      <div className="h-[48px] flex items-center mb-14 text-r-neutral-title1 text-[15px] font-medium">
+    <div className="relative w-full p-[16px] bg-l-neutral-card-1 overflow-hidden rounded-[6px] pt-0">
+      <div className="h-[48px] flex items-center mb-14 text-l-neutral-title1 text-[15px] font-medium">
         Seed Phrase {index + 1}
       </div>
-      <div className="absolute left-0 top-[48px] w-full h-0 border-b-[0.5px] border-rabby-neutral-line" />
+      <div className="absolute left-0 top-[48px] w-full h-0 border-b-[0.5px] border-lux-neutral-line" />
 
       <div className="space-y-[20px]">
         {data.list.map((e) => (
@@ -58,11 +58,11 @@ const Group = ({
         onClick={() => onAdd(data.publicKey!)}
         type="primary"
         className={clsx(
-          'bg-rabby-blue-light1 w-full shadow-none h-[40px] border-transparent hover:border-rabby-blue-default hover:bg-r-blue-light-2 hover:before:hidden',
+          'bg-lux-blue-light1 w-full shadow-none h-[40px] border-transparent hover:border-lux-blue-default hover:bg-l-blue-light-2 hover:before:hidden',
           data.list.length ? 'mt-[20px]' : 'mt-[6px]'
         )}
       >
-        <div className="flex items-center justify-center space-x-6 text-r-blue-default">
+        <div className="flex items-center justify-center space-x-6 text-l-blue-default">
           <IconAdd />
           <span
             className="text-[13px] font-medium"
@@ -113,19 +113,19 @@ const Item = ({ item }: { item: DisplayedAccount }) => {
         viewBox="0 0 20 20"
       />
       <div className="flex flex-col ml-[8px]">
-        <div className="text-r-neutral-title1 text-[13px] font-medium">
+        <div className="text-l-neutral-title1 text-[13px] font-medium">
           {alianName}
         </div>
         <div className="flex items-center">
           <AddressViewer
             address={address}
             showArrow={false}
-            className="text-[12px] text-r-neutral-body"
+            className="text-[12px] text-l-neutral-body"
           />
           <Copy variant="address" data={address} className="w-14 h-14 ml-4" />
         </div>
       </div>
-      <div className="ml-auto text-r-neutral-body text-[12px] ">
+      <div className="ml-auto text-l-neutral-body text-[12px] ">
         {formatUsdValue(balance || 0)}
       </div>
     </div>

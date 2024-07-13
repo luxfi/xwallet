@@ -142,7 +142,7 @@ const ProtocolItem = ({
             <span className="name inline-flex items-center">
               {protocol.name}
             </span>
-            <RcOpenExternalCC className="ml-[4px] w-[12px] h-[12px] text-r-neutral-foot" />
+            <RcOpenExternalCC className="ml-[4px] w-[12px] h-[12px] text-l-neutral-foot" />
           </div>
           <div className="flex items-center justify-end flex-1">
             <span className="net-worth">{protocol._netWorth}</span>

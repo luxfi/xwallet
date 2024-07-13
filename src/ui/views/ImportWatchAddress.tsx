@@ -222,7 +222,7 @@ const ImportWatchAddress = () => {
       nextDisabled={!isValidAddr}
     >
       {contextHolder}
-      <header className="create-new-header create-password-header h-[264px] res dark:bg-r-blue-disable">
+      <header className="create-new-header create-password-header h-[264px] res dark:bg-l-blue-disable">
         <div className="lux-container">
           <img
             className="icon-back z-10 relative"
@@ -316,7 +316,7 @@ const ImportWatchAddress = () => {
             <div className="qrcode">
               <QRCode value={walletconnectUri} size={176} />
             </div>
-            <div className="text-12 text-r-neutral-foot text-center mt-12">
+            <div className="text-12 text-l-neutral-foot text-center mt-12">
               {t('page.newAddress.addContacts.walletConnectVPN')}
             </div>
           </>

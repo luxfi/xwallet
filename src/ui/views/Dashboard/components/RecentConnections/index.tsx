@@ -103,7 +103,7 @@ const RecentConnections = ({
       onOk: removeAll,
       autoFocusButton: null,
       closeIcon: (
-        <SvgIconCross className="w-14 fill-current text-r-neutral-body" />
+        <SvgIconCross className="w-14 fill-current text-l-neutral-body" />
       ),
       content: (
         <div>
@@ -168,8 +168,8 @@ const RecentConnections = ({
           </div>
           <footer
             className={clsx(
-              'absolute z-10 bottom-0 left-0 right-0 bg-r-neutral-bg1',
-              'border-t-[0.5px] border-t-solid border-t-rabby-neutral-line px-[20px]',
+              'absolute z-10 bottom-0 left-0 right-0 bg-l-neutral-bg1',
+              'border-t-[0.5px] border-t-solid border-t-lux-neutral-line px-[20px]',
               'py-[16px]'
             )}
           >

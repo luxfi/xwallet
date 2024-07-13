@@ -67,7 +67,7 @@ export const AccountInfo: React.FC<Props> = ({
   return (
     <div
       className={clsx(
-        'bg-r-neutral-card-3 rounded-[8px]',
+        'bg-l-neutral-card-3 rounded-[8px]',
         'py-[12px] px-[16px] mb-[12px]',
         'space-y-6'
       )}
@@ -77,7 +77,7 @@ export const AccountInfo: React.FC<Props> = ({
           <Tooltip title={nickname}>
             <div
               className={clsx(
-                'text-r-neutral-body text-[15px]',
+                'text-l-neutral-body text-[15px]',
                 'max-w-[170px] overflow-ellipsis whitespace-nowrap overflow-hidden',
                 'leading-[20px]'
               )}
@@ -88,12 +88,12 @@ export const AccountInfo: React.FC<Props> = ({
           <AddressViewer
             showArrow={false}
             address={account.address}
-            className={clsx('text-13 text-r-neutral-foot')}
+            className={clsx('text-13 text-l-neutral-foot')}
           />
         </div>
         {isTestnet ? null : (
           <div
-            className="text-13 font-normal text-r-neutral-foot"
+            className="text-13 font-normal text-l-neutral-foot"
             title={displayBalance}
           >
             ${displayBalance}

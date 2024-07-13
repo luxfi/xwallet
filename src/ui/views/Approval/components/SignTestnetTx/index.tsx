@@ -693,8 +693,8 @@ export const SignTestnetTx = ({ params, origin }: SignTxProps) => {
               'w-[186px]',
               'ml-auto mr-[-20px] mt-[-116px]',
               'px-[16px] py-[12px] rotate-[-23deg]',
-              'border-rabby-neutral-title1 border-[1px] rounded-[6px]',
-              'text-r-neutral-title1 text-[20px] leading-[24px]',
+              'border-lux-neutral-title1 border-[1px] rounded-[6px]',
+              'text-l-neutral-title1 text-[20px] leading-[24px]',
               'opacity-30'
             )}
           >

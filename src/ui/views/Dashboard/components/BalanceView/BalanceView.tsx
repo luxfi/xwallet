@@ -441,7 +441,7 @@ const BalanceView = ({
             ) : (
               <span
                 className={clsx(
-                  'text-14 text-r-neutral-title-2',
+                  'text-14 text-l-neutral-title-2',
                   !currentHover && 'opacity-70'
                 )}
               >

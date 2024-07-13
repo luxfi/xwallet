@@ -32,7 +32,7 @@ export const ImKeyAccount: React.FC = () => {
               onClick={onClickConnect}
               className={clsx(
                 'underline cursor-pointer',
-                'text-14 text-r-neutral-body'
+                'text-14 text-l-neutral-body'
               )}
             >
               {t('page.signFooterBar.connectButton')}

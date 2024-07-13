@@ -121,7 +121,7 @@ function ModalConfirmAllowTransfer({
         <p
           onClick={() => setConfirmToAddToWhitelist((prev) => !prev)}
           className={clsx(
-            'text-center text-[12px] cursor-pointer text-r-neutral-foot',
+            'text-center text-[12px] cursor-pointer text-l-neutral-foot',
             !showAddToWhitelist && 'hidden'
           )}
         >

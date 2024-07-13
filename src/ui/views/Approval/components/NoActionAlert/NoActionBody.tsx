@@ -22,10 +22,10 @@ export const NoActionBody: React.FC<Props> = ({
 
   return (
     <>
-      <div className="h-[0.5px] bg-r-neutral-line w-full my-12" />
+      <div className="h-[0.5px] bg-l-neutral-line w-full my-12" />
       <div className="leading-[16px]">
         {isRequested ? (
-          <div className="text-r-neutral-foot text-center">
+          <div className="text-l-neutral-foot text-center">
             {requestedCount > 1
               ? t('page.switchChain.requestsReceivedPlural', {
                   count: requestedCount,
@@ -50,7 +50,7 @@ export const NoActionBody: React.FC<Props> = ({
             ) : (
               <IconEmail className="w-16" />
             )}
-            <span className="text-r-blue-default">
+            <span className="text-l-blue-default">
               {t('page.switchChain.requestLuxToSupport')}
             </span>
           </div>

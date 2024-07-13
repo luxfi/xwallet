@@ -110,7 +110,7 @@ export const ImportCoboArgus = () => {
   }, []);
 
   return (
-    <section className="bg-r-neutral-bg-2 relative">
+    <section className="bg-l-neutral-bg-2 relative">
       {contextHolder}
       <Header hasBack={!isByImportAddressEvent}>
         {step === 'select-chain' &&
@@ -148,7 +148,7 @@ export const ImportCoboArgus = () => {
           'flex p-[20px]',
           'absolute bottom-0 left-0 right-0',
           'border-t border-t-r-neutral-line',
-          'bg-r-neutral-bg-1'
+          'bg-l-neutral-bg-1'
         )}
       >
         <Button

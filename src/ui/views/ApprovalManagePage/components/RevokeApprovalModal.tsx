@@ -136,7 +136,7 @@ function ApprovalAmountInfo({
             align={{ offset: [0, 3] }}
             arrowPointAtCenter
           >
-            <span className="text-12 font-medium text-r-neutral-body">
+            <span className="text-12 font-medium text-l-neutral-body">
               {amountText}
             </span>
           </Tooltip>
@@ -156,7 +156,7 @@ function ApprovalAmountInfo({
           align={{ offset: [0, 3] }}
           arrowPointAtCenter
         >
-          <div className="text-12 font-nomral text-r-neutral-foot inline-flex justify-end">
+          <div className="text-12 font-nomral text-l-neutral-foot inline-flex justify-end">
             <span className="whitespace-pre max-w-[8em] overflow-hidden overflow-ellipsis flex-shrink-1">
               {balanceNumText}
             </span>
@@ -243,9 +243,9 @@ export const RevokeApprovalModal = (props: {
           <div
             key={index}
             className={clsx(
-              'relative px-[16px] h-[56px] bg-r-neutral-card1 cursor-pointer border border-transparent  hover:border-rabby-blue-default  hover:bg-r-blue-light1 hover:bg-opacity-[0.1] hover:rounded-[6px] hover:z-10',
+              'relative px-[16px] h-[56px] bg-l-neutral-card1 cursor-pointer border border-transparent  hover:border-lux-blue-default  hover:bg-l-blue-light1 hover:bg-opacity-[0.1] hover:rounded-[6px] hover:z-10',
               isLastOne && 'rounded-b-[6px]',
-              'first:mt-0 first:rounded-t-[6px] dark:bg-[#292c37] dark:hover:bg-r-blue-light1'
+              'first:mt-0 first:rounded-t-[6px] dark:bg-[#292c37] dark:hover:bg-l-blue-light1'
             )}
             onClick={(e) => {
               if ((e.target as HTMLElement)?.id !== 'copyIcon') {
@@ -286,7 +286,7 @@ export const RevokeApprovalModal = (props: {
               )}
               {'spender' in e ? (
                 <div className="flex flex-col ml-[8px]">
-                  <div className="text-13 text-r-neutral-title1 font-medium leading-[15px] inline-flex items-center justify-start">
+                  <div className="text-13 text-l-neutral-title1 font-medium leading-[15px] inline-flex items-center justify-start">
                     <span className="inline-block whitespace-nowrap max-w-[180px] overflow-hidden overflow-ellipsis">
                       {itemName}
                     </span>
@@ -314,7 +314,7 @@ export const RevokeApprovalModal = (props: {
                   />
                 </div>
               ) : (
-                <div className="ml-[8px] text-13 text-r-neutral-title1 font-medium leading-[15px]">
+                <div className="ml-[8px] text-13 text-l-neutral-title1 font-medium leading-[15px]">
                   {e.symbol}
                 </div>
               )}
@@ -370,7 +370,7 @@ export const RevokeApprovalModal = (props: {
         <div
           key={spender.id}
           className={clsx(
-            'relative px-[16px] bg-r-neutral-card1 cursor-pointer border border-transparent hover:border-rabby-blue-default  hover:bg-r-blue-light1 hover:bg-opacity-[0.1] hover:rounded-[6px] hover:z-10',
+            'relative px-[16px] bg-l-neutral-card1 cursor-pointer border border-transparent hover:border-lux-blue-default  hover:bg-l-blue-light1 hover:bg-opacity-[0.1] hover:rounded-[6px] hover:z-10',
             isLastOne && 'rounded-b-[6px]',
             'first:rounded-t-[6px]',
             !risky ? 'h-[51px] ' : 'flex-col pt-[13px]'
@@ -399,7 +399,7 @@ export const RevokeApprovalModal = (props: {
                 chainServerId={item.chain}
               />
               <div className="flex flex-col ml-[12px]">
-                <div className="text-13 text-r-neutral-title1 font-medium leading-[15px] mb-2">
+                <div className="text-13 text-l-neutral-title1 font-medium leading-[15px] mb-2">
                   {fullName}
                 </div>
                 <ApprovalsNameAndAddr
@@ -499,7 +499,7 @@ export const RevokeApprovalModal = (props: {
         </div>
 
         <section className="mb-[6px] flex justify-between items-center flex-shrink-0">
-          <span className="text-12 text-r-neutral-title1">{subTitle}</span>
+          <span className="text-12 text-l-neutral-title1">{subTitle}</span>
           <div
             className="w-[67px] h-[22px] text-12 cursor-pointer flex items-center justify-center bg-blue-light bg-opacity-[0.2] text-center text-blue-light rounded-[2px]"
             onClick={handleSelectAll}
@@ -522,7 +522,7 @@ export const RevokeApprovalModal = (props: {
       </div>
       <div
         className={clsx(
-          'absolute flex flex-col items-center justify-center bg-r-neutral-card1 left-0 bottom-0 w-full z-[99999] border-t border-rabby-neutral-line'
+          'absolute flex flex-col items-center justify-center bg-l-neutral-card1 left-0 bottom-0 w-full z-[99999] border-t border-lux-neutral-line'
         )}
         style={{ height: BOTTOM_BUTTON_AREA }}
       >

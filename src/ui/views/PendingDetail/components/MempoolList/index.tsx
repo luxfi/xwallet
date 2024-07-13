@@ -25,10 +25,10 @@ export const MempoolList = ({
 
   const columns: ColumnsType<MempoolCheckDetail> = [
     {
-      title: <div className="text-r-neutral-foot">#</div>,
+      title: <div className="text-l-neutral-foot">#</div>,
       width: 112,
       render(value, record, index) {
-        return <div className="text-r-neutral-foot">{index + 1}</div>;
+        return <div className="text-l-neutral-foot">{index + 1}</div>;
       },
     },
 
@@ -37,7 +37,7 @@ export const MempoolList = ({
       width: 294,
       render(value, record, index) {
         return (
-          <div className="font-medium text-r-neutral-title-1">
+          <div className="font-medium text-l-neutral-title-1">
             {record.name}
           </div>
         );
@@ -49,7 +49,7 @@ export const MempoolList = ({
       width: 348,
       render(value, record, index) {
         return (
-          <div className="font-medium text-r-neutral-title-1">
+          <div className="font-medium text-l-neutral-title-1">
             {record.operator}
           </div>
         );
@@ -61,15 +61,15 @@ export const MempoolList = ({
     //   render(value, record, index) {
     //     return (
     //       <div className="flex items-center gap-[16px]">
-    //         <div className="w-[80px] bg-r-neutral-line h-[3px] rounded-[2px]">
+    //         <div className="w-[80px] bg-l-neutral-line h-[3px] rounded-[2px]">
     //           <div
     //             style={{
     //               width: (record.packed_rate || 0) * 100 + '%',
     //             }}
-    //             className="bg-r-blue-default h-[3px] rounded-[2px] opacity-50"
+    //             className="bg-l-blue-default h-[3px] rounded-[2px] opacity-50"
     //           ></div>
     //         </div>
-    //         <div className="font-medium text-r-neutral-foot">
+    //         <div className="font-medium text-l-neutral-foot">
     //           {((record.packed_rate || 0) * 100).toFixed(2)}%
     //         </div>
     //       </div>
@@ -83,19 +83,19 @@ export const MempoolList = ({
         return (
           <div>
             {record.check_success ? (
-              <div className="flex items-center gap-[6px] font-medium text-r-blue-default">
+              <div className="flex items-center gap-[6px] font-medium text-l-blue-default">
                 <img src={IconCheck} alt="" />
                 {t('page.pendingDetail.MempoolList.txStatus.appeared')}
               </div>
             ) : null}
             {record.check_success === false ? (
-              <div className="flex items-center gap-[6px] text-r-neutral-body">
+              <div className="flex items-center gap-[6px] text-l-neutral-body">
                 <img src={IconClock} alt="" />
                 {t('page.pendingDetail.MempoolList.txStatus.appearedOnce')}
               </div>
             ) : null}
             {record.check_success == null ? (
-              <div className="flex items-center gap-[6px] text-r-neutral-foot">
+              <div className="flex items-center gap-[6px] text-l-neutral-foot">
                 <img src={iconSpin} alt="" className="animate-spin" />
                 {t('page.pendingDetail.MempoolList.txStatus.notFound')}
               </div>

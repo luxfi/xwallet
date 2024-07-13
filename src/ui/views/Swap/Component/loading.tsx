@@ -27,7 +27,7 @@ export const QuoteLoading = ({
         )}
       >
         <QuoteLogo isLoading={true} logo={logo} />
-        <span className="ml-[8px] text-13 font-medium text-r-neutral-title-1 flex items-center">
+        <span className="ml-[8px] text-13 font-medium text-l-neutral-title-1 flex items-center">
           {name}
         </span>
         <div className="ml-auto flex items-center">
@@ -46,13 +46,13 @@ export const QuoteLoading = ({
     <div
       className={clsx(
         'h-[80px] flex items-center px-16 rounded-[6px]',
-        'border-solid border border-rabby-neutral-line'
+        'border-solid border border-lux-neutral-line'
       )}
     >
       <div className="flex flex-col gap-10">
         <div className="flex items-center" gap-4>
           <QuoteLogo isLoading={true} logo={logo} loaded />
-          <span className="ml-[8px] text-16 font-medium text-r-neutral-title-1">
+          <span className="ml-[8px] text-16 font-medium text-l-neutral-title-1">
             {name}
           </span>
         </div>

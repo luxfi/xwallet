@@ -145,7 +145,7 @@ const UserListDrawer = ({
           className="item"
           onClick={() => onChange({ onBlacklist: false, onWhitelist: true })}
         >
-          <div className="text-r-green-default">
+          <div className="text-l-green-default">
             {t('page.connect.trusted')}
           </div>
           <div>
@@ -161,7 +161,7 @@ const UserListDrawer = ({
           className="item"
           onClick={() => onChange({ onBlacklist: true, onWhitelist: false })}
         >
-          <div className="text-r-red-default">{t('page.connect.blocked')}</div>
+          <div className="text-l-red-default">{t('page.connect.blocked')}</div>
           <div>
             <Checkbox
               checked={onBlacklist}

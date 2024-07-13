@@ -20,21 +20,21 @@ const Activities = () => {
       <PageHeader
         canBack={false}
         closeable
-        wrapperClassName="bg-r-neutral-bg-2"
+        wrapperClassName="bg-l-neutral-bg-2"
         fixed
       >
         {t('page.activities.title')}
       </PageHeader>
-      <div className="bg-r-neutral-bg-2 mx-[-20px] sticky top-[64px] z-10">
+      <div className="bg-l-neutral-bg-2 mx-[-20px] sticky top-[64px] z-10">
         <PillsSwitch
           value={selectedTab}
           onTabChange={(v) => {
             setSelectedTab(v);
           }}
-          className="flex bg-r-neutral-line w-[228px] mx-[auto] my-[0] h-[32px] p-[2px] mb-[14px]"
+          className="flex bg-l-neutral-line w-[228px] mx-[auto] my-[0] h-[32px] p-[2px] mb-[14px]"
           itemClassname={clsx('w-[112px] py-[7px] text-[12px]')}
-          itemClassnameInActive={clsx('text-r-neutral-body')}
-          itemClassnameActive="bg-r-neutral-bg-1"
+          itemClassnameInActive={clsx('text-l-neutral-body')}
+          itemClassnameActive="bg-l-neutral-bg-1"
           options={
             [
               {

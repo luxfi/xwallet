@@ -153,7 +153,7 @@ export const HDManager: React.FC<StateProviderProps> = ({
             {typeof Logo === 'string' ? (
               <img src={Logo} className="icon" />
             ) : (
-              <Logo className="icon text-r-neutral-body" />
+              <Logo className="icon text-l-neutral-body" />
             )}
             <span className="title">{name}</span>
           </div>

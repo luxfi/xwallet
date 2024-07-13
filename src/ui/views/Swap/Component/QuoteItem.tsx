@@ -312,7 +312,7 @@ export const DexQuoteItem = (
 
     if (!quote?.toTokenAmount) {
       right = (
-        <div className="text-r-neutral-foot text-[13px] font-normal">
+        <div className="text-l-neutral-foot text-[13px] font-normal">
           {t('page.swap.unable-to-fetch-the-price')}
         </div>
       );
@@ -324,7 +324,7 @@ export const DexQuoteItem = (
       if (!preExecResult && !inSufficient) {
         center = null;
         right = (
-          <div className="text-r-neutral-foot text-[13px] font-normal">
+          <div className="text-l-neutral-foot text-[13px] font-normal">
             {t('page.swap.fail-to-simulate-transaction')}
           </div>
         );
@@ -336,7 +336,7 @@ export const DexQuoteItem = (
       disable = true;
       center = null;
       right = (
-        <div className="text-r-neutral-foot text-[13px] font-normal">
+        <div className="text-l-neutral-foot text-[13px] font-normal">
           {t('page.swap.security-verification-failed')}
         </div>
       );
@@ -584,7 +584,7 @@ export const CexQuoteItem = (props: {
 
     if (!data?.receive_token?.amount) {
       right = (
-        <div className="text-r-neutral-foot text-[13px] font-normal">
+        <div className="text-l-neutral-foot text-[13px] font-normal">
           {t('page.swap.this-token-pair-is-not-supported')}
         </div>
       );
@@ -730,7 +730,7 @@ function DEXItem(props: {
       <div className="flex flex-col gap-10">
         <div className="flex items-center gap-8 relative">
           <QuoteLogo loaded logo={props.logo} isLoading={props.isLoading} />
-          <span className="text-[16px] font-medium text-r-neutral-title-1">
+          <span className="text-[16px] font-medium text-l-neutral-title-1">
             {props.name}
           </span>
           {!!props.shouldApproveToken && (
@@ -747,7 +747,7 @@ function DEXItem(props: {
         {!!props?.gasUsd && (
           <div className="flex items-center gap-4">
             <img src={ImgGas} className="w-16 h16" />
-            <span className="text-13 text-r-neutral-foot">{props?.gasUsd}</span>
+            <span className="text-13 text-l-neutral-foot">{props?.gasUsd}</span>
           </div>
         )}
       </div>
@@ -771,12 +771,12 @@ function DEXItem(props: {
         )}
         <div className="flex items-center gap-6 justify-end text-13 font-medium">
           {!props.disable && (
-            <span className="text-r-neutral-foot font-normal">
+            <span className="text-l-neutral-foot font-normal">
               ≈{props.receivedTokenUsd}
             </span>
           )}
 
-          <span className="text-r-red-default">{props.diffContent}</span>
+          <span className="text-l-red-default">{props.diffContent}</span>
         </div>
       </div>
     </>

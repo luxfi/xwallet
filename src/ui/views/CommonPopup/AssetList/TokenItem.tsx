@@ -42,10 +42,10 @@ const TokenItemAsset: React.FC<Props> = ({ item }) => {
         </TooltipWithMagnetArrow>
       </div>
       <div className="flex flex-col gap-4 overflow-hidden">
-        <span className="text-r-neutral-title-1 text-13 font-medium leading-[15px]">
+        <span className="text-l-neutral-title-1 text-13 font-medium leading-[15px]">
           {item._amountStr}
         </span>
-        <span className="text-r-neutral-body text-12 leading-[14px] whitespace-nowrap overflow-ellipsis overflow-hidden">
+        <span className="text-l-neutral-body text-12 leading-[14px] whitespace-nowrap overflow-ellipsis overflow-hidden">
           {item.symbol}
         </span>
       </div>
@@ -57,7 +57,7 @@ const TokenItemPrice: React.FC<Props> = ({ item }) => {
   return (
     <TCell
       className={clsx(
-        'py-8 text-r-neutral-body text-12 w-[90px]',
+        'py-8 text-l-neutral-body text-12 w-[90px]',
         'flex flex-col gap-4'
       )}
     >
@@ -79,7 +79,7 @@ const TokenItemPrice: React.FC<Props> = ({ item }) => {
 
 const TokenItemUSDValue: React.FC<Props> = ({ item }) => {
   return (
-    <TCell className="py-8 text-r-neutral-title-1 text-13 font-medium text-right w-[110px]">
+    <TCell className="py-8 text-l-neutral-title-1 text-13 font-medium text-right w-[110px]">
       {item._usdValueStr || '<$0.01'}
     </TCell>
   );

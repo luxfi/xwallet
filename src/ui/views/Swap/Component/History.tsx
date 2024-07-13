@@ -45,7 +45,7 @@ const TokenCost = ({
   return (
     <div
       className={clsx(
-        'flex items-center text-13 text-r-neutral-title-1',
+        'flex items-center text-13 text-l-neutral-title-1',
         !actual && 'opacity-60'
       )}
     >
@@ -124,12 +124,12 @@ const Transaction = forwardRef<HTMLDivElement, TransactionProps>(
     return (
       <div
         className={clsx(
-          'bg-r-neutral-card-2 rounded-[6px] p-12 relative text-12 text-r-neutral-body'
+          'bg-l-neutral-card-2 rounded-[6px] p-12 relative text-12 text-l-neutral-body'
         )}
         ref={ref}
       >
-        <div className="flex justify-between items-center pb-8 border-b-[0.5px] border-solid border-rabby-neutral-line">
-          <div className="flex items-center text-12 font-medium text-r-neutral-title-1">
+        <div className="flex justify-between items-center pb-8 border-b-[0.5px] border-solid border-lux-neutral-line">
+          <div className="flex items-center text-12 font-medium text-l-neutral-title-1">
             {isPending && (
               <TooltipWithMagnetArrow title={t('page.swap.pendingTip')}>
                 <div className="flex items-center">
@@ -153,7 +153,7 @@ const Transaction = forwardRef<HTMLDivElement, TransactionProps>(
             <span>{!isPending && sinceTime(time)}</span>
           </div>
           {!!targetDex && (
-            <span className="text-12 font-medium text-r-neutral-title-1">
+            <span className="text-12 font-medium text-l-neutral-title-1">
               {targetDex}
             </span>
           )}
@@ -199,7 +199,7 @@ const Transaction = forwardRef<HTMLDivElement, TransactionProps>(
           </div>
         </div>
 
-        <div className="flex items-center text-12 text-r-neutral-foot pt-10 border-t-[0.5px] border-solid border-rabby-neutral-line">
+        <div className="flex items-center text-12 text-l-neutral-foot pt-10 border-t-[0.5px] border-solid border-lux-neutral-line">
           <span className="cursor-pointer" onClick={gotoScan}>
             {chainName}:{' '}
             <span className="underline underline-r-neutral-foot">
@@ -234,7 +234,7 @@ const HistoryList = () => {
           src={ImgEmpty}
           className="w-[52px] h-[52px] mx-auto mt-[112px] mb-24"
         />
-        <p className="text-center text-r-neutral-foot text-14">
+        <p className="text-center text-l-neutral-foot text-14">
           {t('page.swap.no-transaction-records')}
         </p>
       </div>

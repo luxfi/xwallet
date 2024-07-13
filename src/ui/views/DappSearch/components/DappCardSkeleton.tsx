@@ -15,26 +15,26 @@ export const DappCardSkeleton = () => {
   return (
     <Wraper
       className={clsx(
-        'p-[16px] bg-r-neutral-card1 cursor-pointer rounded-[8px]'
+        'p-[16px] bg-l-neutral-card1 cursor-pointer rounded-[8px]'
       )}
     >
       <div className="flex items-center pb-[4px]">
         <div className="flex items-center gap-[12px]">
           <Skeleton.Avatar
             active={true}
-            className="bg-r-neutral-card3, w-[32px] h-[32px]"
+            className="bg-l-neutral-card3, w-[32px] h-[32px]"
           ></Skeleton.Avatar>
           <div className="min-w-0">
-            <div className="text-r-neutral-title1 font-medium text-[16px] leading-[19px] mb-[2px]">
+            <div className="text-l-neutral-title1 font-medium text-[16px] leading-[19px] mb-[2px]">
               <Skeleton.Input
                 active={true}
-                className="bg-r-neutral-card3, rounded-[2px] w-[107px] h-[18px]"
+                className="bg-l-neutral-card3, rounded-[2px] w-[107px] h-[18px]"
               ></Skeleton.Input>
             </div>
-            <div className="text-r-neutral-foot text-[13px] leading-[16px]">
+            <div className="text-l-neutral-foot text-[13px] leading-[16px]">
               <Skeleton.Input
                 active={true}
-                className="bg-r-neutral-card3, rounded-[2px] w-[85px] h-[14px]"
+                className="bg-l-neutral-card3, rounded-[2px] w-[85px] h-[14px]"
               ></Skeleton.Input>
             </div>
           </div>
@@ -42,7 +42,7 @@ export const DappCardSkeleton = () => {
       </div>
       <Skeleton.Input
         active={true}
-        className="bg-r-neutral-card3, rounded-[2px] w-full h-[20px]"
+        className="bg-l-neutral-card3, rounded-[2px] w-full h-[20px]"
       ></Skeleton.Input>
     </Wraper>
   );

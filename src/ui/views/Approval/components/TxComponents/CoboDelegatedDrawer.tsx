@@ -134,7 +134,7 @@ export const CoboDelegatedDrawer = ({
         ) : (
           <div className="text-center mt-12">
             <img className="w-[40px] mb-16 mx-auto" src={EmptyIcon} />
-            <p className="text-20 leading-[23px] mb-12 text-r-neutral-title-1">
+            <p className="text-20 leading-[23px] mb-12 text-l-neutral-title-1">
               {t('page.signTx.noDelegatedAddress')}
             </p>
           </div>

@@ -346,7 +346,7 @@ const AddAsset = ({ params }: { params: AddAssetProps }) => {
         <div className="token">
           {token && (
             <>
-              <div className="token-info text-r-neutral-title1">
+              <div className="token-info text-l-neutral-title1">
                 <img
                   src={token.logo_url || IconUnknown}
                   className="icon icon-token"
@@ -356,21 +356,21 @@ const AddAsset = ({ params }: { params: AddAssetProps }) => {
                   <img src={currentChain.logo} className="icon icon-chain" />
                   {ellipsis(token.id)}
                   <RcIconExternalCC
-                    className="icon icon-open-external cursor-pointer text-r-neutral-foot"
+                    className="icon icon-open-external cursor-pointer text-l-neutral-foot"
                     onClick={handleOpenExplorer}
                   />
                   <CopyChecked
                     addr={token.id}
-                    className="w-14 h-14 cursor-pointer text-r-neutral-foot"
+                    className="w-14 h-14 cursor-pointer text-l-neutral-foot"
                   />
                 </div>
               </div>
-              <div className="token-balance text-r-neutral-body">
+              <div className="token-balance text-l-neutral-body">
                 <div>
                   {getTokenSymbol(token)} {t('page.addToken.balance')}
                 </div>
                 <div>
-                  <span className="amount text-r-neutral-title1">
+                  <span className="amount text-l-neutral-title1">
                     {formatTokenAmount(token.amount)}
                   </span>{' '}
                   ≈{' '}
@@ -383,7 +383,7 @@ const AddAsset = ({ params }: { params: AddAssetProps }) => {
                 {isTokenHistoryLoaded && tokenHistory.length <= 0 && (
                   <div className="empty">
                     <img className="no-data" src="./images/nodata-tx.png" />
-                    <p className="text-[12px] text-r-neutral-body mt-[12px]">
+                    <p className="text-[12px] text-l-neutral-body mt-[12px]">
                       {t('page.dashboard.tokenDetail.noTransactions')}
                     </p>
                   </div>

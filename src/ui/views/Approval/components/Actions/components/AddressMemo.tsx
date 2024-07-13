@@ -62,7 +62,7 @@ const AddressMemo = ({ address }: { address: string }) => {
             >
               <Input
                 ref={inputRef}
-                className="popup-input h-[52px] bg-r-neutral-card-1"
+                className="popup-input h-[52px] bg-l-neutral-card-1"
                 size="large"
                 placeholder="Please input address note"
                 autoFocus
@@ -72,7 +72,7 @@ const AddressMemo = ({ address }: { address: string }) => {
                 maxLength={50}
               ></Input>
             </Form.Item>
-            <Divide className="bg-r-neutral-line absolute left-0" />
+            <Divide className="bg-l-neutral-line absolute left-0" />
             <div className="text-center flex gap-x-16 mt-20">
               <Button
                 size="large"

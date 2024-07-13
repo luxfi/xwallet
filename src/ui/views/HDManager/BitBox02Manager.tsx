@@ -80,7 +80,7 @@ export const BitBox02Manager: React.FC = () => {
     <>
       <div className="toolbar">
         <div className="toolbar-item" onClick={openAdvanced}>
-          <RcSettingSVG className="icon text-r-neutral-title1" />
+          <RcSettingSVG className="icon text-l-neutral-title1" />
           <span className="title">
             {t('page.newAddress.hd.advancedSettings')}
           </span>

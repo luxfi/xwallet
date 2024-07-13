@@ -59,7 +59,7 @@ export const ApprovalContractItem = ({
     <div
       ref={rowRef}
       className={clsx(
-        'bg-r-neutral-card1 mb-[12px] rounded-[6px] border border-transparent contract-approval-item',
+        'bg-l-neutral-card1 mb-[12px] rounded-[6px] border border-transparent contract-approval-item',
         onSelect &&
           'hover:border-blue-light hover:bg-blue-light hover:bg-opacity-[0.1] cursor-pointer'
       )}
@@ -105,7 +105,7 @@ export const ApprovalContractItem = ({
                     }}
                     src={RcIconExternal}
                     className={clsx(
-                      'ml-6 w-[16px] h-[16px] cursor-pointer text-r-neutral-foot'
+                      'ml-6 w-[16px] h-[16px] cursor-pointer text-l-neutral-foot'
                     )}
                   />
                 </>
@@ -115,7 +115,7 @@ export const ApprovalContractItem = ({
           </div>
         </div>
 
-        <span className="text-[13px] text-r-neutral-body flex-shrink-0 ml-auto font-medium">
+        <span className="text-[13px] text-l-neutral-body flex-shrink-0 ml-auto font-medium">
           {item.list.length}{' '}
           {!onSelect &&
             (item.list.length > 1
@@ -129,7 +129,7 @@ export const ApprovalContractItem = ({
                 ))}
           {}
         </span>
-        {onSelect && <RcIconArrowRightCC className="text-r-blue-default" />}
+        {onSelect && <RcIconArrowRightCC className="text-l-blue-default" />}
       </div>
       {risky && (
         <div className="pb-[12px]">

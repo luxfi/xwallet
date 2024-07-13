@@ -78,7 +78,7 @@ export const NoActionAlert: React.FC<Props> = ({ data }) => {
         {/* <img src={IconAlert} className="icon icon-alert" /> */}
         <ThemeIcon
           src={RcIconAlert}
-          className="icon icon-alert text-r-neutral-body"
+          className="icon icon-alert text-l-neutral-body"
         />
         {t('page.signTx.sigCantDecode')}
       </div>

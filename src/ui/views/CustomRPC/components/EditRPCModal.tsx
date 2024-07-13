@@ -153,10 +153,10 @@ const EditRPCModal = ({
             className="w-[56px] h-[56px] mx-auto mb-12"
             src={chainItem?.logo || ''}
           />
-          <div className="mb-8 text-20 text-r-neutral-title-1 leading-none">
+          <div className="mb-8 text-20 text-l-neutral-title-1 leading-none">
             {chainItem?.name}
           </div>
-          <div className="mb-8 text-14 text-r-neutral-title-1 text-left">
+          <div className="mb-8 text-14 text-l-neutral-title-1 text-left">
             {t('page.customRpc.EditRPCModal.rpcUrl')}
           </div>
         </div>

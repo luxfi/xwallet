@@ -172,13 +172,13 @@ export const AddFromChainList = ({
 
       {isLoading ? (
         <div className="px-[20px]">
-          <div className="rounded-[6px] bg-r-neutral-card2">
+          <div className="rounded-[6px] bg-l-neutral-card2">
             <Loading />
           </div>
         </div>
       ) : isEmpty ? (
         <div className="h-full px-[20px]">
-          <div className="h-full rounded-[6px] bg-r-neutral-card2">
+          <div className="h-full rounded-[6px] bg-l-neutral-card2">
             <Emtpy
               description={t('page.customTestnet.AddFromChainList.empty')}
             />
@@ -217,7 +217,7 @@ const CustomTestnetList = ({
 }) => {
   const { t } = useTranslation();
   return (
-    <div className="rounded-[6px] bg-r-neutral-card2">
+    <div className="rounded-[6px] bg-l-neutral-card2">
       {list?.map((item) => {
         const chain = findChain({ id: item.id });
 
@@ -256,14 +256,14 @@ const CustomTestnetList = ({
 const Loading = () => {
   return (
     <>
-      <div className="chain-list-item relative flex items-center px-[16px] py-[11px] gap-[12px] bg-r-neutral-card2 rounded-[6px]">
+      <div className="chain-list-item relative flex items-center px-[16px] py-[11px] gap-[12px] bg-l-neutral-card2 rounded-[6px]">
         <Skeleton.Avatar active />
         <div className="flex flex-col gap-[4px]">
           <Skeleton.Input active className="w-[80px] h-[16px]" />
           <Skeleton.Input active className="w-[145px] h-[14px]" />
         </div>
       </div>
-      <div className="chain-list-item relative flex items-center px-[16px] py-[11px] gap-[12px] bg-r-neutral-card2 rounded-[6px]">
+      <div className="chain-list-item relative flex items-center px-[16px] py-[11px] gap-[12px] bg-l-neutral-card2 rounded-[6px]">
         <Skeleton.Avatar active />
         <div className="flex flex-col gap-[4px]">
           <Skeleton.Input active className="w-[80px] h-[16px]" />

@@ -184,12 +184,12 @@ export const PendingTxList = ({
               setTab(key as any);
             }}
             itemClassname="text-[15px] leading-[18px] font-medium px-[18px] pt-[10px] pb-[8px] w-auto min-w-[200px]"
-            itemClassnameInActive="text-r-neutral-body"
+            itemClassnameInActive="text-l-neutral-body"
             className="p-[2px]"
           />
           <div className="ml-auto">
             <div
-              className="flex items-center gap-[4px] cursor-pointer text-r-neutral-body text-[13px] leading-[16px]"
+              className="flex items-center gap-[4px] cursor-pointer text-l-neutral-body text-[13px] leading-[16px]"
               onClick={() => {
                 setIsFilterBaseFee(!isFilterBaseFee);
               }}

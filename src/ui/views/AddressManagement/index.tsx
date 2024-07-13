@@ -44,7 +44,7 @@ function NoAddressUI() {
         className="no-data-image w-[52px] h-[52px]"
         src={RcNoMatchedAddress}
       />
-      <p className="text-14 text-r-neutral-body mt-[24px]">
+      <p className="text-14 text-l-neutral-body mt-[24px]">
         {t('page.manageAddress.no-address')}
       </p>
     </div>
@@ -60,7 +60,7 @@ function NoSearchedAddressUI() {
         className="no-data-image w-[52px] h-[52px]"
         src={RcNoMatchedAddress}
       />
-      <p className="text-14 text-r-neutral-body mt-[24px]">
+      <p className="text-14 text-l-neutral-body mt-[24px]">
         {t('page.manageAddress.no-match')}
       </p>
     </div>
@@ -490,7 +490,7 @@ const AddressManagement = () => {
           <RcIconAddAddress
             viewBox="0 0 20 20"
             className={clsx(
-              'text-r-neutral-title-1 w-[20px] h-[20px] cursor-pointer'
+              'text-l-neutral-title-1 w-[20px] h-[20px] cursor-pointer'
             )}
             onClick={gotoAddAddress}
           />
@@ -505,13 +505,13 @@ const AddressManagement = () => {
               <div className="w-[20px] h-[20px] flex items-center justify-center">
                 <RcIconLoading
                   viewBox="0 0 20 20"
-                  className="text-r-neutral-title-1 w-[16px] h-[16px] cursor-pointer"
+                  className="text-l-neutral-title-1 w-[16px] h-[16px] cursor-pointer"
                 />
               </div>
             ) : (
               <RcIconRefresh
                 className={clsx(
-                  'text-r-neutral-title-1 w-[20px] h-[20px] cursor-pointer'
+                  'text-l-neutral-title-1 w-[20px] h-[20px] cursor-pointer'
                 )}
                 onClick={() => {
                   if (isUpdateAllBalanceLoading) {
@@ -578,7 +578,7 @@ const AddressManagement = () => {
           </div>
         </>
       )}
-      <div className="flex justify-between items-center text-r-neutral-body text-13 px-20 py-16">
+      <div className="flex justify-between items-center text-l-neutral-body text-13 px-20 py-16">
         <SortInput
           value={searchKeyword}
           onChange={(e) => setSearchKeyword(e.target.value)}

@@ -273,7 +273,7 @@ const ResetAccountModal = ({
           {t('page.dashboard.settings.clearPendingTip2')}
         </p>
         <div className="flex flex-col mt-auto popup-footer px-20 bottom-18">
-          <div className="absolute left-0 top-[40px] w-full h-0 border-solid border-t-[0.5px] border-rabby-neutral-line"></div>
+          <div className="absolute left-0 top-[40px] w-full h-0 border-solid border-t-[0.5px] border-lux-neutral-line"></div>
           <div className="flex justify-center mb-[38px]">
             <Checkbox
               checked={clearNonce}
@@ -298,7 +298,7 @@ const ResetAccountModal = ({
               }
               onChange={setClearNonce}
             >
-              <span className="text-13 text-r-neutral-body">
+              <span className="text-13 text-l-neutral-body">
                 Also reset my local nonce data and signature record
               </span>
             </Checkbox>
@@ -649,12 +649,12 @@ const SettingsInner = ({
         closable: true,
         centered: true,
         closeIcon: (
-          <SvgIconCross className="w-14 fill-current text-r-neutral-foot" />
+          <SvgIconCross className="w-14 fill-current text-l-neutral-foot" />
         ),
         className: clsx(updateVersionClassName, 'modal-support-darkmode'),
         title: t('page.dashboard.settings.updateVersion.title'),
         content: (
-          <div className="text-14 leading-[18px] text-center text-r-neutral-body">
+          <div className="text-14 leading-[18px] text-center text-l-neutral-body">
             {t('page.dashboard.settings.updateVersion.content')}
           </div>
         ),
@@ -804,7 +804,7 @@ const SettingsInner = ({
           rightIcon: (
             <>
               <span
-                className="text-14 mr-[8px] text-r-neutral-title-1"
+                className="text-14 mr-[8px] text-l-neutral-title-1"
                 role="button"
               >
                 {langLabel}
@@ -831,7 +831,7 @@ const SettingsInner = ({
           rightIcon: (
             <>
               <span
-                className="text-14 mr-[8px] text-r-neutral-title-1"
+                className="text-14 mr-[8px] text-l-neutral-title-1"
                 role="button"
               >
                 {ThemeModes.find((item) => item.code === themeMode)?.name ||
@@ -872,7 +872,7 @@ const SettingsInner = ({
           rightIcon: (
             <>
               <span
-                className="text-14 mr-[8px] text-r-neutral-title-1"
+                className="text-14 mr-[8px] text-l-neutral-title-1"
                 role="button"
               >
                 {autoLockTimeLabel}
@@ -989,7 +989,7 @@ const SettingsInner = ({
           rightIcon: (
             <>
               <span
-                className="text-14 mr-[8px] text-r-neutral-title-1"
+                className="text-14 mr-[8px] text-l-neutral-title-1"
                 role="button"
                 onClick={updateVersion}
               >
@@ -1036,7 +1036,7 @@ const SettingsInner = ({
           rightIcon: (
             <>
               <span
-                className="text-14 mr-[8px] text-r-neutral-title-1"
+                className="text-14 mr-[8px] text-l-neutral-title-1"
                 role="button"
               >
                 {getChainList('mainnet').length}
@@ -1189,7 +1189,7 @@ const SettingsInner = ({
         })}
       </div>
       <footer className="footer">
-        <div className="px-8 py-2 rounded hover:bg-r-blue-light-1 inline-block">
+        <div className="px-8 py-2 rounded hover:bg-l-blue-light-1 inline-block">
           <img
             className="inline-block cursor-pointer"
             src={LogoLux}

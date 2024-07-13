@@ -142,16 +142,16 @@ export const QRCodeConnect = () => {
     decoder.current = new URDecoder();
   };
   return (
-    <div className="bg-r-neutral-bg1 h-full flex">
+    <div className="bg-l-neutral-bg1 h-full flex">
       <main
         className={clsx(
-          'bg-r-neutral-card2 rounded-[12px]',
+          'bg-l-neutral-card2 rounded-[12px]',
           'm-auto w-[1000px] h-[750px]',
           'py-[40px]'
         )}
       >
-        <div className="font-medium text-r-neutral-body text-center">
-          <h1 className="text-[28px] leading-[33px] text-r-neutral-title1">
+        <div className="font-medium text-l-neutral-body text-center">
+          <h1 className="text-[28px] leading-[33px] text-l-neutral-title1">
             {brandInfo.name}
           </h1>
           <p className="text-15 opacity-80 mt-16">
@@ -166,7 +166,7 @@ export const QRCodeConnect = () => {
             className={clsx(
               'm-auto rounded-[10px] p-[16px] bg-transparent',
               'w-[320px] h-[320px]',
-              'border border-rabby-neutral-line'
+              'border border-lux-neutral-line'
             )}
           >
             {scan && (
@@ -175,7 +175,7 @@ export const QRCodeConnect = () => {
                 height={288}
                 onSuccess={handleScanQRCodeSuccess}
                 onError={handleScanQRCodeError}
-                className="bg-r-neutral-line"
+                className="bg-l-neutral-line"
               />
             )}
           </div>

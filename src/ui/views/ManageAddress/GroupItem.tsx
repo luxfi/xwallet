@@ -63,7 +63,7 @@ export const GroupItem = ({
             type !== KEYRING_CLASS.MNEMONIC && 'rounded-full'
           )}
         />
-        <div className="absolute -top-6 -right-6 text-12 text-r-neutral-body bg-r-neutral-bg-2 border-white h-14 px-[4px] border-width-[0.5px] rounded-[90px]">
+        <div className="absolute -top-6 -right-6 text-12 text-l-neutral-body bg-l-neutral-bg-2 border-white h-14 px-[4px] border-width-[0.5px] rounded-[90px]">
           {count}
         </div>
       </div>

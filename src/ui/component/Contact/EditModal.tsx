@@ -91,7 +91,7 @@ const EditModal = ({ address, visible, onOk, onCancel }: EditModalProps) => {
           ref={inputRef}
         />
       </Form>
-      <Divide className="bg-r-neutral-line absolute left-0" />
+      <Divide className="bg-l-neutral-line absolute left-0" />
       <div className="text-center flex gap-x-16 pt-20">
         <Button
           size="large"

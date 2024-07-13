@@ -33,7 +33,7 @@ export const TransactionAction = ({ data }: { data: PendingTxItem }) => {
       />{' '}
       <div className="min-w-0">
         {protocol?.name || data?.to_addr ? (
-          <div className="text-r-neutral-title-1 font-medium">
+          <div className="text-l-neutral-title-1 font-medium">
             {protocol?.name ? (
               <Popover
                 overlayInnerStyle={{
@@ -41,10 +41,10 @@ export const TransactionAction = ({ data }: { data: PendingTxItem }) => {
                 }}
                 content={
                   <div>
-                    <div className="text-r-neutral-title-1 mb-[6px] text-[13px] leading-[16px] font-medium">
+                    <div className="text-l-neutral-title-1 mb-[6px] text-[13px] leading-[16px] font-medium">
                       {protocol?.name}
                     </div>
-                    <div className="flex items-center text-r-neutral-body gap-[4px] text-[12px] leading-[14px]">
+                    <div className="flex items-center text-l-neutral-body gap-[4px] text-[12px] leading-[14px]">
                       {data.to_addr}
                       <ThemeIcon
                         src={RcIconCopy}
@@ -65,7 +65,7 @@ export const TransactionAction = ({ data }: { data: PendingTxItem }) => {
                   padding: '0 -4px',
                 }}
                 content={
-                  <div className="flex items-center text-r-neutral-body gap-[4px] text-[12px] leading-[14px]">
+                  <div className="flex items-center text-l-neutral-body gap-[4px] text-[12px] leading-[14px]">
                     {data.to_addr}{' '}
                     <ThemeIcon
                       src={RcIconCopy}
@@ -77,7 +77,7 @@ export const TransactionAction = ({ data }: { data: PendingTxItem }) => {
                   </div>
                 }
               >
-                <div className="text-r-neutral-title-1 text-[13px] font-medium">
+                <div className="text-l-neutral-title-1 text-[13px] font-medium">
                   {ellipsisAddress(data.to_addr)}
                 </div>
               </Popover>

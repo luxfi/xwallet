@@ -6,7 +6,7 @@ import './index.less';
 import { ReactComponent as RcIconCloseCC } from 'ui/assets/component/close-cc.svg';
 
 const closeIcon = (
-  <RcIconCloseCC className="w-[20px] h-[20px] text-r-neutral-foot" />
+  <RcIconCloseCC className="w-[20px] h-[20px] text-l-neutral-foot" />
 );
 
 interface PopupProps extends DrawerProps {

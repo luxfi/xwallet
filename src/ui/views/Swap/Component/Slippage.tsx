@@ -168,7 +168,7 @@ export const Slippage = memo((props: SlippageProps) => {
         }}
       >
         <span>{t('page.swap.slippage-tolerance')}</span>
-        <span className="font-medium text-r-neutral-title-1 inline-flex items-center">
+        <span className="font-medium text-l-neutral-title-1 inline-flex items-center">
           <span className={clsx(!!tips && 'text-orange')}>
             {displaySlippage}%{' '}
           </span>

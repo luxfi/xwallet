@@ -69,7 +69,7 @@ export const HomeTokenList = ({
         )}
       </div>
       {!isSearch && hasList && (
-        <div className="flex gap-12 pt-12 border-t-[0.5px] border-rabby-neutral-line">
+        <div className="flex gap-12 pt-12 border-t-[0.5px] border-lux-neutral-line">
           <CustomizedButton
             onClickButton={onOpenAddEntryPopup}
             isTestnet={isTestnet}

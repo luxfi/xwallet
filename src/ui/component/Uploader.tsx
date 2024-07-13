@@ -49,7 +49,7 @@ const Uploader = ({ onChange, accept, className }: UploaderProps) => {
   return (
     <div
       className={cx(
-        'uploader rounded bg-r-neutral-card-1 flex items-center justify-center cursor-pointer text-center',
+        'uploader rounded bg-l-neutral-card-1 flex items-center justify-center cursor-pointer text-center',
         className
       )}
       onClick={handleClick}

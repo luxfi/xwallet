@@ -133,21 +133,21 @@ const SendTokenMessageForEoa = React.forwardRef<
         <div className="messagedata-parsed-input text-[12px]">
           {currentIsHex ? (
             <>
-              <span className="text-r-neutral-body">
+              <span className="text-l-neutral-body">
                 {/* The current input is Original Data. UTF-8 is: */}
                 {t('page.sendToken.sectionMsgDataForEOA.currentIsOriginal')}
               </span>
-              <p className="mt-3 mb-0 break-all text-r-neutral-foot">
+              <p className="mt-3 mb-0 break-all text-l-neutral-foot">
                 {currentData}
               </p>
             </>
           ) : (
             <>
-              <span className="text-r-neutral-body">
+              <span className="text-l-neutral-body">
                 {/* The current input is UTF-8. Original Data is: */}
                 {t('page.sendToken.sectionMsgDataForEOA.currentIsUTF8')}
               </span>
-              <p className="mt-3 mb-0 break-all text-r-neutral-foot">
+              <p className="mt-3 mb-0 break-all text-l-neutral-foot">
                 {hexData}
               </p>
             </>
@@ -221,7 +221,7 @@ const SendTokenMessageForContract = React.forwardRef<
         <div className="messagedata-parsed-input text-[12px]">
           {!currentIsHex ? (
             <>
-              <span className="mt-16 text-r-red-default">
+              <span className="mt-16 text-l-red-default">
                 {/* Only supported hex data */}
                 {t('page.sendToken.sectionMsgDataForContract.notHexData')}
               </span>
@@ -229,7 +229,7 @@ const SendTokenMessageForContract = React.forwardRef<
           ) : (
             <>
               {!parseContractError && (
-                <span className="mt-16 mb-8 text-r-neutral-body">
+                <span className="mt-16 mb-8 text-l-neutral-body">
                   {/* Contract call simulation: */}
                   {t('page.sendToken.sectionMsgDataForContract.simulation')}
                 </span>
@@ -242,7 +242,7 @@ const SendTokenMessageForContract = React.forwardRef<
               ) : (
                 <>
                   {parseContractError && (
-                    <span className="flex items-center text-r-red-default">
+                    <span className="flex items-center text-l-red-default">
                       <img src={IconAlertInfo} className="w-14 h-14 mr-[3px]" />
                       <span>
                         {/* Fail to decode contract call */}
@@ -253,7 +253,7 @@ const SendTokenMessageForContract = React.forwardRef<
                     </span>
                   )}
                   {!loadingExplainError && contractCallPlainText && (
-                    <p className="mt-3 mb-0 break-all text-r-neutral-foot">
+                    <p className="mt-3 mb-0 break-all text-l-neutral-foot">
                       {contractCallPlainText}
                     </p>
                   )}
@@ -1413,13 +1413,13 @@ const SendToken = () => {
                 />
               </Form.Item>
               {toAddressIsValid && !toAddressInContactBook && (
-                <div className="tip-no-contact font-normal text-[12px] text-r-neutral-body pt-[12px]">
+                <div className="tip-no-contact font-normal text-[12px] text-l-neutral-body pt-[12px]">
                   <Trans i18nKey="page.sendToken.addressNotInContract" t={t}>
                     Not on address list.{' '}
                     <span
                       onClick={handleClickAddContact}
                       className={clsx(
-                        'ml-[2px] underline cursor-pointer text-r-blue-default'
+                        'ml-[2px] underline cursor-pointer text-l-blue-default'
                       )}
                     >
                       Add to contacts

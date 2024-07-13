@@ -29,7 +29,7 @@ export const TxHash = ({ tx }: { tx: TransactionGroup }) => {
       {maxGasTx?.hash ? (
         <div className="flex items-center gap-[6px] opacity-70">
           <img src={chain?.logo || IconUnknown} className="w-[16px] h-[16px]" />
-          <div className="text-r-neutral-title-2 text-[13px] leading-[16px]">
+          <div className="text-l-neutral-title-2 text-[13px] leading-[16px]">
             {t('page.pendingDetail.TxHash.hash')}:{' '}
             {maxGasTx?.hash ? ellipsisAddress(maxGasTx?.hash) : ''}
           </div>

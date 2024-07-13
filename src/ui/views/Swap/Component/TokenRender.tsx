@@ -76,7 +76,7 @@ export const TokenRender = ({
           </span>
           <RcIconRcArrowDownTriangle
             viewBox="0 0 24 24"
-            className="arrow text-r-neutral-foot"
+            className="arrow text-l-neutral-foot"
           />
         </div>
       ) : (
@@ -84,7 +84,7 @@ export const TokenRender = ({
           <span>{t('page.swap.select-token')}</span>
           <RcIconRcArrowDownTriangle
             viewBox="0 0 24 24"
-            className="arrow text-r-neutral-foot"
+            className="arrow text-l-neutral-foot"
           />
         </div>
       )}

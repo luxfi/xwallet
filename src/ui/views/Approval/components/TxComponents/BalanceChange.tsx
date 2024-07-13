@@ -219,7 +219,7 @@ const BalanceChange = ({
           <Table>
             <Col className="py-10">
               <Row isTitle>
-                <span className="text-14 text-r-neutral-title-1 font-medium">
+                <span className="text-14 text-l-neutral-title-1 font-medium">
                   {t('page.signTx.balanceChange.errorTitle')}
                 </span>
               </Row>
@@ -239,7 +239,7 @@ const BalanceChange = ({
       <HeadlineStyled>
         <span>{t('page.signTx.balanceChange.successTitle')}</span>
         {showUsdValueDiff && (
-          <span className="flex-1 whitespace-nowrap overflow-hidden overflow-ellipsis text-r-title-1 text-right text-14 font-normal">
+          <span className="flex-1 whitespace-nowrap overflow-hidden overflow-ellipsis text-l-title-1 text-right text-14 font-normal">
             {`${data.usd_value_change >= 0 ? '+' : '-'} $${formatNumber(
               Math.abs(data.usd_value_change)
             )}`}
@@ -252,7 +252,7 @@ const BalanceChange = ({
             <Col className="py-10">
               <Row isTitle className="gap-6 flex">
                 <NoBalanceSVG className="text-rabby-neutral-body" />
-                <span className="text-[14px] font-medium text-r-neutral-title-1">
+                <span className="text-[14px] font-medium text-l-neutral-title-1">
                   {t('page.signTx.balanceChange.noBalanceChange')}
                 </span>
               </Row>
@@ -266,10 +266,10 @@ const BalanceChange = ({
               >
                 <ThemeIcon
                   src={RcIconAlert}
-                  className="w-[16px] flex-shrink-0 mr-4 text-r-orange-default top-[2px] relative"
+                  className="w-[16px] flex-shrink-0 mr-4 text-l-orange-default top-[2px] relative"
                 />
                 <span>
-                  <span className="text-r-orange-default">
+                  <span className="text-l-orange-default">
                     {t('page.signTx.balanceChange.failedTitle')}
                   </span>{' '}
                   ({data.error.msg} #{data.error.code})
@@ -308,7 +308,7 @@ const BalanceChange = ({
                   }
                 />
               </Row>
-              <Row className="text-r-neutral-body text-14 font-normal flex-initial">
+              <Row className="text-l-neutral-body text-14 font-normal flex-initial">
                 ≈{' '}
                 {formatUsdValue(
                   new BigNumber(token.amount).times(token.price).toFixed()
@@ -348,7 +348,7 @@ const BalanceChange = ({
                 />
               </Row>
 
-              <Row className="text-r-neutral-body text-14 font-normal flex-initial">
+              <Row className="text-l-neutral-body text-14 font-normal flex-initial">
                 ≈{' '}
                 {formatUsdValue(
                   new BigNumber(token.amount).times(token.price).toFixed()

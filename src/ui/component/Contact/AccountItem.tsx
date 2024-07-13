@@ -133,7 +133,7 @@ const AccountItem = ({
       <div className="account-info flex-1">
         <p className="name">
           <div className="flex items-center gap-4">
-            <span className="inline-block max-w-[180px] overflow-hidden overflow-ellipsis whitespace-nowrap text-r-neutral-title-1">
+            <span className="inline-block max-w-[180px] overflow-hidden overflow-ellipsis whitespace-nowrap text-l-neutral-title-1">
               {account.alianName}
             </span>
             {onClick && whitelistEnable && isInWhiteList && (
@@ -148,7 +148,7 @@ const AccountItem = ({
           </div>
         </p>
         <p
-          className="address text-r-neutral-body"
+          className="address text-l-neutral-body"
           title={account.address}
           ref={addressElement}
         >
@@ -157,7 +157,7 @@ const AccountItem = ({
           <CopyChecked addr={account.address} className="icon icon-copy" />
         </p>
       </div>
-      <p className="text-13 text-r-neutral-title-1 mb-0">
+      <p className="text-13 text-l-neutral-title-1 mb-0">
         ${splitNumberByStep(Math.floor(account.balance))}
       </p>
     </AccountItemWrapper>

@@ -40,7 +40,7 @@ const TokenItemAsset: React.FC<Props> = ({ item }) => {
         </TooltipWithMagnetArrow>
       </div>
       <div className="overflow-hidden">
-        <span className="text-r-neutral-title-1 text-13 font-medium leading-[15px]">
+        <span className="text-l-neutral-title-1 text-13 font-medium leading-[15px]">
           {item.symbol}
         </span>
       </div>
@@ -50,7 +50,7 @@ const TokenItemAsset: React.FC<Props> = ({ item }) => {
 
 const TokenItemAmount: React.FC<Props> = ({ item }) => {
   return (
-    <TCell className="py-8 text-r-neutral-title-1 text-13 font-medium text-right w-[110px] ml-auto">
+    <TCell className="py-8 text-l-neutral-title-1 text-13 font-medium text-right w-[110px] ml-auto">
       {formatAmount(Math.abs(item.amount))}
     </TCell>
   );

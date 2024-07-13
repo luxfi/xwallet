@@ -300,7 +300,7 @@ const RequestDeBankTestnetGasToken = () => {
               <div className="badgeTip">
                 <ThemeIcon
                   src={RcIconInfo}
-                  className="w-16 text-r-neutral-title1"
+                  className="w-16 text-l-neutral-title1"
                 />
                 <span>
                   {t('page.requestDebankTestnetGasToken.notMintedTip')}

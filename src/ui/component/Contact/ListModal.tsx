@@ -133,7 +133,7 @@ const ListModal = ({ visible, onOk, onCancel }: ListModalProps) => {
           'pb-0': !whitelistEnabled,
         })}
       >
-        <div className="text-center mb-16 mx-[-10px] text-14 text-r-neutral-body">
+        <div className="text-center mb-16 mx-[-10px] text-14 text-l-neutral-body">
           {whitelistEnabled
             ? t('component.Contact.ListModal.whitelistEnabled')
             : t('component.Contact.ListModal.whitelistDisabled')}

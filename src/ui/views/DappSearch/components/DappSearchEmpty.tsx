@@ -6,9 +6,9 @@ import { ReactComponent as RcIconEmpty } from 'ui/assets/dapp-search/dapp-search
 export const DappSearchEmpty = () => {
   const { t } = useTranslation();
   return (
-    <div className="rounded-[8px] pt-[65px] pb-[83px] text-center bg-r-neutral-card1">
+    <div className="rounded-[8px] pt-[65px] pb-[83px] text-center bg-l-neutral-card1">
       <ThemeIcon src={RcIconEmpty} className="mx-auto" />
-      <div className="text-[15px] leading-[18px] text-r-neutral-foot mt-[25px]">
+      <div className="text-[15px] leading-[18px] text-l-neutral-foot mt-[25px]">
         {t('page.dappSearch.emptySearch')}
       </div>
     </div>

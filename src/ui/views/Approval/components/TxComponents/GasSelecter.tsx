@@ -667,7 +667,7 @@ const GasSelector = ({
               ) : (
                 <div className="gas-selector-card-content-item">
                   <div className="gas-selector-card-amount translate-y-1 flex items-center overflow-hidden">
-                    <span className="text-r-blue-default font-medium text-15 truncate">
+                    <span className="text-l-blue-default font-medium text-15 truncate">
                       {formatTokenAmount(
                         new BigNumber(gas.gasCostAmount).toString(10),
                         8
@@ -711,7 +711,7 @@ const GasSelector = ({
           </div>
           <div className="flex-1" />
           <div
-            className="flex items-center text-12 text-r-neutral-foot cursor-pointer"
+            className="flex items-center text-12 text-l-neutral-foot cursor-pointer"
             role="button"
             onClick={handleClickEdit}
           >
@@ -741,7 +741,7 @@ const GasSelector = ({
               <div className="item" key={error.code}>
                 <ThemeIcon
                   src={RcIconAlert}
-                  className="icon icon-alert text-r-neutral-body"
+                  className="icon icon-alert text-l-neutral-body"
                 />
                 <span className="flex-1">
                   {error.msg} #{error.code}

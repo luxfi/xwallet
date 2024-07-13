@@ -40,15 +40,15 @@ export function GasLessNotEnough({
       onClick={() => {
         url && openInTab(url);
       }}
-      className="security-level-tip bg-r-neutral-card2 text-r-neutral-card2 mt-[15px]"
+      className="security-level-tip bg-l-neutral-card2 text-l-neutral-card2 mt-[15px]"
       onMouseEnter={() => setHoverGasLessFailedReason(true)}
       onMouseLeave={() => setHoverGasLessFailedReason(false)}
     >
       <RcIconGas
         viewBox="0 0 16 16"
-        className="w-16 h-16 mr-4 text-r-neutral-title-1"
+        className="w-16 h-16 mr-4 text-l-neutral-title-1"
       />
-      <span className="relative flex-1 text-r-neutral-title1 inline-flex gap-4 items-center">
+      <span className="relative flex-1 text-l-neutral-title1 inline-flex gap-4 items-center">
         {t('page.signFooterBar.gasless.unavailable')}
         {/* <RcIconLink /> */}
 
@@ -187,17 +187,17 @@ export function GasLessToSign({
     <>
       <GasLessReady className={clsx(gasLessEnable && 'gasLess')}>
         <FreeGasReady />
-        <span className="gas-to-sign security-level-tip bg-r-neutral-card2 text-r-neutral-card2 items-center pr-6">
+        <span className="gas-to-sign security-level-tip bg-l-neutral-card2 text-l-neutral-card2 items-center pr-6">
           <RcIconGas
             viewBox="0 0 16 16"
-            className="w-16 h-16 mr-4 text-r-neutral-title-1"
+            className="w-16 h-16 mr-4 text-l-neutral-title-1"
           />
-          <span className="flex-1 text-r-neutral-title-1">
+          <span className="flex-1 text-l-neutral-title-1">
             {t('page.signFooterBar.gasless.notEnough')}
           </span>
 
           <LinearGradientAnimatedSpan
-            className="mr-auto px-10 py-[7px] text-r-neutral-title-2 cursor-pointer"
+            className="mr-auto px-10 py-[7px] text-l-neutral-title-2 cursor-pointer"
             onClick={handleFreeGas}
           >
             {t('page.signFooterBar.gasless.GetFreeGasToSign')}
@@ -246,7 +246,7 @@ export function GasLessActivityToSign({
             'gas-to-sign security-level-tip  items-center pr-6',
             themeColor
               ? 'bg-transparent text-transparent'
-              : 'bg-r-neutral-card2 text-r-neutral-card2'
+              : 'bg-l-neutral-card2 text-l-neutral-card2'
           )}
         >
           {gasLessConfig?.logo ? (
@@ -254,14 +254,14 @@ export function GasLessActivityToSign({
           ) : (
             <RcIconGas
               viewBox="0 0 16 16"
-              className="w-16 h-16 mr-4 text-r-neutral-title-1"
+              className="w-16 h-16 mr-4 text-l-neutral-title-1"
             />
           )}
 
           <span
             className={clsx(
               'flex-1',
-              themeColor ? '' : 'text-r-neutral-title-1'
+              themeColor ? '' : 'text-l-neutral-title-1'
             )}
             style={{
               color: themeColor,
@@ -273,7 +273,7 @@ export function GasLessActivityToSign({
 
           <LinearGradientAnimatedSpan
             className={clsx(
-              'mr-auto px-10 py-[7px]  cursor-pointer text-r-neutral-title-2'
+              'mr-auto px-10 py-[7px]  cursor-pointer text-l-neutral-title-2'
             )}
             style={{
               background: themeColor,

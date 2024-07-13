@@ -166,7 +166,7 @@ function ModalConfirmAddToContacts({
         </FormInputItem>
         <div
           className={clsx(
-            'text-r-neutral-title-1',
+            'text-l-neutral-title-1',
             'font-medium text-[14px] flex justify-start items-center'
           )}
         >

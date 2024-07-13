@@ -239,7 +239,7 @@ export const ReceiveDetails = (
           <div className="flex flex-col gap-8">
             <div
               className={clsx(
-                'flex items-center gap-8  text-15 font-medium text-r-neutral-title-1 h-18',
+                'flex items-center gap-8  text-15 font-medium text-l-neutral-title-1 h-18',
                 isWrapToken ? 'w-[130px]' : 'w-[108px]'
               )}
             >
@@ -268,7 +268,7 @@ export const ReceiveDetails = (
               )}
             </div>
             {!!activeProvider?.gasUsd && (
-              <div className="flex items-center gap-4 text-13 text-r-neutral-foot font-normal">
+              <div className="flex items-center gap-4 text-13 text-l-neutral-foot font-normal">
                 <img src={ImgGas} className="w-16 h-16 relative" />
                 <span>{activeProvider?.gasUsd}</span>
               </div>
@@ -276,7 +276,7 @@ export const ReceiveDetails = (
           </div>
         </div>
         <div className="right relative flex flex-col gap-8">
-          <div className="flex items-center gap-2 text-15 font-medium text-r-neutral-title-1 h-18 ml-auto">
+          <div className="flex items-center gap-2 text-15 font-medium text-l-neutral-title-1 h-18 ml-auto">
             <SkeletonChildren
               loading={loading}
               style={{ maxWidth: 144, height: 20, opacity: 0.5 }}
@@ -300,7 +300,7 @@ export const ReceiveDetails = (
 
           <div
             className={clsx(
-              'flex justify-end items-center gap-2 text-[13px] relative  font-normal text-r-neutral-foot ml-auto',
+              'flex justify-end items-center gap-2 text-[13px] relative  font-normal text-l-neutral-foot ml-auto',
               loading && 'opacity-0'
             )}
           >
@@ -365,7 +365,7 @@ export const ReceiveDetails = (
             style={{ maxWidth: 182, height: 20, opacity: 0.5 }}
           >
             <span
-              className="cursor-pointer ellipsis max-w-[260px] text-13 text-r-neutral-body"
+              className="cursor-pointer ellipsis max-w-[260px] text-13 text-l-neutral-body"
               onClick={reverseRate}
             >
               <span

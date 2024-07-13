@@ -63,7 +63,7 @@ export const AddressDeleteModal = ({
         <ThemeIcon src={addressTypeIcon} className="w-[48px] h-[48px]" />
         <IconDelete className="absolute -bottom-4 -right-4" />
       </div>
-      <div className="text-center mt-20 mb-[36px] text-r-neutral-title-1 text-20 font-medium">
+      <div className="text-center mt-20 mb-[36px] text-l-neutral-title-1 text-20 font-medium">
         {t('page.manageAddress.delete-title', {
           count,
           brand: renderBrand,

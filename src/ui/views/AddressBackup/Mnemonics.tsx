@@ -49,14 +49,14 @@ const AddressBackup = () => {
       closable: true,
       content: (
         <div>
-          <div className="flex items-start gap-8 px-[12px] py-[10px] rounded-[4px] bg-r-red-light text-r-red-default mb-[20px]">
+          <div className="flex items-start gap-8 px-[12px] py-[10px] rounded-[4px] bg-l-red-light text-l-red-default mb-[20px]">
             <InfoCircleOutlined className="rotate-180" />
             <div className="text-[14px] leading-[18px] ">
               {t('page.backupSeedPhrase.qrCodePopupTips')}
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="p-[12px] rounded-[16px] border-rabby-neutral-line border-[1px] bg-r-neutral-card-1">
+            <div className="p-[12px] rounded-[16px] border-lux-neutral-line border-[1px] bg-l-neutral-card-1">
               <QRCode value={data} size={240} />
             </div>
           </div>
@@ -114,7 +114,7 @@ const AddressBackup = () => {
               <Slip39TextareaContainer data={data} />
             ) : (
               <WordsMatrix
-                className="w-full bg-r-neutral-card1"
+                className="w-full bg-l-neutral-card1"
                 focusable={false}
                 closable={false}
                 words={data.split(' ')}
@@ -126,26 +126,26 @@ const AddressBackup = () => {
           <div
             onClick={handleShowQrCode}
             className={clsx(
-              'copy text-r-neutral-foot',
+              'copy text-l-neutral-foot',
               masked ? 'invisible' : 'visible'
             )}
           >
             <ThemeIcon
               src={RcIconQrCode}
-              className="text-r-neutral-foot w-[16px] h-[16px]"
+              className="text-l-neutral-foot w-[16px] h-[16px]"
             />
             {t('page.backupSeedPhrase.showQrCode')}
           </div>
           <div
             onClick={onCopyMnemonics}
             className={clsx(
-              'copy text-r-neutral-foot',
+              'copy text-l-neutral-foot',
               masked ? 'invisible' : 'visible'
             )}
           >
             <ThemeIcon
               src={RcIconCopyCC}
-              className="text-r-neutral-foot w-[16px] h-[16px]"
+              className="text-l-neutral-foot w-[16px] h-[16px]"
             />
             {t('page.backupSeedPhrase.copySeedPhrase')}
           </div>

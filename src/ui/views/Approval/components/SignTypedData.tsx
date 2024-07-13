@@ -595,8 +595,8 @@ const SignTypedData = ({ params }: { params: SignTypedDataProps }) => {
             className={clsx(
               'absolute top-[350px] right-[10px]',
               'px-[16px] py-[12px] rotate-[-23deg]',
-              'border-rabby-neutral-title1 border-[1px] rounded-[6px]',
-              'text-r-neutral-title1 text-[20px] leading-[24px]',
+              'border-lux-neutral-title1 border-[1px] rounded-[6px]',
+              'text-l-neutral-title1 text-[20px] leading-[24px]',
               'opacity-30'
             )}
           >

@@ -75,7 +75,7 @@ export const ConfirmDrawer = ({
             style={style}
             className={clsx(
               'flex justify-between items-center cursor-pointer px-[20px] h-[52px] border border-transparent  rounded-[6px]',
-              'text-13 font-medium text-r-neutral-title-1',
+              'text-13 font-medium text-l-neutral-title-1',
               !disabled && 'hover:border-blue-light',
               new BigNumber(item.amount)
                 .times(item.price)
@@ -119,7 +119,7 @@ export const ConfirmDrawer = ({
       closeIcon={null}
     >
       <div className="relative w-full">
-        <div className="text-20 font-medium text-center text-r-neutral-title-1 ">
+        <div className="text-20 font-medium text-center text-l-neutral-title-1 ">
           {t('page.gasTopUp.payment')}
         </div>
         <div className="absolute top-1/2 -translate-y-1/2  right-[20px]">
@@ -132,12 +132,12 @@ export const ConfirmDrawer = ({
             fontWeight: 700,
             fontSize: 28,
           }}
-          className="text-r-neutral-title-1"
+          className="text-l-neutral-title-1"
         >
           ${new BigNumber(cost).times(1.2).toString(10)}
         </div>
         <div className="flex items-center">
-          <span className="text-12 text-r-neutral-body mr-4">
+          <span className="text-12 text-l-neutral-body mr-4">
             {t('page.gasTopUp.Including-service-fee', {
               fee: '$' + new BigNumber(cost).times(0.2).toString(10),
             })}
@@ -148,7 +148,7 @@ export const ConfirmDrawer = ({
             placement="bottom"
             title={t('page.gasTopUp.service-fee-tip')}
           >
-            <RcIconInfo className="text-r-neutral-body" />
+            <RcIconInfo className="text-l-neutral-body" />
           </Tooltip>
         </div>
 
@@ -159,7 +159,7 @@ export const ConfirmDrawer = ({
             setTokenModalVisible(true);
           }}
         >
-          <div className="text-r-neutral-title-1 text-14">
+          <div className="text-l-neutral-title-1 text-14">
             {token
               ? t('page.gasTopUp.Payment-Token')
               : t('page.gasTopUp.Select-payment-token')}
@@ -168,12 +168,12 @@ export const ConfirmDrawer = ({
             {token ? (
               <>
                 <TokenWithChain token={token} hideConer />
-                <div className="ml-12 mr-[18px] text-r-neutral-title-1 text-15 font-medium">
+                <div className="ml-12 mr-[18px] text-l-neutral-title-1 text-15 font-medium">
                   {getTokenSymbol(token)}
                 </div>
               </>
             ) : null}
-            <RcIconRightArrow className="text-r-neutral-body" />
+            <RcIconRightArrow className="text-l-neutral-body" />
           </div>
         </ChainWrapper>
 
@@ -213,15 +213,15 @@ export const ConfirmDrawer = ({
           <div>
             <div className="relative flex justify-center items-center text-center">
               <RcIconBack
-                className="cursor-pointer absolute top-1/2 -translate-y-1/2 left-[20px] text-r-neutral-title1 w-[20px] h-[20px]"
+                className="cursor-pointer absolute top-1/2 -translate-y-1/2 left-[20px] text-l-neutral-title1 w-[20px] h-[20px]"
                 onClick={() => setTokenModalVisible(false)}
               />
-              <div className="text-20 font-medium text-center text-r-neutral-title-1 ">
+              <div className="text-20 font-medium text-center text-l-neutral-title-1 ">
                 {t('page.gasTopUp.Select-from-supported-tokens')}
               </div>
             </div>
             <div className="px-20">
-              <div className="flex justify-between border-b-[0.5px] border-rabby-neutral-line text-12 text-r-neutral-body pt-[24px] pb-8">
+              <div className="flex justify-between border-b-[0.5px] border-lux-neutral-line text-12 text-l-neutral-body pt-[24px] pb-8">
                 <div>{t('page.gasTopUp.Token')}</div>
                 <div>{t('page.gasTopUp.Value')}</div>
               </div>
@@ -230,7 +230,7 @@ export const ConfirmDrawer = ({
           <div className="overflow-y-auto flex-1 relative">
             {!loading && list.length === 0 && (
               <Empty className="pt-[80px]">
-                <div className="text-14 text-r-neutral-body mb-12">
+                <div className="text-14 text-l-neutral-body mb-12">
                   {t('page.gasTopUp.No_Tokens')}
                 </div>
               </Empty>
@@ -241,7 +241,7 @@ export const ConfirmDrawer = ({
                   className="animate-spin"
                   fill="var(--l-blue-default, #7084ff)"
                 />
-                <div className="mt-12 text-r-neutral-title-1">
+                <div className="mt-12 text-l-neutral-title-1">
                   {t('page.gasTopUp.Loading_Tokens')}
                 </div>
               </div>

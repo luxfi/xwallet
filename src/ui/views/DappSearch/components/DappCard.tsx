@@ -57,7 +57,7 @@ export const DappCard = ({
   return (
     <Wraper
       className={clsx(
-        'bg-r-neutral-card1 cursor-pointer rounded-[8px]',
+        'bg-l-neutral-card1 cursor-pointer rounded-[8px]',
         size === 'normal' && 'p-[15px]',
         size === 'small' && 'py-[13px] px-[16px]',
         className
@@ -83,13 +83,13 @@ export const DappCard = ({
             width="32px"
           />
           <div className="min-w-0">
-            <div className="text-r-neutral-title1 font-medium text-[16px] leading-[19px] mb-[2px] truncate">
+            <div className="text-l-neutral-title1 font-medium text-[16px] leading-[19px] mb-[2px] truncate">
               {data.id}
             </div>
-            <div className="text-r-neutral-foot text-[13px] leading-[16px] flex items-center">
+            <div className="text-l-neutral-foot text-[13px] leading-[16px] flex items-center">
               {data.name}
               {data.name && data.collected_list?.length ? (
-                <div className="w-[1px] h-[12px] bg-r-neutral-line mx-[6px]"></div>
+                <div className="w-[1px] h-[12px] bg-l-neutral-line mx-[6px]"></div>
               ) : null}
               {data.collected_list?.length ? (
                 <Tooltip
@@ -97,7 +97,7 @@ export const DappCard = ({
                   overlayClassName="rectangle max-w-[360px] dapp-search-card-tooltip"
                   title={
                     <div>
-                      <div className="text-[12px] leading-[14px] text-r-neutral-title2 mb-[6px]">
+                      <div className="text-[12px] leading-[14px] text-l-neutral-title2 mb-[6px]">
                         {t('page.dappSearch.listBy')}
                       </div>
                       <div className="flex items-center gap-[8px] flex-wrap">
@@ -113,7 +113,7 @@ export const DappCard = ({
                                 className="w-[12px] h-[12px] rounded-full"
                               />
 
-                              <span className="text-[12px] leading-[14px] text-r-neutral-title2">
+                              <span className="text-[12px] leading-[14px] text-l-neutral-title2">
                                 {item.name}
                               </span>
                             </div>
@@ -155,23 +155,23 @@ export const DappCard = ({
           }}
         >
           {isFavorite ? (
-            <span className="text-r-blue-default">
+            <span className="text-l-blue-default">
               <RcIconStarFill />
             </span>
           ) : (
-            <span className="text-r-neutral-foot">
+            <span className="text-l-neutral-foot">
               <RcIconStar />
             </span>
           )}
         </div>
       </div>
       {size === 'normal' && data?.description ? (
-        <div className="relative p-[8px] bg-r-neutral-card3 mt-[10px] rounded-[4px]">
-          <div className="text-r-neutral-card3 absolute top-[-11px] left-[8px]">
+        <div className="relative p-[8px] bg-l-neutral-card3 mt-[10px] rounded-[4px]">
+          <div className="text-l-neutral-card3 absolute top-[-11px] left-[8px]">
             <RcIconArrow />
           </div>
           <Paragraph
-            className="mb-0 text-r-neutral-body text-[14px] leading-[20px]"
+            className="mb-0 text-l-neutral-body text-[14px] leading-[20px]"
             ellipsis={{
               rows: 3,
               expandable: false,

@@ -95,11 +95,11 @@ export const SignTestnetPermission = ({
   return (
     <>
       <Container>
-        <div className="text-13 text-r-neutral-body leading-[18px]">
+        <div className="text-13 text-l-neutral-body leading-[18px]">
           {t('page.connect.SignTestnetPermission.title')}
         </div>
         <div
-          className="flex items-center ml-auto gap-[2px] font-medium text-15 leading-[18px] text-r-neutral-title1 cursor-pointer"
+          className="flex items-center ml-auto gap-[2px] font-medium text-15 leading-[18px] text-l-neutral-title1 cursor-pointer"
           onClick={() => {
             setIsShowPopup(true);
           }}

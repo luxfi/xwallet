@@ -34,7 +34,7 @@ function TableBodyEmpty({
     <Empty
       className="am-virtual-table-empty"
       image={
-        <RcIconNoMatchCC className="w-[52px] h-[52px] text-r-neutral-body" />
+        <RcIconNoMatchCC className="w-[52px] h-[52px] text-l-neutral-body" />
       }
       description={isLoading ? loadingText : emptyText}
     />

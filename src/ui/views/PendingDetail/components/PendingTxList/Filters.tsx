@@ -299,8 +299,8 @@ export const Filters = ({
               'flex items-center gap-[6px] px-[8px] py-[9px] rounded-[4px] cursor-pointer border border-[0.5px]',
               'hover:border-[#7084FF]',
               value.find((i) => i.key === item.key)
-                ? 'border-[#7084FF] bg-r-blue-light-1 text-r-blue-default'
-                : 'border-[#D3D8E0] text-r-neutral-title-1'
+                ? 'border-[#7084FF] bg-l-blue-light-1 text-l-blue-default'
+                : 'border-[#D3D8E0] text-l-neutral-title-1'
             )}
             onClick={() => {
               if (value.find((i) => i.key === item.key)) {

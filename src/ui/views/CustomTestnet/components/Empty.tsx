@@ -22,7 +22,7 @@ export const Emtpy = ({ description }: { description: string }) => {
         src="/images/nodata-tx.png"
         alt="no address"
       />
-      <p className="text-r-neutral-body text-14 text-center font-medium">
+      <p className="text-l-neutral-body text-14 text-center font-medium">
         {description}
       </p>
     </Wraper>

@@ -39,7 +39,7 @@ export const CancelApproval = () => {
 
   return (
     <div>
-      <div className="text-r-neutral-body text-13 font-normal text-center leading-[16px]">
+      <div className="text-l-neutral-body text-13 font-normal text-center leading-[16px]">
         {t('page.signFooterBar.detectedMultipleRequestsFromThisDapp')}
       </div>
       <div className="space-y-12 mt-20">

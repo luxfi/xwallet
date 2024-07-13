@@ -129,8 +129,8 @@ export const SetReferralCode = ({
   }, [visible]);
 
   return (
-    <div className="bg-r-blue-light1 rounded-[8px] px-[16px] py-[12px] flex items-center justify-between ">
-      <div className="flex flex-col gap-[2px] text-r-blue-default">
+    <div className="bg-l-blue-light1 rounded-[8px] px-[16px] py-[12px] flex items-center justify-between ">
+      <div className="flex flex-col gap-[2px] text-l-blue-default">
         <span className="text-[15px] font-medium">
           {t('page.luxPoints.referralCode.my-referral-code')}
         </span>
@@ -140,7 +140,7 @@ export const SetReferralCode = ({
       </div>
       <Button
         type="primary"
-        className="w-[120px] h-[34px] text-r-neutral-title2 text-[15] font-medium"
+        className="w-[120px] h-[34px] text-l-neutral-title2 text-[15] font-medium"
         onClick={openPopup}
       >
         {t('page.luxPoints.referralCode.set-my-code')}
@@ -167,11 +167,11 @@ export const SetReferralCode = ({
             onChange={inputChange}
             className={clsx(
               'border-[1px] bg-transparent',
-              isError && 'border-rabby-red-default',
-              isValidCode && 'border-rabby-blue-default'
+              isError && 'border-lux-red-default',
+              isValidCode && 'border-lux-blue-default'
             )}
             suffix={
-              <div className="rounded group w-[32px] h-[32px] flex items-center justify-center bg-transparent hover:bg-r-blue-light-1 cursor-pointer text-r-neutral-foot hover:text-r-blue-default">
+              <div className="rounded group w-[32px] h-[32px] flex items-center justify-center bg-transparent hover:bg-l-blue-light-1 cursor-pointer text-l-neutral-foot hover:text-l-blue-default">
                 <IconDice
                   className="w-[24px] h-[24px]"
                   onClick={getDiceReferralCode}
@@ -184,13 +184,13 @@ export const SetReferralCode = ({
             <div
               className={clsx(
                 'text-[13px] my-[12px]',
-                isError ? 'text-r-red-default' : 'text-r-green-default'
+                isError ? 'text-l-red-default' : 'text-l-green-default'
               )}
             >
               {desc}
             </div>
           )}
-          <ol className="mb-[22px] list-outside list-decimal bg-r-neutral-card-3 rounded-[8px] h-[87px] p-[12px] pl-[26px] text-[13px] leading-[20px] text-r-neutral-body">
+          <ol className="mb-[22px] list-outside list-decimal bg-l-neutral-card-3 rounded-[8px] h-[87px] p-[12px] pl-[26px] text-[13px] leading-[20px] text-l-neutral-body">
             <li>
               {t(
                 'page.luxPoints.referralCode.once-set-this-referral-code-is-permanent-and-cannot-change'
@@ -206,7 +206,7 @@ export const SetReferralCode = ({
           <Button
             disabled={disabled}
             type="primary"
-            className="mt-auto w-full h-[52px] text-[15] font-medium text-r-neutral-title2"
+            className="mt-auto w-full h-[52px] text-[15] font-medium text-l-neutral-title2"
             onClick={submitReferralCode}
           >
             {t('page.luxPoints.referralCode.confirm')}

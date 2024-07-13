@@ -348,7 +348,7 @@ export const TransactionItem = ({
             {item.isSubmitFailed || maxGasTx.isWithdrawed ? (
               <>
                 {originTx.site && <TransactionWebsite site={originTx.site} />}
-                <span className="whitespace-nowrap overflow-ellipsis overflow-hidden text-r-neutral-foot text-right">
+                <span className="whitespace-nowrap overflow-ellipsis overflow-hidden text-l-neutral-foot text-right">
                   No Gas cost
                 </span>
               </>
@@ -357,9 +357,9 @@ export const TransactionItem = ({
                 {completedTx?.site ? (
                   <TransactionWebsite site={completedTx.site} />
                 ) : (
-                  <span className="flex-1 whitespace-nowrap overflow-ellipsis overflow-hidden text-r-neutral-foot"></span>
+                  <span className="flex-1 whitespace-nowrap overflow-ellipsis overflow-hidden text-l-neutral-foot"></span>
                 )}
-                <span className="whitespace-nowrap overflow-ellipsis overflow-hidden text-r-neutral-foot text-right">
+                <span className="whitespace-nowrap overflow-ellipsis overflow-hidden text-l-neutral-foot text-right">
                   Gas:{' '}
                   {gasTokenCount
                     ? `${gasTokenCount.toFixed(

@@ -379,7 +379,7 @@ function MnemonicsInputs({
 
   return (
     <div className={clsx(!!errMsgs.length && 'with-error')}>
-      <HeadToolbar className="mb-[8px] text-r-neutral-body">
+      <HeadToolbar className="mb-[8px] text-l-neutral-body">
         <Dropdown
           trigger={['click']}
           overlay={
@@ -387,7 +387,7 @@ function MnemonicsInputs({
               {MNEMONICS_COUNTS.map((count) => {
                 return (
                   <Menu.Item
-                    className="h-[38px] py-0 px-[8px] text-r-neutral-body hover:bg-transparent"
+                    className="h-[38px] py-0 px-[8px] text-l-neutral-body hover:bg-transparent"
                     key={`countSelector-${count}`}
                     onClick={() => {
                       setMnemonicsCount(count);
@@ -520,7 +520,7 @@ function MnemonicsInputs({
       <MatrixWrapper
         className={clsx(
           'rounded-[6px] text-center',
-          'border border-rabby-neutral-line border-solid',
+          'border border-lux-neutral-line border-solid',
           isSlip39 && 'hidden',
           className
         )}
@@ -674,10 +674,10 @@ const SLIP39MnemonicsInput = ({
         }
         onPaste={onPaste}
         className={clsx(
-          'min-h-[100px] p-12 border-rabby-neutral-line bg-rabby-neutral-card-1 ',
-          'text-13 text-r-neutral-title-1 font-medium leading-[18px]',
-          error ? 'border-rabby-red-default' : '',
-          'placeholder-shown:text-r-neutral-foot placeholder-shown:text-13 focus:border-blue'
+          'min-h-[100px] p-12 border-lux-neutral-line bg-lux-neutral-card-1 ',
+          'text-13 text-l-neutral-title-1 font-medium leading-[18px]',
+          error ? 'border-lux-red-default' : '',
+          'placeholder-shown:text-l-neutral-foot placeholder-shown:text-13 focus:border-blue'
         )}
         spellCheck={false}
         placeholder={t(

@@ -27,7 +27,7 @@ export const TopUserItem = (props: User) => {
       className={clsx(
         'h-[56px] pl-[20px] pr-[4px] py-[12px] flex items-center',
         props.showCurrentUser &&
-          'absolute w-full bottom-0 bg-r-neutral-bg-1 bg-opacity-95 border-0 border-t-[0.5px] border-rabby-neutral-line  backdrop-blur-[4px]',
+          'absolute w-full bottom-0 bg-l-neutral-bg-1 bg-opacity-95 border-0 border-t-[0.5px] border-lux-neutral-line  backdrop-blur-[4px]',
         props.className
       )}
     >
@@ -35,7 +35,7 @@ export const TopUserItem = (props: User) => {
         <ClaimUserAvatar src={props.logo_url} className="w-[28px] h-[28px]" />
         <div
           onClick={gotoDebank}
-          className="ml-[12px] mr-[4px] text-[15px] font-medium text-r-neutral-title1 cursor-pointer"
+          className="ml-[12px] mr-[4px] text-[15px] font-medium text-l-neutral-title1 cursor-pointer"
         >
           {props.web3_id || ellipsisAddress(props.id)}
         </div>
@@ -45,12 +45,12 @@ export const TopUserItem = (props: User) => {
         />
       </div>
       <div className="ml-auto flex items-center">
-        <div className="text-[15px] font-medium text-r-neutral-title1 text-right">
+        <div className="text-[15px] font-medium text-l-neutral-title1 text-right">
           {formatNumber(props.claimed_points, 0)}
         </div>
         <div
           className={clsx(
-            'w-[78px] text-center text-r-neutral-foot text-[15px]',
+            'w-[78px] text-center text-l-neutral-foot text-[15px]',
             props.index < 3 && props.showCurrentUser && 'relative right-[-4px]'
           )}
         >

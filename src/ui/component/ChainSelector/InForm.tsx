@@ -67,7 +67,7 @@ export const ChainRender = ({
     <ChainWrapper
       className={clsx(
         {
-          'cursor-default hover:bg-r-neutral-bg-2': readonly,
+          'cursor-default hover:bg-l-neutral-bg-2': readonly,
         },
         className
       )}

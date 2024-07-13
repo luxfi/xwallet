@@ -213,15 +213,15 @@ export const DappSearchPage = () => {
 
   return (
     <div
-      className="pb-[48px] w-full h-full bg-r-neutral-bg2"
+      className="pb-[48px] w-full h-full bg-l-neutral-bg2"
       style={{
         overflow: 'overlay',
       }}
       ref={ref}
     >
       <div
-        className={clsx('sticky top-0 z-20 mt-[40px] bg-r-neutral-bg-2', {
-          'border-b-[0.5px] border-solid border-rabby-neutral-line':
+        className={clsx('sticky top-0 z-20 mt-[40px] bg-l-neutral-bg-2', {
+          'border-b-[0.5px] border-solid border-lux-neutral-line':
             (scroll?.top || 0) > 30,
         })}
       >
@@ -244,7 +244,7 @@ export const DappSearchPage = () => {
                 }}
                 autoFocus
                 prefix={
-                  <div className="text-r-neutral-body">
+                  <div className="text-l-neutral-body">
                     <RcIconSearch />
                   </div>
                 }
@@ -262,9 +262,9 @@ export const DappSearchPage = () => {
                     <div
                       key={item}
                       className={clsx(
-                        'px-[15px] py-[7px] bg-r-neutral-card1 rounded-[8px] border-[1px] border-transparent',
-                        'hover:border-rabby-blue-default hover:bg-r-blue-light1 cursor-pointer',
-                        'text-r-neutral-body text-[13px] leading-[16px]'
+                        'px-[15px] py-[7px] bg-l-neutral-card1 rounded-[8px] border-[1px] border-transparent',
+                        'hover:border-lux-blue-default hover:bg-l-blue-light1 cursor-pointer',
+                        'text-l-neutral-body text-[13px] leading-[16px]'
                       )}
                       onMouseDown={() => {
                         setSearchValue(item);
@@ -290,7 +290,7 @@ export const DappSearchPage = () => {
               onFavoriteChange={handleFavoriteChange}
               leftSlot={
                 debouncedSearchValue ? (
-                  <div className="text-[14px] leading-[16px] text-r-neutral-foot">
+                  <div className="text-[14px] leading-[16px] text-l-neutral-foot">
                     <Trans
                       i18nKey="page.dappSearch.searchResult.foundDapps"
                       values={{
@@ -298,14 +298,14 @@ export const DappSearchPage = () => {
                       }}
                     >
                       Found{' '}
-                      <span className="text-r-neutral-body font-medium">
+                      <span className="text-l-neutral-body font-medium">
                         {total}
                       </span>{' '}
                       Dapps
                     </Trans>
                   </div>
                 ) : (
-                  <div className="text-[14px] leading-[16px] text-r-neutral-foot">
+                  <div className="text-[14px] leading-[16px] text-l-neutral-foot">
                     <Trans
                       i18nKey="page.dappSearch.searchResult.totalDapps"
                       values={{
@@ -313,7 +313,7 @@ export const DappSearchPage = () => {
                       }}
                     >
                       Total{' '}
-                      <span className="text-r-neutral-body font-medium">
+                      <span className="text-l-neutral-body font-medium">
                         {total}
                       </span>{' '}
                       Dapps
@@ -330,8 +330,8 @@ export const DappSearchPage = () => {
                   {chainInfo ? (
                     <div
                       className={clsx(
-                        'rounded-[4px] bg-r-neutral-card1',
-                        'border-[0.5px] border-solid border-rabby-neutral-line',
+                        'rounded-[4px] bg-l-neutral-card1',
+                        'border-[0.5px] border-solid border-lux-neutral-line',
                         'flex items-center cursor-pointer',
                         'p-[2px]'
                       )}
@@ -339,19 +339,19 @@ export const DappSearchPage = () => {
                       <div
                         className={clsx(
                           'flex items-center gap-[6px] py-[4px] pl-[9px] pr-[3px] rounded-[2px]',
-                          'hover:bg-r-blue-light1'
+                          'hover:bg-l-blue-light1'
                         )}
                       >
                         <img
                           src={chainInfo?.logo}
                           className="w-[20px] h-[20px] rounded-full"
                         />
-                        <span className="text-r-neutral-body text-[14px] leading-[17px] font-medium">
+                        <span className="text-l-neutral-body text-[14px] leading-[17px] font-medium">
                           {chainInfo?.name}
                         </span>
                       </div>
                       <span
-                        className="p-[7px] cursor-pointer text-r-neutral-foot rounded-[2px] hover:bg-r-blue-light1"
+                        className="p-[7px] cursor-pointer text-l-neutral-foot rounded-[2px] hover:bg-l-blue-light1"
                         onClick={(e) => {
                           e.preventDefault();
                           e.stopPropagation();
@@ -365,7 +365,7 @@ export const DappSearchPage = () => {
                     <div
                       className={clsx(
                         'flex items-center gap-[2px] cursor-pointer',
-                        'text-r-neutral-body font-medium text-[13px] leading-[16px]'
+                        'text-l-neutral-body font-medium text-[13px] leading-[16px]'
                       )}
                     >
                       {t('page.dappSearch.selectChain')}

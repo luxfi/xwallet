@@ -74,7 +74,7 @@ export const CardTitle: React.FC<{
     <CardTitleDiv onClick={onAction}>
       <CardHeadlineDiv>{headline}</CardHeadlineDiv>
       {hasAction && (
-        <div className="text-13 text-r-neutral-body cursor-pointer flex items-center">
+        <div className="text-13 text-l-neutral-body cursor-pointer flex items-center">
           <span>{actionText}</span>
           <ThemeIcon className="icon mt-1" src={RcIconArrowRight} />
         </div>

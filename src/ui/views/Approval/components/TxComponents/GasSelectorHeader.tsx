@@ -728,7 +728,7 @@ const GasSelectorHeader = ({
     <>
       <HeaderStyled>
         <GasStyled {...gasHoverProps}>
-          <GasLogoSVG className="flex-shrink-0 text-r-neutral-foot" />
+          <GasLogoSVG className="flex-shrink-0 text-l-neutral-foot" />
           <div className="gas-selector-card-content overflow-hidden">
             {disabled ? (
               <div className="font-semibold">
@@ -746,10 +746,10 @@ const GasSelectorHeader = ({
                   className={clsx(
                     'gas-selector-card-amount translate-y-1 flex items-center overflow-hidden',
                     {
-                      'text-r-red-default':
+                      'text-l-red-default':
                         !processedRules.includes('1118') &&
                         engineResultMap['1118']?.level === 'danger',
-                      'text-r-orange-default':
+                      'text-l-orange-default':
                         !processedRules.includes('1118') &&
                         engineResultMap['1118']?.level === 'warning',
                     }
@@ -780,7 +780,7 @@ const GasSelectorHeader = ({
             )}
           </div>
           {gas.success && (
-            <div className="text-r-neutral-body text-14 mt-2 flex-shrink-0">
+            <div className="text-l-neutral-body text-14 mt-2 flex-shrink-0">
               {isGasHovering
                 ? calcGasEstimated(selectedGas?.estimated_seconds)
                 : `~${gasCostAmountStr}`}
@@ -831,7 +831,7 @@ const GasSelectorHeader = ({
               </div>
               {version === 'v2' && gas.error ? (
                 <div className="gas-selector-modal-error-desc mt-[8px] flex items-center justify-center">
-                  <RcIconAlert className="text-r-neutral-body mr-6 w-16" />
+                  <RcIconAlert className="text-l-neutral-body mr-6 w-16" />
                   {gas.error.msg}{' '}
                   <span className="number">#{gas.error.code}</span>
                 </div>
@@ -959,7 +959,7 @@ const GasSelectorHeader = ({
         <div>
           {is1559 && (
             <>
-              <Divide className="bg-r-neutral-line my-20" />
+              <Divide className="bg-l-neutral-line my-20" />
 
               <div
                 className={clsx('priority-slider', {
@@ -977,7 +977,7 @@ const GasSelectorHeader = ({
                     }
                     overlayClassName="rectangle"
                   >
-                    <IconInfoSVG className="text-r-neutral-foot ml-2 mt-2" />
+                    <IconInfoSVG className="text-l-neutral-foot ml-2 mt-2" />
                   </Tooltip>
                 </p>
                 <Tooltip

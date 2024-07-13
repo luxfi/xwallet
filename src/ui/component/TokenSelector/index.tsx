@@ -176,15 +176,15 @@ const TokenSelector = ({
           />
 
           {!query || isSearchAddr ? (
-            <p className="text-r-neutral-foot text-14 mt-12 text-center mb-0">
+            <p className="text-l-neutral-foot text-14 mt-12 text-center mb-0">
               {t('component.TokenSelector.noTokens')}
             </p>
           ) : (
             <>
-              <p className="text-r-neutral-foot text-14 mt-12 text-center mb-0">
+              <p className="text-l-neutral-foot text-14 mt-12 text-center mb-0">
                 {t('component.TokenSelector.noMatch')}
               </p>
-              <p className="text-r-neutral-foot text-14 mt-0 text-center">
+              <p className="text-l-neutral-foot text-14 mt-0 text-center">
                 {/* Try to search contract address on {{ chainName }} */}
                 {t('component.TokenSelector.noMatchSuggestion', {
                   chainName:
@@ -218,7 +218,7 @@ const TokenSelector = ({
       visible={visible}
       onClose={onCancel}
       closeIcon={
-        <RcIconCloseCC className="w-[20px] h-[20px] text-r-neutral-foot" />
+        <RcIconCloseCC className="w-[20px] h-[20px] text-l-neutral-foot" />
       }
     >
       {/* Select a token */}
@@ -321,7 +321,7 @@ const TokenSelector = ({
                         />
                         <div className="flex flex-col gap-4">
                           <span
-                            className="symbol text-13 text-r-neutral-title-1 font-medium"
+                            className="symbol text-13 text-l-neutral-title-1 font-medium"
                             title={token.amount.toString()}
                           >
                             {formatTokenAmount(token.amount)}
@@ -361,7 +361,7 @@ const TokenSelector = ({
                               .toFixed()
                           )}
                           className={clsx(
-                            'max-w-full text-13 text-r-neutral-title-1',
+                            'max-w-full text-13 text-l-neutral-title-1',
                             'truncate'
                           )}
                         >
@@ -417,7 +417,7 @@ const TokenSelector = ({
                           hideConer
                         />
                         <div
-                          className="text-r-neutral-title1 text-[13px] leading-[15px] font-medium"
+                          className="text-l-neutral-title1 text-[13px] leading-[15px] font-medium"
                           title={getTokenSymbol(token)}
                         >
                           {getTokenSymbol(token)}
@@ -427,7 +427,7 @@ const TokenSelector = ({
                       <div
                         title={formatTokenAmount(token.amount)}
                         className={clsx(
-                          'max-w-full text-r-neutral-title1 text-[13px] leading-[15px] font-medium',
+                          'max-w-full text-l-neutral-title1 text-[13px] leading-[15px] font-medium',
                           'truncate text-right ml-auto w-[150px]'
                         )}
                       >
@@ -448,29 +448,29 @@ const DefaultLoading = () => (
     <div className="gap-x-12 flex">
       <Skeleton.Input
         active
-        className="rounded-full w-[24px] h-[24px] bg-r-neutral-bg-1"
+        className="rounded-full w-[24px] h-[24px] bg-l-neutral-bg-1"
       />
       <div className="gap-y-2 flex flex-col">
         <Skeleton.Input
           active
-          className="bg-r-neutral-bg-1 rounded-[2px] w-[72px] h-[15px]"
+          className="bg-l-neutral-bg-1 rounded-[2px] w-[72px] h-[15px]"
         />
         <Skeleton.Input
           active
-          className="bg-r-neutral-bg-1 rounded-[2px] w-[44px] h-[10px]"
+          className="bg-l-neutral-bg-1 rounded-[2px] w-[44px] h-[10px]"
         />
       </div>
     </div>
     <div>
       <Skeleton.Input
         active
-        className="bg-r-neutral-bg-1 rounded-[2px] w-[72px] h-[20px]"
+        className="bg-l-neutral-bg-1 rounded-[2px] w-[72px] h-[20px]"
       />
     </div>
     <div>
       <Skeleton.Input
         active
-        className="bg-r-neutral-bg-1 rounded-[2px] w-[72px] h-[20px]"
+        className="bg-l-neutral-bg-1 rounded-[2px] w-[72px] h-[20px]"
       />
     </div>
   </div>

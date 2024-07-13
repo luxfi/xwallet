@@ -128,7 +128,7 @@ function NoSearchedAddressUI() {
   return (
     <div className="no-matched-address h-[120px]">
       <ThemeIcon className="w-[28px] h-[28px]" src={RcNoMatchedAddress} />
-      <p className="text-13 mt-[10px] text-r-neutral-body">
+      <p className="text-13 mt-[10px] text-l-neutral-body">
         {t('component.AccountSearchInput.noMatchAddress')}
       </p>
     </div>

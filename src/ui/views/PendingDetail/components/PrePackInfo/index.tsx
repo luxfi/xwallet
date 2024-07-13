@@ -111,7 +111,7 @@ const TokenChange = ({
           alt=""
           className="w-[16px] h-[16px] rounded-full"
         />
-        <div className="text-r-neutral-title-1 text-[13px] font-medium">
+        <div className="text-l-neutral-title-1 text-[13px] font-medium">
           {isNegative ? '-' : '+'} {formatAmount(token.amount)}{' '}
           {getTokenSymbol(token)}
         </div>
@@ -129,7 +129,7 @@ const TokenChange = ({
           type={nft?.content_type}
           unknown={IconUnknownNFT}
         ></NFTAvatar>
-        <div className="text-r-neutral-title-1  text-[13px] font-medium">
+        <div className="text-l-neutral-title-1  text-[13px] font-medium">
           {isNegative ? '-' : '+'} {formatAmount(nft.amount, 0)} {name}
         </div>
       </div>
@@ -231,14 +231,14 @@ export const PrePackInfo = ({
             return null;
           }
           return (
-            <div className="flex items-center gap-[6px] text-r-blue-default font-medium">
+            <div className="flex items-center gap-[6px] text-l-blue-default font-medium">
               <img src={IconNoLoss} alt="" />
               {t('page.pendingDetail.PrePackInfo.noLoss')}
             </div>
           );
         }
         return (
-          <div className="flex items-center gap-[6px] text-r-orange-default font-medium">
+          <div className="flex items-center gap-[6px] text-l-orange-default font-medium">
             <img src={IconWarning} alt="" />
             <div>
               - {formatAmount(record.diff)}{' '}
@@ -266,7 +266,7 @@ export const PrePackInfo = ({
   return (
     <div
       className={clsx(
-        'card mb-[24px] pt-[16px] bg-r-neutral-bg-1',
+        'card mb-[24px] pt-[16px] bg-l-neutral-bg-1',
         isCollapse && 'pb-[16px]'
       )}
     >
@@ -276,7 +276,7 @@ export const PrePackInfo = ({
           setIsCollapse(!isCollapse);
         }}
       >
-        <div className="text-r-neutral-title-1 text-[20px] leading-[24px] font-medium">
+        <div className="text-l-neutral-title-1 text-[20px] leading-[24px] font-medium">
           {t('page.pendingDetail.PrePackInfo.title')}
         </div>
         {
@@ -284,7 +284,7 @@ export const PrePackInfo = ({
             {loading || !isPending ? null : (
               <>
                 {preExecError ? (
-                  <div className="flex items-center gap-[6px] text-r-red-default  text-[15px] leading-[18px] font-medium">
+                  <div className="flex items-center gap-[6px] text-l-red-default  text-[15px] leading-[18px] font-medium">
                     <img src={IconError} alt="" />
                     {t('page.pendingDetail.PrePackInfo.error', {
                       count: 1,
@@ -292,19 +292,19 @@ export const PrePackInfo = ({
                   </div>
                 ) : (
                   <>
-                    <div className="flex items-center gap-[8px] text-r-blue-default  text-[15px] leading-[18px] font-medium">
+                    <div className="flex items-center gap-[8px] text-l-blue-default  text-[15px] leading-[18px] font-medium">
                       <img src={IconCheck} alt="" />
                       {t('page.pendingDetail.PrePackInfo.noError')}
                     </div>
                     {lossCount > 0 ? (
-                      <div className="flex items-center gap-[8px] text-r-orange-default  text-[15px] leading-[18px] font-medium">
+                      <div className="flex items-center gap-[8px] text-l-orange-default  text-[15px] leading-[18px] font-medium">
                         <img src={IconWarning} alt="" />
                         {t('page.pendingDetail.PrePackInfo.loss', {
                           lossCount: lossCount,
                         })}
                       </div>
                     ) : (
-                      <div className="flex items-center gap-[8px] text-r-blue-default  text-[15px] leading-[18px] font-medium">
+                      <div className="flex items-center gap-[8px] text-l-blue-default  text-[15px] leading-[18px] font-medium">
                         <img src={IconCheck} alt="" />
                         {t('page.pendingDetail.PrePackInfo.noLoss')}
                       </div>
@@ -316,7 +316,7 @@ export const PrePackInfo = ({
 
             <div
               className={clsx(
-                'cursor-pointer hover:bg-r-neutral-card-2 w-[32px] h-[32px] flex items-center justify-center rounded-[2px]',
+                'cursor-pointer hover:bg-l-neutral-card-2 w-[32px] h-[32px] flex items-center justify-center rounded-[2px]',
                 isCollapse ? '' : 'rotate-180'
               )}
             >
@@ -327,14 +327,14 @@ export const PrePackInfo = ({
       </div>
       {isCollapse ? null : (
         <>
-          <div className="text-r-neutral-foot text-[12px] mt-[8px] leading-[14px]">
+          <div className="text-l-neutral-foot text-[12px] mt-[8px] leading-[14px]">
             {t('page.pendingDetail.PrePackInfo.desc', {
               time: lastExplainTime,
             })}
           </div>
-          <div className="bg-r-neutral-line h-[0.5px] mx-[-24px] mt-[16px]"></div>
+          <div className="bg-l-neutral-line h-[0.5px] mx-[-24px] mt-[16px]"></div>
           {preExecError ? (
-            <div className="flex items-center gap-[6px] text-r-red-default  text-[15px] leading-[18px] font-medium py-[16px]">
+            <div className="flex items-center gap-[6px] text-l-red-default  text-[15px] leading-[18px] font-medium py-[16px]">
               <img src={IconError} alt="" /> {preExecError?.msg}
             </div>
           ) : (

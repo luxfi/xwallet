@@ -28,7 +28,7 @@ export const CustomTestnetAssetList = ({
       >
         <AssetEmptySVG className="m-auto" />
         <div>
-          <div className="mt-0 text-r-neutral-foot text-[14px] text-center">
+          <div className="mt-0 text-l-neutral-foot text-[14px] text-center">
             {t('page.dashboard.assets.noTestnetAssets')}
           </div>
           <div className="text-center mt-[50px]">

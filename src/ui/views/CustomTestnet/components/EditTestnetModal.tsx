@@ -149,9 +149,9 @@ export const EditCustomTestnetModal = ({
             <div
               className={clsx(
                 'flex items-center gap-[8px]',
-                'bg-r-blue-light1 p-[15px] cursor-pointer rounded-[6px]',
+                'bg-l-blue-light1 p-[15px] cursor-pointer rounded-[6px]',
                 'mb-[20px] border-[1px] border-transparent',
-                'hover:border-rabby-blue-default hover:bg-r-blue-light1'
+                'hover:border-lux-blue-default hover:bg-l-blue-light1'
               )}
               onClick={() => {
                 setIsShowAddFromChainList(true);
@@ -164,7 +164,7 @@ export const EditCustomTestnetModal = ({
               }}
             >
               <ThemeIcon src={RcIconFlash}></ThemeIcon>
-              <div className="text-r-neutral-title1 text-[15px] leading-[18px] font-medium">
+              <div className="text-l-neutral-title1 text-[15px] leading-[18px] font-medium">
                 {t('page.customRpc.EditCustomTestnetModal.quickAdd')}
               </div>
               <ThemeIcon src={RcIconRight} className="ml-auto"></ThemeIcon>

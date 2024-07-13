@@ -26,9 +26,9 @@ export const AddressInput: React.FC<Props> = ({
         className={clsx(
           'flex items-start',
           'rounded-[6px] py-16 px-12',
-          'bg-r-neutral-card-1',
+          'bg-l-neutral-card-1',
           {
-            'border-rabby-neutral-line': !error,
+            'border-lux-neutral-line': !error,
           },
           'focus-within: border border-[#7084ff]',
           {
@@ -45,7 +45,7 @@ export const AddressInput: React.FC<Props> = ({
           onChange={(v) => onChange(v.target.value)}
           value={value}
           placeholder={t('page.newAddress.coboSafe.inputSafeModuleAddress')}
-          className="p-0 min-h-[22px] text-r-neutral-title-1"
+          className="p-0 min-h-[22px] text-l-neutral-title-1"
           autoSize={{
             minRows: 1,
             maxRows: 3,

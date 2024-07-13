@@ -28,7 +28,7 @@ export const CollectionCard: React.FC<Props> = ({
   return (
     <div
       className={clsx(
-        'p-12 rounded-[6px] bg-r-neutral-card-1 relative',
+        'p-12 rounded-[6px] bg-l-neutral-card-1 relative',
         className
       )}
     >
@@ -41,20 +41,20 @@ export const CollectionCard: React.FC<Props> = ({
         <div className="space-x-4 flex items-center mr-28">
           <span
             className={clsx(
-              'block text-15 text-r-neutral-title-1 font-medium leading-[18px]',
+              'block text-15 text-l-neutral-title-1 font-medium leading-[18px]',
               'truncate'
             )}
             title={collection.name}
           >
             {collection.name}
           </span>
-          <span className="block text-13 text-r-neutral-foot leading-[18px] -mt-1">
+          <span className="block text-13 text-l-neutral-foot leading-[18px] -mt-1">
             ({collection.nft_list.length})
           </span>
         </div>
         <div className="gap-x-4 flex mt-6">
           <ChainIcon chain={chain} />
-          <div className="text-r-neutral-foot text-12">
+          <div className="text-l-neutral-foot text-12">
             <span>{chainName}</span>
             {collection.floor_price !== 0 ? (
               <>

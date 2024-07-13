@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { useTranslation } from 'react-i18next';
 import { ReactComponent as IconQuestionMark } from 'ui/assets/sign/question-mark.svg';
-import IconRabbyDecoded from 'ui/assets/sign/rabby-decoded.svg';
+import IconLuxDecoded from 'ui/assets/sign/lux-decoded.svg';
 import IconSpeedUp from 'ui/assets/sign/tx/speedup.svg';
 import { findChain } from '@/utils/chain';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
@@ -126,7 +126,7 @@ export const TestnetActions = ({
                     />
                   }
                 >
-                  <IconQuestionMark className="w-14 text-r-neutral-foot ml-2 mt-2" />
+                  <IconQuestionMark className="w-14 text-l-neutral-foot ml-2 mt-2" />
                 </TooltipWithMagnetArrow>
               )}
             </div>

@@ -373,7 +373,7 @@ const AddressWithCopy = ({
       >
         <span
           className={clsx({
-            'cursor-pointer group-hover:underline hover:text-r-blue-default':
+            'cursor-pointer group-hover:underline hover:text-l-blue-default':
               hasHover && !isHoverToolbar,
           })}
         >
@@ -386,14 +386,14 @@ const AddressWithCopy = ({
             onClick={handleClickContractId}
             width={iconWidth}
             height={iconWidth}
-            className="ml-6 cursor-pointer text-r-neutral-foot hover:text-r-blue-default"
+            className="ml-6 cursor-pointer text-l-neutral-foot hover:text-l-blue-default"
           />
         )}
         <IconAddressCopy
           onClick={handleCopyContractAddress}
           width={iconWidth}
           height={iconWidth}
-          className="ml-6 cursor-pointer icon-copy text-r-neutral-foot hover:text-r-blue-default"
+          className="ml-6 cursor-pointer icon-copy text-l-neutral-foot hover:text-l-blue-default"
         />
       </div>
     </AddressWrapper>
@@ -454,7 +454,7 @@ const TokenSymbol = ({
   return (
     <span
       className={clsx(
-        'hover:text-r-blue-default cursor-pointer',
+        'hover:text-l-blue-default cursor-pointer',
         !disableHover && 'group-hover:underline'
       )}
       onClick={handleClickTokenSymbol}

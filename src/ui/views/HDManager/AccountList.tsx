@@ -226,7 +226,7 @@ export const AccountList: React.FC<Props> = ({
             }}
           >
             <td>
-              <RcArrowSVG className="icon text-r-neutral-title-1" />
+              <RcArrowSVG className="icon text-l-neutral-title-1" />
               <span>{t('page.newAddress.hd.clickToGetInfo')}</span>
             </td>
           </tr>
@@ -274,7 +274,7 @@ export const AccountList: React.FC<Props> = ({
           key="address"
           render={(value: string, record, index) =>
             value ? (
-              <div className="cell-address text-r-neutral-title-1">
+              <div className="cell-address text-l-neutral-title-1">
                 <span>{value.toLowerCase()}</span>
                 <RcCopySVG
                   onClick={() => copy(value.toLowerCase())}

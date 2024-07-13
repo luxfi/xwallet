@@ -51,11 +51,11 @@ const Inner = ({
   const { t } = useTranslation();
 
   return (
-    <div className="w-[360px] bg-r-neutral-bg-1 p-[20px] pb-[24px] rounded-[8px] leading-[normal]">
-      <div className="text-r-neutral-title1 text-[20px] font-medium text-center">
+    <div className="w-[360px] bg-l-neutral-bg-1 p-[20px] pb-[24px] rounded-[8px] leading-[normal]">
+      <div className="text-l-neutral-title1 text-[20px] font-medium text-center">
         {t('page.luxPoints.referralCode.verifyAddressModal.verify-address')}
       </div>
-      <div className="mt-[12px] text-[15px]  text-r-neutral-body">
+      <div className="mt-[12px] text-[15px]  text-l-neutral-body">
         {t(
           'page.luxPoints.referralCode.verifyAddressModal.please-sign-this-text-message-to-verify-that-you-are-the-owner-of-this-address'
         )}
@@ -65,7 +65,7 @@ const Inner = ({
           type="ghost"
           onClick={onCancel}
           className={clsx(
-            'flex-1 h-[44px] text-[15px] font-medium border-blue-light text-r-blue-default',
+            'flex-1 h-[44px] text-[15px] font-medium border-blue-light text-l-blue-default',
             'hover:bg-[#8697FF1A] active:bg-[#0000001A]',
             'before:content-none'
           )}
@@ -74,7 +74,7 @@ const Inner = ({
         </Button>
         <Button
           type="primary"
-          className="flex-1 h-[44px] text-[15px] font-medium text-r-neutral-title2"
+          className="flex-1 h-[44px] text-[15px] font-medium text-l-neutral-title2"
           onClick={onConfirm}
         >
           {t('page.luxPoints.referralCode.verifyAddressModal.sign')}

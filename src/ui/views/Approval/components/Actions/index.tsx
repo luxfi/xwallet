@@ -179,7 +179,7 @@ const Actions = ({
                     />
                   }
                 >
-                  <IconQuestionMark className="w-14 text-r-neutral-foot ml-2 mt-2" />
+                  <IconQuestionMark className="w-14 text-l-neutral-foot ml-2 mt-2" />
                 </TooltipWithMagnetArrow>
               )}
             </div>

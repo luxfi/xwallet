@@ -73,7 +73,7 @@ export const SubmitActions: React.FC<Props> = ({
             )}
             onClick={handleClickCancel}
           >
-            <IconClose className="text-r-neutral-title-2" />
+            <IconClose className="text-l-neutral-title-2" />
           </button>
         </div>
       ) : (

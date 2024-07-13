@@ -65,7 +65,7 @@ const Welcome = () => {
           <div className="step-content">{t('page.welcome.step2.desc')}</div>
           <img
             src="/images/welcome-step-2.png"
-            className="bg-r-neutral-card2 w-[317px] h-[199px] mx-auto rounded-[10px]"
+            className="bg-l-neutral-card2 w-[317px] h-[199px] mx-auto rounded-[10px]"
           />
           <footer className="mt-[64px]">
             <Link to="/no-address" replace>

@@ -110,14 +110,14 @@ export const CustomTestnetAssetListContainer: React.FC<Props> = ({
           <div className="flex items-center gap-x-[12px]">
             <div
               className={clsx(
-                'rounded-[6px] bg-r-neutral-card2 px-[9px] py-[7px] cursor-pointer',
+                'rounded-[6px] bg-l-neutral-card2 px-[9px] py-[7px] cursor-pointer',
                 'border-[1px] border-transparent min-w-[82px] text-center',
-                'hover:border-rabby-blue-default hover:bg-r-blue-light1'
+                'hover:border-lux-blue-default hover:bg-l-blue-light1'
               )}
             >
               <div
                 className={clsx(
-                  'text-r-neutral-body text-[13px] leading-[16px] cursor-pointer',
+                  'text-l-neutral-body text-[13px] leading-[16px] cursor-pointer',
                   'flex items-center gap-x-[4px] justify-center'
                 )}
                 onClick={() => {
@@ -128,7 +128,7 @@ export const CustomTestnetAssetListContainer: React.FC<Props> = ({
                   setIsShowAddTestnetModal(true);
                 }}
               >
-                <span className="text-r-neutral-body">
+                <span className="text-l-neutral-body">
                   <RcIconAdd />
                 </span>
                 {t(
@@ -138,21 +138,21 @@ export const CustomTestnetAssetListContainer: React.FC<Props> = ({
             </div>
             <div
               className={clsx(
-                'rounded-[6px] bg-r-neutral-card2 px-[9px] py-[7px] cursor-pointer',
+                'rounded-[6px] bg-l-neutral-card2 px-[9px] py-[7px] cursor-pointer',
                 'border-[1px] border-transparent min-w-[82px] text-center',
-                'hover:border-rabby-blue-default hover:bg-r-blue-light1'
+                'hover:border-lux-blue-default hover:bg-l-blue-light1'
               )}
             >
               <div
                 className={clsx(
-                  'text-r-neutral-body text-[13px] leading-[16px] cursor-pointer',
+                  'text-l-neutral-body text-[13px] leading-[16px] cursor-pointer',
                   'flex items-center gap-x-[4px] justify-center'
                 )}
                 onClick={() => {
                   setIsShowAddModal(true);
                 }}
               >
-                <span className="text-r-neutral-body">
+                <span className="text-l-neutral-body">
                   <RcIconAdd />
                 </span>
                 {t('page.dashboard.assets.TestnetAssetListContainer.add')}

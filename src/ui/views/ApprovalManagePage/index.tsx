@@ -187,7 +187,7 @@ function getColumnsForContract({
                 addressClass=""
                 address={row.id}
                 chainEnum={chainItem.enum}
-                copyIconClass="text-r-neutral-body"
+                copyIconClass="text-l-neutral-body"
                 addressSuffix={
                   <>
                     <Tooltip
@@ -205,7 +205,7 @@ function getColumnsForContract({
                       }}
                       src={RcIconExternal}
                       className={clsx(
-                        'ml-6 w-[16px] h-[16px] cursor-pointer text-r-neutral-body'
+                        'ml-6 w-[16px] h-[16px] cursor-pointer text-l-neutral-body'
                       )}
                     />
                   </>
@@ -268,7 +268,7 @@ function getColumnsForContract({
                 className={clsx(
                   'ml-[4px] w-[12px] h-[12px] relative',
                   IS_WINDOWS && 'top-[1px]',
-                  'text-r-neutral-title1'
+                  'text-l-neutral-title1'
                 )}
                 src={RcIconQuestionCC}
               />
@@ -546,7 +546,7 @@ function getColumnsForContract({
             </span>
 
             <ThemeIcon
-              className="ml-[4px] text-r-neutral-title1"
+              className="ml-[4px] text-l-neutral-title1"
               src={RcIconRowArrowRightCC}
             />
           </div>
@@ -688,7 +688,7 @@ function getColumnsForAsset({
               }}
               src={RcIconExternal}
               className={clsx(
-                'ml-6 w-[16px] h-[16px] cursor-pointer text-r-neutral-body'
+                'ml-6 w-[16px] h-[16px] cursor-pointer text-l-neutral-body'
               )}
             />
           );
@@ -747,7 +747,7 @@ function getColumnsForAsset({
                 align={{ offset: [0, 3] }}
                 arrowPointAtCenter
               >
-                <span className="text-r-neutral-title-1">
+                <span className="text-l-neutral-title-1">
                   {spendValues.displayAmountText}
                 </span>
               </Tooltip>
@@ -762,7 +762,7 @@ function getColumnsForAsset({
                 align={{ offset: [0, 3] }}
                 arrowPointAtCenter
               >
-                <span className="text-r-neutral-foot">
+                <span className="text-l-neutral-foot">
                   {spendValues.displayBalanceText}
                 </span>
               </Tooltip>
@@ -809,7 +809,7 @@ function getColumnsForAsset({
               addressClass=""
               address={spender.id || ''}
               chainEnum={chainItem?.enum}
-              copyIconClass="text-r-neutral-body"
+              copyIconClass="text-l-neutral-body"
               addressSuffix={
                 <>
                   <Tooltip
@@ -830,7 +830,7 @@ function getColumnsForAsset({
                     }}
                     src={RcIconExternal}
                     className={clsx(
-                      'ml-6 w-[16px] h-[16px] cursor-pointer text-r-neutral-body'
+                      'ml-6 w-[16px] h-[16px] cursor-pointer text-l-neutral-body'
                     )}
                   />
                 </>
@@ -1177,7 +1177,7 @@ const ApprovalManagePage = () => {
               address: ellipsisAddress(account?.address || ''),
             })}
             {account?.alianName && (
-              <span className="text-r-neutral-foot text-[20px] font-normal">
+              <span className="text-l-neutral-foot text-[20px] font-normal">
                 {' '}
                 ({account?.alianName})
               </span>
@@ -1207,9 +1207,9 @@ const ApprovalManagePage = () => {
                   }
                   onTabChange={(key) => setFilterType(key)}
                   itemClassname="text-[15px] w-[148px] h-[40px]"
-                  itemClassnameActive="bg-r-neutral-bg-1"
+                  itemClassnameActive="bg-l-neutral-bg-1"
                   itemClassnameInActive={
-                    'text-r-neutral-body hover:text-r-blue-default'
+                    'text-l-neutral-body hover:text-l-blue-default'
                   }
                 />
 
@@ -1276,9 +1276,9 @@ const ApprovalManagePage = () => {
             </div>
           </>
         ) : (
-          <div className="mt-[20px] rounded-[8px] bg-r-neutral-card1 pt-[145px] pb-[175px] flex flex-col items-center w-full">
+          <div className="mt-[20px] rounded-[8px] bg-l-neutral-card1 pt-[145px] pb-[175px] flex flex-col items-center w-full">
             <RcIconEmpty />
-            <div className="mt-[4px] text-r-neutral-foot text-[14px] leading-[20px]">
+            <div className="mt-[4px] text-l-neutral-foot text-[14px] leading-[20px]">
               {t('global.notSupportTesntnet')}
             </div>
           </div>

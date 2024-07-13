@@ -48,7 +48,7 @@ export function SpecialTokenListPopup({
       isSupportDarkMode
     >
       {!hiddenSubTitle && (
-        <div className="text-r-neutral-foot text-13 mb-[30px] text-center -m-8">
+        <div className="text-l-neutral-foot text-13 mb-[30px] text-center -m-8">
           {t('page.dashboard.assets.tokenButton.subTitle')}
         </div>
       )}
@@ -57,11 +57,11 @@ export function SpecialTokenListPopup({
         EmptyComponent={
           <div className="space-y-24 text-13 text-center mt-[100px]">
             <EmptySVG className="w-[52px] h-[52px] m-auto" />
-            <div className="text-r-neutral-body">{description}</div>
+            <div className="text-l-neutral-body">{description}</div>
             {linkText && (
               <div
                 onClick={onClickLink}
-                className="text-r-blue-default underline cursor-pointer"
+                className="text-l-blue-default underline cursor-pointer"
               >
                 {linkText}
               </div>
@@ -120,7 +120,7 @@ export const TokenButton: React.FC<Props> = ({
         onClick={() => setVisible(true)}
         className={clsx(
           'rounded-[2px] py-6 px-8',
-          'text-12 bg-r-neutral-card-2 text-r-neutral-foot',
+          'text-12 bg-l-neutral-card-2 text-l-neutral-foot',
           'flex items-center',
           'gap-2',
           'hover:opacity-60'

@@ -148,8 +148,8 @@ const GasLevelIcon: React.FC<{ level: string; isActive }> = ({
     <div>
       <GasLevelSVG
         className={clsx({
-          'text-r-neutral-body': !isActive,
-          'text-r-blue-default': isActive,
+          'text-l-neutral-body': !isActive,
+          'text-l-blue-default': isActive,
         })}
       />
     </div>
@@ -194,7 +194,7 @@ export const GasMenuButton: React.FC<Props> = ({
                     }
                   }}
                   className={clsx({
-                    'bg-r-blue-light-1 border-r-blue-default': isSelected,
+                    'bg-l-blue-light-1 border-r-blue-default': isSelected,
                   })}
                 >
                   <GasLevelIcon isActive={isSelected} level={gas.level} />
@@ -215,9 +215,9 @@ export const GasMenuButton: React.FC<Props> = ({
                       </LevelPriceStyled>
                     )}
                   </LevelTextWrapStyled>
-                  {isSelected && <CheckSVG className="text-r-blue-default" />}
+                  {isSelected && <CheckSVG className="text-l-blue-default" />}
                   {!isSelected && gas.level === 'custom' && (
-                    <RcIconArrowRight className="text-r-neutral-foot" />
+                    <RcIconArrowRight className="text-l-neutral-foot" />
                   )}
                 </MenuItemStyled>
               );
@@ -234,7 +234,7 @@ export const GasMenuButton: React.FC<Props> = ({
               {new BigNumber(selectedGas.price / 1e9).toFixed().slice(0, 8)}
             </GweiStyled>
           )}
-          <ArrowSVG className="text-r-neutral-foot ml-2" />
+          <ArrowSVG className="text-l-neutral-foot ml-2" />
         </MenuButtonStyled>
       ) : (
         <Skeleton.Input className="rounded w-[100px] h-[20px]" active />

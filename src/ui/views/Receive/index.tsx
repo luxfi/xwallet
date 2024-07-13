@@ -176,7 +176,7 @@ const Receive = () => {
     };
   }, [account?.type]);
   return (
-    <div className="page-receive bg-r-blue-default dark:bg-r-blue-disable">
+    <div className="page-receive bg-l-blue-default dark:bg-l-blue-disable">
       <div className="page-nav">
         <div
           className="page-nav-left pointer"
@@ -240,7 +240,7 @@ const Receive = () => {
         >
           <ThemeIcon
             src={RcIconCopy}
-            className="icon-copy text-r-neutral-title-1"
+            className="icon-copy text-l-neutral-title-1"
           />
           {t('global.copyAddress')}
         </button>

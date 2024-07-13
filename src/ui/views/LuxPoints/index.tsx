@@ -276,11 +276,11 @@ const LuxPoints = () => {
           history.push('/dashboard');
         }}
       >
-        <span className="text-[20px] font-medium text-r-neutral-title2">
+        <span className="text-[20px] font-medium text-l-neutral-title2">
           {t('page.luxPoints.title')}
         </span>
       </PageHeader>
-      <div className="text-r-neutral-title2 flex flex-col items-center relative top-[10px]">
+      <div className="text-l-neutral-title2 flex flex-col items-center relative top-[10px]">
         <div className="flex items-center justify-center gap-[6px]">
           <ClaimUserAvatar src={avatar} className="w-[20px] h-[20px]" />
           <span className="text-[15px]">{userName}</span>
@@ -332,7 +332,7 @@ const LuxPoints = () => {
         </div>
       </div>
 
-      <div className="rounded-t-[16px] bg-r-neutral-bg-1 flex-1 overflow-auto pt-[16px] flex flex-col">
+      <div className="rounded-t-[16px] bg-l-neutral-bg-1 flex-1 overflow-auto pt-[16px] flex flex-col">
         <div className="px-20">
           {!hadInvitedCode ? (
             ended ? null : (
@@ -363,7 +363,7 @@ const LuxPoints = () => {
             key={'1'}
           >
             {ended && (
-              <div className="mx-20 mt-20 mb-4 flex justify-center rounded-[6px] bg-r-neutral-card-2 py-12 text-13 text-r-neutral-title-1 font-medium">
+              <div className="mx-20 mt-20 mb-4 flex justify-center rounded-[6px] bg-l-neutral-card-2 py-12 text-13 text-l-neutral-title-1 font-medium">
                 {t('page.luxPoints.secondRoundEnded')}
               </div>
             )}

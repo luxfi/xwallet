@@ -326,7 +326,7 @@ export const BroadcastMode = ({
         {value.type !== 'default' && (
           <>
             <Divide />
-            <div className="broadcast-mode-body text-r-neutral-body">
+            <div className="broadcast-mode-body text-l-neutral-body">
               <ul>
                 <li>{selectedOption?.desc}</li>
                 {value.type === 'low_gas' ? (

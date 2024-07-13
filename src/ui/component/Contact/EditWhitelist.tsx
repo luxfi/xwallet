@@ -77,10 +77,10 @@ const EditWhitelist = ({
         className: 'page-receive-modal edit-whitelist-back-modal',
         content: (
           <div>
-            <h1 className="text-r-neutral-title1 text-center mb-12">
+            <h1 className="text-l-neutral-title1 text-center mb-12">
               {t('component.Contact.EditWhitelist.backModalTitle')}
             </h1>
-            <p className="text-r-neutral-body text-center text-15 mb-[52px]">
+            <p className="text-l-neutral-body text-center text-15 mb-[52px]">
               {t('component.Contact.EditWhitelist.backModalContent')}
             </p>
             <div className="footer">
@@ -134,7 +134,7 @@ const EditWhitelist = ({
       <PageHeader onBack={handleClickBack}>
         {t('component.Contact.EditWhitelist.title')}
       </PageHeader>
-      <p className="text-r-neutral-body text-14 mb-20 text-center">
+      <p className="text-l-neutral-body text-14 mb-20 text-center">
         {t('component.Contact.EditWhitelist.tip')}
       </p>
       <ListScrollWrapper>

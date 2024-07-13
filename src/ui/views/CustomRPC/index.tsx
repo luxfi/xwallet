@@ -301,7 +301,7 @@ const CustomRPC = () => {
         src="/images/nodata-tx.png"
         alt="no address"
       />
-      <p className="text-r-neutral-body text-14 text-center font-medium">
+      <p className="text-l-neutral-body text-14 text-center font-medium">
         {t('page.customRpc.empty')}
       </p>
     </div>
@@ -323,7 +323,7 @@ const CustomRPC = () => {
       >
         {t('page.customRpc.title')}
       </PageHeader>
-      <p className="text-r-neutral-body text-[13px] mb-20 px-20">
+      <p className="text-l-neutral-body text-[13px] mb-20 px-20">
         {t('page.customRpc.desc')}
       </p>
       {rpcList.length <= 0 ? (

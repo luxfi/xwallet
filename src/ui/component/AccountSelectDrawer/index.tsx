@@ -120,7 +120,7 @@ export const AccountItem = ({
           <p className="alian-name">{alianName}</p>
           <AddressViewer address={account.address} showArrow={false} />
         </div>
-        <div className="text-12 text-r-neutral-body native-token-balance">
+        <div className="text-12 text-l-neutral-body native-token-balance">
           {nativeTokenBalance !== null &&
             `${formatTokenAmount(nativeTokenBalance)} ${nativeTokenSymbol}`}
         </div>
@@ -192,7 +192,7 @@ const AccountSelectDrawer = ({
           />
         ))}
         {!accounts?.length ? (
-          <div className="flex flex-col items-center justify-center h-full text-r-neutral-foot">
+          <div className="flex flex-col items-center justify-center h-full text-l-neutral-foot">
             <div className="w-[32px] h-[32px] mb-[16px]">
               <RcIconEmpty />
             </div>

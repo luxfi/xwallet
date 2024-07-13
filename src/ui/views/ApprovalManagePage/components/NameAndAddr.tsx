@@ -14,14 +14,14 @@ export default function ApprovalsNameAndAddr(props: Props) {
         src: RcIconShare,
         width: 16,
         height: 16,
-        className: 'text-r-neutral-foot',
+        className: 'text-l-neutral-foot',
         ...(props.externalIconProps as any),
       }}
       copyIconProps={{
         src: RcIconCopy,
         width: 16,
         height: 16,
-        className: 'text-r-neutral-foot',
+        className: 'text-l-neutral-foot',
         ...props.copyIconProps,
       }}
     />

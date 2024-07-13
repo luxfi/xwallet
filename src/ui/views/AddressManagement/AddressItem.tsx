@@ -289,8 +289,8 @@ const AddressItem = memo(
                     className={clsx(
                       'subtitle',
                       isCurrentAccount
-                        ? 'text-r-neutral-title-2'
-                        : 'text-r-neutral-body'
+                        ? 'text-l-neutral-title-2'
+                        : 'text-l-neutral-body'
                     )}
                   />
 
@@ -299,11 +299,11 @@ const AddressItem = memo(
                     className={clsx('w-[14px] h-[14px] ml-4 text-14 textgre')}
                     copyClassName={clsx(
                       isCurrentAccount &&
-                        'text-r-neutral-title-2 brightness-[100]'
+                        'text-l-neutral-title-2 brightness-[100]'
                     )}
                     checkedClassName={clsx(
                       isCurrentAccount
-                        ? 'text-r-neutral-title-2'
+                        ? 'text-l-neutral-title-2'
                         : 'text-[#00C087]'
                     )}
                   />
@@ -321,7 +321,7 @@ const AddressItem = memo(
                           />
                         </>
                       ) : (
-                        <span className="ml-[12px] text-12 text-r-neutral-body">
+                        <span className="ml-[12px] text-12 text-l-neutral-body">
                           ${splitNumberByStep(balance?.toFixed(2))}
                         </span>
                       )}

@@ -73,7 +73,7 @@ const RevokeNFTCollection = ({
                 chain,
               }}
             >
-              <div className="cursor-pointer group-hover:underline hover:text-r-blue-default">
+              <div className="cursor-pointer group-hover:underline hover:text-l-blue-default">
                 {actionData?.collection?.name}
               </div>
             </ViewMore>

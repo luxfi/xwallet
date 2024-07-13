@@ -58,7 +58,7 @@ export const SortInput = ({
           prefix={
             <ThemeIcon
               src={RcIconSearch}
-              className="w-16 h-16 text-r-neutral-foot"
+              className="w-16 h-16 text-l-neutral-foot"
             />
           }
           suffix={null}

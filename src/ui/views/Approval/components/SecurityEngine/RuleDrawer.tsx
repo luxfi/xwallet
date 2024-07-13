@@ -268,7 +268,7 @@ const RuleDrawer = ({
       return (
         <div className="main">
           <div className="level-logo">
-            <IconError className="w-32 h-32 text-r-neutral-line" />
+            <IconError className="w-32 h-32 text-l-neutral-line" />
           </div>
           <div>{t('page.securityEngine.unknownResult')}</div>
         </div>

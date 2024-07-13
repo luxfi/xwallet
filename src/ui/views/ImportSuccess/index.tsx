@@ -116,7 +116,7 @@ const ImportSuccess = ({ isPopup = false }: { isPopup?: boolean }) => {
     >
       {isPopup &&
         (!isWide ? (
-          <header className="create-new-header create-password-header h-[200px] dark:bg-r-blue-disable">
+          <header className="create-new-header create-password-header h-[200px] dark:bg-l-blue-disable">
             <img
               className="w-[60px] h-[60px] mx-auto mb-[20px] mt-[-4px]"
               src={SuccessLogo}
@@ -126,7 +126,7 @@ const ImportSuccess = ({ isPopup = false }: { isPopup?: boolean }) => {
             </p>
           </header>
         ) : (
-          <div className="create-new-header create-password-header h-[200px] dark:bg-r-blue-disable">
+          <div className="create-new-header create-password-header h-[200px] dark:bg-l-blue-disable">
             <div className="lux-container">
               <img
                 className="w-[80px] h-[80px] mx-auto mb-[16px] mt-[-4px]"
@@ -176,7 +176,7 @@ const ImportSuccess = ({ isPopup = false }: { isPopup?: boolean }) => {
           >
             {sortBy(accounts, (item) => item?.index).map((account, index) => (
               <AddressItem
-                className="mb-12 rounded bg-r-neutral-card-1 py-12 pl-16 h-[92px] flex"
+                className="mb-12 rounded bg-l-neutral-card-1 py-12 pl-16 h-[92px] flex"
                 key={account.address}
                 account={account}
                 showAssets

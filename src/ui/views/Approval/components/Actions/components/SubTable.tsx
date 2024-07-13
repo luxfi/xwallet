@@ -63,7 +63,7 @@ export const SubTable = ({
       </SubTableWrapper>
       {!!left && (
         <TableArrow
-          className="table-arrow text-r-neutral-card3"
+          className="table-arrow text-l-neutral-card3"
           style={{
             left: `${left}px`,
           }}

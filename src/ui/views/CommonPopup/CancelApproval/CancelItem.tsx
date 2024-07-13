@@ -13,11 +13,11 @@ export const CancelItem: React.FC<Props> = ({ children, onClick }) => {
       className={clsx(
         'px-16 py-[15px]',
         'flex items-start justify-between',
-        'text-r-neutral-title-1 text-14 font-medium',
+        'text-l-neutral-title-1 text-14 font-medium',
         'border rounded-[8px] border-transparent',
-        'bg-r-neutral-card-1  cursor-pointer',
-        'hover:bg-r-blue-light-1',
-        'hover:border-rabby-blue-default'
+        'bg-l-neutral-card-1  cursor-pointer',
+        'hover:bg-l-blue-light-1',
+        'hover:border-lux-blue-default'
       )}
     >
       <span>{children}</span>

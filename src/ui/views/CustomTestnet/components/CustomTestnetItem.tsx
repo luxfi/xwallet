@@ -38,7 +38,7 @@ export const CustomTestnetItem = ({
         'border-[1px] border-transparent rounded-[6px]',
         disabled
           ? 'opacity-50'
-          : 'hover:border-rabby-blue-default hover:bg-r-blue-light1 cursor-pointer',
+          : 'hover:border-lux-blue-default hover:bg-l-blue-light1 cursor-pointer',
         'group',
         className
       )}
@@ -48,19 +48,19 @@ export const CustomTestnetItem = ({
     >
       <TestnetChainLogo name={item.name} className="flex-shrink-0" />
       <div className="min-w-0">
-        <div className="text-[15px] leading-[18px] mb-[2px] font-medium text-r-neutral-title1">
+        <div className="text-[15px] leading-[18px] mb-[2px] font-medium text-l-neutral-title1">
           {item.name}
         </div>
         <div className="flex items-center gap-[16px]">
-          <div className="text-[12px] leading-[14px] text-r-neutral-foot">
+          <div className="text-[12px] leading-[14px] text-l-neutral-foot">
             {t('page.customTestnet.currency')}:{' '}
-            <span className="text-r-neutral-body">
+            <span className="text-l-neutral-body">
               {item.nativeTokenSymbol}
             </span>
           </div>
-          <div className="text-[12px] leading-[14px] text-r-neutral-foot">
+          <div className="text-[12px] leading-[14px] text-l-neutral-foot">
             {t('page.customTestnet.id')}:{' '}
-            <span className="text-r-neutral-body">{item.id}</span>
+            <span className="text-l-neutral-body">{item.id}</span>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@ export const CustomTestnetItem = ({
               onEdit?.(item);
             }}
           ></ThemeIcon>
-          <div className="cursor-pointer text-r-red-default">
+          <div className="cursor-pointer text-l-red-default">
             <RcIconDelete
               onClick={() => {
                 onRemove?.(item);

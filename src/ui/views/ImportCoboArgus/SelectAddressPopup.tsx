@@ -32,7 +32,7 @@ export const SelectAddressPopup: React.FC<Props> = ({
           'flex items-center gap-8',
           'py-16 px-12',
           'rounded-[6px]',
-          'bg-r-neutral-card-2 text-r-neutral-body',
+          'bg-l-neutral-card-2 text-l-neutral-body',
           'relative'
         )}
       >

@@ -27,7 +27,7 @@ export const PendingTxTable = ({
 
   const columns: ColumnsType<PendingTxItem> = [
     {
-      title: <div className="text-r-neutral-foot">#</div>,
+      title: <div className="text-l-neutral-foot">#</div>,
       render(value, record, index) {
         const idx = list.indexOf(record) + 1;
 
@@ -38,7 +38,7 @@ export const PendingTxTable = ({
                 <div className="is-current-tx-tag">Current</div>
               </div>
             ) : null}
-            <div className="text-r-neutral-foot">{idx}</div>
+            <div className="text-l-neutral-foot">{idx}</div>
           </>
         );
       },
@@ -48,7 +48,7 @@ export const PendingTxTable = ({
       title: t('page.pendingDetail.PendingTxList.col.gasPrice'),
       render(value, record, index) {
         return (
-          <div className="font-medium text-r-neutral-title-1">
+          <div className="font-medium text-l-neutral-title-1">
             {Number(record.gas_price || 0)} gwei
           </div>
         );

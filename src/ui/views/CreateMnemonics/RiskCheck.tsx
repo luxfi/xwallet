@@ -90,14 +90,14 @@ const RiskCheck = () => {
       <div
         className={clsx(
           'px-[120px] pt-[32px] pb-[40px]',
-          'bg-r-neutral-card-1 rounded-[12px]'
+          'bg-l-neutral-card-1 rounded-[12px]'
         )}
       >
         <h1
           className={clsx(
             'flex items-center justify-center',
             'space-x-[16px] mb-[24px]',
-            'text-[20px] text-r-neutral-title-1'
+            'text-[20px] text-l-neutral-title-1'
           )}
         >
           <span>{t('page.newAddress.createNewSeedPhrase')}</span>
@@ -115,8 +115,8 @@ const RiskCheck = () => {
                 <Field
                   key={`item-${q.index}`}
                   className={clsx(
-                    'bg-r-neutral-card-2 flex justify-between items-center p-16 border transition-colors',
-                    'border-transparent hover:border-rabby-blue-default hover:bg-r-blue-light-1',
+                    'bg-l-neutral-card-2 flex justify-between items-center p-16 border transition-colors',
+                    'border-transparent hover:border-lux-blue-default hover:bg-l-blue-light-1',
                     'text-13'
                   )}
                   leftIcon={

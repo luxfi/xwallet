@@ -25,7 +25,7 @@ export const ImportMyMetaMaskAccount = () => {
           e.preventDefault();
           openInTab('https://lux.link/metamask-export');
         }}
-        className="hidden p-6 bg-r-blue-light-1 text-r-blue-default text-12 font-medium relative top-8 rounded-[2px]"
+        className="hidden p-6 bg-l-blue-light-1 text-l-blue-default text-12 font-medium relative top-8 rounded-[2px]"
       >
         Click to view tutorial
         <img
@@ -43,7 +43,7 @@ export const ImportMyMetaMaskAccount = () => {
       <BlueHeader className="mx-[-20px]">
         {t('page.newAddress.importMyMetamaskAccount')}
       </BlueHeader>
-      <div className="lux-container text-r-neutral-title-1">
+      <div className="lux-container text-l-neutral-title-1">
         <div
           style={{
             background:
@@ -57,36 +57,36 @@ export const ImportMyMetaMaskAccount = () => {
               className="w-[20px] h-[20px]"
               alt="MetaMask"
             />
-            <div className="pl-[12px] text-[15px] font-medium text-r-neutral-title-1">
+            <div className="pl-[12px] text-[15px] font-medium text-l-neutral-title-1">
               {t('page.newAddress.metamask.how')}
             </div>
           </div>
-          <div className="rounded bg-rabby-blue-light1 mt-12">
-            <div className="p-8 text-r-blue-default text-12 font-normal leading-[16px]">
+          <div className="rounded bg-lux-blue-light1 mt-12">
+            <div className="p-8 text-l-blue-default text-12 font-normal leading-[16px]">
               {t('page.newAddress.metamask.tips')}
               {t('page.newAddress.metamask.tipsDesc')}
             </div>
           </div>
         </div>
 
-        <div className="bg-r-neutral-card-1 rounded-[6px] ">
-          <div className="flex flex-col items-center border-rabby-neutral-line py-[20px] px-[16px] pb-[24px]">
+        <div className="bg-l-neutral-card-1 rounded-[6px] ">
+          <div className="flex flex-col items-center border-lux-neutral-line py-[20px] px-[16px] pb-[24px]">
             <div className="flex items-center mb-16">
-              <span className="text-[13px] font-medium text-r-blue-default mr-2">
+              <span className="text-[13px] font-medium text-l-blue-default mr-2">
                 {t('page.newAddress.metamask.step')}1:
               </span>
-              <div className="text-[12px] leading-[18px] font-medium text-r-neutral-title1 whitespace-nowrap">
+              <div className="text-[12px] leading-[18px] font-medium text-l-neutral-title1 whitespace-nowrap">
                 {stepList[0]}
               </div>
             </div>
 
             <div
               className={clsx(
-                'border border-transparent hover:border-rabby-blue-default hover:bg-rabby-blue-light1',
+                'border border-transparent hover:border-lux-blue-default hover:bg-lux-blue-light1',
                 'w-[210px] h-[44px] cursor-pointer mt-4',
                 'flex justify-center items-center gap-[6px]',
-                'text-[13px] font-medium text-r-neutral-body',
-                'rounded-[6px] bg-r-neutral-card-2'
+                'text-[13px] font-medium text-l-neutral-body',
+                'rounded-[6px] bg-l-neutral-card-2'
               )}
               onClick={() => {
                 openInTab('https://lux.link/metamask-export');
@@ -110,23 +110,23 @@ export const ImportMyMetaMaskAccount = () => {
             />
           </svg>
 
-          <div className="flex flex-col items-center border-rabby-neutral-line py-[20px] px-[16px] pb-[32px]">
+          <div className="flex flex-col items-center border-lux-neutral-line py-[20px] px-[16px] pb-[32px]">
             <div className="flex items-center mb-16">
-              <span className="text-[13px] font-medium text-r-blue-default mr-2">
+              <span className="text-[13px] font-medium text-l-blue-default mr-2">
                 {t('page.newAddress.metamask.step')}2:{' '}
               </span>
-              <div className="text-[12px] leading-[18px] font-medium text-r-neutral-title1 whitespace-nowrap">
+              <div className="text-[12px] leading-[18px] font-medium text-l-neutral-title1 whitespace-nowrap">
                 {stepList[1]}
               </div>
             </div>
 
             <div
               className={clsx(
-                'border border-transparent hover:border-rabby-blue-default hover:bg-rabby-blue-light1',
+                'border border-transparent hover:border-lux-blue-default hover:bg-lux-blue-light1',
                 'w-[210px] h-[44px] cursor-pointer mt-4',
                 'flex justify-center items-center gap-[6px]',
-                'text-[13px] font-medium text-r-neutral-body',
-                'rounded-[6px] bg-r-neutral-card-2'
+                'text-[13px] font-medium text-l-neutral-body',
+                'rounded-[6px] bg-l-neutral-card-2'
               )}
               onClick={() => {
                 openInternalPageInTab('import/mnemonics');
@@ -138,11 +138,11 @@ export const ImportMyMetaMaskAccount = () => {
 
             <div
               className={clsx(
-                'border border-transparent hover:border-rabby-blue-default hover:bg-rabby-blue-light1',
+                'border border-transparent hover:border-lux-blue-default hover:bg-lux-blue-light1',
                 'w-[210px] h-[44px]  cursor-pointer mt-16',
                 'flex justify-center items-center gap-[6px]',
-                'text-[13px] font-medium text-r-neutral-body',
-                'rounded-[6px] bg-r-neutral-card-2'
+                'text-[13px] font-medium text-l-neutral-body',
+                'rounded-[6px] bg-l-neutral-card-2'
               )}
               onClick={() => {
                 history.push('/import/key');

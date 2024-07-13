@@ -31,16 +31,16 @@ export const Keystone: React.FC = () => {
 
   return (
     <div className="pt-[10px]">
-      <ul className="list-decimal w-[250px] pl-[20px] m-auto text-r-neutral-title1 text-14 leading-[20px]">
+      <ul className="list-decimal w-[250px] pl-[20px] m-auto text-l-neutral-title1 text-14 leading-[20px]">
         <li>{t('page.dashboard.hd.keystone.doc1')}</li>
         <li>{t('page.dashboard.hd.keystone.doc2')}</li>
         <li>{t('page.dashboard.hd.keystone.doc3')}</li>
       </ul>
       <img
         src="/images/keystone-plug.png"
-        className="w-[240px] bg-r-neutral-card2 rounded-[4px] mt-[20px] mx-auto py-20 px-40"
+        className="w-[240px] bg-l-neutral-card2 rounded-[4px] mt-[20px] mx-auto py-20 px-40"
       />
-      <div className="mt-[25px] text-13 text-r-neutral-body">
+      <div className="mt-[25px] text-13 text-l-neutral-body">
         <Trans t={t} i18nKey="page.dashboard.hd.keystone.reconnect">
           If it doesn't work, please try
           <span className="underline cursor-pointer" onClick={handleClick}>

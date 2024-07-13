@@ -52,7 +52,7 @@ const History = () => {
         <Tabs.TabPane key="testnet">
           <Empty
             desc={
-              <div className="mt-[-12px] text-r-neutral-foot leading-[20px]">
+              <div className="mt-[-12px] text-l-neutral-foot leading-[20px]">
                 {t('global.notSupportTesntnet')}
               </div>
             }

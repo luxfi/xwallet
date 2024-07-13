@@ -40,11 +40,11 @@ jobs:
         with:
           app_id: ${{ secrets.PRIVATE_DEPLOY_BUILD_BOT_APP_ID }}
           private_key: ${{ secrets.PRIVATE_BUILD_BOT_APP_SECRET }}
-          repository: "DeBankDeFi/rabby-mainfest"
+          repository: "DeBankDeFi/lux-mainfest"
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          repository: "DeBankDeFi/rabby-mainfest"
+          repository: "DeBankDeFi/lux-mainfest"
           token: ${{ steps.generate-token.outputs.token }}
           fetch-depth: 0
           ref: main
@@ -68,6 +68,6 @@ jobs:
         uses: peter-evans/enable-pull-request-automerge@v1
         with:
           token: ${{ steps.generate-token.outputs.token }}
-          repository: "DeBankDeFi/rabby-mainfest"
+          repository: "DeBankDeFi/lux-mainfest"
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
           merge-method: rebase

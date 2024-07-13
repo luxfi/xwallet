@@ -59,7 +59,7 @@ function ViewMessageTriggerForEoa({
 
   return (
     <Tooltip
-      overlayClassName="rectangle J_tipInputData text-r-neutral-title-2 text-[12px]"
+      overlayClassName="rectangle J_tipInputData text-l-neutral-title-2 text-[12px]"
       placement="topLeft"
       arrowPointAtCenter
       // The transaction includes a message
@@ -67,7 +67,7 @@ function ViewMessageTriggerForEoa({
     >
       <span
         {...props}
-        className="cursor-pointer bg-r-blue-light-1 w-14 h-14 ml-[8px] flex items-center justify-center padding-2 rounded-[2px]"
+        className="cursor-pointer bg-l-blue-light-1 w-14 h-14 ml-[8px] flex items-center justify-center padding-2 rounded-[2px]"
         onClick={() => {
           if (!utf8Data) return;
 
@@ -121,7 +121,7 @@ function ViewMessageTriggerForContract({
       )}
       {!isLoadingExplain && explain?.abi && (
         <Tooltip
-          overlayClassName="rectangle J_tipInputData text-r-neutral-title-2 text-[12px]"
+          overlayClassName="rectangle J_tipInputData text-l-neutral-title-2 text-[12px]"
           placement="topLeft"
           arrowPointAtCenter
           // The transaction includes a message
@@ -133,7 +133,7 @@ function ViewMessageTriggerForContract({
         >
           <span
             {...props}
-            className="cursor-pointer bg-r-blue-light-1 w-14 h-14 ml-[8px] flex items-center justify-center padding-2 rounded-[2px]"
+            className="cursor-pointer bg-l-blue-light-1 w-14 h-14 ml-[8px] flex items-center justify-center padding-2 rounded-[2px]"
             onClick={() => {
               if (loadingExplainError) return;
 

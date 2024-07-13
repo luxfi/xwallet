@@ -150,7 +150,7 @@ const AddressItem = memo(
               checkedClassName={clsx('text-[#00C087]')}
             />
 
-            <span className="ml-[8px] text-12 text-r-neutral-body">
+            <span className="ml-[8px] text-12 text-l-neutral-body">
               ${splitNumberByStep(balance?.toFixed(2))}
             </span>
           </div>

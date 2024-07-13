@@ -107,8 +107,8 @@ const ApproveAmountModal = ({
           bordered={false}
           className={clsx(
             'popup-input h-[52px] flex items-center px-[12px]',
-            'bg-r-neutral-card-1',
-            'border border-rabby-neutral-line focus-within:border-rabby-blue-default',
+            'bg-l-neutral-card-1',
+            'border border-lux-neutral-line focus-within:border-lux-blue-default',
             'transition-all duration-300'
           )}
           addonAfter={
@@ -144,7 +144,7 @@ const ApproveAmountModal = ({
           </span>
         )}
       </div>
-      <Divide className="bg-r-neutral-line absolute left-0" />
+      <Divide className="bg-l-neutral-line absolute left-0" />
 
       <div className="text-center flex gap-x-16 pt-18">
         <Button
@@ -258,7 +258,7 @@ const TokenApprove = ({
               <span
                 className={clsx(
                   new BigNumber(approveAmount).gt(tokenBalance)
-                    ? 'underline cursor-pointer text-r-blue-default font-medium'
+                    ? 'underline cursor-pointer text-l-blue-default font-medium'
                     : ''
                 )}
                 onClick={handleClickTokenBalance}

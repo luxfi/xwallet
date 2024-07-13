@@ -30,7 +30,7 @@ import BatchPermit2 from './BatchPermit2';
 import Send from '../Actions/Send';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { ReactComponent as IconQuestionMark } from 'ui/assets/sign/question-mark.svg';
-import IconRabbyDecoded from 'ui/assets/sign/rabby-decoded.svg';
+import IconLuxDecoded from 'ui/assets/sign/lux-decoded.svg';
 import IconCheck, {
   ReactComponent as RcIconCheck,
 } from 'src/ui/assets/approval/icon-check.svg';
@@ -124,7 +124,7 @@ const Actions = ({
                     />
                   }
                 >
-                  <IconQuestionMark className="w-14 text-r-neutral-foot ml-2 mt-2" />
+                  <IconQuestionMark className="w-14 text-l-neutral-foot ml-2 mt-2" />
                 </TooltipWithMagnetArrow>
               )}
             </div>
@@ -146,7 +146,7 @@ const Actions = ({
 
           {chain?.isTestnet ? (
             <>
-              <div className="p-[15px] whitespace-pre-wrap break-all overflow-y-auto text-[13px] leading-[16px] text-r-neutral-body h-[260px] font-medium">
+              <div className="p-[15px] whitespace-pre-wrap break-all overflow-y-auto text-[13px] leading-[16px] text-l-neutral-body h-[260px] font-medium">
                 {JSON.stringify(raw, null, 2)}
               </div>
             </>

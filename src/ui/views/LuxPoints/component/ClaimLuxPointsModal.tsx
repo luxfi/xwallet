@@ -117,8 +117,8 @@ const Item = ({
   }
   return (
     <div className="flex items-center justify-between">
-      <span className="text-r-neutral-body text-[13px]">{label}</span>
-      <span className="text-r-neutral-title-1 text-[13px] font-medium">
+      <span className="text-l-neutral-body text-[13px]">{label}</span>
+      <span className="text-l-neutral-title-1 text-[13px] font-medium">
         {Number(value) >= 0 ? '+' : ''}
         {value || 0}
       </span>
@@ -271,7 +271,7 @@ const ClaimPoints = ({
     titleLoading;
 
   return (
-    <div className="relative w-[360px] bg-r-neutral-bg-1 p-[20px] pb-[24px] rounded-[8px] leading-[normal]">
+    <div className="relative w-[360px] bg-l-neutral-bg-1 p-[20px] pb-[24px] rounded-[8px] leading-[normal]">
       <div
         className="absolute w-full top-0 left-0 px-20 py-14 flex justify-between"
         style={{
@@ -279,7 +279,7 @@ const ClaimPoints = ({
             'linear-gradient(91deg, rgba(50, 108, 255, 0.10) 1.88%, rgba(174, 43, 255, 0.10) 99.85%)',
         }}
       >
-        <div className="text-r-neutral-title1 text-[18px] font-medium">
+        <div className="text-l-neutral-title1 text-[18px] font-medium">
           {t('page.luxPoints.claimModal.title')}
         </div>
 
@@ -327,12 +327,12 @@ const ClaimPoints = ({
       >
         {titleLoading ? '' : points}
       </LinearGradientAnimatedDiv>
-      <div className="mt-[8px] mb-[16px] flex items-center justify-center gap-[6px] text-r-neutral-title1 text-[15px] font-medium">
+      <div className="mt-[8px] mb-[16px] flex items-center justify-center gap-[6px] text-l-neutral-title1 text-[15px] font-medium">
         <ClaimUserAvatar src={avatar} className="w-[20px] h-[20px]" />
         <span>{name}</span>
       </div>
 
-      <div className="rounded-[8px] bg-r-neutral-card-3 px-[12px] py-[16px]">
+      <div className="rounded-[8px] bg-l-neutral-card-3 px-[12px] py-[16px]">
         <div className="text-center text-[10px] text-[#7c86c8] mb-[12px]">
           {t('page.luxPoints.claimModal.snapshotTime', {
             time: snapshotTime,
@@ -359,7 +359,7 @@ const ClaimPoints = ({
           invitedCode &&
             !codeLoading &&
             !codeStatus?.invite_code_exist &&
-            'border-rabby-red-default'
+            'border-lux-red-default'
         )}
         suffix={iconStatue}
         autoComplete="false"
@@ -375,8 +375,8 @@ const ClaimPoints = ({
         )}
 
       {userInvitedCode && !codeLoading && invitedCode === userInvitedCode && (
-        <div className="text-13 text-r-neutral-body mt-16 text-center flex items-center justify-center gap-[3px]">
-          <IconInfoCC className="w-[14px] h-[14px] text-r-neutral-body" />
+        <div className="text-13 text-l-neutral-body mt-16 text-center flex items-center justify-center gap-[3px]">
+          <IconInfoCC className="w-[14px] h-[14px] text-l-neutral-body" />
           <span>{t('page.luxPoints.claimModal.cantUseOwnCode')}</span>
         </div>
       )}
@@ -385,7 +385,7 @@ const ClaimPoints = ({
         type="primary"
         disabled={btdDisabled}
         className={clsx(
-          'mt-[24px] w-full h-[48px] text-[17px] font-medium text-r-neutral-title2 border-none',
+          'mt-[24px] w-full h-[48px] text-[17px] font-medium text-l-neutral-title2 border-none',
           btdDisabled && 'opacity-50'
         )}
         style={{

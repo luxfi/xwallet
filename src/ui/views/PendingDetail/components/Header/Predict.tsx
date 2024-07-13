@@ -64,11 +64,11 @@ export const Predict = ({
   if (jumpNonce) {
     return (
       <div className="min-h-[253px] text-center pt-[63px]">
-        <div className="text-r-orange-default text-[28px] leading-[33px] font-medium mb-[25px] flex items-center gap-[8px] justify-center">
+        <div className="text-l-orange-default text-[28px] leading-[33px] font-medium mb-[25px] flex items-center gap-[8px] justify-center">
           <img src={IconWarning} alt="" />
           {t('page.pendingDetail.Predict.predictFailed')}
         </div>
-        <div className="text-r-orange-default text-[24px] leading-[29px]">
+        <div className="text-l-orange-default text-[24px] leading-[29px]">
           {t('page.pendingDetail.Predict.skipNonce', {
             chain: chain?.name || 'Unknown',
           })}
@@ -79,7 +79,7 @@ export const Predict = ({
 
   return (
     <div className="min-h-[253px] pt-[40px]">
-      <div className="text-r-neutral-title-2 text-center text-[24px] leading-[29px] mb-[24px]">
+      <div className="text-l-neutral-title-2 text-center text-[24px] leading-[29px] mb-[24px]">
         {t('page.pendingDetail.Header.predictTime')}
       </div>
 

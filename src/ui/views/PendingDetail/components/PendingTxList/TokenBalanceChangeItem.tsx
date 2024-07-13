@@ -25,7 +25,7 @@ export const TokenBalanceChangeItem = ({
         src={token?.logo_url || IconToken}
         alt=""
       />
-      <div className="text-r-neutral-title-1 font-medium">
+      <div className="text-l-neutral-title-1 font-medium">
         {prefix} {numberWithCommasIsLtOne(item.amount, 2)}{' '}
         {getTokenSymbol(token)}
       </div>

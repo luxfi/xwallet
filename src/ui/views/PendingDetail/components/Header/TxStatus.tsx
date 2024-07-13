@@ -56,7 +56,7 @@ export const TxStatus = ({
 
   if (isSuccess) {
     return (
-      <div className="p-[8px] h-[36px] border-rabby-neutral-bg-1 text-r-neutral-title-2 hover:border-[#fff] rounded-[4px] before:content-none z-10 flex items-center justify-center gap-2 border-[0.5px]">
+      <div className="p-[8px] h-[36px] border-lux-neutral-bg-1 text-l-neutral-title-2 hover:border-[#fff] rounded-[4px] before:content-none z-10 flex items-center justify-center gap-2 border-[0.5px]">
         {t('page.pendingDetail.TxStatus.completed')}
       </div>
     );
@@ -71,7 +71,7 @@ export const TxStatus = ({
         destroyTooltipOnHide
         content={txRequest ? <TxTimeline txRequest={txRequest} /> : null}
       >
-        <div className="flex items-center gap-[4px] rounded-[4px] text-r-neutral-title-2 text-[13px] leading-[16px] font-medium bg-r-orange-default p-[8px]">
+        <div className="flex items-center gap-[4px] rounded-[4px] text-l-neutral-title-2 text-[13px] leading-[16px] font-medium bg-l-orange-default p-[8px]">
           <img src={IconSpin} className="animate-spin" />
           {isBroadcasted ? (
             <>
@@ -84,7 +84,7 @@ export const TxStatus = ({
         </div>
       </Popover>
       <Button
-        className="h-[36px] border-rabby-neutral-bg-1 text-r-neutral-title-2 hover:border-[#fff] rounded-[4px] before:content-none z-10 flex items-center justify-center gap-2 border-[0.5px]"
+        className="h-[36px] border-lux-neutral-bg-1 text-l-neutral-title-2 hover:border-[#fff] rounded-[4px] before:content-none z-10 flex items-center justify-center gap-2 border-[0.5px]"
         ghost
         onClick={onReBroadcast}
       >

@@ -95,7 +95,7 @@ export const ChainSelect = ({
           <SvgIconArrowDownTriangle
             width={24}
             height={24}
-            className="text-r-neutral-foot"
+            className="text-l-neutral-foot"
           />
         )}
       </ChainWrapper>

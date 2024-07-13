@@ -28,7 +28,7 @@ export const ProcessActions: React.FC<Props> = ({
             disabled={disabledProcess}
             type="ghost"
             className={clsx(
-              gasLess && 'gasLess text-r-neutral-title2',
+              gasLess && 'gasLess text-l-neutral-title2',
               gasLessThemeColor && 'gasLessConfig',
               !gasLess && 'text-blue-light',
               'border-blue-light',

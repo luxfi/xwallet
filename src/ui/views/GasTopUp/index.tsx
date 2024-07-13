@@ -313,8 +313,8 @@ export const GasTopUp = () => {
   };
 
   return (
-    <div className="relative pt-0 h-full bg-r-neutral-bg-2">
-      <div className="absolute top-0 left-0 right-0 h-[217px] bg-r-blue-default dark:bg-r-blue-disable">
+    <div className="relative pt-0 h-full bg-l-neutral-bg-2">
+      <div className="absolute top-0 left-0 right-0 h-[217px] bg-l-blue-default dark:bg-l-blue-disable">
         <RcBubleInBg className="absolute right-[25px] top-[35px] z-[0]" />
       </div>
       <div className="p-20 pt-0 h-full relative bg-transparent">
@@ -326,22 +326,22 @@ export const GasTopUp = () => {
         >
           <span className="text-white">{t('page.gasTopUp.title')}</span>
         </PageHeader>
-        <div className="text-12 leading-[17px] text-r-neutral-title-2 pt-[4px] pb-[24px]">
+        <div className="text-12 leading-[17px] text-l-neutral-title-2 pt-[4px] pb-[24px]">
           {t('page.gasTopUp.description')}
         </div>
 
         <div
-          className="w-[360px] h-[284px] bg-r-neutral-bg-1 rounded-[6px] px-[16px] py-[32px]"
+          className="w-[360px] h-[284px] bg-l-neutral-bg-1 rounded-[6px] px-[16px] py-[32px]"
           style={{
             boxShadow: 'var(--lux-custom-box-shadow__gas-top-up)',
           }}
         >
-          <div className="text-15 font-medium text-r-neutral-title-1 mb-12">
+          <div className="text-15 font-medium text-l-neutral-title-1 mb-12">
             {t('page.gasTopUp.topUpChain')}
           </div>
           <ChainSelect value={chain} onChange={setChain} />
 
-          <div className="text-15 font-medium text-r-neutral-title-1 mt-[40px] mb-[12px]">
+          <div className="text-15 font-medium text-l-neutral-title-1 mt-[40px] mb-[12px]">
             {t('page.gasTopUp.Amount')}
           </div>
           <Space size={8}>
@@ -459,10 +459,10 @@ const GasBox = ({
           'w-[104px] h-[56px] cursor-pointer rounded border text-center flex flex-col items-center justify-center',
 
           gasCostExceedsBudget || chainInsufficientBalance
-            ? 'cursor-not-allowed opacity-[0.6] bg-r-neutral-card-2 border-transparent'
+            ? 'cursor-not-allowed opacity-[0.6] bg-l-neutral-card-2 border-transparent'
             : index === selectedIndex
-            ? 'bg-r-blue-light-1 border-rabby-blue-default'
-            : 'bg-r-neutral-card-2 border-transparent hover:border-rabby-blue-default'
+            ? 'bg-l-blue-light-1 border-lux-blue-default'
+            : 'bg-l-neutral-card-2 border-transparent hover:border-lux-blue-default'
         )}
         onClick={() => {
           if (!(gasCostExceedsBudget || chainInsufficientBalance)) {
@@ -472,7 +472,7 @@ const GasBox = ({
       >
         <div
           className={clsx(
-            'text-15 text-r-neutral-title-1 font-medium ',
+            'text-15 text-l-neutral-title-1 font-medium ',
             !(gasCostExceedsBudget || chainInsufficientBalance) &&
               index === selectedIndex &&
               'text-blue-light'
@@ -491,7 +491,7 @@ const GasBox = ({
         ) : (
           <div
             className={clsx(
-              'text-12 text-r-neutral-body mt-2',
+              'text-12 text-l-neutral-body mt-2',
               !(gasCostExceedsBudget || chainInsufficientBalance) &&
                 index === selectedIndex &&
                 'text-blue-light'

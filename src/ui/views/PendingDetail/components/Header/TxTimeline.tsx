@@ -40,14 +40,14 @@ export const TxTimeline = ({ txRequest }: { txRequest: TxRequest }) => {
   const { t } = useTranslation();
 
   const Dot = (
-    <div className="bg-r-neutral-foot rounded-full w-[8px] h-[8px]"></div>
+    <div className="bg-l-neutral-foot rounded-full w-[8px] h-[8px]"></div>
   );
   return (
     <Wrapper>
       <div className="p-[24px]">
         <Timeline
           pending={
-            <div className="text-r-neutral-foot text-[15px] leading-[18px] font-medium">
+            <div className="text-l-neutral-foot text-[15px] leading-[18px] font-medium">
               {t('page.pendingDetail.TxTimeline.pending')}
             </div>
           }
@@ -56,7 +56,7 @@ export const TxTimeline = ({ txRequest }: { txRequest: TxRequest }) => {
           }
         >
           <Timeline.Item dot={Dot}>
-            <div className="text-r-neutral-title-1 text-[15px] leading-[18px] font-medium">
+            <div className="text-l-neutral-title-1 text-[15px] leading-[18px] font-medium">
               {dayjs.unix(txRequest.create_at).format('HH:mm')}{' '}
               {t('page.pendingDetail.TxTimeline.created')}
             </div>
@@ -65,7 +65,7 @@ export const TxTimeline = ({ txRequest }: { txRequest: TxRequest }) => {
           {txRequest?.push_at_list?.map((item, index) => {
             return (
               <Timeline.Item dot={Dot} key={index}>
-                <div className="text-r-neutral-title-1 text-[15px] leading-[18px] font-medium">
+                <div className="text-l-neutral-title-1 text-[15px] leading-[18px] font-medium">
                   {dayjs.unix(item).format('HH:mm')}{' '}
                   {index + 1 === txRequest?.push_at_list?.length
                     ? t('page.pendingDetail.TxTimeline.broadcasted')

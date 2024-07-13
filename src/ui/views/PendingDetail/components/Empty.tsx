@@ -12,7 +12,7 @@ export const Empty = ({ className }: { className?: string }) => {
     >
       <div className="text-center">
         <ThemeIcon src={RcIconEmpty} className="inline-block" />
-        <div className="text-r-neutral-body text-[15px] leading-[18px] mt-[13px]">
+        <div className="text-l-neutral-body text-[15px] leading-[18px] mt-[13px]">
           {t('page.pendingDetail.Empty.noData')}
         </div>
       </div>

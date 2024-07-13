@@ -234,7 +234,7 @@ const ManageAddress = () => {
   console.log(typedWalletIdList, TypedWalletObj);
 
   return (
-    <div className="page-address-management px-0 pb-0 bg-r-neutral-bg-2 overflow-hidden">
+    <div className="page-address-management px-0 pb-0 bg-l-neutral-bg-2 overflow-hidden">
       <div className="h-full flex flex-col">
         <div className="px-20">
           <PageHeader className="pt-[24px]" canBack={back} closeable={!back}>
@@ -244,7 +244,7 @@ const ManageAddress = () => {
 
         <div className="flex-1 flex flex-col overflow-y-auto">
           <div className="px-20 mb-8">
-            <div className="rounded-[6px] bg-r-neutral-card-1 flex flex-wrap p-[3px]">
+            <div className="rounded-[6px] bg-l-neutral-card-1 flex flex-wrap p-[3px]">
               {typedWalletIdList?.map((id, i) => {
                 const item = TypedWalletObj?.[id];
                 const list = item?.list;
@@ -268,19 +268,19 @@ const ManageAddress = () => {
 
             {TypedWalletObj?.[activeIndex] ? (
               <div className="flex items-center justify-between mt-20 ">
-                <div className="text-[17px] text-r-neutral-title-1 font-medium">
+                <div className="text-[17px] text-l-neutral-title-1 font-medium">
                   {TypedWalletObj?.[activeIndex]?.name}
                 </div>
                 <div className="flex items-center gap-16">
                   {isSeedPhrase && (
                     <RcIconPlusButton
                       onClick={handleAddSeedPhraseAddress}
-                      className="cursor-pointer text-r-neutral-body"
+                      className="cursor-pointer text-l-neutral-body"
                     />
                   )}
                   {isSeedPhrase && (
                     <RcIconShowSeedPhrase
-                      className="cursor-pointer text-r-neutral-body"
+                      className="cursor-pointer text-l-neutral-body"
                       onClick={() => {
                         if (TypedWalletObj?.[activeIndex]?.publicKey) {
                           backup(
@@ -292,7 +292,7 @@ const ManageAddress = () => {
                     />
                   )}
                   <RcIconDelete
-                    className="cursor-pointer text-r-neutral-body hover:text-red-forbidden"
+                    className="cursor-pointer text-l-neutral-body hover:text-red-forbidden"
                     onClick={() => {
                       if (
                         TypedWalletObj?.[activeIndex]?.type ===
@@ -311,7 +311,7 @@ const ManageAddress = () => {
             ) : null}
 
             {!!isLedger && !!TypedWalletObj?.[activeIndex]?.hdPathType && (
-              <div className="text-r-neutral-body text-12 mb-4">
+              <div className="text-l-neutral-body text-12 mb-4">
                 {t('page.manageAddress.hd-path')}{' '}
                 {LedgerHDPathTypeLabel[TypedWalletObj[activeIndex].hdPathType!]}
               </div>
@@ -330,7 +330,7 @@ const ManageAddress = () => {
             <div className="flex-1 flex flex-col items-center justify-center gap-[30px] min-h-[300px]">
               <Empty
                 desc={
-                  <div className="text-r-neutral-body text-14 max-w-[296px] mt-12">
+                  <div className="text-l-neutral-body text-14 max-w-[296px] mt-12">
                     {t('page.manageAddress.no-address-under-seed-phrase')}
                   </div>
                 }
@@ -345,7 +345,7 @@ const ManageAddress = () => {
                   {t('page.manageAddress.add-address')}
                 </Button>
                 <div
-                  className="mt-20 cursor-pointer underline text-r-neutral-body text-14 text-center"
+                  className="mt-20 cursor-pointer underline text-l-neutral-body text-14 text-center"
                   onClick={handleDeleteEmptySeedPhrase}
                 >
                   {t('page.manageAddress.delete-seed-phrase')}

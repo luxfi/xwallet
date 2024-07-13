@@ -19,11 +19,11 @@ const Header = ({
   return (
     <div className={cx(className, center && 'text-center')}>
       {title && (
-        <div className="text-20 font-bold text-r-neutral-title-1">{title}</div>
+        <div className="text-20 font-bold text-l-neutral-title-1">{title}</div>
       )}
       {secondTitle && <div className="text-20 font-medium">{secondTitle}</div>}
       {subTitle && (
-        <div className="text-14 text-r-neutral-foot">{subTitle}</div>
+        <div className="text-14 text-l-neutral-foot">{subTitle}</div>
       )}
     </div>
   );

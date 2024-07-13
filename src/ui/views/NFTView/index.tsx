@@ -102,7 +102,7 @@ export const NFTView: React.FC = () => {
   }, []);
 
   return (
-    <div className="nft-view px-20 pb-20 bg-r-neutral-bg-2 h-screen">
+    <div className="nft-view px-20 pb-20 bg-l-neutral-bg-2 h-screen">
       <PageHeader onBack={handleClickBack} forceShowBack>
         {t('page.nft.title')}
       </PageHeader>

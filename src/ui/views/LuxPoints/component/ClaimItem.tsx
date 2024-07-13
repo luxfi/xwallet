@@ -52,8 +52,8 @@ export const ClaimItem = (props: ClaimItemProps) => {
           : {}
       }
     >
-      <div className="flex items-center justify-between pb-[12px] px-[16px] border-b-[0.5px] border-rabby-neutral-line">
-        <div className="text-[15px] font-medium text-r-neutral-title1">
+      <div className="flex items-center justify-between pb-[12px] px-[16px] border-b-[0.5px] border-lux-neutral-line">
+        <div className="text-[15px] font-medium text-l-neutral-title1">
           {props.title}
         </div>
         <TooltipWithMagnetArrow
@@ -75,8 +75,8 @@ export const ClaimItem = (props: ClaimItemProps) => {
               className={clsx(
                 'min-w-[100px] h-[32px]  text-[13px] font-medium border-none',
                 !props.claimLoading && disabled
-                  ? 'disabled-btn border-rabby-neutral-card-2 bg-r-neutral-card-2 text-r-neutral-foot text-opacity-50'
-                  : 'text-r-neutral-title-2'
+                  ? 'disabled-btn border-lux-neutral-card-2 bg-l-neutral-card-2 text-l-neutral-foot text-opacity-50'
+                  : 'text-l-neutral-title-2'
               )}
               style={
                 props.claimable
@@ -107,7 +107,7 @@ export const ClaimItem = (props: ClaimItemProps) => {
           </div>
         </TooltipWithMagnetArrow>
       </div>
-      <div className="pt-[12px] text-r-neutral-foot text-[12px] font-normal px-[16px]">
+      <div className="pt-[12px] text-l-neutral-foot text-[12px] font-normal px-[16px]">
         {props.description}
       </div>
     </Wrapper>
@@ -116,11 +116,11 @@ export const ClaimItem = (props: ClaimItemProps) => {
 
 export const ClaimItemLoading = () => {
   return (
-    <Wrapper className="border-[0.5px] border-rabby-neutral-line">
-      <div className="flex items-center justify-between pb-[12px] px-[16px]  border-b-[0.5px] border-rabby-neutral-line">
+    <Wrapper className="border-[0.5px] border-lux-neutral-line">
+      <div className="flex items-center justify-between pb-[12px] px-[16px]  border-b-[0.5px] border-lux-neutral-line">
         <SkeletonInput active style={{ width: 146, height: 18 }} />
       </div>
-      <div className="pt-[12px] text-r-neutral-foot text-[12px] px-[16px]">
+      <div className="pt-[12px] text-l-neutral-foot text-[12px] px-[16px]">
         <SkeletonInput active style={{ width: 300, height: 14 }} />
       </div>
     </Wrapper>

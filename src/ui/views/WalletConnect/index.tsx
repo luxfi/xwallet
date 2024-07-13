@@ -209,7 +209,7 @@ const WalletConnectTemplate = () => {
   return (
     <div className="wallet-connect pb-0">
       {contextHolder}
-      <div className="create-new-header create-password-header h-[180px] py-[20px] dark:bg-r-blue-disable">
+      <div className="create-new-header create-password-header h-[180px] py-[20px] dark:bg-l-blue-disable">
         <img
           src={IconBack}
           className="icon-back mb-0 relative z-10"

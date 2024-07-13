@@ -257,7 +257,7 @@ export const AddCustomTokenPopup = ({ visible, onClose, onConfirm }: Props) => {
         className="add-custom-token-popup"
         push={false}
         title={
-          <div className="text-r-neutral-title1">
+          <div className="text-l-neutral-title1">
             {t('page.dashboard.assets.AddMainnetToken.title')}
           </div>
         }
@@ -282,26 +282,26 @@ export const AddCustomTokenPopup = ({ visible, onClose, onConfirm }: Props) => {
                 {!chain ? (
                   <div
                     className={clsx(
-                      'flex items-center bg-r-neutral-card2 rounded-[6px]',
+                      'flex items-center bg-l-neutral-card2 rounded-[6px]',
                       'px-[16px] py-[12px] min-h-[52px] cursor-pointer',
                       'border-[1px] border-transparent',
-                      'hover:border-rabby-blue-default hover:bg-r-blue-light1'
+                      'hover:border-lux-blue-default hover:bg-l-blue-light1'
                     )}
                   >
-                    <div className="text-r-neutral-title1 text-[15px] leading-[18px]">
+                    <div className="text-l-neutral-title1 text-[15px] leading-[18px]">
                       {t('page.dashboard.assets.AddMainnetToken.selectChain')}
                     </div>
-                    <div className="ml-auto text-r-neutral-body">
+                    <div className="ml-auto text-l-neutral-body">
                       <RcIconDown />
                     </div>
                   </div>
                 ) : (
                   <div
                     className={clsx(
-                      'flex items-center bg-r-neutral-card2 rounded-[6px]',
+                      'flex items-center bg-l-neutral-card2 rounded-[6px]',
                       'gap-[8px] px-[16px] py-[12px] min-h-[52px] cursor-pointer',
                       'border-[1px] border-transparent',
-                      'hover:border-rabby-blue-default hover:bg-r-blue-light1'
+                      'hover:border-lux-blue-default hover:bg-l-blue-light1'
                     )}
                   >
                     <img
@@ -309,10 +309,10 @@ export const AddCustomTokenPopup = ({ visible, onClose, onConfirm }: Props) => {
                       alt=""
                       className="w-[28px] h-[28px] rounded-full"
                     />
-                    <div className="text-r-neutral-title1 text-[15px] leading-[18px]">
+                    <div className="text-l-neutral-title1 text-[15px] leading-[18px]">
                       {chain?.name}
                     </div>
-                    <div className="ml-auto text-r-neutral-body">
+                    <div className="ml-auto text-l-neutral-body">
                       <RcIconDown />
                     </div>
                   </div>
@@ -336,7 +336,7 @@ export const AddCustomTokenPopup = ({ visible, onClose, onConfirm }: Props) => {
               />
             </Form.Item>
             {isSearchingToken ? (
-              <div className="flex items-center text-r-neutral-body text-[13px] gap-[4px]">
+              <div className="flex items-center text-l-neutral-body text-[13px] gap-[4px]">
                 <Loading3QuartersOutlined className="animate-spin" />{' '}
                 {t('page.dashboard.assets.AddMainnetToken.searching')}
               </div>
@@ -351,9 +351,9 @@ export const AddCustomTokenPopup = ({ visible, onClose, onConfirm }: Props) => {
                       }}
                       className={clsx(
                         'flex items-center gap-[12px] rounded-[6px] cursor-pointer',
-                        'bg-r-neutral-card2 min-h-[52px] px-[16px] py-[14px]',
+                        'bg-l-neutral-card2 min-h-[52px] px-[16px] py-[14px]',
                         'border-[1px] border-transparent',
-                        checked && 'border-rabby-blue-default'
+                        checked && 'border-lux-blue-default'
                         // isLocalToken && 'opacity-60 cursor-not-allowed'
                       )}
                     >
@@ -374,15 +374,15 @@ export const AddCustomTokenPopup = ({ visible, onClose, onConfirm }: Props) => {
                           />
                         </TooltipWithMagnetArrow>
                       </div>
-                      <div className="text-r-neutral-title1 text-[13px] leading-[16px] font-medium">
+                      <div className="text-l-neutral-title1 text-[13px] leading-[16px] font-medium">
                         {formatAmount(token.amount || 0)} {token.symbol}
                       </div>
                       {checked ? (
-                        <div className="ml-auto text-r-blue-default">
+                        <div className="ml-auto text-l-blue-default">
                           <RcIconChecked />
                         </div>
                       ) : (
-                        <div className="ml-auto text-r-neutral-body">
+                        <div className="ml-auto text-l-neutral-body">
                           <RcIconCheck />
                         </div>
                       )}

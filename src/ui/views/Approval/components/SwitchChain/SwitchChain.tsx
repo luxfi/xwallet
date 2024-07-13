@@ -115,11 +115,11 @@ const SwitchChain = ({ params }: { params: SwitchChainProps }) => {
 
   return (
     <div className="h-[100vh] relative flex flex-col ">
-      <div className="p-[20px] text-center bg-r-blue-default text-r-neutral-title2 text-[20px] leading-[24px] font-medium">
+      <div className="p-[20px] text-center bg-l-blue-default text-l-neutral-title2 text-[20px] leading-[24px] font-medium">
         {t('page.switchChain.title')}
       </div>
       <div className="p-[20px] flex-1 overflow-auto">
-        <div className="text-center text-r-neutral-body text-[13px] leading-[16px]  p-[10px] bg-r-neutral-card2 rounded-[6px]">
+        <div className="text-center text-l-neutral-body text-[13px] leading-[16px]  p-[10px] bg-l-neutral-card2 rounded-[6px]">
           {t('page.switchChain.desc')}
         </div>
 
@@ -135,7 +135,7 @@ const SwitchChain = ({ params }: { params: SwitchChainProps }) => {
                   : 'bg-[rgba(255,255,255,0.3)]'
               )}
             >
-              <div className="text-r-neutral-body flex flex-col items-center ">
+              <div className="text-l-neutral-body flex flex-col items-center ">
                 <LoadingOutlined style={{ fontSize: 22 }} spin />
                 <div className="text-[13px] leading-[16px] mt-[6px]">
                   Loading
@@ -149,7 +149,7 @@ const SwitchChain = ({ params }: { params: SwitchChainProps }) => {
         className={clsx(
           'flex items-center px-[20px] py-[18px] gap-[16px]',
           // 'absolute left-0 right-0 bottom-0',
-          'bg-r-neutral-bg1 border-t-[0.5px] border-t-rabby-neutral-line'
+          'bg-l-neutral-bg1 border-t-[0.5px] border-t-lux-neutral-line'
         )}
       >
         <Button

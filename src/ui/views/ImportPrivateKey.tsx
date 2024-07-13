@@ -209,7 +209,7 @@ const ImportPrivateKey = () => {
                   >
                     Yes, you can
                     <a
-                      className="underline text-r-blue-default cursor-pointer"
+                      className="underline text-l-blue-default cursor-pointer"
                       onClick={() => history.push('/import/json')}
                     >
                       import KeyStore

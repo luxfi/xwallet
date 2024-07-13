@@ -17,7 +17,7 @@ interface StrayPageProps {
   children?: ReactNode;
   footerRender?: FunctionComponent;
   className?: string;
-  backgroundClassName?: `bg-r-${keyof AppColorsVariants}`;
+  backgroundClassName?: `bg-l-${keyof AppColorsVariants}`;
   spinning?: boolean;
   noPadding?: boolean;
   style?: React.CSSProperties;
@@ -29,7 +29,7 @@ const StrayPage = ({
   children,
   footerRender,
   className,
-  backgroundClassName = 'bg-r-neutral-bg-2',
+  backgroundClassName = 'bg-l-neutral-bg-2',
   spinning = false,
   noPadding = false,
   style,

@@ -100,7 +100,7 @@ const DisplayMnemonic = () => {
       <div
         className={clsx(
           'px-[100px] pt-[32px] pb-[40px]',
-          'bg-r-neutral-card-1 rounded-[12px]',
+          'bg-l-neutral-card-1 rounded-[12px]',
           'relative'
         )}
       >
@@ -110,14 +110,14 @@ const DisplayMnemonic = () => {
         >
           <ThemeIcon
             src={RcIconBack}
-            className="w-[20px] h-[20px] text-r-neutral-title-1"
+            className="w-[20px] h-[20px] text-l-neutral-title-1"
           />
         </div>
         <h1
           className={clsx(
             'flex items-center justify-center',
             'space-x-[16px] mb-[14px]',
-            'text-[20px] text-r-neutral-title-1'
+            'text-[20px] text-l-neutral-title-1'
           )}
         >
           <span>{t('page.newAddress.seedPhrase.backup')}</span>
@@ -133,7 +133,7 @@ const DisplayMnemonic = () => {
                 focusable={false}
                 closable={false}
                 words={mnemonics.split(' ')}
-                className="bg-r-neutral-card-3 border-[0.5px] border-rabby-neutral-line"
+                className="bg-l-neutral-card-3 border-[0.5px] border-lux-neutral-line"
               />
             </div>
           </MnemonicsWrapper>
@@ -142,7 +142,7 @@ const DisplayMnemonic = () => {
             className="text-13 pt-16 pb-16 mt-8"
           >
             <ThemeIcon
-              className="mr-6 w-[16px] h-[16px] text-r-neutral-body"
+              className="mr-6 w-[16px] h-[16px] text-l-neutral-body"
               src={RcIconCopy}
             />
             {t('page.newAddress.seedPhrase.copy')}

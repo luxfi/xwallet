@@ -21,9 +21,9 @@ export const TokenAmountItem: React.FC<Props> = ({
       className={clsx(
         'rounded-[4px]',
         'overflow-hidden py-[4px] px-[7px]',
-        'border-[0.5px] border-rabby-neutral-line',
+        'border-[0.5px] border-lux-neutral-line',
         onEdit
-          ? 'cursor-pointer hover:border-rabby-blue-default hover:bg-r-blue-light1'
+          ? 'cursor-pointer hover:border-lux-blue-default hover:bg-l-blue-light1'
           : undefined
       )}
       logo={logoUrl}
@@ -37,7 +37,7 @@ export const TokenAmountItem: React.FC<Props> = ({
           </div>
           {onEdit ? (
             <span className="text-blue-light text-14 font-medium ml-4 hover:underline">
-              <IconEditPen className="text-r-blue-default" />
+              <IconEditPen className="text-l-blue-default" />
             </span>
           ) : null}
         </div>

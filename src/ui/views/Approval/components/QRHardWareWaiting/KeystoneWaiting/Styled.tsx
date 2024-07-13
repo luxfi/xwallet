@@ -6,7 +6,7 @@ export const UnderlineButton = ({ children, onClick, className }) => {
     <div
       className={clsx(
         'text-center',
-        'text-[15px] underline text-r-neutral-body',
+        'text-[15px] underline text-l-neutral-body',
         'cursor-pointer',
         className
       )}

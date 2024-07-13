@@ -512,13 +512,13 @@ const SendNFT = () => {
                   />
                 </Form.Item>
                 {toAddressIsValid && !toAddressInContactBook && (
-                  <div className="tip-no-contact font-normal text-[12px] text-r-neutral-body pt-[12px]">
+                  <div className="tip-no-contact font-normal text-[12px] text-l-neutral-body pt-[12px]">
                     {/* Not on address list.{' '} */}
                     {t('page.sendNFT.tipNotOnAddressList')}{' '}
                     <span
                       onClick={handleClickAddContact}
                       className={clsx(
-                        'ml-[2px] underline cursor-pointer text-r-blue-default'
+                        'ml-[2px] underline cursor-pointer text-l-blue-default'
                       )}
                     >
                       {/* Add to contacts */}
@@ -560,13 +560,13 @@ const SendNFT = () => {
                       />
                       <ThemeIcon
                         src={RcIconExternal}
-                        className="icon icon-copy text-r-neutral-foot"
+                        className="icon icon-copy text-l-neutral-foot"
                         onClick={handleClickContractId}
                       />
                       <Copy
                         data={nftItem.contract_id}
                         variant="address"
-                        className="text-r-neutral-foot w-14 h-14"
+                        className="text-l-neutral-foot w-14 h-14"
                       />
                     </span>
                   </p>

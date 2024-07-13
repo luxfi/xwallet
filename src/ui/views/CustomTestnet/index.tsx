@@ -149,7 +149,7 @@ export const CustomTestnet = () => {
       >
         {t('page.customTestnet.title')}
       </PageHeader>
-      <p className="text-r-neutral-body text-[13px] text-center leading-[16px] mb-20 px-20">
+      <p className="text-l-neutral-body text-[13px] text-center leading-[16px] mb-20 px-20">
         {t('page.customTestnet.desc')}
       </p>
       {!list?.length ? (
@@ -160,7 +160,7 @@ export const CustomTestnet = () => {
             <CustomTestnetItem
               item={item as any}
               key={item.id}
-              className="bg-r-neutral-card1"
+              className="bg-l-neutral-card1"
               onEdit={handleEditClick}
               onRemove={handleRemoveClick}
               editable

@@ -49,14 +49,14 @@ export const ImKeyConnect = () => {
         center: true,
       }}
       className="stray-page-wide"
-      backgroundClassName="bg-r-neutral-card2"
-      headerClassName="mb-40 text-r-neutral-title1"
+      backgroundClassName="bg-l-neutral-card2"
+      headerClassName="mb-40 text-l-neutral-title1"
       onSubmit={onSubmit}
       hasBack={false}
       footerFixed={false}
     >
       <div className="connect-ledger">
-        <ul className="list-decimal w-[180px] pl-[20px] m-auto text-r-neutral-title1 text-14 leading-[20px] mb-[50px]">
+        <ul className="list-decimal w-[180px] pl-[20px] m-auto text-l-neutral-title1 text-14 leading-[20px] mb-[50px]">
           <li>{t('page.dashboard.hd.imkey.doc1')}</li>
           <li>{t('page.dashboard.hd.imkey.doc2')}</li>
         </ul>

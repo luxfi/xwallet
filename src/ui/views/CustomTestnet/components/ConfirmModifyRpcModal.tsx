@@ -47,7 +47,7 @@ export const ConfirmModifyRpcModal = ({
     >
       <div>
         <div className="pt-[30px] px-[12px]">
-          <div className="text-r-neutral-title-1 text-[16px] font-medium leading-[20px] text-center">
+          <div className="text-l-neutral-title-1 text-[16px] font-medium leading-[20px] text-center">
             {t('page.customTestnet.ConfirmModifyRpcModal.desc')}
           </div>
           <div className="pt-[22px] pb-[25px] flex flex-col items-center">
@@ -56,10 +56,10 @@ export const ConfirmModifyRpcModal = ({
               alt=""
               className="w-[32px] h-[32px] mb-[8px]"
             />
-            <div className="text-[15px] font-medium leading-[18px] text-r-neutral-title-1 mb-[8px]">
+            <div className="text-[15px] font-medium leading-[18px] text-l-neutral-title-1 mb-[8px]">
               {chain?.name}
             </div>
-            <div className="text-r-neutral-body text-[15px] w-full text-center">
+            <div className="text-l-neutral-body text-[15px] w-full text-center">
               {rpcUrl}
             </div>
           </div>

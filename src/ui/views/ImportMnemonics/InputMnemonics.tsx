@@ -189,14 +189,14 @@ const ImportMnemonics = () => {
   }, [isSlip39, secretShares, slip39GroupNumber]);
 
   return (
-    <main className="w-screen h-screen bg-r-neutral-bg-2">
+    <main className="w-screen h-screen bg-l-neutral-bg-2">
       <div className={clsx('mx-auto pt-[58px]', 'w-[600px]')}>
         <img src={LogoSVG} alt="Rabby" className="mb-[12px]" />
         <Form
           form={form}
           className={clsx(
             'px-[100px] pt-[36px] pb-[40px]',
-            'bg-r-neutral-card-1 rounded-[12px]'
+            'bg-l-neutral-card-1 rounded-[12px]'
           )}
           onFinish={({ mnemonics, passphrase }) => run(mnemonics, passphrase)}
           onValuesChange={(states) => {
@@ -213,11 +213,11 @@ const ImportMnemonics = () => {
             className={clsx(
               'flex items-center justify-center',
               'space-x-[16px] mb-[24px]',
-              'text-[20px] text-r-neutral-title-1'
+              'text-[20px] text-l-neutral-title-1'
             )}
           >
             <ThemeIcon
-              className="w-[24px] text-r-neutral-body"
+              className="w-[24px] text-l-neutral-body"
               src={RcIconMnemonicInkCC}
               viewBox="0 0 32 32"
             />
@@ -248,7 +248,7 @@ const ImportMnemonics = () => {
                   <Input
                     type="password"
                     className={clsx(
-                      'h-[44px] border-rabby-neutral-line bg-rabby-neutral-card-1 focus:border-blue'
+                      'h-[44px] border-lux-neutral-line bg-lux-neutral-card-1 focus:border-blue'
                     )}
                     spellCheck={false}
                     placeholder={t('page.newAddress.seedPhrase.passphrase')}
