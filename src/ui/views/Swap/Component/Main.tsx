@@ -15,7 +15,7 @@ import { useQuoteVisible, useSetQuoteVisible } from '../hooks';
 import { InfoCircleFilled } from '@ant-design/icons';
 import { ReceiveDetails } from './ReceiveDetail';
 import { Slippage } from './Slippage';
-import { DEX_ENUM, DEX_SPENDER_WHITELIST } from '@lux-wallet/rabby-swap';
+import { DEX_ENUM, DEX_SPENDER_WHITELIST } from '@lux-wallet/lux-swap';
 import { useDispatch } from 'react-redux';
 import { useRbiSource } from '@/ui/utils/ga-event';
 import { useCss } from 'react-use';

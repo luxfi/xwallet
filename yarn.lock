@@ -4697,7 +4697,7 @@
   resolved "https://registry.yarnpkg.com/@lux-wallet/lux-api/-/lux-api-0.7.22.tgz#efa02087a15faa3a0ad30ff7ae2a009f1ba08896"
   integrity sha512-ueQJi1mjHoXpmjZbVG8M4WOysT9WbL8USzEP5pPX3aUbthih0Kr049+mjqDMldtMqeJsVYOg9uUPkNfUCxw9EQ==
   dependencies:
-    "@lux-wallet/rabby-sign" "^0.3.3"
+    "@lux-wallet/lux-sign" "^0.3.3"
     axios "^0.27.2"
     axios-rate-limit "^1.3.0"
     eth-rpc-errors "^4.0.3"
@@ -4709,9 +4709,9 @@
   resolved "https://registry.yarnpkg.com/@lux-wallet/lux-security-engine/-/lux-security-engine-2.0.3.tgz#f39a2d94c73de21e6ee69e40cd2dee02740f611f"
   integrity sha512-2b6neRyY92hoiS9jBtpT+K2ozeEfU4jw1Vk16P1rxjh3oc/LSAftAzAADWx4lhsCVEQGS0QRuRurw3Kf3y6I8Q==
 
-"@lux-wallet/rabby-sign@^0.3.3":
+"@lux-wallet/lux-sign@^0.3.3":
   version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@lux-wallet/rabby-sign/-/rabby-sign-0.3.3.tgz#cb3d8f9472363e07a0b429f47344dd352a118033"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/lux-sign/-/lux-sign-0.3.3.tgz#cb3d8f9472363e07a0b429f47344dd352a118033"
   integrity sha512-enFRKBJyNA9owudWYGq1FB0+SWM7ExgaPkYOwvL342oIUcZxfzJ8N8tVn2dfwGkK4cel36vrRX6VizKJmOGUAg==
   dependencies:
     fast-deep-equal "^3.1.3"
@@ -4719,9 +4719,9 @@
     sha256-uint8array "^0.10.3"
     url-parse "^1.5.1"
 
-"@lux-wallet/rabby-swap@0.0.37":
+"@lux-wallet/lux-swap@0.0.37":
   version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@lux-wallet/rabby-swap/-/rabby-swap-0.0.37.tgz#2cfabc1298071c31c8f4581a1dc3722a4698beb0"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/lux-swap/-/lux-swap-0.0.37.tgz#2cfabc1298071c31c8f4581a1dc3722a4698beb0"
   integrity sha512-ZeAI42SecqVLPmUdXbwqg4h+Mt9bPDaiTTiFlzzrNW17e2vMOzb1scMIWXQLeFVLlO393+MOCGU2tmrgp7ltNA==
   dependencies:
     "@ethersproject/abi" "^5.7.0"
@@ -7913,17 +7913,17 @@ blake-hash@^2.0.0:
     node-gyp-build "^4.2.2"
     readable-stream "^3.6.0"
 
-"blake2b-wasm@https://github.com/RabbyHub/mirror-blake2b-wasm#c183fabcb22cf84d463c7b10f25877a8e4afdc6d":
+"blake2b-wasm@https://github.com/luxfi/mirror-blake2b-wasm#c183fabcb22cf84d463c7b10f25877a8e4afdc6d":
   version "2.0.0"
-  resolved "https://github.com/RabbyHub/mirror-blake2b-wasm#c183fabcb22cf84d463c7b10f25877a8e4afdc6d"
+  resolved "https://github.com/luxfi/mirror-blake2b-wasm#c183fabcb22cf84d463c7b10f25877a8e4afdc6d"
   dependencies:
     nanoassert "^1.0.0"
 
-"blake2b@https://github.com/RabbyHub/mirror-blake2b#55b93cc51a50b0af6b81bb44fcdf88e95c7e6b36":
+"blake2b@https://github.com/luxfi/mirror-blake2b#55b93cc51a50b0af6b81bb44fcdf88e95c7e6b36":
   version "2.1.3"
-  resolved "https://github.com/RabbyHub/mirror-blake2b#55b93cc51a50b0af6b81bb44fcdf88e95c7e6b36"
+  resolved "https://github.com/luxfi/mirror-blake2b#55b93cc51a50b0af6b81bb44fcdf88e95c7e6b36"
   dependencies:
-    blake2b-wasm "https://github.com/RabbyHub/mirror-blake2b-wasm#c183fabcb22cf84d463c7b10f25877a8e4afdc6d"
+    blake2b-wasm "https://github.com/luxfi/mirror-blake2b-wasm#c183fabcb22cf84d463c7b10f25877a8e4afdc6d"
     nanoassert "^1.0.0"
 
 blakejs@^1.1.0:

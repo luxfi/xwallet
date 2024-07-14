@@ -3,7 +3,7 @@ import { RootModel } from '.';
 import { ChainGas } from 'background/service/preference';
 import { CHAINS_ENUM } from 'consts';
 import { SwapServiceStore } from '@/background/service/swap';
-import { DEX_ENUM } from '@lux-wallet/rabby-swap';
+import { DEX_ENUM } from '@lux-wallet/lux-swap';
 import { TokenItem } from '@lux-wallet/lux-api/dist/types';
 
 export const swap = createModel<RootModel>()({

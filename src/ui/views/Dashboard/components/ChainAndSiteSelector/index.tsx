@@ -254,7 +254,7 @@ export default ({
       icon: claimable
         ? RcIconClaimableRabbyPoints
         : RcIconUnclaimableRabbyPoints,
-      eventKey: 'Rabby Points',
+      eventKey: 'Lux Points',
       content: t('page.dashboard.home.panel.luxPoints'),
       onClick: () => {
         history.push('/lux-points');

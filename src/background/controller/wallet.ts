@@ -79,7 +79,7 @@ import * as Sentry from '@sentry/browser';
 import { addHexPrefix, unpadHexString } from 'ethereumjs-util';
 import PQueue from 'p-queue';
 import { ProviderRequest } from './provider/type';
-import { QuoteResult } from '@lux-wallet/rabby-swap/dist/quote';
+import { QuoteResult } from '@lux-wallet/lux-swap/dist/quote';
 import transactionWatcher from '../service/transactionWatcher';
 import Safe from '@lux-wallet/gnosis-sdk';
 import { Chain } from '@debank-lux/common';
@@ -3767,9 +3767,7 @@ export class WalletController extends BaseController {
         };
       }
       try {
-        const config = await fetch(
-          'https://static.debank.com/rabby/config.json'
-        );
+        const config = await fetch('https://static.debank.com/lux/config.json');
         const { data } = (await config.json()) as IConfig;
         return data.level;
       } catch (e) {
@@ -3793,14 +3791,14 @@ export class WalletController extends BaseController {
 
     if (claimSnapshot) {
       claimText = (
-        await wallet.openapi.getRabbyClaimTextV2({
+        await wallet.openapi.getluxClaimTextV2({
           id: account?.address,
           invite_code: code,
         })
       )?.text; //`${account?.address} Claims Lux Points`;
     } else {
       verifyText = (
-        await wallet.openapi.getRabbySignatureTextV2({
+        await wallet.openapi.getluxSignatureTextV2({
           id: account?.address,
         })
       )?.text; //`Lux Wallet wants you to sign in with your address:\n${account?.address}`;
@@ -3819,7 +3817,7 @@ export class WalletController extends BaseController {
     this.setLuxPointsSignature(account.address, signature);
     if (claimSnapshot) {
       try {
-        await wallet.openapi.claimRabbyPointsSnapshotV2({
+        await wallet.openapi.claimluxPointsSnapshotV2({
           id: account?.address,
           invite_code: code,
           signature,

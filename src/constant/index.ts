@@ -186,7 +186,7 @@ import {
   getChainList,
   getMainnetChainList,
 } from '@/utils/chain';
-import { DEX_ENUM, DEX_SUPPORT_CHAINS } from '@lux-wallet/rabby-swap';
+import { DEX_ENUM, DEX_SUPPORT_CHAINS } from '@lux-wallet/lux-swap';
 import browser from 'webextension-polyfill';
 
 import LogoParaswap from 'ui/assets/swap/paraswap.png';

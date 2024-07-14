@@ -242,7 +242,7 @@ const CreatePassword = () => {
         }}
       >
         <header className="text-l-neutral-title1 mb-[20px] text-20 font-medium leading-[20px] text-center">
-          Rabby Term of Use
+          Lux Term of Use
         </header>
         <div
           className="overflow-scroll"

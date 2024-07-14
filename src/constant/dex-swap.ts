@@ -2,7 +2,7 @@ import {
   DEX_SUPPORT_CHAINS as RS_DEX_SUPPORT_CHAINS,
   DEX_ROUTER_WHITELIST as RS_DEX_ROUTER_WHITELIST,
   DEX_SPENDER_WHITELIST as RS_DEX_SPENDER_WHITELIST,
-} from '@lux-wallet/rabby-swap';
+} from '@lux-wallet/lux-swap';
 import { ensureChainHashValid, findChainByEnum } from '@/utils/chain';
 
 export const DEX_SUPPORT_CHAINS = Object.entries(RS_DEX_SUPPORT_CHAINS).reduce(

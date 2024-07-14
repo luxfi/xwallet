@@ -427,7 +427,7 @@ class NotificationService extends Events {
   };
 
   private addLastRejectDapp() {
-    // not Rabby dapp
+    // not Lux dapp
     if (this.currentApproval?.data?.params?.$ctx) return;
     const origin = this.getOrigin();
     if (!origin) {

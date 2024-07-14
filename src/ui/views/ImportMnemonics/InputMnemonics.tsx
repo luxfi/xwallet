@@ -191,7 +191,7 @@ const ImportMnemonics = () => {
   return (
     <main className="w-screen h-screen bg-l-neutral-bg-2">
       <div className={clsx('mx-auto pt-[58px]', 'w-[600px]')}>
-        <img src={LogoSVG} alt="Rabby" className="mb-[12px]" />
+        <img src={LogoSVG} alt="Lux" className="mb-[12px]" />
         <Form
           form={form}
           className={clsx(

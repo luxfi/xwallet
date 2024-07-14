@@ -185,7 +185,7 @@ const LuxPoints = () => {
             return;
           }
           setClaimItemLoading((e) => ({ ...e, [campaign_id]: true }));
-          await wallet.openapi.claimRabbyPointsById({
+          await wallet.openapi.claimluxPointsById({
             user_id: account?.address,
             campaign_id: campaign_id,
             signature,
@@ -210,14 +210,14 @@ const LuxPoints = () => {
       signature,
       refreshUserPoints,
       account?.address,
-      wallet?.openapi?.claimRabbyPointsById,
+      wallet?.openapi?.claimluxPointsById,
     ]
   );
 
   const setReferralCode = React.useCallback(
     async (code: string) => {
       if (account?.address && signature) {
-        await wallet.openapi.setRabbyPointsInviteCode({
+        await wallet.openapi.setluxPointsInviteCode({
           id: account?.address,
           signature,
           invite_code: code,

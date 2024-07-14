@@ -12,8 +12,8 @@ import {
   DEX_ROUTER_WHITELIST,
   DEX_SPENDER_WHITELIST,
   WrapTokenAddressMap,
-} from '@lux-wallet/rabby-swap';
-import { QuoteResult, getQuote } from '@lux-wallet/rabby-swap/dist/quote';
+} from '@lux-wallet/lux-swap';
+import { QuoteResult, getQuote } from '@lux-wallet/lux-swap/dist/quote';
 import BigNumber from 'bignumber.js';
 import React from 'react';
 import pRetry from 'p-retry';

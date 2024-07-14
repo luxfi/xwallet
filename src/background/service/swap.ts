@@ -1,4 +1,4 @@
-import { DEX_ENUM } from '@lux-wallet/rabby-swap';
+import { DEX_ENUM } from '@lux-wallet/lux-swap';
 import { CHAINS_ENUM } from '@debank-lux/common';
 import { createPersistStore } from 'background/utils';
 import { GasCache, ChainGas } from './preference';
