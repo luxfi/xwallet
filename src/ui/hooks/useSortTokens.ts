@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
+import { TokenItem } from '@lux-wallet/lux-api/dist/types';
 import { AbstractPortfolioToken } from '../utils/portfolio/types';
 import { useWallet } from 'ui/utils';
 import { useLuxSelector } from 'ui/store';

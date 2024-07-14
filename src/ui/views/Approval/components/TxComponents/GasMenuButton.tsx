@@ -1,5 +1,5 @@
 import { getGasLevelI18nKey } from '@/ui/utils/trans';
-import { GasLevel } from '@lux-wallet/rabby-api/dist/types';
+import { GasLevel } from '@lux-wallet/lux-api/dist/types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';

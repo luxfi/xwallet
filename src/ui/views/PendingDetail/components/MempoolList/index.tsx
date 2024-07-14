@@ -1,10 +1,7 @@
 import IconCheck from '@/ui/assets/pending/icon-check-1.svg';
 import IconClock from '@/ui/assets/pending/icon-clock.svg';
 import iconSpin from '@/ui/assets/pending/icon-spin-1.svg';
-import {
-  MempoolCheckDetail,
-  TxRequest,
-} from '@lux-wallet/rabby-api/dist/types';
+import { MempoolCheckDetail, TxRequest } from '@lux-wallet/lux-api/dist/types';
 import { Table } from 'antd';
 import { ColumnsType } from 'antd/lib/table';
 import React, { useMemo } from 'react';

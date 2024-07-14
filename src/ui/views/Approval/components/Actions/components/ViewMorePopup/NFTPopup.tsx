@@ -4,7 +4,7 @@ import { Table, Col, Row } from '../Table';
 import * as Values from '../Values';
 import { Chain } from 'background/service/openapi';
 import NFTWithName from '../NFTWithName';
-import { NFTItem } from '@lux-wallet/rabby-api/dist/types';
+import { NFTItem } from '@lux-wallet/lux-api/dist/types';
 import { formatAmount } from '@/ui/utils/number';
 
 interface NFTData {

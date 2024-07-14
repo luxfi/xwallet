@@ -5,8 +5,8 @@ import {
   Threshold,
   ContextActionData,
   ContractAddress,
-} from '@lux-wallet/rabby-security-engine/dist/rules';
-import Engine from '@lux-wallet/rabby-security-engine';
+} from '@lux-wallet/lux-security-engine/dist/rules';
+import Engine from '@lux-wallet/lux-security-engine';
 import { createPersistStore, isSameAddress } from 'background/utils';
 import openapiService from './openapi';
 

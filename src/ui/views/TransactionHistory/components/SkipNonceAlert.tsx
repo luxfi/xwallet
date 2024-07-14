@@ -4,7 +4,7 @@ import { intToHex, useWallet } from '@/ui/utils';
 import { findChain, findChainByID } from '@/utils/chain';
 import { findMaxGasTx } from '@/utils/tx';
 import { Chain } from '@debank-lux/common';
-import { GasLevel } from '@lux-wallet/rabby-api/dist/types';
+import { GasLevel } from '@lux-wallet/lux-api/dist/types';
 import { useInterval, useRequest } from 'ahooks';
 import { message } from 'antd';
 import { CHAINS } from 'consts';

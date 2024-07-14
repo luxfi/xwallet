@@ -1,6 +1,6 @@
 import { numberWithCommasIsLtOne } from '@/ui/utils';
 import { getTokenSymbol } from '@/ui/utils/token';
-import { PendingTxItem, TokenItem } from '@lux-wallet/rabby-api/dist/types';
+import { PendingTxItem, TokenItem } from '@lux-wallet/lux-api/dist/types';
 import React, { ReactNode } from 'react';
 import IconToken from 'ui/assets/pending/icon-token.svg';
 

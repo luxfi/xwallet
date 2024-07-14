@@ -3,7 +3,7 @@ import { CHAINS_ENUM } from '@debank-lux/common';
 import { createPersistStore } from 'background/utils';
 import { GasCache, ChainGas } from './preference';
 import { CEX, DEX } from '@/constant';
-import { OpenApiService } from '@lux-wallet/rabby-api';
+import { OpenApiService } from '@lux-wallet/lux-api';
 import { openapiService } from 'background/service';
 import { TokenItem } from './openapi';
 import * as Sentry from '@sentry/browser';

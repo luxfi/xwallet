@@ -2,7 +2,7 @@ import { TokenWithChain } from '@/ui/component';
 import React from 'react';
 import styled from 'styled-components';
 import { ReactComponent as RcIconRcArrowDownTriangle } from '@/ui/assets/swap/arrow-caret-down.svg';
-import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
+import { TokenItem } from '@lux-wallet/lux-api/dist/types';
 import { getTokenSymbol } from '@/ui/utils/token';
 import { useTranslation } from 'react-i18next';
 const TokenRenderWrapper = styled.div`

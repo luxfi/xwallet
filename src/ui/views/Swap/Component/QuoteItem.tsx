@@ -1,7 +1,7 @@
 import { CEX } from '@/constant';
 import { formatAmount, formatUsdValue } from '@/ui/utils';
 import { CHAINS_ENUM } from '@debank-lux/common';
-import { TokenItem, CEXQuote } from '@lux-wallet/rabby-api/dist/types';
+import { TokenItem, CEXQuote } from '@lux-wallet/lux-api/dist/types';
 import { DEX_ENUM } from '@lux-wallet/rabby-swap';
 import { QuoteResult } from '@lux-wallet/rabby-swap/dist/quote';
 import clsx from 'clsx';

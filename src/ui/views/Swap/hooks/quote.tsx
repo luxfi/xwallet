@@ -6,7 +6,7 @@ import {
   ExplainTxResponse,
   TokenItem,
   Tx,
-} from '@lux-wallet/rabby-api/dist/types';
+} from '@lux-wallet/lux-api/dist/types';
 import {
   DEX_ENUM,
   DEX_ROUTER_WHITELIST,

@@ -7,7 +7,7 @@ import {
   sortWalletTokens,
 } from '@/ui/utils/portfolio/tokenUtils';
 import { AbstractPortfolioToken } from '@/ui/utils/portfolio/types';
-import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
+import { TokenItem } from '@lux-wallet/lux-api/dist/types';
 import produce from 'immer';
 import React from 'react';
 

@@ -2,10 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Button } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { Popup } from 'ui/component';
-import {
-  RuleConfig,
-  Level,
-} from '@lux-wallet/rabby-security-engine/dist/rules';
+import { RuleConfig, Level } from '@lux-wallet/lux-security-engine/dist/rules';
 import styled from 'styled-components';
 import { SecurityEngineLevel } from 'consts';
 import clsx from 'clsx';

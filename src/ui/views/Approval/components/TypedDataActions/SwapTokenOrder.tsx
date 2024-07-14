@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import BigNumber from 'bignumber.js';
 import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
-import { Result } from '@lux-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/lux-security-engine';
 import { SwapTokenOrderRequireData, TypedDataActionData } from './utils';
 import { formatAmount, formatUsdValue } from '@/ui/utils/number';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';

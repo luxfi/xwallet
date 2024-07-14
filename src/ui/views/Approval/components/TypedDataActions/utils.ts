@@ -22,8 +22,8 @@ import {
   NFTItem,
   SwapOrderAction,
   ApproveNFTAction,
-} from '@lux-wallet/rabby-api/dist/types';
-import { ContextActionData } from '@lux-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/lux-api/dist/types';
+import { ContextActionData } from '@lux-wallet/lux-security-engine/dist/rules';
 import BigNumber from 'bignumber.js';
 import { getArrayType, isArrayType } from '@metamask/abi-utils/dist/parsers';
 import { BigNumber as EthersBigNumber } from 'ethers';

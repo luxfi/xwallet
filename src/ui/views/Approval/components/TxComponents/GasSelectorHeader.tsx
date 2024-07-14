@@ -24,7 +24,7 @@ import { TooltipWithMagnetArrow } from 'ui/component/Tooltip/TooltipWithMagnetAr
 import { formatTokenAmount } from '@/ui/utils/number';
 import { calcMaxPriorityFee } from '@/utils/transaction';
 import styled, { css } from 'styled-components';
-import { Result } from '@lux-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/lux-security-engine';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import SecurityLevelTagNoText from '../SecurityEngine/SecurityLevelTagNoText';
 import IconQuestionMark from 'ui/assets/sign/tx/question-mark.svg';

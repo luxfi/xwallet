@@ -2,7 +2,7 @@ import {
   TokenItem,
   TxHistoryResult,
   TxHistoryItem,
-} from '@lux-wallet/rabby-api/dist/types';
+} from '@lux-wallet/lux-api/dist/types';
 import { Button } from 'antd';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';

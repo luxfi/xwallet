@@ -53,7 +53,7 @@ import {
   ContextActionData,
   ContractAddress,
   UserData,
-} from '@lux-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/lux-security-engine/dist/rules';
 import DisplayKeyring from '../service/keyring/display';
 import provider from './provider';
 import { WalletConnectKeyring } from '@lux-wallet/eth-walletconnect-keyring';
@@ -87,7 +87,7 @@ import { isAddress } from 'web3-utils';
 import { findChain, findChainByEnum, getChainList } from '@/utils/chain';
 import { cached } from '../utils/cache';
 import { createSafeService } from '../utils/safe';
-import { OpenApiService } from '@lux-wallet/rabby-api';
+import { OpenApiService } from '@lux-wallet/lux-api';
 import { autoLockService } from '../service/autoLock';
 import { t } from 'i18next';
 import { getWeb3Provider } from './utils';

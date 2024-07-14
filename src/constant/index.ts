@@ -1,5 +1,5 @@
 import { CHAINS, CHAINS_ENUM, Chain } from '@debank-lux/common';
-import { Level } from '@lux-wallet/rabby-security-engine/dist/rules';
+import { Level } from '@lux-wallet/lux-security-engine/dist/rules';
 import IconAmber, {
   ReactComponent as RcIconAmber,
 } from 'ui/assets/walletlogo/amber.svg';

@@ -5,7 +5,7 @@ import { ChainSelectorLargeModal } from '@/ui/component/ChainSelector/LargeModal
 import { splitNumberByStep, useWallet } from '@/ui/utils';
 import { findChainByEnum } from '@/utils/chain';
 import { CHAINS_ENUM } from '@debank-lux/common';
-import { BasicDappInfo } from '@lux-wallet/rabby-api/dist/types';
+import { BasicDappInfo } from '@lux-wallet/lux-api/dist/types';
 import {
   useDebounce,
   useInfiniteScroll,

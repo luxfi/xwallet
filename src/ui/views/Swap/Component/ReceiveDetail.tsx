@@ -1,4 +1,4 @@
-import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
+import { TokenItem } from '@lux-wallet/lux-api/dist/types';
 import { Skeleton, Tooltip } from 'antd';
 import BigNumber from 'bignumber.js';
 import {

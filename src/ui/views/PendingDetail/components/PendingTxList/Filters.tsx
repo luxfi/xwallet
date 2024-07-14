@@ -6,7 +6,7 @@ import {
   NFTItem,
   PendingTxItem,
   TokenItem,
-} from '@lux-wallet/rabby-api/dist/types';
+} from '@lux-wallet/lux-api/dist/types';
 import clsx from 'clsx';
 import _ from 'lodash';
 import React, { ReactNode } from 'react';

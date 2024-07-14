@@ -1,4 +1,4 @@
-import { Summary } from '@lux-wallet/rabby-api/dist/types';
+import { Summary } from '@lux-wallet/lux-api/dist/types';
 
 export type SummaryData = Summary;
 type Coin = SummaryData['coin_list'][number];

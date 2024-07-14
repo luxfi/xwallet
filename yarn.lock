@@ -4692,9 +4692,9 @@
     sinon-chrome "^3.0.1"
     webextension-polyfill "0.7.0"
 
-"@lux-wallet/rabby-api@0.7.22":
+"@lux-wallet/lux-api@0.7.22":
   version "0.7.22"
-  resolved "https://registry.yarnpkg.com/@lux-wallet/rabby-api/-/rabby-api-0.7.22.tgz#efa02087a15faa3a0ad30ff7ae2a009f1ba08896"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/lux-api/-/lux-api-0.7.22.tgz#efa02087a15faa3a0ad30ff7ae2a009f1ba08896"
   integrity sha512-ueQJi1mjHoXpmjZbVG8M4WOysT9WbL8USzEP5pPX3aUbthih0Kr049+mjqDMldtMqeJsVYOg9uUPkNfUCxw9EQ==
   dependencies:
     "@lux-wallet/rabby-sign" "^0.3.3"
@@ -4704,9 +4704,9 @@
     lodash "^4.17.21"
     qss "^2.0.3"
 
-"@lux-wallet/rabby-security-engine@2.0.3":
+"@lux-wallet/lux-security-engine@2.0.3":
   version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@lux-wallet/rabby-security-engine/-/rabby-security-engine-2.0.3.tgz#f39a2d94c73de21e6ee69e40cd2dee02740f611f"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/lux-security-engine/-/lux-security-engine-2.0.3.tgz#f39a2d94c73de21e6ee69e40cd2dee02740f611f"
   integrity sha512-2b6neRyY92hoiS9jBtpT+K2ozeEfU4jw1Vk16P1rxjh3oc/LSAftAzAADWx4lhsCVEQGS0QRuRurw3Kf3y6I8Q==
 
 "@lux-wallet/rabby-sign@^0.3.3":

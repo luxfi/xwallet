@@ -1,7 +1,7 @@
 import React from 'react';
 import { TCell, TRow } from './components/Table';
 import clsx from 'clsx';
-import { SummaryToken } from '@lux-wallet/rabby-api/dist/types';
+import { SummaryToken } from '@lux-wallet/lux-api/dist/types';
 import IconUnknown from '@/ui/assets/token-default.svg';
 import HideAssets from '@/ui/assets/dashboard/hide-assets.svg';
 import { Image } from 'antd';

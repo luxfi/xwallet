@@ -2,7 +2,7 @@ import FallbackImage from '@/ui/component/FallbackSiteLogo';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
 import { openInTab } from '@/ui/utils';
 import { matomoRequestEvent } from '@/utils/matomo-request';
-import { BasicDappInfo } from '@lux-wallet/rabby-api/dist/types';
+import { BasicDappInfo } from '@lux-wallet/lux-api/dist/types';
 import { Divider, Tooltip } from 'antd';
 import Paragraph from 'antd/lib/typography/Paragraph';
 import clsx from 'clsx';

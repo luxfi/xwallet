@@ -1,7 +1,7 @@
 import {
   PortfolioItem,
   PortfolioItemToken,
-} from '@lux-wallet/rabby-api/dist/types';
+} from '@lux-wallet/lux-api/dist/types';
 // curve
 export type ChartLine = {
   value: number;

@@ -1,4 +1,4 @@
-import { PendingTxItem } from '@lux-wallet/rabby-api/dist/types';
+import { PendingTxItem } from '@lux-wallet/lux-api/dist/types';
 import React from 'react';
 import { getActionTypeTextByType } from '../../../Approval/components/Actions/utils';
 

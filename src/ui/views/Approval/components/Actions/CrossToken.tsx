@@ -2,7 +2,7 @@ import React, { useMemo, useEffect } from 'react';
 import { BigNumber } from 'bignumber.js';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import { Result } from '@lux-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/lux-security-engine';
 import { Table, Col, Row } from './components/Table';
 import LogoWithText from './components/LogoWithText';
 import * as Values from './components/Values';

@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import BigNumber from 'bignumber.js';
 import { Chain } from 'background/service/openapi';
-import { Result } from '@lux-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/lux-security-engine';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { isSameAddress } from '@/ui/utils';
 import { ProtocolListItem } from './Actions/components/ProtocolListItem';

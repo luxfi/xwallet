@@ -10,7 +10,7 @@ import {
   ChainWithBalance,
   SupportedChain,
   TokenItem,
-} from '@lux-wallet/rabby-api/dist/types';
+} from '@lux-wallet/lux-api/dist/types';
 import { CHAINS, CHAINS_ENUM, EVENTS } from 'consts';
 import { toHex } from 'viem';
 import browser from 'webextension-polyfill';

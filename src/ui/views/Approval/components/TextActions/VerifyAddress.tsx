@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import { VerifyAddressAction } from '@lux-wallet/rabby-api/dist/types';
+import { VerifyAddressAction } from '@lux-wallet/lux-api/dist/types';
 import { Col, Row, Table } from '../Actions/components/Table';
 import * as Values from '../Actions/components/Values';
-import { Result } from '@lux-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/lux-security-engine';
 
 const Wrapper = styled.div``;
 

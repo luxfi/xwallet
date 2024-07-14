@@ -1,4 +1,4 @@
-import { SecurityCheckResponse } from '@lux-wallet/rabby-api/dist/types';
+import { SecurityCheckResponse } from '@lux-wallet/lux-api/dist/types';
 import { ParsedMessage } from '@spruceid/siwe-parser';
 import { isSameAddress } from '.';
 

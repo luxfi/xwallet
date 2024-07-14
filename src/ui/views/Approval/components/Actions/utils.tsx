@@ -27,11 +27,11 @@ import {
   CrossSwapAction,
   RevokePermit2Action,
   SwapOrderAction,
-} from '@lux-wallet/rabby-api/dist/types';
+} from '@lux-wallet/lux-api/dist/types';
 import {
   ContextActionData,
   UserData,
-} from '@lux-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/lux-security-engine/dist/rules';
 import BigNumber from 'bignumber.js';
 import { useState, useCallback, useEffect } from 'react';
 import PQueue from 'p-queue';

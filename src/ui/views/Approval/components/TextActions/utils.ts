@@ -3,8 +3,8 @@ import {
   ParseTextResponse,
   CreateKeyAction,
   VerifyAddressAction,
-} from '@lux-wallet/rabby-api/dist/types';
-import { ContextActionData } from '@lux-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/lux-api/dist/types';
+import { ContextActionData } from '@lux-wallet/lux-security-engine/dist/rules';
 
 export interface TextActionData {
   sender: string;

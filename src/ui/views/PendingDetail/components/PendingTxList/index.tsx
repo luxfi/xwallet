@@ -9,7 +9,7 @@ import {
   PendingTxItem,
   TokenItem,
   TxRequest,
-} from '@lux-wallet/rabby-api/dist/types';
+} from '@lux-wallet/lux-api/dist/types';
 import { useRequest } from 'ahooks';
 import React, { useEffect, useMemo } from 'react';
 import IconChecked from 'ui/assets/pending/icon-checkbox-checked.svg';

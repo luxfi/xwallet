@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { Tooltip } from 'antd';
 import { useTranslation } from 'react-i18next';
-import { Result } from '@lux-wallet/rabby-security-engine';
-import { Level } from '@lux-wallet/rabby-security-engine/dist/rules';
+import { Result } from '@lux-wallet/lux-security-engine';
+import { Level } from '@lux-wallet/lux-security-engine/dist/rules';
 import styled from 'styled-components';
 import SecurityLevelTag from '../SecurityEngine/SecurityLevelTagNoText';
 import IconEdit from 'ui/assets/editpen.svg';

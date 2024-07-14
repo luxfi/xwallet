@@ -7,7 +7,7 @@ import {
   Level,
   NumberDefine,
   EnumDefine,
-} from '@lux-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/lux-security-engine/dist/rules';
 import styled from 'styled-components';
 import { sortBy } from 'lodash';
 import { SecurityEngineLevel, SecurityEngineLevelOrder } from 'consts';

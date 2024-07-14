@@ -1,13 +1,13 @@
 import React, { useMemo } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import { SignMultiSigActions } from '@lux-wallet/rabby-api/dist/types';
+import { SignMultiSigActions } from '@lux-wallet/lux-api/dist/types';
 import { Col, Row, Table } from '../Actions/components/Table';
 import * as Values from '../Actions/components/Values';
 import { Chain } from 'background/service/openapi';
 import { MultiSigRequireData } from './utils';
 import LogoWithText from '../Actions/components/LogoWithText';
-import { Result } from '@lux-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/lux-security-engine';
 import { CHAINS } from 'consts';
 import { findChain } from '@/utils/chain';
 import { SubCol, SubRow, SubTable } from '../Actions/components/SubTable';
