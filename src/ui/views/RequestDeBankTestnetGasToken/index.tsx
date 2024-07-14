@@ -16,7 +16,7 @@ import imgBg from 'ui/assets/faucet/bg.png';
 import IconSuccess from 'ui/assets/success.svg';
 
 import { Button, message } from 'antd';
-import { ClaimRabbyBadgeModal } from '../Dashboard/components/ClaimLuxBadgeModal';
+import { ClaimLuxBadgeModal } from '../Dashboard/components/ClaimLuxBadgeModal';
 import { CurrentAccount } from '@/ui/component/CurrentAccout';
 import { Loading } from './Loading';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
@@ -81,7 +81,7 @@ const Wrapper = styled.div<{
     padding: 24px;
     margin-top: 40px;
 
-    &.mintedRabbyBadge {
+    &.mintedLuxBadge {
       height: 508px;
       margin-top: 24px;
 
@@ -242,7 +242,7 @@ const RequestDeBankTestnetGasToken = () => {
 
   const initLoading = badgeHasMintedLoading || hasRequestedLoading;
 
-  const mintedRabbyBadge = minted || !!mintInfo?.has_minted;
+  const mintedLuxBadge = minted || !!mintInfo?.has_minted;
 
   const requested =
     error?.message === 'already requested faucet' ||
@@ -286,12 +286,12 @@ const RequestDeBankTestnetGasToken = () => {
         <div
           className={clsx(
             'container',
-            !mintedRabbyBadge && 'mintedRabbyBadge',
+            !mintedLuxBadge && 'mintedLuxBadge',
             initLoading && 'hidden'
           )}
         >
           <CurrentAccount />
-          {mintedRabbyBadge ? (
+          {mintedLuxBadge ? (
             <div className="tip">
               {t('page.requestDebankTestnetGasToken.mintedTip')}
             </div>
@@ -338,7 +338,7 @@ const RequestDeBankTestnetGasToken = () => {
                 block
                 className="requestBtn"
                 type="primary"
-                disabled={!mintedRabbyBadge || loading}
+                disabled={!mintedLuxBadge || loading}
                 onClick={requestFaucet}
               >
                 <span>{t('page.requestDebankTestnetGasToken.requestBtn')}</span>{' '}
@@ -350,7 +350,7 @@ const RequestDeBankTestnetGasToken = () => {
           </div>
         </div>
       </div>
-      <ClaimRabbyBadgeModal
+      <ClaimLuxBadgeModal
         visible={badgeModalVisible}
         onCancel={() => {
           setBadgeModalVisible(false);

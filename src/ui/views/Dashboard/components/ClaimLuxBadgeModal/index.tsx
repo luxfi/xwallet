@@ -7,8 +7,8 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
 
 import ImgInfo from '@/ui/assets/badge/info.svg';
-import ImgLuxBadgeL from '@/ui/assets/badge/rabby-badge-l.svg';
-import ImgLuxBadgeM from '@/ui/assets/badge/rabby-badge-m.svg';
+import ImgLuxBadgeL from '@/ui/assets/badge/lux-badge-l.png';
+import ImgLuxBadgeM from '@/ui/assets/badge/lux-badge-m.png';
 
 import { ReactComponent as RcIconClose } from '@/ui/assets/badge/close.svg';
 
@@ -477,7 +477,7 @@ const StyledModal = styled(Modal)`
   }
 `;
 
-export const ClaimRabbyBadgeModal = ({
+export const ClaimLuxBadgeModal = ({
   visible,
   onCancel,
   onClaimed,
