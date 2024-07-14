@@ -1,4 +1,4 @@
-import { TrezorBridgeInterface } from '@rabby-wallet/eth-trezor-keyring/dist/trezor-bridge-interface';
+import { TrezorBridgeInterface } from '@lux-wallet/eth-trezor-keyring/dist/trezor-bridge-interface';
 import EventEmitter from 'events';
 
 export default class TrezorOffscreenBridge implements TrezorBridgeInterface {

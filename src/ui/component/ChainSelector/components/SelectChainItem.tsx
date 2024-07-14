@@ -1,5 +1,5 @@
 import React, { useMemo, forwardRef, HTMLAttributes, useEffect } from 'react';
-import { CHAINS_ENUM, Chain } from '@debank/common';
+import { CHAINS_ENUM, Chain } from '@debank-lux/common';
 import { Tooltip } from 'antd';
 import clsx from 'clsx';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';

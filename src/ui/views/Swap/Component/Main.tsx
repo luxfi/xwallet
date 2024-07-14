@@ -1,6 +1,6 @@
 import React, { useCallback, useLayoutEffect, useMemo, useRef } from 'react';
 import { useLuxSelector } from '@/ui/store';
-import { CHAINS, CHAINS_ENUM } from '@debank/common';
+import { CHAINS, CHAINS_ENUM } from '@debank-lux/common';
 import TokenSelect from '@/ui/component/TokenSelect';
 import { ReactComponent as IconSwapArrow } from '@/ui/assets/swap/swap-arrow.svg';
 import { TokenRender } from './TokenRender';
@@ -15,7 +15,7 @@ import { useQuoteVisible, useSetQuoteVisible } from '../hooks';
 import { InfoCircleFilled } from '@ant-design/icons';
 import { ReceiveDetails } from './ReceiveDetail';
 import { Slippage } from './Slippage';
-import { DEX_ENUM, DEX_SPENDER_WHITELIST } from '@rabby-wallet/rabby-swap';
+import { DEX_ENUM, DEX_SPENDER_WHITELIST } from '@lux-wallet/rabby-swap';
 import { useDispatch } from 'react-redux';
 import { useRbiSource } from '@/ui/utils/ga-event';
 import { useCss } from 'react-use';

@@ -4,12 +4,12 @@ import { findChain } from '@/utils/chain';
 import { useLedgerDeviceConnected } from '@/ui/utils/ledger';
 import { matomoRequestEvent } from '@/utils/matomo-request';
 import { getKRCategoryByType } from '@/utils/transaction';
-import { ParseTextResponse } from '@rabby-wallet/rabby-api/dist/types';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { ParseTextResponse } from '@lux-wallet/rabby-api/dist/types';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import {
   Level,
   defaultRules,
-} from '@rabby-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/rabby-security-engine/dist/rules';
 import { useSize, useDebounceFn } from 'ahooks';
 import { Skeleton } from 'antd';
 import { Account } from 'background/service/preference';

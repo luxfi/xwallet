@@ -12,7 +12,7 @@ import { splitNumberByStep, useWallet } from '@/ui/utils';
 import clsx from 'clsx';
 import React from 'react';
 import { WalletConnectAccount } from './WalletConnectAccount';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import { LedgerAccount } from './LedgerAccount';
 import { CommonAccount } from './CommonAccount';
 import { KeystoneAccount } from './KeystoneAccount';

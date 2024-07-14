@@ -1,11 +1,11 @@
 import { isSameAddress } from '@/background/utils';
-import { CHAINS_ENUM, CHAINS } from '@debank/common';
-import { DEX_ENUM } from '@rabby-wallet/rabby-swap';
+import { CHAINS_ENUM, CHAINS } from '@debank-lux/common';
+import { DEX_ENUM } from '@lux-wallet/rabby-swap';
 import {
   decodeCalldata,
   QuoteResult,
   DecodeCalldataResult,
-} from '@rabby-wallet/rabby-swap/dist/quote';
+} from '@lux-wallet/rabby-swap/dist/quote';
 import { useMemo } from 'react';
 import { getRouter, getSpender, isSwapWrapToken } from './quote';
 import BigNumber from 'bignumber.js';

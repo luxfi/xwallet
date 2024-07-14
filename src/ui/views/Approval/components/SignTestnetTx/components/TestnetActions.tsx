@@ -1,4 +1,4 @@
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import ViewRawModal from '../../TxComponents/ViewRawModal';
 import React from 'react';
 import styled from 'styled-components';

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useCallback, useMemo } from 'react';
 import { useWallet } from '../utils/WalletContext';
-import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
+import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
 import {
   DisplayedToken,
   encodeProjectTokenId,
@@ -10,7 +10,7 @@ import { useLuxDispatch, useLuxSelector } from 'ui/store';
 import { isSameAddress } from '../utils';
 import { requestOpenApiWithChainId } from '../utils/openapi';
 import { findChainByServerID } from '@/utils/chain';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import useDebounceValue from './useDebounceValue';
 import { useRefState } from './useRefState';
 import { safeBuildRegExp } from '@/utils/string';

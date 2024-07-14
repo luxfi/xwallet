@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect, useMemo, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useAsync } from 'react-use';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import TransportWebHID from '@ledgerhq/hw-transport-webhid';
 import { Skeleton, message } from 'antd';
 import { useScroll } from 'react-use';
@@ -38,7 +38,7 @@ import {
 import {
   Level,
   defaultRules,
-} from '@rabby-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/rabby-security-engine/dist/rules';
 import { isTestnetChainId, findChain } from '@/utils/chain';
 import { TokenDetailPopup } from '@/ui/views/Dashboard/components/TokenDetailPopup';
 import { useEnterPassphraseModal } from '@/ui/hooks/useEnterPassphraseModal';

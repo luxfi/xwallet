@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
 import { preferenceService } from '../service';
 import { EthereumProvider } from './buildinProvider';
-import Safe from '@rabby-wallet/gnosis-sdk';
+import Safe from '@lux-wallet/gnosis-sdk';
 
 export const createSafeService = async ({
   address,

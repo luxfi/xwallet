@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import { PushMultiSigAction } from '@rabby-wallet/rabby-api/dist/types';
+import { PushMultiSigAction } from '@lux-wallet/rabby-api/dist/types';
 import { Col, Row, Table } from './components/Table';
 import * as Values from './components/Values';
 import { Chain } from 'background/service/openapi';

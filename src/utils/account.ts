@@ -1,4 +1,4 @@
-import { ChainWithBalance } from '@rabby-wallet/rabby-api/dist/types';
+import { ChainWithBalance } from '@lux-wallet/rabby-api/dist/types';
 import {
   BRAND_ALIAN_TYPE_TEXT,
   KEYRING_CLASS,

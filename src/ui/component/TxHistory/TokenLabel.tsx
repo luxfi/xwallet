@@ -1,5 +1,5 @@
 import { TokenDetailPopup } from '@/ui/views/Dashboard/components/TokenDetailPopup';
-import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
+import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
 import { getTokenSymbol } from 'ui/utils/token';
 import clsx from 'clsx';
 import React from 'react';

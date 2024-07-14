@@ -4,7 +4,7 @@ import {
   getKRCategoryByType,
   validateGasPriceRange,
 } from '@/utils/transaction';
-import Safe, { BasicSafeInfo } from '@rabby-wallet/gnosis-sdk';
+import Safe, { BasicSafeInfo } from '@lux-wallet/gnosis-sdk';
 import * as Sentry from '@sentry/browser';
 import { Drawer, Modal } from 'antd';
 import { maxBy } from 'lodash';
@@ -17,7 +17,7 @@ import {
 import { Account, ChainGas } from 'background/service/preference';
 import BigNumber from 'bignumber.js';
 import clsx from 'clsx';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import {
   CHAINS,
   CHAINS_ENUM,
@@ -68,11 +68,11 @@ import RuleDrawer from './SecurityEngine/RuleDrawer';
 import {
   Level,
   defaultRules,
-} from '@rabby-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/rabby-security-engine/dist/rules';
 import { TokenDetailPopup } from '@/ui/views/Dashboard/components/TokenDetailPopup';
 import { CoboDelegatedDrawer } from './TxComponents/CoboDelegatedDrawer';
 import { BroadcastMode } from './BroadcastMode';
-import { TxPushType } from '@rabby-wallet/rabby-api/dist/types';
+import { TxPushType } from '@lux-wallet/rabby-api/dist/types';
 import { SafeNonceSelector } from './TxComponents/SafeNonceSelector';
 import { useEnterPassphraseModal } from '@/ui/hooks/useEnterPassphraseModal';
 import { findChain } from '@/utils/chain';

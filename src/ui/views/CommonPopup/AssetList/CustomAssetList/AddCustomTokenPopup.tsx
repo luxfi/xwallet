@@ -5,7 +5,7 @@ import ChainSelectorModal from '@/ui/component/ChainSelector/Modal';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { formatAmount, useWallet } from '@/ui/utils';
 import { findChain, getChainList } from '@/utils/chain';
-import { CHAINS_ENUM } from '@debank/common';
+import { CHAINS_ENUM } from '@debank-lux/common';
 import { useRequest, useSetState } from 'ahooks';
 import { Button, Form, Input, Spin, message } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
@@ -29,7 +29,7 @@ import {
   useOperateCustomToken,
   useFindCustomToken,
 } from '@/ui/hooks/useSearchToken';
-import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
+import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
 import { AbstractPortfolioToken } from '@/ui/utils/portfolio/types';
 
 interface Props {

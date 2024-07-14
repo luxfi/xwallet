@@ -1,4 +1,4 @@
-import { SafeTransactionItem } from '@rabby-wallet/gnosis-sdk/dist/api';
+import { SafeTransactionItem } from '@lux-wallet/gnosis-sdk/dist/api';
 import clsx from 'clsx';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';

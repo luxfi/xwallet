@@ -1,4 +1,4 @@
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';

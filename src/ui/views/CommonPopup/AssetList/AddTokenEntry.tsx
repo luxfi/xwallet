@@ -4,7 +4,7 @@ import { ReactComponent as RcAddEntryCC } from './icons/add-entry-cc.svg';
 import { ReactComponent as RcIconAdd } from '@/ui/assets/dashboard/portfolio/cc-add.svg';
 import clsx from 'clsx';
 import { AddCustomTokenPopup } from './CustomAssetList/AddCustomTokenPopup';
-import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
+import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
 import { useTranslation } from 'react-i18next';
 import { SpecialTokenListPopup } from './components/TokenButton';
 import { useLuxSelector } from '@/ui/store';

@@ -1,8 +1,8 @@
 import { Popup, TokenWithChain } from '@/ui/component';
 import React, { forwardRef, useMemo } from 'react';
 import { useSwapHistory } from '../hooks';
-import { SwapItem, TokenItem } from '@rabby-wallet/rabby-api/dist/types';
-import { CHAINS_LIST } from '@debank/common';
+import { SwapItem, TokenItem } from '@lux-wallet/rabby-api/dist/types';
+import { CHAINS_LIST } from '@debank-lux/common';
 import { formatAmount, formatUsdValue, openInTab, sinceTime } from '@/ui/utils';
 import { getTokenSymbol } from '@/ui/utils/token';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { DappCard } from './DappCard';
 import { range } from 'lodash';
-import { BasicDappInfo } from '@rabby-wallet/rabby-api/dist/types';
+import { BasicDappInfo } from '@lux-wallet/rabby-api/dist/types';
 import { DappCardSkeleton } from './DappCardSkeleton';
 import { DappSearchEmpty } from './DappSearchEmpty';
 import { ConnectedSite } from '@/background/service/permission';

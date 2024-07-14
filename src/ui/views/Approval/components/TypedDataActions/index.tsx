@@ -1,4 +1,4 @@
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
@@ -51,7 +51,7 @@ import {
   RevokeTokenApproveRequireData,
   SendRequireData,
 } from '../Actions/utils';
-import { CHAINS, CHAINS_ENUM, Chain } from '@debank/common';
+import { CHAINS, CHAINS_ENUM, Chain } from '@debank-lux/common';
 import { OriginInfo } from '../OriginInfo';
 import { Card } from '../Card';
 import { MessageWrapper } from '../TextActions';

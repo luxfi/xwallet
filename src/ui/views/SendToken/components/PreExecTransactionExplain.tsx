@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExplainTxResponse } from '@rabby-wallet/rabby-api/dist/types';
+import { ExplainTxResponse } from '@lux-wallet/rabby-api/dist/types';
 import { Trans, useTranslation } from 'react-i18next';
 
 import { splitNumberByStep } from '@/ui/utils';

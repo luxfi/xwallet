@@ -1,5 +1,5 @@
 // import { RcIconChecked, RcIconNotChecked } from '@/ui/assets';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import { Checkbox } from 'ui/component';
 import clsx from 'clsx';
 import React from 'react';

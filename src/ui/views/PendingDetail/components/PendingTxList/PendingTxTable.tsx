@@ -3,7 +3,7 @@ import {
   NFTItem,
   PendingTxItem,
   TokenItem,
-} from '@rabby-wallet/rabby-api/dist/types';
+} from '@lux-wallet/rabby-api/dist/types';
 import { Table } from 'antd';
 import { ColumnsType } from 'antd/lib/table';
 import React from 'react';

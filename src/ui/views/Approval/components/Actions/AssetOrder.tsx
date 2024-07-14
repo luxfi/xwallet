@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import { ContractRequireData } from '../TypedDataActions/utils';
 import { ParsedActionData } from './utils';
 import { isSameAddress } from 'ui/utils';

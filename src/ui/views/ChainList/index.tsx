@@ -1,6 +1,6 @@
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { getChainList, getMainnetChainList } from '@/utils/chain';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { PageHeader } from 'ui/component';

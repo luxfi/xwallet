@@ -1,5 +1,5 @@
 /* eslint-disable */
-import OldLatticeKeyring from '@rabby-wallet/eth-lattice-keyring';
+import OldLatticeKeyring from '@lux-wallet/eth-lattice-keyring';
 import { SignHelper, LedgerHDPathType } from '../helper';
 import { EVENTS } from '@/constant';
 import { isSameAddress } from '@/background/utils';

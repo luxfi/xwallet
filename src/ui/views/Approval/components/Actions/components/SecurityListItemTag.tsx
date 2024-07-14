@@ -1,7 +1,7 @@
 import React from 'react';
 import SecurityLevelTagNoText from '../../SecurityEngine/SecurityLevelTagNoText';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import styled from 'styled-components';
 
 export interface Props {

@@ -1,5 +1,5 @@
 import { createPersistStore } from 'background/utils';
-import { DEXPriceComparison } from '@rabby-wallet/widgets';
+import { DEXPriceComparison } from '@lux-wallet/widgets';
 
 export interface WidgetItem {
   name: string;

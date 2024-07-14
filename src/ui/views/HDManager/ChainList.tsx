@@ -1,4 +1,4 @@
-import { CHAINS } from '@debank/common';
+import { CHAINS } from '@debank-lux/common';
 import React from 'react';
 import { Account } from './AccountList';
 import { findChain } from '@/utils/chain';

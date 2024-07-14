@@ -1,4 +1,4 @@
-import { CHAINS_ENUM } from '@debank/common';
+import { CHAINS_ENUM } from '@debank-lux/common';
 import { createPersistStore } from 'background/utils';
 import { findChainByEnum } from '@/utils/chain';
 import { http } from '../utils/http';

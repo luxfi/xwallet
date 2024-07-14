@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Account } from '@/background/service/preference';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import { useCommonPopupView, useWallet } from '@/ui/utils';
 import { ReactComponent as ArrowDownSVG } from '@/ui/assets/approval/arrow-down-blue.svg';
 

@@ -9,8 +9,8 @@ import {
 } from '@/ui/utils/token';
 import { findChain, findChainByID } from '@/utils/chain';
 import { getPendingGroupCategory } from '@/utils/tx';
-import { CHAINS } from '@debank/common';
-import { TokenItem, TxRequest } from '@rabby-wallet/rabby-api/dist/types';
+import { CHAINS } from '@debank-lux/common';
+import { TokenItem, TxRequest } from '@lux-wallet/rabby-api/dist/types';
 import { useRequest } from 'ahooks';
 import { flatten, keyBy } from 'lodash';
 import { useTranslation } from 'react-i18next';

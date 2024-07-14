@@ -1,9 +1,9 @@
-import { DEX_ENUM } from '@rabby-wallet/rabby-swap';
-import { CHAINS_ENUM } from '@debank/common';
+import { DEX_ENUM } from '@lux-wallet/rabby-swap';
+import { CHAINS_ENUM } from '@debank-lux/common';
 import { createPersistStore } from 'background/utils';
 import { GasCache, ChainGas } from './preference';
 import { CEX, DEX } from '@/constant';
-import { OpenApiService } from '@rabby-wallet/rabby-api';
+import { OpenApiService } from '@lux-wallet/rabby-api';
 import { openapiService } from 'background/service';
 import { TokenItem } from './openapi';
 import * as Sentry from '@sentry/browser';

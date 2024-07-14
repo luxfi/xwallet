@@ -1,5 +1,5 @@
 import { findChainByEnum, findChainByID } from '@/utils/chain';
-import { TxRequest } from '@rabby-wallet/rabby-api/dist/types';
+import { TxRequest } from '@lux-wallet/rabby-api/dist/types';
 import {
   openapiService,
   swapService,

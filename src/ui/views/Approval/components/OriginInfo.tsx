@@ -2,13 +2,13 @@ import { INTERNAL_REQUEST_ORIGIN } from '@/constant';
 import { FallbackSiteLogo } from '@/ui/component';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { findChain } from '@/utils/chain';
-import { CHAINS, Chain } from '@debank/common';
+import { CHAINS, Chain } from '@debank-lux/common';
 import React, { useEffect, useMemo } from 'react';
 import SecurityLevelTagNoText from './SecurityEngine/SecurityLevelTagNoText';
 import { ConnectedSite } from '@/background/service/permission';
 import { useWallet } from '@/ui/utils';
 import styled from 'styled-components';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 
 interface Props {

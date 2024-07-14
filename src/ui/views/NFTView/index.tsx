@@ -5,7 +5,7 @@ import './style.less';
 import { CollectionCard } from './CollectionCard';
 import { Modal, Tabs } from 'antd';
 import { useLuxSelector } from '@/ui/store';
-import { NFTItem } from '@rabby-wallet/rabby-api/dist/types';
+import { NFTItem } from '@lux-wallet/rabby-api/dist/types';
 import { matomoRequestEvent } from '@/utils/matomo-request';
 import { getKRCategoryByType } from '@/utils/transaction';
 import NFTModal from '../Dashboard/components/NFT/NFTModal';

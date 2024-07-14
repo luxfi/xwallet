@@ -1,5 +1,5 @@
 import { useLuxDispatch } from '@/ui/store';
-import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
+import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
 import clsx from 'clsx';
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';

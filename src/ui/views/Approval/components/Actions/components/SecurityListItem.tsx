@@ -1,5 +1,5 @@
-import { Result } from '@rabby-wallet/rabby-security-engine';
-import { Level } from '@rabby-wallet/rabby-security-engine/dist/rules';
+import { Result } from '@lux-wallet/rabby-security-engine';
+import { Level } from '@lux-wallet/rabby-security-engine/dist/rules';
 import React from 'react';
 import { SecurityListItemTag } from './SecurityListItemTag';
 import { SubCol, SubRow } from './SubTable';

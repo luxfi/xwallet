@@ -11,7 +11,7 @@ const OneKeyBridge = isManifestV3
 
 const TrezorBridge = isManifestV3
   ? require('./eth-trezor-keyring/trezor-offscreen-bridge')
-  : require('@rabby-wallet/eth-trezor-keyring/dist/trezor-bridge');
+  : require('@lux-wallet/eth-trezor-keyring/dist/trezor-bridge');
 
 const BitBox02Bridge = isManifestV3
   ? require('./eth-bitbox02-keyring/bitbox02-offscreen-bridge')

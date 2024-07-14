@@ -4,7 +4,7 @@ import {
   NftCollection,
   PortfolioItemNft,
   PortfolioItemToken,
-} from '@rabby-wallet/rabby-api/dist/types';
+} from '@lux-wallet/rabby-api/dist/types';
 import groupBy from 'lodash/groupBy';
 import clsx from 'clsx';
 import { getTokenSymbol } from 'ui/utils/token';

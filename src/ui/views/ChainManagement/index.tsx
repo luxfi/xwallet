@@ -8,7 +8,7 @@ import { PageHeader, StrayPageWithButton, ChainCard } from 'ui/component';
 // import { Chain } from 'background/service/openapi';
 import DragAndDropList from './components/DragAndDropList';
 import './style.less';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import { findChain, getChainList, getMainnetChainList } from '@/utils/chain';
 
 export const ChainManagementList = () => {

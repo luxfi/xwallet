@@ -1,4 +1,4 @@
-import { PendingTxItem } from '@rabby-wallet/rabby-api/dist/types';
+import { PendingTxItem } from '@lux-wallet/rabby-api/dist/types';
 import React from 'react';
 import { NFTBalanceChangeItem } from './NFTBalanceChangeItem';
 import { TokenBalanceChangeItem } from './TokenBalanceChangeItem';

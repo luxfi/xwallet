@@ -26,7 +26,7 @@ const config = {
     background: paths.rootResolve('src/background/index.ts'),
     'content-script': paths.rootResolve('src/content-script/index.ts'),
     pageProvider: paths.rootResolve(
-      'node_modules/@rabby-wallet/page-provider/dist/index.js'
+      'node_modules/@lux-wallet/page-provider/dist/index.js'
     ),
     ui: paths.rootResolve('src/ui/index.tsx'),
     offscreen: paths.rootResolve('src/offscreen/scripts/offscreen.ts'),
@@ -279,7 +279,7 @@ const config = {
   resolve: {
     alias: {
       moment: require.resolve('dayjs'),
-      '@debank/common': require.resolve('@debank/common/dist/index-rabby'),
+      '@debank-lux/common': require.resolve('@debank-lux/common/dist/index-lux'),
     },
     plugins: [new TSConfigPathsPlugin()],
     fallback: {

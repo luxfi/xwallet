@@ -1,6 +1,6 @@
 import React, { useMemo, useEffect } from 'react';
 import styled from 'styled-components';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import { useTranslation } from 'react-i18next';
 import { Table, Col, Row } from './components/Table';
 import LogoWithText from './components/LogoWithText';

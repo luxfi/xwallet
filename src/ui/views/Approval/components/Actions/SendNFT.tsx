@@ -2,7 +2,7 @@ import React, { useEffect, useMemo } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import { ParsedActionData, SendNFTRequireData } from './utils';
 import { useLuxDispatch } from '@/ui/store';
 import { Table, Col, Row } from './components/Table';

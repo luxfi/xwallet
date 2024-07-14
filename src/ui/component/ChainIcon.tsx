@@ -1,5 +1,5 @@
 import { Tooltip, TooltipProps } from 'antd';
-import { CHAINS_ENUM, CHAINS } from '@debank/common';
+import { CHAINS_ENUM, CHAINS } from '@debank-lux/common';
 import clsx from 'clsx';
 import React, { useEffect, useState, useRef } from 'react';
 import styled from 'styled-components';

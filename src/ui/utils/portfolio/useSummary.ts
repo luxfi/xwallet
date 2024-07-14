@@ -1,6 +1,6 @@
 import { useAsync } from 'react-use';
 import { useWallet } from '../WalletContext';
-import { Summary } from '@rabby-wallet/rabby-api/dist/types';
+import { Summary } from '@lux-wallet/rabby-api/dist/types';
 import React from 'react';
 import {
   MINI_ASSET_ID,

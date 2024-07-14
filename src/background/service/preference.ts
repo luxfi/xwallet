@@ -21,7 +21,7 @@ import { syncStateToUI } from '../utils/broadcastToUI';
 import { BROADCAST_TO_UI_EVENTS } from '@/utils/broadcastToUI';
 import dayjs from 'dayjs';
 import type { IExtractFromPromise } from '@/ui/utils/type';
-import { OpenApiService } from '@rabby-wallet/rabby-api';
+import { OpenApiService } from '@lux-wallet/rabby-api';
 
 const version = process.env.release || '0';
 

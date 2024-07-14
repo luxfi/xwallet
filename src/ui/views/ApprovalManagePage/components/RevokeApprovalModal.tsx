@@ -29,7 +29,7 @@ import {
   toRevokeItem,
 } from '../utils';
 import { findChainByServerID } from '@/utils/chain';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 
 import { ReactComponent as RcIconClose } from 'ui/assets/swap/modal-close.svg';
 import { ReactComponent as RcIconExternal } from '../icons/icon-share-cc.svg';

@@ -2,7 +2,7 @@ import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
 import { useLuxSelector } from '@/ui/store';
 import { splitNumberByStep, useWallet } from '@/ui/utils';
 import { findChain, findChainByEnum } from '@/utils/chain';
-import { CHAINS, CHAINS_ENUM } from '@debank/common';
+import { CHAINS, CHAINS_ENUM } from '@debank-lux/common';
 import { Skeleton } from 'antd';
 import clsx from 'clsx';
 import React, { useMemo } from 'react';

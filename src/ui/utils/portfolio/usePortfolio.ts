@@ -19,7 +19,7 @@ import {
 } from './utils';
 import { DisplayedProject } from './project';
 import { isSameAddress } from '..';
-import { ComplexProtocol } from '@rabby-wallet/rabby-api/dist/types';
+import { ComplexProtocol } from '@lux-wallet/rabby-api/dist/types';
 
 const chunkSize = 5;
 

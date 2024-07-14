@@ -16,7 +16,7 @@ import {
 import {
   PortfolioItem,
   PortfolioItemToken,
-} from '@rabby-wallet/rabby-api/dist/types';
+} from '@lux-wallet/rabby-api/dist/types';
 
 export class DisplayedProject implements AbstractProject {
   [immerable] = true;

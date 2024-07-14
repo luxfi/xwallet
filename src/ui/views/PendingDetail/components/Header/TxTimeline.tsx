@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import iconSpin from '@/ui/assets/pending/icon-spin-1.svg';
-import { TxRequest } from '@rabby-wallet/rabby-api/dist/types';
+import { TxRequest } from '@lux-wallet/rabby-api/dist/types';
 import { Timeline } from 'antd';
 import dayjs from 'dayjs';
 import { useTranslation } from 'react-i18next';

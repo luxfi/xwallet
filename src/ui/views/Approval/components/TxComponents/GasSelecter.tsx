@@ -22,13 +22,13 @@ import { TooltipWithMagnetArrow } from 'ui/component/Tooltip/TooltipWithMagnetAr
 import { formatTokenAmount } from 'ui/utils/number';
 import { calcMaxPriorityFee } from '@/utils/transaction';
 import styled, { css } from 'styled-components';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import SecurityLevelTagNoText from '../SecurityEngine/SecurityLevelTagNoText';
 import { ReactComponent as IconArrowRight } from 'ui/assets/approval/edit-arrow-right.svg';
 import { ReactComponent as RcIconAlert } from 'ui/assets/sign/tx/alert-currentcolor.svg';
 import IconQuestionMark from 'ui/assets/sign/tx/question-mark.svg';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import { getGasLevelI18nKey } from '@/ui/utils/trans';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
 import { findChain } from '@/utils/chain';

@@ -1,5 +1,5 @@
-import { CHAINS, CHAINS_ENUM, Chain } from '@debank/common';
-import { Level } from '@rabby-wallet/rabby-security-engine/dist/rules';
+import { CHAINS, CHAINS_ENUM, Chain } from '@debank-lux/common';
+import { Level } from '@lux-wallet/rabby-security-engine/dist/rules';
 import IconAmber, {
   ReactComponent as RcIconAmber,
 } from 'ui/assets/walletlogo/amber.svg';
@@ -186,7 +186,7 @@ import {
   getChainList,
   getMainnetChainList,
 } from '@/utils/chain';
-import { DEX_ENUM, DEX_SUPPORT_CHAINS } from '@rabby-wallet/rabby-swap';
+import { DEX_ENUM, DEX_SUPPORT_CHAINS } from '@lux-wallet/rabby-swap';
 import browser from 'webextension-polyfill';
 
 import LogoParaswap from 'ui/assets/swap/paraswap.png';

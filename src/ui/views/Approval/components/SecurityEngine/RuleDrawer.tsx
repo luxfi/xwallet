@@ -5,7 +5,7 @@ import { Popup } from 'ui/component';
 import {
   RuleConfig,
   Level,
-} from '@rabby-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/rabby-security-engine/dist/rules';
 import styled from 'styled-components';
 import { SecurityEngineLevel } from 'consts';
 import clsx from 'clsx';

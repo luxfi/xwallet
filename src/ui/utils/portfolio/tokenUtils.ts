@@ -2,7 +2,7 @@ import {
   PortfolioItem,
   PortfolioItemToken,
   TokenItem,
-} from '@rabby-wallet/rabby-api/dist/types';
+} from '@lux-wallet/rabby-api/dist/types';
 import { CHAINS } from 'consts';
 import { DisplayedProject } from './project';
 import { WalletControllerType } from '../WalletContext';

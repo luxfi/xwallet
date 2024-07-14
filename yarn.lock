@@ -1598,19 +1598,19 @@
   resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.4.0.tgz#c3c5ae543c897caa9c2a68630bed355be5f9990f"
   integrity sha512-JZButFdZ1+/xAfpguQHoabIXkcqRRKpMrWKBkpEZZyxfY9C1DpADFB8PEqGSTeFr135SaTRfKqGKx5xSCLI7ZQ==
 
-"@debank/common@0.3.60":
+"@debank-lux/common@0.3.60":
   version "0.3.60"
-  resolved "https://registry.yarnpkg.com/@debank/common/-/common-0.3.60.tgz#17ca72e4cde1fb6487ca1ed0691d89cd6b6692f9"
+  resolved "https://registry.yarnpkg.com/@debank-lux/common/-/common-0.3.60.tgz#17ca72e4cde1fb6487ca1ed0691d89cd6b6692f9"
   integrity sha512-SaFTXvnn2aYQTPB3B8YD/AhHYwdMRiqu7jCkYV6c/Sd3MmxzJR3v+Kd4jlQniKfEdB21+1vMb0NlzHw/gyemlw==
 
-"@debank/common@^0.3.0":
+"@debank-lux/common@^0.3.0":
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@debank/common/-/common-0.3.0.tgz#9c67288816d62e3548e0c2193ec4cd73758f5b26"
+  resolved "https://registry.yarnpkg.com/@debank-lux/common/-/common-0.3.0.tgz#9c67288816d62e3548e0c2193ec4cd73758f5b26"
   integrity sha512-PWdFuKuqDtGdYALFToDQQCyas3Tgz1tXXlir6UVTVHz2MPi4uK6ZK8UUNrWdU6lncHNvcRsNf3Xamk0Ga9jxeg==
 
-"@debank/festats@1.0.1":
+"@debank-lux/festats@1.0.1":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@debank/festats/-/festats-1.0.1.tgz#8f76b0919a6c8a7d938a42946272abaff2b971be"
+  resolved "https://registry.yarnpkg.com/@debank-lux/festats/-/festats-1.0.1.tgz#8f76b0919a6c8a7d938a42946272abaff2b971be"
   integrity sha512-mr2N1oqOTYQJ4ezIGn4EWkSuioh5fiAkX82oZnzaLsG1Y71P10HvBb136Cag46m9CRUCsUNG0/wxmvPhHHGUaQ==
 
 "@discoveryjs/json-ext@^0.5.0":
@@ -4537,9 +4537,9 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@rabby-wallet/eth-coinbase-keyring@0.0.0-beta.8":
+"@lux-wallet/eth-coinbase-keyring@0.0.0-beta.8":
   version "0.0.0-beta.8"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/eth-coinbase-keyring/-/eth-coinbase-keyring-0.0.0-beta.8.tgz#389e813d14e7aee9283410b07b6be189c5f48e79"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/eth-coinbase-keyring/-/eth-coinbase-keyring-0.0.0-beta.8.tgz#389e813d14e7aee9283410b07b6be189c5f48e79"
   integrity sha512-AXgCS2GcKiR8k2dNQxiPJETJXxsG23dpIrnKejkeD6k7yCmHWn7OGp52ZmEVLABqFnljfgbb4477ptmpqcP9oA==
   dependencies:
     "@coinbase/wallet-sdk" beta
@@ -4549,33 +4549,33 @@
     patch-package "^8.0.0"
     uuid "^9.0.1"
 
-"@rabby-wallet/eth-gnosis-keyring@0.0.1":
+"@lux-wallet/eth-gnosis-keyring@0.0.1":
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/eth-gnosis-keyring/-/eth-gnosis-keyring-0.0.1.tgz#68055d67c2989c6ba0005629ed72e3a95a517bab"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/eth-gnosis-keyring/-/eth-gnosis-keyring-0.0.1.tgz#68055d67c2989c6ba0005629ed72e3a95a517bab"
   integrity sha512-MnCGwI+Obs21+JgHMMh4/X/e0abYZ2ouy3OzYpNTTBYxbQi/DbfYD25is12Cv2cygzQdB5Zi90/FYMsAADTveQ==
   dependencies:
     "@gnosis.pm/safe-core-sdk-types" "^0.1.1"
-    "@rabby-wallet/gnosis-sdk" "^1.0.2"
+    "@lux-wallet/gnosis-sdk" "^1.0.2"
     ethereumjs-util "^7.1.3"
     events "^3.3.0"
     web3-utils "^1.6.1"
 
-"@rabby-wallet/eth-hd-keyring@4.3.2":
+"@lux-wallet/eth-hd-keyring@4.3.2":
   version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/eth-hd-keyring/-/eth-hd-keyring-4.3.2.tgz#98160000cd956bf2b6c781924fdcd687cd87df25"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/eth-hd-keyring/-/eth-hd-keyring-4.3.2.tgz#98160000cd956bf2b6c781924fdcd687cd87df25"
   integrity sha512-22SPkkdthbZs8akFhAbCeVeH3QEuEAD7EIy1s7R+YkA4WrwRT6w+Ou5oHYehiD8Ysquuv9GtDlZIq8n9jPH3HA==
   dependencies:
     "@ethereumjs/util" "^9.0.0"
     "@metamask/eth-sig-util" "^4.0.0"
-    "@rabby-wallet/eth-simple-keyring" "^5.0.1"
+    "@lux-wallet/eth-simple-keyring" "^5.0.1"
     "@scure/bip39" "^1.2.1"
     eth-sig-util "^3.0.1"
     ethereum-cryptography "^2.1.2"
     slip39 "^0.1.9"
 
-"@rabby-wallet/eth-lattice-keyring@1.1.1":
+"@lux-wallet/eth-lattice-keyring@1.1.1":
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/eth-lattice-keyring/-/eth-lattice-keyring-1.1.1.tgz#92a81729380e9c084cb889d684fdafef603be196"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/eth-lattice-keyring/-/eth-lattice-keyring-1.1.1.tgz#92a81729380e9c084cb889d684fdafef603be196"
   integrity sha512-x5MN59nkEkt2krr1HlLIj4BBtScR1lm9YL0+smEta0NEI0+fv890Rik0DxUvHVgMB7psBl5coOWfONhuAHw4tw==
   dependencies:
     "@ethereumjs/common" "2.4.0"
@@ -4586,9 +4586,9 @@
     rlp "^3.0.0"
     secp256k1 "4.0.2"
 
-"@rabby-wallet/eth-simple-keyring@5.0.1", "@rabby-wallet/eth-simple-keyring@^5.0.1":
+"@lux-wallet/eth-simple-keyring@5.0.1", "@lux-wallet/eth-simple-keyring@^5.0.1":
   version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/eth-simple-keyring/-/eth-simple-keyring-5.0.1.tgz#aecdc8f82703741570d6759f8599909b5ccb6850"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/eth-simple-keyring/-/eth-simple-keyring-5.0.1.tgz#aecdc8f82703741570d6759f8599909b5ccb6850"
   integrity sha512-5KYpR5gI5Hlo4E6uXKY3Iv+rleij0kelsESX07kgPEqInBHkvYiYmxFauY1Uz7gUotnejI9mgv5ijmsOC+q70w==
   dependencies:
     "@ethereumjs/util" "^9.0.0"
@@ -4602,9 +4602,9 @@
     ethereumjs-wallet "^1.0.2"
     randombytes "^2.1.0"
 
-"@rabby-wallet/eth-trezor-keyring@2.5.1":
+"@lux-wallet/eth-trezor-keyring@2.5.1":
   version "2.5.1"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/eth-trezor-keyring/-/eth-trezor-keyring-2.5.1.tgz#9043b498ace45a8e3cbcc0390d9d2491d493f8f5"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/eth-trezor-keyring/-/eth-trezor-keyring-2.5.1.tgz#9043b498ace45a8e3cbcc0390d9d2491d493f8f5"
   integrity sha512-KUR35FU8l8qN8zLz4NXdh+qE3Pge1h8RK2pznctzP550xD+8lW5bHcQAP+8jo/YfCu6O+Ct3oUWLKB32BwaRMQ==
   dependencies:
     "@ethereumjs/tx" "3"
@@ -4614,31 +4614,31 @@
     ethereumjs-util "^7.1.5"
     hdkey "0.8.0"
 
-"@rabby-wallet/eth-walletconnect-keyring@2.1.3":
+"@lux-wallet/eth-walletconnect-keyring@2.1.3":
   version "2.1.3"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/eth-walletconnect-keyring/-/eth-walletconnect-keyring-2.1.3.tgz#8ea63178e2fa4c9369ba2ea1df6940d016d32c2a"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/eth-walletconnect-keyring/-/eth-walletconnect-keyring-2.1.3.tgz#8ea63178e2fa4c9369ba2ea1df6940d016d32c2a"
   integrity sha512-Yvx1uCC/E8Zv53vx0ZjHpXL+udZLgLfnER37O04i6pN2aRFmh9SFPh9nnNn7+Nh/i/Q2gz4UziCu6AjIdq5I1w==
   dependencies:
     "@ethereumjs/tx" "^3.5.2"
-    "@rabby-wallet/wc-client" "^1.8.10"
+    "@lux-wallet/wc-client" "^1.8.10"
     "@walletconnect/sign-client" "^2.11.1"
     "@walletconnect/types" "^2.10.0"
     ethereumjs-util "^7.1.3"
     events "^3.3.0"
     web3-utils "^1.6.0"
 
-"@rabby-wallet/eth-watch-keyring@1.0.0":
+"@lux-wallet/eth-watch-keyring@1.0.0":
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/eth-watch-keyring/-/eth-watch-keyring-1.0.0.tgz#6d35a942ea9821483faf80ad43a60f8f28628123"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/eth-watch-keyring/-/eth-watch-keyring-1.0.0.tgz#6d35a942ea9821483faf80ad43a60f8f28628123"
   integrity sha512-TodgY/KdiqmaU1yfjj94HDigItQnhoFrzNmpERv8/971zt2izfzji9E9BdPG4IyUgJaRoqWpEij0jhV7HYlNzg==
   dependencies:
     ethereumjs-util "^7.1.3"
     events "^3.3.0"
     web3-utils "^1.6.0"
 
-"@rabby-wallet/gnosis-sdk@1.3.6":
+"@lux-wallet/gnosis-sdk@1.3.6":
   version "1.3.6"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/gnosis-sdk/-/gnosis-sdk-1.3.6.tgz#d7aa6430ad2cfd5e838ed5b4d809cee23e3afd03"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/gnosis-sdk/-/gnosis-sdk-1.3.6.tgz#d7aa6430ad2cfd5e838ed5b4d809cee23e3afd03"
   integrity sha512-mhhx0/yfGLXs2014oo0epEYowyb2QLx964iB2UdqELnDZ0M/NlimqK60+X4sf4FecO3hGHidnFtxgQrMb/f/mg==
   dependencies:
     "@ethersproject/bignumber" "^5.5.0"
@@ -4657,9 +4657,9 @@
     typescript "^4.5.0"
     web3-core "^1.6.0"
 
-"@rabby-wallet/gnosis-sdk@^1.0.2":
+"@lux-wallet/gnosis-sdk@^1.0.2":
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/gnosis-sdk/-/gnosis-sdk-1.0.2.tgz#b2a02c86850f532b85dfff3524eae9030d212f4b"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/gnosis-sdk/-/gnosis-sdk-1.0.2.tgz#b2a02c86850f532b85dfff3524eae9030d212f4b"
   integrity sha512-n2r+uEPw7Bd5w55WZkUyKQUsquNsdDr/lD1Ua4qy3sYYVCuC/m7Fg7atul2kQ0ABkGm6FTpSpBkP88esCZUtIg==
   dependencies:
     "@ethersproject/bignumber" "^5.5.0"
@@ -4676,9 +4676,9 @@
     typescript "^4.4.4"
     web3-core "^1.6.0"
 
-"@rabby-wallet/page-provider@0.3.5":
+"@lux-wallet/page-provider@0.3.5":
   version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/page-provider/-/page-provider-0.3.5.tgz#c839a3e2dce18a0a928eed3124379b211fa1f7e1"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/page-provider/-/page-provider-0.3.5.tgz#c839a3e2dce18a0a928eed3124379b211fa1f7e1"
   integrity sha512-wpS56MLGZot+m4RXdArDuJ3I3hhDke9fAPAimOlPqDcjKqUSsy9NhuZhMhw6xzsTZSsuoCjwxuuw/nqv4fU9bw==
   dependencies:
     "@ledgerhq/devices" "^6.27.1"
@@ -4692,26 +4692,26 @@
     sinon-chrome "^3.0.1"
     webextension-polyfill "0.7.0"
 
-"@rabby-wallet/rabby-api@0.7.22":
+"@lux-wallet/rabby-api@0.7.22":
   version "0.7.22"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/rabby-api/-/rabby-api-0.7.22.tgz#efa02087a15faa3a0ad30ff7ae2a009f1ba08896"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/rabby-api/-/rabby-api-0.7.22.tgz#efa02087a15faa3a0ad30ff7ae2a009f1ba08896"
   integrity sha512-ueQJi1mjHoXpmjZbVG8M4WOysT9WbL8USzEP5pPX3aUbthih0Kr049+mjqDMldtMqeJsVYOg9uUPkNfUCxw9EQ==
   dependencies:
-    "@rabby-wallet/rabby-sign" "^0.3.3"
+    "@lux-wallet/rabby-sign" "^0.3.3"
     axios "^0.27.2"
     axios-rate-limit "^1.3.0"
     eth-rpc-errors "^4.0.3"
     lodash "^4.17.21"
     qss "^2.0.3"
 
-"@rabby-wallet/rabby-security-engine@2.0.3":
+"@lux-wallet/rabby-security-engine@2.0.3":
   version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/rabby-security-engine/-/rabby-security-engine-2.0.3.tgz#f39a2d94c73de21e6ee69e40cd2dee02740f611f"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/rabby-security-engine/-/rabby-security-engine-2.0.3.tgz#f39a2d94c73de21e6ee69e40cd2dee02740f611f"
   integrity sha512-2b6neRyY92hoiS9jBtpT+K2ozeEfU4jw1Vk16P1rxjh3oc/LSAftAzAADWx4lhsCVEQGS0QRuRurw3Kf3y6I8Q==
 
-"@rabby-wallet/rabby-sign@^0.3.3":
+"@lux-wallet/rabby-sign@^0.3.3":
   version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/rabby-sign/-/rabby-sign-0.3.3.tgz#cb3d8f9472363e07a0b429f47344dd352a118033"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/rabby-sign/-/rabby-sign-0.3.3.tgz#cb3d8f9472363e07a0b429f47344dd352a118033"
   integrity sha512-enFRKBJyNA9owudWYGq1FB0+SWM7ExgaPkYOwvL342oIUcZxfzJ8N8tVn2dfwGkK4cel36vrRX6VizKJmOGUAg==
   dependencies:
     fast-deep-equal "^3.1.3"
@@ -4719,9 +4719,9 @@
     sha256-uint8array "^0.10.3"
     url-parse "^1.5.1"
 
-"@rabby-wallet/rabby-swap@0.0.37":
+"@lux-wallet/rabby-swap@0.0.37":
   version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/rabby-swap/-/rabby-swap-0.0.37.tgz#2cfabc1298071c31c8f4581a1dc3722a4698beb0"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/rabby-swap/-/rabby-swap-0.0.37.tgz#2cfabc1298071c31c8f4581a1dc3722a4698beb0"
   integrity sha512-ZeAI42SecqVLPmUdXbwqg4h+Mt9bPDaiTTiFlzzrNW17e2vMOzb1scMIWXQLeFVLlO393+MOCGU2tmrgp7ltNA==
   dependencies:
     "@ethersproject/abi" "^5.7.0"
@@ -4729,76 +4729,76 @@
     bignumber.js "^9.1.1"
     web3-eth-abi "^1.8.1"
 
-"@rabby-wallet/wc-browser-utils@^1.8.10":
+"@lux-wallet/wc-browser-utils@^1.8.10":
   version "1.8.10"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/wc-browser-utils/-/wc-browser-utils-1.8.10.tgz#2af526a814211c1f38f98ba88a13a916774c7219"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/wc-browser-utils/-/wc-browser-utils-1.8.10.tgz#2af526a814211c1f38f98ba88a13a916774c7219"
   integrity sha512-/g+v1MYcRxCFQMtG0Rdnkis37ShQguBIZAQGILFK/km9m4FKtbNUMoJQ4ZNQsxjY0xFdQZf7WXaJqfLrR+aVyg==
   dependencies:
-    "@rabby-wallet/wc-types" "^1.8.10"
+    "@lux-wallet/wc-types" "^1.8.10"
     "@walletconnect/safe-json" "1.0.0"
     "@walletconnect/window-getters" "1.0.0"
     "@walletconnect/window-metadata" "1.0.0"
     detect-browser "5.2.0"
 
-"@rabby-wallet/wc-client@^1.8.10":
+"@lux-wallet/wc-client@^1.8.10":
   version "1.8.10"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/wc-client/-/wc-client-1.8.10.tgz#87f0b7e037b673c329ed8b12b8f356b6bbda26b6"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/wc-client/-/wc-client-1.8.10.tgz#87f0b7e037b673c329ed8b12b8f356b6bbda26b6"
   integrity sha512-SihfK2pImTGfsm21IB13Iz35sJKfqv6RAtknkBB3Ed3FTN2qWasYfmgjrtKrKc3pYWMe+Y7ux0jTRl3/a+JGww==
   dependencies:
-    "@rabby-wallet/wc-core" "^1.8.10"
-    "@rabby-wallet/wc-iso-crypto" "^1.8.10"
-    "@rabby-wallet/wc-types" "^1.8.10"
-    "@rabby-wallet/wc-utils" "^1.8.10"
+    "@lux-wallet/wc-core" "^1.8.10"
+    "@lux-wallet/wc-iso-crypto" "^1.8.10"
+    "@lux-wallet/wc-types" "^1.8.10"
+    "@lux-wallet/wc-utils" "^1.8.10"
 
-"@rabby-wallet/wc-core@^1.8.10":
+"@lux-wallet/wc-core@^1.8.10":
   version "1.8.10"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/wc-core/-/wc-core-1.8.10.tgz#ab1820884a96b757175a45b28dfca855d7010524"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/wc-core/-/wc-core-1.8.10.tgz#ab1820884a96b757175a45b28dfca855d7010524"
   integrity sha512-e6E9NJMe8JISQtMHRr23hjTRUZ5fRVHx7xj9xcGrOrPlhxEK7afJJh/6nScEC8QzHaCEyyyNi4tA9qxeKBR19g==
   dependencies:
-    "@rabby-wallet/wc-socket-transport" "^1.8.10"
-    "@rabby-wallet/wc-types" "^1.8.10"
-    "@rabby-wallet/wc-utils" "^1.8.10"
+    "@lux-wallet/wc-socket-transport" "^1.8.10"
+    "@lux-wallet/wc-types" "^1.8.10"
+    "@lux-wallet/wc-utils" "^1.8.10"
 
-"@rabby-wallet/wc-iso-crypto@^1.8.10":
+"@lux-wallet/wc-iso-crypto@^1.8.10":
   version "1.8.10"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/wc-iso-crypto/-/wc-iso-crypto-1.8.10.tgz#42879873e275a627d9aeab498c920a1f0b72dd58"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/wc-iso-crypto/-/wc-iso-crypto-1.8.10.tgz#42879873e275a627d9aeab498c920a1f0b72dd58"
   integrity sha512-1EucKl7IOG4OrQJ0m/VGYsh+X6UeBs71hpkrLc38ZZddzDIWs04eHWTUExCeW+oCAo0UQaN8ZBv8zmMzltgOOQ==
   dependencies:
-    "@rabby-wallet/wc-types" "^1.8.10"
-    "@rabby-wallet/wc-utils" "^1.8.10"
+    "@lux-wallet/wc-types" "^1.8.10"
+    "@lux-wallet/wc-utils" "^1.8.10"
     "@walletconnect/crypto" "^1.0.2"
     "@walletconnect/encoding" "^1.0.1"
 
-"@rabby-wallet/wc-socket-transport@^1.8.10":
+"@lux-wallet/wc-socket-transport@^1.8.10":
   version "1.8.10"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/wc-socket-transport/-/wc-socket-transport-1.8.10.tgz#0bded08a473c7b8292c5a16b02e0864afbb9e4c7"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/wc-socket-transport/-/wc-socket-transport-1.8.10.tgz#0bded08a473c7b8292c5a16b02e0864afbb9e4c7"
   integrity sha512-tbukHQH3xZOWuGV1ovwMK2HXqnvmIhflArP+w2nfouthg1eu+HvjSXbWNVhTJjh81e6Q+Qp4/1q98H1I7T65ww==
   dependencies:
-    "@rabby-wallet/wc-types" "^1.8.10"
-    "@rabby-wallet/wc-utils" "^1.8.10"
+    "@lux-wallet/wc-types" "^1.8.10"
+    "@lux-wallet/wc-utils" "^1.8.10"
     ws "7.5.3"
 
-"@rabby-wallet/wc-types@^1.8.10":
+"@lux-wallet/wc-types@^1.8.10":
   version "1.8.10"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/wc-types/-/wc-types-1.8.10.tgz#57e52bffe83fbe557f8a22e3f8b7799c84287544"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/wc-types/-/wc-types-1.8.10.tgz#57e52bffe83fbe557f8a22e3f8b7799c84287544"
   integrity sha512-wfCzZscdG92iN7n2eNloOTeJQcmo6QHazGwWAGSv/+Txc1lY471nBeYEFcnS4vFInAC7dvfK2dpjGBxm4M0hcw==
 
-"@rabby-wallet/wc-utils@^1.8.10":
+"@lux-wallet/wc-utils@^1.8.10":
   version "1.8.10"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/wc-utils/-/wc-utils-1.8.10.tgz#8166f14307022e2757a6dd17fff04bc79028a521"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/wc-utils/-/wc-utils-1.8.10.tgz#8166f14307022e2757a6dd17fff04bc79028a521"
   integrity sha512-/efy0D+JbNYQKb5Y53D481WS/OvT1ZA+qkabq9DqfCCrTKJt+PMCeRDaE/myn8rFJZPvEY7J7iyCV/ofPmwAlw==
   dependencies:
-    "@rabby-wallet/wc-browser-utils" "^1.8.10"
-    "@rabby-wallet/wc-types" "^1.8.10"
+    "@lux-wallet/wc-browser-utils" "^1.8.10"
+    "@lux-wallet/wc-types" "^1.8.10"
     "@walletconnect/encoding" "^1.0.1"
     "@walletconnect/jsonrpc-utils" "^1.0.3"
     bn.js "4.11.8"
     js-sha3 "0.8.0"
     query-string "6.13.5"
 
-"@rabby-wallet/widgets@1.0.9":
+"@lux-wallet/widgets@1.0.9":
   version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@rabby-wallet/widgets/-/widgets-1.0.9.tgz#91d55bb4488f847636174783e3da73433d5fd298"
+  resolved "https://registry.yarnpkg.com/@lux-wallet/widgets/-/widgets-1.0.9.tgz#91d55bb4488f847636174783e3da73433d5fd298"
   integrity sha512-Cv7954YiHWXIBVzE5Q1JGIlJQjRdmFEV4LJEXznt5NqeOKh1A7uUcQO4vCDc6foCjWwAUfsjo3fPlOJ/9WwMIg==
   dependencies:
     bignumber.js "^9.0.2"

@@ -1,5 +1,5 @@
 import { Copy, NameAndAddress } from '@/ui/component';
-import { PendingTxItem } from '@rabby-wallet/rabby-api/dist/types';
+import { PendingTxItem } from '@lux-wallet/rabby-api/dist/types';
 import clsx from 'clsx';
 import React from 'react';
 import IconUser from 'ui/assets/address-management.svg';

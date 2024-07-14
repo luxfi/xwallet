@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import BigNumber from 'bignumber.js';
 import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import { ParsedActionData, SendRequireData } from './utils';
 import { formatTokenAmount, formatUsdValue } from 'ui/utils/number';
 import { ellipsisTokenSymbol, getTokenSymbol } from 'ui/utils/token';

@@ -1,5 +1,5 @@
 import { BigNumber } from 'bignumber.js';
-import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
+import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
 import { Contract, providers } from 'ethers';
 import { hexToString } from 'web3-utils';
 import { AbstractPortfolioToken } from './portfolio/types';

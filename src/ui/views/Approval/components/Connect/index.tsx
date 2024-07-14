@@ -1,12 +1,12 @@
 import i18n from '@/i18n';
 import { ReactComponent as ArrowDownSVG } from '@/ui/assets/approval/arrow-down-blue.svg';
 import { findChain } from '@/utils/chain';
-import { Result } from '@rabby-wallet/rabby-security-engine';
+import { Result } from '@lux-wallet/rabby-security-engine';
 import {
   ContextActionData,
   Level,
   RuleConfig,
-} from '@rabby-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/rabby-security-engine/dist/rules';
 import { Button, message } from 'antd';
 import { Chain } from 'background/service/openapi';
 import clsx from 'clsx';

@@ -12,7 +12,7 @@ import PQueue from 'p-queue';
 
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { useWallet } from '@/ui/utils';
-import { CHAINS_ENUM } from '@debank/common';
+import { CHAINS_ENUM } from '@debank-lux/common';
 import {
   AssetApprovalItem,
   ContractApprovalItem,

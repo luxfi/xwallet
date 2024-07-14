@@ -3,8 +3,8 @@ import { RootModel } from '.';
 import { ChainGas } from 'background/service/preference';
 import { CHAINS_ENUM } from 'consts';
 import { SwapServiceStore } from '@/background/service/swap';
-import { DEX_ENUM } from '@rabby-wallet/rabby-swap';
-import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
+import { DEX_ENUM } from '@lux-wallet/rabby-swap';
+import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
 
 export const swap = createModel<RootModel>()({
   name: 'swap',

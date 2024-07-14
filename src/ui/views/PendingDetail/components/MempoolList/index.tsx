@@ -4,7 +4,7 @@ import iconSpin from '@/ui/assets/pending/icon-spin-1.svg';
 import {
   MempoolCheckDetail,
   TxRequest,
-} from '@rabby-wallet/rabby-api/dist/types';
+} from '@lux-wallet/rabby-api/dist/types';
 import { Table } from 'antd';
 import { ColumnsType } from 'antd/lib/table';
 import React, { useMemo } from 'react';

@@ -1,3 +1,3 @@
-import StatsReport, { SITE } from '@debank/festats';
+import StatsReport, { SITE } from '@debank-lux/festats';
 
-export default new StatsReport(SITE.rabby);
+export default new StatsReport(SITE.lux);

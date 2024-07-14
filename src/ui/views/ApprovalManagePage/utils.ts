@@ -17,8 +17,8 @@ import {
   NFTApproval,
   NFTApprovalContract,
   Spender,
-} from '@rabby-wallet/rabby-api/dist/types';
-import { Chain } from '@debank/common';
+} from '@lux-wallet/rabby-api/dist/types';
+import { Chain } from '@debank-lux/common';
 import { getUiType, openInTab } from '@/ui/utils';
 import { getAddressScanLink } from '@/utils';
 

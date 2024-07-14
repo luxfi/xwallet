@@ -1,5 +1,5 @@
 import { t } from 'i18next';
-import { CHAINS_LIST } from '@debank/common';
+import { CHAINS_LIST } from '@debank-lux/common';
 import { getChainList } from './chain';
 
 export const GET_WALLETCONNECT_CONFIG = () => {

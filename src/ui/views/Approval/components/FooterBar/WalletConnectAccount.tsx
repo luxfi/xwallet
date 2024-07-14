@@ -6,7 +6,7 @@ import { useSessionChainId } from '@/ui/component/WalletConnect/useSessionChainI
 import { useSessionStatus } from '@/ui/component/WalletConnect/useSessionStatus';
 import { useWalletConnectIcon } from '@/ui/component/WalletConnect/useWalletConnectIcon';
 import { useCommonPopupView, useWallet } from '@/ui/utils';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import { Button } from 'antd';
 import clsx from 'clsx';
 import React from 'react';

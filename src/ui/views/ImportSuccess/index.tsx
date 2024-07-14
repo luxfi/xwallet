@@ -20,7 +20,7 @@ import SuccessLogo from 'ui/assets/success-logo.svg';
 import './index.less';
 import { useMedia } from 'react-use';
 import { connectStore, useLuxDispatch } from '@/ui/store';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 
 const ImportSuccess = ({ isPopup = false }: { isPopup?: boolean }) => {
   const history = useHistory();

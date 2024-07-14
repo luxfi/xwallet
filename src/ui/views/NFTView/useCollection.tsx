@@ -1,6 +1,6 @@
 import { useWallet } from '@/ui/utils';
 import React from 'react';
-import { CollectionList } from '@rabby-wallet/rabby-api/dist/types';
+import { CollectionList } from '@lux-wallet/rabby-api/dist/types';
 import { useLuxSelector } from '@/ui/store';
 import { Token } from '@/background/service/preference';
 

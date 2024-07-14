@@ -53,10 +53,10 @@ import {
   ContextActionData,
   ContractAddress,
   UserData,
-} from '@rabby-wallet/rabby-security-engine/dist/rules';
+} from '@lux-wallet/rabby-security-engine/dist/rules';
 import DisplayKeyring from '../service/keyring/display';
 import provider from './provider';
-import { WalletConnectKeyring } from '@rabby-wallet/eth-walletconnect-keyring';
+import { WalletConnectKeyring } from '@lux-wallet/eth-walletconnect-keyring';
 import eventBus from '@/eventBus';
 import {
   setPageStateCacheWhenPopupClose,
@@ -71,7 +71,7 @@ import KeystoneKeyring, {
   AcquireMemeStoreData,
   MemStoreDataReady,
 } from '../service/keyring/eth-keystone-keyring';
-import WatchKeyring from '@rabby-wallet/eth-watch-keyring';
+import WatchKeyring from '@lux-wallet/eth-watch-keyring';
 import stats from '@/stats';
 import { generateAliasName } from '@/utils/account';
 import BigNumber from 'bignumber.js';
@@ -79,15 +79,15 @@ import * as Sentry from '@sentry/browser';
 import { addHexPrefix, unpadHexString } from 'ethereumjs-util';
 import PQueue from 'p-queue';
 import { ProviderRequest } from './provider/type';
-import { QuoteResult } from '@rabby-wallet/rabby-swap/dist/quote';
+import { QuoteResult } from '@lux-wallet/rabby-swap/dist/quote';
 import transactionWatcher from '../service/transactionWatcher';
-import Safe from '@rabby-wallet/gnosis-sdk';
-import { Chain } from '@debank/common';
+import Safe from '@lux-wallet/gnosis-sdk';
+import { Chain } from '@debank-lux/common';
 import { isAddress } from 'web3-utils';
 import { findChain, findChainByEnum, getChainList } from '@/utils/chain';
 import { cached } from '../utils/cache';
 import { createSafeService } from '../utils/safe';
-import { OpenApiService } from '@rabby-wallet/rabby-api';
+import { OpenApiService } from '@lux-wallet/rabby-api';
 import { autoLockService } from '../service/autoLock';
 import { t } from 'i18next';
 import { getWeb3Provider } from './utils';
@@ -95,8 +95,8 @@ import { CoboSafeAccount } from '@/utils/cobo-agrus-sdk/cobo-agrus-sdk';
 import CoboArgusKeyring from '../service/keyring/eth-cobo-argus-keyring';
 import { GET_WALLETCONNECT_CONFIG, allChainIds } from '@/utils/walletconnect';
 import { estimateL1Fee } from '@/utils/l2';
-import HdKeyring from '@rabby-wallet/eth-hd-keyring';
-import CoinbaseKeyring from '@rabby-wallet/eth-coinbase-keyring/dist/coinbase-keyring';
+import HdKeyring from '@lux-wallet/eth-hd-keyring';
+import CoinbaseKeyring from '@lux-wallet/eth-coinbase-keyring/dist/coinbase-keyring';
 import { customTestnetService } from '../service/customTestnet';
 import { getKeyringBridge, hasBridge } from '../service/keyring/bridge';
 import { syncChainService } from '../service/syncChain';

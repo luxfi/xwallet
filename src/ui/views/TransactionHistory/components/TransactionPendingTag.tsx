@@ -1,6 +1,6 @@
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { checkIsPendingTxGroup, findMaxGasTx } from '@/utils/tx';
-import { TxRequest } from '@rabby-wallet/rabby-api/dist/types';
+import { TxRequest } from '@lux-wallet/rabby-api/dist/types';
 import { Popover } from 'antd';
 import {
   TransactionGroup,

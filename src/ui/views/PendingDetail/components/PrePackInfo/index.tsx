@@ -12,7 +12,7 @@ import {
   LatestExplainTxResponse,
   TokenItem,
   TransferingNFTItem,
-} from '@rabby-wallet/rabby-api/dist/types';
+} from '@lux-wallet/rabby-api/dist/types';
 import { Table } from 'antd';
 import { ColumnsType } from 'antd/lib/table';
 import clsx from 'clsx';

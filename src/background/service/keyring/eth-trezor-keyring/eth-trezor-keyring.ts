@@ -1,6 +1,6 @@
 import { SignHelper } from '../helper';
 import { EVENTS } from '@/constant';
-import OldTrezorKeyring from '@rabby-wallet/eth-trezor-keyring';
+import OldTrezorKeyring from '@lux-wallet/eth-trezor-keyring';
 
 const keyringType = 'Trezor Hardware';
 

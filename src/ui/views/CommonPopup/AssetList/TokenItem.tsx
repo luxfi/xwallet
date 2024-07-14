@@ -1,6 +1,6 @@
 import React from 'react';
 import { TCell, TRow } from './components/Table';
-import { CHAINS_LIST } from '@debank/common';
+import { CHAINS_LIST } from '@debank-lux/common';
 import { AbstractPortfolioToken } from '@/ui/utils/portfolio/types';
 import clsx from 'clsx';
 import IconUnknown from '@/ui/assets/token-default.svg';

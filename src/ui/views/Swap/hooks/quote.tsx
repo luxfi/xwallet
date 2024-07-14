@@ -1,19 +1,19 @@
 import { CEX, DEX, ETH_USDT_CONTRACT, SWAP_FEE_ADDRESS } from '@/constant';
 import { formatUsdValue, isSameAddress, useWallet } from '@/ui/utils';
-import { CHAINS, CHAINS_ENUM } from '@debank/common';
+import { CHAINS, CHAINS_ENUM } from '@debank-lux/common';
 import {
   CEXQuote,
   ExplainTxResponse,
   TokenItem,
   Tx,
-} from '@rabby-wallet/rabby-api/dist/types';
+} from '@lux-wallet/rabby-api/dist/types';
 import {
   DEX_ENUM,
   DEX_ROUTER_WHITELIST,
   DEX_SPENDER_WHITELIST,
   WrapTokenAddressMap,
-} from '@rabby-wallet/rabby-swap';
-import { QuoteResult, getQuote } from '@rabby-wallet/rabby-swap/dist/quote';
+} from '@lux-wallet/rabby-swap';
+import { QuoteResult, getQuote } from '@lux-wallet/rabby-swap/dist/quote';
 import BigNumber from 'bignumber.js';
 import React from 'react';
 import pRetry from 'p-retry';

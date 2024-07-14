@@ -22,7 +22,7 @@ import {
   MINIMUM_GAS_LIMIT,
 } from '@/constant';
 import { useEnterPassphraseModal } from '@/ui/hooks/useEnterPassphraseModal';
-import { GasLevel, Tx } from '@rabby-wallet/rabby-api/dist/types';
+import { GasLevel, Tx } from '@lux-wallet/rabby-api/dist/types';
 import { normalizeTxParams } from '../SignTx';
 import { isHexString, toChecksumAddress } from 'ethereumjs-util';
 import { WaitingSignComponent } from '../map';

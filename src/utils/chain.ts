@@ -5,12 +5,12 @@ import {
 } from '@/background/service/customTestnet';
 import defaultSuppordChain from '@/constant/default-support-chains.json';
 import eventBus from '@/eventBus';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import {
   ChainWithBalance,
   SupportedChain,
   TokenItem,
-} from '@rabby-wallet/rabby-api/dist/types';
+} from '@lux-wallet/rabby-api/dist/types';
 import { CHAINS, CHAINS_ENUM, EVENTS } from 'consts';
 import { toHex } from 'viem';
 import browser from 'webextension-polyfill';

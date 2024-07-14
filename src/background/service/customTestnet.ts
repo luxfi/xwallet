@@ -1,6 +1,6 @@
 import { customTestnetTokenToTokenItem } from '@/ui/utils/token';
 import { findChain, isSameTesnetToken, updateChainStore } from '@/utils/chain';
-import { CHAINS_ENUM } from '@debank/common';
+import { CHAINS_ENUM } from '@debank-lux/common';
 import { GasLevel, Tx } from 'background/service/openapi';
 import { createPersistStore } from 'background/utils';
 import { BigNumber } from 'bignumber.js';

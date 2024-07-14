@@ -1,4 +1,4 @@
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import { Form, Input } from 'antd';
 import clsx from 'clsx';
 import React from 'react';

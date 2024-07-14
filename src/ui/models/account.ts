@@ -1,4 +1,4 @@
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 
 import type {
   Account,

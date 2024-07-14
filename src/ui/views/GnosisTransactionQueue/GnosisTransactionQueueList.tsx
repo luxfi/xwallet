@@ -1,5 +1,5 @@
-import { BasicSafeInfo } from '@rabby-wallet/gnosis-sdk';
-import { SafeTransactionItem } from '@rabby-wallet/gnosis-sdk/dist/api';
+import { BasicSafeInfo } from '@lux-wallet/gnosis-sdk';
+import { SafeTransactionItem } from '@lux-wallet/gnosis-sdk/dist/api';
 import { Button, Skeleton, Tooltip, message } from 'antd';
 import {
   ApproveAction,

@@ -16,7 +16,7 @@ import IconInputData from '../icons/input-data.svg';
 import { useLuxSelector } from '@/ui/store';
 import { Skeleton, Tooltip } from 'antd';
 import { AddressType } from '@/ui/utils/address';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import {
   useCheckAddressType,
   useParseContractAddress,

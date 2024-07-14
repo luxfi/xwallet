@@ -1,9 +1,9 @@
 import { CEX } from '@/constant';
 import { formatAmount, formatUsdValue } from '@/ui/utils';
-import { CHAINS_ENUM } from '@debank/common';
-import { TokenItem, CEXQuote } from '@rabby-wallet/rabby-api/dist/types';
-import { DEX_ENUM } from '@rabby-wallet/rabby-swap';
-import { QuoteResult } from '@rabby-wallet/rabby-swap/dist/quote';
+import { CHAINS_ENUM } from '@debank-lux/common';
+import { TokenItem, CEXQuote } from '@lux-wallet/rabby-api/dist/types';
+import { DEX_ENUM } from '@lux-wallet/rabby-swap';
+import { QuoteResult } from '@lux-wallet/rabby-swap/dist/quote';
 import clsx from 'clsx';
 import React, { useMemo, useCallback, useState } from 'react';
 import { useDebounce } from 'react-use';

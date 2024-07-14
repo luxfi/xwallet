@@ -15,7 +15,7 @@ import {
   varyAndSortChainItems,
 } from '@/utils/chain';
 import type { AccountState } from './account';
-import { Chain } from '@debank/common';
+import { Chain } from '@debank-lux/common';
 import { TestnetChain } from '@/background/service/customTestnet';
 
 type IState = {

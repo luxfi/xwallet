@@ -1,8 +1,8 @@
 import { INITIAL_OPENAPI_URL, INITIAL_TESTNET_OPENAPI_URL } from '@/constant';
-import { OpenApiService } from '@rabby-wallet/rabby-api';
+import { OpenApiService } from '@lux-wallet/rabby-api';
 import { createPersistStore } from 'background/utils';
-export * from '@rabby-wallet/rabby-api/dist/types';
-import { WebSignApiPlugin } from '@rabby-wallet/rabby-api/dist/plugins/web-sign';
+export * from '@lux-wallet/rabby-api/dist/types';
+import { WebSignApiPlugin } from '@lux-wallet/rabby-api/dist/plugins/web-sign';
 import fetchAdapter from '@vespaiach/axios-fetch-adapter';
 
 const testnetStore = new (class TestnetStore {

@@ -1,8 +1,8 @@
 import { useRef, useEffect } from 'react';
 import produce from 'immer';
 import { Dayjs } from 'dayjs';
-import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
-import { CHAINS } from '@debank/common';
+import { TokenItem } from '@lux-wallet/rabby-api/dist/types';
+import { CHAINS } from '@debank-lux/common';
 import { useLuxDispatch, useLuxSelector } from 'ui/store';
 import {
   findChainByEnum,
@@ -16,7 +16,7 @@ import { log } from './usePortfolio';
 import {
   PortfolioItem,
   PortfolioItemToken,
-} from '@rabby-wallet/rabby-api/dist/types';
+} from '@lux-wallet/rabby-api/dist/types';
 import { DisplayedProject, DisplayedToken } from './project';
 import { AbstractPortfolioToken } from './types';
 import { getMissedTokenPrice } from './utils';

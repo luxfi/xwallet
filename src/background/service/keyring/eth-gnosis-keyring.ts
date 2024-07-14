@@ -1,7 +1,7 @@
 import { EventEmitter } from 'events';
 import { isAddress, toChecksumAddress } from 'web3-utils';
 import { addHexPrefix, bufferToHex } from 'ethereumjs-util';
-import Safe from '@rabby-wallet/gnosis-sdk';
+import Safe from '@lux-wallet/gnosis-sdk';
 import {
   SafeTransaction,
   SafeTransactionDataPartial,
