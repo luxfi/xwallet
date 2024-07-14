@@ -7,8 +7,8 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
 
 import { ReactComponent as RCIconInfo } from '@/ui/assets/badge/info.svg';
-import ImgLuxBadgeL from '@/ui/assets/badge/free-gas-badge-l.svg';
-import ImgLuxBadgeM from '@/ui/assets/badge/free-gas-badge-m.svg';
+import ImgLuxBadgeL from '@/ui/assets/badge/free-gas-badge-l.png';
+import ImgLuxBadgeM from '@/ui/assets/badge/free-gas-badge-m.png';
 
 import { ReactComponent as RcIconClose } from '@/ui/assets/badge/close.svg';
 

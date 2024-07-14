@@ -52,7 +52,7 @@ import { ReactComponent as RcIconSettingsAboutSupporetedChains } from 'ui/assets
 import { ReactComponent as RcIconSettingsAboutVersion } from 'ui/assets/dashboard/settings/version.svg';
 import { ReactComponent as RcIconSettingsGitForkCC } from 'ui/assets/dashboard/settings/git-fork-cc.svg';
 import { ReactComponent as RcIconSettingsSearchDapps } from 'ui/assets/dashboard/settings/search.svg';
-import IconSettingsLuxBadge from 'ui/assets/badge/free-gas-badge-s.svg';
+import IconSettingsLuxBadge from 'ui/assets/badge/free-gas-badge-s.png';
 import { ReactComponent as RcIconI18n } from 'ui/assets/dashboard/settings/i18n.svg';
 import { ReactComponent as RcIconFeedback } from 'ui/assets/dashboard/settings/feedback.svg';
 
