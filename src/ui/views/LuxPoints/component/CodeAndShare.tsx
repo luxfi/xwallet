@@ -8,7 +8,7 @@ import IconSuccess from 'ui/assets/success.svg';
 import { useLuxPoints } from '../hooks';
 import { ReactComponent as IconTwitter } from 'ui/assets/lux-points/twitter-x.svg';
 
-export const shareRabbyPointsTwitter = ({
+export const shareLuxPointsTwitter = ({
   snapshot,
   invitedCode,
 }: {
@@ -53,7 +53,7 @@ export const CodeAndShare = ({
   }, [invitedCode]);
 
   const share = React.useCallback(() => {
-    shareRabbyPointsTwitter({ snapshot, usedOtherInvitedCode, invitedCode });
+    shareLuxPointsTwitter({ snapshot, usedOtherInvitedCode, invitedCode });
   }, [snapshot, usedOtherInvitedCode, invitedCode]);
 
   if (loading) {

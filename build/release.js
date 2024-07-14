@@ -65,7 +65,7 @@ async function bundle() {
 async function packed([version, isDebug]) {
   const distPath = path.resolve(PROJECT_ROOT, 'dist');
   return zipdir(distPath, {
-    saveTo: `Rabby_v${version}${isDebug ? '_debug' : ''}.zip`,
+    saveTo: `Lux_v${version}${isDebug ? '_debug' : ''}.zip`,
   });
 }
 

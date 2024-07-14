@@ -16,8 +16,8 @@ import { toHex } from 'viem';
 import browser from 'webextension-polyfill';
 
 export const getMainnetListFromLocal = () => {
-  return browser.storage.local.get('rabbyMainnetChainList').then((res) => {
-    return res?.rabbyMainnetChainList || [];
+  return browser.storage.local.get('luxMainnetChainList').then((res) => {
+    return res?.luxMainnetChainList || [];
   });
 };
 

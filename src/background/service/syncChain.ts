@@ -29,7 +29,7 @@ class SyncChainService {
         mainnetList: list,
       });
       browser.storage.local.set({
-        rabbyMainnetChainList: list,
+        luxMainnetChainList: list,
       });
     } catch (e) {
       console.error('fetch chain list error: ', e);

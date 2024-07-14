@@ -87,7 +87,7 @@ jobs:
         uses: actions/upload-artifact@v3
         if: ${{ github.event_name == 'pull_request' }}
         with:
-          name: Rabby_${{github.sha}}
+          name: Lux_${{github.sha}}
           path: dist
           retention-days: 7
 
@@ -95,7 +95,7 @@ jobs:
         uses: actions/upload-artifact@v3
         if: ${{ github.event_name == 'push' }}
         with:
-          name: Rabby_${{github.ref_name}}
+          name: Lux_${{github.ref_name}}
           path: dist
           retention-days: 7
 
@@ -132,7 +132,7 @@ jobs:
         uses: actions/upload-artifact@v3
         if: ${{ github.event_name == 'pull_request' }}
         with:
-          name: Rabby_${{github.sha}}_debug
+          name: Lux_${{github.sha}}_debug
           path: dist
           retention-days: 7
 
@@ -140,6 +140,6 @@ jobs:
         uses: actions/upload-artifact@v3
         if: ${{ github.event_name == 'push' }}
         with:
-          name: Rabby_${{github.ref_name}}_debug
+          name: Lux_${{github.ref_name}}_debug
           path: dist
           retention-days: 7

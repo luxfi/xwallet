@@ -29,7 +29,7 @@ export class EthereumProvider extends EventEmitter {
    * @deprecated
    */
   networkVersion: string | null = null;
-  isRabby = true;
+  isLux = true;
   isMetaMask = true;
 
   _isConnected = true;

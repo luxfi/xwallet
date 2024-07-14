@@ -16,7 +16,7 @@ import imgBg from 'ui/assets/faucet/bg.png';
 import IconSuccess from 'ui/assets/success.svg';
 
 import { Button, message } from 'antd';
-import { ClaimRabbyBadgeModal } from '../Dashboard/components/ClaimRabbyBadgeModal';
+import { ClaimRabbyBadgeModal } from '../Dashboard/components/ClaimLuxBadgeModal';
 import { CurrentAccount } from '@/ui/component/CurrentAccout';
 import { Loading } from './Loading';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';

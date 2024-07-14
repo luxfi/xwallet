@@ -32,8 +32,8 @@ import IconTransactions, {
 import IconAddresses, {
   ReactComponent as RcIconAddresses,
 } from 'ui/assets/dashboard/addresses.svg';
-import { ReactComponent as RcIconClaimableRabbyPoints } from 'ui/assets/dashboard/claimable-points.svg';
-import { ReactComponent as RcIconUnclaimableRabbyPoints } from 'ui/assets/dashboard/unclaimable-points.svg';
+import { ReactComponent as RcIconClaimableLuxPoints } from 'ui/assets/dashboard/claimable-points.svg';
+import { ReactComponent as RcIconUnclaimableLuxPoints } from 'ui/assets/dashboard/unclaimable-points.svg';
 
 import IconMoreSettings, {
   ReactComponent as RcIconMoreSettings,
@@ -52,7 +52,7 @@ import { CHAINS_ENUM, ThemeIconType } from '@/constant';
 import { useAsync } from 'react-use';
 import { useLuxSelector } from '@/ui/store';
 import { GasPriceBar } from '../GasPriceBar';
-import { ClaimRabbyFreeGasBadgeModal } from '../ClaimRabbyBadgeModal/freeGasBadgeModal';
+import { ClaimLuxFreeGasBadgeModal } from '../ClaimLuxBadgeModal/freeGasBadgeModal';
 import { useTranslation } from 'react-i18next';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
 
@@ -84,7 +84,7 @@ export default ({
   const [drawerAnimation, setDrawerAnimation] = useState<string | null>(null);
   const [badgeModalVisible, setBadgeModalVisible] = useState(false);
 
-  const [rabbyPointsVisible, setRabbyPointVisible] = useState(false);
+  const [luxPointsVisible, setLuxPointVisible] = useState(false);
 
   const [settingVisible, setSettingVisible] = useState(false);
   const [currentConnect, setCurrentConnect] = useState<
@@ -251,9 +251,7 @@ export default ({
       badgeAlert: approvalRiskAlert > 0,
     } as IPanelItem,
     feedback: {
-      icon: claimable
-        ? RcIconClaimableRabbyPoints
-        : RcIconUnclaimableRabbyPoints,
+      icon: claimable ? RcIconClaimableLuxPoints : RcIconUnclaimableLuxPoints,
       eventKey: 'Lux Points',
       content: t('page.dashboard.home.panel.luxPoints'),
       onClick: () => {
@@ -420,7 +418,7 @@ export default ({
           setSettingVisible(false);
         }}
       />
-      <ClaimRabbyFreeGasBadgeModal
+      <ClaimLuxFreeGasBadgeModal
         visible={badgeModalVisible}
         onCancel={() => {
           setBadgeModalVisible(false);

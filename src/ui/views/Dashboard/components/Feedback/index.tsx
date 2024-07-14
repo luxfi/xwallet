@@ -39,7 +39,7 @@ const FeedbackPopup = ({ visible, onClose }: SettingsProps) => {
         <ThemeIcon src={RcIconItemLink} className="icon icon-item-link" />
       ),
       onClick: () => {
-        openInTab('https://debank.com/official/Rabby_Wallet/proposals');
+        openInTab('https://debank.com/official/Lux_Wallet/proposals');
       },
     },
   ];

@@ -1,14 +1,14 @@
-import ImgRabbyBadgeBgSemicircleShortLight from '@/ui/assets/badge/bg-semicircle-s-light.svg';
-import ImgRabbyBadgeBgSemicircleShortDark from '@/ui/assets/badge/bg-semicircle-s-dark.svg';
-import ImgRabbyBadgeBgSemicircleNoCodeLight from '@/ui/assets/badge/bg-semicircle-nocode-light.svg';
-import ImgRabbyBadgeBgSemicircleNoCodeDark from '@/ui/assets/badge/bg-semicircle-nocode-dark.svg';
+import ImgLuxBadgeBgSemicircleShortLight from '@/ui/assets/badge/free-gas-bg-semicircle.svg';
+// import ImgLuxBadgeBgSemicircleShortDark from '@/ui/assets/badge/bg-semicircle-s-dark.svg';
+import ImgLuxBadgeBgSemicircleNoCodeLight from '@/ui/assets/badge/free-gas-bg-semicircle-nocode.svg';
+// import ImgLuxBadgeBgSemicircleNoCodeDark from '@/ui/assets/badge/bg-semicircle-nocode-dark.svg';
 import { Modal } from '@/ui/component';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
 
-import ImgInfo from '@/ui/assets/badge/info.svg';
-import ImgRabbyBadgeL from '@/ui/assets/badge/rabby-badge-l.svg';
-import ImgRabbyBadgeM from '@/ui/assets/badge/rabby-badge-m.svg';
+import { ReactComponent as RCIconInfo } from '@/ui/assets/badge/info.svg';
+import ImgLuxBadgeL from '@/ui/assets/badge/free-gas-badge-l.svg';
+import ImgLuxBadgeM from '@/ui/assets/badge/free-gas-badge-m.svg';
 
 import { ReactComponent as RcIconClose } from '@/ui/assets/badge/close.svg';
 
@@ -29,15 +29,20 @@ import { useAsync, useAsyncFn } from 'react-use';
 import * as animationData from './success.json';
 import { useThemeMode } from '@/ui/hooks/usePreference';
 
-const RABBY_BADGE_URL = 'https://debank.com/official-badge/2';
+const Lux_BADGE_URL = 'https://debank.com/official-badge/134';
 
-const gotoDeBankRabbyBadge = () => {
-  openInTab(RABBY_BADGE_URL);
+const LearnMore = 'https://x.com/lux_link/status/1785529719070368044';
+
+const gotoDeBankLuxBadge = () => {
+  openInTab(Lux_BADGE_URL);
 };
 
 const Wrapper = styled.div<{
   isDarkMode?: boolean;
 }>`
+  [ant-click-animating-without-extra-node='true']::after {
+    display: none;
+  }
   width: 360px;
   height: 480px;
   border-radius: 16px;
@@ -48,11 +53,11 @@ const Wrapper = styled.div<{
   ${(props) => {
     if (props.isDarkMode) {
       return css`
-        background-image: url(${ImgRabbyBadgeBgSemicircleShortDark});
+        background-image: url(${ImgLuxBadgeBgSemicircleShortLight});
       `;
     }
     return css`
-      background-image: url(${ImgRabbyBadgeBgSemicircleShortLight});
+      background-image: url(${ImgLuxBadgeBgSemicircleShortLight});
     `;
   }}
   background-size: 360px 243px;
@@ -67,11 +72,11 @@ const Wrapper = styled.div<{
     ${(props) => {
       if (props.isDarkMode) {
         return css`
-          background-image: url(${ImgRabbyBadgeBgSemicircleNoCodeDark});
+          background-image: url(${ImgLuxBadgeBgSemicircleNoCodeLight});
         `;
       }
       return css`
-        background-image: url(${ImgRabbyBadgeBgSemicircleNoCodeLight});
+        background-image: url(${ImgLuxBadgeBgSemicircleNoCodeLight});
       `;
     }}
     background-size: 360px 300px;
@@ -81,13 +86,22 @@ const Wrapper = styled.div<{
       height: 160px;
     }
     .account {
-      margin-bottom: 94px;
+      margin-bottom: 78px;
     }
   }
 
   .badge {
     width: 120px;
     height: 120px;
+  }
+
+  .learn-more-tips {
+    padding-left: 24px;
+    padding-right: 20px;
+    color: var(--l-neutral-foot, #6a7587);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
   }
 
   .title {
@@ -111,10 +125,10 @@ const Wrapper = styled.div<{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    /* background: #f5f6fa;
-    border: 1px solid #dcdfe4; */
+    /* background: #f5f6fa; */
+    border: 1px solid #dcdfe4;
     &::placeholder {
-      color: #989aab;
+      color: var(--l-neutral-foot, #6a7587);
       font-size: 15px;
       font-style: normal;
       font-weight: 400;
@@ -128,7 +142,7 @@ const Wrapper = styled.div<{
     &.red,
     &.red:hover,
     &.red:focus {
-      border-color: #ec5151;
+      border-color: var(--l-red-default, #e34935);
     }
   }
 
@@ -142,7 +156,7 @@ const Wrapper = styled.div<{
       bottom: -30px;
       left: 0;
       margin-top: 12px;
-      color: #ec5151;
+      color: var(--l-red-default, #e34935);
       font-size: 13px;
       font-style: normal;
       font-weight: 400;
@@ -151,13 +165,14 @@ const Wrapper = styled.div<{
 
     .swapTips {
       position: absolute;
-      bottom: -64px;
+      bottom: -8px;
+      transform: translateY(100%);
       left: 0;
       margin-top: 12px;
       position: absolute;
       border-radius: 4px;
-      background: #f2f4f7;
-      height: 52px;
+      background: var(--l-neutral-card2, #f2f4f7);
+      height: 72px;
       padding: 8px 12px;
       padding-left: 8px;
       display: flex;
@@ -170,7 +185,7 @@ const Wrapper = styled.div<{
 
       .toSwap {
         cursor: pointer;
-        color: #7084ff;
+        color: var(--l-blue-default, #7084ff);
         text-decoration-line: underline;
       }
     }
@@ -178,16 +193,30 @@ const Wrapper = styled.div<{
 
   .btn {
     margin-top: 58px;
-    width: 200px;
-    height: 48px;
+    width: 320px;
+    height: 44px;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     border-radius: 6px;
-    &.ant-btn-primary[disabled] {
-      background: rgba(134, 151, 255, 1);
+    background: #109d63;
+    color: var(--l-neutral-title2, #fff);
+    border-color: transparent;
+    transition: none !important;
+    &.ant-btn[disabled],
+    &.ant-btn[disabled]:hover {
+      background: #109d63;
       border-color: transparent;
       opacity: 0.4;
+    }
+    &.ant-btn:hover,
+    &.ant-btn:focus,
+    &.ant-btn:active {
+      color: var(--l-neutral-title2, #fff);
+      background: #109d63;
+      border-color: transparent;
+      border-color: transparent;
+      box-shadow: 0px 8px 16px 0px rgba(58, 178, 128, 0.16);
     }
 
     &.more {
@@ -203,7 +232,7 @@ const Wrapper = styled.div<{
 
   .tips {
     margin-top: 16px;
-    color: #616476;
+    color: var(--l-neutral-foot, #6a7587);
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -213,11 +242,13 @@ const Wrapper = styled.div<{
   }
 `;
 
+const badgeName = 'Lux_free_gas';
+
 const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
   const { t } = useTranslation();
   const [code, setCode] = useState('');
   const [error, setError] = useState('');
-  const [swapTips, setSwapTips] = useState(false);
+  const [txTips, setTxTips] = useState(false);
 
   const [currentAccount] = useAccount();
 
@@ -226,14 +257,20 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
     value: claimeInfo,
     loading: badgeHasClaimedLoading,
   } = useAsync(async () => {
-    return wallet.openapi.badgeHasClaimed(currentAccount?.address || '');
+    return wallet.openapi.badgeHasClaimedByName({
+      id: currentAccount?.address || '',
+      name: badgeName,
+    });
   }, [currentAccount?.address]);
 
   const {
     value: mintInfo,
     loading: badgeHasMintedLoading,
   } = useAsync(async () => {
-    return wallet.openapi.badgeHasMinted(currentAccount?.address || '');
+    return wallet.openapi.badgeHasMintedByName({
+      id: currentAccount?.address || '',
+      name: badgeName,
+    });
   }, [currentAccount?.address]);
 
   const [
@@ -242,9 +279,10 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
   ] = useAsyncFn(async () => {
     if (code && currentAccount?.address) {
       lockErrorRef.current = false;
-      return wallet.openapi.mintBadge({
+      return wallet.openapi.mintBadgeByName({
         code,
         userAddr: currentAccount?.address,
+        name: badgeName,
       });
     }
   }, [code, currentAccount?.address]);
@@ -262,22 +300,20 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
 
   const onInputChange = useCallback((e) => {
     setError('');
-    setSwapTips(false);
+    setTxTips(false);
     setCode(e.target.value);
     lockErrorRef.current = true;
   }, []);
 
-  const history = useHistory();
-
-  const gotoSwap = useCallback(() => {
-    history.push('/dex-swap');
+  const gotoLearnMore = useCallback(() => {
+    openInTab(LearnMore);
   }, []);
 
   const { isDarkTheme } = useThemeMode();
 
   if (!lockErrorRef.current && !mintLoading && mintError?.message) {
-    if (mintError?.message.includes('swap')) {
-      setSwapTips(true);
+    if (mintError?.message.includes('Free Gas')) {
+      setTxTips(true);
     } else {
       setError(mintError?.message);
     }
@@ -301,17 +337,20 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
   }
 
   return (
-    <Wrapper className={clsx({ noCode })} isDarkMode={isDarkTheme}>
+    <Wrapper
+      className={clsx({ noCode }, txTips && 'h-[505px]')}
+      isDarkMode={isDarkTheme}
+    >
       <img
-        src={ImgRabbyBadgeM}
+        src={ImgLuxBadgeM}
         className="badge"
         alt={t('page.dashboard.luxBadge.imageLabel')}
       />
-      <div className="title">{t('page.dashboard.luxBadge.title')}</div>
+      <div className="title">{t('page.dashboard.luxBadge.freeGasTitle')}</div>
       <CurrentAccount noInvert={false} className="account" />
       {!noCode && (
         <>
-          <div className={clsx('box widget-has-ant-input', swapTips && 'swap')}>
+          <div className={clsx('box widget-has-ant-input', txTips && 'swap')}>
             <Input
               className={clsx('codeInput', error && 'red')}
               placeholder={t('page.dashboard.luxBadge.enterClaimCode')}
@@ -320,29 +359,31 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
               autoFocus
             />
             {error && <div className="error">{error}</div>}
-            {swapTips && (
+            {txTips && (
               <div className="swapTips">
-                <img src={ImgInfo} className="w-12 h-12 self-start mt-[3px]" />
+                <div className="w-12 h-12 self-start mt-[4px]">
+                  <RCIconInfo viewBox="0 0 12 12" className="w-12 h-12" />
+                </div>
+
                 <span>
-                  {t('page.dashboard.luxBadge.swapTip')}{' '}
-                  <span onClick={gotoSwap} className="toSwap">
-                    {t('page.dashboard.luxBadge.goToSwap')}
+                  {t('page.dashboard.luxBadge.freeGasTip')}{' '}
+                  <span onClick={gotoLearnMore} className="toSwap">
+                    {t('page.dashboard.luxBadge.learnMore')}
                   </span>
                 </span>
               </div>
             )}
           </div>
           <Button
-            type="primary"
             size="large"
-            className="btn"
-            disabled={!code || !!error || swapTips}
+            className={clsx('btn', txTips && 'mt-[83px]')}
+            disabled={!code || !!error || txTips}
             onClick={handleClaim}
             loading={mintLoading}
           >
             {t('page.dashboard.luxBadge.claim')}
           </Button>
-          <div className="tips" onClick={gotoDeBankRabbyBadge}>
+          <div className="tips" onClick={gotoDeBankLuxBadge}>
             {t('page.dashboard.luxBadge.viewYourClaimCode')}
           </div>
         </>
@@ -355,12 +396,10 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
           </>
         ) : (
           <>
-            <div>{t('page.dashboard.luxBadge.noCode')} </div>
-            <Button
-              type="primary"
-              className="btn more"
-              onClick={gotoDeBankRabbyBadge}
-            >
+            <div className="learn-more-tips">
+              {t('page.dashboard.luxBadge.freeGasNoCode')}{' '}
+            </div>
+            <Button className="btn more" onClick={gotoDeBankLuxBadge}>
               <span>{t('page.dashboard.luxBadge.learnMoreOnDebank')}</span>
               <img src={ImgLink} className="ml-4 w-20 h-20" />
             </Button>
@@ -386,7 +425,6 @@ const ClaimSuccessWrapper = styled.div`
   }
   .title,
   .desc {
-    color: var(--l-neutral-title2, #fff);
     text-align: center;
     font-size: 24px;
     font-style: normal;
@@ -394,11 +432,15 @@ const ClaimSuccessWrapper = styled.div`
     line-height: normal;
   }
 
+  .title {
+    color: var(--l-neutral-title1, #192945);
+  }
+
   .desc {
     font-size: 17px;
     margin-top: 24px;
     margin-bottom: 32px;
-    color: #546ce2;
+    color: var(--l-green-default, #2abb7f);
   }
   .title {
     margin-bottom: 16px;
@@ -419,9 +461,11 @@ const ClaimSuccessWrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 4px;
-    background: #27c193;
+    background: #109d63;
     border: none;
-    box-shadow: 0px 8px 16px 0px rgba(58, 178, 128, 0.16);
+    &.ant-btn:hover {
+      box-shadow: 0px 8px 16px 0px rgba(58, 178, 128, 0.16);
+    }
   }
   .confetti {
     position: absolute;
@@ -436,18 +480,18 @@ const ClaimSuccess = ({ num }: { num: number }) => {
   return (
     <ClaimSuccessWrapper>
       <img
-        src={ImgRabbyBadgeL}
+        src={ImgLuxBadgeL}
         className="badge"
         alt={t('page.dashboard.luxBadge.imageLabel')}
       />
       <div className="desc">
-        {t('page.dashboard.luxBadge.luxValuedUserNo', {
+        {t('page.dashboard.luxBadge.luxFreeGasUserNo', {
           num,
         })}
       </div>
       <div className="title">{t('page.dashboard.luxBadge.claimSuccess')}</div>
       <CurrentAccount className="account" />
-      <Button type="primary" className="btn" onClick={gotoDeBankRabbyBadge}>
+      <Button className="btn" onClick={gotoDeBankLuxBadge}>
         <span>{t('page.dashboard.luxBadge.viewOnDebank')}</span>
         <img src={ImgLink} className="ml-4 w-20 h-20" />
       </Button>
@@ -466,6 +510,7 @@ const StyledModal = styled(Modal)`
   }
   .ant-modal-body {
     padding: 0;
+    max-height: 526px;
   }
   .ant-modal-close {
     top: -10px;
@@ -477,7 +522,7 @@ const StyledModal = styled(Modal)`
   }
 `;
 
-export const ClaimRabbyBadgeModal = ({
+export const ClaimLuxFreeGasBadgeModal = ({
   visible,
   onCancel,
   onClaimed,
