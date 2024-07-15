@@ -292,7 +292,7 @@ export const Filters = ({
           <div
             key={item.key}
             className={clsx(
-              'flex items-center gap-[6px] px-[8px] py-[9px] rounded-[4px] cursor-pointer border border-[0.5px]',
+              'flex items-center gap-[6px] px-[8px] py-[9px] rounded-[4px] cursor-pointer border-[0.5px]',
               'hover:border-[#7084FF]',
               value.find((i) => i.key === item.key)
                 ? 'border-[#7084FF] bg-l-blue-light-1 text-l-blue-default'
