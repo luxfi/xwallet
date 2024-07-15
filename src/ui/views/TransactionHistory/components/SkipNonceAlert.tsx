@@ -3,7 +3,7 @@ import { useAccount } from '@/ui/store-hooks';
 import { intToHex, useWallet } from '@/ui/utils';
 import { findChain, findChainByID } from '@/utils/chain';
 import { findMaxGasTx } from '@/utils/tx';
-import { Chain } from '@debank-lux/common';
+import { Chain } from '@debank/common';
 import { GasLevel } from '@luxfi/lux-api/dist/types';
 import { useInterval, useRequest } from 'ahooks';
 import { message } from 'antd';

@@ -1,4 +1,4 @@
-import { CHAINS_ENUM, CHAINS } from '@debank-lux/common';
+import { CHAINS_ENUM, CHAINS } from '@debank/common';
 import { Input } from 'antd';
 import clsx from 'clsx';
 import React from 'react';

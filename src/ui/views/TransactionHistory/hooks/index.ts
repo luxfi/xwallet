@@ -9,7 +9,7 @@ import {
 } from '@/ui/utils/token';
 import { findChain, findChainByID } from '@/utils/chain';
 import { getPendingGroupCategory } from '@/utils/tx';
-import { CHAINS } from '@debank-lux/common';
+import { CHAINS } from '@debank/common';
 import { TokenItem, TxRequest } from '@luxfi/lux-api/dist/types';
 import { useRequest } from 'ahooks';
 import { flatten, keyBy } from 'lodash';

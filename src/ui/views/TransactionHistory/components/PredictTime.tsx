@@ -3,7 +3,7 @@ import IconArrowRight from '@/ui/assets/signature-record/icon-arrow-right.svg';
 import { useAccount } from '@/ui/store-hooks';
 import { openInternalPageInTab } from '@/ui/utils';
 import { checkIsPendingTxGroup, findMaxGasTx } from '@/utils/tx';
-import { CHAINS } from '@debank-lux/common';
+import { CHAINS } from '@debank/common';
 import { TxRequest } from '@luxfi/lux-api/dist/types';
 import { useCountDown } from 'ahooks';
 import React, { useMemo } from 'react';

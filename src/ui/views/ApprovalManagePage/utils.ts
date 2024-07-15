@@ -18,7 +18,7 @@ import {
   NFTApprovalContract,
   Spender,
 } from '@luxfi/lux-api/dist/types';
-import { Chain } from '@debank-lux/common';
+import { Chain } from '@debank/common';
 import { getUiType, openInTab } from '@/ui/utils';
 import { getAddressScanLink } from '@/utils';
 

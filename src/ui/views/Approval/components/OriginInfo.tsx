@@ -2,7 +2,7 @@ import { INTERNAL_REQUEST_ORIGIN } from '@/constant';
 import { FallbackSiteLogo } from '@/ui/component';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { findChain } from '@/utils/chain';
-import { CHAINS, Chain } from '@debank-lux/common';
+import { CHAINS, Chain } from '@debank/common';
 import React, { useEffect, useMemo } from 'react';
 import SecurityLevelTagNoText from './SecurityEngine/SecurityLevelTagNoText';
 import { ConnectedSite } from '@/background/service/permission';

@@ -1,5 +1,5 @@
 const IGNORE_MODULES = [
-  '@debank-lux',
+  '@debank',
   '@luxfi',
   'p-',
   '@keystonehq',

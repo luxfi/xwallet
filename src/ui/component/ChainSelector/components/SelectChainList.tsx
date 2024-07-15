@@ -1,4 +1,4 @@
-import { CHAINS_ENUM } from '@debank-lux/common';
+import { CHAINS_ENUM } from '@debank/common';
 import {
   DndContext,
   MeasuringStrategy,

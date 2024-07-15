@@ -1,5 +1,5 @@
 import { useLuxSelector } from '@/ui/store';
-import { CHAINS, CHAINS_ENUM } from '@debank-lux/common';
+import { CHAINS, CHAINS_ENUM } from '@debank/common';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import IconAlert from 'ui/assets/alert.svg';

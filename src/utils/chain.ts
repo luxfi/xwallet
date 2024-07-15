@@ -5,7 +5,7 @@ import {
 } from '@/background/service/customTestnet';
 import defaultSuppordChain from '@/constant/default-support-chains.json';
 import eventBus from '@/eventBus';
-import { Chain } from '@debank-lux/common';
+import { Chain } from '@debank/common';
 import {
   ChainWithBalance,
   SupportedChain,

@@ -13,7 +13,7 @@ import { KEYRING_TYPE } from 'consts';
 import { SvgIconOffline } from '@/ui/assets';
 import clsx from 'clsx';
 import { Skeleton } from 'antd';
-import { Chain } from '@debank-lux/common';
+import { Chain } from '@debank/common';
 import { ChainList } from './ChainList';
 import { formChartData, useCurve } from './useCurve';
 import { CurvePoint, CurveThumbnail } from './CurveView';

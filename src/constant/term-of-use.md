@@ -38,4 +38,4 @@ In particular, if you do not accept the revised policies, please immediately sto
 Your continued use of our services confirms your acceptance of our terms of use, as amended. If you do not agree to our terms of use, as amended, you must stop using our services. 
 
 # Contact Us
-If you have any questions about our terms of use, please contact us at hi@debank-lux.com.
+If you have any questions about our terms of use, please contact us at hi@debank.com.

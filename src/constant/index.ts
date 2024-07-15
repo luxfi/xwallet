@@ -1,4 +1,4 @@
-import { CHAINS, CHAINS_ENUM, Chain } from '@debank-lux/common';
+import { CHAINS, CHAINS_ENUM, Chain } from '@debank/common';
 import { Level } from '@luxfi/lux-security-engine/dist/rules';
 import IconAmber, {
   ReactComponent as RcIconAmber,

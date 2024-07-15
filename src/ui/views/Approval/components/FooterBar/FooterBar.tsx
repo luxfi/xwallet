@@ -3,7 +3,7 @@ import { FallbackSiteLogo } from '@/ui/component';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { useWallet } from '@/ui/utils';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
-import { Chain } from '@debank-lux/common';
+import { Chain } from '@debank/common';
 import { Result } from '@luxfi/lux-security-engine';
 import { Level } from '@luxfi/lux-security-engine/dist/rules';
 import { ConnectedSite } from 'background/service/permission';

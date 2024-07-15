@@ -1,5 +1,5 @@
 import { isSameAddress } from '@/background/utils';
-import { CHAINS_ENUM, CHAINS } from '@debank-lux/common';
+import { CHAINS_ENUM, CHAINS } from '@debank/common';
 import { DEX_ENUM } from '@luxfi/lux-swap';
 import {
   decodeCalldata,

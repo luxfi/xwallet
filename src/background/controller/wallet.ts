@@ -82,7 +82,7 @@ import { ProviderRequest } from './provider/type';
 import { QuoteResult } from '@luxfi/lux-swap/dist/quote';
 import transactionWatcher from '../service/transactionWatcher';
 import Safe from '@luxfi/gnosis-sdk';
-import { Chain } from '@debank-lux/common';
+import { Chain } from '@debank/common';
 import { isAddress } from 'web3-utils';
 import { findChain, findChainByEnum, getChainList } from '@/utils/chain';
 import { cached } from '../utils/cache';

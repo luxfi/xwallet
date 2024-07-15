@@ -10,7 +10,7 @@ import { useLuxDispatch, useLuxSelector } from 'ui/store';
 import { isSameAddress } from '../utils';
 import { requestOpenApiWithChainId } from '../utils/openapi';
 import { findChainByServerID } from '@/utils/chain';
-import { Chain } from '@debank-lux/common';
+import { Chain } from '@debank/common';
 import useDebounceValue from './useDebounceValue';
 import { useRefState } from './useRefState';
 import { safeBuildRegExp } from '@/utils/string';

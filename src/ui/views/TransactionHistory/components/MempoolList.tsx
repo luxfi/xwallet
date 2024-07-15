@@ -1,5 +1,5 @@
 import { TransactionHistoryItem } from '@/background/service/transactionHistory';
-import { CHAINS_LIST } from '@debank-lux/common';
+import { CHAINS_LIST } from '@debank/common';
 import { useRequest } from 'ahooks';
 import { Spin } from 'antd';
 import BigNumber from 'bignumber.js';

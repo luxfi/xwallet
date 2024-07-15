@@ -1,5 +1,5 @@
 import { PageHeader } from '@/ui/component';
-import { Chain } from '@debank-lux/common';
+import { Chain } from '@debank/common';
 import { Form, Input, Skeleton } from 'antd';
 import React, { useMemo, useRef } from 'react';
 import styled from 'styled-components';

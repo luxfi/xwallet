@@ -3,7 +3,7 @@ import { Checkbox, Popup } from '@/ui/component';
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { useAccount } from '@/ui/store-hooks';
 import { useWallet } from '@/ui/utils';
-import { CHAINS, CHAINS_ENUM } from '@debank-lux/common';
+import { CHAINS, CHAINS_ENUM } from '@debank/common';
 import { TxPushType } from '@luxfi/lux-api/dist/types';
 import { useRequest } from 'ahooks';
 import clsx from 'clsx';

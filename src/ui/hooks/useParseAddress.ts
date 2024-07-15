@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useAsync } from 'react-use';
 import { formatNumber, useWallet } from '../utils';
-import { Chain } from '@debank-lux/common';
+import { Chain } from '@debank/common';
 import { isValidAddress } from 'ethereumjs-util';
 import { AddressType } from '../utils/address';
 import { INTERNAL_REQUEST_ORIGIN } from '@/constant';

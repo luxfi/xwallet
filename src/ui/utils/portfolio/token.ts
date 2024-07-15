@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import produce from 'immer';
 import { Dayjs } from 'dayjs';
 import { TokenItem } from '@luxfi/lux-api/dist/types';
-import { CHAINS } from '@debank-lux/common';
+import { CHAINS } from '@debank/common';
 import { useLuxDispatch, useLuxSelector } from 'ui/store';
 import {
   findChainByEnum,

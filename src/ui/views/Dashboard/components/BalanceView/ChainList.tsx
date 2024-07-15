@@ -1,6 +1,6 @@
 import React from 'react';
 import { DisplayChainWithWhiteLogo } from '@/ui/hooks/useCurrentBalance';
-import { Chain } from '@debank-lux/common';
+import { Chain } from '@debank/common';
 import { sortChainWithValueDesc } from '@/ui/views/CommonPopup/AssetList/ChainItem';
 
 export const ChainList: React.FC<{
