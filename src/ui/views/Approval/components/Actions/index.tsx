@@ -1,4 +1,4 @@
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import { Chain, ExplainTxResponse } from 'background/service/openapi';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';

@@ -6,14 +6,14 @@ import {
   ExplainTxResponse,
   TokenItem,
   Tx,
-} from '@lux-wallet/lux-api/dist/types';
+} from '@luxfi/lux-api/dist/types';
 import {
   DEX_ENUM,
   DEX_ROUTER_WHITELIST,
   DEX_SPENDER_WHITELIST,
   WrapTokenAddressMap,
-} from '@lux-wallet/lux-swap';
-import { QuoteResult, getQuote } from '@lux-wallet/lux-swap/dist/quote';
+} from '@luxfi/lux-swap';
+import { QuoteResult, getQuote } from '@luxfi/lux-swap/dist/quote';
 import BigNumber from 'bignumber.js';
 import React from 'react';
 import pRetry from 'p-retry';

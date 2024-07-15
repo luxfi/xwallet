@@ -1,8 +1,8 @@
 import { INITIAL_OPENAPI_URL, INITIAL_TESTNET_OPENAPI_URL } from '@/constant';
-import { OpenApiService } from '@lux-wallet/lux-api';
+import { OpenApiService } from '@luxfi/lux-api';
 import { createPersistStore } from 'background/utils';
-export * from '@lux-wallet/lux-api/dist/types';
-import { WebSignApiPlugin } from '@lux-wallet/lux-api/dist/plugins/web-sign';
+export * from '@luxfi/lux-api/dist/types';
+import { WebSignApiPlugin } from '@luxfi/lux-api/dist/plugins/web-sign';
 import fetchAdapter from '@vespaiach/axios-fetch-adapter';
 
 const testnetStore = new (class TestnetStore {

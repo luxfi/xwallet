@@ -8,7 +8,7 @@ import SecurityLevelTagNoText from './SecurityEngine/SecurityLevelTagNoText';
 import { ConnectedSite } from '@/background/service/permission';
 import { useWallet } from '@/ui/utils';
 import styled from 'styled-components';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 
 interface Props {

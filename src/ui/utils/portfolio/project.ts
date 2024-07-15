@@ -13,10 +13,7 @@ import {
   AbstractPortfolioToken,
 } from './types';
 
-import {
-  PortfolioItem,
-  PortfolioItemToken,
-} from '@lux-wallet/lux-api/dist/types';
+import { PortfolioItem, PortfolioItemToken } from '@luxfi/lux-api/dist/types';
 
 export class DisplayedProject implements AbstractProject {
   [immerable] = true;

@@ -1,5 +1,5 @@
-import { Result } from '@lux-wallet/lux-security-engine';
-import { Level } from '@lux-wallet/lux-security-engine/dist/rules';
+import { Result } from '@luxfi/lux-security-engine';
+import { Level } from '@luxfi/lux-security-engine/dist/rules';
 import React from 'react';
 import { SecurityListItemTag } from './SecurityListItemTag';
 import { SubCol, SubRow } from './SubTable';

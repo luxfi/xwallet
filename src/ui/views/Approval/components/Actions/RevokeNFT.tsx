@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import { ParsedActionData, RevokeNFTRequireData } from './utils';
 import { useLuxDispatch } from '@/ui/store';
 import { Table, Col, Row } from './components/Table';

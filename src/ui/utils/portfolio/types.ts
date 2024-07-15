@@ -1,7 +1,7 @@
 import {
   PortfolioItem,
   PortfolioItemToken,
-} from '@lux-wallet/lux-api/dist/types';
+} from '@luxfi/lux-api/dist/types';
 // curve
 export type ChartLine = {
   value: number;

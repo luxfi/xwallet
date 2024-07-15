@@ -4,7 +4,7 @@ import { useQuoteMethods } from './quote';
 import { useLuxSelector } from '@/ui/store';
 import { useAsync } from 'react-use';
 import { uniqBy } from 'lodash';
-import { SwapItem } from '@lux-wallet/lux-api/dist/types';
+import { SwapItem } from '@luxfi/lux-api/dist/types';
 
 export const useSwapHistory = () => {
   const { getSwapList } = useQuoteMethods();

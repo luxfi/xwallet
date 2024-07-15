@@ -1,4 +1,4 @@
-import { BasicSafeInfo } from '@lux-wallet/gnosis-sdk';
+import { BasicSafeInfo } from '@luxfi/gnosis-sdk';
 import { useRequest } from 'ahooks';
 import type { Options } from 'ahooks/lib/useRequest/src/types';
 import { useWallet } from '../utils';

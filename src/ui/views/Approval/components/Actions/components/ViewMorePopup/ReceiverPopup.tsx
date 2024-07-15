@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
-import { ContractDesc, TokenItem } from '@lux-wallet/lux-api/dist/types';
+import { ContractDesc, TokenItem } from '@luxfi/lux-api/dist/types';
 import { Table, Col, Row } from '../Table';
 import * as Values from '../Values';
 import LogoWithText from '../LogoWithText';

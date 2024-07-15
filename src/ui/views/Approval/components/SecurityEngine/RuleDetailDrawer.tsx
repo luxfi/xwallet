@@ -3,7 +3,7 @@ import {
   NumberDefine,
   EnumDefine,
   Level,
-} from '@lux-wallet/lux-security-engine/dist/rules';
+} from '@luxfi/lux-security-engine/dist/rules';
 import React, { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';

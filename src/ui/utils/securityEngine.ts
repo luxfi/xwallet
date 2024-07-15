@@ -3,7 +3,7 @@ import {
   UserData,
   ContextActionData,
   RuleConfig,
-} from '@lux-wallet/lux-security-engine/dist/rules';
+} from '@luxfi/lux-security-engine/dist/rules';
 import { useWallet } from './';
 
 export const useSecurityEngine = (nonce = 0) => {

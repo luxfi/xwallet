@@ -5,7 +5,7 @@ import { CHAINS } from '@/constant';
 import { useLuxSelector } from '@/ui/store';
 import { sortAccountsByBalance } from '@/ui/utils/account';
 import { useAsync } from 'react-use';
-import { BasicSafeInfo } from '@lux-wallet/gnosis-sdk';
+import { BasicSafeInfo } from '@luxfi/gnosis-sdk';
 import { SvgIconLoading } from 'ui/assets';
 import clsx from 'clsx';
 import { Chain } from '@debank-lux/common';

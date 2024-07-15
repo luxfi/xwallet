@@ -1,5 +1,5 @@
 import { formatAmount } from '@/ui/utils';
-import { NFTItem, PendingTxItem } from '@lux-wallet/lux-api/dist/types';
+import { NFTItem, PendingTxItem } from '@luxfi/lux-api/dist/types';
 import React, { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import IconUnknownNFT from 'ui/assets/pending/icon-unknown-nft.svg';

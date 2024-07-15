@@ -1,5 +1,5 @@
 import { TokenDetailPopup } from '@/ui/views/Dashboard/components/TokenDetailPopup';
-import { TokenItem } from '@lux-wallet/lux-api/dist/types';
+import { TokenItem } from '@luxfi/lux-api/dist/types';
 import { getTokenSymbol } from 'ui/utils/token';
 import clsx from 'clsx';
 import React from 'react';

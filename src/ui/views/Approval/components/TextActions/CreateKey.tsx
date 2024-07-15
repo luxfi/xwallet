@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import { CreateKeyAction } from '@lux-wallet/lux-api/dist/types';
+import { CreateKeyAction } from '@luxfi/lux-api/dist/types';
 import { Col, Row, Table } from '../Actions/components/Table';
 import * as Values from '../Actions/components/Values';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 
 const Wrapper = styled.div``;
 

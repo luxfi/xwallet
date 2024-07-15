@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import { PushMultiSigAction } from '@lux-wallet/lux-api/dist/types';
+import { PushMultiSigAction } from '@luxfi/lux-api/dist/types';
 import { Col, Row, Table } from './components/Table';
 import * as Values from './components/Values';
 import { Chain } from 'background/service/openapi';

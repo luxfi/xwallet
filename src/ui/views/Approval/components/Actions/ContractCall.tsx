@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import BigNumber from 'bignumber.js';
 import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import { ContractCallRequireData, ParsedActionData } from './utils';
 import { formatTokenAmount } from 'ui/utils/number';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';

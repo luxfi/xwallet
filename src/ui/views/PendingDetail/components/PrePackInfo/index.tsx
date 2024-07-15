@@ -12,7 +12,7 @@ import {
   LatestExplainTxResponse,
   TokenItem,
   TransferingNFTItem,
-} from '@lux-wallet/lux-api/dist/types';
+} from '@luxfi/lux-api/dist/types';
 import { Table } from 'antd';
 import { ColumnsType } from 'antd/lib/table';
 import clsx from 'clsx';

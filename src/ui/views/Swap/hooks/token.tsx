@@ -1,8 +1,8 @@
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { isSameAddress, useWallet } from '@/ui/utils';
 import { CHAINS, CHAINS_ENUM } from '@debank-lux/common';
-import { TokenItem } from '@lux-wallet/lux-api/dist/types';
-import { WrapTokenAddressMap } from '@lux-wallet/lux-swap';
+import { TokenItem } from '@luxfi/lux-api/dist/types';
+import { WrapTokenAddressMap } from '@luxfi/lux-swap';
 import BigNumber from 'bignumber.js';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useAsync, useDebounce } from 'react-use';

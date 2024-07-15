@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExplainTxResponse } from '@lux-wallet/lux-api/dist/types';
+import { ExplainTxResponse } from '@luxfi/lux-api/dist/types';
 import { Trans, useTranslation } from 'react-i18next';
 
 import { splitNumberByStep } from '@/ui/utils';

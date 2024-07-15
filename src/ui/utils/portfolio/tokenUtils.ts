@@ -2,7 +2,7 @@ import {
   PortfolioItem,
   PortfolioItemToken,
   TokenItem,
-} from '@lux-wallet/lux-api/dist/types';
+} from '@luxfi/lux-api/dist/types';
 import { CHAINS } from 'consts';
 import { DisplayedProject } from './project';
 import { WalletControllerType } from '../WalletContext';

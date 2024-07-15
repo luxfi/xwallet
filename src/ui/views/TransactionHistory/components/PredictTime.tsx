@@ -4,7 +4,7 @@ import { useAccount } from '@/ui/store-hooks';
 import { openInternalPageInTab } from '@/ui/utils';
 import { checkIsPendingTxGroup, findMaxGasTx } from '@/utils/tx';
 import { CHAINS } from '@debank-lux/common';
-import { TxRequest } from '@lux-wallet/lux-api/dist/types';
+import { TxRequest } from '@luxfi/lux-api/dist/types';
 import { useCountDown } from 'ahooks';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';

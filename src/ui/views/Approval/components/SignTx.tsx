@@ -4,7 +4,7 @@ import {
   getKRCategoryByType,
   validateGasPriceRange,
 } from '@/utils/transaction';
-import Safe, { BasicSafeInfo } from '@lux-wallet/gnosis-sdk';
+import Safe, { BasicSafeInfo } from '@luxfi/gnosis-sdk';
 import * as Sentry from '@sentry/browser';
 import { Drawer, Modal } from 'antd';
 import { maxBy } from 'lodash';
@@ -17,7 +17,7 @@ import {
 import { Account, ChainGas } from 'background/service/preference';
 import BigNumber from 'bignumber.js';
 import clsx from 'clsx';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import {
   CHAINS,
   CHAINS_ENUM,
@@ -65,14 +65,11 @@ import Actions from './Actions';
 import { useSecurityEngine } from 'ui/utils/securityEngine';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import RuleDrawer from './SecurityEngine/RuleDrawer';
-import {
-  Level,
-  defaultRules,
-} from '@lux-wallet/lux-security-engine/dist/rules';
+import { Level, defaultRules } from '@luxfi/lux-security-engine/dist/rules';
 import { TokenDetailPopup } from '@/ui/views/Dashboard/components/TokenDetailPopup';
 import { CoboDelegatedDrawer } from './TxComponents/CoboDelegatedDrawer';
 import { BroadcastMode } from './BroadcastMode';
-import { TxPushType } from '@lux-wallet/lux-api/dist/types';
+import { TxPushType } from '@luxfi/lux-api/dist/types';
 import { SafeNonceSelector } from './TxComponents/SafeNonceSelector';
 import { useEnterPassphraseModal } from '@/ui/hooks/useEnterPassphraseModal';
 import { findChain } from '@/utils/chain';

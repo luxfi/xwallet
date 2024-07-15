@@ -4,7 +4,7 @@ import {
   NftCollection,
   PortfolioItemNft,
   PortfolioItemToken,
-} from '@lux-wallet/lux-api/dist/types';
+} from '@luxfi/lux-api/dist/types';
 import groupBy from 'lodash/groupBy';
 import clsx from 'clsx';
 import { getTokenSymbol } from 'ui/utils/token';

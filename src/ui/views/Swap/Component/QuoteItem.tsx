@@ -1,9 +1,9 @@
 import { CEX } from '@/constant';
 import { formatAmount, formatUsdValue } from '@/ui/utils';
 import { CHAINS_ENUM } from '@debank-lux/common';
-import { TokenItem, CEXQuote } from '@lux-wallet/lux-api/dist/types';
-import { DEX_ENUM } from '@lux-wallet/lux-swap';
-import { QuoteResult } from '@lux-wallet/lux-swap/dist/quote';
+import { TokenItem, CEXQuote } from '@luxfi/lux-api/dist/types';
+import { DEX_ENUM } from '@luxfi/lux-swap';
+import { QuoteResult } from '@luxfi/lux-swap/dist/quote';
 import clsx from 'clsx';
 import React, { useMemo, useCallback, useState } from 'react';
 import { useDebounce } from 'react-use';

@@ -1,4 +1,4 @@
-import { ChainWithBalance } from '@lux-wallet/lux-api/dist/types';
+import { ChainWithBalance } from '@luxfi/lux-api/dist/types';
 import {
   BRAND_ALIAN_TYPE_TEXT,
   KEYRING_CLASS,

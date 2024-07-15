@@ -1,9 +1,5 @@
 import { useWallet } from '@/ui/utils';
-import {
-  NFTItem,
-  PendingTxItem,
-  TokenItem,
-} from '@lux-wallet/lux-api/dist/types';
+import { NFTItem, PendingTxItem, TokenItem } from '@luxfi/lux-api/dist/types';
 import { Table } from 'antd';
 import { ColumnsType } from 'antd/lib/table';
 import React from 'react';

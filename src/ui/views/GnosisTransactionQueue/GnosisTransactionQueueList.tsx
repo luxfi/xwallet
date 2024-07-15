@@ -1,5 +1,5 @@
-import { BasicSafeInfo } from '@lux-wallet/gnosis-sdk';
-import { SafeTransactionItem } from '@lux-wallet/gnosis-sdk/dist/api';
+import { BasicSafeInfo } from '@luxfi/gnosis-sdk';
+import { SafeTransactionItem } from '@luxfi/gnosis-sdk/dist/api';
 import { Button, Skeleton, Tooltip, message } from 'antd';
 import {
   ApproveAction,

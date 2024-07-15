@@ -1,8 +1,8 @@
 import { useAccount } from '@/ui/store-hooks';
 import { useWallet } from '@/ui/utils';
 import { findChainByID } from '@/utils/chain';
-import { BasicSafeInfo } from '@lux-wallet/gnosis-sdk';
-import { SafeTransactionItem } from '@lux-wallet/gnosis-sdk/dist/api';
+import { BasicSafeInfo } from '@luxfi/gnosis-sdk';
+import { SafeTransactionItem } from '@luxfi/gnosis-sdk/dist/api';
 import { useRequest } from 'ahooks';
 import { Form, Input, Skeleton, Spin } from 'antd';
 import clsx from 'clsx';

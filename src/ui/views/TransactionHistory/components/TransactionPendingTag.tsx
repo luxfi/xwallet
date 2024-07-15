@@ -1,6 +1,6 @@
 import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnetArrow';
 import { checkIsPendingTxGroup, findMaxGasTx } from '@/utils/tx';
-import { TxRequest } from '@lux-wallet/lux-api/dist/types';
+import { TxRequest } from '@luxfi/lux-api/dist/types';
 import { Popover } from 'antd';
 import {
   TransactionGroup,

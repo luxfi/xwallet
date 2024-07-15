@@ -1,6 +1,6 @@
 import { useWallet } from '@/ui/utils';
 import React from 'react';
-import { CollectionList } from '@lux-wallet/lux-api/dist/types';
+import { CollectionList } from '@luxfi/lux-api/dist/types';
 import { useLuxSelector } from '@/ui/store';
 import { Token } from '@/background/service/preference';
 

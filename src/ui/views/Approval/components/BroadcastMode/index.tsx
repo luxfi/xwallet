@@ -4,7 +4,7 @@ import { TooltipWithMagnetArrow } from '@/ui/component/Tooltip/TooltipWithMagnet
 import { useAccount } from '@/ui/store-hooks';
 import { useWallet } from '@/ui/utils';
 import { CHAINS, CHAINS_ENUM } from '@debank-lux/common';
-import { TxPushType } from '@lux-wallet/lux-api/dist/types';
+import { TxPushType } from '@luxfi/lux-api/dist/types';
 import { useRequest } from 'ahooks';
 import clsx from 'clsx';
 import React, { useEffect } from 'react';

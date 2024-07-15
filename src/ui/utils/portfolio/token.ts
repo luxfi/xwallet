@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import produce from 'immer';
 import { Dayjs } from 'dayjs';
-import { TokenItem } from '@lux-wallet/lux-api/dist/types';
+import { TokenItem } from '@luxfi/lux-api/dist/types';
 import { CHAINS } from '@debank-lux/common';
 import { useLuxDispatch, useLuxSelector } from 'ui/store';
 import {
@@ -13,10 +13,7 @@ import {
 import { useWallet } from '../WalletContext';
 import { useSafeState } from '../safeState';
 import { log } from './usePortfolio';
-import {
-  PortfolioItem,
-  PortfolioItemToken,
-} from '@lux-wallet/lux-api/dist/types';
+import { PortfolioItem, PortfolioItemToken } from '@luxfi/lux-api/dist/types';
 import { DisplayedProject, DisplayedToken } from './project';
 import { AbstractPortfolioToken } from './types';
 import { getMissedTokenPrice } from './utils';

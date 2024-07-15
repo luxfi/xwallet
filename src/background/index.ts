@@ -46,7 +46,7 @@ import { appIsDev, getSentryEnv } from '@/utils/env';
 import { matomoRequestEvent } from '@/utils/matomo-request';
 import { testnetOpenapiService } from './service/openapi';
 import fetchAdapter from '@vespaiach/axios-fetch-adapter';
-import Safe from '@lux-wallet/gnosis-sdk';
+import Safe from '@luxfi/gnosis-sdk';
 import { customTestnetService } from './service/customTestnet';
 import { findChain } from '@/utils/chain';
 import { syncChainService } from './service/syncChain';

@@ -29,7 +29,7 @@ import {
   useOperateCustomToken,
   useFindCustomToken,
 } from '@/ui/hooks/useSearchToken';
-import { TokenItem } from '@lux-wallet/lux-api/dist/types';
+import { TokenItem } from '@luxfi/lux-api/dist/types';
 import { AbstractPortfolioToken } from '@/ui/utils/portfolio/types';
 
 interface Props {

@@ -3,7 +3,7 @@ import IconArrowDown from '@/ui/assets/pending/icon-arrow-down-white.svg';
 import IconSpin from '@/ui/assets/pending/icon-spin.svg';
 import { sinceTime, sinceTimeWithSecs } from '@/ui/utils';
 import { checkIsPendingTxGroup, findMaxGasTx } from '@/utils/tx';
-import { TxRequest } from '@lux-wallet/lux-api/dist/types';
+import { TxRequest } from '@luxfi/lux-api/dist/types';
 import { Button, Popover } from 'antd';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';

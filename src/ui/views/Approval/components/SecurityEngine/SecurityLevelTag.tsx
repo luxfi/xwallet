@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SecurityLevel from '../SecurityEngine/SecurityLevel';
 import IconArrowRight from 'ui/assets/sign/arrow-right.svg';
-import { Level } from '@lux-wallet/lux-security-engine/dist/rules';
+import { Level } from '@luxfi/lux-security-engine/dist/rules';
 import clsx from 'clsx';
 
 const SecurityLevelTagWrapper = styled.div`

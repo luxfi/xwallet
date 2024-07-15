@@ -1,6 +1,6 @@
 const IGNORE_MODULES = [
   '@debank-lux',
-  '@lux-wallet',
+  '@luxfi',
   'p-',
   '@keystonehq',
   '@walletconnect',

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import { ReactComponent as StarSVG } from '@/ui/assets/nft-view/star.svg';
 import { ReactComponent as StarredSVG } from '@/ui/assets/nft-view/starred.svg';
-import { NFTItem, CollectionList } from '@lux-wallet/lux-api/dist/types';
+import { NFTItem, CollectionList } from '@luxfi/lux-api/dist/types';
 import NFTAvatar from '../Dashboard/components/NFT/NFTAvatar';
 import { ChainIcon, getChainName } from './ChainIcon';
 import { useTranslation } from 'react-i18next';

@@ -1,5 +1,5 @@
 import { BigNumber } from 'bignumber.js';
-import { TokenItem } from '@lux-wallet/lux-api/dist/types';
+import { TokenItem } from '@luxfi/lux-api/dist/types';
 import { Contract, providers } from 'ethers';
 import { hexToString } from 'web3-utils';
 import { AbstractPortfolioToken } from './portfolio/types';

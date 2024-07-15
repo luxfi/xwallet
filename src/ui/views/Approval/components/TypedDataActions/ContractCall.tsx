@@ -2,7 +2,7 @@ import React, { useEffect, useMemo } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import { ContractRequireData, TypedDataActionData } from './utils';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { Table, Col, Row } from '../Actions/components/Table';

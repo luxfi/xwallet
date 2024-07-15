@@ -2,11 +2,7 @@ import { TransactionGroup } from '@/background/service/transactionHistory';
 import { ReactComponent as RcIconCheck } from '@/ui/assets/pending/icon-checked.svg';
 import { ellipsisAddress } from '@/ui/utils/address';
 import { getTokenSymbol } from '@/ui/utils/token';
-import {
-  NFTItem,
-  PendingTxItem,
-  TokenItem,
-} from '@lux-wallet/lux-api/dist/types';
+import { NFTItem, PendingTxItem, TokenItem } from '@luxfi/lux-api/dist/types';
 import clsx from 'clsx';
 import _ from 'lodash';
 import React, { ReactNode } from 'react';

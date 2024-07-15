@@ -2,12 +2,12 @@ import { message } from 'antd';
 import React, { useState, useMemo, useEffect } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import {
   RuleConfig,
   UserData,
   Level,
-} from '@lux-wallet/lux-security-engine/dist/rules';
+} from '@luxfi/lux-security-engine/dist/rules';
 import { useWallet } from 'ui/utils';
 import UserListDrawer from './UserListDrawer';
 import RuleDrawer from '../SecurityEngine/RuleDrawer';

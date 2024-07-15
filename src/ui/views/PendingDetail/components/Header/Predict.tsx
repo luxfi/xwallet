@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import IconDot from '@/ui/assets/pending/icon-dot.svg';
 import { findChainByServerID } from '@/utils/chain';
-import { TxRequest } from '@lux-wallet/lux-api/dist/types';
+import { TxRequest } from '@luxfi/lux-api/dist/types';
 import { useCountDown } from 'ahooks';
 import { useTranslation } from 'react-i18next';
 import IconWarning from '@/ui/assets/pending/icon-warning-1.svg';

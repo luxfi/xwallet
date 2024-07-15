@@ -1,5 +1,5 @@
 import { findChainByEnum, findChainByID } from '@/utils/chain';
-import { TxRequest } from '@lux-wallet/lux-api/dist/types';
+import { TxRequest } from '@luxfi/lux-api/dist/types';
 import {
   openapiService,
   swapService,

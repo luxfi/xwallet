@@ -5,7 +5,7 @@ import ClipboardJS from 'clipboard';
 import { AddToLux } from './AddToLux';
 import { MAX_ACCOUNT_COUNT } from './AdvancedSettings';
 import { AccountListSkeleton } from './AccountListSkeleton';
-import { UsedChain } from '@lux-wallet/lux-api/dist/types';
+import { UsedChain } from '@luxfi/lux-api/dist/types';
 import { isSameAddress, splitNumberByStep, useWallet } from '@/ui/utils';
 import dayjs from 'dayjs';
 import { ReactComponent as RcArrowSVG } from 'ui/assets/ledger/arrow.svg';

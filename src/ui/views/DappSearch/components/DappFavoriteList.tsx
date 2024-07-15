@@ -1,5 +1,5 @@
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
-import { BasicDappInfo } from '@lux-wallet/lux-api/dist/types';
+import { BasicDappInfo } from '@luxfi/lux-api/dist/types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ReactComponent as RcIconEmpty } from 'ui/assets/dapp-search/dapp-empty.svg';

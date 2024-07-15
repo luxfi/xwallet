@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Level } from '@lux-wallet/lux-security-engine/dist/rules';
+import { Level } from '@luxfi/lux-security-engine/dist/rules';
 import { SecurityEngineLevel } from 'consts';
 import styled from 'styled-components';
 

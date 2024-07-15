@@ -1,7 +1,7 @@
 import React from 'react';
 import SecurityLevelTagNoText from '../../SecurityEngine/SecurityLevelTagNoText';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import styled from 'styled-components';
 
 export interface Props {

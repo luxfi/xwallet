@@ -1,4 +1,4 @@
-import { PendingTxItem } from '@lux-wallet/lux-api/dist/types';
+import { PendingTxItem } from '@luxfi/lux-api/dist/types';
 import React from 'react';
 import { NFTBalanceChangeItem } from './NFTBalanceChangeItem';
 import { TokenBalanceChangeItem } from './TokenBalanceChangeItem';

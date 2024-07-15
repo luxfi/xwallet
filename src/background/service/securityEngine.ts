@@ -5,8 +5,8 @@ import {
   Threshold,
   ContextActionData,
   ContractAddress,
-} from '@lux-wallet/lux-security-engine/dist/rules';
-import Engine from '@lux-wallet/lux-security-engine';
+} from '@luxfi/lux-security-engine/dist/rules';
+import Engine from '@luxfi/lux-security-engine';
 import { createPersistStore, isSameAddress } from 'background/utils';
 import openapiService from './openapi';
 

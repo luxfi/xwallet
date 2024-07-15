@@ -1,12 +1,12 @@
 import i18n from '@/i18n';
 import { ReactComponent as ArrowDownSVG } from '@/ui/assets/approval/arrow-down-blue.svg';
 import { findChain } from '@/utils/chain';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import {
   ContextActionData,
   Level,
   RuleConfig,
-} from '@lux-wallet/lux-security-engine/dist/rules';
+} from '@luxfi/lux-security-engine/dist/rules';
 import { Button, message } from 'antd';
 import { Chain } from 'background/service/openapi';
 import clsx from 'clsx';

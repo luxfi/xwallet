@@ -3,8 +3,8 @@ import {
   ParseTextResponse,
   CreateKeyAction,
   VerifyAddressAction,
-} from '@lux-wallet/lux-api/dist/types';
-import { ContextActionData } from '@lux-wallet/lux-security-engine/dist/rules';
+} from '@luxfi/lux-api/dist/types';
+import { ContextActionData } from '@luxfi/lux-security-engine/dist/rules';
 
 export interface TextActionData {
   sender: string;

@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { Tooltip } from 'antd';
 import { useTranslation } from 'react-i18next';
-import { Result } from '@lux-wallet/lux-security-engine';
-import { Level } from '@lux-wallet/lux-security-engine/dist/rules';
+import { Result } from '@luxfi/lux-security-engine';
+import { Level } from '@luxfi/lux-security-engine/dist/rules';
 import styled from 'styled-components';
 import SecurityLevelTag from '../SecurityEngine/SecurityLevelTagNoText';
 import IconEdit from 'ui/assets/editpen.svg';

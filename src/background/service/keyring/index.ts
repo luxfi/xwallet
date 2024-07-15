@@ -12,13 +12,13 @@ import {
   setPageStateCacheWhenPopupClose,
   hasWalletConnectPageStateCache,
 } from 'background/utils';
-import SimpleKeyring from '@lux-wallet/eth-simple-keyring';
-import HdKeyring from '@lux-wallet/eth-hd-keyring';
-import WatchKeyring from '@lux-wallet/eth-watch-keyring';
+import SimpleKeyring from '@luxfi/eth-simple-keyring';
+import HdKeyring from '@luxfi/eth-hd-keyring';
+import WatchKeyring from '@luxfi/eth-watch-keyring';
 import BitBox02Keyring from './eth-bitbox02-keyring/eth-bitbox02-keyring';
 import LedgerBridgeKeyring from './eth-ledger-keyring';
-import { WalletConnectKeyring } from '@lux-wallet/eth-walletconnect-keyring';
-import CoinbaseKeyring from '@lux-wallet/eth-coinbase-keyring';
+import { WalletConnectKeyring } from '@luxfi/eth-walletconnect-keyring';
+import CoinbaseKeyring from '@luxfi/eth-coinbase-keyring';
 import TrezorKeyring from './eth-trezor-keyring/eth-trezor-keyring';
 import OnekeyKeyring from './eth-onekey-keyring/eth-onekey-keyring';
 import LatticeKeyring from './eth-lattice-keyring/eth-lattice-keyring';

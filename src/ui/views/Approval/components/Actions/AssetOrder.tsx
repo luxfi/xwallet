@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { Chain } from 'background/service/openapi';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import { ContractRequireData } from '../TypedDataActions/utils';
 import { ParsedActionData } from './utils';
 import { isSameAddress } from 'ui/utils';

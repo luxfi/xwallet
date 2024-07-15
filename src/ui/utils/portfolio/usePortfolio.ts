@@ -19,7 +19,7 @@ import {
 } from './utils';
 import { DisplayedProject } from './project';
 import { isSameAddress } from '..';
-import { ComplexProtocol } from '@lux-wallet/lux-api/dist/types';
+import { ComplexProtocol } from '@luxfi/lux-api/dist/types';
 
 const chunkSize = 5;
 

@@ -3,7 +3,7 @@ import {
   RuleConfig,
   Level,
   UserData,
-} from '@lux-wallet/lux-security-engine/dist/rules';
+} from '@luxfi/lux-security-engine/dist/rules';
 import { RootModel } from '.';
 
 interface State {

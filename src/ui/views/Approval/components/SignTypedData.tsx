@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect, useMemo, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useAsync } from 'react-use';
-import { Result } from '@lux-wallet/lux-security-engine';
+import { Result } from '@luxfi/lux-security-engine';
 import TransportWebHID from '@ledgerhq/hw-transport-webhid';
 import { Skeleton, message } from 'antd';
 import { useScroll } from 'react-use';
@@ -35,10 +35,7 @@ import {
   formatSecurityEngineCtx,
   normalizeTypeData,
 } from './TypedDataActions/utils';
-import {
-  Level,
-  defaultRules,
-} from '@lux-wallet/lux-security-engine/dist/rules';
+import { Level, defaultRules } from '@luxfi/lux-security-engine/dist/rules';
 import { isTestnetChainId, findChain } from '@/utils/chain';
 import { TokenDetailPopup } from '@/ui/views/Dashboard/components/TokenDetailPopup';
 import { useEnterPassphraseModal } from '@/ui/hooks/useEnterPassphraseModal';

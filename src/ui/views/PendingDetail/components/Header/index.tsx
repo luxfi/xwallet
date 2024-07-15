@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { TransactionGroup } from '@/background/service/transactionHistory';
 import IconBg from '@/ui/assets/pending/header-bg.png';
-import { TxRequest } from '@lux-wallet/lux-api/dist/types';
+import { TxRequest } from '@luxfi/lux-api/dist/types';
 import { Predict } from './Predict';
 import { TxHash } from './TxHash';
 import { TxStatus } from './TxStatus';

@@ -1,7 +1,7 @@
 import { useRequest } from 'ahooks';
 import type { Options } from 'ahooks/lib/useRequest/src/types';
 import { WalletController, useWallet } from '../utils';
-import { SafeTransactionItem } from '@lux-wallet/gnosis-sdk/dist/api';
+import { SafeTransactionItem } from '@luxfi/gnosis-sdk/dist/api';
 
 export const useGnosisPendingTxs = (
   params: { address?: string },

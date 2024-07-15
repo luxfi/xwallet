@@ -1,7 +1,7 @@
 import { Popup, TokenWithChain } from '@/ui/component';
 import React, { forwardRef, useMemo } from 'react';
 import { useSwapHistory } from '../hooks';
-import { SwapItem, TokenItem } from '@lux-wallet/lux-api/dist/types';
+import { SwapItem, TokenItem } from '@luxfi/lux-api/dist/types';
 import { CHAINS_LIST } from '@debank-lux/common';
 import { formatAmount, formatUsdValue, openInTab, sinceTime } from '@/ui/utils';
 import { getTokenSymbol } from '@/ui/utils/token';

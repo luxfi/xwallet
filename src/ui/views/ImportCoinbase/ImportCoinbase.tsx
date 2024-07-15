@@ -9,7 +9,7 @@ import eventBus from '@/eventBus';
 import { EVENTS, WALLET_BRAND_CONTENT } from 'consts';
 import './style.less';
 import { useSessionStatus } from '@/ui/component/WalletConnect/useSessionStatus';
-import { SESSION_STATUS_MAP } from '@lux-wallet/eth-coinbase-keyring/dist/type';
+import { SESSION_STATUS_MAP } from '@luxfi/eth-coinbase-keyring/dist/type';
 
 const COINBASE = WALLET_BRAND_CONTENT.Coinbase;
 

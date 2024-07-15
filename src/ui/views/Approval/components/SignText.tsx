@@ -4,12 +4,9 @@ import { findChain } from '@/utils/chain';
 import { useLedgerDeviceConnected } from '@/ui/utils/ledger';
 import { matomoRequestEvent } from '@/utils/matomo-request';
 import { getKRCategoryByType } from '@/utils/transaction';
-import { ParseTextResponse } from '@lux-wallet/lux-api/dist/types';
-import { Result } from '@lux-wallet/lux-security-engine';
-import {
-  Level,
-  defaultRules,
-} from '@lux-wallet/lux-security-engine/dist/rules';
+import { ParseTextResponse } from '@luxfi/lux-api/dist/types';
+import { Result } from '@luxfi/lux-security-engine';
+import { Level, defaultRules } from '@luxfi/lux-security-engine/dist/rules';
 import { useSize, useDebounceFn } from 'ahooks';
 import { Skeleton } from 'antd';
 import { Account } from 'background/service/preference';
