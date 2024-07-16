@@ -548,11 +548,11 @@
       "feedback": {
         "directMessage": {
           "content": "Message direct",
-          "description": "Discuter avec Lux Wallet Official sur DeBank"
+          "description": "Discuter avec Lux Wallet Official sur LuxFi"
         },
         "proposal": {
           "content": "Proposition",
-          "description": "Soumettre une proposition pour Lux Wallet sur DeBank"
+          "description": "Soumettre une proposition pour Lux Wallet sur LuxFi"
         },
         "title": "Feedback"
       },
@@ -639,12 +639,12 @@
         "enterClaimCode": "Saisir le code de réclamation",
         "goToSwap": "Aller à l'échange",
         "imageLabel": "badge Lux",
-        "learnMoreOnDebank": "En savoir plus sur DeBank",
+        "learnMoreOnLuxfi": "En savoir plus sur LuxFi",
         "noCode": "Vous n'avez pas activé le code de réclamation pour cette adresse",
         "luxValuedUserNo": "Utilisateur Lux estimé n°{{num}}",
         "swapTip": "Vous devez d’abord effectuer un échange avec un DEX notable dans Lux Wallet.",
         "title": "Réclamer le badge Lux pour",
-        "viewOnDebank": "Voir sur DeBank",
+        "viewOnLuxfi": "Voir sur LuxFi",
         "viewYourClaimCode": "Afficher votre code de réclamation"
       },
       "recentConnection": {
@@ -709,7 +709,7 @@
         },
         "pendingTransactionCleared": "Transaction(s) en attente effacée(s)",
         "pleaseCheckYourHost": "Veuillez vérifier votre hôte",
-        "requestDeBankTestnetGasToken": "Demander un token de gaz pour le testnet DeBank",
+        "requestLuxFiTestnetGasToken": "Demander un token de gaz pour le testnet LuxFi",
         "reset": "Restaurer le réglage initial",
         "save": "Sauvegarder",
         "settings": {
@@ -1161,14 +1161,14 @@
       "watchModeAlert1": "Il s’agit d’une adresse du mode observation.",
       "watchModeAlert2": "Êtes-vous sûr de vouloir l'utiliser pour recevoir des actifs ?"
     },
-    "requestDebankTestnetGasToken": {
+    "requestLuxfiTestnetGasToken": {
       "claimBadgeBtn": "Réclamer le badge RaLuxbby",
       "mintedTip": "Les détenteurs du badge Lux peuvent en faire la demande une fois par jour",
       "notMintedTip": "Demande disponible uniquement pour les détenteurs du badge Lux",
       "requestBtn": "Demande",
       "requested": "Vous avez déjà demandé aujourd'hui",
       "time": "Par jour",
-      "title": "Demander un token de gaz pour le testnet DeBank"
+      "title": "Demander un token de gaz pour le testnet LuxFi"
     },
     "safeQueue": {
       "LowerNonceError": "La transaction avec nonce {{nonce}} doit être exécutée en premier",

@@ -8,7 +8,7 @@ import { useAsync } from 'react-use';
 import { BasicSafeInfo } from '@luxfi/gnosis-sdk';
 import { SvgIconLoading } from 'ui/assets';
 import clsx from 'clsx';
-import { Chain } from '@debank/common';
+import { Chain } from '@luxfi/common';
 import { sortBy } from 'lodash';
 import { NameAndAddress } from '@/ui/component';
 import IconTagYou from 'ui/assets/tag-you.svg';

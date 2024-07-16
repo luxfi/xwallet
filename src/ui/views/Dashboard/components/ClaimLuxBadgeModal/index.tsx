@@ -31,7 +31,7 @@ import { useThemeMode } from '@/ui/hooks/usePreference';
 
 const Lux_BADGE_URL = 'https://debank.com/official-badge/2';
 
-const gotoDeBankLuxBadge = () => {
+const gotoLuxFiLuxBadge = () => {
   openInTab(Lux_BADGE_URL);
 };
 
@@ -342,7 +342,7 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
           >
             {t('page.dashboard.luxBadge.claim')}
           </Button>
-          <div className="tips" onClick={gotoDeBankLuxBadge}>
+          <div className="tips" onClick={gotoLuxFiLuxBadge}>
             {t('page.dashboard.luxBadge.viewYourClaimCode')}
           </div>
         </>
@@ -359,9 +359,9 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
             <Button
               type="primary"
               className="btn more"
-              onClick={gotoDeBankLuxBadge}
+              onClick={gotoLuxFiLuxBadge}
             >
-              <span>{t('page.dashboard.luxBadge.learnMoreOnDebank')}</span>
+              <span>{t('page.dashboard.luxBadge.learnMoreOnLuxfi')}</span>
               <img src={ImgLink} className="ml-4 w-20 h-20" />
             </Button>
           </>
@@ -447,8 +447,8 @@ const ClaimSuccess = ({ num }: { num: number }) => {
       </div>
       <div className="title">{t('page.dashboard.luxBadge.claimSuccess')}</div>
       <CurrentAccount className="account" />
-      <Button type="primary" className="btn" onClick={gotoDeBankLuxBadge}>
-        <span>{t('page.dashboard.luxBadge.viewOnDebank')}</span>
+      <Button type="primary" className="btn" onClick={gotoLuxFiLuxBadge}>
+        <span>{t('page.dashboard.luxBadge.viewOnLuxfi')}</span>
         <img src={ImgLink} className="ml-4 w-20 h-20" />
       </Button>
       <div className="confetti">

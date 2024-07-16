@@ -964,11 +964,11 @@
       "feedback": {
         "directMessage": {
           "content": "Direct Message",
-          "description": "Chat with Lux Wallet Official on DeBank"
+          "description": "Chat with Lux Wallet Official on LuxFi"
         },
         "proposal": {
           "content": "Proposal",
-          "description": "Submit a proposal for Lux Wallet on DeBank"
+          "description": "Submit a proposal for Lux Wallet on LuxFi"
         },
         "title": "Feedback"
       },
@@ -1002,14 +1002,14 @@
         "learnMore": "Learn More",
         "goToSwap": "Go to Swap",
         "claim": "Claim",
-        "viewYourClaimCode": "View your claim code on DeBank",
+        "viewYourClaimCode": "View your claim code on LuxFi",
         "noCode": "You haven’t activated claim code for this address",
-        "freeGasNoCode": "Please click the button below to visit DeBank and get the claim code using your current address first.",
-        "learnMoreOnDebank": "Learn more on DeBank",
+        "freeGasNoCode": "Please click the button below to visit LuxFi and get the claim code using your current address first.",
+        "learnMoreOnLuxfi": "Learn more on LuxFi",
         "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "luxFreeGasUserNo": "Lux Free Gas User No.{{num}}",
         "claimSuccess": "Claim Success",
-        "viewOnDebank": "View on DeBank"
+        "viewOnLuxfi": "View on LuxFi"
       },
       "contacts": {
         "noDataLabel": "no data",
@@ -1084,7 +1084,7 @@
         "followUs": "Follow Us",
         "testnetBackendServiceUrl": "Testnet Backend Service URL",
         "clearWatchMode": "Clear Watch Mode",
-        "requestDeBankTestnetGasToken": "Request DeBank Testnet Gas Token"
+        "requestLuxFiTestnetGasToken": "Request LuxFi Testnet Gas Token"
       },
       "tokenDetail": {
         "blockedTip": "Blocked token will not be shown in token list",
@@ -1675,8 +1675,8 @@
         "quickAdd": "Quick add from Chainlist"
       }
     },
-    "requestDebankTestnetGasToken": {
-      "title": "Request DeBank Testnet Gas Token",
+    "requestLuxfiTestnetGasToken": {
+      "title": "Request LuxFi Testnet Gas Token",
       "mintedTip": "Lux Badge holders can request once a day",
       "notMintedTip": "Request available for Lux Badge holders only",
       "claimBadgeBtn": "Claim Lux Badge",

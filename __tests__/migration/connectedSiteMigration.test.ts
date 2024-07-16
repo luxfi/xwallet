@@ -35,7 +35,7 @@ const data = {
       },
       {
         e: 0,
-        k: 'https://debank.com',
+        k: 'https://lux.link',
         v: {
           chain: 'ETH' as CHAINS_ENUM,
           icon: '',
@@ -81,7 +81,7 @@ test('should migrate data', () => {
       },
       {
         e: 0,
-        k: 'https://debank.com',
+        k: 'https://lux.link.com',
         v: {
           chain: 'ETH' as CHAINS_ENUM,
           icon: '',

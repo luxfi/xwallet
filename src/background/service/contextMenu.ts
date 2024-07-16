@@ -1,4 +1,4 @@
-import { CHAINS_ENUM } from '@debank/common';
+import { CHAINS_ENUM } from '@luxfi/common';
 import {
   permissionService,
   preferenceService,

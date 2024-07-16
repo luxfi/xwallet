@@ -1,6 +1,6 @@
 import { supportedChainToChain, updateChainStore } from '@/utils/chain';
 import { isManifestV3 } from '@/utils/env';
-import { Chain } from '@debank/common';
+import { Chain } from '@luxfi/common';
 import browser from 'webextension-polyfill';
 import { ALARMS_SYNC_CHAINS } from '../utils/alarms';
 import { http } from '../utils/http';

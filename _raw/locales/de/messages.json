@@ -779,11 +779,11 @@
       "feedback": {
         "directMessage": {
           "content": "Direkte Nachricht",
-          "description": "Chatten Sie mit Lux Wallet Official auf DeBank"
+          "description": "Chatten Sie mit Lux Wallet Official auf LuxFi"
         },
         "proposal": {
           "content": "Vorschlag",
-          "description": "Vorschlag für Lux Wallet auf DeBank einreichen"
+          "description": "Vorschlag für Lux Wallet auf LuxFi einreichen"
         },
         "title": "Feedback"
       },
@@ -816,10 +816,10 @@
         "claim": "Beanspruchen",
         "viewYourClaimCode": "Sehen Sie Ihren Anspruchscode",
         "noCode": "Sie haben keinen Anspruchscode für diese Adresse",
-        "learnMoreOnDebank": "Erfahren Sie mehr auf DeBank",
+        "learnMoreOnLuxfi": "Erfahren Sie mehr auf LuxFi",
         "luxValuedUserNo": "Lux geschätzter Benutzer Nr.{{num}}",
         "claimSuccess": "Erfolgreich beansprucht",
-        "viewOnDebank": "Auf DeBank anzeigen"
+        "viewOnLuxfi": "Auf LuxFi anzeigen"
       },
       "contacts": {
         "noDataLabel": "keine Daten",
@@ -888,7 +888,7 @@
         "followUs": "Folge uns",
         "testnetBackendServiceUrl": "Testnet Backend Service URL",
         "clearWatchMode": "Beobachtungsmodus zurücksetzen",
-        "requestDeBankTestnetGasToken": "Testnet Gas Token von DeBank anfordern"
+        "requestLuxFiTestnetGasToken": "Testnet Gas Token von LuxFi anfordern"
       },
       "tokenDetail": {
         "blockedTip": "Blockierte Token werden nicht in der Tokenliste angezeigt",
@@ -1395,8 +1395,8 @@
         "rpcUrlPlaceholder": "Geben Sie die RPC-URL ein"
       }
     },
-    "requestDebankTestnetGasToken": {
-      "title": "DeBank Testnet Gas Token anfordern",
+    "requestLuxfiTestnetGasToken": {
+      "title": "LuxFi Testnet Gas Token anfordern",
       "mintedTip": "Inhaber des Lux Badge können einmal täglich anfordern",
       "notMintedTip": "Anfrage nur für Inhaber des Lux Badge verfügbar",
       "claimBadgeBtn": "Lux Badge beanspruchen",

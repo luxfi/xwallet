@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ReactComponent as RcBubleInBg } from '@/ui/assets/gas-top-up/bulb-in-bg.svg';
 import { Button, message, Skeleton, Space, Tooltip } from 'antd';
-import { CHAINS, CHAINS_ENUM } from '@debank/common';
+import { CHAINS, CHAINS_ENUM } from '@luxfi/common';
 import { useAsync, useAsyncRetry, useCss } from 'react-use';
 import { useWallet } from '@/ui/utils';
 import BigNumber from 'bignumber.js';

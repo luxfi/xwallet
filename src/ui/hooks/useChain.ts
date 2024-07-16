@@ -1,7 +1,7 @@
 import { useState, useRef, useMemo, useCallback, useEffect } from 'react';
 
 import { findChainByEnum, varyAndSortChainItems } from '@/utils/chain';
-import { CHAINS_ENUM, Chain } from '@debank/common';
+import { CHAINS_ENUM, Chain } from '@luxfi/common';
 import { useLuxDispatch, useLuxSelector } from '../store';
 
 export type ChainSelectorPurpose =

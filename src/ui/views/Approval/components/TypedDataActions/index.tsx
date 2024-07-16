@@ -51,7 +51,7 @@ import {
   RevokeTokenApproveRequireData,
   SendRequireData,
 } from '../Actions/utils';
-import { CHAINS, CHAINS_ENUM, Chain } from '@debank/common';
+import { CHAINS, CHAINS_ENUM, Chain } from '@luxfi/common';
 import { OriginInfo } from '../OriginInfo';
 import { Card } from '../Card';
 import { MessageWrapper } from '../TextActions';

@@ -33,7 +33,7 @@ const Lux_BADGE_URL = 'https://debank.com/official-badge/134';
 
 const LearnMore = 'https://x.com/lux_link/status/1785529719070368044';
 
-const gotoDeBankLuxBadge = () => {
+const gotoLuxFiLuxBadge = () => {
   openInTab(Lux_BADGE_URL);
 };
 
@@ -383,7 +383,7 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
           >
             {t('page.dashboard.luxBadge.claim')}
           </Button>
-          <div className="tips" onClick={gotoDeBankLuxBadge}>
+          <div className="tips" onClick={gotoLuxFiLuxBadge}>
             {t('page.dashboard.luxBadge.viewYourClaimCode')}
           </div>
         </>
@@ -399,8 +399,8 @@ const ClaimLuxBadge = ({ onClaimed }: { onClaimed?: () => void }) => {
             <div className="learn-more-tips">
               {t('page.dashboard.luxBadge.freeGasNoCode')}{' '}
             </div>
-            <Button className="btn more" onClick={gotoDeBankLuxBadge}>
-              <span>{t('page.dashboard.luxBadge.learnMoreOnDebank')}</span>
+            <Button className="btn more" onClick={gotoLuxFiLuxBadge}>
+              <span>{t('page.dashboard.luxBadge.learnMoreOnLuxfi')}</span>
               <img src={ImgLink} className="ml-4 w-20 h-20" />
             </Button>
           </>
@@ -491,8 +491,8 @@ const ClaimSuccess = ({ num }: { num: number }) => {
       </div>
       <div className="title">{t('page.dashboard.luxBadge.claimSuccess')}</div>
       <CurrentAccount className="account" />
-      <Button className="btn" onClick={gotoDeBankLuxBadge}>
-        <span>{t('page.dashboard.luxBadge.viewOnDebank')}</span>
+      <Button className="btn" onClick={gotoLuxFiLuxBadge}>
+        <span>{t('page.dashboard.luxBadge.viewOnLuxfi')}</span>
         <img src={ImgLink} className="ml-4 w-20 h-20" />
       </Button>
       <div className="confetti">

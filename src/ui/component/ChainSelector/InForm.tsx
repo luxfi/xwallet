@@ -1,6 +1,6 @@
 import React, { InsHTMLAttributes, useEffect, useMemo } from 'react';
 import clsx from 'clsx';
-import { CHAINS, CHAINS_ENUM } from '@debank/common';
+import { CHAINS, CHAINS_ENUM } from '@luxfi/common';
 
 import { useState } from 'react';
 import { SelectChainListProps } from '@/ui/component/ChainSelector/components/SelectChainList';

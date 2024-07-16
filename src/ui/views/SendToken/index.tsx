@@ -74,7 +74,7 @@ import {
   useParseContractAddress,
 } from '@/ui/hooks/useParseAddress';
 import { isHex } from 'web3-utils';
-import { Chain } from '@debank/common';
+import { Chain } from '@luxfi/common';
 import IconAlertInfo from './alert-info.svg';
 import { formatTxInputDataOnERC20 } from '@/ui/utils/transaction';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';

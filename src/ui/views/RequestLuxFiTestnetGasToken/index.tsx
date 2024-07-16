@@ -8,8 +8,8 @@ import { useTranslation } from 'react-i18next';
 import { useAsync, useAsyncFn } from 'react-use';
 import styled, { css } from 'styled-components';
 import { ReactComponent as RcIconInfo } from 'ui/assets/faucet/info-cc.svg';
-import { ReactComponent as RcImgDeBankTestnetLight } from 'ui/assets/faucet/debank-testnet-light.svg';
-import { ReactComponent as RcImgDeBankTestnetDark } from 'ui/assets/faucet/debank-testnet-dark.svg';
+import { ReactComponent as RcImgLuxFiTestnetLight } from 'ui/assets/faucet/debank-testnet-light.svg';
+import { ReactComponent as RcImgLuxFiTestnetDark } from 'ui/assets/faucet/debank-testnet-dark.svg';
 import imgUsd from 'ui/assets/faucet/usd.svg';
 import imgLoading from 'ui/assets/faucet/loading.svg';
 import imgBg from 'ui/assets/faucet/bg.png';
@@ -200,7 +200,7 @@ const Wrapper = styled.div<{
   }
 `;
 
-const RequestDeBankTestnetGasToken = () => {
+const RequestLuxFiTestnetGasToken = () => {
   const { t } = useTranslation();
   const [currentAccount] = useAccount();
   const wallet = useWallet();
@@ -277,7 +277,7 @@ const RequestDeBankTestnetGasToken = () => {
           closeCn="brightness-[10]"
         >
           <span className="title">
-            {t('page.requestDebankTestnetGasToken.title')}
+            {t('page.requestLuxfiTestnetGasToken.title')}
           </span>
         </PageHeader>
 
@@ -293,7 +293,7 @@ const RequestDeBankTestnetGasToken = () => {
           <CurrentAccount />
           {mintedLuxBadge ? (
             <div className="tip">
-              {t('page.requestDebankTestnetGasToken.mintedTip')}
+              {t('page.requestLuxfiTestnetGasToken.mintedTip')}
             </div>
           ) : (
             <>
@@ -303,7 +303,7 @@ const RequestDeBankTestnetGasToken = () => {
                   className="w-16 text-l-neutral-title1"
                 />
                 <span>
-                  {t('page.requestDebankTestnetGasToken.notMintedTip')}
+                  {t('page.requestLuxfiTestnetGasToken.notMintedTip')}
                 </span>
               </div>
               <Button
@@ -312,26 +312,26 @@ const RequestDeBankTestnetGasToken = () => {
                 block
                 onClick={() => setBadgeModalVisible(true)}
               >
-                {t('page.requestDebankTestnetGasToken.claimBadgeBtn')}
+                {t('page.requestLuxfiTestnetGasToken.claimBadgeBtn')}
               </Button>
             </>
           )}
           <div className="faucetBox">
             <ThemeIcon
               src={
-                !isDarkTheme ? RcImgDeBankTestnetLight : RcImgDeBankTestnetDark
+                !isDarkTheme ? RcImgLuxFiTestnetLight : RcImgLuxFiTestnetDark
               }
               className="title"
             />
             <img src={imgUsd} className="usd" />
             <div className="value">0.1 USD</div>
             <div className="time">
-              {t('page.requestDebankTestnetGasToken.time')}
+              {t('page.requestLuxfiTestnetGasToken.time')}
             </div>
 
             {requested ? (
               <div className="requestedTip">
-                {t('page.requestDebankTestnetGasToken.requested')}
+                {t('page.requestLuxfiTestnetGasToken.requested')}
               </div>
             ) : (
               <Button
@@ -341,7 +341,7 @@ const RequestDeBankTestnetGasToken = () => {
                 disabled={!mintedLuxBadge || loading}
                 onClick={requestFaucet}
               >
-                <span>{t('page.requestDebankTestnetGasToken.requestBtn')}</span>{' '}
+                <span>{t('page.requestLuxfiTestnetGasToken.requestBtn')}</span>{' '}
                 {loading && (
                   <img src={imgLoading} className="animate-spin w-14" />
                 )}
@@ -361,4 +361,4 @@ const RequestDeBankTestnetGasToken = () => {
   );
 };
 
-export default RequestDeBankTestnetGasToken;
+export default RequestLuxFiTestnetGasToken;

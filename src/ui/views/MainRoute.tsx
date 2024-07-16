@@ -48,7 +48,7 @@ import { NFTView } from './NFTView';
 import { QRCodeConnect } from './ImportHardware/QRCodeConnect';
 import { KeystoneConnect } from './ImportHardware/KeystoneConnect';
 import ApprovalManagePage from './ApprovalManagePage';
-import RequestDeBankTestnetGasToken from './RequestDeBankTestnetGasToken';
+import RequestLuxFiTestnetGasToken from './RequestLuxFiTestnetGasToken';
 import { ImportCoboArgus } from './ImportCoboArgus/ImportCoboArgus';
 import { PendingDetail } from './PendingDetail';
 import { ImportCoinbase } from './ImportCoinbase/ImportCoinbase';
@@ -276,7 +276,7 @@ const Main = () => {
           <NFTView />
         </PrivateRoute>
         <PrivateRoute exact path="/request-debank-testnet-gas-token">
-          <RequestDeBankTestnetGasToken />
+          <RequestLuxFiTestnetGasToken />
         </PrivateRoute>
         <PrivateRoute exact path="/lux-points">
           <LuxPoints />

@@ -723,11 +723,11 @@
       "feedback": {
         "directMessage": {
           "content": "Mensagem Direta",
-          "description": "Converse com a Equipe Lux Wallet oficial no DeBank"
+          "description": "Converse com a Equipe Lux Wallet oficial no LuxFi"
         },
         "proposal": {
           "content": "Proposta",
-          "description": "Envie uma proposta para a Lux Wallet no DeBank"
+          "description": "Envie uma proposta para a Lux Wallet no LuxFi"
         },
         "title": "Feedback"
       },
@@ -760,10 +760,10 @@
         "claim": "Reivindicar",
         "viewYourClaimCode": "Ver seu código de reivindicação",
         "noCode": "Você ainda não ativou o código de reivindicação para este endereço",
-        "learnMoreOnDebank": "Saiba mais no DeBank",
+        "learnMoreOnLuxfi": "Saiba mais no LuxFi",
         "luxValuedUserNo": "Usuário Valorizado Lux Nº {{num}}",
         "claimSuccess": "Reivindicação bem-sucedida",
-        "viewOnDebank": "Ver no DeBank"
+        "viewOnLuxfi": "Ver no LuxFi"
       },
       "contacts": {
         "noDataLabel": "sem dados",
@@ -832,7 +832,7 @@
         "followUs": "Siga-nos",
         "testnetBackendServiceUrl": "URL do Serviço de Backend de Teste",
         "clearWatchMode": "Limpar Modo de Observação",
-        "requestDeBankTestnetGasToken": "Solicitar Token de Gás de Testnet DeBank"
+        "requestLuxFiTestnetGasToken": "Solicitar Token de Gás de Testnet LuxFi"
       },
       "tokenDetail": {
         "blockedTip": "Tokens bloqueados não serão exibidos na lista de tokens",
@@ -1328,8 +1328,8 @@
         "rpcUrlPlaceholder": "Insira a URL RPC"
       }
     },
-    "requestDebankTestnetGasToken": {
-      "title": "Solicitar Token de Gás de Testnet DeBank",
+    "requestLuxfiTestnetGasToken": {
+      "title": "Solicitar Token de Gás de Testnet LuxFi",
       "mintedTip": "Titulares do Lux Badge podem solicitar uma vez por dia",
       "notMintedTip": "Solicitação disponível apenas para titulares do Lux Badge",
       "claimBadgeBtn": "Reivindicar Lux Badge",

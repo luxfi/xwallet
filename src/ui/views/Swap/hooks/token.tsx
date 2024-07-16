@@ -1,6 +1,6 @@
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { isSameAddress, useWallet } from '@/ui/utils';
-import { CHAINS, CHAINS_ENUM } from '@debank/common';
+import { CHAINS, CHAINS_ENUM } from '@luxfi/common';
 import { TokenItem } from '@luxfi/lux-api/dist/types';
 import { WrapTokenAddressMap } from '@luxfi/lux-swap';
 import BigNumber from 'bignumber.js';

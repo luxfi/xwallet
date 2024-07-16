@@ -65,11 +65,11 @@
       "feedback": {
         "directMessage": {
           "content": "發送私信",
-          "description": "在 DeBank 上與 Lux Wallet 官方1v1聯系"
+          "description": "在 LuxFi 上與 Lux Wallet 官方1v1聯系"
         },
         "proposal": {
           "content": "發起提案",
-          "description": "在 DeBank 上發布對 Lux Wallet 的提案"
+          "description": "在 LuxFi 上發布對 Lux Wallet 的提案"
         },
         "title": "反饋"
       },
@@ -168,17 +168,17 @@
         "enterClaimCode": "輸入邀請碼",
         "goToSwap": "完成兌換",
         "imageLabel": "Lux Badge",
-        "learnMoreOnDebank": "跳轉至 DeBank 領取",
+        "learnMoreOnLuxfi": "跳轉至 LuxFi 領取",
         "noCode": "你尚未激活該地址的邀請碼",
         "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "swapTip": "你需要先在 Lux Wallet 中完成一筆與知名dex的兌換",
         "title": "領取 Lux Badge",
-        "viewOnDebank": "在 DeBank 上查看",
+        "viewOnLuxfi": "在 LuxFi 上查看",
         "viewYourClaimCode": "查看你的邀請碼",
         "freeGasTitle": "申請免費 Gas 徽章",
         "freeGasTip": "請使用免費 Gas 簽署一筆交易。當您的 Gas 不足時，'免費 Gas' 按鈕會自動出現。",
         "learnMore": "了解更多",
-        "freeGasNoCode": "請先點擊下面的按鈕訪問 DeBank 並使用您的當前地址獲取申請代碼。",
+        "freeGasNoCode": "請先點擊下面的按鈕訪問 LuxFi 並使用您的當前地址獲取申請代碼。",
         "luxFreeGasUserNo": "Lux Free Gas User No.{{num}}"
       },
       "security": {
@@ -247,7 +247,7 @@
           "title": "有可用的更新"
         },
         "warning": "警告",
-        "requestDeBankTestnetGasToken": "獲取 DeBank Testnet Gas Token",
+        "requestLuxFiTestnetGasToken": "獲取 LuxFi Testnet Gas Token",
         "claimFreeGasBadge": "申請 Lux Free Gas 徽章！"
       },
       "tokenDetail": {
@@ -1712,8 +1712,8 @@
         "quickAdd": "从 Chainlist 快速添加"
       }
     },
-    "requestDebankTestnetGasToken": {
-      "title": "獲取 DeBank Testnet Gas Token",
+    "requestLuxfiTestnetGasToken": {
+      "title": "獲取 LuxFi Testnet Gas Token",
       "mintedTip": "Lux Badge持有者可以每天獲取一次",
       "notMintedTip": "僅 Lux Badge持有者可以獲取",
       "claimBadgeBtn": "領取 Lux Badge",

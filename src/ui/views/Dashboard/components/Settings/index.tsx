@@ -18,7 +18,7 @@ import { ReactComponent as RcIconArrowRight } from 'ui/assets/dashboard/settings
 import { ReactComponent as RcIconArrowOrangeRight } from 'ui/assets/dashboard/settings/icon-right-arrow-orange.svg';
 import { ReactComponent as RcIconArrowCCRight } from 'ui/assets/dashboard/settings/icon-right-arrow-cc.svg';
 
-import IconSettingsDeBank from 'ui/assets/dashboard/settings/debank.svg';
+import IconSettingsLuxFi from 'ui/assets/dashboard/settings/debank.svg';
 
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { ReactComponent as RcIconAddresses } from 'ui/assets/dashboard/addresses.svg';
@@ -491,16 +491,14 @@ const ClaimLuxBadge = ({ onClick }: { onClick: () => void }) => {
   );
 };
 
-const RequestDeBankTestnetGasToken = () => {
+const RequestLuxFiTestnetGasToken = () => {
   const { t } = useTranslation();
   const history = useHistory();
   return (
     <div className="setting-block mt-8">
       <div className="setting-items">
         <Field
-          leftIcon={
-            <ThemeIcon src={IconSettingsDeBank} className="w-28 h-28" />
-          }
+          leftIcon={<ThemeIcon src={IconSettingsLuxFi} className="w-28 h-28" />}
           rightIcon={
             <ThemeIcon
               src={RcIconArrowOrangeRight}
@@ -512,7 +510,7 @@ const RequestDeBankTestnetGasToken = () => {
           }}
           className="text-[#FF6238] bg-[#FFF4F1] dark:bg-[#43332F] font-medium hover:border-[#FF6238]"
         >
-          {t('page.dashboard.settings.requestDeBankTestnetGasToken')}
+          {t('page.dashboard.settings.requestLuxFiTestnetGasToken')}
         </Field>
       </div>
     </div>
@@ -1154,7 +1152,7 @@ const SettingsInner = ({
               {'Lock Wallet'}
             </Button> */}
         <ClaimLuxBadge onClick={onOpenBadgeModal} />
-        <RequestDeBankTestnetGasToken />
+        <RequestLuxFiTestnetGasToken />
         {Object.values(renderData).map((group, idxl1) => {
           return (
             <div key={`g-${idxl1}`} className="setting-block">

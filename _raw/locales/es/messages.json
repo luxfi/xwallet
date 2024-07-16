@@ -726,11 +726,11 @@
       "feedback": {
         "directMessage": {
           "content": "Mensaje Directo",
-          "description": "Chatea con Lux Wallet Oficial en DeBank"
+          "description": "Chatea con Lux Wallet Oficial en LuxFi"
         },
         "proposal": {
           "content": "Propuesta",
-          "description": "Envía una propuesta para Lux Wallet en DeBank"
+          "description": "Envía una propuesta para Lux Wallet en LuxFi"
         },
         "title": "Comentarios"
       },
@@ -763,10 +763,10 @@
         "claim": "Reclamar",
         "viewYourClaimCode": "Ver tu código de reclamo",
         "noCode": "Aún no has activado el código de reclamo para esta dirección",
-        "learnMoreOnDebank": "Más información en DeBank",
+        "learnMoreOnLuxfi": "Más información en LuxFi",
         "luxValuedUserNo": "Usuario Valioso de Lux No.{{num}}",
         "claimSuccess": "Reclamo Exitoso",
-        "viewOnDebank": "Ver en DeBank"
+        "viewOnLuxfi": "Ver en LuxFi"
       },
       "contacts": {
         "noDataLabel": "sin datos",
@@ -835,7 +835,7 @@
         "followUs": "Síguenos",
         "testnetBackendServiceUrl": "URL de Servicio de Backend de Testnet",
         "clearWatchMode": "Limpiar Modo de Observación",
-        "requestDeBankTestnetGasToken": "Solicitar Token de Gas de Testnet DeBank"
+        "requestLuxFiTestnetGasToken": "Solicitar Token de Gas de Testnet LuxFi"
       },
       "tokenDetail": {
         "blockedTip": "Los tokens bloqueados no se mostrarán en la lista de tokens",
@@ -1320,8 +1320,8 @@
         "rpcUrlPlaceholder": "Ingresa la URL de RPC"
       }
     },
-    "requestDebankTestnetGasToken": {
-      "title": "Solicitar Token de Gas de DeBank en Testnet",
+    "requestLuxfiTestnetGasToken": {
+      "title": "Solicitar Token de Gas de LuxFi en Testnet",
       "mintedTip": "Los poseedores del Badge de Lux pueden solicitar una vez al día",
       "notMintedTip": "La solicitud está disponible solo para los poseedores del Badge de Lux",
       "claimBadgeBtn": "Obtener Badge de Lux",

@@ -2,7 +2,7 @@ import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
 import { useLuxDispatch, useLuxSelector } from '@/ui/store';
 import { findChain, findChainByEnum } from '@/utils/chain';
 import { matomoRequestEvent } from '@/utils/matomo-request';
-import { CHAINS_ENUM } from '@debank/common';
+import { CHAINS_ENUM } from '@luxfi/common';
 import { Button, Switch, message } from 'antd';
 import { RPCItem } from 'background/service/rpc';
 import React, { useEffect, useMemo, useState } from 'react';

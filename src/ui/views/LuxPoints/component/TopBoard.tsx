@@ -19,7 +19,7 @@ interface User {
 }
 
 export const TopUserItem = (props: User) => {
-  const gotoDebank = React.useCallback(() => {
+  const gotoLuxfi = React.useCallback(() => {
     openInTab(`https://debank.com/profile/${props.id}`);
   }, [props.id]);
   return (
@@ -34,13 +34,13 @@ export const TopUserItem = (props: User) => {
       <div className="group flex items-center">
         <ClaimUserAvatar src={props.logo_url} className="w-[28px] h-[28px]" />
         <div
-          onClick={gotoDebank}
+          onClick={gotoLuxfi}
           className="ml-[12px] mr-[4px] text-[15px] font-medium text-l-neutral-title1 cursor-pointer"
         >
           {props.web3_id || ellipsisAddress(props.id)}
         </div>
         <IconLink
-          onClick={gotoDebank}
+          onClick={gotoLuxfi}
           className="w-[14px] h-[14px] opacity-0 group-hover:opacity-100"
         />
       </div>

@@ -279,7 +279,7 @@ const config = {
   resolve: {
     alias: {
       moment: require.resolve('dayjs'),
-      '@debank/common': require.resolve('@debank/common/dist/index-lux'),
+      '@luxfi/common': require.resolve('@luxfi/common/dist/index-lux'),
     },
     plugins: [new TSConfigPathsPlugin()],
     fallback: {

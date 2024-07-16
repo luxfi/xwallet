@@ -1,6 +1,6 @@
 import { CEX } from '@/constant';
 import { formatAmount, formatUsdValue } from '@/ui/utils';
-import { CHAINS_ENUM } from '@debank/common';
+import { CHAINS_ENUM } from '@luxfi/common';
 import { TokenItem, CEXQuote } from '@luxfi/lux-api/dist/types';
 import { DEX_ENUM } from '@luxfi/lux-swap';
 import { QuoteResult } from '@luxfi/lux-swap/dist/quote';

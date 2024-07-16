@@ -92,7 +92,7 @@ export enum CHAINS_ENUM {
   TFTM = 'TFTM',
   LYX = 'LYX',
   TLYX = 'TLYX',
-  TDEBANK = 'TDEBANK',
+  TLUXFI = 'TLUXFI',
   TMNT = 'TMNT',
   OPBNB = 'OPBNB',
   GERA = 'GERA',

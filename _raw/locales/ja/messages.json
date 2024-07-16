@@ -751,11 +751,11 @@
       "feedback": {
         "directMessage": {
           "content": "ダイレクトメッセージ",
-          "description": "DeBankのLux Wallet公式とチャット"
+          "description": "LuxFiのLux Wallet公式とチャット"
         },
         "proposal": {
           "content": "提案",
-          "description": "Lux Walletに関する提案をDeBankに提出"
+          "description": "Lux Walletに関する提案をLuxFiに提出"
         },
         "title": "フィードバック"
       },
@@ -788,10 +788,10 @@
         "claim": "クレーム",
         "viewYourClaimCode": "クレームコードを表示",
         "noCode": "このアドレスでクレームコードを有効にしていません",
-        "learnMoreOnDebank": "DeBankで詳細を確認",
+        "learnMoreOnLuxfi": "LuxFiで詳細を確認",
         "luxValuedUserNo": "Lux 評価ユーザー番号{{num}}",
         "claimSuccess": "クレーム成功",
-        "viewOnDebank": "DeBankで表示"
+        "viewOnLuxfi": "LuxFiで表示"
       },
       "contacts": {
         "noDataLabel": "データなし",
@@ -860,7 +860,7 @@
         "followUs": "フォローする",
         "testnetBackendServiceUrl": "テストネットバックエンドサービスURL",
         "clearWatchMode": "ウォッチモードをクリア",
-        "requestDeBankTestnetGasToken": "DeBankテストネットガストークンをリクエスト"
+        "requestLuxFiTestnetGasToken": "LuxFiテストネットガストークンをリクエスト"
       },
       "tokenDetail": {
         "blockedTip": "ブロックされたトークンはトークンリストに表示されません",
@@ -1358,8 +1358,8 @@
         "rpcUrlPlaceholder": "RPC URLを入力してください"
       }
     },
-    "requestDebankTestnetGasToken": {
-      "title": "DeBankテストネットガストークンのリクエスト",
+    "requestLuxfiTestnetGasToken": {
+      "title": "LuxFiテストネットガストークンのリクエスト",
       "mintedTip": "Luxバッジの所有者は1日に1回リクエストできます",
       "notMintedTip": "リクエストはLuxバッジの所有者のみ利用可能です",
       "claimBadgeBtn": "Luxバッジを請求",

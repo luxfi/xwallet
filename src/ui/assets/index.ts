@@ -4,7 +4,7 @@ export { ReactComponent as RcIconUploader } from './uploader.svg';
 export { default as IconChecked } from './checked.svg';
 export { default as IconNotChecked } from './not-checked.svg';
 export { default as QrScan } from './qr-scan.svg';
-export { default as IconDebank } from './debank.svg';
+export { default as IconLuxfi } from './debank.svg';
 
 export { default as IconBitBox02 } from './icon-bitbox02.svg';
 export { default as IconLedger } from './icon-ledger.svg';

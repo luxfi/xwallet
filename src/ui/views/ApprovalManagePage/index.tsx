@@ -7,7 +7,7 @@ import { formatUsdValue, openInTab, useWallet } from 'ui/utils';
 import './style.less';
 import eventBus from '@/eventBus';
 
-import { Chain } from '@debank/common';
+import { Chain } from '@luxfi/common';
 import { findChainByServerID, makeTokenFromChain } from '@/utils/chain';
 
 import {

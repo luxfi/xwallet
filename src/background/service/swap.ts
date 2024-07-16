@@ -1,5 +1,5 @@
 import { DEX_ENUM } from '@luxfi/lux-swap';
-import { CHAINS_ENUM } from '@debank/common';
+import { CHAINS_ENUM } from '@luxfi/common';
 import { createPersistStore } from 'background/utils';
 import { GasCache, ChainGas } from './preference';
 import { CEX, DEX } from '@/constant';
