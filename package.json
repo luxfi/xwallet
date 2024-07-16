@@ -220,7 +220,7 @@
     "zip-dir": "2.0.0"
   },
   "resolutions": {
-    "@luxfi/common": "^0.3.0",
+    "@luxfi/common": "^0.3.61",
     "blake2b-lux": "https://github.com/luxfi/blake2b-lux"
   },
   "keywords": [],
