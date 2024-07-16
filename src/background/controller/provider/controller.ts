@@ -403,6 +403,8 @@ class ProviderController extends BaseController {
       txData.type = '0x2';
     }
     const tx = TransactionFactory.fromTxData(txData, {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      //@ts-ignore
       common,
     });
     const currentAccount = preferenceService.getCurrentAccount()!;

@@ -3,14 +3,14 @@ import { BN, stripHexPrefix } from 'ethereumjs-util';
 import Common, { Chain, Hardfork } from '@ethereumjs/common';
 import { TransactionFactory } from '@ethereumjs/tx';
 
-function buildTxParams(txMeta) {
+function buildTxParams(txMeta: any) {
   return {
     ...omit(txMeta.txParams, 'gas'),
     gasLimit: txMeta.txParams.gas,
   };
 }
 
-function buildTransactionCommon(txMeta) {
+function buildTransactionCommon(txMeta: any) {
   // This produces a transaction whose information does not completely match an
   // Optimism transaction — for instance, DEFAULT_CHAIN is still 'mainnet' and
   // genesis points to the mainnet genesis, not the Optimism genesis — but
@@ -26,8 +26,10 @@ function buildTransactionCommon(txMeta) {
   });
 }
 
-export default function buildUnserializedTransaction(txMeta) {
+export default function buildUnserializedTransaction(txMeta: any) {
   const txParams = buildTxParams(txMeta);
   const common = buildTransactionCommon(txMeta);
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  //@ts-ignore
   return TransactionFactory.fromTxData(txParams, { common });
 }

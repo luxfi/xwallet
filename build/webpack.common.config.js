@@ -289,6 +289,7 @@ const config = {
       zlib: require.resolve('browserify-zlib'),
       https: require.resolve('https-browserify'),
       http: require.resolve('stream-http'),
+      vm: require.resolve('vm')
     },
     extensions: ['.js', 'jsx', '.ts', '.tsx'],
   },
