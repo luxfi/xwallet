@@ -455,9 +455,9 @@ export const INTERNAL_REQUEST_SESSION = {
   icon: LuxChainLogo,
 };
 
-export const INITIAL_OPENAPI_URL = 'https://api.lux.network';
+export const INITIAL_OPENAPI_URL = 'https://api.rabby.io';
 
-export const INITIAL_TESTNET_OPENAPI_URL = 'https://api.testnet.lux.network';
+export const INITIAL_TESTNET_OPENAPI_URL = 'https://api.testnet.rabby.io';
 
 export const EVENTS = {
   broadcastToUI: 'broadcastToUI',

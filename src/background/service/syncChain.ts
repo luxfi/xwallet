@@ -17,20 +17,26 @@ class SyncChainService {
         : await http
             .get('https://static.debank.com/supported_chains.json')
             .then((res) => {
+              console.log(
+                'Get the chain data from json file through json file'
+              );
               return res.data as SupportedChain[];
             });
-      const list: Chain[] = chains
-        .filter((item) => !item.is_disabled)
-        .map((item) => {
-          const chain: Chain = supportedChainToChain(item);
-          return chain;
+      console.log(process.env.DEBUG + ':' + chains + ' : Kaori Fujio');
+      if (chains && chains?.length > 0) {
+        const list: Chain[] = chains
+          .filter((item) => !item.is_disabled)
+          .map((item) => {
+            const chain: Chain = supportedChainToChain(item);
+            return chain;
+          });
+        updateChainStore({
+          mainnetList: list,
         });
-      updateChainStore({
-        mainnetList: list,
-      });
-      browser.storage.local.set({
-        luxMainnetChainList: list,
-      });
+        browser.storage.local.set({
+          luxMainnetChainList: list,
+        });
+      }
     } catch (e) {
       console.error('fetch chain list error: ', e);
     }
