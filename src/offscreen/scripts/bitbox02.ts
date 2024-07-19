@@ -10,7 +10,7 @@ import * as bitbox from 'bitbox-api';
 export function initBitBox02() {
   const bridge = new BitBox02Bridge();
 
-  chrome.runtime.onMessage.addListener(
+  browser.runtime.onMessage.addListener(
     (
       msg: {
         target: string;
@@ -63,7 +63,12 @@ export function initBitBox02() {
           });
 
           if (!bridge.app.ethSupported()) {
-            sendResponse({ error: 'Unsupported device' });
+            // sendResponse({ error: 'Unsupported device' });
+            return new Promise((sendResponse) => {
+              setTimeout(() => {
+                sendResponse({ error: 'Unsupported device' });
+              }, 100);
+            });
           }
           sendResponse();
         } catch (err) {
@@ -71,7 +76,12 @@ export function initBitBox02() {
           if (bridge.app) {
             bridge.app.close();
           }
-          sendResponse({ error: err });
+          // sendResponse({ error: err });
+          return new Promise((sendResponse) => {
+            setTimeout(() => {
+              sendResponse({ error: err });
+            }, 100);
+          });
         }
       };
 
@@ -85,7 +95,12 @@ export function initBitBox02() {
             .ethSign1559Transaction(...(msg.params as [any, any]))
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -94,7 +109,12 @@ export function initBitBox02() {
             .ethSignMessage(...(msg.params as [any, any, any]))
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -103,7 +123,12 @@ export function initBitBox02() {
             .ethSignTransaction(...(msg.params as [any, any, any]))
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -112,16 +137,29 @@ export function initBitBox02() {
             .ethSignTypedMessage(...(msg.params as [any, any, any]))
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
         default:
-          sendResponse({
-            success: false,
-            payload: {
-              error: 'BitBox02 action not supported',
-            },
+          // sendResponse({
+          //   success: false,
+          //   payload: {
+          //     error: 'BitBox02 action not supported',
+          //   },
+          // });
+          return new Promise((sendResponse) => {
+            setTimeout(() => {
+              sendResponse({
+                success: false,
+                payload: { error: 'BitBox02 action not supported' },
+              });
+            }, 100);
           });
       }
 

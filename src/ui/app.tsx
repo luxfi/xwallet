@@ -152,7 +152,7 @@ const bootstrap = () => {
     return;
   }
   browser.runtime.sendMessage({ type: 'getBackgroundReady' }).then((res) => {
-    if (!res.data.ready) {
+    if (!res.ready) {
       setTimeout(() => {
         bootstrap();
       }, 100);
