@@ -2,6 +2,7 @@ import {
   OffscreenCommunicationTarget,
   KnownOrigins,
 } from '@/constant/offscreen-communication';
+import browser from 'webextension-polyfill';
 
 async function openConnectorTab(url: string) {
   const browserTab = window.open(url);
@@ -28,7 +29,7 @@ export default function initLattice() {
    * is then sent back to the offscreen bridge for lattice, which extends from
    * the eth-lattice-keyring Keyring class.
    */
-  chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+  browser.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
     if (msg.target !== OffscreenCommunicationTarget.latticeOffscreen) {
       return;
     }
@@ -39,8 +40,13 @@ export default function initLattice() {
       const listenInterval = setInterval(() => {
         if (browserTab.closed) {
           clearInterval(listenInterval);
-          sendResponse({
-            error: new Error('Lattice connector closed.'),
+          // sendResponse({
+          //   error: new Error('Lattice connector closed.'),
+          // });
+          return new Promise((sendResponse) => {
+            setTimeout(() => {
+              sendResponse({ error: new Error('Lattice connector closed.') });
+            }, 100);
           });
         }
       }, 500);
@@ -68,16 +74,35 @@ export default function initLattice() {
             // Parse and return creds
             const creds = JSON.parse(event.data);
             if (!creds.deviceID || !creds.password) {
-              sendResponse({
-                error: new Error('Invalid credentials returned from Lattice.'),
+              // sendResponse({
+              //   error: new Error('Invalid credentials returned from Lattice.'),
+              // });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({
+                    error: new Error(
+                      'Invalid credentials returned from Lattice.'
+                    ),
+                  });
+                }, 100);
               });
             }
-            sendResponse({
-              result: creds,
+            // sendResponse({
+            //   result: creds,
+            // });
+            return new Promise((sendResponse) => {
+              setTimeout(() => {
+                sendResponse({ result: creds });
+              }, 100);
             });
           } catch (err) {
-            sendResponse({
-              error: err,
+            // sendResponse({
+            //   error: err,
+            // });
+            return new Promise((sendResponse) => {
+              setTimeout(() => {
+                sendResponse({ error: err });
+              }, 100);
             });
           }
         },
