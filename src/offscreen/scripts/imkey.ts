@@ -3,11 +3,12 @@ import {
   ImKeyAction,
   OffscreenCommunicationTarget,
 } from '@/constant/offscreen-communication';
+import browser from 'webextension-polyfill';
 
 export function initImKey() {
   const bridge = new ImKeyBridge();
 
-  chrome.runtime.onMessage.addListener(
+  browser.runtime.onMessage.addListener(
     (
       msg: {
         target: string;
@@ -27,7 +28,12 @@ export function initImKey() {
             .unlock()
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -36,7 +42,12 @@ export function initImKey() {
             .cleanUp()
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -45,16 +56,29 @@ export function initImKey() {
             .invokeApp(...(msg.params as [any, any]))
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
         default:
-          sendResponse({
-            success: false,
-            payload: {
-              error: 'ImKey action not supported',
-            },
+          // sendResponse({
+          //   success: false,
+          //   payload: {
+          //     error: 'ImKey action not supported',
+          //   },
+          // });
+          return new Promise((sendResponse) => {
+            setTimeout(() => {
+              sendResponse({
+                success: false,
+                payload: { error: 'ImKey action not supported' },
+              });
+            }, 100);
           });
       }
 
