@@ -126,6 +126,8 @@ eventBus.addEventListener('syncChainList', (params) => {
 });
 
 const main = () => {
+  console.log('Background script is ready!');
+
   portMessageChannel.connect(getUITypeName());
 
   store.dispatch.app.initBizStore();
@@ -150,7 +152,7 @@ const bootstrap = () => {
     return;
   }
   browser.runtime.sendMessage({ type: 'getBackgroundReady' }).then((res) => {
-    if (!res) {
+    if (!res.data.ready) {
       setTimeout(() => {
         bootstrap();
       }, 100);

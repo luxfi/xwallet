@@ -127,14 +127,17 @@ async function restoreAppState() {
     };
   }
 
-  chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    if (message.type === 'getBackgroundReady') {
-      sendResponse({
-        data: {
-          ready: true,
-        },
+  browser.runtime.onMessage.addListener((request, sender, _sendResponse) => {
+    if (request.type === 'getBackgroundReady') {
+      console.log('Received getBackgroundReady message');
+      return new Promise((_sendResponse) => {
+        // Simulate asynchronous operation
+        setTimeout(() => {
+          _sendResponse({ data: { ready: true } });
+        }, 1000);
       });
     }
+    return true; // Signal that the message is handled
   });
 }
 
