@@ -70,7 +70,6 @@ export function initBitBox02() {
               }, 100);
             });
           }
-          sendResponse();
         } catch (err) {
           console.error(err);
           if (bridge.app) {
