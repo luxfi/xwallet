@@ -1,4 +1,5 @@
 import React from 'react';
+import browser from 'webextension-polyfill';
 
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -11,7 +12,6 @@ import i18n, { addResourceBundle, changeLanguage } from 'src/i18n';
 import { EVENTS } from 'consts';
 
 import type { WalletControllerType } from 'ui/utils/WalletContext';
-
 import store from './store';
 
 import { getSentryEnv, isManifestV3 } from '@/utils/env';
@@ -149,7 +149,7 @@ const bootstrap = () => {
     main();
     return;
   }
-  chrome.runtime.sendMessage({ type: 'getBackgroundReady' }).then((res) => {
+  browser.runtime.sendMessage({ type: 'getBackgroundReady' }).then((res) => {
     if (!res) {
       setTimeout(() => {
         bootstrap();
