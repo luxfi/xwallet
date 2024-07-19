@@ -131,7 +131,6 @@ async function restoreAppState() {
     if (request.type === 'getBackgroundReady') {
       console.log('Received getBackgroundReady message');
       return new Promise((sendResponse) => {
-        // Simulate asynchronous operation
         setTimeout(() => {
           sendResponse({ ready: true });
         }, 100);
