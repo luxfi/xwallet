@@ -2,6 +2,7 @@ import { Message } from '@/utils/message';
 import { nanoid } from 'nanoid';
 
 import { v4 as uuid } from 'uuid';
+import browser from 'webextension-polyfill';
 
 const channelName = nanoid();
 const isOpera = /Opera|OPR\//i.test(navigator.userAgent);
@@ -19,7 +20,7 @@ const injectProviderScript = (isDefaultWallet: boolean) => {
   // in prevent of webpack optimized code do some magic(e.g. double/sigle quote wrap),
   // separate content assignment to two line
   // use AssetReplacePlugin to replace pageprovider content
-  ele.setAttribute('src', chrome.runtime.getURL('pageProvider.js'));
+  ele.setAttribute('src', browser.runtime.getURL('pageProvider.js'));
   container.insertBefore(ele, container.children[0]);
   container.removeChild(ele);
 };

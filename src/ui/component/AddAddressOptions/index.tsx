@@ -35,7 +35,7 @@ import { ReactComponent as IconAddFromCurrentSeedPhrase } from 'ui/assets/addres
 import './style.less';
 
 import {
-  IS_CHROME,
+  IS_BROWSER,
   WALLET_BRAND_CONTENT,
   BRAND_WALLET_CONNECT_TYPE,
   WALLET_BRAND_TYPES,

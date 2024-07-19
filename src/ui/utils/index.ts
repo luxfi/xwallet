@@ -99,7 +99,7 @@ export const isMetaMaskActive = async () => {
   const IS_BROWSER =
     /Firefox|Safari/i.test(global.navigator?.userAgent) || IS_CHROME;
   if (IS_BROWSER) {
-    url = CHECK_METAMASK_INSTALLED_URL.Chrome;
+    url = CHECK_METAMASK_INSTALLED_URL.Browser;
   }
 
   if (!url) return false;

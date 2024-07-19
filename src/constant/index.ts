@@ -328,6 +328,9 @@ export enum TX_TYPE_ENUM {
 }
 
 export const IS_CHROME = /Chrome\//i.test(global.navigator?.userAgent);
+export const IS_BROWSER = /Firefox|Safari|Chrome\//i.test(
+  global.navigator?.userAgent
+);
 
 export const IS_FIREFOX = /Firefox\//i.test(global.navigator?.userAgent);
 
@@ -340,17 +343,22 @@ browser.tabs.onCreated.addListener((tab) => {
 
 export const IS_LINUX = /linux/i.test(global.navigator?.userAgent);
 
-let chromeVersion: number | null = null;
+let browserVersion: number | null = null;
 
-if (IS_CHROME) {
-  const matches = global.navigator?.userAgent.match(/Chrome\/(\d+[^.\s])/);
+if (IS_BROWSER) {
+  const matches = global.navigator?.userAgent.match(
+    /(Firefox|Safari|Chrome)\/(\d+[^.\s])/
+  );
   if (matches && matches.length >= 2) {
-    chromeVersion = Number(matches[1]);
+    browserVersion = Number(matches[2]);
   }
 }
 
-export const IS_AFTER_CHROME91 = IS_CHROME
-  ? chromeVersion && chromeVersion >= 91
+// export const IS_AFTER_CHROME91 = IS_CHROME
+//   ? chromeVersion && chromeVersion >= 91
+//   : false;
+export const IS_AFTER_BROWSER91 = IS_BROWSER
+  ? browserVersion && browserVersion >= 91
   : false;
 
 export const GAS_LEVEL_TEXT = {
@@ -363,11 +371,14 @@ export const GAS_LEVEL_TEXT = {
 
 export const IS_WINDOWS = /windows/i.test(global.navigator?.userAgent);
 
+// export const CHECK_METAMASK_INSTALLED_URL = {
+//   Chrome: 'chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/phishing.html',
+//   Firefox: '',
+//   Brave: '',
+//   Edge: '',
+// };
 export const CHECK_METAMASK_INSTALLED_URL = {
-  Chrome: 'chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/phishing.html',
-  Firefox: '',
-  Brave: '',
-  Edge: '',
+  Browser: 'web-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/phishing.html',
 };
 
 export const SAFE_RPC_METHODS = [
