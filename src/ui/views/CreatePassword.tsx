@@ -196,7 +196,7 @@ const CreatePassword = () => {
           >
             <div
               className={clsx(
-                'w-[15px] h-[15px] mr-[6px] border-solid border-1 border-[#ffffff] flex items-center justify-center  rounded-full overflow-hidden',
+                'w-[15px] h-[15px] mr-[6px] border-solid border-1 border-[#ffffff] bg-opacity-70 flex items-center justify-center  rounded-full overflow-hidden',
                 agreeTerm ? 'bg-white' : 'bg-[#fff]'
               )}
             >

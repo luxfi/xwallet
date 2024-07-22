@@ -15,7 +15,7 @@ import { WrappedComponentProps, wrapModalPromise } from '../Modal/WrapPromise';
 const AuthFormItemWrapper = styled.div`
   .ant-form-item-has-error {
     .ant-input {
-      border-color: #f24822 !important;
+      border-color: #fff !important;
     }
   }
   .ant-input {

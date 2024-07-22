@@ -52,7 +52,7 @@ const themeColors = {
     'green-light': 'rgba(57, 90, 90, 1)',
     'orange-default': 'rgba(255, 198, 74, 1)',
     'orange-light': 'rgba(72, 67, 57, 1)',
-    'red-default': 'rgba(239, 92, 72, 1)',
+    'red-default': 'rgba(255, 255, 255, 1)',
     'red-light': 'rgba(79, 58, 66, 1)',
     'red-dark': 'rgba(174, 42, 25, 1)',
     'red-light2': 'rgba(79, 58, 66, 1)',

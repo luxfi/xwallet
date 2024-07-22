@@ -33,7 +33,7 @@ const LessPalette = {
   "@input-border-color": "white",
   "@input-padding-vertical-lg": "15px",
   "@input-padding-horizontal-lg": "16px",
-  "@error-color": "#f24822",
+  "@error-color": "#fff",
   "@font-size-lg": "14px",
   "@outline-width": "0",
   "@switch-min-width": "32px",
