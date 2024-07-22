@@ -5,7 +5,7 @@
   --tw-bg-opacity: 1;
 
   /* -------------------- base define -------------------- */
-  --lux-light-blue-default: rgba(112, 132, 255, 1);
+  --lux-light-blue-default: rgb(0, 0, 0, 1);
   --lux-light-blue-light1: rgba(66, 73, 98, 1);
   --lux-light-blue-light-1: rgba(66, 73, 98, 1);
   --lux-light-blue-light2: rgba(66, 73, 98, 1);
@@ -28,7 +28,8 @@
   --lux-light-neutral-bg1: rgba(28, 31, 43, 1);
   --lux-light-neutral-bg-1: rgb(0, 0, 0, 1);
   --lux-light-neutral-bg2: rgba(28, 31, 43, 1);
-  --lux-light-neutral-bg-2: rgba(28, 31, 43, 1);
+  --lux-light-neutral-bg-2: rgb(0, 0, 0);
+  /* --lux-light-neutral-bg-2: rgba(28, 31, 43, 1); */
   --lux-light-neutral-bg3: rgba(28, 31, 43, 1);
   --lux-light-neutral-bg-3: rgba(28, 31, 43, 1);
   --lux-light-neutral-bg-4: rgba(32, 36, 54, 1);
