@@ -5,6 +5,7 @@ import { Input, Form, Spin, Button, Drawer } from 'antd';
 import { useWallet, useWalletRequest } from 'ui/utils';
 import UnlockLogo from 'ui/assets/unlock-logo.svg';
 import IconCheck from 'ui/assets/check.svg';
+import IconChecked from 'ui/assets/check-false.svg';
 import clsx from 'clsx';
 import { useCss, useToggle } from 'react-use';
 import ReactMarkdown from 'react-markdown';
@@ -195,17 +196,20 @@ const CreatePassword = () => {
           >
             <div
               className={clsx(
-                'w-[15px] h-[15px] mr-[6px] flex items-center justify-center  rounded-full overflow-hidden',
-                agreeTerm ? 'bg-l-blue-default' : 'bg-l-neutral-foot'
+                'w-[15px] h-[15px] mr-[6px] border-solid border-1 border-[#ffffff] flex items-center justify-center  rounded-full overflow-hidden',
+                agreeTerm ? 'bg-white' : 'bg-[#fff]'
               )}
             >
-              <img src={IconCheck} className="w-[10px]" />
+              <img
+                src={agreeTerm ? IconCheck : IconChecked}
+                className="w-[10px]"
+              />
             </div>
             <span className="text-[13px] text-l-neutral-body">
               <Trans t={t} i18nKey="page.createPassword.agree">
                 have read and agree to the{' '}
                 <span
-                  className="text-l-blue-default cursor-pointer"
+                  className="text-[#a6a6a6] cursor-pointer"
                   onClick={(e) => {
                     e.stopPropagation();
                     toggleVisible();

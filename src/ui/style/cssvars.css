@@ -5,7 +5,7 @@
   --tw-bg-opacity: 1;
 
   /* -------------------- base define -------------------- */
-  --lux-light-blue-default: rgb(0, 0, 0, 1);
+  --lux-light-blue-default: rgba(0, 0, 0, 1);
   --lux-light-blue-light1: rgba(66, 73, 98, 1);
   --lux-light-blue-light-1: rgba(66, 73, 98, 1);
   --lux-light-blue-light2: rgba(66, 73, 98, 1);
@@ -21,22 +21,18 @@
   --lux-light-red-light2: rgba(79, 58, 66, 1);
   --lux-light-red-light-2: rgba(79, 58, 66, 1);
   --lux-light-neutral-title1: rgba(247, 250, 252, 1);
-  /* --lux-light-neutral-title-1: rgba(0, 0, 0, 1); */
   --lux-light-neutral-title-1: rgba(247, 250, 252, 1);
   --lux-light-neutral-body: rgba(211, 216, 224, 1);
   --lux-light-neutral-foot: rgba(186, 190, 197, 1);
   --lux-light-neutral-line: rgba(255, 255, 255, 0.1);
-  --lux-light-neutral-bg1: rgb(0, 0, 0);
-  /* --lux-light-neutral-bg1: rgba(28, 31, 43, 1); */
-  --lux-light-neutral-bg-1: rgb(0, 0, 0, 1);
+  --lux-light-neutral-bg1: rgba(0, 0, 0, 1);
+  --lux-light-neutral-bg-1: rgba(0, 0, 0, 1);
   --lux-light-neutral-bg2: rgba(28, 31, 43, 1);
-  --lux-light-neutral-bg-2: rgb(0, 0, 0);
-  /* --lux-light-neutral-bg-2: rgba(28, 31, 43, 1); */
+  --lux-light-neutral-bg-2: rgba(0, 0, 0, 1);
   --lux-light-neutral-bg3: rgba(28, 31, 43, 1);
   --lux-light-neutral-bg-3: rgba(28, 31, 43, 1);
   --lux-light-neutral-bg-4: rgba(32, 36, 54, 1);
   --lux-light-neutral-card1: rgba(255, 255, 255, 0.06);
-  /* --lux-light-neutral-card-1: rgba(255, 255, 255, 0.06); */
   --lux-light-neutral-card-1: rgba(255, 255, 255, 0.06);
   --lux-light-neutral-card2: rgba(255, 255, 255, 0.06);
   --lux-light-neutral-card-2: rgba(255, 255, 255, 0.06);
@@ -86,7 +82,7 @@
 
 :root {
   /* -------------------- light mode -------------------- */
-  --l-blue-default-rgb: 112, 132, 255;
+  --l-blue-default-rgb: 0, 0, 0;
   --l-blue-default: var(--lux-light-blue-default);
   --l-blue-light1-rgb: 66, 73, 98;
   --l-blue-light1: var(--lux-light-blue-light1);
@@ -126,13 +122,13 @@
   --l-neutral-foot: var(--lux-light-neutral-foot);
   --l-neutral-line-rgb: 255, 255, 255;
   --l-neutral-line: var(--lux-light-neutral-line);
-  --l-neutral-bg1-rgb: 28, 31, 43;
+  --l-neutral-bg1-rgb: 0, 0, 0;
   --l-neutral-bg1: var(--lux-light-neutral-bg1);
-  --l-neutral-bg-1-rgb: 28, 31, 43;
+  --l-neutral-bg-1-rgb: 0, 0, 0;
   --l-neutral-bg-1: var(--lux-light-neutral-bg-1);
   --l-neutral-bg2-rgb: 28, 31, 43;
   --l-neutral-bg2: var(--lux-light-neutral-bg2);
-  --l-neutral-bg-2-rgb: 28, 31, 43;
+  --l-neutral-bg-2-rgb: 0, 0, 0;
   --l-neutral-bg-2: var(--lux-light-neutral-bg-2);
   --l-neutral-bg3-rgb: 28, 31, 43;
   --l-neutral-bg3: var(--lux-light-neutral-bg3);
