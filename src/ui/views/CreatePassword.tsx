@@ -96,6 +96,7 @@ const CreatePassword = () => {
   const spinClass = useCss({
     '&.ant-spin-nested-loading ,& .ant-spin-container': {
       height: '100%',
+      backgroundColor: '#000',
     },
     '& .ant-form-item-control > div:last-child.ant-form-item-control-input': {
       margin: '0 0 26px 0',

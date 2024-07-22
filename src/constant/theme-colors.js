@@ -63,7 +63,7 @@ const themeColors = {
     'neutral-body': 'rgba(211, 216, 224, 1)',
     'neutral-foot': 'rgba(186, 190, 197, 1)',
     'neutral-line': 'rgba(255, 255, 255, 0.1)',
-    'neutral-bg1': 'rgba(28, 31, 43, 1)',
+    'neutral-bg1': 'rgba(0, 0, 0, 1)',
     'neutral-bg-1': 'rgba(0, 0, 0, 1)',
     // 'neutral-bg-1': 'rgba(28, 31, 43, 1)',
     'neutral-bg2': 'rgba(28, 31, 43, 1)',

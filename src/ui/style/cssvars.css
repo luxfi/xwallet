@@ -21,11 +21,13 @@
   --lux-light-red-light2: rgba(79, 58, 66, 1);
   --lux-light-red-light-2: rgba(79, 58, 66, 1);
   --lux-light-neutral-title1: rgba(247, 250, 252, 1);
+  /* --lux-light-neutral-title-1: rgba(0, 0, 0, 1); */
   --lux-light-neutral-title-1: rgba(247, 250, 252, 1);
   --lux-light-neutral-body: rgba(211, 216, 224, 1);
   --lux-light-neutral-foot: rgba(186, 190, 197, 1);
   --lux-light-neutral-line: rgba(255, 255, 255, 0.1);
-  --lux-light-neutral-bg1: rgba(28, 31, 43, 1);
+  --lux-light-neutral-bg1: rgb(0, 0, 0);
+  /* --lux-light-neutral-bg1: rgba(28, 31, 43, 1); */
   --lux-light-neutral-bg-1: rgb(0, 0, 0, 1);
   --lux-light-neutral-bg2: rgba(28, 31, 43, 1);
   --lux-light-neutral-bg-2: rgb(0, 0, 0);
@@ -34,6 +36,7 @@
   --lux-light-neutral-bg-3: rgba(28, 31, 43, 1);
   --lux-light-neutral-bg-4: rgba(32, 36, 54, 1);
   --lux-light-neutral-card1: rgba(255, 255, 255, 0.06);
+  /* --lux-light-neutral-card-1: rgba(255, 255, 255, 0.06); */
   --lux-light-neutral-card-1: rgba(255, 255, 255, 0.06);
   --lux-light-neutral-card2: rgba(255, 255, 255, 0.06);
   --lux-light-neutral-card-2: rgba(255, 255, 255, 0.06);
