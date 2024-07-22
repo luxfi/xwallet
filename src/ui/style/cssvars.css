@@ -11,7 +11,7 @@
   --lux-light-blue-light2: rgba(66, 73, 98, 1);
   --lux-light-blue-light-2: rgba(66, 73, 98, 1);
   --lux-light-blue-disable: rgba(76, 86, 133, 1);
-  --lux-light-green-default: rgba(42, 187, 127, 1);
+  --lux-light-green-default: rgb(255, 255, 255);
   --lux-light-green-light: rgba(57, 90, 90, 1);
   --lux-light-orange-default: rgba(255, 198, 74, 1);
   --lux-light-orange-light: rgba(72, 67, 57, 1);

@@ -58,16 +58,17 @@ const Group = ({
         onClick={() => onAdd(data.publicKey!)}
         type="primary"
         className={clsx(
-          'bg-lux-blue-light1 w-full shadow-none h-[40px] border-transparent hover:border-lux-blue-default hover:bg-l-blue-light-2 hover:before:hidden',
+          'bg-white w-full shadow-none h-[40px] border-transparent hover:bg-[#dddddd] hover:before:hidden',
           data.list.length ? 'mt-[20px]' : 'mt-[6px]'
         )}
       >
         <div className="flex items-center justify-center space-x-6 text-l-blue-default">
           <IconAdd />
           <span
-            className="text-[13px] font-medium"
+            className="text-[13px] font-medium text-[#000]"
             style={{
               textShadow: 'none',
+              paddingTop: '2px',
             }}
           >
             {t('page.manageAddress.add-address')}

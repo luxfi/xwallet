@@ -32,8 +32,8 @@ export const AddToLux: React.FC<Props> = ({ checked, onChange }) => {
               className="icon"
               style={{
                 borderRadius: '14px',
-                marginTop: '-2px',
-                marginLeft: '-2px',
+                marginTop: '-2.8px',
+                marginLeft: '-1.8px',
               }}
             />
           ) : (
