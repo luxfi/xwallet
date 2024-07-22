@@ -11,7 +11,7 @@
   --lux-light-blue-light2: rgba(66, 73, 98, 1);
   --lux-light-blue-light-2: rgba(66, 73, 98, 1);
   --lux-light-blue-disable: rgba(76, 86, 133, 1);
-  --lux-light-green-default: rgb(255, 255, 255);
+  --lux-light-green-default: rgba(255, 255, 255, 1);
   --lux-light-green-light: rgba(57, 90, 90, 1);
   --lux-light-orange-default: rgba(255, 198, 74, 1);
   --lux-light-orange-light: rgba(72, 67, 57, 1);
@@ -94,7 +94,7 @@
   --l-blue-light-2: var(--lux-light-blue-light-2);
   --l-blue-disable-rgb: 76, 86, 133;
   --l-blue-disable: var(--lux-light-blue-disable);
-  --l-green-default-rgb: 42, 187, 127;
+  --l-green-default-rgb: 255, 255, 255;
   --l-green-default: var(--lux-light-green-default);
   --l-green-light-rgb: 57, 90, 90;
   --l-green-light: var(--lux-light-green-light);

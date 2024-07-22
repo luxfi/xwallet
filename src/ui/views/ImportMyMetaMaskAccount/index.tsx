@@ -72,7 +72,7 @@ export const ImportMyMetaMaskAccount = () => {
         <div className="bg-l-neutral-card-1 rounded-[6px] ">
           <div className="flex flex-col items-center border-lux-neutral-line py-[20px] px-[16px] pb-[24px]">
             <div className="flex items-center mb-16">
-              <span className="text-[13px] font-medium text-l-blue-default mr-2">
+              <span className="text-[13px] font-medium text-white mr-2">
                 {t('page.newAddress.metamask.step')}1:
               </span>
               <div className="text-[12px] leading-[18px] font-medium text-l-neutral-title1 whitespace-nowrap">
@@ -112,7 +112,7 @@ export const ImportMyMetaMaskAccount = () => {
 
           <div className="flex flex-col items-center border-lux-neutral-line py-[20px] px-[16px] pb-[32px]">
             <div className="flex items-center mb-16">
-              <span className="text-[13px] font-medium text-l-blue-default mr-2">
+              <span className="text-[13px] font-medium text-white mr-2">
                 {t('page.newAddress.metamask.step')}2:{' '}
               </span>
               <div className="text-[12px] leading-[18px] font-medium text-l-neutral-title1 whitespace-nowrap">
