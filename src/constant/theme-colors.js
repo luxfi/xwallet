@@ -1,5 +1,5 @@
 const themeColors = {
-  light: {
+  dark: {
     /* -------------------- base define -------------------- */
     'blue-default': 'rgba(112, 132, 255, 1)',
     'blue-light1': 'rgba(238, 241, 255, 1)',
@@ -40,7 +40,7 @@ const themeColors = {
     'neutral-title-2': 'rgba(255, 255, 255, 1)',
     'neutral-black': 'rgba(0, 0, 0, 1)',
   },
-  dark: {
+  light: {
     'blue-default': 'rgba(112, 132, 255, 1)',
     'blue-light1': 'rgba(66, 73, 98, 1)',
     'blue-light-1': 'rgba(66, 73, 98, 1)',
@@ -63,7 +63,8 @@ const themeColors = {
     'neutral-foot': 'rgba(186, 190, 197, 1)',
     'neutral-line': 'rgba(255, 255, 255, 0.1)',
     'neutral-bg1': 'rgba(28, 31, 43, 1)',
-    'neutral-bg-1': 'rgba(28, 31, 43, 1)',
+    'neutral-bg-1': 'rgba(0, 0, 0, 1)',
+    // 'neutral-bg-1': 'rgba(28, 31, 43, 1)',
     'neutral-bg2': 'rgba(28, 31, 43, 1)',
     'neutral-bg-2': 'rgba(28, 31, 43, 1)',
     'neutral-bg3': 'rgba(28, 31, 43, 1)',

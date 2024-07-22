@@ -393,7 +393,7 @@ const BalanceView = ({
           onMouseLeave={onMouseLeave}
           className={clsx(
             'mt-[4px] mb-10',
-            currentHover && 'bg-[#000] bg-opacity-10',
+            currentHover && 'bg-[#fff] bg-opacity-10',
             'rounded-[4px] relative cursor-pointer',
             'overflow-hidden'
           )}
