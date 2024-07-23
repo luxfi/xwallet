@@ -1170,6 +1170,11 @@
   resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.6.1.tgz#b6c75a56a1947cc916ea058772d666a2c8932f31"
   integrity sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==
 
+"@debank/common@^0.3.60":
+  version "0.3.60"
+  resolved "https://registry.yarnpkg.com/@debank/common/-/common-0.3.60.tgz#17ca72e4cde1fb6487ca1ed0691d89cd6b6692f9"
+  integrity sha512-SaFTXvnn2aYQTPB3B8YD/AhHYwdMRiqu7jCkYV6c/Sd3MmxzJR3v+Kd4jlQniKfEdB21+1vMb0NlzHw/gyemlw==
+
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
@@ -2791,7 +2796,7 @@
     bignumber.js "^9.1.2"
     rxjs "^7.8.1"
 
-"@luxfi/common@^0.3.0", "@luxfi/common@^0.3.61":
+"@luxfi/common@^0.3.61":
   version "0.3.61"
   resolved "https://registry.yarnpkg.com/@luxfi/common/-/common-0.3.61.tgz#0d7dba2e811f437bd8e379f3db37b8af87c936d9"
   integrity sha512-LCNiQXnFlzt6gAGj2Vh4Q9KBxqq1n7fPGbgnDFwbh79hK3mXAy6YOcws3asiQrvawQYzJ2UE00v+htfPjtd+iQ==
