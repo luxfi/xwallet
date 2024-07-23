@@ -3,11 +3,12 @@ import {
   OneKeyAction,
   OffscreenCommunicationTarget,
 } from '@/constant/offscreen-communication';
+import browser from 'webextension-polyfill';
 
 export function initOneKey() {
   const bridge = new OneKeyBridge();
 
-  chrome.runtime.onMessage.addListener(
+  browser.runtime.onMessage.addListener(
     (
       msg: {
         target: string;
@@ -27,7 +28,12 @@ export function initOneKey() {
             .init()
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -36,7 +42,12 @@ export function initOneKey() {
             .searchDevices()
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -45,7 +56,12 @@ export function initOneKey() {
             .evmGetPublicKey(...(msg.params as [string, string, any]))
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -54,7 +70,12 @@ export function initOneKey() {
             .getPassphraseState(...(msg.params as [string]))
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -63,7 +84,12 @@ export function initOneKey() {
             .evmSignMessage(...(msg.params as [string, string, any]))
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -72,7 +98,12 @@ export function initOneKey() {
             .evmSignTransaction(...(msg.params as [string, string, any]))
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
@@ -81,16 +112,29 @@ export function initOneKey() {
             .evmSignTypedData(...(msg.params as [string, string, any]))
             .then(sendResponse)
             .catch((err) => {
-              sendResponse({ error: err });
+              // sendResponse({ error: err });
+              return new Promise((sendResponse) => {
+                setTimeout(() => {
+                  sendResponse({ error: err });
+                }, 100);
+              });
             });
           break;
 
         default:
-          sendResponse({
-            success: false,
-            payload: {
-              error: 'OneKey action not supported',
-            },
+          // sendResponse({
+          //   success: false,
+          //   payload: {
+          //     error: 'OneKey action not supported',
+          //   },
+          // });
+          return new Promise((sendResponse) => {
+            setTimeout(() => {
+              sendResponse({
+                success: false,
+                payload: { error: 'OneKey action not supported' },
+              });
+            }, 100);
           });
       }
 

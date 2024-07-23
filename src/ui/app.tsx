@@ -1,4 +1,5 @@
 import React from 'react';
+import browser from 'webextension-polyfill';
 
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -11,7 +12,6 @@ import i18n, { addResourceBundle, changeLanguage } from 'src/i18n';
 import { EVENTS } from 'consts';
 
 import type { WalletControllerType } from 'ui/utils/WalletContext';
-
 import store from './store';
 
 import { getSentryEnv, isManifestV3 } from '@/utils/env';
@@ -126,6 +126,8 @@ eventBus.addEventListener('syncChainList', (params) => {
 });
 
 const main = () => {
+  console.log('Background script is ready!');
+
   portMessageChannel.connect(getUITypeName());
 
   store.dispatch.app.initBizStore();
@@ -149,8 +151,8 @@ const bootstrap = () => {
     main();
     return;
   }
-  chrome.runtime.sendMessage({ type: 'getBackgroundReady' }).then((res) => {
-    if (!res) {
+  browser.runtime.sendMessage({ type: 'getBackgroundReady' }).then((res) => {
+    if (!res.ready) {
       setTimeout(() => {
         bootstrap();
       }, 100);

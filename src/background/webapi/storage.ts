@@ -23,13 +23,21 @@ const set = async (prop: string, value: any): Promise<void> => {
 
 const byteInUse = async (): Promise<number> => {
   return new Promise((resolve, reject) => {
-    if (chrome) {
-      chrome.storage.local.getBytesInUse((value) => {
+    // if (chrome) {
+    //   chrome.storage.local.getBytesInUse((value) => {
+    //     resolve(value);
+    //   });
+    // } else {
+    //   reject('ByteInUse only works in Chrome');
+    // }
+    browser.storage.sync
+      .getBytesInUse()
+      .then((value) => {
         resolve(value);
+      })
+      .catch(() => {
+        reject('ByteInUse only works in supported browsers');
       });
-    } else {
-      reject('ByteInUse only works in Chrome');
-    }
   });
 };
 

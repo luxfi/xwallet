@@ -96,8 +96,10 @@ export const hashCode = (str: string) => {
 export const isMetaMaskActive = async () => {
   let url = '';
 
-  if (IS_CHROME) {
-    url = CHECK_METAMASK_INSTALLED_URL.Chrome;
+  const IS_BROWSER =
+    /Firefox|Safari/i.test(global.navigator?.userAgent) || IS_CHROME;
+  if (IS_BROWSER) {
+    url = CHECK_METAMASK_INSTALLED_URL.Browser;
   }
 
   if (!url) return false;
