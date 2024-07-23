@@ -584,7 +584,7 @@ function getColumnsForAsset({
       key: 'selection',
       render: (_, row) => {
         return (
-          <div className="block h-[100%] w-[100%] flex items-center justify-center">
+          <div className="h-[100%] w-[100%] flex items-center justify-center">
             {isSelected(row) ? (
               <ThemeIcon
                 className="J_checked w-[20px] h-[20px]"
