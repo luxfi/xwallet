@@ -332,7 +332,7 @@ const AddressItem = memo(
 
               {enableSwitch && !isCurrentAccount && (
                 <div className="lux-address-item-extra flex justify-center items-center pr-[12px]">
-                  <div className="opacity-0 group-hover:opacity-100 w-[20px] h-[20px] rounded-full bg-blue-light flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 w-[20px] h-[20px] rounded-full bg-[white] flex items-center justify-center">
                     <img src={IconCheck} className="w-[54%] icon icon-check" />
                   </div>
                 </div>

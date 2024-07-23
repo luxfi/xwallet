@@ -478,11 +478,11 @@ const ClaimLuxBadge = ({ onClick }: { onClick: () => void }) => {
           rightIcon={
             <ThemeIcon
               src={RcIconArrowCCRight}
-              className="icon icon-arrow-right w-20 h-20 text-[#109D63]"
+              className="icon icon-arrow-right w-20 h-20 text-[#fff]"
             />
           }
           onClick={onClick}
-          className="bg-[rgba(16,157,99,0.20)] text-[#109D63] hover:border-[#109D63] font-medium"
+          className="bg-[rgba(255,255,255,0.08)] hover:bg-[rgba(255,255,255,0.2)] text-[#fff] hover:border-[rgba(255,255,255,0.3)] font-medium"
         >
           {t('page.dashboard.settings.claimFreeGasBadge')}
         </Field>
@@ -508,7 +508,7 @@ const RequestLuxFiTestnetGasToken = () => {
           onClick={() => {
             history.push('/request-debank-testnet-gas-token');
           }}
-          className="text-[#FF6238] bg-[#FFF4F1] dark:bg-[#43332F] font-medium hover:border-[#FF6238]"
+          className="bg-[rgba(255,255,255,0.08)] hover:bg-[rgba(255,255,255,0.2)] text-[#fff] hover:border-[rgba(255,255,255,0.3)] font-medium"
         >
           {t('page.dashboard.settings.requestLuxFiTestnetGasToken')}
         </Field>
@@ -814,34 +814,34 @@ const SettingsInner = ({
             </>
           ),
         },
-        {
-          leftIcon: RcIconThemeMode,
-          content: t('page.dashboard.settings.settings.toggleThemeMode'),
-          onClick: () => {
-            matomoRequestEvent({
-              category: 'Setting',
-              action: 'clickToUse',
-              label: 'Theme Mode',
-            });
-            reportSettings('Theme Mode');
-            setIsShowThemeModeModal(true);
-          },
-          rightIcon: (
-            <>
-              <span
-                className="text-14 mr-[8px] text-l-neutral-title-1"
-                role="button"
-              >
-                {ThemeModes.find((item) => item.code === themeMode)?.name ||
-                  '-'}
-              </span>
-              <ThemeIcon
-                src={RcIconArrowRight}
-                className="icon icon-arrow-right"
-              />
-            </>
-          ),
-        },
+        // {
+        //   leftIcon: RcIconThemeMode,
+        //   content: t('page.dashboard.settings.settings.toggleThemeMode'),
+        //   onClick: () => {
+        //     matomoRequestEvent({
+        //       category: 'Setting',
+        //       action: 'clickToUse',
+        //       label: 'Theme Mode',
+        //     });
+        //     reportSettings('Theme Mode');
+        //     setIsShowThemeModeModal(true);
+        //   },
+        //   rightIcon: (
+        //     <>
+        //       <span
+        //         className="text-14 mr-[8px] text-l-neutral-title-1"
+        //         role="button"
+        //       >
+        //         {ThemeModes.find((item) => item.code === themeMode)?.name ||
+        //           '-'}
+        //       </span>
+        //       <ThemeIcon
+        //         src={RcIconArrowRight}
+        //         className="icon icon-arrow-right"
+        //       />
+        //     </>
+        //   ),
+        // },
         {
           leftIcon: RcIconPreferMetamask,
           content: t('page.dashboard.settings.settings.metamaskPreferredDapps'),
@@ -994,7 +994,7 @@ const SettingsInner = ({
                 {process.env.release}
                 <span
                   className={clsx(
-                    'text-[#ec5151] ml-2',
+                    'text-[#fff] ml-2',
                     !hasNewVersion && 'hidden'
                   )}
                 >

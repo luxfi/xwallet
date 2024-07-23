@@ -249,6 +249,7 @@ const AuthenticationModal = ({
               className="w-[172px] lux-btn-ghost"
               ghost
               onClick={handleCancel}
+              style={{ borderColor: '#fff', color: '#fff' }}
             >
               {cancelText}
             </Button>
