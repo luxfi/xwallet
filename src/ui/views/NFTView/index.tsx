@@ -18,7 +18,7 @@ import { useTranslation } from 'react-i18next';
 const TabsStyled = styled(Tabs)`
   .ant-tabs-tab {
     border-radius: 4px;
-    color: var(--l-neutral-body, #3e495e);
+    color: #fff;
     font-size: 12px;
     transition: all 0.3s ease-in-out;
     margin: 0 !important;
@@ -30,11 +30,11 @@ const TabsStyled = styled(Tabs)`
 
     &.ant-tabs-tab-active {
       background: var(--l-neutral-card-1, #fff);
-      color: var(--l-blue-default, #7084ff);
+      color: #fff !important;
     }
 
     &:hover {
-      color: var(--l-blue-default, #7084ff);
+      color: #fff;
     }
   }
 
