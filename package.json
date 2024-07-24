@@ -1,7 +1,7 @@
 {
-  "name": "lux",
+  "name": "@luxwallet/x",
   "version": "0.92.79",
-  "description": "A browser plugin for DeFi users",
+  "description": "Lux Wallet for Chrome, Firefox and Safari browsers.",
   "scripts": {
     "clean": "rimraf ./dist && mkdirp ./dist",
     "make-theme": "node ./scripts/make-theme.js",
@@ -22,8 +22,7 @@
     "postinstall": "patch-package && npm run sync-chain"
   },
   "dependencies": {
-    "@coinbase/wallet-sdk": "3.8.0-beta.3",
-    "@debank/common": "^0.3.60",
+    "@coinbase/wallet-sdk": "4.0.4",
     "@dnd-kit/core": "5.0.1",
     "@dnd-kit/sortable": "6.0.0",
     "@dnd-kit/utilities": "3.0.2",
@@ -42,7 +41,7 @@
     "@ledgerhq/hw-app-eth": "6.34.9",
     "@ledgerhq/hw-transport-webhid": "6.27.20",
     "@luxfi/common": "^0.3.61",
-    "@luxfi/eth-coinbase-keyring": "0.0.0-beta.0",
+    "@luxfi/eth-coinbase-keyring": "0.0.1",
     "@luxfi/eth-gnosis-keyring": "0.0.2",
     "@luxfi/eth-hd-keyring": "4.3.2",
     "@luxfi/eth-lattice-keyring": "1.1.1",
@@ -226,6 +225,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
-  "packageManager": "yarn@1.22.22"
+  "license": "MIT"
 }

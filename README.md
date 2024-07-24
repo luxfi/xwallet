@@ -1,10 +1,10 @@
-# Lux Wallet
+# xwallet
 
-Lux Wallet is an open-source browser plugin for the DeFi ecosystem, providing users with a better-to-use and more secure multi-chain experience.
+Lux Wallet is an open-source browser extension for the defi ecosystem, providing users with a better-to-use and more secure multi-chain experience.
 
 ## Install
 
-You can download the latest Lux [here](https://github.com/luxfi/xwallet).
+You can download the latest Lux Wallet [here](https://github.com/luxfi/xwallet).
 
 ## Guideline for Integrating Lux Wallet
 
@@ -111,5 +111,3 @@ Used by 3 pages which share the same JS code, but the HTML template is different
 ## Thanks
 
 Thanks to contributions from the MetaMask team to the browser extension wallet community, Lux uses (or forks) them to make Lux better.
-
-

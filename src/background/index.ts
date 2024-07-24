@@ -61,7 +61,7 @@ let appStoreLoaded = false;
 
 Sentry.init({
   dsn:
-    'https://a864fbae7ba680ce68816ff1f6ef2c4e@o4507018303438848.ingest.us.sentry.io/4507018389749760',
+    'https://898eb3187d5ddf29534a2231f9510d0c@o4507654194528256.ingest.de.sentry.io/4507654195707984',
   release: process.env.release,
   environment: getSentryEnv(),
   ignoreErrors: [
