@@ -207,7 +207,9 @@ const Actions = ({
           })}
         >
           <div className="title">
-            <div className="title-text">{t('page.signText.title')}</div>
+            <div className="title-text text-[#fff]">
+              {t('page.signText.title')}
+            </div>
           </div>
           <div className="content">{message}</div>
         </MessageWrapper>

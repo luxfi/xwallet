@@ -1209,7 +1209,7 @@ const ApprovalManagePage = () => {
                   itemClassname="text-[15px] w-[148px] h-[40px]"
                   itemClassnameActive="bg-l-neutral-bg-1"
                   itemClassnameInActive={
-                    'text-l-neutral-body hover:text-l-blue-default'
+                    'text-l-neutral-body hover:text-[#fff]'
                   }
                 />
 

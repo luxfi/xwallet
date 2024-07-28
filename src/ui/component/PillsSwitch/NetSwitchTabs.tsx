@@ -68,9 +68,7 @@ export default function NetSwitchTabs(props: SwitchTabProps) {
       className="flex bg-l-neutral-line w-[260px] mx-[auto] my-[0] h-[32px] p-[2px] mb-[14px]"
       itemClassname={clsx('w-[128px] text-[12px]')}
       itemClassnameActive="bg-l-neutral-bg-1"
-      itemClassnameInActive={clsx(
-        'text-l-neutral-body hover:text-l-blue-default'
-      )}
+      itemClassnameInActive={clsx('text-l-neutral-body hover:text-[#fff]')}
       options={switchOptions}
     />
   );

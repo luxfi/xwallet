@@ -129,7 +129,10 @@ export const HistoryList = ({
                 <span>
                   <Trans i18nKey="page.transactions.empty.desc" t={t}>
                     No transactions found on
-                    <Link className="underline" to="/settings/chain-list">
+                    <Link
+                      className="underline text-[#b3b3b3]"
+                      to="/settings/chain-list"
+                    >
                       supported chains
                     </Link>
                   </Trans>

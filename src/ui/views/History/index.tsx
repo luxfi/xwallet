@@ -32,7 +32,7 @@ const History = () => {
       )}
       {selectedTab === 'mainnet' ? (
         <div
-          className="filter-scam-nav hover:border-blue-light hover:bg-blue-light hover:bg-opacity-10"
+          className="filter-scam-nav hover:border-[black] hover:bg-[#e6e6e6] hover:bg-opacity-10"
           onClick={() => {
             history.push(`/history/filter-scam?net=${selectedTab}`);
           }}
