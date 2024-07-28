@@ -3767,7 +3767,9 @@ export class WalletController extends BaseController {
         };
       }
       try {
-        const config = await fetch('https://static.debank.com/lux/config.json');
+        const config = await fetch(
+          'https://static.debank.com/rabby/config.json'
+        );
         const { data } = (await config.json()) as IConfig;
         return data.level;
       } catch (e) {
