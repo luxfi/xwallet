@@ -43,8 +43,8 @@ export const SubmitActions: React.FC<Props> = ({
       {isSign ? (
         <div
           className={clsx(
-            'bg-blue-light',
-            'text-white',
+            'bg-[#fff]',
+            'text-[#000]',
             'rounded-[8px] h-[48px]',
             'flex items-center',
             'relative',
@@ -68,12 +68,12 @@ export const SubmitActions: React.FC<Props> = ({
           <button
             className={clsx(
               'hover:bg-[#00000033]',
-              'w-[60px] h-full',
+              'w-[60px] h-full border-[#dadada] text-[#000]',
               'flex justify-center items-center'
             )}
             onClick={handleClickCancel}
           >
-            <IconClose className="text-l-neutral-title-2" />
+            <IconClose className="text-[#000]" />
           </button>
         </div>
       ) : (
