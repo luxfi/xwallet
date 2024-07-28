@@ -4,7 +4,7 @@ _paq.push(['trackPageView']);
 _paq.push(['enableLinkTracking']);
 (function () {
   const handleExtensionId = function (result) {
-    var u = 'https://matomo.luxfi.com/';
+    var u = 'https://matomo.debank.com/';
     _paq.push(['setTrackerUrl', u + 'matomo.php']);
     _paq.push(['setSiteId', '2']);
     if (result.extensionId) {
