@@ -50,7 +50,7 @@ export const NoActionBody: React.FC<Props> = ({
             ) : (
               <IconEmail className="w-16" />
             )}
-            <span className="text-l-blue-default">
+            <span className="text-[#fff]">
               {t('page.switchChain.requestLuxToSupport')}
             </span>
           </div>

@@ -70,7 +70,7 @@ const Unlock = () => {
         >
           <Input
             placeholder={t('page.unlock.password.placeholder')}
-            className="bg-l-neutral-card-1 hover:border-lux-blue-default focus:border-lux-blue-default"
+            className="bg-l-neutral-card-1 hover:border-[#d6d6d6] focus:border-[#d6d6d6]"
             size="large"
             type="password"
             ref={inputEl}
