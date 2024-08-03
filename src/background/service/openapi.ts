@@ -37,7 +37,7 @@ const service = new OpenApiService({
         host: INITIAL_OPENAPI_URL,
         testnetHost: INITIAL_TESTNET_OPENAPI_URL,
       }
-    : createPersistStore({
+    : await createPersistStore({
         name: 'openapi',
         template: {
           host: INITIAL_OPENAPI_URL,
