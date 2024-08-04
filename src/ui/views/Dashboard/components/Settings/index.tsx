@@ -1152,7 +1152,7 @@ const SettingsInner = ({
               {'Lock Wallet'}
             </Button> */}
         <ClaimLuxBadge onClick={onOpenBadgeModal} />
-        <RequestLuxFiTestnetGasToken />
+        {/* <RequestLuxFiTestnetGasToken /> */}
         {Object.values(renderData).map((group, idxl1) => {
           return (
             <div key={`g-${idxl1}`} className="setting-block">
