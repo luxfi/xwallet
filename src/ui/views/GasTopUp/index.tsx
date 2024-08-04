@@ -455,7 +455,7 @@ const GasBox = ({
     >
       <div
         key={item[1]}
-        className={clsx(
+        className={`${clsx(
           'w-[104px] h-[56px] cursor-pointer rounded border text-center flex flex-col items-center justify-center',
 
           gasCostExceedsBudget || chainInsufficientBalance
@@ -463,7 +463,7 @@ const GasBox = ({
             : index === selectedIndex
             ? 'bg-l-blue-light-1 border-lux-blue-default'
             : 'bg-l-neutral-card-2 border-transparent hover:border-lux-blue-default'
-        )}
+        )} hover:border-[1px] hover:border-[white]`}
         onClick={() => {
           if (!(gasCostExceedsBudget || chainInsufficientBalance)) {
             onSelect(index);
@@ -475,7 +475,7 @@ const GasBox = ({
             'text-15 text-l-neutral-title-1 font-medium ',
             !(gasCostExceedsBudget || chainInsufficientBalance) &&
               index === selectedIndex &&
-              'text-blue-light'
+              'text-white'
           )}
         >
           ${item[0]}
@@ -494,7 +494,7 @@ const GasBox = ({
               'text-12 text-l-neutral-body mt-2',
               !(gasCostExceedsBudget || chainInsufficientBalance) &&
                 index === selectedIndex &&
-                'text-blue-light'
+                'text-white'
             )}
           >
             ≈ {item[1]} {getTokenSymbol(gasToken)}

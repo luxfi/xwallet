@@ -24,7 +24,16 @@ import {
   SelectChainList,
   SelectChainListProps,
 } from './components/SelectChainList';
-
+import styled from 'styled-components';
+const StyledInput = styled(Input)`
+  &:focus {
+    border-color: red;
+  }
+  ,
+  &:hover {
+    border-color: red;
+  }
+`;
 interface ChainSelectorModalProps {
   visible: boolean;
   value?: CHAINS_ENUM;
@@ -212,6 +221,7 @@ const ChainSelectorModal = ({
           unmatteredList.length === 0 &&
           !search ? null : (
             <Input
+              className="hover:border-[#d3d3d3]"
               prefix={<img src={IconSearch} />}
               // Search chain
               placeholder={t('component.ChainSelectorModal.searchPlaceholder')}

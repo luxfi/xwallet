@@ -218,6 +218,7 @@ const AccountSearchInput = React.forwardRef<any, AccountSearchInputProps>(
             autoComplete="off"
             autoFocus
             autoSize
+            className="focus:border-[#ccccccb0] hover:border-[#ccccccb0]"
             spellCheck={false}
             {...inputProps}
             ref={ref}
