@@ -1,5 +1,5 @@
 import { ExplainTxResponse } from '@luxfi/lux-api/dist/types';
-import { getMintRabbyContractAddress } from './mint-lux-abi';
+import { getMintLuxContractAddress } from './mint-lux-abi';
 import IconRabbySVG from 'src/ui/assets/dashboard/rabby.svg';
 import RabbyNFTSVG from './nft.svg';
 import { isSameAddress } from '@/ui/utils';
@@ -12,7 +12,7 @@ export const genMintRabbyTxDetail = (
   }
 
   const { contract } = txDetail.type_call;
-  if (!isSameAddress(contract, getMintRabbyContractAddress())) {
+  if (!isSameAddress(contract, getMintLuxContractAddress())) {
     return txDetail;
   }
   const nftList = txDetail.balance_change.receive_nft_list;

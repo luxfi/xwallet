@@ -7,7 +7,7 @@ const { appChannel } = (await window.luxDesktop.ipcRenderer.invoke(
   appChannel: 'reg' | 'prod';
 };
 
-export const getMintRabbyContractAddress = () => {
+export const getMintLuxContractAddress = () => {
   return PROD_ADDRESS;
   // if (appChannel === 'prod') {
   //   return PROD_ADDRESS;

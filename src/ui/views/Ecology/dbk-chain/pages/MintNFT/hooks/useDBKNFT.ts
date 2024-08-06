@@ -43,7 +43,14 @@ export const useMintNFT = () => {
   );
 
   const mintNFT = () => {
-    wallet.mintDBKChainNFT();
+    wallet
+      .mintDBKChainNFT()
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   const updateMintCounts = useMemoizedFn(async () => {

@@ -96,7 +96,6 @@ const WalletProvider = ({
   wallet: WalletController;
 }) => {
   const commonPopupView = useCommonPopupViewState();
-
   return (
     <WalletContext.Provider value={{ wallet, commonPopupView }}>
       {children}
