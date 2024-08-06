@@ -285,6 +285,9 @@ const Main = () => {
         <PrivateRoute exact path="/lux-points">
           <LuxPoints />
         </PrivateRoute>
+        <PrivateRoute path="/ecology/:chainId">
+          <Ecology />
+        </PrivateRoute>
       </Switch>
 
       <CommonPopup />

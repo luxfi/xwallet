@@ -6,7 +6,6 @@ import { DbkChainEntry } from './dbk-chain/Entry';
 
 export const Ecology = () => {
   const { t } = useTranslation();
-
   const { chainId } = useParams<{ chainId: string }>();
   return (
     <>

@@ -128,11 +128,11 @@ export const DbkChainBridge = () => {
   });
 
   return (
-    <Warper className="bg-[#f2f4f7]">
+    <Warper className="bg-[black]">
       <div className="p-[20px]">
-        <div className="rounded-[8px] bg-r-neutral-card1 px-[16px] pt-[20px] pb-[16px]">
+        <div className="rounded-[8px] bg-[#ffffff24] px-[16px] pt-[20px] pb-[16px]">
           <div className="flex justify-center mb-[16px] relative">
-            <div className="inline-flex items-center bg-r-neutral-card2 rounded-full p-[2px]">
+            <div className="inline-flex items-center bg-[black] rounded-full p-[5px]">
               {tabs.map((item) => {
                 const isActive = item.key === activeTab;
                 return (
@@ -144,10 +144,10 @@ export const DbkChainBridge = () => {
                     className={clsx(
                       'rounded-full min-h-[28px] min-w-[108px] cursor-pointer',
                       'p-[6px] text-center',
-                      'text-[13px] leading-[16px]  font-bold',
+                      'text-[13px] leading-[16px]  font-bold ',
                       isActive
-                        ? 'bg-r-orange-DBK text-r-neutral-title2'
-                        : 'text-r-neutral-body'
+                        ? 'bg-white text-[black] shadow-lg'
+                        : 'text-[white]'
                     )}
                   >
                     {item.label}
@@ -156,13 +156,13 @@ export const DbkChainBridge = () => {
               })}
             </div>
             <div
-              className="absolute right-0 top-[50%] translate-y-[-50%] cursor-pointer text-r-neutral-title-1"
+              className="absolute right-0 top-[50%] translate-y-[-50%] cursor-pointer text-white"
               onClick={() => {
                 setIsShowActivityPopup(true);
               }}
             >
               {statusRes?.pendingCount ? (
-                <div className="text-r-orange-DBK relative cursor-pointer">
+                <div className="text-white relative cursor-pointer">
                   <Loading3QuartersOutlined className="text-[18px] animate-spin block" />
                   <div className="text-[13px] leading-[13px] absolute left-0 right-0 top-0 bottom-0 flex items-center justify-center">
                     {statusRes.pendingCount}
@@ -173,7 +173,7 @@ export const DbkChainBridge = () => {
               )}
             </div>
           </div>
-          <div className="rounded-[8px] border-[0.5px] border-rabby-neutral-line p-[12px] flex items-center justify-between mb-[16px]">
+          <div className="rounded-[8px] border-[0.5px] border-[#545454] p-[12px] flex items-center justify-between mb-[16px]">
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-[8px]">
                 <img
@@ -182,16 +182,16 @@ export const DbkChainBridge = () => {
                   className="w-[28px] h-[28px]"
                 />
                 <div className="min-w-0">
-                  <div className="text-[12px] leading-[14px] font-medium text-r-neutral-foot mb-[2px]">
+                  <div className="text-[12px] leading-[14px] font-medium text-white mb-[2px]">
                     {t('page.ecology.dbk.bridge.labelFrom')}
                   </div>
-                  <div className="text-[15px] leading-[18px] font-bold truncate text-r-neutral-title-1">
+                  <div className="text-[15px] leading-[18px] font-bold truncate text-white">
                     {fromChain?.name}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="text-r-neutral-foot flex-shrink-0">
+            <div className="text-white flex-shrink-0">
               <RcIconArrow />
             </div>
             <div className="flex-1 min-w-0">
@@ -202,10 +202,10 @@ export const DbkChainBridge = () => {
                   className="w-[28px] h-[28px]"
                 />
                 <div className="min-w-0">
-                  <div className="text-[12px] leading-[14px] font-medium text-r-neutral-foot mb-[2px]">
+                  <div className="text-[12px] leading-[14px] font-medium text-white mb-[2px]">
                     {t('page.ecology.dbk.bridge.labelTo')}
                   </div>
-                  <div className="text-[15px] leading-[18px] font-bold truncate text-r-neutral-title-1">
+                  <div className="text-[15px] leading-[18px] font-bold truncate text-white">
                     {targetChain?.name}
                   </div>
                 </div>
@@ -215,9 +215,7 @@ export const DbkChainBridge = () => {
           <div
             className={clsx(
               'rounded-[8px] bg-r-neutral-card-2 p-[12px] mb-[16px]',
-              'border-[1px] border-transparent',
-              'hover:border-rabby-orange-DBK',
-              'focus-within:border-rabby-orange-DBK'
+              'border-[1px] border-[#545454]'
             )}
           >
             <div className="flex items-center justify-between mb-[4px] gap-[6px]">
@@ -231,7 +229,7 @@ export const DbkChainBridge = () => {
                   }
                   setPayAmount(v);
                 }}
-                className="min-w-0 flex-1"
+                className="min-w-0 flex-1 text-white"
                 autoFocus
                 placeholder="0"
               ></Input>
@@ -242,14 +240,14 @@ export const DbkChainBridge = () => {
                     alt=""
                     className="w-[18px] h-[18px]"
                   />
-                  <div className="text-r-neutral-title1 text-[15px] leading-[18px] font-bold">
+                  <div className="text-white text-[15px] leading-[18px] font-bold">
                     {payToken ? getTokenSymbol(payToken) : ''}
                   </div>
                 </div>
               ) : null}
             </div>
             <div className="flex items-center justify-between">
-              <div className="text-r-neutral-foot text-[13px] leading-[16px] font-medium min-w-0 truncate">
+              <div className="text-[#fff] opacity-80 text-[13px] leading-[16px] font-medium min-w-0 truncate">
                 {payAmount
                   ? `${formatUsdValue(
                       new BigNumber(payAmount)
@@ -259,7 +257,7 @@ export const DbkChainBridge = () => {
                   : ''}
               </div>
               <div
-                className="text-r-neutral-foot text-[13px] leading-[16px] font-medium underline cursor-pointer min-w-0 truncate"
+                className="text-[#fff] opacity-80 text-[13px] leading-[16px] font-medium underline cursor-pointer min-w-0 truncate"
                 onClick={() => {
                   setPayAmount(
                     new BigNumber(payToken?.raw_amount_hex_str || 0)
@@ -276,15 +274,15 @@ export const DbkChainBridge = () => {
               </div>
             </div>
           </div>
-          <div className="rounded-[8px] border-[0.5px] border-rabby-neutral-line p-[12px]">
+          <div className="rounded-[8px] border-[0.5px] border-[#545454] p-[12px]">
             <div className="flex flex-col gap-[12px]">
               <div className="flex items-center gap-[12px]">
-                <div className="text-[13px] text-r-neutral-body leading-[16px] flex-shrink-0">
+                <div className="text-[13px] text-white leading-[16px] flex-shrink-0">
                   {t('page.ecology.dbk.bridge.info.toAddress')}
                 </div>
                 <div className="ml-auto min-w-0">
                   <NameAndAddress
-                    nameClass="text-[13px] leading-[16px] font-semibold text-r-neutral-title-1"
+                    nameClass="text-[13px] leading-[16px] font-semibold text-white"
                     addressClass="text-[13px] leading-[16px]"
                     address={extraInfo.toAddress || ''}
                     copyIcon={false}
@@ -292,34 +290,34 @@ export const DbkChainBridge = () => {
                 </div>
               </div>
               <div className="flex items-center gap-[12px]">
-                <div className="text-[13px] text-r-neutral-body leading-[16px] flex-shrink-0">
+                <div className="text-[13px] text-white leading-[16px] flex-shrink-0">
                   {t('page.ecology.dbk.bridge.info.receiveOn', {
                     chainName: targetChain?.name,
                   })}
                 </div>
                 <div className="ml-auto  min-w-0">
-                  <div className="text-[13px] leading-[16px] text-r-neutral-title-1 font-semibold">
+                  <div className="text-[13px] leading-[16px] text-white font-semibold">
                     {formatAmount(extraInfo.receiveAmount || 0)}{' '}
                     {extraInfo.receiveTokenSymbol}
                   </div>
                 </div>
               </div>
               <div className="flex items-center gap-[12px]">
-                <div className="text-[13px] text-r-neutral-body leading-[16px] flex-shrink-0">
+                <div className="text-[13px] text-white leading-[16px] flex-shrink-0">
                   {t('page.ecology.dbk.bridge.info.completeTime')}
                 </div>
                 <div className="ml-auto  min-w-0">
-                  <div className="text-[13px] leading-[16px] text-r-neutral-title-1 font-semibold truncate">
+                  <div className="text-[13px] leading-[16px] text-white font-semibold truncate">
                     {extraInfo.completeTime}
                   </div>
                 </div>
               </div>
               <div className="flex items-center gap-[12px]">
-                <div className="text-[13px] text-r-neutral-body leading-[16px flex-shrink-0]">
+                <div className="text-[13px] text-white leading-[16px flex-shrink-0]">
                   {t('page.ecology.dbk.bridge.info.gasFee')}
                 </div>
                 <div className="ml-auto min-w-0">
-                  <div className="text-[13px] leading-[16px] text-r-neutral-title-1 font-semibold truncate">
+                  <div className="text-[13px] leading-[16px] text-white font-semibold truncate">
                     {extraInfo.gasFee != null
                       ? formatUsdValue(extraInfo.gasFee)
                       : '--'}
@@ -344,7 +342,7 @@ export const DbkChainBridge = () => {
           </div>
         ) : null}
       </div>
-      <footer className="fixed bottom-0 left-0 right-0 px-[20px] py-[18px] bg-r-neutral-bg-1 border-t-[0.5px] border-rabby-neutral-line">
+      <footer className="fixed bottom-0 left-0 right-0 px-[20px] py-[18px] border-t-[0.5px] border-[#545454]">
         <DbkButton
           className="w-full h-[44px]"
           onClick={handleSubmit}

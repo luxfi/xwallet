@@ -4,18 +4,17 @@ import bridgeImg from '@/ui/assets/ecology/bridge-img.svg';
 import dkbNftImg from '@/ui/assets/ecology/dbk-nft.png';
 import { useHistory, useRouteMatch } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-
 export const DbkChainHome = () => {
   const history = useHistory();
   const { url } = useRouteMatch();
   const { t } = useTranslation();
-
   return (
     <div className="px-[20px] py-[40px] flex flex-col gap-[28px]">
       <div
         className="rounded-[8px] bg-[#ffffff24] p-[24px] relative cursor-pointer"
         style={{ boxShadow: '0px 8px 24px 0px rgba(0, 0, 0, 0.08)' }}
         onClick={() => {
+          console.log(`Navigating to: ${url}/bridge`); // Debugging log
           history.push(`${url}/bridge`);
         }}
       >
@@ -28,7 +27,6 @@ export const DbkChainHome = () => {
         <DbkButton className="w-[100px]">
           {t('page.ecology.dbk.home.bridgeBtn')}
         </DbkButton>
-
         <img
           src={bridgeImg}
           alt=""
@@ -39,6 +37,7 @@ export const DbkChainHome = () => {
         className="rounded-[8px] bg-[#ffffff24] p-[24px] relative cursor-pointer"
         style={{ boxShadow: '0px 8px 24px 0px rgba(0, 0, 0, 0.08)' }}
         onClick={() => {
+          console.log(`Navigating to: ${url}/mintNft`); // Debugging log
           history.push(`${url}/mintNft`);
         }}
       >
@@ -51,7 +50,6 @@ export const DbkChainHome = () => {
         <DbkButton className="w-[100px]">
           {t('page.ecology.dbk.home.mintNFTBtn')}
         </DbkButton>
-
         <img
           src={dkbNftImg}
           alt=""
