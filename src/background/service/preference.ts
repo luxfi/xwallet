@@ -839,6 +839,7 @@ class PreferenceService {
       [key]: value,
     };
   };
+  setIsHideEcologyNoticeDict: any;
 }
 
 export default new PreferenceService();

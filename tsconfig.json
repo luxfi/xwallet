@@ -22,6 +22,7 @@
       "changeLogs": ["./changeLogs"],
       "react": ["./node_modules/@types/react"]
     },
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "types": ["chrome", "node", "react", "react-dom", "jest"],
     "jsx": "react",
     "allowSyntheticDefaultImports": true,

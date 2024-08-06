@@ -81,6 +81,12 @@ export interface DisplayedKeryring {
 }
 
 export class KeyringService extends EventEmitter {
+  tryUnlock() {
+    throw new Error('Method not implemented.');
+  }
+  updatePassword(oldPassword: string, newPassword: string) {
+    throw new Error('Method not implemented.');
+  }
   //
   // PUBLIC METHODS
   //

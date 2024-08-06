@@ -19,3 +19,4 @@ export { default as securityEngineService } from './securityEngine';
 export * from './transactionBroadcastWatcher';
 export { default as LuxPointsService } from './luxPoints';
 export { default as HDKeyRingLastAddAddrTimeService } from './HDKeyRingLastAddAddrTime';
+export { default as bridgeService } from './bridge';

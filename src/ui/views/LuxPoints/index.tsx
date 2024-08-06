@@ -185,7 +185,7 @@ const LuxPoints = () => {
             return;
           }
           setClaimItemLoading((e) => ({ ...e, [campaign_id]: true }));
-          await wallet.openapi.claimluxPointsById({
+          await wallet.openapi.claimLuxPointsById({
             user_id: account?.address,
             campaign_id: campaign_id,
             signature,
@@ -210,14 +210,14 @@ const LuxPoints = () => {
       signature,
       refreshUserPoints,
       account?.address,
-      wallet?.openapi?.claimluxPointsById,
+      wallet?.openapi?.claimLuxPointsById,
     ]
   );
 
   const setReferralCode = React.useCallback(
     async (code: string) => {
       if (account?.address && signature) {
-        await wallet.openapi.setluxPointsInviteCode({
+        await wallet.openapi.setLuxPointsInviteCode({
           id: account?.address,
           signature,
           invite_code: code,

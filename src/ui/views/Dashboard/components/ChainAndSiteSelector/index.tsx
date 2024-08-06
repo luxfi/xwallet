@@ -34,7 +34,9 @@ import IconAddresses, {
 } from 'ui/assets/dashboard/addresses.svg';
 import { ReactComponent as RcIconClaimableLuxPoints } from 'ui/assets/dashboard/claimable-points.svg';
 import { ReactComponent as RcIconUnclaimableLuxPoints } from 'ui/assets/dashboard/unclaimable-points.svg';
-
+import RcIconEco, {
+  ReactComponent as RcIconEcoSystem,
+} from 'ui/assets/dashboard/icon-eco.svg';
 import IconMoreSettings, {
   ReactComponent as RcIconMoreSettings,
 } from 'ui/assets/dashboard/more-settings.svg';
@@ -55,7 +57,7 @@ import { GasPriceBar } from '../GasPriceBar';
 import { ClaimLuxFreeGasBadgeModal } from '../ClaimLuxBadgeModal/freeGasBadgeModal';
 import { useTranslation } from 'react-i18next';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
-
+import { EcologyPopup } from '../EcologyPopup';
 export default ({
   gnosisPendingCount,
   onChange,
@@ -103,7 +105,7 @@ export default ({
   const account = useLuxSelector((state) => state.account.currentAccount);
 
   const [approvalRiskAlert, setApprovalRiskAlert] = useState(0);
-
+  const [isShowEcology, setIsShowEcologyModal] = useState(false);
   const { value: approvalState } = useAsync(async () => {
     if (account?.address) {
       const apiLevel = await wallet.getAPIConfig([], 'ApiLevel', false);
@@ -176,7 +178,10 @@ export default ({
       }
     }
   }, [showDrawer]);
-
+  const changeSetting = () => {
+    setSettingVisible(!settingVisible);
+    setDashboardReload();
+  };
   type IPanelItem = {
     icon: ThemeIconType;
     content: string;
@@ -258,6 +263,14 @@ export default ({
         history.push('/lux-points');
       },
     } as IPanelItem,
+    ecology: {
+      icon: RcIconEco,
+      eventKey: 'Ecology',
+      content: t('page.dashboard.home.panel.ecology'),
+      onClick: () => {
+        setIsShowEcologyModal(true);
+      },
+    } as IPanelItem,
     more: {
       icon: RcIconMoreSettings,
       eventKey: 'More',
@@ -292,9 +305,10 @@ export default ({
       'nft',
       // 'queue',
       'transactions',
-      'gasTopUp',
-      'security',
+      // 'gasTopUp',
       'feedback',
+      'security',
+      'ecology',
       'more',
     ];
   } else {
@@ -304,9 +318,10 @@ export default ({
       'receive',
       'nft',
       'transactions',
-      'gasTopUp',
-      'security',
+      // 'gasTopUp',
       'feedback',
+      'security',
+      'ecology',
       'more',
     ];
   }
@@ -423,6 +438,10 @@ export default ({
         onCancel={() => {
           setBadgeModalVisible(false);
         }}
+      />
+      <EcologyPopup
+        visible={isShowEcology}
+        onClose={() => setIsShowEcologyModal(false)}
       />
     </div>
   );

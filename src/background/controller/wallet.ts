@@ -3800,7 +3800,7 @@ export class WalletController extends BaseController {
       )?.text; //`${account?.address} Claims Lux Points`;
     } else {
       verifyText = (
-        await wallet.openapi.getluxSignatureTextV2({
+        await wallet.openapi.getLuxSignatureTextV2({
           id: account?.address,
         })
       )?.text; //`Lux Wallet wants you to sign in with your address:\n${account?.address}`;
@@ -3819,7 +3819,7 @@ export class WalletController extends BaseController {
     this.setLuxPointsSignature(account.address, signature);
     if (claimSnapshot) {
       try {
-        await wallet.openapi.claimluxPointsSnapshotV2({
+        await wallet.openapi.claimLuxPointsSnapshotV2({
           id: account?.address,
           invite_code: code,
           signature,

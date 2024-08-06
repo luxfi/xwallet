@@ -20,7 +20,7 @@ export const useLuxPoints = () => {
     loading: campaignIsEndedLoading,
   } = useAsync(async () => {
     if (account?.address) {
-      const data = await wallet.openapi.getluxPointsCampaignIsEndedV2();
+      const data = await wallet.openapi.getLuxPointsCampaignIsEndedV2();
       return data?.campaign_is_ended;
     }
     return;
@@ -36,7 +36,7 @@ export const useLuxPoints = () => {
 
   const { value: snapshot, loading: snapshotLoading } = useAsync(async () => {
     if (account?.address) {
-      const data = await wallet.openapi.getluxPointsSnapshotV2({
+      const data = await wallet.openapi.getLuxPointsSnapshotV2({
         id: account?.address,
       });
       return data;
@@ -49,7 +49,7 @@ export const useLuxPoints = () => {
     loading: userLoading,
   } = useAsync(async () => {
     if (account?.address) {
-      const data = await wallet.openapi.getluxPointsV2({
+      const data = await wallet.openapi.getLuxPointsV2({
         id: account?.address,
       });
       return data;
@@ -59,7 +59,7 @@ export const useLuxPoints = () => {
 
   const { value: topUsers, loading: topUsersLoading } = useAsync(async () => {
     if (account?.address) {
-      const data = await wallet.openapi.getluxPointsTopUsersV2({
+      const data = await wallet.openapi.getLuxPointsTopUsersV2({
         id: account?.address,
       });
       return data;
@@ -72,7 +72,7 @@ export const useLuxPoints = () => {
     loading: activitiesLoading,
   } = useAsync(async () => {
     if (account?.address) {
-      const data = await wallet.openapi.getluxPointsListV2({
+      const data = await wallet.openapi.getLuxPointsListV2({
         id: account?.address,
       });
       return data;
@@ -105,7 +105,7 @@ export const useLuxPointsInvitedCodeCheck = (invitedCode?: string) => {
 
   const { value: codeStatus, loading: codeLoading } = useAsync(async () => {
     if (invitedCode && account?.address) {
-      const data = await wallet.openapi.checkluxPointsInviteCodeV2({
+      const data = await wallet.openapi.checkLuxPointsInviteCodeV2({
         code: invitedCode,
       });
       return data;

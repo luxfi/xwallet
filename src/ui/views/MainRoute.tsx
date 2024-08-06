@@ -60,6 +60,7 @@ import CreateMnemonics from './CreateMnemonics';
 import ImportHardware from './ImportHardware';
 import { CustomTestnet } from './CustomTestnet';
 import { AddFromCurrentSeedPhrase } from './AddFromCurrentSeedPhrase';
+import { Ecology } from './Ecology';
 
 declare global {
   interface Window {
@@ -230,6 +231,9 @@ const Main = () => {
         </PrivateRoute>
         <PrivateRoute exact path="/send-token">
           <SendToken />
+        </PrivateRoute>
+        <PrivateRoute exact path="/ecology/:chainId">
+          <Ecology />
         </PrivateRoute>
         <PrivateRoute exact path="/send-nft">
           <SendNFT />
