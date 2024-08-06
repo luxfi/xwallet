@@ -3,6 +3,7 @@ import OldLatticeKeyring from '@luxfi/eth-lattice-keyring';
 import { SignHelper, LedgerHDPathType } from '../helper';
 import { EVENTS } from '@/constant';
 import { isSameAddress } from '@/background/utils';
+import browser from 'webextension-polyfill';
 
 const keyringType = 'GridPlus Hardware';
 import HDPathType = LedgerHDPathType;
@@ -52,21 +53,22 @@ class LatticeKeyring extends OldLatticeKeyring {
         password: string;
         endpoint: string;
       }>((resolve, reject) => {
-        chrome.runtime.sendMessage(
-          {
-            target: OffscreenCommunicationTarget.latticeOffscreen,
-            params: {
-              url,
-            },
+        browser.runtime.sendMessage({
+          target: OffscreenCommunicationTarget.latticeOffscreen,
+          params: {
+            url,
           },
-          (response) => {
-            if (response.error) {
-              reject(response.error);
-            }
-
+        }).then((response) => {
+          if (response.error) {
+            reject(response.error);
+          } else if (response.result) {
             resolve(response.result);
+          } else {
+            reject(new Error('Invalid response format'));
           }
-        );
+        }).catch((error) => {
+          reject(error);
+        });
       });
 
       return creds;
