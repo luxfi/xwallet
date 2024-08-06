@@ -1,6 +1,6 @@
 import {
   getMintLuxContractAddress,
-  MintRabbyAbi,
+  MintLuxAbi,
 } from '@/constant/mint-lux/mint-lux-abi';
 import { CHAINS } from '@debank/common';
 import { ethers, Contract } from 'ethers';
@@ -20,7 +20,7 @@ export const initMintLuxContract = async () => {
     buildinProvider.currentProvider
   );
   const signer = provider.getSigner();
-  const contract = new Contract(contractAddress, MintRabbyAbi, signer);
+  const contract = new Contract(contractAddress, MintLuxAbi, signer);
 
   return contract;
 };

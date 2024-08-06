@@ -151,16 +151,21 @@ const bootstrap = () => {
     main();
     return;
   }
-  browser.runtime.sendMessage({ type: 'getBackgroundReady' }).then((res) => {
-    if (!res.ready) {
-      setTimeout(() => {
-        bootstrap();
-      }, 100);
-      return;
-    }
-
-    main();
-  });
+  console.log('sdsdf');
+  browser.runtime
+    .sendMessage({ type: 'getBackgroundReady' })
+    .then((res) => {
+      if (!res.ready) {
+        setTimeout(() => {
+          bootstrap();
+        }, 100);
+        return;
+      }
+      main();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 };
 
 bootstrap();

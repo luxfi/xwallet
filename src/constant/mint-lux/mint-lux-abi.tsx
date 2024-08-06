@@ -15,7 +15,7 @@ export const getMintLuxContractAddress = () => {
   // return TEST_ADDRESS;
 };
 
-export const MintRabbyAbi = [
+export const MintLuxAbi = [
   {
     inputs: [{ internalType: 'address', name: 'minter', type: 'address' }],
     name: 'mintedPerAddress',
