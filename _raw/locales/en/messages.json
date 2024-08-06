@@ -795,7 +795,7 @@
       "slippage-adjusted-refresh-quote": "Slippage adjusted. Refresh quote.",
       "price-expired-refresh-quote": "Price expired. Refresh quote.",
       "approve-x-symbol": "Approve {{symbol}}",
-      "approve-and-swap": "Approve and Swap",
+      "approve-and-swap": "Approve and Swap via {{name}}",
       "swap-via-x": "Swap via {{name}}",
       "get-quotes": "Get quotes",
       "chain": "Chain",
@@ -805,6 +805,10 @@
       "amount-in": "Amount in {{symbol}}",
       "unlimited-allowance": "Unlimited allowance",
       "insufficient-balance": "Insufficient balance",
+      "hidden-no-quote-rates_one": "{{count}} rate unavailable",
+      "hidden-no-quote-rates_other": "{{count}} rates unavailable",
+
+      "Gas-fee-too-high": "Gas fee too high",
       "lux-fee": "Lux fee",
       "preferMEV": "Prefer MEV Guarded",
       "preferMEVTip": "Enable \"MEV Guarded\" feature for Ethereum swaps to reduce sandwich attack risks. Note: this feature is not supported if you use a custom RPC or wallet connect address",
@@ -852,8 +856,65 @@
       "tradingSettingTip2": "2. Lux is not liable for any risks arising from the contract of the exchanges",
       "gas-fee": "GasFee: {{gasUsed}}",
       "estimate": "Estimate:",
-      "actual": "Actual:"
+      "actual": "Actual:",
+      "max": "MAX"
     },
+    "bridge": {
+      "title": "Bridge",
+      "history": "Bridge history",
+      "the-following-bridge-route-are-found": "Found following bridge route",
+      "no-transaction-records": "No transaction records",
+      "pendingTip": "Tx submitted. If the tx is pending for long hours, you can try to clear pending in settings.",
+      "Pending": "Pending",
+      "completedTip": "Transaction on chain, decoding data to generate record",
+      "Completed": "Completed",
+      "estimate": "Estimate:",
+      "actual": "Actual:",
+      "gas-fee": "GasFee: {{gasUsed}}",
+      "gas-x-price": "Gas price: {{price}} Gwei.",
+      "detail-tx": "Detail",
+      "unlimited-allowance": "Unlimited allowance",
+      "insufficient-balance": "Insufficient balance",
+      "bridgeTo": "Bridge To",
+      "BridgeTokenPair": "Bridge Token Pair",
+      "tokenPairPlaceholder": "Select Token Pair",
+      "Amount": "Amount",
+      "getRoutes": "Get routes",
+      "slippage-adjusted-refresh-quote": "Slippage adjusted. Refresh route.",
+      "price-expired-refresh-route": "Price expired. Refresh route.",
+      "approve-x-symbol": "Approve {{symbol}}",
+      "approve-and-bridge": "Approve and Bridge on {{name}}",
+      "need-to-approve-token-before-bridge": "Need to approve token before bridge",
+      "via-bridge": "via {{bridge}}",
+      "duration": "{{duration}} min",
+      "estimated-value": "≈ {{value}}",
+      "best": "Best",
+      "bridge-cost": "Bridge cost",
+      "lux-fee": "Lux fee",
+      "bridge-via-x": "Bridge on {{name}}",
+      "no-route-found": "No route found",
+      "aggregator-not-enabled": "This aggregator is not enabled to trade by you.",
+      "enable-it": "Enable it",
+
+      "settingModal": {
+        "title": "Enable Bridge Aggregators to trade",
+        "confirm": "Confirm",
+        "SupportedBridge": "Supported Bridge:",
+        "confirmModal": {
+          "title": "Enable Trading with this Aggregator",
+          "tip1": "1. Once enabled, you will interact directly with the contract from this aggregator.",
+          "tip2": "2. Lux is not liable for any risks arising from the contract of this aggregator",
+          "i-understand-and-accept-it": "I understand and accept it"
+        }
+      },
+      "tokenPairDrawer": {
+        "title": "Select from supported token pair",
+        "tokenPair": "Token Pair",
+        "balance": "Balance Value",
+        "noData": "No Supported Token Pair"
+      }
+    },
+
     "manageAddress": {
       "no-address": "No address",
       "no-match": "No match",
@@ -912,7 +973,9 @@
           "luxPoints": "Lux Points",
           "more": "More",
           "manageAddress": "Manage Address",
-          "nft": "NFT"
+          "nft": "NFT",
+          "ecology": "Ecosystem",
+          "bridge": "Bridge"
         },
         "comingSoon": "Coming soon",
         "soon": "Soon",
@@ -964,11 +1027,11 @@
       "feedback": {
         "directMessage": {
           "content": "Direct Message",
-          "description": "Chat with Lux Wallet Official on LuxFi"
+          "description": "Chat with Lux Wallet Official on DeBank"
         },
         "proposal": {
           "content": "Proposal",
-          "description": "Submit a proposal for Lux Wallet on LuxFi"
+          "description": "Submit a proposal for Lux Wallet on DeBank"
         },
         "title": "Feedback"
       },
@@ -993,7 +1056,7 @@
         }
       },
       "luxBadge": {
-        "imageLabel": "Lux badge",
+        "imageLabel": "lux badge",
         "title": "Claim Lux Badge for",
         "freeGasTitle": "Claim Free Gas Badge for",
         "enterClaimCode": "Enter claim code",
@@ -1002,14 +1065,14 @@
         "learnMore": "Learn More",
         "goToSwap": "Go to Swap",
         "claim": "Claim",
-        "viewYourClaimCode": "View your claim code on LuxFi",
+        "viewYourClaimCode": "View your claim code on DeBank",
         "noCode": "You haven’t activated claim code for this address",
-        "freeGasNoCode": "Please click the button below to visit LuxFi and get the claim code using your current address first.",
-        "learnMoreOnLuxfi": "Learn more on LuxFi",
+        "freeGasNoCode": "Please click the button below to visit DeBank and get the claim code using your current address first.",
+        "learnMoreOnDebank": "Learn more on DeBank",
         "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "luxFreeGasUserNo": "Lux Free Gas User No.{{num}}",
         "claimSuccess": "Claim Success",
-        "viewOnLuxfi": "View on LuxFi"
+        "viewOnDebank": "View on DeBank"
       },
       "contacts": {
         "noDataLabel": "no data",
@@ -1043,7 +1106,7 @@
         "clearPendingTip1": "This will clear all your pending transactions. This can help you solve the problem that in some cases the state of the transaction in Lux does not match the state on-chain.",
         "clearPendingTip2": "This will not change the balances in your accounts or require you to re-enter your seed phrase. All your assets and accounts information will remain secure.",
         "autoLockTime": "Auto lock time",
-        "ClaimLuxBadge": "Claim Lux Badge!",
+        "claimLuxBadge": "Claim Lux Badge!",
         "claimFreeGasBadge": "Claim Lux Free Gas Badge!",
         "cancel": "Cancel",
         "enableWhitelist": "Enable Whitelist",
@@ -1064,7 +1127,8 @@
           "signatureRecord": "Signature Record",
           "manageAddress": "Manage Address",
           "connectedDapp": "Connected Dapps",
-          "searchDapps": "Search Dapps"
+          "searchDapps": "Search Dapps",
+          "gasTopUp": "Gas Top Up"
         },
         "settings": {
           "label": "Settings",
@@ -1084,7 +1148,7 @@
         "followUs": "Follow Us",
         "testnetBackendServiceUrl": "Testnet Backend Service URL",
         "clearWatchMode": "Clear Watch Mode",
-        "requestLuxFiTestnetGasToken": "Request LuxFi Testnet Gas Token"
+        "requestDeBankTestnetGasToken": "Request DeBank Testnet Gas Token"
       },
       "tokenDetail": {
         "blockedTip": "Blocked token will not be shown in token list",
@@ -1099,8 +1163,10 @@
         "send": "Send",
         "receive": "Receive",
         "noTransactions": "No Transactions",
-        "customizedButton": "customized",
-        "blockedButton": "blocked"
+        "customizedButton": "custom token",
+        "customizedButtons": "custom tokens",
+        "blockedButton": "blocked token",
+        "blockedButtons": "blocked tokens"
       },
       "assets": {
         "usdValue": "USD VALUE",
@@ -1139,7 +1205,9 @@
           "summaryDescription": "All assets in protocols (e.g. LP tokens) are resolved to the underlying assets for statistical calculations",
           "noMatch": "No Match",
           "lowValueDescription": "Low value assets will be shown here",
-          "lowValueAssets": "{{count}} low value assets"
+          "lowValueAssets_0": "{{count}} low value token",
+          "lowValueAssets_one": "{{count}} low value token",
+          "lowValueAssets_other": "{{count}} low value tokens"
         },
         "noAssets": "No assets",
         "blockLinkText": "Search address to block token",
@@ -1200,6 +1268,9 @@
       },
       "GnosisWrongChainAlertBar": {
         "warning": "Safe address does not support {{chain}}"
+      },
+      "echologyPopup": {
+        "title": "Ecosystem"
       }
     },
     "nft": {
@@ -1545,7 +1616,8 @@
       "title": "Add custom token to Lux",
       "balance": "Balance",
       "tokenOnMultiChains": "Token address on multiple chains. Please choose one",
-      "noTokenFoundOnThisChain": "No token found on this chain"
+      "noTokenFoundOnThisChain": "No token found on this chain",
+      "hasAdded": "You have been added this token."
     },
     "switchChain": {
       "title": "Add Custom Network to Lux",
@@ -1675,8 +1747,8 @@
         "quickAdd": "Quick add from Chainlist"
       }
     },
-    "requestLuxfiTestnetGasToken": {
-      "title": "Request LuxFi Testnet Gas Token",
+    "requestDebankTestnetGasToken": {
+      "title": "Request DeBank Testnet Gas Token",
       "mintedTip": "Lux Badge holders can request once a day",
       "notMintedTip": "Request available for Lux Badge holders only",
       "claimBadgeBtn": "Claim Lux Badge",
@@ -1748,7 +1820,7 @@
     },
     "welcome": {
       "step1": {
-        "title": "Welcome to Lux",
+        "title": "Access All Dapps",
         "desc": "Lux connects to all Dapps that MetaMask supports"
       },
       "step2": {
@@ -1957,6 +2029,71 @@
     },
     "sign": {
       "transactionSpeed": "Transaction Speed"
+    },
+    "ecology": {
+      "dbk": {
+        "home": {
+          "bridge": "Bridge To DBK Chain",
+          "bridgePoweredBy": "Powered by OP Superchain",
+          "bridgeBtn": "Bridge",
+          "mintNFT": "Mint DBK Genesis NFT",
+          "mintNFTDesc": "Be a witness of DBK Chain",
+          "mintNFTBtn": "Mint"
+        },
+        "bridge": {
+          "tabs": {
+            "deposit": "Deposit",
+            "withdraw": "Withdraw"
+          },
+          "labelFrom": "From",
+          "labelTo": "To",
+          "info": {
+            "toAddress": "To address",
+            "receiveOn": "Receive on {{chainName}}",
+            "completeTime": "Completion time",
+            "gasFee": "Gas fee"
+          },
+          "error": {
+            "notEnoughBalance": "Insufficient balance"
+          },
+          "ActivityPopup": {
+            "empty": "No activities yet",
+            "deposit": "Deposit",
+            "withdraw": "Withdraw",
+            "status": {
+              "deposit": "Deposit",
+              "withdraw": "Withdraw",
+              "waitingToProve": "State root published",
+              "rootPublished": "State root published",
+              "readyToProve": "Ready to prove",
+              "proved": "Proved",
+              "challengePeriod": "Challenge period",
+              "readyToClaim": "Ready to claim",
+              "claimed": "Claimed"
+            },
+            "proveBtn": "Prove",
+            "claimBtn": "Claim",
+            "title": "Activities"
+          },
+          "WithdrawConfirmPopup": {
+            "question1": "I understand it will take ~7 days until my funds are claimable on Ethereum after I prove my withdrawal",
+            "question2": "I understand once a withdrawal is initiated it cannot be sped up or cancelled",
+            "question3": "I understand network fees are approximate and will change",
+            "title": "DBK Chain Withdrawal takes ~7 days",
+            "tips": "Withdrawing involves a 3-step process, requiring 1 DBK Chain transaction and 2 Ethereum transactions",
+            "step1": "Initiate withdrawal",
+            "step2": "Prove on Ethereum",
+            "step3": "Claim on Ethereum",
+            "btn": "Withdraw"
+          }
+        },
+        "minNFT": {
+          "title": "DBK Genesis",
+          "minted": "Minted",
+          "myBalance": " My Balance",
+          "mintBtn": "Mint"
+        }
+      }
     }
   },
   "component": {
@@ -2089,6 +2226,14 @@
     },
     "testnetCheckModal": {
       "title": "Please turn on \"Enable Testnets\" under \"More\" before sign on testnets"
+    },
+    "EcologyNavBar": {
+      "providedBy": "Provided by {{chainName}}"
+    },
+    "EcologyNoticeModal": {
+      "title": "Notice",
+      "desc": "The following services will be provided directly by third party Ecosystem Partner. Lux Wallet does not assume responsibility for the security of these services.",
+      "notRemind": "Don't remind me again"
     }
   },
   "global": {

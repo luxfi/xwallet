@@ -39,8 +39,8 @@ export const EcologyPopup = ({ visible, onClose }: Props) => {
             className={clsx(
               'flex items-center gap-[12px] p-[15px]',
               'rounded-[6px] bg-r-neutral-card-2 cursor-pointer',
-              'border-[1px] border-transparent',
-              'hover:border-rabby-blue-default hover:bg-r-blue-light1'
+              'hover:border-[#ffffff] hover:bg-[#d8cece1e]',
+              'border-[1px] border-[#ffffff5d]'
             )}
             onClick={() => {
               history.push(`/ecology/${item.id}`);
@@ -51,7 +51,7 @@ export const EcologyPopup = ({ visible, onClose }: Props) => {
               alt=""
               className="w-[24px] h-[24px] flex-shrink-0"
             />
-            <div className="text-r-neutral-title-1 text-[15px] font-medium flex-1">
+            <div className="text-r-neutral-title-1 text-[15px] font-medium flex-1 text-white">
               {item?.name}
             </div>
             <ThemeIcon src={RcIconArrowRight} className="ml-auto" />

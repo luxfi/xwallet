@@ -128,7 +128,7 @@ export const DbkChainBridge = () => {
   });
 
   return (
-    <Warper className="bg-r-neutral-bg2">
+    <Warper className="bg-[#f2f4f7]">
       <div className="p-[20px]">
         <div className="rounded-[8px] bg-r-neutral-card1 px-[16px] pt-[20px] pb-[16px]">
           <div className="flex justify-center mb-[16px] relative">

@@ -751,11 +751,11 @@
       "feedback": {
         "directMessage": {
           "content": "ダイレクトメッセージ",
-          "description": "LuxFiのLux Wallet公式とチャット"
+          "description": "DeBankのLux Wallet公式とチャット"
         },
         "proposal": {
           "content": "提案",
-          "description": "Lux Walletに関する提案をLuxFiに提出"
+          "description": "Lux Walletに関する提案をDeBankに提出"
         },
         "title": "フィードバック"
       },
@@ -788,10 +788,10 @@
         "claim": "クレーム",
         "viewYourClaimCode": "クレームコードを表示",
         "noCode": "このアドレスでクレームコードを有効にしていません",
-        "learnMoreOnLuxfi": "LuxFiで詳細を確認",
+        "learnMoreOnDebank": "DeBankで詳細を確認",
         "luxValuedUserNo": "Lux 評価ユーザー番号{{num}}",
         "claimSuccess": "クレーム成功",
-        "viewOnLuxfi": "LuxFiで表示"
+        "viewOnDebank": "DeBankで表示"
       },
       "contacts": {
         "noDataLabel": "データなし",
@@ -825,7 +825,7 @@
         "clearPendingTip1": "これにより、すべての保留中のトランザクションがクリアされます。これにより、Luxのトランザクションの状態がブロックチェーン上の状態と一致しない場合の問題を解決できます。",
         "clearPendingTip2": "これにより、アカウントの残高は変更されず、シードフレーズを再入力する必要はありません。すべての資産とアカウント情報は安全に保たれます。",
         "autoLockTime": "自動ロック時間",
-        "ClaimLuxBadge": "Lux バッジをクレーム！",
+        "claimLuxBadge": "Lux バッジをクレーム！",
         "cancel": "キャンセル",
         "enableWhitelist": "ホワイトリストを有効にする",
         "disableWhitelist": "ホワイトリストを無効にする",
@@ -860,7 +860,7 @@
         "followUs": "フォローする",
         "testnetBackendServiceUrl": "テストネットバックエンドサービスURL",
         "clearWatchMode": "ウォッチモードをクリア",
-        "requestLuxFiTestnetGasToken": "LuxFiテストネットガストークンをリクエスト"
+        "requestDeBankTestnetGasToken": "DeBankテストネットガストークンをリクエスト"
       },
       "tokenDetail": {
         "blockedTip": "ブロックされたトークンはトークンリストに表示されません",
@@ -1358,8 +1358,8 @@
         "rpcUrlPlaceholder": "RPC URLを入力してください"
       }
     },
-    "requestLuxfiTestnetGasToken": {
-      "title": "LuxFiテストネットガストークンのリクエスト",
+    "requestDebankTestnetGasToken": {
+      "title": "DeBankテストネットガストークンのリクエスト",
       "mintedTip": "Luxバッジの所有者は1日に1回リクエストできます",
       "notMintedTip": "リクエストはLuxバッジの所有者のみ利用可能です",
       "claimBadgeBtn": "Luxバッジを請求",

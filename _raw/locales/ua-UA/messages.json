@@ -751,11 +751,11 @@
       "feedback": {
         "directMessage": {
           "content": "Пряме повідомлення",
-          "description": "Поспілкуйтеся з представником Lux Wallet на LuxFi"
+          "description": "Поспілкуйтеся з представником Lux Wallet на DeBank"
         },
         "proposal": {
           "content": "Пропозиція",
-          "description": "Подати пропозицію для Lux Wallet на LuxFi"
+          "description": "Подати пропозицію для Lux Wallet на DeBank"
         },
         "title": "Зворотній зв'язок"
       },
@@ -788,10 +788,10 @@
         "claim": "Вимагати",
         "viewYourClaimCode": "Переглянути код вашої заявки",
         "noCode": "Ви не активували код претензії для цієї адреси",
-        "learnMoreOnLuxfi": "Дізнатися більше на LuxFi",
+        "learnMoreOnDebank": "Дізнатися більше на DeBank",
         "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "claimSuccess": "Успіх заявки",
-        "viewOnLuxfi": "Переглянути у LuxFi"
+        "viewOnDebank": "Переглянути у DeBank"
       },
       "contacts": {
         "noDataLabel": "немає даних",
@@ -825,7 +825,7 @@
         "clearPendingTip1": "Це очистить всі ваші незавешені транзакції. Це може допомогти вам вирішити проблему, що в деяких випадках стан транзакції в Lux не збігається зі станом у мережі.",
         "clearPendingTip2": "Це не змінить залишки на ваших рахунках і не вимагатиме від вас повторного введення ключової фрази. Всі ваші активи та інформація про рахунки залишаться в безпеці.",
         "autoLockTime": "Час автоматичного блокування",
-        "ClaimLuxBadge": "Отримати Lux Badge!",
+        "claimLuxBadge": "Отримати Lux Badge!",
         "cancel": "Скасувати",
         "enableWhitelist": "Увімкнути білий список",
         "disableWhitelist": "Вимкнути білий список",
@@ -860,7 +860,7 @@
         "followUs": "Слідкуйте за нами",
         "testnetBackendServiceUrl": "URL-адреса внутрішньої служби Testnet",
         "clearWatchMode": "Очистити режим спостереження",
-        "requestLuxFiTestnetGasToken": "Запросити тестові токени для LuxFi Testnet"
+        "requestDeBankTestnetGasToken": "Запросити тестові токени для DeBank Testnet"
       },
       "tokenDetail": {
         "blockedTip": "Заблокований токен не буде показано у списку токенів",
@@ -1358,8 +1358,8 @@
         "rpcUrlPlaceholder": "Введіть URL-адресу RPC"
       }
     },
-    "requestLuxfiTestnetGasToken": {
-      "title": "Запросити тестові токени для LuxFi Testnet",
+    "requestDebankTestnetGasToken": {
+      "title": "Запросити тестові токени для DeBank Testnet",
       "mintedTip": "Власники бейджів Lux можуть запитувати один раз на день",
       "notMintedTip": "Запит доступний лише для власників бейджів Lux",
       "claimBadgeBtn": "Отримати бейдж Lux",

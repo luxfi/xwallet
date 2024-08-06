@@ -723,11 +723,11 @@
       "feedback": {
         "directMessage": {
           "content": "Doğrudan Mesaj",
-          "description": "Lux Wallet Official ile LuxFi'ta sohbet edin"
+          "description": "Lux Wallet Official ile DeBank'ta sohbet edin"
         },
         "proposal": {
           "content": "Öneri",
-          "description": "Lux Wallet için LuxFi'ta bir öneri sunun"
+          "description": "Lux Wallet için DeBank'ta bir öneri sunun"
         },
         "title": "Geri Bildirim"
       },
@@ -752,7 +752,7 @@
         }
       },
       "luxBadge": {
-        "imageLabel": "Lux rozeti",
+        "imageLabel": "lux rozeti",
         "title": "İçin Lux Rozeti Talep Et",
         "enterClaimCode": "Talep kodunu girin",
         "swapTip": "Önce Lux Cüzdanı ile tanınmış bir dex'te takas yapmanız gerekiyor.",
@@ -760,10 +760,10 @@
         "claim": "Talep Et",
         "viewYourClaimCode": "Talep kodunuzu görüntüleyin",
         "noCode": "Bu adres için talep kodunu aktive etmediniz",
-        "learnMoreOnLuxfi": "LuxFi'ta daha fazla bilgi edinin",
+        "learnMoreOnDebank": "DeBank'ta daha fazla bilgi edinin",
         "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "claimSuccess": "Talep Başarılı",
-        "viewOnLuxfi": "LuxFi'ta Görüntüle"
+        "viewOnDebank": "DeBank'ta Görüntüle"
       },
       "contacts": {
         "noDataLabel": "veri yok",
@@ -797,7 +797,7 @@
         "clearPendingTip1": "Bu, tüm bekleyen işlemlerinizi temizleyecektir. Lux'deki işlemin durumunun zincir üzerindeki durumuyla eşleşmediği bazı durumlarda bu sorunu çözmenize yardımcı olabilir.",
         "clearPendingTip2": "Bu, hesaplarınızdaki bakiyeleri değiştirmeyecek veya seed phrase dizinizi yeniden girmenizi gerektirmeyecektir. Tüm varlıklarınız ve hesap bilgileriniz güvende kalacaktır.",
         "autoLockTime": "Otomatik kilitlenme süresi",
-        "ClaimLuxBadge": "Lux Rozetini Talep Edin!",
+        "claimLuxBadge": "Lux Rozetini Talep Edin!",
         "cancel": "İptal",
         "enableWhitelist": "Beyaz Listeyi Etkinleştir",
         "disableWhitelist": "Beyaz Listeyi Devre Dışı Bırak",
@@ -832,7 +832,7 @@
         "followUs": "Bizi Takip Edin",
         "testnetBackendServiceUrl": "Testnet Backend Servis URL'si",
         "clearWatchMode": "İzleme Modunu Temizle",
-        "requestLuxFiTestnetGasToken": "LuxFi Testnet Gas Tokeni İste"
+        "requestDeBankTestnetGasToken": "DeBank Testnet Gas Tokeni İste"
       },
       "tokenDetail": {
         "blockedTip": "Engellenen token, token listesinde gösterilmeyecek",
@@ -1328,8 +1328,8 @@
         "rpcUrlPlaceholder": "RPC URL'sini girin"
       }
     },
-    "requestLuxfiTestnetGasToken": {
-      "title": "LuxFi Testnet Gas Tokeni İste",
+    "requestDebankTestnetGasToken": {
+      "title": "DeBank Testnet Gas Tokeni İste",
       "mintedTip": "Lux Rozeti sahipleri günde bir kez istekte bulunabilir",
       "notMintedTip": "Sadece Lux Rozeti sahipleri talep edebilir",
       "claimBadgeBtn": "Lux Rozetini Talep Et",

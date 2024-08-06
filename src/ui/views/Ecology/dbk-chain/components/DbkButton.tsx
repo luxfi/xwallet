@@ -6,7 +6,7 @@ import { Loading3QuartersOutlined } from '@ant-design/icons';
 const Button = styled.button`
   position: relative;
   &:hover {
-    box-shadow: 0px 4px 8px 0px rgba(255, 124, 96, 0.4);
+    box-shadow: 0px 8px 16px rgba(134, 151, 255, 0.3);
   }
   &:disabled {
     opacity: 0.4;
@@ -47,8 +47,8 @@ export const DbkButton = ({
     <Button
       type="button"
       className={clsx(
-        'rounded-full bg-r-orange-DBK',
-        'text-r-neutral-title2 font-semibold',
+        'rounded-[3px] bg-[white]',
+        'text-[black] font-semibold',
         'inline-flex items-center gap-[8px] justify-center',
         size === 'small'
           ? 'text-[13px] leading-[16px] py-[6px] px-[16px]'

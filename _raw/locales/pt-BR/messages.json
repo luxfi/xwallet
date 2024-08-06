@@ -723,11 +723,11 @@
       "feedback": {
         "directMessage": {
           "content": "Mensagem Direta",
-          "description": "Converse com a Equipe Lux Wallet oficial no LuxFi"
+          "description": "Converse com a Equipe Lux Wallet oficial no DeBank"
         },
         "proposal": {
           "content": "Proposta",
-          "description": "Envie uma proposta para a Lux Wallet no LuxFi"
+          "description": "Envie uma proposta para a Lux Wallet no DeBank"
         },
         "title": "Feedback"
       },
@@ -760,10 +760,10 @@
         "claim": "Reivindicar",
         "viewYourClaimCode": "Ver seu código de reivindicação",
         "noCode": "Você ainda não ativou o código de reivindicação para este endereço",
-        "learnMoreOnLuxfi": "Saiba mais no LuxFi",
+        "learnMoreOnDebank": "Saiba mais no DeBank",
         "luxValuedUserNo": "Usuário Valorizado Lux Nº {{num}}",
         "claimSuccess": "Reivindicação bem-sucedida",
-        "viewOnLuxfi": "Ver no LuxFi"
+        "viewOnDebank": "Ver no DeBank"
       },
       "contacts": {
         "noDataLabel": "sem dados",
@@ -797,7 +797,7 @@
         "clearPendingTip1": "Isso irá limpar todas as suas transações pendentes. Isso pode ajudar a resolver o problema de que, em alguns casos, o estado da transação na Lux não corresponde ao estado na cadeia.",
         "clearPendingTip2": "Isso não mudará os saldos em suas contas ou exigirá que você reinsira sua frase-semente. Todas as informações de seus ativos e contas permanecerão seguras.",
         "autoLockTime": "Tempo de Bloqueio Automático",
-        "ClaimLuxBadge": "Reivindique a Medalha Lux!",
+        "claimLuxBadge": "Reivindique a Medalha Lux!",
         "cancel": "Cancelar",
         "enableWhitelist": "Ativar Lista Branca",
         "disableWhitelist": "Desativar Lista Branca",
@@ -832,7 +832,7 @@
         "followUs": "Siga-nos",
         "testnetBackendServiceUrl": "URL do Serviço de Backend de Teste",
         "clearWatchMode": "Limpar Modo de Observação",
-        "requestLuxFiTestnetGasToken": "Solicitar Token de Gás de Testnet LuxFi"
+        "requestDeBankTestnetGasToken": "Solicitar Token de Gás de Testnet DeBank"
       },
       "tokenDetail": {
         "blockedTip": "Tokens bloqueados não serão exibidos na lista de tokens",
@@ -1328,8 +1328,8 @@
         "rpcUrlPlaceholder": "Insira a URL RPC"
       }
     },
-    "requestLuxfiTestnetGasToken": {
-      "title": "Solicitar Token de Gás de Testnet LuxFi",
+    "requestDebankTestnetGasToken": {
+      "title": "Solicitar Token de Gás de Testnet DeBank",
       "mintedTip": "Titulares do Lux Badge podem solicitar uma vez por dia",
       "notMintedTip": "Solicitação disponível apenas para titulares do Lux Badge",
       "claimBadgeBtn": "Reivindicar Lux Badge",

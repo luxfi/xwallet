@@ -26,7 +26,7 @@ export const EcologyNavBar = ({ className, style, chainId }: Props) => {
     <div
       className={clsx(
         'flex items-center px-[20px] py-[10px] min-h-[48px]',
-        'border-b-[0.5px] border-rabby-neutral-line',
+        'border-b-[0.5px]',
         'bg-r-neutral-bg1',
         className
       )}
@@ -34,7 +34,7 @@ export const EcologyNavBar = ({ className, style, chainId }: Props) => {
     >
       <div className="flex-1">
         <RcIconBack
-          className="cursor-pointer text-r-neutral-title1"
+          className="cursor-pointer text-r-neutral-title1 text-[white]"
           onClick={() => {
             if (history.length > 1) {
               history.goBack();
@@ -47,10 +47,11 @@ export const EcologyNavBar = ({ className, style, chainId }: Props) => {
       <div className="flex-auto">
         <div className="flex items-center justify-center bg-r-neutral-card2 rounded-full p-[6px] gap-[6px]">
           <img src={chain?.logo} alt="" className="w-[16px] h-[16px]" />
-          <div className="text-neutral-body text-[13px] leading-[16px] text-r-neutral-body font-bold">
-            {t('component.EcologyNavBar.providedBy', {
+          <div className="text-neutral-body text-[13px] leading-[16px] text-r-neutral-body font-bold text-[white]">
+            {/* {t('component.EcologyNavBar.providedBy', {
               chainName: chain?.name,
-            })}
+            })} */}
+            {`Provided by ${chain?.name}`}
           </div>
         </div>
       </div>

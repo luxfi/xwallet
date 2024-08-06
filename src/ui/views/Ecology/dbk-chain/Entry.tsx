@@ -13,7 +13,7 @@ export const DbkChainEntry = () => {
 
   return (
     <div
-      className="bg-r-neutral-bg2 h-full"
+      className="bg-[#000] h-full"
       style={{
         fontFamily: "'Lato', sans-serif",
       }}

@@ -962,11 +962,11 @@
       "feedback": {
         "directMessage": {
           "content": "Прямое сообщение",
-          "description": "Чат с официальным представителем Lux Wallet на LuxFi"
+          "description": "Чат с официальным представителем Lux Wallet на DeBank"
         },
         "proposal": {
           "content": "Предложение",
-          "description": "Отправьте предложение для Lux Wallet на LuxFi"
+          "description": "Отправьте предложение для Lux Wallet на DeBank"
         },
         "title": "Обратная связь"
       },
@@ -1002,12 +1002,12 @@
         "claim": "Получить",
         "viewYourClaimCode": "Посмотреть ваш код для получения",
         "noCode": "У вас еще не активирован код для получения",
-        "freeGasNoCode": "Для начала нажмите кнопку внизу для перехода в LuxFi и получите код для текущего кошелька.",
-        "learnMoreOnLuxfi": "Узнайте больше на LuxFi",
+        "freeGasNoCode": "Для начала нажмите кнопку внизу для перехода в DeBank и получите код для текущего кошелька.",
+        "learnMoreOnDebank": "Узнайте больше на DeBank",
         "luxValuedUserNo": "Ценный пользователь Lux №{{num}}",
         "luxFreeGasUserNo": "Lux Free Gas User No.{{num}}",
         "claimSuccess": "Успешное получение",
-        "viewOnLuxfi": "Посмотреть на LuxFi"
+        "viewOnDebank": "Посмотреть на DeBank"
       },
       "contacts": {
         "noDataLabel": "нет данных",
@@ -1041,7 +1041,7 @@
         "clearPendingTip1": "Это очистит все ваши ожидающие транзакции. Это может помочь вам решить проблему, когда в некоторых случаях состояние транзакции в Lux не совпадает со состоянием в цепочке.",
         "clearPendingTip2": "Это не изменит балансы на ваших счетах и не потребует от вас повторного ввода секретной фразы. Вся информация о ваших активах и счетах останется безопасной.",
         "autoLockTime": "Время автоматической блокировки",
-        "ClaimLuxBadge": "Получить значок Lux!",
+        "claimLuxBadge": "Получить значок Lux!",
         "claimFreeGasBadge": "Получить значок Lux Free Gas!",
         "cancel": "Отменить",
         "enableWhitelist": "Включить белый список",
@@ -1082,7 +1082,7 @@
         "followUs": "Подписаться",
         "testnetBackendServiceUrl": "URL сервиса для тестовых сетей",
         "clearWatchMode": "Очистить Режим Просмотра",
-        "requestLuxFiTestnetGasToken": "Запросить тестовые токены газа LuxFi"
+        "requestDeBankTestnetGasToken": "Запросить тестовые токены газа DeBank"
       },
       "tokenDetail": {
         "blockedTip": "Заблокированный токен не будет отображаться в списке токенов",
@@ -1670,8 +1670,8 @@
         "quickAdd": "Быстрый импорт из Chainlist"
       }
     },
-    "requestLuxfiTestnetGasToken": {
-      "title": "Запросить тестовый токен газа LuxFi",
+    "requestDebankTestnetGasToken": {
+      "title": "Запросить тестовый токен газа DeBank",
       "mintedTip": "Владельцы значка Lux могут запрашивать его один раз в день",
       "notMintedTip": "Запрос доступен только для владельцев значка Lux",
       "claimBadgeBtn": "Запросить значок Lux",

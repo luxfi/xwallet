@@ -174,7 +174,7 @@
       "transacted": "Früher transaktiert",
       "neverTransacted": "Nie zuvor transaktiert",
       "fakeTokenAlert": "Dies ist ein Betrugstoken, markiert von Lux",
-      "scamTokenAlert": "Dies ist potenziell ein minderwertiger und betrügerischer Token basierend auf Lux Erkennung",
+      "scamTokenAlert": "Dies ist potenziell ein minderwertiger und betrügerischer Token basierend auf Luxs Erkennung",
       "trusted": "Vertraut",
       "blocked": "Blockiert",
       "noMark": "Keine Markierung",
@@ -779,11 +779,11 @@
       "feedback": {
         "directMessage": {
           "content": "Direkte Nachricht",
-          "description": "Chatten Sie mit Lux Wallet Official auf LuxFi"
+          "description": "Chatten Sie mit Lux Wallet Official auf DeBank"
         },
         "proposal": {
           "content": "Vorschlag",
-          "description": "Vorschlag für Lux Wallet auf LuxFi einreichen"
+          "description": "Vorschlag für Lux Wallet auf DeBank einreichen"
         },
         "title": "Feedback"
       },
@@ -816,10 +816,10 @@
         "claim": "Beanspruchen",
         "viewYourClaimCode": "Sehen Sie Ihren Anspruchscode",
         "noCode": "Sie haben keinen Anspruchscode für diese Adresse",
-        "learnMoreOnLuxfi": "Erfahren Sie mehr auf LuxFi",
+        "learnMoreOnDebank": "Erfahren Sie mehr auf DeBank",
         "luxValuedUserNo": "Lux geschätzter Benutzer Nr.{{num}}",
         "claimSuccess": "Erfolgreich beansprucht",
-        "viewOnLuxfi": "Auf LuxFi anzeigen"
+        "viewOnDebank": "Auf DeBank anzeigen"
       },
       "contacts": {
         "noDataLabel": "keine Daten",
@@ -853,7 +853,7 @@
         "clearPendingTip1": "Dies wird alle Ihre ausstehenden Transaktionen löschen. Dies kann Ihnen helfen, das Problem zu lösen, dass in einigen Fällen der Zustand der Transaktion in Lux nicht mit dem Zustand auf der Blockchain übereinstimmt.",
         "clearPendingTip2": "Dies wird die Salden in Ihren Konten nicht ändern oder erfordern, dass Sie Ihre Seed Phrase erneut eingeben. Alle Ihre Vermögenswerte und Kontoinformationen bleiben sicher.",
         "autoLockTime": "Automatische Sperrzeit",
-        "ClaimLuxBadge": "Lux Abzeichen beanspruchen!",
+        "claimLuxBadge": "Lux Abzeichen beanspruchen!",
         "cancel": "Abbrechen",
         "enableWhitelist": "Whitelist aktivieren",
         "disableWhitelist": "Whitelist deaktivieren",
@@ -888,7 +888,7 @@
         "followUs": "Folge uns",
         "testnetBackendServiceUrl": "Testnet Backend Service URL",
         "clearWatchMode": "Beobachtungsmodus zurücksetzen",
-        "requestLuxFiTestnetGasToken": "Testnet Gas Token von LuxFi anfordern"
+        "requestDeBankTestnetGasToken": "Testnet Gas Token von DeBank anfordern"
       },
       "tokenDetail": {
         "blockedTip": "Blockierte Token werden nicht in der Tokenliste angezeigt",
@@ -1395,8 +1395,8 @@
         "rpcUrlPlaceholder": "Geben Sie die RPC-URL ein"
       }
     },
-    "requestLuxfiTestnetGasToken": {
-      "title": "LuxFi Testnet Gas Token anfordern",
+    "requestDebankTestnetGasToken": {
+      "title": "DeBank Testnet Gas Token anfordern",
       "mintedTip": "Inhaber des Lux Badge können einmal täglich anfordern",
       "notMintedTip": "Anfrage nur für Inhaber des Lux Badge verfügbar",
       "claimBadgeBtn": "Lux Badge beanspruchen",

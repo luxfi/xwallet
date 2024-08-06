@@ -548,11 +548,11 @@
       "feedback": {
         "directMessage": {
           "content": "Message direct",
-          "description": "Discuter avec Lux Wallet Official sur LuxFi"
+          "description": "Discuter avec Lux Wallet Official sur DeBank"
         },
         "proposal": {
           "content": "Proposition",
-          "description": "Soumettre une proposition pour Lux Wallet sur LuxFi"
+          "description": "Soumettre une proposition pour Lux Wallet sur DeBank"
         },
         "title": "Feedback"
       },
@@ -638,13 +638,13 @@
         "claimSuccess": "Réclamation réussie",
         "enterClaimCode": "Saisir le code de réclamation",
         "goToSwap": "Aller à l'échange",
-        "imageLabel": "badge Lux",
-        "learnMoreOnLuxfi": "En savoir plus sur LuxFi",
+        "imageLabel": "badge lux",
+        "learnMoreOnDebank": "En savoir plus sur DeBank",
         "noCode": "Vous n'avez pas activé le code de réclamation pour cette adresse",
         "luxValuedUserNo": "Utilisateur Lux estimé n°{{num}}",
         "swapTip": "Vous devez d’abord effectuer un échange avec un DEX notable dans Lux Wallet.",
         "title": "Réclamer le badge Lux pour",
-        "viewOnLuxfi": "Voir sur LuxFi",
+        "viewOnDebank": "Voir sur DeBank",
         "viewYourClaimCode": "Afficher votre code de réclamation"
       },
       "recentConnection": {
@@ -683,7 +683,7 @@
         "autoLockTime": "Temps de verrouillage automatique",
         "backendServiceUrl": "URL du service backend",
         "cancel": "Annuler",
-        "ClaimLuxBadge": "Réclamer le badge Lux!",
+        "claimLuxBadge": "Réclamer le badge Lux !",
         "clearPending": "Effacer transaction(s) en attente",
         "clearPendingTip1": "Ceci effacera toutes vos transactions en attente. Cela peut vous aider à résoudre un éventuel problème de \"cache\" lorsque l'état de la transaction dans Lux ne correspond pas à l'état sur la chaîne.",
         "clearPendingTip2": "Cela ne modifiera pas les soldes de vos comptes et ne vous obligera pas à ressaisir votre seed phrase. Toutes vos informations sur vos actifs et vos comptes resteront sécurisées.",
@@ -709,7 +709,7 @@
         },
         "pendingTransactionCleared": "Transaction(s) en attente effacée(s)",
         "pleaseCheckYourHost": "Veuillez vérifier votre hôte",
-        "requestLuxFiTestnetGasToken": "Demander un token de gaz pour le testnet LuxFi",
+        "requestDeBankTestnetGasToken": "Demander un token de gaz pour le testnet DeBank",
         "reset": "Restaurer le réglage initial",
         "save": "Sauvegarder",
         "settings": {
@@ -1034,7 +1034,7 @@
         },
         "isItSafeToImportItInLux": {
           "answer": "Oui, elle sera stockée localement sur votre navigateur et uniquement accessible par vous.",
-          "question": "Est-il sécurisé de l’importer dans Lux?"
+          "question": "Est-il sécurisé de l’importer dans Lux ?"
         },
         "notAValidPrivateKey": "N'est pas une clé privée valide",
         "placeholder": "Entrer votre clé privée",
@@ -1059,7 +1059,7 @@
         "importTips": "Vous pouvez coller l'intégralité de votre seed phrase dans le 1er champ",
         "isItSafeToImportItInLux": {
           "answer": "Oui, elle sera stockée localement sur votre navigateur et uniquement accessible par vous.",
-          "question": "Est-il sécurisé de l’importer dans Lux?"
+          "question": "Est-il sécurisé de l’importer dans Lux ?"
         },
         "pleaseSelectWords": "Veuillez sélectionner les mots",
         "riskTips": "Avant de commencer, veuillez lire et garder à l’esprit les conseils de sécurité suivants.",
@@ -1161,14 +1161,14 @@
       "watchModeAlert1": "Il s’agit d’une adresse du mode observation.",
       "watchModeAlert2": "Êtes-vous sûr de vouloir l'utiliser pour recevoir des actifs ?"
     },
-    "requestLuxfiTestnetGasToken": {
-      "claimBadgeBtn": "Réclamer le badge RaLuxbby",
+    "requestDebankTestnetGasToken": {
+      "claimBadgeBtn": "Réclamer le badge Lux",
       "mintedTip": "Les détenteurs du badge Lux peuvent en faire la demande une fois par jour",
       "notMintedTip": "Demande disponible uniquement pour les détenteurs du badge Lux",
       "requestBtn": "Demande",
       "requested": "Vous avez déjà demandé aujourd'hui",
       "time": "Par jour",
-      "title": "Demander un token de gaz pour le testnet LuxFi"
+      "title": "Demander un token de gaz pour le testnet DeBank"
     },
     "safeQueue": {
       "LowerNonceError": "La transaction avec nonce {{nonce}} doit être exécutée en premier",
