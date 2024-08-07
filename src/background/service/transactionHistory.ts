@@ -84,9 +84,9 @@ interface TxHistoryStore {
 }
 
 class TxHistory {
-  markTransactionAsIndexed(address: string, chainId: number, hash: string) {
-    throw new Error('Method not implemented.');
-  }
+  // markTransactionAsIndexed(address: string, chainId: number, hash: string) {
+  //   throw new Error('Method not implemented.');
+  // }
   /**
    * @description notice, always set store.transactions by calling `_setStoreTransaction`
    */

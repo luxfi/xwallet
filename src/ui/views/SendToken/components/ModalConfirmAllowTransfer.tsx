@@ -60,7 +60,7 @@ function ModalConfirmAllowTransfer({
       await wallet.verifyPassword(password);
 
       if (toAddr && confirmToAddToWhitelist) {
-        await wallet.addWhitelist(toAddr);
+        await wallet.addWhitelist(password, toAddr);
       }
       onFinished({
         confirmedToAddToWhitelist: confirmToAddToWhitelist,

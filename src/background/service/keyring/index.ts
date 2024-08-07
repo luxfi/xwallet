@@ -2,6 +2,7 @@
 
 import { EventEmitter } from 'events';
 import log from 'loglevel';
+import * as encryptor from '@metamask/browser-passworder';
 import * as ethUtil from 'ethereumjs-util';
 import * as bip39 from '@scure/bip39';
 import { wordlist } from '@scure/bip39/wordlists/english';
@@ -40,13 +41,6 @@ import { GET_WALLETCONNECT_CONFIG, allChainIds } from '@/utils/walletconnect';
 import { EthImKeyKeyring } from './eth-imkey-keyring/eth-imkey-keyring';
 import { getKeyringBridge, hasBridge } from './bridge';
 import { getChainList } from '@/utils/chain';
-import {
-  passwordEncrypt,
-  passwordDecrypt,
-  passwordClearKey,
-} from 'background/utils/password';
-
-import './patch';
 
 export const KEYRING_SDK_TYPES = {
   SimpleKeyring,
@@ -87,6 +81,12 @@ export interface DisplayedKeryring {
 }
 
 export class KeyringService extends EventEmitter {
+  tryUnlock() {
+    throw new Error('Method not implemented.');
+  }
+  updatePassword(oldPassword: string, newPassword: string) {
+    throw new Error('Method not implemented.');
+  }
   //
   // PUBLIC METHODS
   //
@@ -94,6 +94,7 @@ export class KeyringService extends EventEmitter {
   store!: ObservableStore<any>;
   memStore: ObservableStore<MemStoreState>;
   keyrings: any[];
+  encryptor: typeof encryptor = encryptor;
   password: string | null = null;
 
   constructor() {
@@ -113,40 +114,11 @@ export class KeyringService extends EventEmitter {
     this.store = new ObservableStore(initState);
   }
 
-  // /**
-  //  * @description reset lock and clear all keyrings
-  //  */
-  // async resetKeyringState() {
-  //   this.password = null;
-  //   this.store.updateState({ booted: '', vault: '' });
-
-  //   this.memStore.updateState({ isUnlocked: false, keyrings: [] });
-  //   this.keyrings = [];
-
-  //   this.emit('resetKeyringState');
-  // }
-
-  async _setupBoot(password: string) {
-    this.password = password;
-    const encryptBooted = await passwordEncrypt({ data: 'true', password });
-    this.store.updateState({ booted: encryptBooted });
-  }
-
   async boot(password: string) {
-    await this._setupBoot(password);
+    this.password = password;
+    const encryptBooted = await this.encryptor.encrypt(password, 'true');
+    this.store.updateState({ booted: encryptBooted });
     this.memStore.updateState({ isUnlocked: true });
-  }
-
-  async updatePassword(oldPassword: string, newPassword: string) {
-    await this.verifyPassword(oldPassword);
-
-    this.emit('beforeUpdatePassword', {
-      keyringState: this.store.getState(),
-    });
-
-    // reboot it
-    await this._setupBoot(newPassword);
-    this.persistAllKeyrings();
   }
 
   isBooted() {
@@ -215,14 +187,11 @@ export class KeyringService extends EventEmitter {
   }
 
   async generatePreMnemonic(): Promise<string> {
-    if (!this.isUnlocked()) {
+    if (!this.password) {
       throw new Error(i18n.t('background.error.unlock'));
     }
     const mnemonic = this.generateMnemonic();
-    const preMnemonics = await passwordEncrypt({
-      data: mnemonic,
-      password: this.password,
-    });
+    const preMnemonics = await this.encryptor.encrypt(this.password, mnemonic);
     this.memStore.updateState({ preMnemonics });
 
     return mnemonic;
@@ -243,14 +212,14 @@ export class KeyringService extends EventEmitter {
       return '';
     }
 
-    if (!this.isUnlocked()) {
+    if (!this.password) {
       throw new Error(i18n.t('background.error.unlock'));
     }
 
-    return await passwordDecrypt({
-      password: this.password,
-      encryptedData: this.memStore.getState().preMnemonics,
-    });
+    return await this.encryptor.decrypt(
+      this.password,
+      this.memStore.getState().preMnemonics
+    );
   }
 
   /**
@@ -337,7 +306,6 @@ export class KeyringService extends EventEmitter {
   async setLocked(): Promise<MemStoreState> {
     // set locked
     this.password = null;
-    passwordClearKey();
     this.memStore.updateState({ isUnlocked: false });
     // remove keyrings
     this.keyrings = [];
@@ -373,19 +341,6 @@ export class KeyringService extends EventEmitter {
     return this.fullUpdate();
   }
 
-  async tryUnlock() {
-    if (this.password || this.isUnlocked()) {
-      return;
-    }
-    try {
-      this.keyrings = await this.unlockKeyrings();
-      this.setUnlocked();
-      this.fullUpdate();
-    } catch (e) {
-      console.log('tryUnlock failed: ', e.message);
-    }
-  }
-
   /**
    * Verify Password
    *
@@ -399,7 +354,7 @@ export class KeyringService extends EventEmitter {
     if (!encryptedBooted) {
       throw new Error(i18n.t('background.error.canNotUnlock'));
     }
-    await passwordDecrypt({ password, encryptedData: encryptedBooted });
+    await this.encryptor.decrypt(password, encryptedBooted);
   }
 
   /**
@@ -799,7 +754,7 @@ export class KeyringService extends EventEmitter {
    * @returns {Promise<boolean>} Resolves to true once keyrings are persisted.
    */
   persistAllKeyrings(): Promise<boolean> {
-    if (!this.isUnlocked()) {
+    if (!this.password || typeof this.password !== 'string') {
       return Promise.reject(
         new Error('KeyringController - password is not a string')
       );
@@ -819,10 +774,10 @@ export class KeyringService extends EventEmitter {
       })
     )
       .then((serializedKeyrings) => {
-        return passwordEncrypt({
-          data: serializedKeyrings,
-          password: this.password,
-        });
+        return this.encryptor.encrypt(
+          this.password as string,
+          (serializedKeyrings as unknown) as Buffer
+        );
       })
       .then((encryptedString) => {
         this.store.updateState({ vault: encryptedString });
@@ -839,17 +794,14 @@ export class KeyringService extends EventEmitter {
    * @param {string} password - The keyring controller password.
    * @returns {Promise<Array<Keyring>>} The keyrings.
    */
-  async unlockKeyrings(password?: string): Promise<any[]> {
+  async unlockKeyrings(password: string): Promise<any[]> {
     const encryptedVault = this.store.getState().vault;
     if (!encryptedVault) {
       throw new Error(i18n.t('background.error.canNotUnlock'));
     }
 
     await this.clearKeyrings();
-    const vault = await passwordDecrypt({
-      password,
-      encryptedData: encryptedVault,
-    });
+    const vault = await this.encryptor.decrypt(password, encryptedVault);
     // TODO: FIXME
     await Promise.all(
       Array.from(vault as any).map(this._restoreKeyring.bind(this))
@@ -1248,10 +1200,6 @@ export class KeyringService extends EventEmitter {
   setUnlocked(): void {
     this.memStore.updateState({ isUnlocked: true });
     this.emit('unlock');
-  }
-
-  isUnlocked(): boolean {
-    return this.memStore.getState().isUnlocked;
   }
 }
 

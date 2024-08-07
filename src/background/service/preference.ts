@@ -123,7 +123,6 @@ export interface PreferenceStore {
   addressSortStore: AddressSortStore;
 
   reserveGasOnSendToken?: boolean;
-  isHideEcologyNoticeDict?: Record<string | number, boolean>;
 }
 
 export interface AddressSortStore {
@@ -184,7 +183,6 @@ class PreferenceService {
           ...defaultAddressSortStore,
         },
         reserveGasOnSendToken: true,
-        isHideEcologyNoticeDict: {},
       },
     });
 
@@ -271,9 +269,6 @@ class PreferenceService {
       this.store.addressSortStore = {
         ...defaultAddressSortStore,
       };
-    }
-    if (!this.store.isHideEcologyNoticeDict) {
-      this.store.isHideEcologyNoticeDict = {};
     }
   };
 
@@ -465,18 +460,6 @@ class PreferenceService {
   };
 
   getPopupOpen = () => this.popupOpen;
-
-  updateAddressUSDValueCache = (address: string, balance: number) => {
-    const balanceMap = this.store.balanceMap || {};
-    const before = this.store.balanceMap[address.toLowerCase()];
-    this.store.balanceMap = {
-      ...balanceMap,
-      [address.toLowerCase()]: {
-        total_usd_value: balance,
-        chain_list: before.chain_list || [],
-      },
-    };
-  };
 
   updateTestnetAddressBalance = (
     address: string,
@@ -856,9 +839,7 @@ class PreferenceService {
       [key]: value,
     };
   };
-  setIsHideEcologyNoticeDict = (v: Record<string | number, boolean>) => {
-    this.store.isHideEcologyNoticeDict = v;
-  };
+  setIsHideEcologyNoticeDict: any;
 }
 
 export default new PreferenceService();

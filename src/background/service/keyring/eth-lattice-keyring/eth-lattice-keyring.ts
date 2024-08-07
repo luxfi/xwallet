@@ -3,7 +3,6 @@ import OldLatticeKeyring from '@luxfi/eth-lattice-keyring';
 import { SignHelper, LedgerHDPathType } from '../helper';
 import { EVENTS } from '@/constant';
 import { isSameAddress } from '@/background/utils';
-import browser from 'webextension-polyfill';
 
 const keyringType = 'GridPlus Hardware';
 import HDPathType = LedgerHDPathType;
@@ -12,6 +11,8 @@ import {
   KnownOrigins,
   OffscreenCommunicationTarget,
 } from '@/constant/offscreen-communication';
+
+import browser from 'webextension-polyfill';
 
 const HD_PATH_BASE = {
   [HDPathType.BIP44]: "m/44'/60'/0'/0/x",
@@ -48,6 +49,7 @@ class LatticeKeyring extends OldLatticeKeyring {
 
       // send a msg to the render process to open lattice connector
       // and collect the credentials
+
       const creds = await new Promise<{
         deviceID: string;
         password: string;

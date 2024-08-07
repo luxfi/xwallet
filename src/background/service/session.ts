@@ -61,7 +61,6 @@ const getOrCreateSession = (id: number, origin: string) => {
 const createSession = (key: string, data?: null | SessionProp) => {
   const session = new Session(data);
   sessionMap.set(key, session);
-  broadcastToDesktopOnly('createSession', key);
 
   return session;
 };
@@ -79,19 +78,7 @@ const deleteSession = (key: string) => {
   sessionMap.delete(key);
 };
 
-const broadcastToDesktopOnly = (ev: string, data?: any, origin?: string) => {
-  window.luxDesktop?.ipcRenderer.sendMessage(
-    '__internal_rpc:rabbyx:on-session-broadcast',
-    {
-      event: ev,
-      data,
-      origin,
-    }
-  );
-};
-
-const broadcastEvent = (ev: string, data?: any, origin?: string) => {
-  broadcastToDesktopOnly(ev, data, origin);
+const broadcastEvent = (ev, data?, origin?: string) => {
   let sessions: { key: string; data: Session }[] = [];
   sessionMap.forEach((session, key) => {
     if (session && permissionService.hasPermission(session.origin)) {
@@ -125,5 +112,4 @@ export default {
   deleteSession,
   deleteSessionsByTabId,
   broadcastEvent,
-  broadcastToDesktopOnly,
 };

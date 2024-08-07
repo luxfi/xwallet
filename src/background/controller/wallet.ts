@@ -1,7 +1,7 @@
 import * as ethUtil from 'ethereumjs-util';
 import { ethErrors } from 'eth-rpc-errors';
 import { ethers, Contract } from 'ethers';
-import { groupBy, reject, uniq } from 'lodash';
+import { groupBy, uniq } from 'lodash';
 import abiCoder, { AbiCoder } from 'web3-eth-abi';
 import {
   keyringService,
@@ -23,14 +23,13 @@ import {
   transactionBroadcastWatchService,
   LuxPointsService,
   HDKeyRingLastAddAddrTimeService,
-  bridgeService,
 } from 'background/service';
 import buildinProvider, {
   EthereumProvider,
 } from 'background/utils/buildinProvider';
 import { openIndexPage } from 'background/webapi/tab';
 import { CacheState } from 'background/service/pageStateCache';
-import { DisplayedKeryring, KeyringService } from 'background/service/keyring';
+import { DisplayedKeryring } from 'background/service/keyring';
 import providerController from './provider/controller';
 import BaseController from './base';
 import {
@@ -45,8 +44,6 @@ import {
   INTERNAL_REQUEST_SESSION,
   DARK_MODE_TYPE,
   KEYRING_CLASS,
-  DBK_CHAIN_ID,
-  DBK_NFT_CONTRACT_ADDRESS,
 } from 'consts';
 import { ERC20ABI } from 'consts/abi';
 import { Account, IHighlightedAddress } from '../service/preference';
@@ -85,14 +82,9 @@ import { ProviderRequest } from './provider/type';
 import { QuoteResult } from '@luxfi/lux-swap/dist/quote';
 import transactionWatcher from '../service/transactionWatcher';
 import Safe from '@luxfi/gnosis-sdk';
-import { Chain } from '@debank/common';
+import { Chain } from '@luxfi/common';
 import { isAddress } from 'web3-utils';
-import {
-  findChain,
-  findChainByEnum,
-  getChainList,
-  getMainnetListFromLocal,
-} from '@/utils/chain';
+import { findChain, findChainByEnum, getChainList } from '@/utils/chain';
 import { cached } from '../utils/cache';
 import { createSafeService } from '../utils/safe';
 import { OpenApiService } from '@luxfi/lux-api';
@@ -112,12 +104,6 @@ import { matomoRequestEvent } from '@/utils/matomo-request';
 import { BALANCE_LOADING_CONFS } from '@/constant/timeout';
 import { IExtractFromPromise } from '@/ui/utils/type';
 import { Wallet, thirdparty } from '@ethereumjs/wallet';
-import { BridgeRecord } from '../service/bridge';
-import { getMintLuxContractAddress } from '@/constant/mint-lux/mint-lux-abi';
-import { initMintLuxContract } from './mint-lux';
-import { validateConfirmation } from './safe';
-import { getEnsContentHash } from './ens';
-import { resolve } from 'path';
 
 const stashKeyrings: Record<string | number, any> = {};
 
@@ -128,8 +114,8 @@ export class WalletController extends BaseController {
   testnetOpenapi = testnetOpenapiService;
 
   /* wallet */
-  boot = async (password: string) => {
-    await keyringService.boot(password);
+  boot = (password) => {
+    keyringService.boot(password);
     const hasOtherProvider = preferenceService.getHasOtherProvider();
     const isDefaultWallet = preferenceService.getIsDefaultWallet();
     if (!hasOtherProvider) {
@@ -141,34 +127,24 @@ export class WalletController extends BaseController {
   isBooted = () => keyringService.isBooted();
   verifyPassword = (password: string) =>
     keyringService.verifyPassword(password);
-  safeVerifyPassword = async (password: string) => {
-    const result = { success: false, error: null as null | Error };
-    try {
-      await keyringService.verifyPassword(password);
-      result.success = true;
-    } catch (error) {
-      result.success = false;
-      result.error = error?.message;
-    }
 
-    return result;
-  };
-  updatePassword = (oldPassword: string, newPassword: string) =>
-    keyringService.updatePassword(oldPassword, newPassword);
-
-  setWhitelist = async (addresses: string[]) => {
+  setWhitelist = async (password: string, addresses: string[]) => {
+    await this.verifyPassword(password);
     whitelistService.setWhitelist(addresses);
   };
 
-  addWhitelist = async (address: string) => {
+  addWhitelist = async (password: string, address: string) => {
+    await this.verifyPassword(password);
     whitelistService.addWhitelist(address);
   };
 
-  removeWhitelist = async (address: string) => {
+  removeWhitelist = async (password: string, address: string) => {
+    await this.verifyPassword(password);
     whitelistService.removeWhitelist(address);
   };
 
-  toggleWhitelist = async (enable: boolean) => {
+  toggleWhitelist = async (password: string, enable: boolean) => {
+    await this.verifyPassword(password);
     if (enable) {
       whitelistService.enableWhitelist();
     } else {
@@ -471,10 +447,9 @@ export class WalletController extends BaseController {
     if (!chainObj)
       throw new Error(t('background.error.notFindChain', { chain }));
     try {
-      let approvalTxHash: string | undefined;
       if (shouldTwoStepApprove) {
         unTriggerTxCounter.increase(3);
-        approvalTxHash = await this.approveToken(
+        await this.approveToken(
           chainObj.serverId,
           pay_token_id,
           spender,
@@ -495,7 +470,7 @@ export class WalletController extends BaseController {
         if (!shouldTwoStepApprove) {
           unTriggerTxCounter.increase(2);
         }
-        approvalTxHash = await this.approveToken(
+        await this.approveToken(
           chainObj.serverId,
           pay_token_id,
           spender,
@@ -513,15 +488,10 @@ export class WalletController extends BaseController {
         unTriggerTxCounter.decrease();
       }
 
-      if (approvalTxHash) {
-        return approvalTxHash;
-      }
-
       if (postSwapParams) {
         swapService.addTx(chain, quote.tx.data, postSwapParams);
       }
-
-      const tx: string = await this.sendRequest({
+      await this.sendRequest({
         $ctx:
           needApprove && pay_token_id !== chainObj.nativeTokenAddress
             ? {
@@ -544,117 +514,6 @@ export class WalletController extends BaseController {
               : undefined,
             isSwap: true,
             swapPreferMEVGuarded,
-          },
-        ],
-      });
-
-      unTriggerTxCounter.decrease();
-      return tx;
-    } catch (e) {
-      unTriggerTxCounter.reset();
-    }
-  };
-
-  bridgeToken = async (
-    {
-      to,
-      data,
-      payTokenRawAmount,
-      payTokenId,
-      payTokenChainServerId,
-      shouldApprove,
-      shouldTwoStepApprove,
-      gasPrice,
-      info,
-      value,
-    }: {
-      data: string;
-      to: string;
-      value: string;
-      chainId: number;
-      shouldApprove: boolean;
-      shouldTwoStepApprove: boolean;
-      payTokenId: string;
-      payTokenChainServerId: string;
-      payTokenRawAmount: string;
-      gasPrice?: number;
-      info: BridgeRecord;
-    },
-    $ctx?: any
-  ) => {
-    const account = await preferenceService.getCurrentAccount();
-    if (!account) throw new Error(t('background.error.noCurrentAccount'));
-    const chainObj = findChain({ serverId: payTokenChainServerId });
-    if (!chainObj)
-      throw new Error(
-        t('background.error.notFindChain', { payTokenChainServerId })
-      );
-    try {
-      if (shouldTwoStepApprove) {
-        unTriggerTxCounter.increase(3);
-        await this.approveToken(
-          payTokenChainServerId,
-          payTokenId,
-          to,
-          0,
-          {
-            ga: {
-              ...$ctx?.ga,
-              source: 'approvalAndBridge|tokenApproval',
-            },
-          },
-          gasPrice,
-          { isBridge: true }
-        );
-        unTriggerTxCounter.decrease();
-      }
-
-      if (shouldApprove) {
-        if (!shouldTwoStepApprove) {
-          unTriggerTxCounter.increase(2);
-        }
-        await this.approveToken(
-          payTokenChainServerId,
-          payTokenId,
-          to,
-          payTokenRawAmount,
-          {
-            ga: {
-              ...$ctx?.ga,
-              source: 'approvalAndBridge|tokenApproval',
-            },
-          },
-          gasPrice,
-          { isBridge: true }
-        );
-        unTriggerTxCounter.decrease();
-      }
-
-      if (info) {
-        bridgeService.addTx(chainObj.enum, data, info);
-      }
-      await this.sendRequest({
-        $ctx:
-          shouldApprove && payTokenId !== chainObj.nativeTokenAddress
-            ? {
-                ga: {
-                  ...$ctx?.ga,
-                  source: 'approvalAndBridge|bridge',
-                },
-              }
-            : $ctx,
-        method: 'eth_sendTransaction',
-        params: [
-          {
-            from: account.address,
-            to: to,
-            data: data || '0x',
-            value: `0x${new BigNumber(value || '0').toString(16)}`,
-            chainId: chainObj.id,
-            gasPrice: gasPrice
-              ? `0x${new BigNumber(gasPrice).toString(16)}`
-              : undefined,
-            isBridge: true,
           },
         ],
       });
@@ -722,11 +581,7 @@ export class WalletController extends BaseController {
     amount: number | string,
     $ctx?: any,
     gasPrice?: number,
-    extra?: {
-      isSwap?: boolean;
-      swapPreferMEVGuarded?: boolean;
-      isBridge?: boolean;
-    }
+    extra?: { isSwap: boolean; swapPreferMEVGuarded?: boolean }
   ) => {
     const account = await preferenceService.getCurrentAccount();
     if (!account) throw new Error(t('background.error.noCurrentAccount'));
@@ -774,12 +629,11 @@ export class WalletController extends BaseController {
         ...extra,
       };
     }
-    const txHash: string = await this.sendRequest({
+    await this.sendRequest({
       $ctx,
       method: 'eth_sendTransaction',
       params: [tx],
     });
-    return txHash;
   };
 
   fetchEstimatedL1Fee = async (
@@ -808,31 +662,6 @@ export class WalletController extends BaseController {
     });
 
     return res;
-  };
-
-  mintDBKChainNFT = async () => {
-    const account = preferenceService.getCurrentAccount();
-    if (!account) throw new Error(t('background.error.noCurrentAccount'));
-    await this.sendRequest({
-      method: 'eth_sendTransaction',
-      params: [
-        {
-          from: account.address,
-          to: DBK_NFT_CONTRACT_ADDRESS,
-          chainId: DBK_CHAIN_ID,
-          data: ((abiCoder as unknown) as AbiCoder).encodeFunctionCall(
-            {
-              name: 'mint',
-              inputs: [],
-              outputs: [],
-              stateMutability: 'nonpayable',
-              type: 'function',
-            },
-            []
-          ),
-        },
-      ],
-    });
   };
 
   transferNFT = async (
@@ -1161,7 +990,7 @@ export class WalletController extends BaseController {
       setPopupIcon(isDefaultWallet ? 'lux' : 'metamask');
     }
   };
-  isUnlocked = () => keyringService.isUnlocked();
+  isUnlocked = () => keyringService.memStore.getState().isUnlocked;
 
   lockWallet = async () => {
     await keyringService.setLocked();
@@ -1291,9 +1120,9 @@ export class WalletController extends BaseController {
     return this.getTotalBalanceCached.isExpired(address);
   };
 
-  updateAddressBalanceCache = (address: string, balance: string) => {
-    preferenceService.updateAddressUSDValueCache(address, Number(balance));
-  };
+  /**
+   * @deprecatedgetPersistedBalanceAboutCacheMap
+   */
   getAddressCacheBalance = (address: string | undefined, isTestnet = false) => {
     if (!address) return null;
     if (isTestnet) {
@@ -1306,9 +1135,6 @@ export class WalletController extends BaseController {
     );
   };
 
-  /**
-   * @deprecated getPersistedBalanceAboutCacheMap
-   */
   getPersistedBalanceAboutCacheMap = () => {
     return preferenceService.getBalanceAboutCacheMap();
   };
@@ -1410,24 +1236,12 @@ export class WalletController extends BaseController {
   setSwapPreferMEVGuarded = swapService.setSwapPreferMEVGuarded;
 
   setRedirect2Points = LuxPointsService.setRedirect2Points;
-  setRabbyPointsSignature = LuxPointsService.setSignature;
-  getRabbyPointsSignature = LuxPointsService.getSignature;
-  clearRabbyPointsSignature = LuxPointsService.clearSignature;
+  setLuxPointsSignature = LuxPointsService.setSignature;
+  getLuxPointsSignature = LuxPointsService.getSignature;
+  clearLuxPointsSignature = LuxPointsService.clearSignature;
 
   addHDKeyRingLastAddAddrTime = HDKeyRingLastAddAddrTimeService.addUnixRecord;
   getHDKeyRingLastAddAddrTimeStore = HDKeyRingLastAddAddrTimeService.getStore;
-
-  getBridgeData = bridgeService.getBridgeData;
-  getBridgeAggregators = bridgeService.getBridgeAggregators;
-  setBridgeAggregators = bridgeService.setBridgeAggregators;
-  getBridgeUnlimitedAllowance = bridgeService.getUnlimitedAllowance;
-  setBridgeUnlimitedAllowance = bridgeService.setUnlimitedAllowance;
-  setBridgeSelectedChain = bridgeService.setSelectedChain;
-  setBridgeSelectedFromToken = bridgeService.setSelectedFromToken;
-  setBridgeSelectedToToken = bridgeService.setSelectedToToken;
-  getBridgeSortIncludeGasFee = bridgeService.getBridgeSortIncludeGasFee;
-  setBridgeSortIncludeGasFee = bridgeService.setBridgeSortIncludeGasFee;
-  setBridgeSettingFirstOpen = bridgeService.setBridgeSettingFirstOpen;
 
   setCustomRPC = RPCService.setRPC;
   removeCustomRPC = RPCService.removeCustomRPC;
@@ -1501,7 +1315,7 @@ export class WalletController extends BaseController {
 
     permissionService.setSite(data);
     if (data.isConnected) {
-      // rabby:chainChanged event must be sent before chainChanged event
+      // lux:chainChanged event must be sent before chainChanged event
       sessionService.broadcastEvent(
         'lux:chainChanged',
         {
@@ -1570,7 +1384,7 @@ export class WalletController extends BaseController {
     if (prevIsDefaultWallet !== currentIsDefaultWallet && hasOtherProvider) {
       sessionService.broadcastEvent(
         'defaultWalletChanged',
-        currentIsDefaultWallet ? 'rabby' : 'metamask',
+        currentIsDefaultWallet ? 'lux' : 'metamask',
         site.origin
       );
     }
@@ -1585,7 +1399,7 @@ export class WalletController extends BaseController {
     }
 
     permissionService.updateConnectSite(origin, data);
-    // rabby:chainChanged event must be sent before chainChanged event
+    // lux:chainChanged event must be sent before chainChanged event
     sessionService.broadcastEvent(
       'lux:chainChanged',
       {
@@ -2335,9 +2149,6 @@ export class WalletController extends BaseController {
     transactionHistoryService.clearPendingTransactions(address, chainId);
     transactionWatcher.clearPendingTx(address, chainId);
     transactionBroadcastWatchService.clearPendingTx(address, chainId);
-
-    sessionService.broadcastToDesktopOnly('clearPendingTransactions', null);
-
     return;
   };
 
@@ -3155,9 +2966,6 @@ export class WalletController extends BaseController {
   // getTxExplainCacheByApprovalId = (id: string) =>
   //   transactionHistoryService.getExplainCacheByApprovalId(id);
 
-  markTransactionAsIndexed = (address: string, chainId: number, hash: string) =>
-    transactionHistoryService.markTransactionAsIndexed(address, chainId, hash);
-
   getTransactionHistory = (address: string) =>
     transactionHistoryService.getList(address);
 
@@ -3937,7 +3745,7 @@ export class WalletController extends BaseController {
   };
 
   /**
-   * disable some functions when Rabby server is busy
+   * disable some functions when Lux server is busy
    * disable approval management and transaction history when level is 1
    * disable total balance refresh and level 1 content when level is 2
    */
@@ -3960,7 +3768,7 @@ export class WalletController extends BaseController {
       }
       try {
         const config = await fetch(
-          'https://cdn.lux.network/xwallet/config.json'
+          'https://static.debank.com/rabby/config.json'
         );
         const { data } = (await config.json()) as IConfig;
         return data.level;
@@ -3971,7 +3779,7 @@ export class WalletController extends BaseController {
     { timeout: 10000, maxSize: 0 }
   ).fn;
 
-  rabbyPointVerifyAddress = async (params?: {
+  luxPointVerifyAddress = async (params?: {
     code?: string;
     claimSnapshot?: boolean;
     claimNumber?: number;
@@ -3989,13 +3797,13 @@ export class WalletController extends BaseController {
           id: account?.address,
           invite_code: code,
         })
-      )?.text; //`${account?.address} Claims Rabby Points`;
+      )?.text; //`${account?.address} Claims Lux Points`;
     } else {
       verifyText = (
         await wallet.openapi.getLuxSignatureTextV2({
           id: account?.address,
         })
-      )?.text; //`Rabby Wallet wants you to sign in with your address:\n${account?.address}`;
+      )?.text; //`Lux Wallet wants you to sign in with your address:\n${account?.address}`;
     }
 
     const msg = `0x${Buffer.from(
@@ -4008,7 +3816,7 @@ export class WalletController extends BaseController {
       params: [msg, account.address],
     });
 
-    this.setRabbyPointsSignature(account.address, signature);
+    this.setLuxPointsSignature(account.address, signature);
     if (claimSnapshot) {
       try {
         await wallet.openapi.claimLuxPointsSnapshotV2({
@@ -4021,7 +3829,7 @@ export class WalletController extends BaseController {
       }
     } else {
       this.setPageStateCache({
-        path: '/rabby-points',
+        path: '/lux-points',
         params: {},
         states: {},
       });
@@ -4129,112 +3937,6 @@ export class WalletController extends BaseController {
   };
 
   syncMainnetChainList = syncChainService.syncMainnetChainList;
-
-  tryUnlock = async () => {
-    await keyringService.tryUnlock();
-    this.syncPopupIcon();
-  };
-
-  syncPopupIcon = () => {
-    if (!this.isBooted()) {
-      setPopupIcon('default');
-    } else if (this.isUnlocked()) {
-      const hasOtherProvider = preferenceService.getHasOtherProvider();
-      const isDefaultWallet = preferenceService.getIsDefaultWallet();
-      if (!hasOtherProvider) {
-        setPopupIcon('default');
-      } else {
-        setPopupIcon(isDefaultWallet ? 'lux' : 'metamask');
-      }
-    } else {
-      setPopupIcon('locked');
-    }
-  };
-  setIsHideEcologyNoticeDict = preferenceService.setIsHideEcologyNoticeDict;
-  getMainnetListFromLocal = getMainnetListFromLocal;
-
-  mintedRabbyTotal = async () => {
-    const contract = await initMintLuxContract();
-    const result = await contract.totalSupply();
-
-    return result.toString();
-  };
-
-  mintedRabbyEndDateTime = async () => {
-    const contract = await initMintLuxContract();
-    const { publicSaleEnd } = await contract.saleDetails();
-
-    try {
-      return new Date(publicSaleEnd.toNumber() * 1000).getTime();
-    } catch (e) {
-      return 0;
-    }
-  };
-
-  getMintedRabby = async () => {
-    const account = await preferenceService.getCurrentAccount();
-    const contract = await initMintLuxContract();
-    const accountAddress = account!.address;
-    const result = await contract.mintedPerAddress(accountAddress);
-    const isMinted = (result.totalMints as BigNumber).eq(1);
-
-    if (!isMinted) {
-      return false;
-    }
-
-    const nfts = await openapiService.listNFT(accountAddress, true);
-    const contractAddress = getMintLuxContractAddress();
-    // only one token, so just return the first one
-    const nft = nfts.find((item) =>
-      isSameAddress(item.contract_id, contractAddress)
-    );
-
-    if (!nft) {
-      return {
-        contractAddress,
-      };
-    }
-
-    return {
-      tokenId: nft?.inner_id,
-      contractAddress: nft?.contract_id,
-      detailUrl: nft?.detail_url,
-    };
-  };
-
-  mintRabbyFee = async () => {
-    const contract = await initMintLuxContract();
-    const feeAmount = (await contract.zoraFeeForAmount(1)).fee;
-
-    return feeAmount.toString();
-  };
-
-  mintRabby = async () => {
-    const account = await preferenceService.getCurrentAccount();
-    const contract = await initMintLuxContract();
-    const feeAmount = await this.mintRabbyFee();
-    const value = `0x${new BigNumber(feeAmount).toString(16)}`;
-    const contractAddress = getMintLuxContractAddress();
-
-    const result = await this.sendRequest({
-      method: 'eth_sendTransaction',
-      params: [
-        {
-          chainId: CHAINS['ETH'].id,
-          value,
-          from: account!.address,
-          to: contractAddress,
-          data: contract.interface.encodeFunctionData('purchase', [1]),
-        },
-      ],
-    });
-
-    return result;
-  };
-
-  getEnsContentHash = getEnsContentHash;
-
-  validateSafeConfirmation = validateConfirmation;
 }
 
 const wallet = new WalletController();

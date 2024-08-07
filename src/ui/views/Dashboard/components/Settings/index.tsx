@@ -591,7 +591,7 @@ const SettingsInner = ({
         ? t('page.dashboard.settings.enableWhitelistTip')
         : t('page.dashboard.settings.disableWhitelistTip'),
       validationHandler: async (password: string) =>
-        await wallet.toggleWhitelist(value),
+        await wallet.toggleWhitelist(password, value),
       onFinished() {
         setWhitelistEnable(value);
       },
