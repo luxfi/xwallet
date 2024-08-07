@@ -40,6 +40,7 @@ import RcIconEco, {
 import IconMoreSettings, {
   ReactComponent as RcIconMoreSettings,
 } from 'ui/assets/dashboard/more-settings.svg';
+import { ReactComponent as RcIconBridge } from 'ui/assets/dashboard/bridge.svg';
 import IconDrawer from 'ui/assets/drawer.png';
 import {
   getCurrentConnectSite,
@@ -220,6 +221,14 @@ export default ({
         setIsShowReceiveModal(true);
       },
     } as IPanelItem,
+    bridge: {
+      icon: RcIconBridge,
+      eventKey: 'Bridge',
+      content: t('page.dashboard.home.panel.bridge'),
+      onClick: () => {
+        history.push('/bridge');
+      },
+    } as IPanelItem,
     gasTopUp: {
       icon: RcIconGasTopUp,
       eventKey: 'Gas Top Up',
@@ -301,7 +310,8 @@ export default ({
     pickedPanelKeys = [
       'swap',
       'send',
-      'receive',
+      'bridge',
+      // 'receive',
       'nft',
       // 'queue',
       'transactions',
@@ -315,7 +325,8 @@ export default ({
     pickedPanelKeys = [
       'swap',
       'send',
-      'receive',
+      'bridge',
+      // 'receive',
       'nft',
       'transactions',
       // 'gasTopUp',
