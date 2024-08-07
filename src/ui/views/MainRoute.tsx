@@ -61,6 +61,7 @@ import ImportHardware from './ImportHardware';
 import { CustomTestnet } from './CustomTestnet';
 import { AddFromCurrentSeedPhrase } from './AddFromCurrentSeedPhrase';
 import { Ecology } from './Ecology';
+import Bridge from './Bridge';
 
 declare global {
   interface Window {
@@ -287,6 +288,9 @@ const Main = () => {
         </PrivateRoute>
         <PrivateRoute path="/ecology/:chainId">
           <Ecology />
+        </PrivateRoute>
+        <PrivateRoute exact path="/bridge">
+          <Bridge />
         </PrivateRoute>
       </Switch>
 
