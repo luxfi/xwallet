@@ -16,7 +16,7 @@ import {
 export const dbk = defineChain({
   ...chainConfig,
   id: 20240603,
-  name: 'DBK Chain',
+  name: 'Lux Chain',
   nativeCurrency: {
     decimals: 18,
     name: 'Ether',
