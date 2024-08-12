@@ -3768,7 +3768,7 @@ export class WalletController extends BaseController {
       }
       try {
         const config = await fetch(
-          'https://static.debank.com/rabby/config.json'
+          'https://cdn.lux.network/xwallet/config.json'
         );
         const { data } = (await config.json()) as IConfig;
         return data.level;

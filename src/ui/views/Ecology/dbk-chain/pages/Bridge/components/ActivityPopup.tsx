@@ -61,7 +61,7 @@ const ActivityBridgeStatus = ({
           className={clsx(
             'inline-flex items-center gap-[6px]',
             'px-[10px] py-[6px] rounded-full',
-            'bg-[rgba(255,124,96,0.10)] text-r-orange-DBK cursor-pointer'
+            'bg-[rgba(255,124,96,0.10)] text-r-orange-LUX cursor-pointer'
           )}
           onClick={() => {
             openInTab(getTxScanLink(chain.scanLink, item.tx_id));
@@ -103,7 +103,7 @@ const ActivityBridgeStatus = ({
             className={clsx(
               'inline-flex items-center gap-[6px]',
               'px-[10px] py-[6px] rounded-full',
-              'bg-[rgba(255,124,96,0.10)] text-r-orange-DBK'
+              'bg-[rgba(255,124,96,0.10)] text-r-orange-LUX'
             )}
           >
             <Loading3QuartersOutlined className="text-[14px] animate-spin block" />
@@ -154,7 +154,7 @@ const ActivityBridgeStatus = ({
             className={clsx(
               'inline-flex items-center gap-[6px]',
               'px-[10px] py-[6px] rounded-full',
-              'bg-[rgba(255,124,96,0.10)] text-r-orange-DBK'
+              'bg-[rgba(255,124,96,0.10)] text-r-orange-LUX'
             )}
           >
             <Loading3QuartersOutlined className="text-[14px] animate-spin block" />
@@ -204,7 +204,7 @@ const ActivityBridgeStatus = ({
             className={clsx(
               'inline-flex items-center gap-[6px]',
               'px-[10px] py-[6px] rounded-full',
-              'bg-[rgba(255,124,96,0.10)] text-r-orange-DBK'
+              'bg-[rgba(255,124,96,0.10)] text-r-orange-LUX'
             )}
           >
             <Loading3QuartersOutlined className="text-[14px] animate-spin block" />
@@ -256,7 +256,7 @@ const ActivityBridgeStatus = ({
             className={clsx(
               'inline-flex items-center gap-[6px]',
               'px-[10px] py-[6px] rounded-full',
-              'bg-[rgba(255,124,96,0.10)] text-r-orange-DBK'
+              'bg-[rgba(255,124,96,0.10)] text-r-orange-LUX'
             )}
           >
             <Loading3QuartersOutlined className="text-[14px] animate-spin block" />
@@ -341,7 +341,7 @@ const ActivityItem = ({
       className={clsx(
         'mb-[20px] p-[16px] rounded-[8px] border-[0.5px]',
         status && status !== 'finalized'
-          ? 'border-rabby-orange-DBK'
+          ? 'border-rabby-orange-LUX'
           : 'border-rabby-neutral-line'
       )}
     >

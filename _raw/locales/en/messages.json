@@ -2036,7 +2036,7 @@
           "bridge": "Bridge To Lux Chain",
           "bridgePoweredBy": "Powered by OP Superchain",
           "bridgeBtn": "Bridge",
-          "mintNFT": "Mint DBK Genesis NFT",
+          "mintNFT": "Mint LUX Genesis NFT",
           "mintNFTDesc": "Be a witness of Lux Chain",
           "mintNFTBtn": "Mint"
         },
@@ -2088,7 +2088,7 @@
           }
         },
         "minNFT": {
-          "title": "DBK Genesis",
+          "title": "LUX Genesis",
           "minted": "Minted",
           "myBalance": " My Balance",
           "mintBtn": "Mint"

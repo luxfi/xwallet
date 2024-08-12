@@ -20,7 +20,14 @@ export const getMainnetListFromLocal = () => {
     return res?.luxMainnetChainList || [];
   });
 };
-
+console.log(
+  '---------->',
+  defaultSuppordChain
+    .filter((item) => !item.is_disabled)
+    .map((item) => {
+      return supportedChainToChain(item);
+    })
+);
 getMainnetListFromLocal().then((list) => {
   if (list.length) {
     updateChainStore({
@@ -85,7 +92,6 @@ export const findChain = (params: {
       item.hex === hex ||
       item.network === networkId
   );
-
   return chain;
 };
 
