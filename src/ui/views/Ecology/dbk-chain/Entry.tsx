@@ -5,7 +5,7 @@ import { DbkChainBridge } from './pages/Bridge';
 import { DbkChainHome } from './pages/Home';
 import { DbkChainMintNFT } from './pages/MintNFT';
 
-export const DbkChainEntry = () => {
+export const LuxChainEntry = () => {
   const { path } = useRouteMatch();
   const { chainId } = useParams<{ chainId: string }>();
   return (
@@ -20,12 +20,12 @@ export const DbkChainEntry = () => {
         <Route exact path={path}>
           <DbkChainHome />
         </Route>
-        <Route exact path={`${path}/mintNft`}>
+        {/* <Route exact path={`${path}/mintNft`}>
           <DbkChainMintNFT />
         </Route>
         <Route exact path={`${path}/bridge`}>
           <DbkChainBridge />
-        </Route>
+        </Route> */}
       </Switch>
     </div>
   );

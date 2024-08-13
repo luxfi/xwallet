@@ -26,15 +26,15 @@ export const WithdrawConfirmPopup = ({
   const { t } = useTranslation();
   const checkList = [
     {
-      label: t('page.ecology.dbk.bridge.WithdrawConfirmPopup.question1'),
+      label: t('page.ecology.luxEco.bridge.WithdrawConfirmPopup.question1'),
       value: 1,
     },
     {
-      label: t('page.ecology.dbk.bridge.WithdrawConfirmPopup.question2'),
+      label: t('page.ecology.luxEco.bridge.WithdrawConfirmPopup.question2'),
       value: 2,
     },
     {
-      label: t('page.ecology.dbk.bridge.WithdrawConfirmPopup.question3'),
+      label: t('page.ecology.luxEco.bridge.WithdrawConfirmPopup.question3'),
       value: 3,
     },
   ];
@@ -54,7 +54,7 @@ export const WithdrawConfirmPopup = ({
     <Popup
       title={
         <div className="text-r-neutral-title-1 text-[16px] font-semibold">
-          {t('page.ecology.dbk.bridge.WithdrawConfirmPopup.title')}
+          {t('page.ecology.luxEco.bridge.WithdrawConfirmPopup.title')}
         </div>
       }
       visible={visible}
@@ -68,11 +68,13 @@ export const WithdrawConfirmPopup = ({
       onCancel={onClose}
     >
       <div className="text-r-neutral-body text-[13px] leading-[16px] text-center mb-[12px]">
-        {t('page.ecology.dbk.bridge.WithdrawConfirmPopup.tips')}
+        {t('page.ecology.luxEco.bridge.WithdrawConfirmPopup.tips')}
       </div>
       <div className="rounded-[8px] border-[0.5px] border-rabby-neutral-line p-[16px] space-y-[16px] mb-[12px]">
         <div className="flex items-center justify-between text-r-neutral-title-1 text-[13px] leading-[16px] font-semibold">
-          <div>{t('page.ecology.dbk.bridge.WithdrawConfirmPopup.step1')}</div>
+          <div>
+            {t('page.ecology.luxEco.bridge.WithdrawConfirmPopup.step1')}
+          </div>
           <div>
             {gasFees?.withdrawGasFee1
               ? formatUsdValue(gasFees.withdrawGasFee1)
@@ -83,7 +85,9 @@ export const WithdrawConfirmPopup = ({
           Wait ~10 mins
         </div>
         <div className="flex items-center justify-between text-r-neutral-title-1 text-[13px] leading-[16px] font-semibold">
-          <div>{t('page.ecology.dbk.bridge.WithdrawConfirmPopup.step2')}</div>
+          <div>
+            {t('page.ecology.luxEco.bridge.WithdrawConfirmPopup.step2')}
+          </div>
           <div>
             {gasFees?.withdrawProveGasFee
               ? formatUsdValue(gasFees.withdrawProveGasFee)
@@ -94,7 +98,9 @@ export const WithdrawConfirmPopup = ({
           Wait ~7 days
         </div>
         <div className="flex items-center justify-between text-r-neutral-title-1 text-[13px] leading-[16px] font-semibold">
-          <div>{t('page.ecology.dbk.bridge.WithdrawConfirmPopup.step3')}</div>
+          <div>
+            {t('page.ecology.luxEco.bridge.WithdrawConfirmPopup.step3')}
+          </div>
           <div>
             {' '}
             {gasFees?.withdrawFinalizeGasFee
@@ -143,7 +149,7 @@ export const WithdrawConfirmPopup = ({
           disabled={!isCheckedAll}
           onClick={onSubmit}
         >
-          {t('page.ecology.dbk.bridge.WithdrawConfirmPopup.btn')}
+          {t('page.ecology.luxEco.bridge.WithdrawConfirmPopup.btn')}
         </DbkButton>
       </footer>
     </Popup>

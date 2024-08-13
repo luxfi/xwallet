@@ -91,11 +91,11 @@ export const DbkChainBridge = () => {
   const tabs = [
     {
       key: 'deposit' as const,
-      label: t('page.ecology.dbk.bridge.tabs.deposit'),
+      label: t('page.ecology.luxEco.bridge.tabs.deposit'),
     },
     {
       key: 'withdraw' as const,
-      label: t('page.ecology.dbk.bridge.tabs.withdraw'),
+      label: t('page.ecology.luxEco.bridge.tabs.withdraw'),
     },
   ];
   const [activeTab, setActiveTab] = React.useState<'deposit' | 'withdraw'>(
@@ -183,7 +183,7 @@ export const DbkChainBridge = () => {
                 />
                 <div className="min-w-0">
                   <div className="text-[12px] leading-[14px] font-medium text-white mb-[2px]">
-                    {t('page.ecology.dbk.bridge.labelFrom')}
+                    {t('page.ecology.luxEco.bridge.labelFrom')}
                   </div>
                   <div className="text-[15px] leading-[18px] font-bold truncate text-white">
                     {fromChain?.name}
@@ -203,7 +203,7 @@ export const DbkChainBridge = () => {
                 />
                 <div className="min-w-0">
                   <div className="text-[12px] leading-[14px] font-medium text-white mb-[2px]">
-                    {t('page.ecology.dbk.bridge.labelTo')}
+                    {t('page.ecology.luxEco.bridge.labelTo')}
                   </div>
                   <div className="text-[15px] leading-[18px] font-bold truncate text-white">
                     {targetChain?.name}
@@ -278,7 +278,7 @@ export const DbkChainBridge = () => {
             <div className="flex flex-col gap-[12px]">
               <div className="flex items-center gap-[12px]">
                 <div className="text-[13px] text-white leading-[16px] flex-shrink-0">
-                  {t('page.ecology.dbk.bridge.info.toAddress')}
+                  {t('page.ecology.luxEco.bridge.info.toAddress')}
                 </div>
                 <div className="ml-auto min-w-0">
                   <NameAndAddress
@@ -291,7 +291,7 @@ export const DbkChainBridge = () => {
               </div>
               <div className="flex items-center gap-[12px]">
                 <div className="text-[13px] text-white leading-[16px] flex-shrink-0">
-                  {t('page.ecology.dbk.bridge.info.receiveOn', {
+                  {t('page.ecology.luxEco.bridge.info.receiveOn', {
                     chainName: targetChain?.name,
                   })}
                 </div>
@@ -304,7 +304,7 @@ export const DbkChainBridge = () => {
               </div>
               <div className="flex items-center gap-[12px]">
                 <div className="text-[13px] text-white leading-[16px] flex-shrink-0">
-                  {t('page.ecology.dbk.bridge.info.completeTime')}
+                  {t('page.ecology.luxEco.bridge.info.completeTime')}
                 </div>
                 <div className="ml-auto  min-w-0">
                   <div className="text-[13px] leading-[16px] text-white font-semibold truncate">
@@ -314,7 +314,7 @@ export const DbkChainBridge = () => {
               </div>
               <div className="flex items-center gap-[12px]">
                 <div className="text-[13px] text-white leading-[16px flex-shrink-0]">
-                  {t('page.ecology.dbk.bridge.info.gasFee')}
+                  {t('page.ecology.luxEco.bridge.info.gasFee')}
                 </div>
                 <div className="ml-auto min-w-0">
                   <div className="text-[13px] leading-[16px] text-white font-semibold truncate">
@@ -337,7 +337,7 @@ export const DbkChainBridge = () => {
             />
 
             <div className="text-r-red-default font-medium text-[13px] leading-[16px]">
-              {t('page.ecology.dbk.bridge.error.notEnoughBalance')}
+              {t('page.ecology.luxEco.bridge.error.notEnoughBalance')}
             </div>
           </div>
         ) : null}

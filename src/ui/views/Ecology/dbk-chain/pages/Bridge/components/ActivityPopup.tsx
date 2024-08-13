@@ -69,7 +69,7 @@ const ActivityBridgeStatus = ({
         >
           <Loading3QuartersOutlined className="text-[14px] animate-spin block" />
           <div className="text-[13px] leading-[16px] font-bold">
-            {t('page.ecology.dbk.bridge.ActivityPopup.status.deposit')}
+            {t('page.ecology.luxEco.bridge.ActivityPopup.status.deposit')}
           </div>
           <RcIconJump />
         </div>
@@ -93,7 +93,7 @@ const ActivityBridgeStatus = ({
       >
         <RcIconChecked className="text-r-green-default" />
         <div className="text-[13px] leading-[16px] text-r-green-default font-bold">
-          {t('page.ecology.dbk.bridge.ActivityPopup.status.withdraw')}
+          {t('page.ecology.luxEco.bridge.ActivityPopup.status.withdraw')}
         </div>
         <RcIconJump className="text-r-green-default" />
       </div>
@@ -108,7 +108,9 @@ const ActivityBridgeStatus = ({
           >
             <Loading3QuartersOutlined className="text-[14px] animate-spin block" />
             <div className="text-[13px] leading-[16px] font-bold">
-              {t('page.ecology.dbk.bridge.ActivityPopup.status.rootPublished')}
+              {t(
+                'page.ecology.luxEco.bridge.ActivityPopup.status.rootPublished'
+              )}
             </div>
           </div>
           <div className="inline-flex items-center gap-[2px] px-[10px] py-[6px] rounded-full bg-r-neutral-card-2">
@@ -134,7 +136,9 @@ const ActivityBridgeStatus = ({
           >
             <RcIconChecked className="text-r-green-default" />
             <div className="text-[13px] leading-[16px] font-bold">
-              {t('page.ecology.dbk.bridge.ActivityPopup.status.rootPublished')}
+              {t(
+                'page.ecology.luxEco.bridge.ActivityPopup.status.rootPublished'
+              )}
             </div>
           </div>
         </div>
@@ -143,7 +147,9 @@ const ActivityBridgeStatus = ({
           <div className="inline-flex items-center rounded-full bg-r-neutral-card-2 gap-[6px] text-r-neutral-foot px-[10px] py-[6px]">
             <RcIconUncheck />
             <div className="text-[13px] leading-[16px] font-bold">
-              {t('page.ecology.dbk.bridge.ActivityPopup.status.rootPublished')}
+              {t(
+                'page.ecology.luxEco.bridge.ActivityPopup.status.rootPublished'
+              )}
             </div>
           </div>
         </div>
@@ -159,7 +165,9 @@ const ActivityBridgeStatus = ({
           >
             <Loading3QuartersOutlined className="text-[14px] animate-spin block" />
             <div className="text-[13px] leading-[16px] font-bold">
-              {t('page.ecology.dbk.bridge.ActivityPopup.status.readyToProve')}
+              {t(
+                'page.ecology.luxEco.bridge.ActivityPopup.status.readyToProve'
+              )}
             </div>
           </div>
           <DbkButton
@@ -168,7 +176,7 @@ const ActivityBridgeStatus = ({
             loading={isSubmittingProve}
             onClick={runProve}
           >
-            {t('page.ecology.dbk.bridge.ActivityPopup.proveBtn')}
+            {t('page.ecology.luxEco.bridge.ActivityPopup.proveBtn')}
           </DbkButton>
         </div>
       ) : ['waiting-to-finalize', 'ready-to-finalize', 'finalized'].includes(
@@ -184,7 +192,7 @@ const ActivityBridgeStatus = ({
           >
             <RcIconChecked className="text-r-green-default" />
             <div className="text-[13px] leading-[16px] font-bold">
-              {t('page.ecology.dbk.bridge.ActivityPopup.status.proved')}
+              {t('page.ecology.luxEco.bridge.ActivityPopup.status.proved')}
             </div>
           </div>
         </div>
@@ -193,7 +201,7 @@ const ActivityBridgeStatus = ({
           <div className="inline-flex items-center rounded-full bg-r-neutral-card-2 gap-[6px] text-r-neutral-foot px-[10px] py-[6px]">
             <RcIconUncheck />
             <div className="text-[13px] leading-[16px] font-bold">
-              {t('page.ecology.dbk.bridge.ActivityPopup.status.proved')}
+              {t('page.ecology.luxEco.bridge.ActivityPopup.status.proved')}
             </div>
           </div>
         </div>
@@ -210,7 +218,7 @@ const ActivityBridgeStatus = ({
             <Loading3QuartersOutlined className="text-[14px] animate-spin block" />
             <div className="text-[13px] leading-[16px] font-bold">
               {t(
-                'page.ecology.dbk.bridge.ActivityPopup.status.challengePeriod'
+                'page.ecology.luxEco.bridge.ActivityPopup.status.challengePeriod'
               )}
             </div>
           </div>
@@ -233,7 +241,7 @@ const ActivityBridgeStatus = ({
             <RcIconChecked className="text-r-green-default" />
             <div className="text-[13px] leading-[16px] font-bold">
               {t(
-                'page.ecology.dbk.bridge.ActivityPopup.status.challengePeriod'
+                'page.ecology.luxEco.bridge.ActivityPopup.status.challengePeriod'
               )}
             </div>
           </div>
@@ -244,7 +252,7 @@ const ActivityBridgeStatus = ({
             <RcIconUncheck />
             <div className="text-[13px] leading-[16px] font-bold">
               {t(
-                'page.ecology.dbk.bridge.ActivityPopup.status.challengePeriod'
+                'page.ecology.luxEco.bridge.ActivityPopup.status.challengePeriod'
               )}
             </div>
           </div>
@@ -261,7 +269,9 @@ const ActivityBridgeStatus = ({
           >
             <Loading3QuartersOutlined className="text-[14px] animate-spin block" />
             <div className="text-[13px] leading-[16px] font-bold">
-              {t('page.ecology.dbk.bridge.ActivityPopup.status.readyToClaim')}
+              {t(
+                'page.ecology.luxEco.bridge.ActivityPopup.status.readyToClaim'
+              )}
             </div>
           </div>
           <DbkButton
@@ -270,7 +280,7 @@ const ActivityBridgeStatus = ({
             loading={isSubmittingClaim}
             onClick={runClaim}
           >
-            {t('page.ecology.dbk.bridge.ActivityPopup.claimBtn')}
+            {t('page.ecology.luxEco.bridge.ActivityPopup.claimBtn')}
           </DbkButton>
         </div>
       ) : ['finalized'].includes(status) ? (
@@ -284,7 +294,7 @@ const ActivityBridgeStatus = ({
           >
             <RcIconChecked className="text-r-green-default" />
             <div className="text-[13px] leading-[16px] font-bold">
-              {t('page.ecology.dbk.bridge.ActivityPopup.status.claimed')}
+              {t('page.ecology.luxEco.bridge.ActivityPopup.status.claimed')}
             </div>
           </div>
         </div>
@@ -293,7 +303,7 @@ const ActivityBridgeStatus = ({
           <div className="inline-flex items-center rounded-full bg-r-neutral-card-2 gap-[6px] text-r-neutral-foot px-[10px] py-[6px]">
             <RcIconUncheck />
             <div className="text-[13px] leading-[16px] font-bold">
-              {t('page.ecology.dbk.bridge.ActivityPopup.status.claimed')}
+              {t('page.ecology.luxEco.bridge.ActivityPopup.status.claimed')}
             </div>
           </div>
         </div>
@@ -349,8 +359,8 @@ const ActivityItem = ({
         <div className="flex items-end gap-[8px]">
           <div className="text-[15px] leading-[18px] font-bold text-r-neutral-title-1">
             {item.is_deposit
-              ? t('page.ecology.dbk.bridge.ActivityPopup.deposit')
-              : t('page.ecology.dbk.bridge.ActivityPopup.withdraw')}
+              ? t('page.ecology.luxEco.bridge.ActivityPopup.deposit')
+              : t('page.ecology.luxEco.bridge.ActivityPopup.withdraw')}
           </div>
           <div className="text-[12px] leading-[14px] font-medium text-r-neutral-foot">
             {sinceTime(item.create_at)}
@@ -418,7 +428,7 @@ export const ActivityPopup = ({
     <Popup
       title={
         <div className="font-semibold">
-          {t('page.ecology.dbk.bridge.ActivityPopup.title')}
+          {t('page.ecology.luxEco.bridge.ActivityPopup.title')}
         </div>
       }
       visible={visible}
@@ -436,7 +446,7 @@ export const ActivityPopup = ({
               className="w-[52px] h-[52px] mx-auto mt-[112px] mb-24"
             />
             <p className="text-center text-r-neutral-foot text-14">
-              {t('page.ecology.dbk.bridge.ActivityPopup.empty')}
+              {t('page.ecology.luxEco.bridge.ActivityPopup.empty')}
             </p>
           </div>
         ) : (

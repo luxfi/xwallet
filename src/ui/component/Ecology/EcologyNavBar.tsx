@@ -4,6 +4,7 @@ import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 import { ReactComponent as RcIconBack } from 'ui/assets/icon-back-cc.svg';
+import LuxIcon from '@/ui/assets/ecology/dbk-genesis-nft.png';
 
 interface Props {
   className?: string;
@@ -46,12 +47,12 @@ export const EcologyNavBar = ({ className, style, chainId }: Props) => {
       </div>
       <div className="flex-auto">
         <div className="flex items-center justify-center bg-r-neutral-card2 rounded-full p-[6px] gap-[6px]">
-          <img src={chain?.logo} alt="" className="w-[16px] h-[16px]" />
-          <div className="text-neutral-body text-[13px] leading-[16px] text-r-neutral-body font-bold text-[white]">
+          {/* <img src={LuxIcon} alt="luxicon" className="w-[20px] h-[20px]" /> */}
+          <div className="text-neutral-body text-[20px] leading-[22px] text-r-neutral-body font-bold text-[white]">
             {/* {t('component.EcologyNavBar.providedBy', {
               chainName: chain?.name,
             })} */}
-            {`Provided by ${chain?.name}`}
+            Provided by LUX Chain
           </div>
         </div>
       </div>

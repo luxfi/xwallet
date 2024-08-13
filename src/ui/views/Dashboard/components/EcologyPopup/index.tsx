@@ -1,6 +1,7 @@
 import { DBK_CHAIN_ID } from '@/constant';
 import { Popup } from '@/ui/component';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
+import LuxIcon from '@/ui/assets/ecology/dbk-genesis-nft.png';
 import { findChain } from '@/utils/chain';
 import { Chain } from '@debank/common';
 import clsx from 'clsx';
@@ -47,12 +48,13 @@ export const EcologyPopup = ({ visible, onClose }: Props) => {
             }}
           >
             <img
-              src={item.logo}
-              alt=""
+              src={LuxIcon}
+              alt="luxicon"
               className="w-[24px] h-[24px] flex-shrink-0"
             />
             <div className="text-r-neutral-title-1 text-[15px] font-medium flex-1 text-white">
-              {item?.name}
+              {/* {item?.name} */}
+              Lux Network
             </div>
             <ThemeIcon src={RcIconArrowRight} className="ml-auto" />
           </div>

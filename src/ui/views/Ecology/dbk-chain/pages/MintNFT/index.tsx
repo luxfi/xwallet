@@ -13,7 +13,7 @@ export const DbkChainMintNFT: React.FC = () => {
         <div className="flex flex-col pt-[32px] pb-[30px] items-center text-center">
           <img className="block w-[200px] h-[200px]" src={MintNFTIcon} alt="" />
           <div className="mt-[20px] text-gradient text-[24px] leading-[28.8px] font-bold">
-            {t('page.ecology.dbk.minNFT.title')}
+            {t('page.ecology.luxEco.minNFT.title')}
           </div>
         </div>
         <div
@@ -30,7 +30,7 @@ export const DbkChainMintNFT: React.FC = () => {
               {numberWithCommasIsLtOne(totalMinted, 0)}
             </div>
             <div className="text-r-neutral-foot text-[13px] mt-[4px]">
-              {t('page.ecology.dbk.minNFT.minted')}
+              {t('page.ecology.luxEco.minNFT.minted')}
             </div>
           </div>
           <div className="w-[164px] h-[89px] flex flex-col">
@@ -41,7 +41,7 @@ export const DbkChainMintNFT: React.FC = () => {
               {numberWithCommasIsLtOne(userMinted, 0)}
             </div>
             <div className="text-r-neutral-foot text-[13px] mt-[4px]">
-              {t('page.ecology.dbk.minNFT.myBalance')}
+              {t('page.ecology.luxEco.minNFT.myBalance')}
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ export const DbkChainMintNFT: React.FC = () => {
           }}
           onClick={mintNFT}
         >
-          {t('page.ecology.dbk.minNFT.mintBtn')}
+          {t('page.ecology.luxEco.minNFT.mintBtn')}
         </DbkButton>
       </footer>
     </div>

@@ -2031,14 +2031,17 @@
       "transactionSpeed": "Transaction Speed"
     },
     "ecology": {
-      "dbk": {
+      "luxEco": {
         "home": {
-          "bridge": "Bridge To Lux Chain",
-          "bridgePoweredBy": "Powered by OP Superchain",
-          "bridgeBtn": "Bridge",
-          "mintNFT": "Mint LUX Genesis NFT",
-          "mintNFTDesc": "Be a witness of Lux Chain",
-          "mintNFTBtn": "Mint"
+          "exchange": "Lux Exchange",
+          "exchangePoweredBy": "Powered by OP Superchain",
+          "exchangeBtn": "Exchange",
+          "mintNFT": "Lux Market",
+          "mintNFTDesc": "Never sell your crypto again",
+          "mintNFTBtn": "Market",
+          "credit": "Lux Credit",
+          "creditDoc": "Auto Loan Repayment",
+          "creditBtn": "Credit"
         },
         "bridge": {
           "tabs": {
