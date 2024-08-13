@@ -130,7 +130,7 @@ export const SetReferralCode = ({
 
   return (
     <div className="bg-l-blue-light1 rounded-[8px] px-[16px] py-[12px] flex items-center justify-between ">
-      <div className="flex flex-col gap-[2px] text-l-blue-default">
+      <div className="flex flex-col gap-[2px] text-white">
         <span className="text-[15px] font-medium">
           {t('page.luxPoints.referralCode.my-referral-code')}
         </span>
@@ -140,7 +140,7 @@ export const SetReferralCode = ({
       </div>
       <Button
         type="primary"
-        className="w-[120px] h-[34px] text-l-neutral-title2 text-[15] font-medium"
+        className="w-[120px] h-[34px] text-[#000] text-[15] font-medium border border-[#fff] hover:border-[#d3d3d3]"
         onClick={openPopup}
       >
         {t('page.luxPoints.referralCode.set-my-code')}
@@ -206,7 +206,7 @@ export const SetReferralCode = ({
           <Button
             disabled={disabled}
             type="primary"
-            className="mt-auto w-full h-[52px] text-[15] font-medium text-l-neutral-title2"
+            className="mt-auto w-full h-[52px] text-[15] font-medium text-[#000]"
             onClick={submitReferralCode}
           >
             {t('page.luxPoints.referralCode.confirm')}

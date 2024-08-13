@@ -168,7 +168,7 @@
         "enterClaimCode": "輸入邀請碼",
         "goToSwap": "完成兌換",
         "imageLabel": "Lux Badge",
-        "learnMoreOnDebank": "跳轉至 DeBank 領取",
+        "learnMoreOnLuxfi": "跳轉至 DeBank 領取",
         "noCode": "你尚未激活該地址的邀請碼",
         "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "swapTip": "你需要先在 Lux Wallet 中完成一筆與知名dex的兌換",

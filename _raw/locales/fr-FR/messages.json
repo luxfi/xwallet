@@ -639,7 +639,7 @@
         "enterClaimCode": "Saisir le code de réclamation",
         "goToSwap": "Aller à l'échange",
         "imageLabel": "badge lux",
-        "learnMoreOnDebank": "En savoir plus sur DeBank",
+        "learnMoreOnLuxfi": "En savoir plus sur DeBank",
         "noCode": "Vous n'avez pas activé le code de réclamation pour cette adresse",
         "luxValuedUserNo": "Utilisateur Lux estimé n°{{num}}",
         "swapTip": "Vous devez d’abord effectuer un échange avec un DEX notable dans Lux Wallet.",

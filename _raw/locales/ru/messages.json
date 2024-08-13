@@ -1003,7 +1003,7 @@
         "viewYourClaimCode": "Посмотреть ваш код для получения",
         "noCode": "У вас еще не активирован код для получения",
         "freeGasNoCode": "Для начала нажмите кнопку внизу для перехода в DeBank и получите код для текущего кошелька.",
-        "learnMoreOnDebank": "Узнайте больше на DeBank",
+        "learnMoreOnLuxfi": "Узнайте больше на DeBank",
         "luxValuedUserNo": "Ценный пользователь Lux №{{num}}",
         "luxFreeGasUserNo": "Lux Free Gas User No.{{num}}",
         "claimSuccess": "Успешное получение",

@@ -788,7 +788,7 @@
         "claim": "クレーム",
         "viewYourClaimCode": "クレームコードを表示",
         "noCode": "このアドレスでクレームコードを有効にしていません",
-        "learnMoreOnDebank": "DeBankで詳細を確認",
+        "learnMoreOnLuxfi": "DeBankで詳細を確認",
         "luxValuedUserNo": "Lux 評価ユーザー番号{{num}}",
         "claimSuccess": "クレーム成功",
         "viewOnDebank": "DeBankで表示"

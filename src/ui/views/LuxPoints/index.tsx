@@ -25,7 +25,8 @@ const Wrapper = styled.div`
   overflow: hidden;
   position: relative;
   z-index: 1;
-  background-image: url(${imgBg});
+  // background-image: url(${imgBg});
+  background-color: #000;
   background-repeat: no-repeat;
   background-position: top;
   background-size: 400px 243px;
@@ -57,7 +58,7 @@ const Wrapper = styled.div`
     .ant-tabs-tab-btn {
       color: var(--l-neutral-body, #3e495e);
       &:hover {
-        color: var(--l-blue-default, #7084ff);
+        color: #fff;
       }
     }
     .ant-tabs-nav-list {
@@ -70,7 +71,11 @@ const Wrapper = styled.div`
       }
     }
     .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-      color: var(--l-blue-default, #7084ff);
+      color: #fff;
+    }
+
+    .ant-tabs-ink-bar {
+      background: #fff !important;
     }
 
     .ant-tabs-nav::before {
