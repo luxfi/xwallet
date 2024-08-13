@@ -226,7 +226,10 @@ export default ({
       eventKey: 'Bridge',
       content: t('page.dashboard.home.panel.bridge'),
       onClick: () => {
-        history.push('/bridge');
+        // history.push('/bridge');
+        window.open(
+          'https://bridge.lux.network/?utm_medium=social&utm_source=linktree&utm_campaign=bridge'
+        );
       },
     } as IPanelItem,
     gasTopUp: {

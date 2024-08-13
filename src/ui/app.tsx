@@ -151,7 +151,7 @@ const bootstrap = () => {
     main();
     return;
   }
-  console.log('sdsdf');
+  // console.log('sdsdf');
   browser.runtime
     .sendMessage({ type: 'getBackgroundReady' })
     .then((res) => {
