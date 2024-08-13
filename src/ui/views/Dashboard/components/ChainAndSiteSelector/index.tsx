@@ -227,9 +227,7 @@ export default ({
       content: t('page.dashboard.home.panel.bridge'),
       onClick: () => {
         // history.push('/bridge');
-        window.open(
-          'https://bridge.lux.network/?utm_medium=social&utm_source=linktree&utm_campaign=bridge'
-        );
+        window.open('https://bridge.lux.network');
       },
     } as IPanelItem,
     gasTopUp: {
