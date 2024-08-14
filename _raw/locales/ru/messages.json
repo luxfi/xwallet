@@ -962,11 +962,11 @@
       "feedback": {
         "directMessage": {
           "content": "Прямое сообщение",
-          "description": "Чат с официальным представителем Lux Wallet на DeBank"
+          "description": "Чат с официальным представителем Lux Wallet на Lux"
         },
         "proposal": {
           "content": "Предложение",
-          "description": "Отправьте предложение для Lux Wallet на DeBank"
+          "description": "Отправьте предложение для Lux Wallet на Lux"
         },
         "title": "Обратная связь"
       },
@@ -1002,12 +1002,12 @@
         "claim": "Получить",
         "viewYourClaimCode": "Посмотреть ваш код для получения",
         "noCode": "У вас еще не активирован код для получения",
-        "freeGasNoCode": "Для начала нажмите кнопку внизу для перехода в DeBank и получите код для текущего кошелька.",
-        "learnMoreOnLuxfi": "Узнайте больше на DeBank",
+        "freeGasNoCode": "Для начала нажмите кнопку внизу для перехода в Lux и получите код для текущего кошелька.",
+        "learnMoreOnLuxfi": "Узнайте больше на Lux",
         "luxValuedUserNo": "Ценный пользователь Lux №{{num}}",
         "luxFreeGasUserNo": "Lux Free Gas User No.{{num}}",
         "claimSuccess": "Успешное получение",
-        "viewOnDebank": "Посмотреть на DeBank"
+        "viewOnDebank": "Посмотреть на Lux"
       },
       "contacts": {
         "noDataLabel": "нет данных",
@@ -1082,7 +1082,7 @@
         "followUs": "Подписаться",
         "testnetBackendServiceUrl": "URL сервиса для тестовых сетей",
         "clearWatchMode": "Очистить Режим Просмотра",
-        "requestDeBankTestnetGasToken": "Запросить тестовые токены газа DeBank"
+        "requestDeBankTestnetGasToken": "Запросить тестовые токены газа Lux"
       },
       "tokenDetail": {
         "blockedTip": "Заблокированный токен не будет отображаться в списке токенов",
@@ -1671,7 +1671,7 @@
       }
     },
     "requestDebankTestnetGasToken": {
-      "title": "Запросить тестовый токен газа DeBank",
+      "title": "Запросить тестовый токен газа Lux",
       "mintedTip": "Владельцы значка Lux могут запрашивать его один раз в день",
       "notMintedTip": "Запрос доступен только для владельцев значка Lux",
       "claimBadgeBtn": "Запросить значок Lux",

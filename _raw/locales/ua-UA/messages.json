@@ -751,11 +751,11 @@
       "feedback": {
         "directMessage": {
           "content": "Пряме повідомлення",
-          "description": "Поспілкуйтеся з представником Lux Wallet на DeBank"
+          "description": "Поспілкуйтеся з представником Lux Wallet на Lux"
         },
         "proposal": {
           "content": "Пропозиція",
-          "description": "Подати пропозицію для Lux Wallet на DeBank"
+          "description": "Подати пропозицію для Lux Wallet на Lux"
         },
         "title": "Зворотній зв'язок"
       },
@@ -788,10 +788,10 @@
         "claim": "Вимагати",
         "viewYourClaimCode": "Переглянути код вашої заявки",
         "noCode": "Ви не активували код претензії для цієї адреси",
-        "learnMoreOnLuxfi": "Дізнатися більше на DeBank",
+        "learnMoreOnLuxfi": "Дізнатися більше на Lux",
         "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "claimSuccess": "Успіх заявки",
-        "viewOnDebank": "Переглянути у DeBank"
+        "viewOnDebank": "Переглянути у Lux"
       },
       "contacts": {
         "noDataLabel": "немає даних",
@@ -860,7 +860,7 @@
         "followUs": "Слідкуйте за нами",
         "testnetBackendServiceUrl": "URL-адреса внутрішньої служби Testnet",
         "clearWatchMode": "Очистити режим спостереження",
-        "requestDeBankTestnetGasToken": "Запросити тестові токени для DeBank Testnet"
+        "requestDeBankTestnetGasToken": "Запросити тестові токени для Lux Testnet"
       },
       "tokenDetail": {
         "blockedTip": "Заблокований токен не буде показано у списку токенів",
@@ -1359,7 +1359,7 @@
       }
     },
     "requestDebankTestnetGasToken": {
-      "title": "Запросити тестові токени для DeBank Testnet",
+      "title": "Запросити тестові токени для Lux Testnet",
       "mintedTip": "Власники бейджів Lux можуть запитувати один раз на день",
       "notMintedTip": "Запит доступний лише для власників бейджів Lux",
       "claimBadgeBtn": "Отримати бейдж Lux",

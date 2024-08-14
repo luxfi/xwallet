@@ -548,11 +548,11 @@
       "feedback": {
         "directMessage": {
           "content": "Message direct",
-          "description": "Discuter avec Lux Wallet Official sur DeBank"
+          "description": "Discuter avec Lux Wallet Official sur Lux"
         },
         "proposal": {
           "content": "Proposition",
-          "description": "Soumettre une proposition pour Lux Wallet sur DeBank"
+          "description": "Soumettre une proposition pour Lux Wallet sur Lux"
         },
         "title": "Feedback"
       },
@@ -639,12 +639,12 @@
         "enterClaimCode": "Saisir le code de réclamation",
         "goToSwap": "Aller à l'échange",
         "imageLabel": "badge lux",
-        "learnMoreOnLuxfi": "En savoir plus sur DeBank",
+        "learnMoreOnLuxfi": "En savoir plus sur Lux",
         "noCode": "Vous n'avez pas activé le code de réclamation pour cette adresse",
         "luxValuedUserNo": "Utilisateur Lux estimé n°{{num}}",
         "swapTip": "Vous devez d’abord effectuer un échange avec un DEX notable dans Lux Wallet.",
         "title": "Réclamer le badge Lux pour",
-        "viewOnDebank": "Voir sur DeBank",
+        "viewOnDebank": "Voir sur Lux",
         "viewYourClaimCode": "Afficher votre code de réclamation"
       },
       "recentConnection": {
@@ -709,7 +709,7 @@
         },
         "pendingTransactionCleared": "Transaction(s) en attente effacée(s)",
         "pleaseCheckYourHost": "Veuillez vérifier votre hôte",
-        "requestDeBankTestnetGasToken": "Demander un token de gaz pour le testnet DeBank",
+        "requestDeBankTestnetGasToken": "Demander un token de gaz pour le testnet Lux",
         "reset": "Restaurer le réglage initial",
         "save": "Sauvegarder",
         "settings": {
@@ -1168,7 +1168,7 @@
       "requestBtn": "Demande",
       "requested": "Vous avez déjà demandé aujourd'hui",
       "time": "Par jour",
-      "title": "Demander un token de gaz pour le testnet DeBank"
+      "title": "Demander un token de gaz pour le testnet Lux"
     },
     "safeQueue": {
       "LowerNonceError": "La transaction avec nonce {{nonce}} doit être exécutée en premier",

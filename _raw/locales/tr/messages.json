@@ -723,11 +723,11 @@
       "feedback": {
         "directMessage": {
           "content": "Doğrudan Mesaj",
-          "description": "Lux Wallet Official ile DeBank'ta sohbet edin"
+          "description": "Lux Wallet Official ile Lux'ta sohbet edin"
         },
         "proposal": {
           "content": "Öneri",
-          "description": "Lux Wallet için DeBank'ta bir öneri sunun"
+          "description": "Lux Wallet için Lux'ta bir öneri sunun"
         },
         "title": "Geri Bildirim"
       },
@@ -760,10 +760,10 @@
         "claim": "Talep Et",
         "viewYourClaimCode": "Talep kodunuzu görüntüleyin",
         "noCode": "Bu adres için talep kodunu aktive etmediniz",
-        "learnMoreOnLuxfi": "DeBank'ta daha fazla bilgi edinin",
+        "learnMoreOnLuxfi": "Lux'ta daha fazla bilgi edinin",
         "luxValuedUserNo": "Lux Valued User No.{{num}}",
         "claimSuccess": "Talep Başarılı",
-        "viewOnDebank": "DeBank'ta Görüntüle"
+        "viewOnDebank": "Lux'ta Görüntüle"
       },
       "contacts": {
         "noDataLabel": "veri yok",
@@ -832,7 +832,7 @@
         "followUs": "Bizi Takip Edin",
         "testnetBackendServiceUrl": "Testnet Backend Servis URL'si",
         "clearWatchMode": "İzleme Modunu Temizle",
-        "requestDeBankTestnetGasToken": "DeBank Testnet Gas Tokeni İste"
+        "requestDeBankTestnetGasToken": "Lux Testnet Gas Tokeni İste"
       },
       "tokenDetail": {
         "blockedTip": "Engellenen token, token listesinde gösterilmeyecek",
@@ -1329,7 +1329,7 @@
       }
     },
     "requestDebankTestnetGasToken": {
-      "title": "DeBank Testnet Gas Tokeni İste",
+      "title": "Lux Testnet Gas Tokeni İste",
       "mintedTip": "Lux Rozeti sahipleri günde bir kez istekte bulunabilir",
       "notMintedTip": "Sadece Lux Rozeti sahipleri talep edebilir",
       "claimBadgeBtn": "Lux Rozetini Talep Et",

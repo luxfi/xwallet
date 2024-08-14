@@ -28,7 +28,7 @@ const FeedbackPopup = ({ visible, onClose }: SettingsProps) => {
         <ThemeIcon src={RcIconItemLink} className="icon icon-item-link" />
       ),
       onClick: () => {
-        openInTab('https://debank.com/hi/0a110032');
+        openInTab('https://lux.chat/');
       },
     },
     {
@@ -39,7 +39,7 @@ const FeedbackPopup = ({ visible, onClose }: SettingsProps) => {
         <ThemeIcon src={RcIconItemLink} className="icon icon-item-link" />
       ),
       onClick: () => {
-        openInTab('https://debank.com/official/Lux_Wallet/proposals');
+        openInTab('https://lux.quest/');
       },
     },
   ];

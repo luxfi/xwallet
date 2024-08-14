@@ -29,8 +29,8 @@ import { ReactComponent as RcIconAutoLock } from 'ui/assets/dashboard/settings/i
 import { ReactComponent as RcIconLockWallet } from 'ui/assets/dashboard/settings/lock.svg';
 import { ReactComponent as RcIconWhitelist } from 'ui/assets/dashboard/whitelist.svg';
 import { ReactComponent as RcIconThemeMode } from 'ui/assets/settings/theme-mode.svg';
-import IconDiscordHover from 'ui/assets/discord-hover.svg';
-import { ReactComponent as RcIconDiscord } from 'ui/assets/discord.svg';
+import IconDiscordHover from 'ui/assets/linkedin-hover.svg';
+import { ReactComponent as RcIconLinkedin } from 'ui/assets/linkedin.svg';
 import IconTwitterHover from 'ui/assets/twitter-hover.svg';
 import { ReactComponent as RcIconTwitter } from 'ui/assets/twitter.svg';
 import { ReactComponent as RcIconClear } from 'ui/assets/icon-clear.svg';
@@ -181,7 +181,7 @@ const OpenApiModal = ({
           ]}
         >
           <Input
-            className="popup-input"
+            className="popup-input border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
             placeholder={t('page.dashboard.settings.host')}
             size="large"
             autoFocus
@@ -1053,7 +1053,7 @@ const SettingsInner = ({
           rightIcon: (
             <>
               <a
-                href="https://twitter.com/lux_link"
+                href="https://x.com/luxdefi"
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => {
@@ -1068,35 +1068,35 @@ const SettingsInner = ({
               >
                 <ThemeIcon
                   src={RcIconTwitter}
-                  className="w-20 group-hover:w-0 group-hover:h-0 group-hover:overflow-hidden"
+                  className="w-20 hover:opacity-70"
                 />
-                <ThemeIcon
+                {/* <ThemeIcon
                   src={IconTwitterHover}
                   className="w-0 h-0 overflow-hidden group-hover:w-20 group-hover:h-20"
-                />
+                /> */}
               </a>
               <a
-                href="https://discord.com/invite/seFBCWmUre"
+                href="https://linkedin.com/company/luxdefi"
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => {
                   matomoRequestEvent({
                     category: 'Setting',
                     action: 'clickToUse',
-                    label: 'Find us|Discord',
+                    label: 'Find us|Linkedin',
                   });
-                  reportSettings('discord');
+                  reportSettings('linkedin');
                 }}
                 className="ml-12 group"
               >
                 <ThemeIcon
-                  src={RcIconDiscord}
-                  className="w-20 overflow-hidden group-hover:w-0 group-hover:h-0 "
+                  src={RcIconLinkedin}
+                  className="w-20 hover:opacity-70"
                 />
-                <ThemeIcon
+                {/* <ThemeIcon
                   src={IconDiscordHover}
                   className="w-0 h-0 overflow-hidden group-hover:w-20 group-hover:h-20"
-                />
+                /> */}
               </a>
             </>
           ),

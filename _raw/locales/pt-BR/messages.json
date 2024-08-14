@@ -723,11 +723,11 @@
       "feedback": {
         "directMessage": {
           "content": "Mensagem Direta",
-          "description": "Converse com a Equipe Lux Wallet oficial no DeBank"
+          "description": "Converse com a Equipe Lux Wallet oficial no Lux"
         },
         "proposal": {
           "content": "Proposta",
-          "description": "Envie uma proposta para a Lux Wallet no DeBank"
+          "description": "Envie uma proposta para a Lux Wallet no Lux"
         },
         "title": "Feedback"
       },
@@ -760,10 +760,10 @@
         "claim": "Reivindicar",
         "viewYourClaimCode": "Ver seu código de reivindicação",
         "noCode": "Você ainda não ativou o código de reivindicação para este endereço",
-        "learnMoreOnLuxfi": "Saiba mais no DeBank",
+        "learnMoreOnLuxfi": "Saiba mais no Lux",
         "luxValuedUserNo": "Usuário Valorizado Lux Nº {{num}}",
         "claimSuccess": "Reivindicação bem-sucedida",
-        "viewOnDebank": "Ver no DeBank"
+        "viewOnDebank": "Ver no Lux"
       },
       "contacts": {
         "noDataLabel": "sem dados",
@@ -832,7 +832,7 @@
         "followUs": "Siga-nos",
         "testnetBackendServiceUrl": "URL do Serviço de Backend de Teste",
         "clearWatchMode": "Limpar Modo de Observação",
-        "requestDeBankTestnetGasToken": "Solicitar Token de Gás de Testnet DeBank"
+        "requestDeBankTestnetGasToken": "Solicitar Token de Gás de Testnet Lux"
       },
       "tokenDetail": {
         "blockedTip": "Tokens bloqueados não serão exibidos na lista de tokens",
@@ -1329,7 +1329,7 @@
       }
     },
     "requestDebankTestnetGasToken": {
-      "title": "Solicitar Token de Gás de Testnet DeBank",
+      "title": "Solicitar Token de Gás de Testnet Lux",
       "mintedTip": "Titulares do Lux Badge podem solicitar uma vez por dia",
       "notMintedTip": "Solicitação disponível apenas para titulares do Lux Badge",
       "claimBadgeBtn": "Reivindicar Lux Badge",
