@@ -13,7 +13,7 @@ const NoAddress = () => {
         showBackIcon={false}
         className="mx-[-20px]"
         fillClassName="mb-[20px]"
-        style={{ borderBottom: '1px solid #a6a6a6' }}
+        style={{ borderBottom: '1px solid #5b5b5b' }}
       >
         {t('page.newAddress.title')}
       </BlueHeader>

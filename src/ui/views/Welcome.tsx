@@ -9,7 +9,7 @@ const Container = styled.div`
   .step {
     padding: 42px 20px 32px 20px;
     background: var(--l-neutral-bg1);
-    border-top: 1px solid #a6a6a6;
+    border-top: 1px solid #5b5b5b;
   }
   .step-title {
     font-weight: 700;
