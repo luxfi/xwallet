@@ -34,7 +34,8 @@ const Lux_BADGE_URL = 'https://debank.com/official-badge/134';
 const LearnMore = 'https://x.com/lux_link/status/1785529719070368044';
 
 const gotoLuxFiLuxBadge = () => {
-  openInTab(Lux_BADGE_URL);
+  // openInTab(Lux_BADGE_URL);
+  window.open('https://explore.lux.network/');
 };
 
 const Wrapper = styled.div<{

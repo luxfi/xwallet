@@ -658,7 +658,7 @@ const SettingsInner = ({
         ),
         okText: t('page.dashboard.settings.updateVersion.okText'),
         onOk() {
-          openInTab('https://lux.link/update-extension');
+          openInTab('https://luxwallet-xyz.vercel.app/update-extension');
         },
       });
     } else {
@@ -1191,9 +1191,9 @@ const SettingsInner = ({
           <img
             className="inline-block cursor-pointer"
             src={LogoLux}
-            alt="https://lux.link"
+            alt="https://luxwallet-xyz.vercel.app"
             onClick={() => {
-              openInTab('https://lux.link', false);
+              openInTab('https://luxwallet-xyz.vercel.app', false);
             }}
           />
         </div>

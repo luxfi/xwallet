@@ -26,7 +26,7 @@ Check your points before you claim!
 
 Use my referral code ${invitedCode} for an extra bonus!
 
-https://lux.link/points?code=${invitedCode}
+https://luxwallet-xyz.vercel.app/points?code=${invitedCode}
 `);
 
   openInTab(`https://twitter.com/intent/tweet?text=${text}`);

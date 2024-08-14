@@ -23,7 +23,7 @@ export const ImportMyMetaMaskAccount = () => {
         target="_blank"
         onClick={(e) => {
           e.preventDefault();
-          openInTab('https://lux.link/metamask-export');
+          openInTab('https://luxwallet-xyz.vercel.app/metamask-export');
         }}
         className="hidden p-6 bg-l-blue-light-1 text-l-blue-default text-12 font-medium relative top-8 rounded-[2px]"
       >

@@ -26,7 +26,7 @@
     "default_title": "Lux",
     "default_popup": "popup.html"
   },
-  "author": "https://lux.link/",
+  "author": "https://luxwallet-xyz.vercel.app/",
   "background": {
     "service_worker": "sw.js"
   },

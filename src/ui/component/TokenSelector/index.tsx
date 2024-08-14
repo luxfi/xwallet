@@ -225,7 +225,10 @@ const TokenSelector = ({
       <div className="header">{t('component.TokenSelector.header.title')}</div>
       <div className="input-wrapper">
         <Input
-          className={clsx({ active: isInputActive })}
+          className={clsx(
+            // { active: isInputActive },
+            'border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]'
+          )}
           size="large"
           prefix={<img src={IconSearch} />}
           // Search by Name / Address

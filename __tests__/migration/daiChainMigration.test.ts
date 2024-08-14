@@ -10,14 +10,14 @@ const data: { permission: PermissionStore } = {
     dumpCache: [
       {
         e: 0,
-        k: 'https://lux.link',
+        k: 'https://luxwallet-xyz.vercel.app',
         v: {
           chain: 'DAI' as CHAINS_ENUM,
           icon: '',
           isSigned: false,
           isTop: false,
           name: 'lux',
-          origin: 'https://lux.link',
+          origin: 'https://luxwallet-xyz.vercel.app',
         } as ConnectedSite,
       },
       {
@@ -29,19 +29,19 @@ const data: { permission: PermissionStore } = {
           isSigned: false,
           isTop: false,
           name: 'lux',
-          origin: 'https://lux.link',
+          origin: 'https://luxwallet-xyz.vercel.app',
         } as ConnectedSite,
       },
       {
         e: 0,
-        k: 'https://lux.link',
+        k: 'https://luxwallet-xyz.vercel.app',
         v: {
           chain: 'ETH' as CHAINS_ENUM,
           icon: '',
           isSigned: false,
           isTop: false,
           name: 'lux',
-          origin: 'https://lux.link',
+          origin: 'https://luxwallet-xyz.vercel.app',
         } as ConnectedSite,
       },
     ],
@@ -53,14 +53,14 @@ test('should migrate data', () => {
     expect(result!.permission!.dumpCache).toEqual([
       {
         e: 0,
-        k: 'https://lux.link',
+        k: 'https://luxwallet-xyz.vercel.app',
         v: {
           chain: 'GNOSIS' as CHAINS_ENUM,
           icon: '',
           isSigned: false,
           isTop: false,
           name: 'lux',
-          origin: 'https://lux.link',
+          origin: 'https://luxwallet-xyz.vercel.app',
         },
       },
       {
@@ -72,19 +72,19 @@ test('should migrate data', () => {
           isSigned: false,
           isTop: false,
           name: 'lux',
-          origin: 'https://lux.link',
+          origin: 'https://luxwallet-xyz.vercel.app',
         },
       },
       {
         e: 0,
-        k: 'https://lux.link',
+        k: 'https://luxwallet-xyz.vercel.app',
         v: {
           chain: 'ETH' as CHAINS_ENUM,
           icon: '',
           isSigned: false,
           isTop: false,
           name: 'lux',
-          origin: 'https://lux.link',
+          origin: 'https://luxwallet-xyz.vercel.app',
         },
       },
     ]);
