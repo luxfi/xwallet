@@ -229,13 +229,13 @@ const Receive = () => {
 
       <div className="qr-card">
         <div className="qr-card-header">{title}</div>
-        <div className="qr-card-img">
+        <div className="qr-card-img border border-[#fff]">
           {account?.address && <QRCode value={account.address} size={175} />}
         </div>
         <div className="qr-card-address">{account?.address}</div>
         <button
           type="button"
-          className="qr-card-btn"
+          className="qr-card-btn border border-[#707070]"
           onClick={handleCopyAddress}
         >
           <ThemeIcon
