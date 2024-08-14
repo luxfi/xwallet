@@ -92,6 +92,7 @@ const ImportJson = () => {
             ]}
           >
             <Input
+              className="border-[#ffffff24] focus:border-[#ffffff80]"
               placeholder={t('page.newAddress.keystore.password.placeholder')}
               type="password"
               size="large"

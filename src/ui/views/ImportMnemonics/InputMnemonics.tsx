@@ -248,7 +248,7 @@ const ImportMnemonics = () => {
                   <Input
                     type="password"
                     className={clsx(
-                      'h-[44px] border-lux-neutral-line bg-lux-neutral-card-1 focus:border-blue'
+                      'h-[44px] border-lux-neutral-line text-white bg-lux-neutral-card-1 focus:border-[#ffffff81]'
                     )}
                     spellCheck={false}
                     placeholder={t('page.newAddress.seedPhrase.passphrase')}

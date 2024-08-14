@@ -89,7 +89,7 @@ export const ImportMyMetaMaskAccount = () => {
                 'rounded-[6px] bg-l-neutral-card-2'
               )}
               onClick={() => {
-                openInTab('https://lux.link/metamask-export');
+                openInTab('https://luxwallet-xyz.vercel.app/metamask-export');
               }}
             >
               View export tutorial

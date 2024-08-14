@@ -387,7 +387,7 @@ function MnemonicsInputs({
               {MNEMONICS_COUNTS.map((count) => {
                 return (
                   <Menu.Item
-                    className="h-[38px] py-0 px-[8px] text-[#000000] hover:bg-transparent"
+                    className="h-[38px] py-0 px-[8px] hover:bg-transparent"
                     key={`countSelector-${count}`}
                     onClick={() => {
                       setMnemonicsCount(count);
@@ -426,10 +426,7 @@ function MnemonicsInputs({
                         i18nKey="page.newAddress.seedPhrase.wordPhraseAndPassphrase"
                         values={{ count }}
                       >
-                        I have a
-                        <b style={{ color: 'var(--l-blue-default, #7084ff)' }}>
-                          {{ count }}
-                        </b>
+                        I have a<b style={{ color: '#000000' }}>{{ count }}</b>
                         -word phrase and Passphrase
                       </Trans>
                     </div>
@@ -442,7 +439,7 @@ function MnemonicsInputs({
                   <Menu.Item
                     className="h-[38px] py-0 px-[8px] hover:bg-transparent"
                     key={`countSelector-need-passphrase-${passphrase}`}
-                    style={{ color: 'var(--l-neutral-body)' }}
+                    style={{ color: '#000' }}
                     onClick={() => {
                       onSlip39Change(true);
                       setNeedPassphrase(passphrase);
@@ -458,9 +455,7 @@ function MnemonicsInputs({
                         }
                         values={{ SLIP39: 'SLIP 39' }}
                       >
-                        <b
-                          style={{ color: 'var(--l-blue-default, #7084ff)' }}
-                        ></b>
+                        <b style={{ color: '#000000' }}></b>
                       </Trans>
                     </div>
                   </Menu.Item>
@@ -469,7 +464,7 @@ function MnemonicsInputs({
             </Menu>
           }
         >
-          <div className="left flex items-center cursor-pointer text-[#000]">
+          <div className="left flex items-center cursor-pointer">
             <span>
               {!isSlip39 ? (
                 <Trans
@@ -674,7 +669,7 @@ const SLIP39MnemonicsInput = ({
           'min-h-[100px] p-12 border-lux-neutral-line bg-lux-neutral-card-1 ',
           'text-13 text-l-neutral-title-1 font-medium leading-[18px]',
           error ? 'border-lux-red-default' : '',
-          'placeholder-shown:text-l-neutral-foot placeholder-shown:text-13 focus:border-blue'
+          'placeholder-shown:text-l-neutral-foot placeholder-shown:text-13 focus:border-[#ffffff80]'
         )}
         spellCheck={false}
         placeholder={t(
