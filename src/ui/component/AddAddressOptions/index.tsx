@@ -351,10 +351,7 @@ const AddAddressOptions = () => {
   return (
     <div className="lux-container bg-[#000] pb-[12px]" ref={rootRef}>
       {[createImportAddrList, centerList].map((items, index) => (
-        <div
-          className="bg-l-neutral-card-1 rounded-[6px] mb-[12px]"
-          key={index}
-        >
+        <div className="bg-[#ffffff22] rounded-[6px] mb-[12px]" key={index}>
           {items.map((e) => {
             return (
               <Item
@@ -372,7 +369,7 @@ const AddAddressOptions = () => {
         </div>
       ))}
 
-      <div className="bg-l-neutral-card-1 rounded-[6px] mb-[12px]">
+      <div className="bg-[#ffffff22] rounded-[6px] mb-[12px]">
         {renderList.map((item) => {
           const isSelected = selectedWalletType === item.key;
           return (
@@ -452,7 +449,7 @@ const AddAddressOptions = () => {
         })}
       </div>
 
-      <div className="bg-l-neutral-card-1 rounded-[6px]">
+      <div className="bg-[#ffffff22] rounded-[6px]">
         {bottomList.map((e) => {
           return (
             <Item

@@ -387,7 +387,7 @@ function MnemonicsInputs({
               {MNEMONICS_COUNTS.map((count) => {
                 return (
                   <Menu.Item
-                    className="h-[38px] py-0 px-[8px] text-l-neutral-body hover:bg-transparent"
+                    className="h-[38px] py-0 px-[8px] text-[#000000] hover:bg-transparent"
                     key={`countSelector-${count}`}
                     onClick={() => {
                       setMnemonicsCount(count);
@@ -401,10 +401,7 @@ function MnemonicsInputs({
                         i18nKey="page.newAddress.seedPhrase.wordPhrase"
                         values={{ count }}
                       >
-                        I have a
-                        <b style={{ color: 'var(--l-blue-default, #7084ff)' }}>
-                          {{ count }}
-                        </b>
+                        I have a<b style={{ color: '#000000' }}>{{ count }}</b>
                         -word phrase
                       </Trans>
                     </div>
@@ -416,7 +413,7 @@ function MnemonicsInputs({
                   <Menu.Item
                     className="h-[38px] py-0 px-[8px] hover:bg-transparent"
                     key={`countSelector-need-passphrase-${count}`}
-                    style={{ color: 'var(--l-neutral-body)' }}
+                    style={{ color: '#000' }}
                     onClick={() => {
                       setMnemonicsCount(count);
                       setNeedPassphrase(true);
@@ -472,7 +469,7 @@ function MnemonicsInputs({
             </Menu>
           }
         >
-          <div className="left flex items-center cursor-pointer">
+          <div className="left flex items-center cursor-pointer text-[#000]">
             <span>
               {!isSlip39 ? (
                 <Trans

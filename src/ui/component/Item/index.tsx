@@ -25,6 +25,7 @@ const ItemWrapper = styled.div<{
 }>`
   width: 100%;
 
+  border-color: #ffffff22;
   background-color: ${(p) => p.bgColor};
   border-radius: 6px;
   cursor: pointer;
@@ -41,7 +42,7 @@ const ItemWrapper = styled.div<{
       ? css`
           &:hover {
             background-color: ${p.hoverBgColor};
-            border-color: var(--l-blue-default, #7084ff);
+            border-color: transparent;
           }
         `
       : ''}
@@ -80,8 +81,8 @@ export const Item = (props: PropsWithChildren<ItemProps>) => {
     hoverBorder = true,
     px = 16,
     py = 15,
-    bgColor = 'var(--l-neutral-card-1, #fff)',
-    hoverBgColor = 'var(--l-blue-light-2, rgba(222, 227, 252, 1))',
+    bgColor = '#ffffff22',
+    hoverBgColor = '#ffffff25',
     className = '',
     leftIconClassName = '',
     rightIconClassName = '',
