@@ -95,6 +95,7 @@ export const CustomTestnetForm = ({
           ]}
         >
           <Input
+            className="border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
             ref={inputRef}
             autoComplete="off"
             disabled={disabled || idDisabled || isEdit}
@@ -110,7 +111,11 @@ export const CustomTestnetForm = ({
             },
           ]}
         >
-          <Input autoComplete="off" disabled={disabled} />
+          <Input
+            className="border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
+            autoComplete="off"
+            disabled={disabled}
+          />
         </Form.Item>
         <Form.Item
           label={t('page.customTestnet.CustomTestnetForm.rpcUrl')}
@@ -123,7 +128,12 @@ export const CustomTestnetForm = ({
             },
           ]}
         >
-          <Input autoComplete="off" type="url" disabled={disabled} />
+          <Input
+            className="border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
+            autoComplete="off"
+            type="url"
+            disabled={disabled}
+          />
         </Form.Item>
         <Form.Item
           label={t('page.customTestnet.CustomTestnetForm.nativeTokenSymbol')}
@@ -137,13 +147,21 @@ export const CustomTestnetForm = ({
             },
           ]}
         >
-          <Input autoComplete="off" disabled={disabled} />
+          <Input
+            className="border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
+            autoComplete="off"
+            disabled={disabled}
+          />
         </Form.Item>
         <Form.Item
           label={t('page.customTestnet.CustomTestnetForm.blockExplorerUrl')}
           name="scanLink"
         >
-          <Input autoComplete="off" disabled={disabled} />
+          <Input
+            className="border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
+            autoComplete="off"
+            disabled={disabled}
+          />
         </Form.Item>
       </Form>
     </Wraper>

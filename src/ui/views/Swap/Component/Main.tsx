@@ -35,7 +35,7 @@ const StyledInput = styled(Input)`
   font-size: 18px;
   box-shadow: none;
   border-radius: 4px;
-  border: 0.5px solid var(--l-neutral-line, #d3d8e0);
+  border: 0.5px solid #ffffff24;
   background: transparent !important;
   & > .ant-input {
     font-weight: 500;
@@ -53,11 +53,11 @@ const StyledInput = styled(Input)`
   &:focus,
   &:focus-within {
     border-width: 0.5px !important;
-    border-color: var(--l-blue-default, #7084ff) !important;
+    border-color: #ffffff80 !important;
   }
   &:hover {
     border-width: 0.5px !important;
-    border-color: var(--l-blue-default, #7084ff) !important;
+    border-color: #ffffff80 !important;
     box-shadow: none;
   }
 
@@ -518,7 +518,7 @@ export const Main = () => {
             <InfoCircleFilled
               className={clsx(
                 'pb-[4px] self-start transform rotate-180 origin-center',
-                inSufficient ? 'text-red-forbidden' : 'text-orange'
+                inSufficient ? 'text-[#ffffff80]' : 'text-[#ffffff]'
               )}
             />
           }
@@ -527,7 +527,7 @@ export const Main = () => {
             <span
               className={clsx(
                 'text-13 leading-[16px]',
-                inSufficient ? 'text-red-forbidden' : 'text-orange'
+                inSufficient ? 'text-[#ffffff80]' : 'text-[#fff]'
               )}
             >
               {t('page.swap.insufficient-balance')}
@@ -547,7 +547,7 @@ export const Main = () => {
           type="primary"
           block
           size="large"
-          className="h-[48px] text-white text-[16px] font-medium"
+          className="h-[48px] text-[#000] text-[16px] font-medium"
           onClick={() => {
             if (!activeProvider || expired || slippageChanged) {
               setVisible(true);

@@ -162,6 +162,7 @@ export const AddFromChainList = ({
           {t('page.customTestnet.AddFromChainList.title')}
         </PageHeader>
         <Input
+          className="border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
           prefix={<img src={IconSearch} />}
           placeholder={t('page.customTestnet.AddFromChainList.search')}
           onChange={(e) => setSearch(e.target.value)}

@@ -17,7 +17,7 @@ import { findChain } from '@/utils/chain';
 
 const ChainWrapper = styled.div`
   height: 40px;
-  background: var(--l-neutral-card-2, #f2f4f7);
+  background: #ffffff18;
   border-radius: 6px;
   padding: 12px 10px;
   width: 100%;
@@ -27,7 +27,7 @@ const ChainWrapper = styled.div`
   border: 1px solid transparent;
   cursor: pointer;
   &:hover {
-    background: rgba(134, 151, 255, 0.2);
+    background: #ffffff25;
   }
   & > {
     .down {

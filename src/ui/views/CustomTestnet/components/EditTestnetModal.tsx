@@ -149,9 +149,9 @@ export const EditCustomTestnetModal = ({
             <div
               className={clsx(
                 'flex items-center gap-[8px]',
-                'bg-l-blue-light1 p-[15px] cursor-pointer rounded-[6px]',
+                'bg-[#ffffff22] p-[15px] cursor-pointer rounded-[6px]',
                 'mb-[20px] border-[1px] border-transparent',
-                'hover:border-lux-blue-default hover:bg-l-blue-light1'
+                'hover:border-transparent hover:bg-[#ffffff25]'
               )}
               onClick={() => {
                 setIsShowAddFromChainList(true);
@@ -184,7 +184,7 @@ export const EditCustomTestnetModal = ({
           <Button
             type="primary"
             size="large"
-            className="lux-btn-ghost w-[172px]"
+            className="border-[#fff] text-[#fff] bg-transparent w-[172px]"
             ghost
             onClick={onCancel}
           >

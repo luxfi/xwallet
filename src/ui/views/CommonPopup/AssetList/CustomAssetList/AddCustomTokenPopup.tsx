@@ -285,7 +285,7 @@ export const AddCustomTokenPopup = ({ visible, onClose, onConfirm }: Props) => {
                       'flex items-center bg-l-neutral-card2 rounded-[6px]',
                       'px-[16px] py-[12px] min-h-[52px] cursor-pointer',
                       'border-[1px] border-transparent',
-                      'hover:border-lux-blue-default hover:bg-l-blue-light1'
+                      'hover:border-lux-blue-default hover:bg-[#ffffff25]'
                     )}
                   >
                     <div className="text-l-neutral-title1 text-[15px] leading-[18px]">
@@ -301,7 +301,7 @@ export const AddCustomTokenPopup = ({ visible, onClose, onConfirm }: Props) => {
                       'flex items-center bg-l-neutral-card2 rounded-[6px]',
                       'gap-[8px] px-[16px] py-[12px] min-h-[52px] cursor-pointer',
                       'border-[1px] border-transparent',
-                      'hover:border-lux-blue-default hover:bg-l-blue-light1'
+                      'hover:border-lux-blue-default hover:bg-[#ffffff25]'
                     )}
                   >
                     <img
@@ -324,6 +324,7 @@ export const AddCustomTokenPopup = ({ visible, onClose, onConfirm }: Props) => {
               name="address"
             >
               <Input
+                className="border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
                 ref={inputRef}
                 autoFocus
                 placeholder={t(
@@ -396,7 +397,7 @@ export const AddCustomTokenPopup = ({ visible, onClose, onConfirm }: Props) => {
             <Button
               type="primary"
               size="large"
-              className="lux-btn-ghost w-[172px]"
+              className="border-[#fff] text-[#fff] bg-transparent w-[172px]"
               ghost
               onClick={onClose}
             >
