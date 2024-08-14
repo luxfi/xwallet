@@ -255,7 +255,7 @@ const ImportWatchAddress = () => {
               placeholder={t('page.newAddress.addContacts.addressEns')}
               size="large"
               maxLength={44}
-              className="border-bright-on-active"
+              className="border-bright-on-active border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
               autoFocus
               spellCheck={false}
             />

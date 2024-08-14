@@ -115,6 +115,7 @@ const ImportGnosisAddress = () => {
               validateStatus={errorMessage ? 'error' : undefined}
             >
               <Input
+                className="border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
                 size="large"
                 autoFocus
                 placeholder={t('page.importSafe.placeholder')}
@@ -141,7 +142,7 @@ const ImportGnosisAddress = () => {
           ) : (
             <>
               {errorMessage ? (
-                <div className="error">{errorMessage}</div>
+                <div className="error text-[#ffffff80]">{errorMessage}</div>
               ) : (
                 !!chainList?.length && (
                   <div className="chain-list-container">

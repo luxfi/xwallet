@@ -30,9 +30,9 @@ export const AddressInput: React.FC<Props> = ({
           {
             'border-lux-neutral-line': !error,
           },
-          'focus-within: border border-[#7084ff]',
+          'focus-within: border border-[#ffffff80]',
           {
-            'border-red': error,
+            'border-[#ffffff80]': error,
           }
         )}
       >
@@ -52,7 +52,7 @@ export const AddressInput: React.FC<Props> = ({
           }}
         />
       </div>
-      <div className="mt-12 text-13 text-red">{error}</div>
+      <div className="mt-12 text-13 text-[#ffffff80]">{error}</div>
     </div>
   );
 };

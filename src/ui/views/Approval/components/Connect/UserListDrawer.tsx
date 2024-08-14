@@ -41,7 +41,7 @@ const Footer = styled.div`
       }
       &.checked {
         .lux-checkbox {
-          background-color: var(--l-blue-default, #7084ff) !important;
+          background-color: #fff !important;
           border: none;
         }
       }

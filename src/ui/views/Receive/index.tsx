@@ -147,6 +147,7 @@ const Receive = () => {
           </div>
           <div className="footer">
             <Button
+              className="border border-[#fff] bg-transparent text-[#fff]"
               type="primary"
               block
               onClick={() => {
@@ -158,8 +159,6 @@ const Receive = () => {
             </Button>
             <Button
               type="primary"
-              className="lux-btn-ghost"
-              ghost
               block
               onClick={() => {
                 modal.destroy();
