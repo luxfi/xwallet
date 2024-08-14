@@ -95,7 +95,7 @@ const Footer = styled.div`
   padding: 20px;
   border-top: 1px solid var(--l-neutral-card-2, rgba(255, 255, 255, 0.06));
   width: 100%;
-  background: var(--l-neutral-card-1, #fff);
+  background: #000;
   .ant-btn {
     width: 100%;
     height: 52px;
@@ -721,8 +721,7 @@ const Connect = ({ params: { icon, origin } }: ConnectProps) => {
                 type="primary"
                 ghost
                 className={clsx(
-                  'lux-btn-ghost',
-                  'flex items-center justify-center gap-2'
+                  'border-[#fff] text-[#fff] bg-transparent flex items-center justify-center gap-2'
                 )}
                 size="large"
                 onClick={
