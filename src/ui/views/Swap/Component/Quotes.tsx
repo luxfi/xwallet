@@ -265,7 +265,7 @@ export const Quotes = ({
         {t('page.swap.tradingSettingTips', { viewCount, tradeCount })}
         <span
           onClick={openSettings}
-          className="cursor-pointer pl-4 text-blue-light underline underline-blue-light"
+          className="cursor-pointer pl-4 text-[#dbdbdb] underline underline-blue-light"
         >
           {t('page.swap.edit')}
         </span>
