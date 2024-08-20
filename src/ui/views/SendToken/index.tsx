@@ -1356,7 +1356,7 @@ const SendToken = () => {
                         />
                         <span
                           title={contactInfo.name}
-                          className="inline-block align-middle truncate max-w-[240px]"
+                          className="inline-block align-middle truncate max-w-[240px] text-[#fff]"
                         >
                           {contactInfo.name}
                         </span>

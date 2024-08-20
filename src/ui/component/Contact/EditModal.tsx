@@ -99,9 +99,7 @@ const EditModal = ({ address, visible, onOk, onCancel }: EditModalProps) => {
           onClick={onCancel}
           className={clsx(
             'w-[200px]',
-            'text-blue-light',
-            'border-blue-light',
-            'hover:bg-[#8697FF1A] active:bg-[#0000001A]',
+            'bg-transparent border-[#fff] text-[#fff]',
             'before:content-none'
           )}
         >

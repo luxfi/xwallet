@@ -76,13 +76,11 @@ const AddressMemo = ({ address }: { address: string }) => {
             <div className="text-center flex gap-x-16 mt-20">
               <Button
                 size="large"
-                type="ghost"
+                // type="ghost"
                 onClick={() => destroy()}
                 className={clsx(
                   'w-[200px]',
-                  'text-blue-light',
-                  'border-blue-light',
-                  'hover:bg-[#8697FF1A] active:bg-[#0000001A]',
+                  'primary bg-transparent border-[#fff] text-[#fff]',
                   'before:content-none'
                 )}
               >
