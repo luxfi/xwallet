@@ -114,11 +114,14 @@ const AccountItem = ({
 
   return (
     <AccountItemWrapper
-      className={clsx({
-        disabled,
-        'cursor-pointer': !disabled && onClick,
-        'is-darkmode': isDarkTheme,
-      })}
+      className={clsx(
+        {
+          disabled,
+          'cursor-pointer': !disabled && onClick,
+          'is-darkmode': isDarkTheme,
+        },
+        'bg-[#ffffff15] hover:bg-[#ffffff25]'
+      )}
       onClick={handleClickItem}
     >
       <ThemeIcon
