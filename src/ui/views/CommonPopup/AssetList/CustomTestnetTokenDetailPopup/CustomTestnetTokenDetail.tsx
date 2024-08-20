@@ -172,18 +172,16 @@ export const CustomTestnetTokenDetail = ({
 
           <Button
             type="primary"
-            ghost
             size="large"
-            className="w-[114px] h-[36px] leading-[16px] lux-btn-ghost"
+            className="w-[114px] h-[36px] leading-[16px] lux-btn-ghost text-[#fff] border-[#fff] bg-transparent"
             onClick={goToSend}
           >
             {t('page.dashboard.tokenDetail.send')}
           </Button>
           <Button
             type="primary"
-            ghost
             size="large"
-            className="w-[114px] h-[36px] leading-[16px] lux-btn-ghost"
+            className="w-[114px] h-[36px] leading-[16px] lux-btn-ghost text-[#fff] border-[#fff] bg-transparent"
             onClick={goToReceive}
           >
             {t('page.dashboard.tokenDetail.receive')}
