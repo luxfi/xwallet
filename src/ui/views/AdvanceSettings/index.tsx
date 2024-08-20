@@ -63,7 +63,7 @@ const OpenApiModal = ({
           ]}
         >
           <Input
-            className="popup-input"
+            className="popup-input border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
             placeholder="Host"
             size="large"
             autoFocus

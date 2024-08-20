@@ -221,7 +221,7 @@ const ChainSelectorModal = ({
           unmatteredList.length === 0 &&
           !search ? null : (
             <Input
-              className="hover:border-[#d3d3d3]"
+              className="border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
               prefix={<img src={IconSearch} />}
               // Search chain
               placeholder={t('component.ChainSelectorModal.searchPlaceholder')}

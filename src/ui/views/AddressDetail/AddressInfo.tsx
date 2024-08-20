@@ -86,7 +86,7 @@ const AddressInfo1 = ({ address, type, brandName, source }: Props) => {
             >
               <Input
                 ref={inputRef}
-                className="popup-input h-[48px]"
+                className="popup-input h-[48px] border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
                 size="large"
                 placeholder={t('page.addressDetail.please-input-address-note')}
                 autoFocus

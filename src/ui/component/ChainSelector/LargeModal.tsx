@@ -198,6 +198,7 @@ export const ChainSelectorLargeModal = ({
           />
         )}
         <Input
+          className="border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
           prefix={<img src={IconSearch} />}
           // Search chain
           placeholder={t('component.ChainSelectorModal.searchPlaceholder')}

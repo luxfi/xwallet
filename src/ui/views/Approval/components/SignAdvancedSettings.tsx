@@ -213,7 +213,7 @@ export const SignAdvancedSettings = ({
                   >
                     <Input
                       ref={gasLimitInputRef}
-                      className="popup-input"
+                      className="popup-input border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
                       value={afterGasLimit}
                       onChange={handleGasLimitChange}
                       disabled={disabled}
@@ -254,7 +254,7 @@ export const SignAdvancedSettings = ({
                     validateStatus={validateStatus.nonce.status}
                   >
                     <Input
-                      className="popup-input"
+                      className="popup-input border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
                       value={customNonce}
                       onChange={handleCustomNonceChange}
                       disabled={disableNonce}

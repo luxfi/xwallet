@@ -194,11 +194,11 @@ const AddressItem = memo(
             className={clsx(
               'lux-address-item relative',
               isCurrentAccount
-                ? 'bg-blue-light hover:bg-blue-light pr-0'
+                ? 'bg-[#ffffff22] hover:bg-[#ffffff25] border-transparent pr-0'
                 : 'group',
               !isCurrentAccount &&
                 !enableSwitch &&
-                'hover:bg-blue-light hover:bg-opacity-[0.1]',
+                'bg-[#ffffff22] hover:bg-[#ffffff25] border-transparent',
               {
                 'is-switch': enableSwitch,
               }

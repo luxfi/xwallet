@@ -44,7 +44,7 @@ export const SortInput = ({
     <>
       <div
         className={clsx(
-          'sort-input widget-has-ant-input',
+          'sort-input widget-has-ant-input border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]',
           value && 'searching'
         )}
       >

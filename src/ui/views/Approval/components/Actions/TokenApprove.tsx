@@ -107,8 +107,7 @@ const ApproveAmountModal = ({
           bordered={false}
           className={clsx(
             'popup-input h-[52px] flex items-center px-[12px]',
-            'bg-l-neutral-card-1',
-            'border border-lux-neutral-line focus-within:border-lux-blue-default',
+            'border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]',
             'transition-all duration-300'
           )}
           addonAfter={

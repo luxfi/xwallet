@@ -108,7 +108,7 @@ function ModalConfirmAllowTransfer({
           ]}
         >
           <Input
-            className="popup-input"
+            className="popup-input border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
             // Enter the Password to Confirm
             placeholder={t('page.sendToken.allowTransferModal.placeholder')}
             type="password"

@@ -152,7 +152,9 @@ const CreatePassword = () => {
               ]}
             >
               <Input
-                className={'h-[52px]'}
+                className={
+                  'h-[52px] border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]'
+                }
                 size="large"
                 placeholder={t('page.createPassword.passwordPlaceholder')}
                 type="password"
@@ -182,7 +184,7 @@ const CreatePassword = () => {
               ]}
             >
               <Input
-                className="h-[52px]"
+                className="h-[52px] border-[#ffffff24] focus:border-[#ffffff80] hover:bg-[#ffffff15] hover:border-[#ffffff80]"
                 size="large"
                 placeholder={t('page.createPassword.confirmPlaceholder')}
                 type="password"
