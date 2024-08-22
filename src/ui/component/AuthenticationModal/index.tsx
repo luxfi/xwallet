@@ -223,7 +223,7 @@ const AuthenticationModal = ({
             ]}
           >
             <Input
-              className="popup-input border-[#ffffff24] hover:border-[#ffffff80] focus:border-[#ffffff80] hover:bg-[#ffffff15]"
+              className="popup-input"
               placeholder={
                 placeholder ??
                 t('component.AuthenticationModal.passwordPlaceholder')
