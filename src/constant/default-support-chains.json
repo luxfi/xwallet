@@ -1819,17 +1819,17 @@
         "need_estimate_gas": false
     },
     {
-        "id": "lux",
+        "id": "dbk",
         "community_id": 20240603,
-        "name": "Lux Chain",
+        "name": "DBK Chain",
         "native_token": {
-            "id": "lux",
+            "id": "dbk",
             "symbol": "ETH",
             "logo": "https://static.debank.com/image/dbk_token/logo_url/dbk/48bfb74adddd170e936578aec422836d.png",
             "decimals": 18
         },
-        "logo_url": "https://cdn.lux.network/xwallet/luxchain/1255de5a9316fed901d14c069ac62f39.png",
-        "white_logo_url": "https://cdn.lux.network/xwallet/luxchain/lux-nft.png",
+        "logo_url": "https://static.debank.com/image/chain/logo_url/dbk/1255de5a9316fed901d14c069ac62f39.png",
+        "white_logo_url": "https://static.debank.com/image/chain/white_logo_url/dbk/f3b17c6a54b98b86a158061706277f06.png",
         "eip_1559": true,
         "is_disabled": false,
         "explorer_host": "https://scan.dbkchain.io",

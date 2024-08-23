@@ -29,7 +29,7 @@ import { useAsync, useAsyncFn } from 'react-use';
 import * as animationData from './success.json';
 import { useThemeMode } from '@/ui/hooks/usePreference';
 
-const Lux_BADGE_URL = 'https://debank.com/official-badge/2';
+const Lux_BADGE_URL = 'https://lux.network';
 
 const gotoLuxFiLuxBadge = () => {
   openInTab(Lux_BADGE_URL);

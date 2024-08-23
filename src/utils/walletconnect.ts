@@ -10,7 +10,7 @@ export const GET_WALLETCONNECT_CONFIG = () => {
       description: t('global.appDescription'),
       url: 'https://luxwallet-xyz.vercel.app',
       icons: [
-        'https://static-assets.luxwallet-xyz.vercel.app/files/122da969-da58-42e9-ab39-0a8dd38d94b8.png',
+        'https://cdn.lux.network/xwallet/luxchain/122da969-da58-42e9-ab39-0a8dd38d94b8.png',
       ],
       name: 'Lux',
     },
