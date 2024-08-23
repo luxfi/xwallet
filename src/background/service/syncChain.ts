@@ -15,7 +15,7 @@ class SyncChainService {
       const chains = process.env.DEBUG
         ? await openapiService.getSupportedChains()
         : await http
-            .get('https://static.debank.com/supported_chains.json')
+            .get('https://cdn.lux.network/xwallet/supported_chains.json')
             .then((res) => {
               console.log(
                 'Get the chain data from json file through json file'

@@ -45,6 +45,8 @@ const store = {
   testnetList: [] as TestnetChain[],
 };
 
+console.log('-------------->\n', store.mainnetList);
+
 export const updateChainStore = (params: Partial<typeof store>) => {
   Object.assign(store, params);
   eventBus.emit(EVENTS.broadcastToUI, {
