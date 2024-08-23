@@ -6,23 +6,25 @@ import { ALARMS_SYNC_CHAINS } from '../utils/alarms';
 import { http } from '../utils/http';
 import { SupportedChain } from './openapi';
 import { openapiService } from '.';
+import defaultSuppordChains from '@/constant/default-support-chains.json';
 
 class SyncChainService {
   timer: ReturnType<typeof setInterval> | null = null;
 
   syncMainnetChainList = async () => {
     try {
-      const chains = process.env.DEBUG
-        ? await openapiService.getSupportedChains()
-        : await http
-            .get('https://cdn.lux.network/xwallet/supported_chains.json')
-            .then((res) => {
-              console.log(
-                'Get the chain data from json file through json file'
-              );
-              return res.data as SupportedChain[];
-            });
-      console.log('<-------All chains------->\n', chains);
+      // const chains = process.env.DEBUG
+      //   ? await openapiService.getSupportedChains()
+      //   : await http
+      //       .get('https://cdn.lux.network/xwallet/supported_chains.json')
+      //       .then((res) => {
+      //         console.log(
+      //           'Get the chain data from json file through json file'
+      //         );
+      //         return res.data as SupportedChain[];
+      //       });
+      const chains = defaultSuppordChains;
+      // console.log('<-------All chains------->\n', chains);
       if (chains && chains?.length > 0) {
         const list: Chain[] = chains
           .filter((item) => !item.is_disabled)

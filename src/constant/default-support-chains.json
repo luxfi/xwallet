@@ -1768,6 +1768,23 @@
         "need_estimate_gas": false
     },
     {
+        "id": "a8",
+        "community_id": 888888888,
+        "name": "Ancient8",
+        "native_token": {
+            "id": "a8",
+            "symbol": "ETH",
+            "logo": "https://static.debank.com/image/a8_token/logo_url/a8/48bfb74adddd170e936578aec422836d.png",
+            "decimals": 18
+        },
+        "logo_url": "https://static.debank.com/image/chain/logo_url/a8/9c36fe3148250cb7f1c504c689cdb991.png",
+        "white_logo_url": "https://static.debank.com/image/chain/white_logo_url/a8/1e07ea59fe43e75f15db75136d3d609a.png",
+        "eip_1559": true,
+        "is_disabled": false,
+        "explorer_host": "https://scan.ancient8.gg",
+        "need_estimate_gas": false
+    },
+    {
         "id": "strax",
         "community_id": 105105,
         "name": "Stratis",
@@ -1836,6 +1853,23 @@
         "need_estimate_gas": false
     },
     {
+        "id": "lux",
+        "community_id": 20240824,
+        "name": "LUX Chain",
+        "native_token": {
+            "id": "lux",
+            "symbol": "LUX",
+            "logo": "https://cdn.lux.network/xwallet/luxchain/126bc261b49eabea7227832374e1fcb0.png",
+            "decimals": 18
+        },
+        "logo_url": "https://cdn.lux.network/xwallet/luxchain/126bc261b49eabea7227832374e1fcb0.png",
+        "white_logo_url": "https://cdn.lux.network/xwallet/luxchain/621bc261b49eabea7227832374e1fcb0.png",
+        "eip_1559": true,
+        "is_disabled": false,
+        "explorer_host": "https://explore.lux.network/",
+        "need_estimate_gas": false
+    },
+    {
         "id": "real",
         "community_id": 111188,
         "name": "re.al",
@@ -1884,6 +1918,57 @@
         "eip_1559": true,
         "is_disabled": false,
         "explorer_host": "https://aurascan.io",
+        "need_estimate_gas": false
+    },
+    {
+        "id": "lyra",
+        "community_id": 957,
+        "name": "Lyra",
+        "native_token": {
+            "id": "lyra",
+            "symbol": "ETH",
+            "logo": "https://static.debank.com/image/lyra_token/logo_url/lyra/48bfb74adddd170e936578aec422836d.png",
+            "decimals": 18
+        },
+        "logo_url": "https://static.debank.com/image/chain/logo_url/lyra/c543460327c0c8b2af76c73e75dd9b1f.png",
+        "white_logo_url": "https://static.debank.com/image/chain/white_logo_url/lyra/87bc8fd495617072111dc9c0a0506355.png",
+        "eip_1559": true,
+        "is_disabled": false,
+        "explorer_host": "https://explorer.lyra.finance",
+        "need_estimate_gas": false
+    },
+    {
+        "id": "croze",
+        "community_id": 388,
+        "name": "Cronos zkEVM",
+        "native_token": {
+            "id": "croze",
+            "symbol": "zkCRO",
+            "logo": "https://static.debank.com/image/croze_token/logo_url/croze/e9572bb5f00a04dd2e828dae75456abe.png",
+            "decimals": 18
+        },
+        "logo_url": "https://static.debank.com/image/chain/logo_url/croze/e9572bb5f00a04dd2e828dae75456abe.png",
+        "white_logo_url": "https://static.debank.com/image/chain/white_logo_url/croze/0cd7713510320f906a8c55421e0474fe.png",
+        "eip_1559": true,
+        "is_disabled": false,
+        "explorer_host": "https://explorer.zkevm.cronos.org",
+        "need_estimate_gas": false
+    },
+    {
+        "id": "ace",
+        "community_id": 648,
+        "name": "Endurance",
+        "native_token": {
+            "id": "ace",
+            "symbol": "ACE",
+            "logo": "https://static.debank.com/image/ace_token/logo_url/ace/ee37e5c29cf413afa496e1be493a10d5.png",
+            "decimals": 18
+        },
+        "logo_url": "https://static.debank.com/image/chain/logo_url/ace/c495831e37076a968674bd604965fb11.png",
+        "white_logo_url": "https://static.debank.com/image/chain/white_logo_url/ace/cce3d2e57bf6cdd5166b00fce4305c9e.png",
+        "eip_1559": true,
+        "is_disabled": false,
+        "explorer_host": "https://explorer-endurance.fusionist.io",
         "need_estimate_gas": false
     }
 ]
