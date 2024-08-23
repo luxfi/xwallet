@@ -12,7 +12,7 @@ const targetPath = path.join(
 );
 
 const res = child_process.execSync(
-  'curl -s https://static.debank.com/supported_chains.json'
+  'curl -s https://cdn.lux.network/xwallet/supported_chains.json'
 );
 let supported_chains_list = [];
 try {
