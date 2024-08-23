@@ -22,7 +22,7 @@ class SyncChainService {
               );
               return res.data as SupportedChain[];
             });
-      console.log(process.env.DEBUG + ':' + chains + ' : Kaori Fujio');
+      console.log('<-------All chains------->\n', chains);
       if (chains && chains?.length > 0) {
         const list: Chain[] = chains
           .filter((item) => !item.is_disabled)

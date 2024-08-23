@@ -45,7 +45,7 @@ const store = {
   testnetList: [] as TestnetChain[],
 };
 
-console.log('-------------->\n', store.mainnetList);
+console.log('<-------store.mainnetList------->\n', store.mainnetList);
 
 export const updateChainStore = (params: Partial<typeof store>) => {
   Object.assign(store, params);
