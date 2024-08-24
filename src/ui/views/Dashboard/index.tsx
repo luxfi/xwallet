@@ -389,7 +389,7 @@ const Dashboard = () => {
               />
 
               <RcIconReceive
-                className="mx-8 cursor-pointer actionIcon"
+                className="actionIcon"
                 onClick={() => {
                   matomoRequestEvent({
                     category: 'Front Page Click',
