@@ -1853,23 +1853,6 @@
         "need_estimate_gas": false
     },
     {
-        "id": "lux",
-        "community_id": 20240824,
-        "name": "LUX Chain",
-        "native_token": {
-            "id": "lux",
-            "symbol": "LUX",
-            "logo": "https://cdn.lux.network/xwallet/luxchain/126bc261b49eabea7227832374e1fcb0.png",
-            "decimals": 18
-        },
-        "logo_url": "https://cdn.lux.network/xwallet/luxchain/126bc261b49eabea7227832374e1fcb0.png",
-        "white_logo_url": "https://cdn.lux.network/xwallet/luxchain/621bc261b49eabea7227832374e1fcb0.png",
-        "eip_1559": true,
-        "is_disabled": false,
-        "explorer_host": "https://explore.lux.network/",
-        "need_estimate_gas": false
-    },
-    {
         "id": "real",
         "community_id": 111188,
         "name": "re.al",

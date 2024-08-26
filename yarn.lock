@@ -2938,10 +2938,10 @@
     typescript "^4.5.0"
     web3-core "^1.6.0"
 
-"@luxfi/lux-api@1.8.16":
-  version "1.8.16"
-  resolved "https://registry.yarnpkg.com/@luxfi/lux-api/-/lux-api-1.8.16.tgz#99f316e353c690ec90c0ad3d3a4966f6227a6410"
-  integrity sha512-7eg8mYFcuTdEvvKwjcjhlfhvoq4e8QXiX9XAWTku0AeqAfBpDUbg9zbtzugzJN+OGjQMCFushZhTgL8we7yLlw==
+"@luxfi/lux-api@1.8.17":
+  version "1.8.17"
+  resolved "https://registry.yarnpkg.com/@luxfi/lux-api/-/lux-api-1.8.17.tgz#b34e10179d87dff04a8cae5a7bdc231030bd5879"
+  integrity sha512-xBROQdIshTts40iZu+GnuMMGdyAlUifELNjbS/SihJq/Hz+HomOuy19imWtfQpJPOzIRGWkbOEJ5gKhc17aVRw==
   dependencies:
     "@luxfi/lux-sign" "^0.3.3"
     axios "^0.27.2"
@@ -8244,7 +8244,7 @@ dot-case@^3.0.4:
     no-case "^3.0.4"
     tslib "^2.0.3"
 
-dotenv@^16.3.1:
+dotenv@^16.3.1, dotenv@^16.4.5:
   version "16.4.5"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.5.tgz#cdd3b3b604cb327e286b4762e13502f717cb099f"
   integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==

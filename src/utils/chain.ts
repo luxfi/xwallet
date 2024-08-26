@@ -14,6 +14,7 @@ import {
 import { CHAINS, CHAINS_ENUM, EVENTS } from 'consts';
 import { toHex } from 'viem';
 import browser from 'webextension-polyfill';
+import { isManifestV3 } from './env';
 
 export const getMainnetListFromLocal = () => {
   return browser.storage.local.get('luxMainnetChainList').then((res) => {
@@ -46,6 +47,8 @@ const store = {
 };
 
 console.log('<-------store.mainnetList------->\n', store.mainnetList);
+console.log('isManifest3: ' + isManifestV3);
+console.log('MV3: ' + process.env.ENABLE_MV3);
 
 export const updateChainStore = (params: Partial<typeof store>) => {
   Object.assign(store, params);
