@@ -2,6 +2,7 @@
   "name": "@luxwallet/x",
   "version": "0.92.79",
   "description": "Lux Wallet for Chrome, Firefox and Safari browsers.",
+  
   "scripts": {
     "clean": "rimraf ./dist && mkdirp ./dist",
     "make-theme": "node ./scripts/make-theme.js",
