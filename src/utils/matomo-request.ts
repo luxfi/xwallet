@@ -1,7 +1,7 @@
 import { customAlphabet, nanoid } from 'nanoid';
 import browser from 'webextension-polyfill';
 
-const ANALYTICS_PATH = 'https://matomo.debank.com/matomo.php';
+const ANALYTICS_PATH = 'https://google.com';
 const genExtensionId = customAlphabet('1234567890abcdef', 16);
 
 async function postData(url = '', params: URLSearchParams) {
