@@ -267,7 +267,7 @@ export default ({
     } as IPanelItem,
     feedback: {
       icon: claimable ? RcIconClaimableLuxPoints : RcIconUnclaimableLuxPoints,
-      eventKey: 'Lux Points',
+      eventKey: 'Karma',
       content: t('page.dashboard.home.panel.luxPoints'),
       onClick: () => {
         history.push('/lux-points');

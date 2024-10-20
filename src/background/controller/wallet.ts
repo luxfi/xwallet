@@ -3797,7 +3797,7 @@ export class WalletController extends BaseController {
           id: account?.address,
           invite_code: code,
         })
-      )?.text; //`${account?.address} Claims Lux Points`;
+      )?.text; //`${account?.address} Claims Karma`;
     } else {
       verifyText = (
         await wallet.openapi.getLuxSignatureTextV2({

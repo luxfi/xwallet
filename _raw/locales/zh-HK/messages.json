@@ -107,7 +107,7 @@
           "more": "更多",
           "manageAddress": "管理地址",
           "nft": "NFT",
-          "luxPoints": "Lux Points"
+          "luxPoints": "Karma"
         },
         "comingSoon": "即將推出",
         "soon": "很快",
@@ -1900,7 +1900,7 @@
       "listBy": "Dapp 已列出"
     },
     "luxPoints": {
-      "title": "Lux Points",
+      "title": "Karma",
       "out-of-x-current-total-points": "總分發中的 {{total}} 分",
       "share-on": "分享至",
       "referral-code-copied": "推薦碼已複製",
@@ -1951,8 +1951,8 @@
       },
       "code-set-successfully": "推薦碼設置成功",
       "initialPointsClaimEnded": "初始積分領取已結束",
-      "firstRoundEnded": "🎉 Lux Points 第一輪已結束",
-      "secondRoundEnded": "🎉 Lux Points 第二輪已結束"
+      "firstRoundEnded": "🎉 Karma 第一輪已結束",
+      "secondRoundEnded": "🎉 Karma 第二輪已結束"
     },
     "customTestnet": {
       "title": "自定義網絡",

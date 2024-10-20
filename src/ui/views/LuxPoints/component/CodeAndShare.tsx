@@ -20,7 +20,7 @@ export const shareLuxPointsTwitter = ({
 
   const text = encodeURIComponent(`Even if you haven't used Lux before, you can get points now!
 
-Lux Points Season 2 is here with bigger rewards – 1 Billion points in total! 🎉 @lux_link
+Karma Season 2 is here with bigger rewards – 1 Billion points in total! 🎉 @lux_link
 
 Check your points before you claim!
 
