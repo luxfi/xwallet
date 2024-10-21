@@ -52,7 +52,7 @@ export const EcologyNavBar = ({ className, style, chainId }: Props) => {
             {/* {t('component.EcologyNavBar.providedBy', {
               chainName: chain?.name,
             })} */}
-            Provided by LUX Chain
+            Powered by Lux Network
           </div>
         </div>
       </div>

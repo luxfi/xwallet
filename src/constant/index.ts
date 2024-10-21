@@ -1409,7 +1409,7 @@ export const WALLET_SORT_SCORE = [
   return pre;
 }, {} as { [k: string]: number });
 
-export const SWAP_FEE_ADDRESS = '0x39041F1B366fE33F9A5a79dE5120F2Aee2577ebc';
+export const SWAP_FEE_ADDRESS = '0x9011E888251AB053B7bD1cdB598Db4f9DEd94714';
 
 export const ETH_USDT_CONTRACT = '0xdac17f958d2ee523a2206206994597c13d831ec7';
 

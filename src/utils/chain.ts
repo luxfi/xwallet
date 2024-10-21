@@ -376,6 +376,7 @@ export function makeTokenFromChain(chain: Chain): TokenItem {
 
 export function supportedChainToChain(item: SupportedChain): Chain {
   const chainServerIdEnumDict = {
+    lux: 'LUX',
     eth: 'ETH',
     bsc: 'BSC',
     xdai: 'GNOSIS',
