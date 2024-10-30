@@ -25,7 +25,7 @@ export type WalletController = Object.Merge<
       [key: string]: <T = any>(...params: any) => Promise<T>;
     };
   },
-  Record<string, <T = any>(...params: any) => T>
+  Record<string, <T = any>(...params: any) => Promise<T>>
 >;
 
 const useCommonPopupViewState = () => {

@@ -104,7 +104,7 @@ import { matomoRequestEvent } from '@/utils/matomo-request';
 import { BALANCE_LOADING_CONFS } from '@/constant/timeout';
 import { IExtractFromPromise } from '@/ui/utils/type';
 import { Wallet, thirdparty } from '@ethereumjs/wallet';
-import { resolve } from 'path';
+// import { resolve } from 'path';
 
 const stashKeyrings: Record<string | number, any> = {};
 
@@ -2301,7 +2301,7 @@ export class WalletController extends BaseController {
   getKeyringByMnemonic = (
     mnemonic: string,
     passphrase = ''
-  ): Promise<HdKeyring | undefined> => {
+  ): HdKeyring | undefined => {
     const keyring = keyringService.keyrings.find((item) => {
       return (
         item.type === KEYRING_CLASS.MNEMONIC &&
@@ -2312,9 +2312,7 @@ export class WalletController extends BaseController {
 
     keyring?.setPassphrase(passphrase);
 
-    return new Promise((resolve) => {
-      resolve(keyring);
-    });
+    return keyring;
   };
 
   _getMnemonicKeyringByAddress = (address: string) => {
@@ -2436,7 +2434,7 @@ export class WalletController extends BaseController {
       throw new Error(t('background.error.invalidMnemonic'));
     }
     // If import twice use same keyring
-    let keyring = await this.getKeyringByMnemonic(mnemonic, passphrase);
+    let keyring = this.getKeyringByMnemonic(mnemonic, passphrase);
     const result = {
       keyringId: null as number | null,
       isExistedKR: false,
@@ -2871,13 +2869,13 @@ export class WalletController extends BaseController {
     }
   };
 
-  requestHDKeyringByMnemonics = async (
+  requestHDKeyringByMnemonics = (
     mnemonics: string,
     methodName: string,
     passphrase: string,
     ...params: any[]
   ) => {
-    const keyring = await this.getKeyringByMnemonic(mnemonics, passphrase);
+    const keyring = this.getKeyringByMnemonic(mnemonics, passphrase);
     if (!keyring) {
       throw new Error(
         'failed to requestHDKeyringByMnemonics, no keyring found.'
@@ -2895,7 +2893,7 @@ export class WalletController extends BaseController {
       Pick<Account, 'address' | 'alianName' | 'index'>
     >[]
   ) => {
-    const keyring = await this.getKeyringByMnemonic(mnemonics, passphrase);
+    const keyring = this.getKeyringByMnemonic(mnemonics, passphrase);
     if (!keyring) {
       throw new Error(
         '[activeAndPersistAccountsByMnemonics] no keyring found.'
