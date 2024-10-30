@@ -25,7 +25,7 @@ export type WalletController = Object.Merge<
       [key: string]: <T = any>(...params: any) => Promise<T>;
     };
   },
-  Record<string, <T = any>(...params: any) => Promise<T>>
+  Record<string, <T = any>(...params: any) => T>
 >;
 
 const useCommonPopupViewState = () => {
@@ -84,7 +84,7 @@ const useCommonPopupViewState = () => {
 };
 
 const WalletContext = createContext<{
-  wallet: WalletController;
+  wallet: WalletControllerType;
   commonPopupView: ReturnType<typeof useCommonPopupViewState>;
 } | null>(null);
 
@@ -93,7 +93,7 @@ const WalletProvider = ({
   wallet,
 }: {
   children?: ReactNode;
-  wallet: WalletController;
+  wallet: WalletControllerType;
 }) => {
   const commonPopupView = useCommonPopupViewState();
 
