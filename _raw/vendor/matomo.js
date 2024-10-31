@@ -1,3 +1,5 @@
+const Browser = require("webextension-polyfill");
+
 var _paq = (window._paq = window._paq || []);
 /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
 _paq.push(['trackPageView']);
@@ -20,10 +22,10 @@ _paq.push(['enableLinkTracking']);
 
   setTimeout(() => {
     // is MV3
-    if (chrome.runtime.getManifest().manifest_version === 3) {
-      chrome.storage.local.get('extensionId').then(handleExtensionId);
+    if (Browser.runtime.getManifest().manifest_version === 3) {
+      Browser.storage.local.get('extensionId').then(handleExtensionId);
     } else {
-      chrome.storage.local.get('extensionId', handleExtensionId);
+      Browser.storage.local.get('extensionId', handleExtensionId);
     }
   }, 500);
 })();

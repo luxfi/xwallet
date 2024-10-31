@@ -1,3 +1,5 @@
+const Browser = require("webextension-polyfill");
+
 window.addEventListener('load', event => {
     const urlParams = new URLSearchParams(window.location.search);
     document.getElementById('code').textContent = urlParams.get('code');
@@ -9,4 +11,4 @@ function handleMessage(message, sender, sendResponse) {
         window.close();
     }
 }
-chrome.runtime.onMessage.addListener(handleMessage);
+Browser.runtime.onMessage.addListener(handleMessage);
