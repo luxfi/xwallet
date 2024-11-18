@@ -34,6 +34,23 @@
         "need_estimate_gas": false
     },
     {
+        "id": "spc",
+        "community_id": 36911,
+        "name": "Sparkle Pony Chain",
+        "native_token": {
+            "id": "spc",
+            "symbol": "SPC",
+            "logo": "https://sparklepony.club/favicon.png",
+            "decimals": 18
+        },
+        "logo_url": "https://sparklepony.club/favicon.png",
+        "white_logo_url": "https://sparklepony.club/favicon.png",
+        "eip_1559": true,
+        "is_disabled": false,
+        "explorer_host": "https://explore.sparklepony.club",
+        "need_estimate_gas": false
+    },
+    {
         "id": "eth",
         "community_id": 1,
         "name": "Ethereum",
