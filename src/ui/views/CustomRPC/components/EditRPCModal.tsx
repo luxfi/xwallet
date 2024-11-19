@@ -174,6 +174,7 @@ const EditRPCModal = ({
             size="large"
             className="lux-btn-ghost w-[172px]"
             ghost
+            style={{ color: '#fff', border: '1px solid #fff' }}
             onClick={onCancel}
           >
             {t('global.Cancel')}
