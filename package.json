@@ -2,7 +2,6 @@
   "name": "@luxwallet/x",
   "version": "0.92.79",
   "description": "Lux Wallet for Chrome, Firefox and Safari browsers.",
-  
   "scripts": {
     "clean": "rimraf ./dist && mkdirp ./dist",
     "make-theme": "node ./scripts/make-theme.js",
@@ -57,7 +56,7 @@
     "@luxfi/lux-api": "1.8.17",
     "@luxfi/lux-security-engine": "2.0.4",
     "@luxfi/lux-swap": "0.0.39",
-    "@luxfi/page-provider": "0.3.5",
+    "@luxfi/page-provider": "1.8.14",
     "@luxfi/widgets": "1.0.9",
     "@metamask/browser-passworder": "4.1.0",
     "@metamask/eth-sig-util": "5.1.0",

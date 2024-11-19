@@ -2724,7 +2724,12 @@
     react "^18.2.0"
     react-dom "^18.2.0"
 
-"@ledgerhq/errors@^6.10.0", "@ledgerhq/errors@^6.14.0", "@ledgerhq/errors@^6.15.0", "@ledgerhq/errors@^6.18.0":
+"@ledgerhq/errors@^6.10.0":
+  version "6.19.1"
+  resolved "https://registry.yarnpkg.com/@ledgerhq/errors/-/errors-6.19.1.tgz#d9ac45ad4ff839e468b8f63766e665537aaede58"
+  integrity sha512-75yK7Nnit/Gp7gdrJAz0ipp31CCgncRp+evWt6QawQEtQKYEDfGo10QywgrrBBixeRxwnMy1DP6g2oCWRf1bjw==
+
+"@ledgerhq/errors@^6.14.0", "@ledgerhq/errors@^6.15.0", "@ledgerhq/errors@^6.18.0":
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/@ledgerhq/errors/-/errors-6.18.0.tgz#d55d6a57430d7a86532a9033ce0b45103264c620"
   integrity sha512-L3jQWAGyooxRDk/MRlW2v4Ji9+kloBtdmz9wBkHaj2j0n+05rweJSV3GHw9oye1BYMbVFqFffmT4H3hlXlCasw==
@@ -2975,10 +2980,10 @@
     bignumber.js "^9.1.1"
     web3-eth-abi "^1.8.1"
 
-"@luxfi/page-provider@0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@luxfi/page-provider/-/page-provider-0.3.5.tgz#983733703a96db74d4262075eefd0cfd138f5e70"
-  integrity sha512-WbdwuIqqySqBoWOYOw8Ir/T+6PU6pqcg25JhGx0weDbjroijJYGJQJcpMxIILcrvHVOQI3r0BJsSOXuTSGYqcg==
+"@luxfi/page-provider@1.8.14":
+  version "1.8.14"
+  resolved "https://registry.yarnpkg.com/@luxfi/page-provider/-/page-provider-1.8.14.tgz#589c13d08d843e3e40ed3d503c2e3a419d0cc7f7"
+  integrity sha512-LApeCww3ATY0PD+X2n7yHv9CmdHhVSZYjMOH0snvMW8m48xSSNGi9B4AG9zLGwD6r+Msq/GVwEf0UQ+//XVZKQ==
   dependencies:
     "@ledgerhq/devices" "^6.27.1"
     "@types/chrome" "^0.0.186"
