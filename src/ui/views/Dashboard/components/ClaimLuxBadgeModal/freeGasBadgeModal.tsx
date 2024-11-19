@@ -200,23 +200,22 @@ const Wrapper = styled.div<{
     font-style: normal;
     font-weight: 500;
     border-radius: 6px;
-    background: #109d63;
+    background: #000;
     color: var(--l-neutral-title2, #fff);
-    border-color: transparent;
+    border: 1px solid #fff;
     transition: none !important;
     &.ant-btn[disabled],
     &.ant-btn[disabled]:hover {
-      background: #109d63;
-      border-color: transparent;
+      background: #434343;
+      border-color: #fff;
       opacity: 0.4;
     }
     &.ant-btn:hover,
     &.ant-btn:focus,
     &.ant-btn:active {
       color: var(--l-neutral-title2, #fff);
-      background: #109d63;
-      border-color: transparent;
-      border-color: transparent;
+      background: #434343;
+      border-color: #fff;
       box-shadow: 0px 8px 16px 0px rgba(58, 178, 128, 0.16);
     }
 
