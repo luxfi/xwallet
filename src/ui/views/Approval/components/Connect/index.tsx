@@ -629,7 +629,7 @@ const Connect = ({ params: { icon, origin } }: ConnectProps) => {
           </div>
         </div>
 
-        <div className="rule-list">
+        {/* <div className="rule-list">
           {RuleDesc.map((rule) => {
             if (rule.id === '1006') {
               return (
@@ -670,7 +670,7 @@ const Connect = ({ params: { icon, origin } }: ConnectProps) => {
               }
             }
           })}
-        </div>
+        </div> */}
         <div>
           <Footer>
             <div className="action-buttons flex flex-col mt-4 items-center">
@@ -678,14 +678,14 @@ const Connect = ({ params: { icon, origin } }: ConnectProps) => {
                 type="primary"
                 size="large"
                 onClick={() => handleAllow()}
-                disabled={connectBtnStatus.disabled}
+                // disabled={connectBtnStatus.disabled}z
                 className={clsx({
                   'mb-0': !connectBtnStatus.text,
                 })}
               >
                 {t('page.connect.connectBtn')}
               </Button>
-              {connectBtnStatus.text && (
+              {/* {connectBtnStatus.text && (
                 <div
                   className={clsx('security-tip', connectBtnStatus.level)}
                   style={{
@@ -716,7 +716,7 @@ const Connect = ({ params: { icon, origin } }: ConnectProps) => {
                     {t('page.connect.ignoreAll')}
                   </span>
                 </div>
-              )}
+              )} */}
               <Button
                 type="primary"
                 ghost
