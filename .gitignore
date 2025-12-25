@@ -6,3 +6,10 @@ dist-*
 yarn-error
 
 tmp/*.zip
+
+
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+GROK.md
+QWEN.md
