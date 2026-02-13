@@ -376,7 +376,16 @@ export function makeTokenFromChain(chain: Chain): TokenItem {
 
 export function supportedChainToChain(item: SupportedChain): Chain {
   const chainServerIdEnumDict = {
+    // Lux Networks
     lux: 'LUX',
+    lux_testnet: 'LUX_TESTNET',
+    zoo: 'ZOO',
+    zoo_testnet: 'ZOO_TESTNET',
+    hanzo: 'HANZO',
+    hanzo_testnet: 'HANZO_TESTNET',
+    spc: 'SPC',
+    pars: 'PARS',
+    // Standard EVM chains
     eth: 'ETH',
     bsc: 'BSC',
     xdai: 'GNOSIS',

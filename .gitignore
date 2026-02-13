@@ -13,3 +13,7 @@ CLAUDE.md
 GEMINI.md
 GROK.md
 QWEN.md
+
+e2e/
+test-results/
+package-lock.json
