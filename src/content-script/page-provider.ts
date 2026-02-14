@@ -1,0 +1,1 @@
+import '@luxfi/page-provider';

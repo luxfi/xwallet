@@ -1,0 +1,27 @@
+# Lux Wallet Local Development Environment
+#
+# Usage:
+#   docker compose up luxd
+#
+# This starts a local luxd node with chain ID 1337 for E2E testing.
+# The wallet can connect to http://localhost:9650/ext/bc/C/rpc
+
+services:
+  luxd:
+    image: luxdefi/luxd:latest
+    ports:
+      - "9650:9650"
+      - "9651:9651"
+    environment:
+      - NETWORK_ID=1337
+    command:
+      - "--network-id=1337"
+      - "--staking-enabled=false"
+      - "--http-host=0.0.0.0"
+      - "--http-port=9650"
+      - "--http-allowed-origins=*"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9650/ext/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
